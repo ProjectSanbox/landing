@@ -10,5 +10,5 @@ RUN yarn install --silent
 
 COPY . .
 RUN yarn run build
-EXPOSE 80
+EXPOSE 443
 CMD yarn run start
