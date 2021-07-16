@@ -36,6 +36,14 @@ const ExhibitionWrapper = styled.div`
         }
     }
 
+    @media only screen and (max-width: 728px){
+        .headingContent{
+            h1{
+                font-size: 40px!important;
+            }
+        }
+    }
+
     @media only screen and (max-width: 600px){
         .exhibition{
             margin-top: 120px!important;
@@ -45,6 +53,19 @@ const ExhibitionWrapper = styled.div`
             height: 450px!important;
             iframe{
                 height: 450px!important;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 455px){
+        .headingContent{
+            width: 100%!important;
+            margin-left: 0!important;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 0 20px;
+            p{
+                text-align: left;
             }
         }
     }
