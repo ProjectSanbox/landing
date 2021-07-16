@@ -6,14 +6,14 @@ import styled from "styled-components";
 
 const BoxWrapper = styled.div``;
 
-const Box = ({ children,ref, ...props }) => {
+const Box = ({ children,ref,onClick, ...props }) => {
   const AllClasses = ["box"];
   if (props.className) {
     AllClasses.push(props.className);
   }
 
   return (
-    <BoxWrapper ref={ref} {...props} className={AllClasses.join(" ")}>
+    <BoxWrapper onClick={onClick} ref={ref} {...props} className={AllClasses.join(" ")}>
       {children}
     </BoxWrapper>
   );

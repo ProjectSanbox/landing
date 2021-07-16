@@ -24,6 +24,7 @@ const UserMapWrapper = styled.div`
   p{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    color: #ffffff;
   }
 
   .roadmap-heading{
@@ -36,40 +37,44 @@ const UserMapWrapper = styled.div`
     }
   }
 
-  .roadmap-item{
-    .roadmap-box{
+  .roadmap-content{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    .roadmap-item{
       display: flex;
-      img{
-        width: 146px;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-        position: relative;
-        &::after{
-          content: "";
-          
-          background: black;
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateY(-50%);
+      left: 0;
+      &.right{
+        flex-direction: row-reverse;
+      }
+      div.item{
+        width: 50%;
+        text-align: right;
+        &.right{
+          text-align: left;
         }
+        p{
+        font-size: 25px;
+        color: #ea8c01;
+        }
+
+        ul{
+          li{
+            color: #ffffff;
+          }
+        }
+      }
+      .roadmap-line{
+        width: 8px;
+        background: ${props => props.theme.primaryColor};
+        position: relative;
+        margin: 0 20px;
       }
 
-      .roadmap-work{
-        width: 339px;
-        padding: 30px;
-        background: transparent;
-        border: 1px solid #2B50D5;
-        border-radius: 16px;
-        margin-bottom: 30px;
-        p{
-          margin: 0;
-        }
-      }
     }
   }
+
+
+
 
   @media only screen and (max-width: 579px){
     .roadmap-background{

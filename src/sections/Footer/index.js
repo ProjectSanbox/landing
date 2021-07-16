@@ -17,6 +17,7 @@ import { useState } from "react";
 
 
 
+
 const Footer = () => {
 
   const validateEmail = (email) => 

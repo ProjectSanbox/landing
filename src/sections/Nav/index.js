@@ -51,10 +51,10 @@ const Nav = () =>{
                             <Link href="#lauch"><a onClick={()=>handleToggleMenu(false)}>Lauch</a></Link>
                         </ListItem> */}
                         <ListItem>
-                            <Link href="#production"><a onClick={()=>handleToggleMenu(false)}>Products</a></Link>
+                            <Link href="#production"><a onClick={()=>handleToggleMenu(false)}>About</a></Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="#roadmap"><a onClick={()=>handleToggleMenu(false)}>Roadmap</a></Link>
+                            <Link href="#roadmap"><a onClick={()=>handleToggleMenu(false)}>Features</a></Link>
                         </ListItem>
                         <ListItem>
                             <Link href="#ourteam"><a onClick={()=>handleToggleMenu(false)}>Teams</a></Link>
@@ -73,17 +73,21 @@ const Nav = () =>{
                             <Link href="#lauch"><a onClick={()=> setToggle({...toggle, active: "lauch"})}>Lauch</a></Link>
                         </ListItem> */}
                         <ListItem className={toggle.active === 'outsolution' ? "active" : ''}>
-                            <Link href="#outsolution"><a onClick={()=> setToggle({...toggle, active: "outsolution"})}>Products</a></Link>
+                            <Link href="#outsolution"><a onClick={()=> setToggle({...toggle, active: "outsolution"})}>About</a></Link>
                         </ListItem>
                         <ListItem className={toggle.active === 'roadmap' ? "active" : ''}>
-                            <Link href="#roadmap"><a onClick={ ()=> setToggle({...toggle, active: "roadmap"})}>Roadmap</a></Link>
+                            <Link href="#roadmap"><a onClick={ ()=> setToggle({...toggle, active: "roadmap"})}>Features</a></Link>
                         </ListItem>
                         <ListItem className={toggle.active === 'ourteam' ? "active" : ''}>
                             <Link href="#ourteam"><a onClick={()=> setToggle({...toggle, active: "ourteam"})}>Teams</a></Link>
                         </ListItem>
-                        <ListItem className={toggle.active === 'papers' ? "active" : ''}>
-                            <Link href="https://drive.google.com/file/d/1sjUYZX_XZ6MRdidFXiLxgytdHH6s9XKj/view?usp=sharing"><a target="_blank" onClick={()=> setToggle({...toggle, active: "papers"})}>Pitching</a></Link>
+                        <ListItem className={toggle.active === 'ourteam' ? "active" : ''}>
+                            <Link href="#ourteam"><a onClick={()=> setToggle({...toggle, active: "ourteam"})}>Token Economics</a></Link>
                         </ListItem>
+                        <ListItem className={toggle.active === 'ourteam' ? "active" : ''}>
+                            <Link href="#ourteam"><a onClick={()=> setToggle({...toggle, active: "ourteam"})}>Partners</a></Link>
+                        </ListItem>
+                        
                     </List>
                 </Box>
             </Container>
