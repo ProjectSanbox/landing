@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ink-studio:
+    image: x89/landing:dev
+    build: .
+    ports:
+      - 3000:80
