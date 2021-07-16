@@ -22,7 +22,7 @@ const Home = () => {
     <ThemeProvider theme={theme}>
       <Head>
         <title>
-          Welcome to PolRare  
+          Sandbox Project
         </title>
         <meta
           name="Description"
@@ -47,7 +47,7 @@ const Home = () => {
       <Nav />
       {/* <NavBanner /> */}
       <Exhibition />
-      <Slogan />
+      {/* <Slogan /> */}
       <Production />
       <OurSolution/>
       <Roadmap />
