@@ -1,5 +1,5 @@
 FROM node:12.20.1-alpine as build
-LABEL name="x89/landing"
+LABEL name="kiennnd/sandbox"
 
 WORKDIR /app
 RUN apk add yarn
