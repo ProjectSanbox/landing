@@ -36,13 +36,16 @@ const Production = () => {
                 <Row>
                     <Col style={{ overflow: 'hidden' }} className="lg-5 col-5 md-5 sm-12 xs-12">
                         <Box data-aos="fade-right" className="production-info">
-                            <Heading>About</Heading>
+                            <Heading>THE BIGGEST SANDBOX TPS GAME ON BLOCKCHAIN </Heading>
                             <Text>
-                            My DeFi Pet is a a virtual pet game that combines DeFi, collectibles and your own personality.
+                            Sandbox Planet is biggest physic sandbox game
                             </Text>
                             <Text>
-                            My DeFi Pet is operated on Supported Network including Binance Smart Chain and KardiaChain.
+                            Sandbox Planet is operated on Supported Network including Binance Smart Chain.
                             </Text>
+                            <Text>
+                            Last but not least, Sandbox Planet is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battles
+                                </Text>
                             
                         </Box>
                     </Col>

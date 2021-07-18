@@ -27,6 +27,7 @@ const Oursolution = () => {
             <Box className="oursolution-background">&nbsp;</Box>
             <Box className="oursolution-heading">
                 <Heading>Features</Heading>
+                <Text>All the distinctive gaming features revolving around our ecosystem</Text>
             </Box>
             <Box className="oursolution-content">
                 <Row>

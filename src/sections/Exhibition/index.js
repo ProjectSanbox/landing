@@ -22,10 +22,9 @@ const Exhibition = () => {
                 <Box className="headingBackground">
                    <Box className="headingContent">
                         <Box data-aos="fade-right">
-                            <Heading>FPS Sample</Heading>
-                            <Text>A multiplayer First-Person Shooter game project</Text>
-                            <Text>Use it to learn about the latest features in Unity, extract and use the parts
-                            you need or use the full project as a starting point for your own games.</Text>
+                            <Heading>SANDBOX PLANET</Heading>
+                            <Text>The biggest Third-Person Shooter game on blockchain</Text>
+                            <Text>Play, Create, Own, and Govern a virtual world made by players</Text>
                         </Box>
                    </Box>
                 </Box>

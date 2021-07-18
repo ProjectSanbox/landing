@@ -2,9 +2,9 @@ import React from "react";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import Nav from "sections/Nav";
-import NavBanner from "sections/NavBanner";
+
 import Exhibition from "sections/Exhibition";
-import Slogan from "sections/Slogan";
+
 import Roadmap from "sections/Roadmap";
 import Production from "sections/Production";
 import OurSolution from "sections/OurSolution";
@@ -22,11 +22,11 @@ const Home = () => {
     <ThemeProvider theme={theme}>
       <Head>
         <title>
-          Sandbox Project
+          Sandbox Planet
         </title>
         <meta
           name="Description"
-          content="polrare.co"
+          content="Sandbox Planet is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battle"
         />
         <meta name="theme-color" content="#280D57" />
         <link rel="shortcut icon" type="image/x-icon" href={FavIcon} />
