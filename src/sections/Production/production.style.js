@@ -69,10 +69,9 @@ const AboutSectionWrapper = styled.div`
       svg{
         font-size: 60px;
         position: absolute;
-        top: 45%;
+        top: 43%;
         left: 55%;
         transform: translate(-55%, -45%);
-        filter: invert(0%) sepia(1%) saturate(3%) hue-rotate(332deg) brightness(0%) contrast(0%);
       }
     }
   }
@@ -88,6 +87,25 @@ const AboutSectionWrapper = styled.div`
         width: 100%!important;
         height: 100%!important;
         margin-left: 0!important;
+      }
+
+      button{
+      svg{
+        font-size: 50px;
+        left: 50%;
+        top: 40%;
+      }
+    
+    }
+    }
+  }
+
+  @media only screen and (max-width: 767px){
+    .production-img{
+      button{
+        svg{
+          top: 42%!important;
+        }
       }
     }
   }

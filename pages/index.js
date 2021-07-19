@@ -10,12 +10,13 @@ import Production from "sections/Production";
 import OurSolution from "sections/OurSolution";
 import Advisor from "sections/Advisor";
 import BackedBy from "sections/BackedBy";
-
+import Block from "../src/sections/Block";
 import Footer from "sections/Footer";
 import FavIcon from "assets/images/favicon.png";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
 import OurTeam from "../src/sections/OurTeam";
+
 
 const Home = () => {
   return (
@@ -51,6 +52,7 @@ const Home = () => {
       <Production />
       <OurSolution/>
       <Roadmap />
+      <Block />
       <OurTeam />
       <Advisor />
       <BackedBy />

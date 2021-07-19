@@ -22,7 +22,7 @@ const Oursolution = () => {
 
 
     return (
-        <OursolutionWrapper id="oursolution">
+        <OursolutionWrapper id="features">
         <Container>
             <Box className="oursolution-background">&nbsp;</Box>
             <Box className="oursolution-heading">

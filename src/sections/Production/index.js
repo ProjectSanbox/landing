@@ -31,7 +31,7 @@ const Production = () => {
     }
 
     return (
-        <AboutSectionWrapper id="production">
+        <AboutSectionWrapper id="about">
             <Container>
                 <Row>
                     <Col style={{ overflow: 'hidden' }} className="lg-5 col-5 md-5 sm-12 xs-12">

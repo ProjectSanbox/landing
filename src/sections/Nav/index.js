@@ -51,16 +51,19 @@ const Nav = () =>{
                             <Link href="#lauch"><a onClick={()=>handleToggleMenu(false)}>Lauch</a></Link>
                         </ListItem> */}
                         <ListItem>
-                            <Link href="#production"><a onClick={()=>handleToggleMenu(false)}>About</a></Link>
+                            <Link href="#about"><a onClick={()=>handleToggleMenu(false)}>About</a></Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="#roadmap"><a onClick={()=>handleToggleMenu(false)}>Features</a></Link>
+                            <Link href="#features"><a onClick={()=>handleToggleMenu(false)}>Features</a></Link>
                         </ListItem>
                         <ListItem>
                             <Link href="#ourteam"><a onClick={()=>handleToggleMenu(false)}>Teams</a></Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="#backedby"><a onClick={()=>handleToggleMenu(false)}>Pitching</a></Link>
+                            <Link href="#token"><a onClick={()=>handleToggleMenu(false)}>Token Economic</a></Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="#backedby"><a onClick={()=>handleToggleMenu(false)}>Partners</a></Link>
                         </ListItem>
                     </List>
             </Box>
@@ -72,20 +75,20 @@ const Nav = () =>{
                         {/* <ListItem className={toggle.active === 'lauch' ? "active" : ''}>
                             <Link href="#lauch"><a onClick={()=> setToggle({...toggle, active: "lauch"})}>Lauch</a></Link>
                         </ListItem> */}
-                        <ListItem className={toggle.active === 'outsolution' ? "active" : ''}>
-                            <Link href="#outsolution"><a onClick={()=> setToggle({...toggle, active: "outsolution"})}>About</a></Link>
+                        <ListItem className={toggle.active === 'about' ? "active" : ''}>
+                            <Link href="#about"><a onClick={()=> setToggle({...toggle, active: "about"})}>About</a></Link>
                         </ListItem>
-                        <ListItem className={toggle.active === 'roadmap' ? "active" : ''}>
-                            <Link href="#roadmap"><a onClick={ ()=> setToggle({...toggle, active: "roadmap"})}>Features</a></Link>
+                        <ListItem className={toggle.active === 'features' ? "active" : ''}>
+                            <Link href="#features"><a onClick={ ()=> setToggle({...toggle, active: "features"})}>Features</a></Link>
                         </ListItem>
                         <ListItem className={toggle.active === 'ourteam' ? "active" : ''}>
                             <Link href="#ourteam"><a onClick={()=> setToggle({...toggle, active: "ourteam"})}>Teams</a></Link>
                         </ListItem>
-                        <ListItem className={toggle.active === 'ourteam' ? "active" : ''}>
-                            <Link href="#ourteam"><a onClick={()=> setToggle({...toggle, active: "ourteam"})}>Token Economics</a></Link>
+                        <ListItem className={toggle.active === 'token' ? "active" : ''}>
+                            <Link href="#token"><a onClick={()=> setToggle({...toggle, active: "token"})}>Token Economics</a></Link>
                         </ListItem>
-                        <ListItem className={toggle.active === 'ourteam' ? "active" : ''}>
-                            <Link href="#ourteam"><a onClick={()=> setToggle({...toggle, active: "ourteam"})}>Partners</a></Link>
+                        <ListItem className={toggle.active === 'backedby' ? "active" : ''}>
+                            <Link href="#backedby"><a onClick={()=> setToggle({...toggle, active: "backedby"})}>Partners</a></Link>
                         </ListItem>
                         
                     </List>
