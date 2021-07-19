@@ -40,8 +40,7 @@ const Footer = () => {
         <Container>
           <Box className="footer-heading">
             <Box className="footer-heading-content">
-              <Image src={logo} />
-              <Text>Polrare</Text>
+              {/* <Image src={logo} /> */}
             </Box>
           </Box>
           <Box className="footer-main-content">

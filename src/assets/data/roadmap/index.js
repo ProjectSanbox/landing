@@ -1,103 +1,100 @@
 export default {
     roadmap: [
         {
-            time: "MAY 2021 - PHASE 1",
+            time: "MAY 2021 - PLANET 1",
             work: [
                 {
-                    name: "- Hero NFT Sale (BEP-721)"
+                    name: "- NFT Sale (BEP-721)"
                 },
                 {
-                    name: "- Hero Marketplace"
+                    name: "- Marketplace"
                 }
             ],
             right: true,
         },
         {
-            time: "JUN 2021 - PHASE 2",
+            time: "JUN 2021 - PLANET 2",
+            work: [
+                {
+                    name: "Introduce FARA token & IDO -"
+                },
+            ],
+            right: false,
+        },
+        {
+            time: "JULY 2021 - PLANET 3",
+            work: [
+                {
+                    name: "- NFT Sale (BEP-721) (BEP-1155)"
+                },
+                {
+                    name: "- Marketplace"
+                }
+            ],
+            right: true,
+        },
+        {
+            time: "AUG - NOV 2021 - PLANET 4",
             work: [
                 {
                     name: "Introduce FARA token & IDO -"
                 },
                 {
-                    name: "Stake FARA to increase hero’s level -"
+                    name: "Marketplace -"
                 }
             ],
             right: false,
         },
         {
-            time: "JULY 2021 - PHASE 3",
+            time: "DEC 2021 - PLANET 5",
             work: [
                 {
-                    name: "- Hero Equipment (BEP-1155)"
+                    name: "- NFT Sale (BEP-721) (BEP-2155)"
                 },
                 {
-                    name: "- Gacha Equipment Vendor"
-                }
+                    name: "- Marketplace"
+                },
+                {
+                    name: "- Introduce FARA token & IDO"
+                },
             ],
             right: true,
         },
         {
-            time: "AUG - NOV 2021 - PHASE 4",
+            time: "Q1 2022 - PLANET 6",
             work: [
                 {
-                    name: "DAO platform -"
+                    name: "NFT Sale (BEP-721) (BEP-2155) -"
                 },
                 {
-                    name: "- Hero Marketplace"
+                    name: "Marketplace -"
+                },
+                {
+                    name: "Introduce FARA token & IDO -"
                 }
             ],
             right: false,
         },
         {
-            time: "DEC 2021 - PHASE 5",
+            time: "Q2 2022 - PLANET 7",
             work: [
                 {
-                    name: "- Hero DUEL Arena (Turn-based Combat)"
+                    name: "- NFT Sale (BEP-721) (BEP-2155)"
                 },
                 {
-                    name: "- Android & IOS version"
+                    name: "- Marketplace"
                 },
                 {
-                    name: "- Troop Recruiting & Mount"
+                    name: "- Introduce FARA token & IDO"
                 },
             ],
             right: true,
         },
         {
-            time: "Q1 2022 - PHASE 6",
+            time: "Q3 2022 - PLANET 8",
             work: [
                 {
-                    name: "World Map Release -"
-                },
-                {
-                    name: "Land Customization & Camping System -"
-                },
-                {
-                    name: "Introduce Monsters -"
-                }
-            ],
-            right: false,
-        },
-        {
-            time: "Q2 2022 - PHASE 7",
-            work: [
-                {
-                    name: "- Guild Battle"
-                },
-                {
-                    name: "- War between Nations for Resources"
-                },
-                {
-                    name: "- Pet System with Breeding & Evolution"
-                }
-            ],
-            right: true,
-        },
-        {
-            time: "Q3 2022 - PHASE 8",
-            work: [
-                {
-                    name: "Multichain: ETH & DOT versions via PolkaFoundry -"
+                    name: "NFT Sale (BEP-721) (BEP-8155) -"
                 },
             ],
             right: false,

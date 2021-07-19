@@ -31,7 +31,7 @@ const Production = () => {
     }
 
     return (
-        <AboutSectionWrapper id="production">
+        <AboutSectionWrapper id="about">
             <Container>
                 <Row>
                     <Col style={{ overflow: 'hidden' }} className="lg-5 col-5 md-5 sm-12 xs-12">
@@ -53,7 +53,7 @@ const Production = () => {
                         <Box className="production-img">
                           <Image style={{width: '90%', marginLeft: '10%'}} src={imageContent} />
                           <Button onClick={() => toggleVideo(true)}>
-                              <BiPlayCircle />
+                            <a class="play-btn" href="javascript:0"></a>
                           </Button>
                         </Box>
                     </Col>
