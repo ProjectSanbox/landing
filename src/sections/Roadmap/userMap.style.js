@@ -6,7 +6,9 @@ const UserMapWrapper = styled.div`
   position: relative;
   border-bottom: 1px dashed #353945;
   
+
   .roadmap-background{
+    z-index: -1;
     width: 578.54px;
     height: 884.87px;
     position: absolute;
@@ -38,6 +40,7 @@ const UserMapWrapper = styled.div`
   }
 
   .roadmap-content{
+    z-index: 2;
     margin-top: 40px;
     margin-bottom: 60px;
     .roadmap-item{

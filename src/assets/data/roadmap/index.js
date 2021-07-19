@@ -4,10 +4,10 @@ export default {
             time: "MAY 2021 - PLANET 1",
             work: [
                 {
-                    name: "- Hero NFT Sale (BEP-721)"
+                    name: "- NFT Sale (BEP-721)"
                 },
                 {
-                    name: "- Hero Marketplace"
+                    name: "- Marketplace"
                 }
             ],
             right: true,
@@ -18,9 +18,6 @@ export default {
                 {
                     name: "Introduce FARA token & IDO -"
                 },
-                {
-                    name: "Stake FARA to increase hero’s level -"
-                }
             ],
             right: false,
         },
@@ -28,10 +25,10 @@ export default {
             time: "JULY 2021 - PLANET 3",
             work: [
                 {
-                    name: "- Hero Equipment (BEP-1155)"
+                    name: "- NFT Sale (BEP-721) (BEP-1155)"
                 },
                 {
-                    name: "- Gacha Equipment Vendor"
+                    name: "- Marketplace"
                 }
             ],
             right: true,
@@ -40,10 +37,10 @@ export default {
             time: "AUG - NOV 2021 - PLANET 4",
             work: [
                 {
-                    name: "DAO platform -"
+                    name: "Introduce FARA token & IDO -"
                 },
                 {
-                    name: "- Hero Marketplace"
+                    name: "Marketplace -"
                 }
             ],
             right: false,
@@ -52,13 +49,13 @@ export default {
             time: "DEC 2021 - PLANET 5",
             work: [
                 {
-                    name: "- Hero DUEL Arena (Turn-based Combat)"
+                    name: "- NFT Sale (BEP-721) (BEP-2155)"
                 },
                 {
-                    name: "- Android & IOS version"
+                    name: "- Marketplace"
                 },
                 {
-                    name: "- Troop Recruiting & Mount"
+                    name: "- Introduce FARA token & IDO"
                 },
             ],
             right: true,
@@ -67,13 +64,13 @@ export default {
             time: "Q1 2022 - PLANET 6",
             work: [
                 {
-                    name: "World Map Release -"
+                    name: "NFT Sale (BEP-721) (BEP-2155) -"
                 },
                 {
-                    name: "Land Customization & Camping System -"
+                    name: "Marketplace -"
                 },
                 {
-                    name: "Introduce Monsters -"
+                    name: "Introduce FARA token & IDO -"
                 }
             ],
             right: false,
@@ -82,14 +79,14 @@ export default {
             time: "Q2 2022 - PLANET 7",
             work: [
                 {
-                    name: "- Guild Battle"
+                    name: "- NFT Sale (BEP-721) (BEP-2155)"
                 },
                 {
-                    name: "- War between Nations for Resources"
+                    name: "- Marketplace"
                 },
                 {
-                    name: "- Pet System with Breeding & Evolution"
-                }
+                    name: "- Introduce FARA token & IDO"
+                },
             ],
             right: true,
         },
@@ -97,7 +94,7 @@ export default {
             time: "Q3 2022 - PLANET 8",
             work: [
                 {
-                    name: "Multichain: ETH & DOT versions via PolkaFoundry -"
+                    name: "NFT Sale (BEP-721) (BEP-8155) -"
                 },
             ],
             right: false,
