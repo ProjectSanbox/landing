@@ -2,20 +2,19 @@ import React from "react";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import Nav from "sections/Nav";
-
-import Exhibition from "sections/Exhibition";
-
+import HeadingBanner from "sections/HeadingBanner";
 import Roadmap from "sections/Roadmap";
 import Production from "sections/Production";
-import OurSolution from "sections/OurSolution";
+import Features from "sections/Features";
 import Advisor from "sections/Advisor";
 import BackedBy from "sections/BackedBy";
-import Block from "../src/sections/Block";
+import Block from "sections/Block";
+import BottomBanner from 'sections/BottomBanner';
 import Footer from "sections/Footer";
 import FavIcon from "assets/images/favicon.png";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
-import OurTeam from "../src/sections/OurTeam";
+import OurTeam from "sections/OurTeam";
 
 
 const Home = () => {
@@ -47,12 +46,13 @@ const Home = () => {
       <GlobalStyle />
       <Nav />
       {/* <NavBanner /> */}
-      <Exhibition />
+      <HeadingBanner />
       {/* <Slogan /> */}
       <Production />
-      <OurSolution/>
+      <Features/>
       <Roadmap />
       <Block />
+      <BottomBanner />
       <OurTeam />
       <Advisor />
       <BackedBy />

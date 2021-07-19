@@ -41,7 +41,7 @@ const Nav = () =>{
                 <List className="list-mobile">
                         <ListItem className="list-heading">
                            <Box className="menu-icon">
-                               <Image src={logo} />
+                               {/* <Image src={logo} /> */}
                            </Box>
                            <Box className="menu-close">
                                 <AiOutlineClose onClick={()=>handleToggleMenu(false)} />
@@ -70,7 +70,7 @@ const Nav = () =>{
             <Container>
                 <Box className="nav">
                     <Box className="navbar-menu"><AiOutlineBars onClick={()=>handleToggleMenu(true)} className="navbar-menu-icon" /></Box>
-                    <Image src={logo} />
+                    {/* <Image src={logo} /> */}
                     <List className="hide">
                         {/* <ListItem className={toggle.active === 'lauch' ? "active" : ''}>
                             <Link href="#lauch"><a onClick={()=> setToggle({...toggle, active: "lauch"})}>Lauch</a></Link>

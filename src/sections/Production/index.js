@@ -53,7 +53,7 @@ const Production = () => {
                         <Box className="production-img">
                           <Image style={{width: '90%', marginLeft: '10%'}} src={imageContent} />
                           <Button onClick={() => toggleVideo(true)}>
-                              <BiPlayCircle />
+                            <a class="play-btn" href="javascript:0"></a>
                           </Button>
                         </Box>
                     </Col>

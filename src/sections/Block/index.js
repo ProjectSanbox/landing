@@ -7,7 +7,7 @@ import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
 import Button from 'reusecore/Button';
 import Link from "next/link";
-import blockImage from 'assets/images/block/block-image.gif';
+import blockImage from 'assets/images/block/block-image.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
