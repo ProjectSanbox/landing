@@ -51,12 +51,11 @@ const Home = () => {
       <Production />
       <Features/>
       <Roadmap />
-      <Block />
-      <BottomBanner />
       <OurTeam />
       <Advisor />
       <BackedBy />
-     
+      <Block />
+      <BottomBanner />
       <Footer />
     </ThemeProvider>
   );

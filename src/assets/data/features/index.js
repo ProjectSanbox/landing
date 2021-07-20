@@ -3,39 +3,39 @@ import feaurues2 from 'assets/images/features/feaurues2.png';
 import feaurues3 from 'assets/images/features/feaurues3.jpg';
 import feaurues4 from 'assets/images/features/feaurues4.png';
 import feaurues5 from 'assets/images/features/feaurues5.png';
-import feaurues6 from 'assets/images/features/feaurues6.png';
+import feaurues6 from 'assets/images/features/feaurues6.jpg';
 
 export default {
     feuatures:[
         {
             img: feaurues1,
             heading: "Builder",
-            content: "New monster is born every hour, and bidding lasts for 24 hours."
+            content: "Create your own world with the tools we have available for you."
         },
         {
             img: feaurues2,
             heading: "Marketplace",
-            content: "You can create a new generation of monsters by breeding any two monsters."
+            content: "You can buy weapons and costumes, upgrade items,..."
         },
         {
             img: feaurues3,
             heading: "Battle",
-            content: "A monster has many stages of evolution depending on the Rarity. Evolution ensures cool new appearance and enhanced stats."
+            content: "Enter the system's random field or you can choose a field of each side with a maximum limit of 10 players."
         },
         {
             img: feaurues4,
             heading: "Evolve",
-            content: "Collect and maxout Legendary monster to claim lucrative prizes."
+            content: "You can upgrade weapons through events or shops."
         },
         {
             img: feaurues5,
             heading: "Collect",
-            content: "Unique battle mode in next seasons & Win ultra-rare rewards."
+            content: "Collect items through the event to receive many attractive gifts."
         },
         {
             img: feaurues6,
             heading: "Trading, Ranking & Social Features",
-            content: "Trade on Market place to boost your collection Compete with friends and other players Show off your pet army Socialise in private chat and world channel"
+            content: "You will get points after each match, join a lot of matches to increase your ranking."
         },
     ]
 }
