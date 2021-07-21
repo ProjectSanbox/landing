@@ -1,7 +1,7 @@
 export default {
     roadmap: [
         {
-            time: "MAY 2021 - PLANET 1",
+            time: "PHASE 1",
             work: [
                 {
                     name: "- NFT Sale (BEP-721)"
@@ -13,28 +13,34 @@ export default {
             right: true,
         },
         {
-            time: "JUN 2021 - PLANET 2",
+            time: "PHASE 2",
             work: [
                 {
-                    name: "Introduce FARA token & IDO -"
+                    name: "Introduce SAPL token & IDO -"
+                },
+                {
+                    name: "Sandbox Version 1.0 -"
                 },
             ],
             right: false,
         },
         {
-            time: "JULY 2021 - PLANET 3",
+            time: "PHASE 3",
             work: [
                 {
                     name: "- NFT Sale (BEP-721) (BEP-1155)"
                 },
                 {
                     name: "- Marketplace"
-                }
+                },
+                {
+                    name: "- Sandbox Version 2.0"
+                },
             ],
             right: true,
         },
         {
-            time: "AUG - NOV 2021 - PLANET 4",
+            time: "PHASE 4",
             work: [
                 {
                     name: "Introduce FARA token & IDO -"

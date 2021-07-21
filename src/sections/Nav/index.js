@@ -60,7 +60,7 @@ const Nav = () =>{
                             <Link href="#ourteam"><a onClick={()=>handleToggleMenu(false)}>Teams</a></Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="#token"><a onClick={()=>handleToggleMenu(false)}>Token Economic</a></Link>
+                            <Link href="https://docs.google.com/spreadsheets/d/1fvY97IAXIP3NklDm9cDKswKUp7HiH_16IrNjJ16pkvM/edit#gid=0"><a onClick={()=>handleToggleMenu(false)}>Token Economic</a></Link>
                         </ListItem>
                         <ListItem>
                             <Link href="#backedby"><a onClick={()=>handleToggleMenu(false)}>Partners</a></Link>
@@ -85,7 +85,7 @@ const Nav = () =>{
                             <Link href="#ourteam"><a onClick={()=> setToggle({...toggle, active: "ourteam"})}>Teams</a></Link>
                         </ListItem>
                         <ListItem className={toggle.active === 'token' ? "active" : ''}>
-                            <Link href="#token"><a onClick={()=> setToggle({...toggle, active: "token"})}>Token Economics</a></Link>
+                            <Link href="https://docs.google.com/spreadsheets/d/1fvY97IAXIP3NklDm9cDKswKUp7HiH_16IrNjJ16pkvM/edit#gid=0"><a onClick={()=> setToggle({...toggle, active: "token"})}>Token Economics</a></Link>
                         </ListItem>
                         <ListItem className={toggle.active === 'backedby' ? "active" : ''}>
                             <Link href="#backedby"><a onClick={()=> setToggle({...toggle, active: "backedby"})}>Partners</a></Link>
