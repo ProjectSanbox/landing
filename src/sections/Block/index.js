@@ -11,17 +11,17 @@ import blockImage from 'assets/images/block/block-image.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Block = () =>{
+const Block = () => {
 
-    useEffect(() =>{
+    useEffect(() => {
         AOS.init({
-            duration : 500,
+            duration: 500,
             easing: 'linear',
             offset: 1
         })
     })
 
-    return(
+    return (
         <BlockWrapper>
             <Container>
                 <Row>
@@ -33,8 +33,16 @@ const Block = () =>{
                     <Col className="lg-5 md-5 sm-12 xs-12">
                         <Box className="block-content">
                             <Box data-aos="fade-down">
-                                <Text className="block-content-heading">NFT</Text>
-                                <Text>Non-Fungible Tokens (NFTs) are virtual tokens minted on the blockchain for digital scarcity, security, and authenticity. They are unique, indivisible, and non-interchangeable - allowing true digital ownership of in-game assets.</Text>
+                                <Text className="block-content-heading">NFT strategy </Text>
+                                <Text>
+                                    The NFT strategy for this game will center around weapons, buildings, and ownable land.
+                                    can use this land to place workshops and resource mines.
+
+                                    Players can also improve these buildings and the land parcels by upgrading them.
+                                     However, land will be limited available. T
+                                     his all depends on player numbers.
+                                      You’ll be able to buy some NFTs from the NFT Makertplace (Polrare, OpenSea), while players can upgrade other items only through active gameplay and play-to-earn mechanics. Special unit upgrades will only be available as NFT purchases
+                                </Text>
                             </Box>
                             <Button data-aos="fade-up">
                                 <Link href="//marketplace.nmb.com.vn/#/">

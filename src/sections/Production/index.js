@@ -38,7 +38,7 @@ const Production = () => {
                         <Box data-aos="fade-right" className="production-info">
                             <Heading>THE BIGGEST SANDBOX TPS GAME ON BLOCKCHAIN </Heading>
                             <Text>
-                            Sandbox Planet is biggest physic sandbox game
+                            Sandbox Planet is biggest physic sandbox game allow players build and custom creative sandbox world with limitless build-in item.
                             </Text>
                             <Text>
                             Sandbox Planet is operated on Supported Network including Binance Smart Chain.
