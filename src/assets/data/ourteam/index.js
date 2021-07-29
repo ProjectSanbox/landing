@@ -9,7 +9,7 @@ export default {
     {
       avatar: theanh,
       name: "Anthony Chu",
-      job: "Co-founder & CTO",
+      job: "Co-founder & CEO",
       desc: "Anthony has years of experience in game 3D AR/VR develop. He",
       animation: "fade-right",
     },
@@ -17,7 +17,7 @@ export default {
      {
       avatar: minh,
       name: "Minh Nguyen",
-      job: "Co-founder / Game Director",
+      job: "Co-founder / Project Owner",
       desc: "Minh has years of experience in developing a variety of game genres. Having worked in multiple projects with a diverse team of up to 40 developers per-project, he brings quantity technical solutions and smooth team operation.",
       animation: "fade-down",   
       animation: "fade-down",
@@ -36,7 +36,7 @@ export default {
     {
       avatar: steven,
       name: "Hoan Nguyen",
-      job: "Co-founder / 3D Artis",
+      job: "3D Artis Lead",
       desc: "Steven has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
       animation: "fade-right",
       linked: "",

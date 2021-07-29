@@ -4,10 +4,13 @@ export default {
             time: "PHASE 1",
             work: [
                 {
-                    name: "- NFT Sale (BEP-721)"
+                    name: "- Game Announced, August, 2021"
                 },
                 {
-                    name: "- Marketplace"
+                    name: "- Game Promotion Starts"
+                },
+                {
+                    name: "- Sale of Genesis Collection Starts"
                 }
             ],
             right: true,
@@ -16,10 +19,10 @@ export default {
             time: "PHASE 2",
             work: [
                 {
-                    name: "Introduce SAPL token & IDO -"
+                    name: "Game Website Debut - "
                 },
                 {
-                    name: "Sandbox Version 1.0 -"
+                    name: "Token Starts Trading -"
                 },
             ],
             right: false,
@@ -28,13 +31,11 @@ export default {
             time: "PHASE 3",
             work: [
                 {
-                    name: "- NFT Sale (BEP-721) (BEP-1155)"
+                    name: "- Integrate with Marketplace (Opensea, Polrare)"
                 },
+               
                 {
-                    name: "- Marketplace"
-                },
-                {
-                    name: "- Sandbox Version 2.0"
+                    name: "- Alpha Game Release and Testing"
                 },
             ],
             right: true,
@@ -43,67 +44,34 @@ export default {
             time: "PHASE 4",
             work: [
                 {
-                    name: "Introduce FARA token & IDO -"
+                    name: "Beta Game Release -"
                 },
                 {
-                    name: "Marketplace -"
+                    name: "Mobile Version Release -"
                 }
             ],
             right: false,
         },
         {
-            time: "DEC 2021 - PLANET 5",
+            time: "PHASE 5",
             work: [
                 {
-                    name: "- NFT Sale (BEP-721) (BEP-2155)"
+                    name: "- Box builder launch"
                 },
                 {
                     name: "- Marketplace"
                 },
-                {
-                    name: "- Introduce FARA token & IDO"
-                },
+               
             ],
             right: true,
         },
         {
-            time: "Q1 2022 - PLANET 6",
+            time: "CONTINUE",
             work: [
-                {
-                    name: "NFT Sale (BEP-721) (BEP-2155) -"
-                },
-                {
-                    name: "Marketplace -"
-                },
-                {
-                    name: "Introduce FARA token & IDO -"
-                }
-            ],
-            right: false,
-        },
-        {
-            time: "Q2 2022 - PLANET 7",
-            work: [
-                {
-                    name: "- NFT Sale (BEP-721) (BEP-2155)"
-                },
-                {
-                    name: "- Marketplace"
-                },
-                {
-                    name: "- Introduce FARA token & IDO"
-                },
+               
+               
             ],
             right: true,
-        },
-        {
-            time: "Q3 2022 - PLANET 8",
-            work: [
-                {
-                    name: "NFT Sale (BEP-721) (BEP-8155) -"
-                },
-            ],
-            right: false,
         },
     ]
 }
