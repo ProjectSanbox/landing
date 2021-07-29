@@ -71,7 +71,7 @@ export default {
                
                
             ],
-            right: true,
+            right: false,
         },
     ]
 }
