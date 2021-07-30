@@ -101,7 +101,7 @@ const Footer = () => {
               </Row>
             </Box>
             <Box className="footer-introduce">
-              <Text>MineSandbox</Text>
+              <Text>© Minesandbox | All right rserved 2021</Text>
               {/* <Box className="footer-introduce-service">
                 <Text>We use cookies for better service.</Text>
               </Box> */}

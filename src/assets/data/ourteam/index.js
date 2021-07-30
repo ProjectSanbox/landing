@@ -37,7 +37,7 @@ export default {
   
     {
       avatar: hoannguyen,
-      name: "Hoan Nguyen",
+      name: "Hoan Ngo",
    
       job: "3D Artis Lead",
       desc: "Hoan has years of experience in game 3D AR/VR design.",
