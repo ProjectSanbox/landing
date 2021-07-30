@@ -1,6 +1,7 @@
 import steven from "assets/images/team/nhan.svg";
 import theanh from "assets/images/team/theanh.jpeg";
 import minh from "assets/images/team/minh.png";
+import vietnguyen from "assets/images/team/vietnguyen.jpg";
 import hoannguyen from "assets/images/team/hoannguyen.jpg";
 
 
@@ -35,18 +36,18 @@ export default {
     },
   
     {
-      avatar: hoannguyen,
-      name: "Hoan Nguyen",
+      avatar: vietnguyen,
+      name: "Viet Nguyen",
       job: "3D Artis Lead",
-      desc: "Steven has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
+      desc: "Viet has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
       animation: "fade-right",
       linked: "",
     },
     {
-      avatar: steven,
-      name: "Viet Nguyen",
+      avatar: hoannguyen,
+      name: "Hoan Nguyen",
       job: "Project Lead",
-      desc: "Steven has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
+      desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
       animation: "fade-right",
       linked: "",
     },

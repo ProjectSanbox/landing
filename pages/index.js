@@ -22,7 +22,7 @@ const Home = () => {
     <ThemeProvider theme={theme}>
       <Head>
         <title>
-          Sandbox Planet
+        Minesandbox.io
         </title>
         <meta
           name="Description"

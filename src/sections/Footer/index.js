@@ -52,7 +52,7 @@ const Footer = () => {
                         <Link href="tel:+84.963.580.812"><a>T: +84.963.580.812</a></Link>
                       </ListItem>
                       <ListItem>
-                        <Link href="mailto:contact@polrare.io"><a>M: contact@polrare.io</a></Link>
+                        <Link href="mailto:contact@minesandbox.io"><a>M: contact@minesandbox.io</a></Link>
                       </ListItem>
                   </List>
                 </Col>
@@ -101,7 +101,7 @@ const Footer = () => {
               </Row>
             </Box>
             <Box className="footer-introduce">
-              <Text>© Polare | All right rserved 2021</Text>
+              <Text>MineSandbox</Text>
               {/* <Box className="footer-introduce-service">
                 <Text>We use cookies for better service.</Text>
               </Box> */}
