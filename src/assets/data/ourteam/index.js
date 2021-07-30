@@ -1,6 +1,7 @@
 import steven from "assets/images/team/nhan.svg";
 import theanh from "assets/images/team/theanh.jpeg";
 import minh from "assets/images/team/minh.png";
+import hoannguyen from "assets/images/team/hoannguyen.jpg";
 
 
 export default {
@@ -34,7 +35,7 @@ export default {
     },
   
     {
-      avatar: steven,
+      avatar: hoannguyen,
       name: "Hoan Nguyen",
       job: "3D Artis Lead",
       desc: "Steven has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",

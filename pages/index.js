@@ -11,7 +11,7 @@ import BackedBy from "sections/BackedBy";
 import Block from "sections/Block";
 import BottomBanner from 'sections/BottomBanner';
 import Footer from "sections/Footer";
-import FavIcon from "assets/images/favicon.png";
+import FavIcon from "assets/images/MineSandboxLogo.png";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
 import OurTeam from "sections/OurTeam";

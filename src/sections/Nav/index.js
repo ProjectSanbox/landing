@@ -3,7 +3,7 @@ import NavWrapper from './nav.style';
 import Box from 'reusecore/Box';
 import Image from 'reusecore/Image';
 import {Container} from 'reusecore/Layout';
-import logo from 'assets/images/NewLogo.svg';
+import logo from 'assets/images/MineSandboxLogo.png';
 import {List, ListItem} from 'reusecore/List';
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -70,7 +70,7 @@ const Nav = () =>{
             <Container>
                 <Box className="nav">
                     <Box className="navbar-menu"><AiOutlineBars onClick={()=>handleToggleMenu(true)} className="navbar-menu-icon" /></Box>
-                    {/* <Image src={logo} /> */}
+                    <Image src={logo} />
                     <List className="hide">
                         {/* <ListItem className={toggle.active === 'lauch' ? "active" : ''}>
                             <Link href="#lauch"><a onClick={()=> setToggle({...toggle, active: "lauch"})}>Lauch</a></Link>

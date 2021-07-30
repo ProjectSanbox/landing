@@ -45,6 +45,10 @@ const NavWrapper = styled.div`
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                height: 78px;
+                img{
+                    width: 60px;
+                }
                 .menu-icon{
                     display: flex;
                     align-items: center;
@@ -84,7 +88,7 @@ const NavWrapper = styled.div`
         align-items: center;
         z-index: 7;
         img{
-            width: 129px;
+            width: 60px;
         }
 
         .navbar-menu{

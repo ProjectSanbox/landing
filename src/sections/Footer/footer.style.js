@@ -34,7 +34,7 @@ h1{
       left: 50%;
       transform: translate(-50%, -50%);
       img{
-        width: 129px;
+        width: 100px;
         margin-right: 20px;
       }
       p{

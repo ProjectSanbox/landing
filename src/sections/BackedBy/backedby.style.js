@@ -35,7 +35,7 @@ const BackedByWrapper  = styled.div`
         flex-wrap: wrap;
         justify-content: center;
         .backedby-item{
-            width: 219px;
+            width: 336px;
             height: 147px;
             margin: 15px;
             border-radius: 16px;
@@ -44,11 +44,11 @@ const BackedByWrapper  = styled.div`
             cursor: pointer;
 
             &:hover{
-                background: #535354;
+                background: #37415c;
             }
 
             img{
-                width: 122px;
+                width: 152px;
                 position: absolute;
                 top: 50%;
                 left: 50%;

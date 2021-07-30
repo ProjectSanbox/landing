@@ -9,7 +9,7 @@ import Text from "reusecore/Text";
 import data from "assets/data/footer";
 import Image from "reusecore/Image"
 import FooterWrapper from "./footer.style";
-import logo from "assets/images/NewLogo.svg";
+import logo from "assets/images/MineSandboxLogo.png";
 import {GrFormNextLink} from 'react-icons/gr';
 import Input from "reusecore/Form/Input";
 import Button from "reusecore/Button";
@@ -40,7 +40,7 @@ const Footer = () => {
         <Container>
           <Box className="footer-heading">
             <Box className="footer-heading-content">
-              {/* <Image src={logo} /> */}
+              <Image src={logo} />
             </Box>
           </Box>
           <Box className="footer-main-content">
