@@ -38,13 +38,13 @@ const Production = () => {
                         <Box data-aos="fade-right" className="production-info">
                             <Heading>THE BIGGEST SANDBOX TPS GAME ON BLOCKCHAIN </Heading>
                             <Text>
-                            Sandbox Planet is biggest physic sandbox game allow players build and custom creative sandbox world with limitless build-in item.
+                            Minesandbox is biggest physic sandbox game allow players build and custom creative sandbox world with limitless build-in item.
                             </Text>
                             <Text>
-                            Sandbox Planet is operated on Supported Network including Binance Smart Chain.
+                            Minesandbox is operated on Supported Network including Binance Smart Chain.
                             </Text>
                             <Text>
-                            Last but not least, Sandbox Planet is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battles
+                            Last but not least, Minesandbox is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battles
                                 </Text>
                             
                         </Box>

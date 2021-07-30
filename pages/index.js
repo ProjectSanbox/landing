@@ -26,7 +26,7 @@ const Home = () => {
         </title>
         <meta
           name="Description"
-          content="Sandbox Planet is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battle"
+          content="Minesandbox is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battle"
         />
         <meta name="theme-color" content="#280D57" />
         <link rel="shortcut icon" type="image/x-icon" href={FavIcon} />
