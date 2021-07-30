@@ -39,7 +39,7 @@ export default {
       avatar: hoannguyen,
       name: "Hoan Ngo",
    
-      job: "3D Artis Lead",
+      job: "3D Artist Lead",
       desc: "Hoan has years of experience in game 3D AR/VR design.",
       animation: "fade-right",
       linked: "",
