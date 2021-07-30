@@ -59,9 +59,9 @@ const Nav = () =>{
                         <ListItem>
                             <Link href="#ourteam"><a onClick={()=>handleToggleMenu(false)}>Teams</a></Link>
                         </ListItem>
-                        <ListItem>
+                        {/* <ListItem>
                             <Link href="https://docs.google.com/spreadsheets/d/1fvY97IAXIP3NklDm9cDKswKUp7HiH_16IrNjJ16pkvM/edit#gid=0"><a onClick={()=>handleToggleMenu(false)}>Token Economic</a></Link>
-                        </ListItem>
+                        </ListItem> */}
                         <ListItem>
                             <Link href="#backedby"><a onClick={()=>handleToggleMenu(false)}>Partners</a></Link>
                         </ListItem>

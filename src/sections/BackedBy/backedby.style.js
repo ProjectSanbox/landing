@@ -39,13 +39,9 @@ const BackedByWrapper  = styled.div`
             height: 147px;
             margin: 15px;
             border-radius: 16px;
-            background: #17181C;
+            background: #37415c;
             position: relative;
             cursor: pointer;
-
-            &:hover{
-                background: #37415c;
-            }
 
             img{
                 width: 152px;
