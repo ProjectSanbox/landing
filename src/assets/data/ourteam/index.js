@@ -11,7 +11,7 @@ export default {
     {
       avatar: theanh,
       name: "Anthony Chu",
-      job: "Co-founder & CEO",
+      job: "Co-founder/COO",
       desc: "Anthony has years of experience in game 3D AR/VR develop. He",
       animation: "fade-right",
     },
@@ -19,7 +19,7 @@ export default {
      {
       avatar: minh,
       name: "Minh Nguyen",
-      job: "Co-founder / Project Owner",
+      job: "Co-founder/CEO",
       desc: "Minh has years of experience in developing a variety of game genres. Having worked in multiple projects with a diverse team of up to 40 developers per-project, he brings quantity technical solutions and smooth team operation.",
       animation: "fade-down",   
       animation: "fade-down",
