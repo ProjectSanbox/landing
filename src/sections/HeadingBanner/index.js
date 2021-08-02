@@ -22,7 +22,7 @@ const HeadingBanner = () => {
                 <Box className="headingBackground">
                    <Box className="headingContent">
                         <Box data-aos="fade-right">
-                            <Heading>MINESANDBOX</Heading>
+                            <Heading>PLANET SANDBOX</Heading>
                             <Text>The biggest Third-Person Shooter game on blockchain</Text>
                             <Text>Play, Create, Own, and Govern a virtual world made by players</Text>
                         </Box>

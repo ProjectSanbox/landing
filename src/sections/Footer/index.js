@@ -52,7 +52,7 @@ const Footer = () => {
                         <Link href="tel:+84.963.580.812"><a>T: +84.963.580.812</a></Link>
                       </ListItem>
                       <ListItem>
-                        <Link href="mailto:contact@minesandbox.io"><a>M: contact@minesandbox.io</a></Link>
+                        <Link href="mailto:contact@planetsandbox.io"><a>M: contact@planetsandbox.io</a></Link>
                       </ListItem>
                   </List>
                 </Col>
@@ -101,10 +101,8 @@ const Footer = () => {
               </Row>
             </Box>
             <Box className="footer-introduce">
-              <Text>© Minesandbox | All right rserved 2021</Text>
-              {/* <Box className="footer-introduce-service">
-                <Text>We use cookies for better service.</Text>
-              </Box> */}
+              <Text>© Planet Sandbox | All right rserved 2021</Text>
+          
             </Box>
         </Container>
       </Box>

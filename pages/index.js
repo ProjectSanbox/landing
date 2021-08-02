@@ -22,11 +22,11 @@ const Home = () => {
     <ThemeProvider theme={theme}>
       <Head>
         <title>
-        Minesandbox.io
+          Planet Sandbox
         </title>
         <meta
           name="Description"
-          content="Minesandbox is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battle"
+          content="Planet Sandbox is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battle"
         />
         <meta name="theme-color" content="#280D57" />
         <link rel="shortcut icon" type="image/x-icon" href={FavIcon} />
@@ -41,7 +41,7 @@ const Home = () => {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet" />
       </Head>
       <GlobalStyle />
       <Nav />
@@ -49,13 +49,13 @@ const Home = () => {
       <HeadingBanner />
       {/* <Slogan /> */}
       <Production />
-      <Features/>
+      <Features />
       <Block />
       <Roadmap />
       <OurTeam />
       <Advisor />
       <BackedBy />
-   
+
       <BottomBanner />
       <Footer />
     </ThemeProvider>
