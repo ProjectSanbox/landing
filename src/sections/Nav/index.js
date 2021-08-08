@@ -51,19 +51,22 @@ const Nav = () =>{
                             <Link href="#lauch"><a onClick={()=>handleToggleMenu(false)}>Lauch</a></Link>
                         </ListItem> */}
                         <ListItem>
-                            <Link href="#about"><a onClick={()=>handleToggleMenu(false)}>About</a></Link>
+                            <Link href="#"><a onClick={()=>handleToggleMenu(false)}>Home</a></Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="#features"><a onClick={()=>handleToggleMenu(false)}>Features</a></Link>
+                            <Link href="#about"><a onClick={()=>handleToggleMenu(false)}>GamePlay</a></Link>
                         </ListItem>
                         <ListItem>
-                            <Link href="#ourteam"><a onClick={()=>handleToggleMenu(false)}>Teams</a></Link>
+                            <Link href="#NFT"><a onClick={()=>handleToggleMenu(false)}>NFT</a></Link>
                         </ListItem>
-                        {/* <ListItem>
-                            <Link href="https://docs.google.com/spreadsheets/d/1fvY97IAXIP3NklDm9cDKswKUp7HiH_16IrNjJ16pkvM/edit#gid=0"><a onClick={()=>handleToggleMenu(false)}>Token Economic</a></Link>
-                        </ListItem> */}
                         <ListItem>
-                            <Link href="#backedby"><a onClick={()=>handleToggleMenu(false)}>Partners</a></Link>
+                            <Link href="#roadmap"><a onClick={()=>handleToggleMenu(false)}>Roadmap</a></Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="#ourteam"><a onClick={()=>handleToggleMenu(false)}>Team</a></Link>
+                        </ListItem>
+                        <ListItem>
+                            <Link href="#backedby"><a onClick={()=>handleToggleMenu(false)}>MarketPlace</a></Link>
                         </ListItem>
                     </List>
             </Box>
@@ -75,20 +78,23 @@ const Nav = () =>{
                         {/* <ListItem className={toggle.active === 'lauch' ? "active" : ''}>
                             <Link href="#lauch"><a onClick={()=> setToggle({...toggle, active: "lauch"})}>Lauch</a></Link>
                         </ListItem> */}
-                        <ListItem className={toggle.active === 'about' ? "active" : ''}>
-                            <Link href="#about"><a onClick={()=> setToggle({...toggle, active: "about"})}>About</a></Link>
+                        <ListItem className={toggle.active === '#' ? "active" : ''}>
+                            <Link href="#"><a onClick={()=> setToggle({...toggle, active: "#"})}>Home</a></Link>
                         </ListItem>
-                        <ListItem className={toggle.active === 'features' ? "active" : ''}>
-                            <Link href="#features"><a onClick={ ()=> setToggle({...toggle, active: "features"})}>Features</a></Link>
+                        <ListItem className={toggle.active === 'about' ? "active" : ''}>
+                            <Link href="#about"><a onClick={ ()=> setToggle({...toggle, active: "about"})}>GamePlay</a></Link>
+                        </ListItem>
+                        <ListItem className={toggle.active === 'NFT' ? "active" : ''}>
+                            <Link href="#NFT"><a onClick={()=> setToggle({...toggle, active: "NFT"})}>NFT</a></Link>
+                        </ListItem>
+                        <ListItem className={toggle.active === 'roadmap' ? "active" : ''}>
+                            <Link href="#roadmap"><a onClick={()=> setToggle({...toggle, active: "roadmap"})}>Roadmap</a></Link>
                         </ListItem>
                         <ListItem className={toggle.active === 'ourteam' ? "active" : ''}>
-                            <Link href="#ourteam"><a onClick={()=> setToggle({...toggle, active: "ourteam"})}>Teams</a></Link>
-                        </ListItem>
-                        <ListItem className={toggle.active === 'token' ? "active" : ''}>
-                            <Link href="https://docs.google.com/spreadsheets/d/1fvY97IAXIP3NklDm9cDKswKUp7HiH_16IrNjJ16pkvM/edit#gid=0"><a onClick={()=> setToggle({...toggle, active: "token"})}>Token Economics</a></Link>
+                            <Link href="#ourteam"><a onClick={()=> setToggle({...toggle, active: "ourteam"})}>Team</a></Link>
                         </ListItem>
                         <ListItem className={toggle.active === 'backedby' ? "active" : ''}>
-                            <Link href="#backedby"><a onClick={()=> setToggle({...toggle, active: "backedby"})}>Partners</a></Link>
+                            <Link href="#backedby"><a onClick={()=> setToggle({...toggle, active: "backedby"})}>MarketPlace</a></Link>
                         </ListItem>
                         
                     </List>

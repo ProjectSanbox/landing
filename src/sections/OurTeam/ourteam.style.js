@@ -39,46 +39,68 @@ const OurTeamWrapper = styled.div`
     }
 
     .ourteam-content{
-        display: flex;
-        flex-wrap: wrap;
         .ourteam-item{
-            background: #17181C;
-            border-radius: 16px;
-            padding: 25px 35px;
-            margin-bottom: 20px;
-            height: 415px;
-            overflow: hidden;
-            .ourteam-item-heading{
-                text-align: center;
-                p{
-                    margin: 0;
-                    font-size: 14px;
-                    line-height: 24px;
-                    color: #FCFCFD;     
-                }
-
-                p.text-job{
-                    color: #ACA7ED;
-                    padding-bottom: 20px;
-                    border-bottom: 1px solid #353945;
-                }
-
+            padding: 0px 10px;
+            .ourteam-img{
                 img{
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 50%;
-                    margin: auto;
-                    margin-bottom: 20px;
+                    clip-path: polygon(11% 0, 100% 0%, 90% 100%, 0% 100%);
+                    border-bottom-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 50px;
+                    border-top-left-radius: 50px;
                 }
             }
-            
-            .ourteam-item-desc{
-                font-size: 14px;
-                line-height: 24px;
-                color: #ACA7ED;
-                padding-top: 20px;
+        }
+
+        .slick-dots{
+            margin-top: 20px;
+            li{
+                width: 100px;
+                height: 5px;
+                background: #fff;
+                border-radius: 10px;
+                &.slick-active{
+                    background: ${props => props.theme.primaryColor};
+                }
+              .ft-slick__dots--custom{
+                width: 100%;
+                height: 100%;
+              }
             }
-        }   
+        }
+
+        .ourteam-info{
+            width: 100%;
+            text-align: center;
+            p{
+                margin: 0;
+                padding: 0;
+                &.ourteam-name{
+                    margin-top: 20px;
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+                &.ourteam-role{
+                    font-size: 15px;
+                    color: ${props => props.theme.primaryColor};
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .slick-arrow{
+            &.slick-prev{
+                display: none!important;
+            }
+
+            &.slick-next{
+                display: none!important;
+            }
+        }
+
     }
 
     @media only screen and (max-width: 1000px){

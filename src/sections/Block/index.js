@@ -22,7 +22,7 @@ const Block = () => {
     })
 
     return (
-        <BlockWrapper>
+        <BlockWrapper id="NFT">
             <Container>
                 <Row>
                     <Col className="lg-7 md-7 sm-12 xs-12">
