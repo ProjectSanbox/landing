@@ -1,6 +1,6 @@
 import steven from "assets/images/team/Nhan.png";
 import theanh from "assets/images/team/TheAnh.png";
-import minh from "assets/images/team/Minh.png";
+import minh from "assets/images/team/AMinh.png";
 import vietnguyen from "assets/images/team/Viet.png";
 import hoannguyen from "assets/images/team/Hoan.png";
 import quyen from "assets/images/team/Quyen.png";
