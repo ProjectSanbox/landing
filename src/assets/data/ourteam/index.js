@@ -73,7 +73,7 @@ export default {
     {
       avatar: hai,
       name: "Hai Ngo",
-      job: "2D Artist",
+      job: "Fullstack Developer",
       // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
       animation: "flip-left",
       linked: "",
