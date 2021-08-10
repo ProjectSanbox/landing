@@ -9,6 +9,8 @@ import GamePlay from "sections/GamePlay";
 import Advisor from "sections/Advisor";
 import BackedBy from "sections/BackedBy";
 import Block from "sections/Block";
+import NBP from "sections/SBPSection";
+import NBPI from "sections/SBPISection";
 import BottomBanner from 'sections/BottomBanner';
 import Footer from "sections/Footer";
 import FavIcon from "assets/images/MineSandboxLogo.png";
@@ -42,6 +44,8 @@ const Home = () => {
       <Production />
       <GamePlay />
       <Block />
+      <NBP />
+      <NBPI />
       <Roadmap />
       <OurTeam />
       <Advisor />
