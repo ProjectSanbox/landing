@@ -46,7 +46,6 @@ const Home = () => {
       <OurTeam />
       <Advisor />
       <BackedBy />
-
       <BottomBanner />
       <Footer />
     </ThemeProvider>

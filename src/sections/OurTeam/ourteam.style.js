@@ -53,7 +53,7 @@ const OurTeamWrapper = styled.div`
         }
 
         .slick-dots{
-            margin-top: 20px;
+            margin: 20px;
             li{
                 width: 100px;
                 height: 5px;
@@ -132,6 +132,12 @@ const OurTeamWrapper = styled.div`
         h1{
             font-size: 49px;
             line-height: 49px;
+        }
+    }
+
+    .slick-dots{
+        li{
+          width: 20px!important;
         }
     }
   }
