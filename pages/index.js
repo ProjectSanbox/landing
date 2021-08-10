@@ -5,7 +5,7 @@ import Nav from "sections/Nav";
 import HeadingBanner from "sections/HeadingBanner";
 import Roadmap from "sections/Roadmap";
 import Production from "sections/Production";
-import Features from "sections/Features";
+import GamePlay from "sections/GamePlay";
 import Advisor from "sections/Advisor";
 import BackedBy from "sections/BackedBy";
 import Block from "sections/Block";
@@ -40,7 +40,7 @@ const Home = () => {
       <HeadingBanner />
       {/* <Slogan /> */}
       <Production />
-      <Features />
+      <GamePlay />
       <Block />
       <Roadmap />
       <OurTeam />

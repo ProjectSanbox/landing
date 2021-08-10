@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import background from 'assets/images/backgroundourteam.svg';
 
 const OurTeamWrapper = styled.div`
-    padding: 100px 0px;
+    padding: 120px 0px;
     border-bottom: 1px dashed #353945;
     position: relative;
 
@@ -124,6 +124,10 @@ const OurTeamWrapper = styled.div`
     }
 
     @media only screen and (max-width: 480px){
+        .ourteam-background{
+            background-size: cover;
+        }
+
         .ourteam-item{
             min-height: 375px;
         }

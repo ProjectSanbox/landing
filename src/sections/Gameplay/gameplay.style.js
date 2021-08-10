@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import background from 'assets/images/backgroundsolution.svg';
 
 
-const FeaturesWrapper = styled.div`
+const GamePlayWrapper = styled.div`
     padding: 60px 0px 100px;
     border-bottom: 1px dashed #353945;
     position: relative;
     
-    .features-background{
+    .gameplay-background{
         width: 100%;
         height: 976.54px;
         background: url(${background});
@@ -37,7 +37,7 @@ const FeaturesWrapper = styled.div`
         flex-direction: row-reverse;
     }
 
-    .features-heading{
+    .gameplay-heading{
         text-align: center;
         h1{
             font-size: 64px;
@@ -56,13 +56,13 @@ const FeaturesWrapper = styled.div`
         }
     }
 
-    .features-content{
-        .features-item{
+    .gameplay-content{
+        .gameplay-item{
             margin-bottom: 20px;
             img{
-                height: 197px;
+                height: 303px;
             }
-            .features-item-heading{
+            .gameplay-item-heading{
                 font-weight: 700;
                 font-size: 20px;
                 color: #ffffff;
@@ -75,9 +75,29 @@ const FeaturesWrapper = styled.div`
         }
     }
 
+    @media only screen and (max-width: 991px){
+        .gameplay-content{
+            .gameplay-item{
+                img{
+                    height: 185px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        .gameplay-content{
+            .gameplay-item{
+                img{
+                    height: auto;
+                }
+            }
+        }
+    }
+
     @media only screen and (max-width: 575px){
-        .features-content{
-            .features-item{
+        .gameplay-content{
+            .gameplay-item{
                 margin-bottom: 65px;
             }
         }
@@ -85,4 +105,4 @@ const FeaturesWrapper = styled.div`
 
 `;
 
-export default FeaturesWrapper;
+export default GamePlayWrapper;

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import FeaturesWrapper from './features.style';
+import GamePlayWrapper from './gameplay.style';
 import Box from 'reusecore/Box';
 import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
@@ -9,10 +9,10 @@ import Link from "next/link";
 import { Container, Row, Col } from 'reusecore/Layout';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import data from 'assets/data/features';
+import data from 'assets/data/gameplay';
 
 
-const Features = () => {
+const GamePlay = () => {
 
     useEffect(() => {
         AOS.init({
@@ -22,22 +22,22 @@ const Features = () => {
 
 
     return (
-    <FeaturesWrapper id="features">
+    <GamePlayWrapper id="gameplay">
         <Container>
-            <Box className="features-background">&nbsp;</Box>
-            <Box className="features-heading">
-                <Heading>Features</Heading>
-                <Text>All the distinctive gaming features revolving around our ecosystem</Text>
+            <Box className="gameplay-background">&nbsp;</Box>
+            <Box className="gameplay-heading">
+                <Heading>Game Play</Heading>
+                <Text>All the distinctive gaming gameplay revolving around our ecosystem</Text>
             </Box>
-            <Box className="features-content">
+            <Box className="gameplay-content">
                 <Row>
                     {
                         data.feuatures.map((feuature, index) =>{
                             return(
-                                <Col key={index} className="lg-4 md-4 sm-6 xs-12">
-                                <Box className="features-item">
+                                <Col key={index} className="lg-6 md-6 sm-12 xs-12">
+                                <Box className="gameplay-item">
                                     <Image src={feuature.img} />
-                                    <Text className="features-item-heading">
+                                    <Text className="gameplay-item-heading">
                                         {feuature.heading}
                                     </Text>
                                     <Text>{feuature.content}</Text>
@@ -49,8 +49,8 @@ const Features = () => {
                 </Row>
             </Box>
         </Container>
-    </FeaturesWrapper>
+    </GamePlayWrapper>
     );
 }
 
-export default Features;
+export default GamePlay;
