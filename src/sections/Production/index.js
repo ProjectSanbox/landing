@@ -60,7 +60,7 @@ const Production = () => {
                 </Row>
                {state.openVideo &&  <Box onClick={() => toggleVideo(false)} className="overlay">
                     <Button onClick={() => toggleVideo(false)}><GrClose/></Button>
-                    <iframe width="85%" height="90%" src="https://www.youtube.com/embed/jC7l8Q7Chs0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="85%" height="90%" src="https://www.youtube.com/embed/n-2LLE4CeTw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </Box>}
             </Container>
         </AboutSectionWrapper>
