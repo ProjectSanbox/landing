@@ -4,7 +4,7 @@ export default {
   links: [
     {
       icon: <FaTwitter />,
-      url: "//twitter.com/x89_nft",
+      url: "//twitter.com/planetsandbox",
       name: "Twitter",
     },
 
