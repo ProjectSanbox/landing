@@ -9,6 +9,7 @@ import data from 'assets/data/ourteam';
 import Slider from 'react-slick';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
 
 const OurTeam = () =>{
     const settings = {
@@ -22,6 +23,8 @@ const OurTeam = () =>{
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
+        nextArrow: <NextArrow className="nextButton" />,
+        prevArrow: <PrevArrow className="preButton" />,
         responsive: [
             {
               breakpoint: 1024,
@@ -71,6 +74,7 @@ const OurTeam = () =>{
                         </Box>
                         )}
                    </Slider>
+                   <Box className="content-backgound"></Box>
                 </Box>
             </Container>
         </OurTeamWrapper>

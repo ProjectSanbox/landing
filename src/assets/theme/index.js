@@ -1,7 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
-
+// import 'assets/font/gomarice_goma_block.ttf';
 
 const GlobalStyle = createGlobalStyle`
+
+/* @font-face {
+    font-family: "GomaBlock";
+    src: url('./gomarice_goma_block.ttf') format("truetype");
+} */
 
 ::selection {
     background: #333333;
@@ -57,13 +62,17 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Poppins', sans-serif;
-    color: ${props => props.theme.headingColor ? props.theme.headingColor : '#FFFFFF'};  
+    color: ${props => props.theme.headingColor ? props.theme.headingColor : '#FFFFFF'};
+    font-family: "GomaBlock", sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
 }
 
 p{
   font-family: sans-serif;
     margin: 0 0 15px 0;
+    color: #ffffff;
 }
 
 a{

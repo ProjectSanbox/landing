@@ -8,7 +8,7 @@ import Production from "sections/Production";
 import GamePlay from "sections/GamePlay";
 import Advisor from "sections/Advisor";
 import BackedBy from "sections/BackedBy";
-import Block from "sections/Block";
+import Block from "sections/NFT";
 import NBP from "sections/SBPSection";
 import NBPI from "sections/SBPISection";
 import BottomBanner from 'sections/BottomBanner';
@@ -38,9 +38,7 @@ const Home = () => {
       </Head>
       <GlobalStyle />
       <Nav />
-      {/* <NavBanner /> */}
       <HeadingBanner />
-      {/* <Slogan /> */}
       <Production />
       <GamePlay />
       <Block />

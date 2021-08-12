@@ -3,7 +3,6 @@ import styled from "styled-components";
 const AboutSectionWrapper = styled.div`
   padding: 100px 0;
   position: relative;
-  border-bottom: 1px dashed #353945;
   .text-upper{
     text-transform: uppercase;
   }
