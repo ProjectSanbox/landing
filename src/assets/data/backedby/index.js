@@ -1,17 +1,12 @@
 
-import nmbLogo from 'assets/images/backedby/nmbLogo.png';
-import exnetwork from 'assets/images/backedby/Exnetwork.png';
-import icetea from 'assets/images/backedby/icetea.svg';
-import rikkei from 'assets/images/backedby/rikkei.svg';
-import decinvert from 'assets/images/backedby/dec-invert.png';
+
+import exnetwork from 'assets/images/backedby/exnetwork.png';
+import rectangle from 'assets/images/backedby/Rectangle.png';
+
 export default {
     backedby:[
-        // {
-        //     imageSrc: nmbLogo,
-        //     src: "//nmb.com.vn/",
-        // },
         {
-            imageSrc: icetea,
+            imageSrc: rectangle,
             src: "//icetea.io/",
         },
         {
@@ -19,13 +14,5 @@ export default {
             src: "//exnetworkcapital.com/",
         },
        
-        // {
-        //     imageSrc: rikkei,
-        //     src: "//rikkeisoft.com/en",
-        // },
-        // {
-        //     imageSrc: decinvert,
-        //     src: "//dec.ventures/",
-        // },
     ]
 }

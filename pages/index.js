@@ -4,14 +4,13 @@ import { ThemeProvider } from "styled-components";
 import Nav from "sections/Nav";
 import HeadingBanner from "sections/HeadingBanner";
 import Roadmap from "sections/Roadmap";
-import Production from "sections/Production";
+import Introduce from "sections/Introduce";
 import GamePlay from "sections/GamePlay";
 import Advisor from "sections/Advisor";
 import BackedBy from "sections/BackedBy";
 import Block from "sections/NFT";
 import NBP from "sections/SBPSection";
 import NBPI from "sections/SBPISection";
-import BottomBanner from 'sections/BottomBanner';
 import Footer from "sections/Footer";
 import FavIcon from "assets/images/MineSandboxLogo.png";
 import theme from "assets/theme/theme";
@@ -39,7 +38,7 @@ const Home = () => {
       <GlobalStyle />
       <Nav />
       <HeadingBanner />
-      <Production />
+      <Introduce />
       <GamePlay />
       <Block />
       <NBP />
@@ -48,7 +47,6 @@ const Home = () => {
       <OurTeam />
       <Advisor />
       <BackedBy />
-      <BottomBanner />
       <Footer />
     </ThemeProvider>
   );

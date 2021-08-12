@@ -209,10 +209,18 @@ const GamePlayWrapper = styled.div`
   }
 
   @media only screen and (max-width: 576px){
+    .gameplay-content{
+        margin: auto;
+    }
+
     .slick-dots{
         li{
             width: 100px;
         }
+    }
+
+    .slick-slide.slick-cloned {
+        opacity: 0;
     }
   }
    

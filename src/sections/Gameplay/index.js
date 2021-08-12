@@ -12,7 +12,6 @@ import Slider from 'react-slick';
 import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
 import data from 'assets/data/gameplay';
 
-
 const GamePlay = () => {
     const settings = {
         appendDots: dots => <ul>{dots}</ul>,
@@ -25,8 +24,19 @@ const GamePlay = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        // autoplay: true,
+        autoplaySpeed: 4000,
         nextArrow: <NextArrow className="nextButton" />,
-        prevArrow: <PrevArrow className="preButton" />
+        prevArrow: <PrevArrow className="preButton" />,
+        responsive: [
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
       };
       
 

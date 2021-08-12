@@ -5,6 +5,7 @@ const OurTeamWrapper = styled.div`
     padding: 160px 0px;
     position: relative;
     background: #EB5757;
+    z-index: 2;
 
     .ourteam-background{
         width: 100%;
@@ -39,6 +40,7 @@ const OurTeamWrapper = styled.div`
     }
 
     .ourteam-content{
+        position: relative;
         .ourteam-item{
             padding: 0px 10px;
             .ourteam-img{
@@ -49,7 +51,6 @@ const OurTeamWrapper = styled.div`
                }
             }
         }
-
         .ourteam-info{
             width: 100%;
             text-align: center;
@@ -80,7 +81,7 @@ const OurTeamWrapper = styled.div`
         width: 32px;
         height: 32px;
         border-radius: 4px;
-        background: #42B9FF;
+        background: #A61520;
         position: relative;
             img{
                 position: absolute;
@@ -147,6 +148,16 @@ const OurTeamWrapper = styled.div`
 
     }
 
+    
+    .content-backgound{
+            width: 100%;
+            height: 300px;
+            background: #A61520;
+            position: absolute;
+            top: 50%;
+            z-index: -1;
+        }
+
     @media only screen and (max-width: 1000px){
         .ourteam-item{
             padding: 20px 35px!important;
@@ -167,7 +178,14 @@ const OurTeamWrapper = styled.div`
         }
     }
 
+    @media only screen and (max-width: 769px){
+        .arrow{
+            display: none!important;
+        }
+    }
+
     @media only screen and (max-width: 480px){
+        padding: 30px 0px!important;
         .ourteam-background{
             background-size: cover;
         }
@@ -177,16 +195,15 @@ const OurTeamWrapper = styled.div`
         }
         padding: 0px 0px;
         .ourteam-heading{
+            margin-top: 30px;
         h1{
             font-size: 49px;
             line-height: 49px;
         }
     }
 
-    .slick-dots{
-        li{
-          width: 20px!important;
-        }
+    .arrow{
+        display: none;
     }
   }
 

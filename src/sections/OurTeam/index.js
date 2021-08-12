@@ -74,9 +74,9 @@ const OurTeam = () =>{
                         </Box>
                         )}
                    </Slider>
-                   <Box className="content-backgound"></Box>
                 </Box>
             </Container>
+            <Box className="content-backgound"></Box>
         </OurTeamWrapper>
     );
 }

@@ -9,7 +9,7 @@ import Text from "reusecore/Text";
 import data from "assets/data/footer";
 import Image from "reusecore/Image"
 import FooterWrapper from "./footer.style";
-import logo from "assets/images/MineSandboxLogo.png";
+import logo from "assets/images/logoFooter.png";
 import {GrFormNextLink} from 'react-icons/gr';
 import Input from "reusecore/Form/Input";
 import Button from "reusecore/Button";
@@ -33,77 +33,57 @@ const Footer = () => {
       setEmail(`mailto:${email}`);
     }
   }
-  
+
   return (
     <FooterWrapper>
       <Box className="footer-content-wrapper">
         <Container>
-          <Box className="footer-heading">
-            <Box className="footer-heading-content">
-              <Image src={logo} />
-            </Box>
-          </Box>
-          <Box className="footer-main-content">
-              <Row>
-                <Col className="lg-3 col-4 md-4 sm-6 xs-12">
-                  <Heading>Contact us</Heading>
-                  <List>
-                      <ListItem>
-                        <Link href="tel:+84.963.580.812"><a>T: +84.963.580.812</a></Link>
-                      </ListItem>
-                      <ListItem>
-                        <Link href="mailto:contact@planetsandbox.io"><a>M: contact@planetsandbox.io</a></Link>
-                      </ListItem>
-                  </List>
-                </Col>
-                <Col className="lg-3 col-4 md-4 sm-6 xs-12">
-                  <Heading>Documentation</Heading>
-                  <List>
-                     {data.documentation.map((document, index) => 
-                        <ListItem key={index}>
-                         <Link href={document.documentLink}><a target="_blank" className="upper">{document.documentName}</a></Link>                      
-                       </ListItem>
-                     )}
-                  </List>
-                </Col>
-                <Col className="lg-3 col-4 md-4 sm-6 xs-12">
-                  <Heading>Find us on</Heading>
-                  <List>
+          <Row>
+            <Col className="xl-4 lg-4 md-12 sm-12 xs-12">
+              <Box className="footer-heading">
+                <Box className="footer-heading-content">
+                  <Image src={logo} />
+                  <Text>© Planet Sandbox | All right rserved 2021</Text>
+                </Box>
+              </Box>
+            </Col>
+            <Col className="xl-8 lg-8 md-12 sm-12 xs-12">
+               <Box className="footer-list">
+                <Row>
+                  <Col className="xl-3 lg-3 md-6 sm-6 xs-6">
+                    <List>
+                      <ListItem>HOME</ListItem>
+                      <ListItem>Gameplay</ListItem>
+                      <ListItem>NFTS ITEMS</ListItem>
+                      <ListItem>COIN</ListItem>
+                    </List>
+                  </Col>
+                  <Col className="xl-3 lg-3 md-6 sm-6 xs-6">
+                    <List>
+                      <ListItem>TEAM</ListItem>
+                      <ListItem>ROADMAP</ListItem>
+                      <ListItem>DOCUMENT</ListItem>
+                    </List>
+                  </Col>
+                  <Col className="xl-3 lg-3 md-6 sm-6 xs-6">
+                    <List>
+                      <ListItem>ABOUT US</ListItem>
+                      <ListItem>POLICY</ListItem>
+                      <ListItem>WHITEPAPER</ListItem>
+                    </List> 
+                  </Col>
+                  <Col className="xl-3 lg-3 md-6 sm-6 xs-6">
+                    <Text className="footer-title">join our community</Text>
+                    <List className="footer-link">
                       {data.links.map((link, index) =>
-                        <ListItem key={index}>
-                          <Link href={link.url}><a target="_blank" className="upper">{link.icon} {link.name}</a></Link>                                          
-                        </ListItem>
+                        <ListItem key={index}><Link href={link.url}><a>{link.icon} {link.name}</a></Link></ListItem>
                       )}
-                  </List>
-                </Col>
-                <Col className="lg-3 col-4 md-4 sm-6 xs-12">
-                  <Heading>Join Newsletter</Heading>
-                  <ListItem>
-                  Be the first to hear about upcoming event
-                  </ListItem>
-                  <ListItem>
-                      <form action={email} method="post" encType="text/plain">
-                        <Box className="footer-input">
-                          <Input type="email" onChange={HandlerEmail} placeholder="Enter your email"/>
-                          {email === '' ? 
-                          <Button type="button">
-                            <GrFormNextLink/>
-                          </Button> : 
-
-                          <Button type="submit">
-                            <GrFormNextLink/>
-                          </Button>
-                          }
-                        </Box>
-                      </form>
-                  </ListItem>
-                </Col>
-              </Row>
-            </Box>
-            <Box className="footer-introduce">
-              <Text>© Planet Sandbox | All right rserved 2021</Text>
-          
-            </Box>
+                    </List> 
+                  </Col>
+                </Row>
+               </Box>
+            </Col>
+          </Row>
         </Container>
       </Box>
     </FooterWrapper>

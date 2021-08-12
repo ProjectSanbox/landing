@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const BackedByWrapper  = styled.div`
-    padding: 80px 0;
-
+    padding: 160px 0;
+    background: linear-gradient(181.29deg, #409FF5 7.66%, #42B2FD 50.07%, #0E1EAD 105.25%);
     h1{
         font-family: 'DM Sans', sans-serif;
         font-weight: 700;
@@ -24,8 +24,8 @@ const BackedByWrapper  = styled.div`
         }
 
         h1{
-            font-size: 64px;
-            line-height: 64px;
+            font-size: 48px;
+            line-height: 48px;
             color: #FCFCFD;
         }
     }
@@ -34,17 +34,19 @@ const BackedByWrapper  = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 100px;
         .backedby-item{
-            width: 336px;
-            height: 147px;
+            width: 544px;
+            height: 263px;
             margin: 15px;
             border-radius: 16px;
-            background: #37415c;
+            background: #ffffff;
             position: relative;
             cursor: pointer;
+            border: 10px solid #42B9FF;
 
             img{
-                width: 152px;
+                width: 55%;
                 position: absolute;
                 top: 50%;
                 left: 50%;
