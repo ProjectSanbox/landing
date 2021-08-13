@@ -27,9 +27,11 @@ const GamePlayWrapper = styled.div`
            align-items: center;
            .gameplay-intro{
                height: 392px;
-               flex: 60%;
+               flex: 55%;
+               left: -2%;
+               z-index: -1;
                position: relative;
-               background: linear-gradient(to right, #4b6cb7, #2d2d2d);
+               background: linear-gradient(to right, #4b6cb7,#303030);
               div{
                   width: 80%;
                   position: absolute;
@@ -201,12 +203,13 @@ const GamePlayWrapper = styled.div`
     }
   }
 
-  @media only screen and (max-width: 850px){
+  @media only screen and (max-width: 870px){
     .gameplay-content{
         .gameplay-video{
             flex-direction: column;
             .gameplay-intro{
                 flex: none;
+                left: 0;
                 width: 100%;
                 height: 400px;
             }

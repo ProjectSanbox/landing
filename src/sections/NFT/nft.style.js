@@ -7,22 +7,9 @@ const BlockWrapper = styled.div`
         text-align: center;
         margin-bottom: 40px;
        div{
-           display: flex;
            align-items: center;
            p{
                flex: 200%;
-           }
-           button{
-               width: 176px;
-               height: 36px;
-               background: #ffffff;
-               color: #000000;
-               text-transform: uppercase;
-               font-size: 10px;
-               font-weight: 900;
-               clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
-               border-top-left-radius: 17px;
-               border-bottom-right-radius: 17px;
            }
        }
     }
@@ -133,21 +120,8 @@ const BlockWrapper = styled.div`
         }
     }
 
-    .slick-dots{
-        bottom: -105px;
-            li{
-                width: 150px;
-                height: 6.25px;
-                background: #b5b4b1;
-                border-radius: 16px;
-                &.slick-active{
-                    background: #fff;
-                }
-              .ft-slick__dots--custom{
-                width: 100%;
-                height: 100%;
-            }
-        }
+    .slick-dots{    
+        display: none!important;
     }
 
 
@@ -159,20 +133,11 @@ const BlockWrapper = styled.div`
         }
     }
 
-    .slick-dots{
-        li{
-            width: 5%;
-        }
-    }
-
     .arrow{
         top: 100%;
         display: none;
     }
 
-    .slick-dots{
-        bottom: -60px;
-    }
   }
 `;
 

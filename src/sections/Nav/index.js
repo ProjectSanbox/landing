@@ -62,7 +62,7 @@ const Nav = () =>{
                     <List className="hide">
                         {data.nav.map((nav, index) =>
                         <ListItem key={index} className={toggle.active === nav.linkActive ? "active" : ''}>
-                            <Link href={nav.link}><a onClick={()=> setToggle({...toggle, active: nav.linkActive})}>{nav.content}</a></Link>
+                            <Link href={nav.link}><a target={nav.target ? '_blank' : '_self'} onClick={()=> setToggle({...toggle, active: nav.linkActive})}>{nav.content}</a></Link>
                         </ListItem>
                         )}
                     </List>

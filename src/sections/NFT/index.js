@@ -16,11 +16,6 @@ import coin from 'assets/images/NFT/coin.png'
 const Block = () => {
 
     const settings = {
-        appendDots: dots => <ul>{dots}</ul>,
-        customPaging: i => (
-        <div className="ft-slick__dots--custom">
-        </div>
-        ),
         dots: false,
         infinite: true,
         speed: 500,
@@ -65,7 +60,6 @@ const Block = () => {
                     <Box>
                         <Text>Each object will have its own categories and properties that define its characteristic.<br/>
                         Rarity is defined by NFT properties</Text>
-                        <Button>Marketplace</Button>
                     </Box>
                 </Box>
                 <Box className="NFT-content">
