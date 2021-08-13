@@ -9,6 +9,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import {AiOutlineBars, AiOutlineClose} from 'react-icons/ai';
 import { useState } from 'react';
+import data from 'assets/data/nav';
 
 
 const Nav = () =>{
@@ -47,27 +48,11 @@ const Nav = () =>{
                                 <AiOutlineClose onClick={()=>handleToggleMenu(false)} />
                            </Box>
                         </ListItem>
-                        {/* <ListItem>
-                            <Link href="#lauch"><a onClick={()=>handleToggleMenu(false)}>Lauch</a></Link>
-                        </ListItem> */}
-                        <ListItem>
-                            <Link href="#"><a onClick={()=>handleToggleMenu(false)}>Home</a></Link>
+                        {data.navMobie.map((nav, index) =>
+                        <ListItem key={index}>
+                            <Link href={nav.link}><a onClick={()=>handleToggleMenu(false)}>{nav.content}</a></Link>
                         </ListItem>
-                        <ListItem>
-                            <Link href="#about"><a onClick={()=>handleToggleMenu(false)}>GamePlay</a></Link>
-                        </ListItem>
-                        <ListItem>
-                            <Link href="#NFT"><a onClick={()=>handleToggleMenu(false)}>NFT</a></Link>
-                        </ListItem>
-                        <ListItem>
-                            <Link href="#roadmap"><a onClick={()=>handleToggleMenu(false)}>Roadmap</a></Link>
-                        </ListItem>
-                        <ListItem>
-                            <Link href="#ourteam"><a onClick={()=>handleToggleMenu(false)}>Team</a></Link>
-                        </ListItem>
-                        <ListItem>
-                            <Link href="#backedby"><a onClick={()=>handleToggleMenu(false)}>MarketPlace</a></Link>
-                        </ListItem>
+                        )}
                     </List>
             </Box>
             <Container>
@@ -75,28 +60,11 @@ const Nav = () =>{
                     <Box className="navbar-menu"><AiOutlineBars onClick={()=>handleToggleMenu(true)} className="navbar-menu-icon" /></Box>
                     <Image src={logo} />
                     <List className="hide">
-                        {/* <ListItem className={toggle.active === 'lauch' ? "active" : ''}>
-                            <Link href="#lauch"><a onClick={()=> setToggle({...toggle, active: "lauch"})}>Lauch</a></Link>
-                        </ListItem> */}
-                        <ListItem className={toggle.active === '#' ? "active" : ''}>
-                            <Link href="#"><a onClick={()=> setToggle({...toggle, active: "#"})}>Home</a></Link>
+                        {data.nav.map((nav, index) =>
+                        <ListItem key={index} className={toggle.active === nav.linkActive ? "active" : ''}>
+                            <Link href={nav.link}><a target={nav.target ? '_blank' : '_self'} onClick={()=> setToggle({...toggle, active: nav.linkActive})}>{nav.content}</a></Link>
                         </ListItem>
-                        <ListItem className={toggle.active === 'about' ? "active" : ''}>
-                            <Link href="#about"><a onClick={ ()=> setToggle({...toggle, active: "about"})}>GamePlay</a></Link>
-                        </ListItem>
-                        <ListItem className={toggle.active === 'NFT' ? "active" : ''}>
-                            <Link href="#NFT"><a onClick={()=> setToggle({...toggle, active: "NFT"})}>NFT</a></Link>
-                        </ListItem>
-                        <ListItem className={toggle.active === 'roadmap' ? "active" : ''}>
-                            <Link href="#roadmap"><a onClick={()=> setToggle({...toggle, active: "roadmap"})}>Roadmap</a></Link>
-                        </ListItem>
-                        <ListItem className={toggle.active === 'ourteam' ? "active" : ''}>
-                            <Link href="#ourteam"><a onClick={()=> setToggle({...toggle, active: "ourteam"})}>Team</a></Link>
-                        </ListItem>
-                        <ListItem className={toggle.active === 'backedby' ? "active" : ''}>
-                            <Link href="#backedby"><a onClick={()=> setToggle({...toggle, active: "backedby"})}>MarketPlace</a></Link>
-                        </ListItem>
-                        
+                        )}
                     </List>
                 </Box>
             </Container>

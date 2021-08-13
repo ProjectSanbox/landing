@@ -4,14 +4,13 @@ import { ThemeProvider } from "styled-components";
 import Nav from "sections/Nav";
 import HeadingBanner from "sections/HeadingBanner";
 import Roadmap from "sections/Roadmap";
-import Production from "sections/Production";
+import Introduce from "sections/Introduce";
 import GamePlay from "sections/GamePlay";
 import Advisor from "sections/Advisor";
 import BackedBy from "sections/BackedBy";
-import Block from "sections/Block";
+import Block from "sections/NFT";
 import NBP from "sections/SBPSection";
 import NBPI from "sections/SBPISection";
-import BottomBanner from 'sections/BottomBanner';
 import Footer from "sections/Footer";
 import FavIcon from "assets/images/MineSandboxLogo.png";
 import theme from "assets/theme/theme";
@@ -34,23 +33,21 @@ const Home = () => {
         <link rel="shortcut icon" type="image/x-icon" href={FavIcon} />
         <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+        <link href="http://fonts.cdnfonts.com/css/goma-block" rel="stylesheet" />
+        <link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet" />
       </Head>
       <GlobalStyle />
       <Nav />
-      {/* <NavBanner /> */}
       <HeadingBanner />
-      {/* <Slogan /> */}
-      <Production />
+      <Introduce />
       <GamePlay />
       <Block />
-      <NBP />
-      <NBPI />
+      {/* <NBP />
+      <NBPI /> */}
       <Roadmap />
       <OurTeam />
       <Advisor />
       <BackedBy />
-      <BottomBanner />
       <Footer />
     </ThemeProvider>
   );

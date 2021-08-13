@@ -9,6 +9,7 @@ import data from 'assets/data/ourteam';
 import Slider from 'react-slick';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
 
 const OurTeam = () =>{
     const settings = {
@@ -22,6 +23,7 @@ const OurTeam = () =>{
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
+        arrow: false,
         responsive: [
             {
               breakpoint: 1024,
@@ -56,6 +58,8 @@ const OurTeam = () =>{
             <Container>
                 <Box className="ourteam-heading">
                     <Heading>Core Team</Heading>
+                    <Text>Passionate and talented soldier in game industry. 
+                      <br/>We want bringing the best game experience to player.</Text>
                 </Box>
                 <Box className="ourteam-content">
                    <Slider {...settings}>
@@ -73,6 +77,7 @@ const OurTeam = () =>{
                    </Slider>
                 </Box>
             </Container>
+            <Box className="content-backgound"></Box>
         </OurTeamWrapper>
     );
 }

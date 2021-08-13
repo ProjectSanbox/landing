@@ -36,9 +36,6 @@ const NavWrapper = styled.div`
 
             li{
                 padding: 20px 0px;
-                a{
-                    
-                }
             }
 
             .list-heading{
@@ -108,7 +105,7 @@ const NavWrapper = styled.div`
                     color: #777E90;
                     font-size: 14px;
                     line-height: 16px;
-                    font-family: 'DM Sans', sans-serif;
+                    font-family: 'Product Sans', sans-serif;
                     font-weight: 700;
                     line-height: 79px;
                     &:hover{
@@ -121,9 +118,24 @@ const NavWrapper = styled.div`
                 margin-right: 40px;
             }
 
-            li.active{
-                border-bottom: 1px solid #fff;
+            li:last-child{
                 a{
+                    padding: 10px 15px;
+                    background: #ffffff;
+                    color: #000000!important;
+                    clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 15px;
+                }
+            }
+
+            li.active:not(:last-child){
+                a{
+                    border: 1px solid #fff;
+                    padding: 10px;
+                    border-radius: 5px;
                     color: #ffffff;
                 }
             } 

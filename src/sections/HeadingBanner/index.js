@@ -2,10 +2,12 @@ import React, {useEffect} from "react";
 import HeadingWrapper from './heading.style';
 import Image from 'reusecore/Image';
 import Heading from 'reusecore/Heading';
+import Button from 'reusecore/Button';
 import Text from 'reusecore/Text';
 import Box from 'reusecore/Box';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import HeaderText from 'assets/images/headerText.png';
 
 
 const HeadingBanner = () => {
@@ -16,17 +18,31 @@ const HeadingBanner = () => {
         })
     }, [])
 
+    useEffect(() =>{
+        window.addEventListener('resize', () =>{
+            const width = window.innerWidth;
+            const height = width / 1.77777777778;
+            const heding = document.querySelector('.heading');
+            heding.style.height = height + "px";
+        })
+
+        const width = window.innerWidth;
+        const height = width / 1.77777777778;
+        const heding = document.querySelector('.heading');
+        heding.style.height = height + "px";
+    })
+
     return (
         <HeadingWrapper>
-            <div className="heading" style={{width:'100%', height:550,marginTop:'81px'}}>
+            <div className="heading">
                 <Box className="headingBackground">
-                   <Box className="headingContent">
-                        <Box data-aos="fade-right">
-                            <Heading>PLANET SANDBOX</Heading>
-                            <Text>The biggest Third-Person Shooter game on blockchain</Text>
-                            <Text>Play, Create, Own, and Govern a virtual world made by players</Text>
-                        </Box>
-                   </Box>
+                    <Box className="heading-content">
+                        <Image src={HeaderText} />
+                        <Text>The biggest third-person sandbox game on blockchain</Text>
+                        <Button>
+                            Pre-Register
+                        </Button>
+                    </Box>
                 </Box>
             </div>
         </HeadingWrapper>

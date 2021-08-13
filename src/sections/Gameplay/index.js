@@ -1,54 +1,86 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import GamePlayWrapper from './gameplay.style';
 import Box from 'reusecore/Box';
 import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
 import Button from 'reusecore/Button';
 import Image from 'reusecore/Image';
-import Link from "next/link";
+import {List, ListItem} from 'reusecore/List';
 import { Container, Row, Col } from 'reusecore/Layout';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import {GrClose} from 'react-icons/gr';
+import Slider from 'react-slick';
+import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
 import data from 'assets/data/gameplay';
 
-
 const GamePlay = () => {
-
-    useEffect(() => {
-        AOS.init({
-            duration: 500
-        })
-    }, [])
+    const settings = {
+        appendDots: dots => <ul>{dots}</ul>,
+        customPaging: i => (
+        <div className="ft-slick__dots--custom">
+        </div>
+        ),
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // autoplay: true,
+        autoplaySpeed: 4000,
+        nextArrow: <NextArrow className="nextButton" />,
+        prevArrow: <PrevArrow className="preButton" />,
+        responsive: [
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+      };
+      
 
 
     return (
     <GamePlayWrapper id="gameplay">
-        <Container>
-            <Box className="gameplay-background">&nbsp;</Box>
-            <Box className="gameplay-heading">
-                <Heading>Game Play</Heading>
-                <Text>All the distinctive gaming gameplay revolving around our ecosystem</Text>
-            </Box>
-            <Box className="gameplay-content">
-                <Row>
-                    {
-                        data.feuatures.map((feuature, index) =>{
-                            return(
-                                <Col key={index} className="lg-6 md-6 sm-12 xs-12">
-                                <Box className="gameplay-item">
-                                    <Image src={feuature.img} />
-                                    <Text className="gameplay-item-heading">
-                                        {feuature.heading}
-                                    </Text>
-                                    <Text>{feuature.content}</Text>
-                                </Box>
-                            </Col>
-                            );
-                        })
-                    }
-                </Row>
-            </Box>
-        </Container>
+       <Container>
+        <Box className="gameplay-heading">
+            <Heading>Gameplay</Heading>
+            <Text>Planet Sandbox is a virtual world where players can play, build, own, and monetize their virtual experiences. 
+            We empower artists, creators, and players to build the platform they always envisioned, providing the means to unleash your creativity.</Text>
+        </Box>
+       </Container>
+       <Box className="gameplay-content">
+        <Slider {...settings}>
+            {data.gameplay.map((gameplay, index) =>
+                <Box key={index}>
+                    <Box className="gameplay-video">
+                            <Box>
+                                <Image className="video" src={gameplay.imgVideo}/>
+                            </Box>
+                            <Box className="gameplay-intro">
+                            <Box>
+                                <Text className="intro-heading">{gameplay.title}</Text>
+                                <Text>{gameplay.content}</Text>
+                                {gameplay.listContent &&
+                                <List>
+                                    {
+                                        gameplay.listContent.map((content, index) =>
+                                            <ListItem key={index}>
+                                                {content}
+                                            </ListItem>
+                                        )
+                                    }
+                                </List>
+                                }
+                                <Image src={gameplay.introImage} />
+                            </Box>
+                            </Box>
+                    </Box>
+               </Box>
+            )}
+        </Slider>
+       </Box>
     </GamePlayWrapper>
     );
 }

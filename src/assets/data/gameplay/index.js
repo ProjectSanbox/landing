@@ -1,35 +1,46 @@
 import gameplay1 from 'assets/images/gameplay/gameplay1.png';
-import gameplay2 from 'assets/images/gameplay/gameplay2.jpg';
-import gameplay3 from 'assets/images/gameplay/gameplay3.jpg';
-import gameplay4 from 'assets/images/gameplay/gameplay4.jpg';
-import feaurues4 from 'assets/images/gameplay/feaurues4.png';
-import feaurues5 from 'assets/images/gameplay/feaurues5.png';
-import feaurues6 from 'assets/images/gameplay/feaurues6.jpg';
+import intro1 from 'assets/images/gameplay/intro1.png';
+import gameplay2 from 'assets/images/gameplay/gameplay2.png';
+import intro2 from 'assets/images/gameplay/intro2.png';
+import gameplay3 from 'assets/images/gameplay/gameplay3.png';
+import intro3 from 'assets/images/gameplay/intro3.png';
+import play from 'assets/images/gameplay/play.png'
 
 export default {
-    feuatures:[
+    gameplay:[
         {
-            img: gameplay1,
-            heading: "Build Mode",
-            content: "Create your own world with the tools we have available for you."
+            imgVideo: gameplay1,
+            title: "Building mode​",
+            content: "This is one of the core functions of the game. When the player first enters the game, they will be provided a Builder Tool to customize basically every object in their own inventory",
+            introImage: intro1,
+            linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",
+            playButton: play
         },
         {
-            img: gameplay2,
-            heading: "Multiplayers mode",
-            content: `Each of these game modes are available at the start of the game within the multiplayer menu.
-            This is a mode where every player is an opponent and fights with each other`
+            imgVideo: gameplay2,
+            title: "Multiplayer mode​​",
+            content: "",
+            listContent: [
+                "Players can join other's published Land to play game modes.",
+                "Game modes are custom by Land owner using Rule Tool.",
+                "There are some preset game modes from the publisher as following.",
+                "Players is rewarded loot box, NFT object, and token."
+            ],
+            introImage: intro2,
+            linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",
+            playButton: play
         },
         {
-            img: gameplay3,
-            heading: "(PvP)",
-            content: `In this mode there will be 2 teams fighting against each other. 
-            You will be randomly assigned to 1 of 2 teams or create your own team.`
-        },
-        {
-            img: gameplay4,
-            heading: "PvE mode ",
-            content: `In PVE mode, you can freely level up, practice skills without worrying about being ambushed by strong gamers. 
-            So, if you don't want to be disturbed by other players, this PVE mode is for you.`
-        },
+            imgVideo: gameplay3,
+            title: "Building mode​",
+            content: "Planet Sandbox provides some build-in PvE mode: ",
+            listContent: [
+                "Tower defense: protect your base from NPC like zombies, soldier",
+                "Racing: finish the track first. Runnable NPC: cyborg, house, hound..."
+            ],
+            introImage: intro3,
+            linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",
+            playButton: play
+        }
     ]
 }

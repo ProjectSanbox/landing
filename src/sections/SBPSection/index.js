@@ -11,6 +11,7 @@ import SBPContentLeft from 'assets/images/SBP/SBPContentLeft.png';
 import SBPRightImg1 from 'assets/images/SBP/SBPRightImg1.png';
 import arrowRight from 'assets/images/SBP/SBParrowright.png';
 import arrowLeft from 'assets/images/SBP/SBParrowleft.png';
+import data from 'assets/data/SBP';
 
 
 const SBP = () =>{ 
@@ -30,13 +31,9 @@ const SBP = () =>{
                                     <Text>Only used Premium Hero</Text>
                                 </Box>
                                 <List>
-                                    <ListItem>Special Event</ListItem>
-                                    <ListItem>Special Event</ListItem>
-                                    <ListItem>Special Event</ListItem>
-                                    <ListItem>Special Event</ListItem>
-                                    <ListItem>Special Event</ListItem>
-                                    <ListItem>Special Event</ListItem>
-                                    <ListItem>Special Event</ListItem>
+                                   {data.SBPList.map((list, index) =>(
+                                        <ListItem key={index}>{list.content}</ListItem>
+                                   ))}
                                 </List>
                             </Box>
                         </Col>
@@ -49,18 +46,12 @@ const SBP = () =>{
                         </Col>
                         <Col className="lg-8 xl-4 md-12 sm-12 xs-12">
                             <Box className="SBP-content-right">
-                                <Box className="SBP-right-item">
-                                    <Box> <Image src={SBPRightImg1} /></Box>
-                                    <Text>EXCHANGE TO USE</Text>
+                                {data.SBPContent.map((content, index) => 
+                                <Box key={index} className="SBP-right-item">
+                                    <Box> <Image src={content.img} /></Box>
+                                    <Text>{content.title}</Text>
                                 </Box>
-                                <Box className="SBP-right-item">
-                                    <Box> <Image src={SBPRightImg1} /></Box>
-                                    <Text>EXCHANGE TO USE</Text>
-                                </Box>
-                                <Box className="SBP-right-item">
-                                    <Box> <Image src={SBPRightImg1} /></Box>
-                                    <Text>EXCHANGE TO USE</Text>
-                                </Box>
+                                ) }
                             </Box>
                         </Col>
                     </Row>

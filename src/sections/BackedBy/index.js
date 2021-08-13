@@ -19,8 +19,10 @@ const BackedBy = () =>{
             {data.backedby.map((backedby, index) => 
                 <Link key={index} href={backedby.src}>
                     <a target="_blank">
-                        <Box className="backedby-item">
-                            <Image src={backedby.imageSrc} />
+                        <Box className="item-border">
+                            <Box className="backedby-item">
+                                <Image src={backedby.imageSrc} />
+                            </Box>
                         </Box>
                     </a>
                 </Link>
