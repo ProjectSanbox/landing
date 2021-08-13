@@ -16,7 +16,7 @@ export default {
     
     {
       icon: <FaTelegramPlane />,
-      url: "//t.me/joinchat/6oNOOAqXlJo0ZmM1",
+      url: "//t.me/planetsandbox",
       name: "Telegram"
     },
   ],

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import background from 'assets/images/backgroundourteam.svg';
 
 const OurTeamWrapper = styled.div`
-    padding: 100px 0px;
+    padding: 120px 0px;
     border-bottom: 1px dashed #353945;
     position: relative;
 
@@ -53,7 +53,7 @@ const OurTeamWrapper = styled.div`
         }
 
         .slick-dots{
-            margin-top: 20px;
+            margin: 20px;
             li{
                 width: 100px;
                 height: 5px;
@@ -124,6 +124,10 @@ const OurTeamWrapper = styled.div`
     }
 
     @media only screen and (max-width: 480px){
+        .ourteam-background{
+            background-size: cover;
+        }
+
         .ourteam-item{
             min-height: 375px;
         }
@@ -132,6 +136,12 @@ const OurTeamWrapper = styled.div`
         h1{
             font-size: 49px;
             line-height: 49px;
+        }
+    }
+
+    .slick-dots{
+        li{
+          width: 20px!important;
         }
     }
   }

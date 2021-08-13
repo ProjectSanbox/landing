@@ -33,9 +33,9 @@ const Block = () => {
                     <Col className="lg-5 md-5 sm-12 xs-12">
                         <Box className="block-content">
                             <Box data-aos="fade-down">
-                                <Text className="block-content-heading">NFT strategy </Text>
+                                <Text className="block-content-heading">NFT Items</Text>
                                 <Text>
-                                    The NFT strategy for this game will center around weapons, buildings, and ownable land.
+                                    The NFT Items for this game will center around weapons, buildings, and ownable land.
                                     can use this land to place workshops and resource mines.
 
                                     Players can also improve these buildings and the land parcels by upgrading them.

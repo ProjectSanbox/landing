@@ -43,7 +43,7 @@ const BlockWrapper = styled.div`
         }
     }
 
-    @media only screen and (max-width: 767px){
+    @media only screen and (max-width: 768px){
         .block-content{
             position: relative;
             margin-top: 50px;
