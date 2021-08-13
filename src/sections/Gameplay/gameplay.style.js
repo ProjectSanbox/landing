@@ -29,7 +29,7 @@ const GamePlayWrapper = styled.div`
                height: 392px;
                flex: 60%;
                position: relative;
-               background: linear-gradient(267.93deg, rgba(64, 159, 245, 0) 1.02%, #0E1EAD 71.01%);
+               background: linear-gradient(to right, #4b6cb7, #2d2d2d);
               div{
                   width: 80%;
                   position: absolute;

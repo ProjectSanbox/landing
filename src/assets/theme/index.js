@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import coin from 'assets/images/NFT/coin.png'
 
 const GlobalStyle = createGlobalStyle`
 
@@ -45,9 +46,7 @@ html{
 }
 
 body,html {
-    
     margin: 0px;
-
 }
 body {
   font-size: 16px;
