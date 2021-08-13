@@ -2,6 +2,23 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bdc3c7;
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); 
+background: linear-gradient(to right, #2c3e50, #bdc3c7);
+
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  background: #000000;
+}
+
 ::selection {
     background: #333333;
     color: #ffffff;
@@ -49,6 +66,7 @@ body {
     background-size: cover;
     background-position: center center;
 }
+
 
 h1,
 h2,
