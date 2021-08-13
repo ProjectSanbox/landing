@@ -131,16 +131,17 @@ const OurTeamWrapper = styled.div`
             line-height: 49px;
         }
     }
-  }
 
-  .ourteam-content{
-    .slick-dots{
-        li{
-            bottom: 100px;
-            width: 7px;
+        .ourteam-content{
+        .slick-dots{
+            li{
+                bottom: 100px;
+                width: 7px;
+            }
         }
     }
   }
+
 `;
 
 export default OurTeamWrapper;
