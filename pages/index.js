@@ -33,7 +33,8 @@ const Home = () => {
         <link rel="shortcut icon" type="image/x-icon" href={FavIcon} />
         <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+        <link href="http://fonts.cdnfonts.com/css/goma-block" rel="stylesheet" />
+        <link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet" />
       </Head>
       <GlobalStyle />
       <Nav />
@@ -41,8 +42,8 @@ const Home = () => {
       <Introduce />
       <GamePlay />
       <Block />
-      <NBP />
-      <NBPI />
+      {/* <NBP />
+      <NBPI /> */}
       <Roadmap />
       <OurTeam />
       <Advisor />

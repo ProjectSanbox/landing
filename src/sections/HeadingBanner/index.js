@@ -39,7 +39,9 @@ const HeadingBanner = () => {
                     <Box className="heading-content">
                         <Image src={HeaderText} />
                         <Text>The biggest third-person sandbox game on blockchain</Text>
-                        <Button>Pre-Register</Button>
+                        <Button>
+                            Pre-Register
+                        </Button>
                     </Box>
                 </Box>
             </div>

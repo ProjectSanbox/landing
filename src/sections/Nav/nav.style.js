@@ -36,9 +36,6 @@ const NavWrapper = styled.div`
 
             li{
                 padding: 20px 0px;
-                a{
-                    
-                }
             }
 
             .list-heading{
@@ -108,7 +105,7 @@ const NavWrapper = styled.div`
                     color: #777E90;
                     font-size: 14px;
                     line-height: 16px;
-                    font-family: 'DM Sans', sans-serif;
+                    font-family: 'Product Sans', sans-serif;
                     font-weight: 700;
                     line-height: 79px;
                     &:hover{

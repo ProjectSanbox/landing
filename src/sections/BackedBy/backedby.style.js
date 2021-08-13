@@ -1,16 +1,7 @@
 import styled from 'styled-components';
 
 const BackedByWrapper  = styled.div`
-    padding: 160px 0;
-    background: linear-gradient(181.29deg, #409FF5 7.66%, #42B2FD 50.07%, #0E1EAD 105.25%);
-    h1{
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-    }
-
-    P{
-        font-family: 'Poppins', sans-serif;
-    }
+    padding: 80px  0px 140px 0px;
 
     .backedby-heading{
         text-align: center;
@@ -26,7 +17,6 @@ const BackedByWrapper  = styled.div`
         h1{
             font-size: 48px;
             line-height: 48px;
-            color: #FCFCFD;
         }
     }
 
@@ -35,32 +25,41 @@ const BackedByWrapper  = styled.div`
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 100px;
-        .backedby-item{
+        .item-border{
             width: 544px;
             height: 263px;
-            margin: 15px;
-            border-radius: 16px;
-            background: #ffffff;
+            margin-left: 30px;
             position: relative;
-            cursor: pointer;
-            border: 10px solid #42B9FF;
+            border-radius: 16px;
+            padding: 20px;
+            background: linear-gradient(230.22deg, rgba(64, 159, 245, 0.3) -35.96%, rgba(66, 185, 255, 0.3) 54.54%, rgba(14, 30, 173, 0.3) 116.3%);
+            .backedby-item{
+                height: 100%;
+                background: #ffffff;
+                cursor: pointer;
 
-            img{
-                width: 55%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                img{
+                    width: 55%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
     }
 
     @media only screen and (max-width: 500px){
-        .backedby-item{
-            width: 255px!important;
+        .item-border{
+            width: 300px!important;
             height: 140px!important;
-            margin: 5px!important;
-
+            padding: 10px!important;
+            border-radius: 10px;
+            margin: 10px auto!important;
+            .backedby-item{
+                border-radius: 10px;
+            }
+            
             img{
                 width: 135px!important;
             }

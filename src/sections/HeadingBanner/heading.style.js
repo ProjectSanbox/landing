@@ -43,10 +43,11 @@ const HeadingWrapper = styled.div`
                     margin-top: 70px;
                     width: 240px;
                     height: 48px;
-                    border-radius: 8px;
                     color: #ffffff;
                     background: linear-gradient(264.42deg, #409FF5 -62.57%, #42B2FD 9.46%, #0E1EAD 103.19%);
-                    box-shadow: 0px 0px 12px rgba(40, 33, 108, 0.7);
+                    position: relative;
+                    border: 0;
+                    overflow: hidden;
                 }
             }
         }

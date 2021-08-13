@@ -11,6 +11,7 @@ import blockImage from 'assets/images/block/block-image.jpg';
 import Slider from 'react-slick';
 import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
 import data from 'assets/data/NFT';
+import coin from 'assets/images/NFT/coin.png'
 
 const Block = () => {
 
@@ -20,7 +21,7 @@ const Block = () => {
         <div className="ft-slick__dots--custom">
         </div>
         ),
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -72,13 +73,10 @@ const Block = () => {
                     {data.NFT.map((item, index) =>
     
                         <Box key={index} className="NFT-item">
-                            <Box className="item-info">
-                                <Text className="info-title">{item.name}</Text>
-                                <Text>{item.type}</Text>
-                                <Box className="item-price">
-                                    <Text>{item.price} ETH</Text>
-                                </Box>
-                            </Box>
+                            <Text className="item-weapon">{item.type}</Text>
+                            <Text className="item-name">{item.name}</Text>
+                            <Image className="item-image" src={item.image}/>
+                            <Box className="item-price"><Image src={coin} />{item.price} PSB</Box>
                         </Box>
                         )} 
                     </Slider>

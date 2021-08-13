@@ -4,13 +4,17 @@ import background from 'assets/images/backgroundsolution.svg';
 
 const GamePlayWrapper = styled.div`
     padding: 60px 0px 100px;
-    background: linear-gradient(133.84deg, #4E4E4E -16.04%, #333333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
     .gameplay-heading{
         text-align: center;
         h1{
             font-size: 48px;
             line-height: 48px;
             text-transform: uppercase;
+        }
+
+        p{
+            font-size: 20px;
+            padding: 0px 250px;
         }
     }
 
@@ -167,6 +171,12 @@ const GamePlayWrapper = styled.div`
   }
 
   @media only screen and (max-width: 1200px){
+    .gameplay-heading{
+        p{
+            padding: 0px 100px;
+        }
+    }
+
     .gameplay-content{
         .gameplay-video{
             .gameplay-intro{
@@ -209,6 +219,13 @@ const GamePlayWrapper = styled.div`
   }
 
   @media only screen and (max-width: 576px){
+
+    .gameplay-heading{
+        p{
+            padding: 0;
+        }
+    }
+
     .gameplay-content{
         margin: auto;
     }

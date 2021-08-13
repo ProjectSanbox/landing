@@ -1,12 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-// import 'assets/font/gomarice_goma_block.ttf';
 
 const GlobalStyle = createGlobalStyle`
-
-/* @font-face {
-    font-family: "GomaBlock";
-    src: url('./gomarice_goma_block.ttf') format("truetype");
-} */
 
 ::selection {
     background: #333333;
@@ -50,7 +44,7 @@ body {
   margin: 0;
   padding: 0;
 
-    background: #141416;
+    background: linear-gradient(133.84deg, #333333 -16.04%, #1A1A1A 7.99%, #393939 35.36%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -63,14 +57,15 @@ h4,
 h5,
 h6 {
     color: ${props => props.theme.headingColor ? props.theme.headingColor : '#FFFFFF'};
-    font-family: "GomaBlock", sans-serif;
+    font-family: 'Goma Block', sans-serif;
     font-size: 48px;
     line-height: 48px;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 p{
-  font-family: sans-serif;
+    font-family: 'Product Sans', sans-serif;
     margin: 0 0 15px 0;
     color: #ffffff;
 }

@@ -1,37 +1,24 @@
 import styled from 'styled-components';
-import background from 'assets/images/backgroundourteam.svg';
 
 const OurTeamWrapper = styled.div`
-    padding: 160px 0px;
+    padding: 80px 0px 160px 0px;
     position: relative;
-    background: #EB5757;
     z-index: 2;
 
     .ourteam-background{
         width: 100%;
         height: 976.54px;
-        background: url(${background});
         position: absolute;
         bottom: 45%;
         right: 20%;
     }
 
-    h1{
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-    }
-
-    p{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        color: #777E90;
-    }
-
     .ourteam-heading{
         text-align: center;
+        margin-bottom: 80px;
         h1{
-            font-size: 64px;
-            line-height: 64px;
+            font-size: 48px;
+            line-height: 48px;
         }
     }
 
@@ -73,71 +60,17 @@ const OurTeamWrapper = styled.div`
             }
         }
 
-        .arrow{
-        display: flex;
-        align-items: center;
-        top: 117%;
-        div.slick-arrow{
-        width: 32px;
-        height: 32px;
-        border-radius: 4px;
-        background: #A61520;
-        position: relative;
-            img{
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-            }
-    }
-
-        span{
-            font-size: 16px;
-            color: #fff;
-            text-transform: uppercase;
-        }
-    }
-
-    
-
-    div.arrow-next{
-        position: absolute;
-        right: 10%;
-        z-index: 2;
-        .slick-next{
-            transform: unset;
-            &::before{
-                display: none;
-            }
-        }
-    }
-
-    div.arrow-pre{
-        position: absolute;
-        left: 10%;
-
-        z-index: 2;
-        .slick-prev{
-            transform: unset;
-            &::before{
-                display: none;
-            }
-            
-            img{
-               transform: translate(-50%, -50%) rotate(180deg) ;
-            }
-        }
-    }
+        
 
     .slick-dots{
         bottom: -105px;
             li{
                 width: 150px;
                 height: 6.25px;
-                background: #b5b4b1;
+                background: rgba(156, 41, 50, 0.5);
                 border-radius: 16px;
                 &.slick-active{
-                    background: #fff;
+                    background: #9C2932;
                 }
               .ft-slick__dots--custom{
                 width: 100%;
@@ -148,13 +81,16 @@ const OurTeamWrapper = styled.div`
 
     }
 
+    .slick-arrow{
+        display: none!important;
+    }
     
     .content-backgound{
             width: 100%;
-            height: 300px;
-            background: #A61520;
+            height: 527px;
+            background: radial-gradient(78.39% 53.42% at 60.34% 46.58%, #32070A 0%, rgba(166, 21, 32, 0.01) 100%);
             position: absolute;
-            top: 50%;
+            top: 30%;
             z-index: -1;
         }
 
@@ -178,12 +114,6 @@ const OurTeamWrapper = styled.div`
         }
     }
 
-    @media only screen and (max-width: 769px){
-        .arrow{
-            display: none!important;
-        }
-    }
-
     @media only screen and (max-width: 480px){
         padding: 30px 0px!important;
         .ourteam-background{
@@ -201,12 +131,16 @@ const OurTeamWrapper = styled.div`
             line-height: 49px;
         }
     }
-
-    .arrow{
-        display: none;
-    }
   }
 
+  .ourteam-content{
+    .slick-dots{
+        li{
+            bottom: 100px;
+            width: 7px;
+        }
+    }
+  }
 `;
 
 export default OurTeamWrapper;

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const BlockWrapper = styled.div`
-    background: linear-gradient(181.29deg, #409FF5 7.66%, #42B2FD 50.07%, #0E1EAD 105.25%);
     padding: 180px 0;
     .NFT-heading{
         position: relative;
@@ -33,51 +32,41 @@ const BlockWrapper = styled.div`
             .NFT-item{
             height: 450px;
             background: #C4C4C4;
-            border-radius: 20px;
-            border: 5px solid #ffffff;
+            border-radius: 16px;
+            background: #2A2A2C;
+            border: 3px solid #303034;
             text-align: center;
             position: relative;
-            .item-info{
-                width: 296px;
-                height: 100px;
-                background: #2E0066;
-                text-align: center;
-                border-radius: 8px;
-                position: absolute;
-                left: 50%;
-                bottom: 42px;
-                transform: translateX(-50%);
+                .item-weapon{
+                    font-family: 'Goma Block', sans-serif;
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 40px;
+                    margin-bottom: 0;
+                }
+                .item-name{
+                    font-family: 'Product Sans', sans-serif;
+                    font-weight: 900;
+                    font-size: 16px;
+                }
 
-                    p.info-title{
-                        font-size: 24px;
-                        line-height: 24px;
-                        color: #ffffff;
-                        text-transform: uppercase;
-                        font-weight: 700;
-                        margin: 0;
-                        padding-top: 20px;
-                    }
+                .item-image{
+                    width: 250px;
+                    margin: auto;
+                }
 
-                    p{
-                        font-size: 16px;
-                        color: #42B9FF;
-                    }
-
-                    .item-price{
-                        width: 276px;
-                        height: 44px;
-                        background: #FEB724;
-                        border-radius: 8px;
-                        position: absolute;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        bottom: -20px;
-                        p{
-                            font-size: 16px;
-                            line-height: 44px;
-                            color: #000000;
-                            font-weight: 700;
-                        }
+                .item-price{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 24px;
+                    font-family: 'Goma Block', sans-serif;
+                    font-weight: 400;
+                    color: #ffffff;
+                    margin-top: 20px;
+                    img{
+                        width: 45px;
+                        margin-right: 10px;
                     }
                 }
             }
@@ -163,7 +152,7 @@ const BlockWrapper = styled.div`
 
 
     @media only screen and (max-width: 576px){
-    padding: 140px 0;
+    padding: 0;
     .NFT-heading{
         div{
             flex-direction: column;

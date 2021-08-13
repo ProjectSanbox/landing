@@ -19,7 +19,7 @@ const GamePlay = () => {
         <div className="ft-slick__dots--custom">
         </div>
         ),
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,

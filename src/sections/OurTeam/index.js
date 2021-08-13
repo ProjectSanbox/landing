@@ -23,8 +23,7 @@ const OurTeam = () =>{
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
-        nextArrow: <NextArrow className="nextButton" />,
-        prevArrow: <PrevArrow className="preButton" />,
+        arrow: false,
         responsive: [
             {
               breakpoint: 1024,
@@ -59,6 +58,8 @@ const OurTeam = () =>{
             <Container>
                 <Box className="ourteam-heading">
                     <Heading>Core Team</Heading>
+                    <Text>Passionate and talented soldier in game industry. 
+                      <br/>We want bringing the best game experience to player.</Text>
                 </Box>
                 <Box className="ourteam-content">
                    <Slider {...settings}>

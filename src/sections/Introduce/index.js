@@ -32,7 +32,7 @@ const Introduce = () => {
       };
 
     return (
-        <IntroduceWrapper id="introduce">
+        <IntroduceWrapper id="video">
             <Box className="introduce">
                 <Box className="introduce-content">
                     <Image src={logo} />

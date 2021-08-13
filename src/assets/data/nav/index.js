@@ -2,13 +2,18 @@
 export default {
     nav:[
         {
-            link: "#",
-            linkActive: "#",
+            link: "",
+            linkActive: "",
             content: "Home"
         },
         {
-            link: "#about",
-            linkActive: "about",
+            link: "#video",
+            linkActive: "#video",
+            content: "Video"
+        },
+        {
+            link: "#gameplay",
+            linkActive: "gameplay",
             content: "GamePlay"
         },
         {
@@ -39,7 +44,11 @@ export default {
             content: "Home"
         },
         {
-            link: "#about",
+            link: "#video",
+            content: "Video"
+        },
+        {
+            link: "#gameplay",
             content: "GamePlay"
         },
         {

@@ -1,17 +1,10 @@
 import styled from 'styled-components';
 
 const AdvisorWrapper = styled.div`
-     padding: 30px 0px 180px 0px;
+     padding: 60px 0px 180px 0px;
     position: relative;
-    background: #EB5757;
     z-index: 2;
-    h1{
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
-    }
-
     p{
-        font-family: 'Poppins', sans-serif;
         font-weight: 400;
         color: #777E90;
         margin: 0;
@@ -20,6 +13,7 @@ const AdvisorWrapper = styled.div`
 
     .adivisor-heading{
         text-align: center;
+        margin-bottom: 80px;
         h1{
             font-size: 48px;
             line-height: 48px;
@@ -61,9 +55,9 @@ const AdvisorWrapper = styled.div`
     .backgorund{
         position: absolute;
         width: 100%;
-        height: 360px;
-        background: #A61520;
-        bottom: 15%;
+        height: 651px;
+        background: radial-gradient(50.34% 42.89% at 50.34% 46.58%, #32070A 0%, rgba(166, 21, 32, 0) 100%);
+        top: 10%;
         left: 0;
         z-index: -1;
     }

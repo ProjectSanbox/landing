@@ -19,6 +19,8 @@ const IntroduceWrapper = styled.div`
           font-size: 24px;
           font-style: italic;
           padding-right: 193px;
+          font-weight: 400;
+          line-height: 33.6px;
         }
 
         .introduce-weapon{
@@ -54,6 +56,70 @@ const IntroduceWrapper = styled.div`
         position: absolute;
         right: 15%;
         bottom: 20%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1400px){
+    .introduce{
+      .introduce-video{
+        p{
+          right: 5%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1200px){
+    .introduce{
+      .introduce-video{
+        .plyr{
+          bottom: 45%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 975px){
+    .introduce{
+      flex-direction: column;
+      .introduce-content{
+        img{
+          margin: auto;
+        }
+
+        p{
+          padding: 5%;
+        }
+      }
+
+      .introduce-video{
+        position: unset;
+        .plyr{
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 97%;
+        }
+
+        p{
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 575px){
+    .introduce{
+      .introduce-content{
+        .introduce-weapon{
+          img:nth-last-child(1){
+            display: none;
+          }
+        }
+        p{
+          font-size: 20px;
+        }
       }
     }
   }
