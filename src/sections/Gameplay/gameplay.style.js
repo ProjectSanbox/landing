@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import background from 'assets/images/backgroundsolution.svg';
+
 
 
 const GamePlayWrapper = styled.div`

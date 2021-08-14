@@ -1,7 +1,7 @@
 
 
 import exnetwork from 'assets/images/backedby/exnetwork.png';
-import rectangle from 'assets/images/backedby/Rectangle.png';
+import rectangle from 'assets/images/backedby/rectangle.png';
 
 export default {
     backedby:[

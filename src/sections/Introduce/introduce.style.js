@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import backgroundVideo from 'assets/images/introduce/backgroundVideo.png';
-import thumbnailVideo from 'assets/images/introduce/thumbnailVideo.png';
+import background_video from 'assets/images/introduce/background_video.png';
+import thumbnail_video from 'assets/images/introduce/thumbnail_video.png';
 
 const IntroduceWrapper = styled.div`
   padding-top: 60px;
@@ -35,7 +35,7 @@ const IntroduceWrapper = styled.div`
     .introduce-video{
       flex: 160%;
       height: 760px;
-      background-image: url(${backgroundVideo});
+      background-image: url(${background_video});
       background-size: contain;
       background-repeat: no-repeat;
       position: relative;
@@ -45,7 +45,7 @@ const IntroduceWrapper = styled.div`
         bottom: 20%;
         left: -20%;
         .plyr__poster{
-          background-image: url(${thumbnailVideo})!important;
+          background-image: url(${thumbnail_video})!important;
         }
       }
 

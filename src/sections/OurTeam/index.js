@@ -7,9 +7,6 @@ import Image from 'reusecore/Image';
 import Text from 'reusecore/Text';
 import data from 'assets/data/ourteam';
 import Slider from 'react-slick';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
 
 const OurTeam = () =>{
     const settings = {

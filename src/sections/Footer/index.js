@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import {List, ListItem} from 'reusecore/List';
 import { Container, Row, Col } from "reusecore/Layout";
 import Box from "reusecore/Box";
@@ -9,7 +8,7 @@ import Text from "reusecore/Text";
 import data from "assets/data/footer";
 import Image from "reusecore/Image"
 import FooterWrapper from "./footer.style";
-import logo from "assets/images/logoFooter.png";
+import logo_footer from "assets/images/logo_footer.png";
 import {GrFormNextLink} from 'react-icons/gr';
 import Input from "reusecore/Form/Input";
 import Button from "reusecore/Button";
@@ -42,7 +41,7 @@ const Footer = () => {
             <Col className="xl-4 lg-4 md-12 sm-12 xs-12">
               <Box className="footer-heading">
                 <Box className="footer-heading-content">
-                  <Image src={logo} />
+                  <Image src={logo_footer} />
                   <Text>© Planet Sandbox | All right rserved 2021</Text>
                 </Box>
               </Box>

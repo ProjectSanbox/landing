@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import headerBackground from 'assets/images/headerBackground.png';
+import header_background from 'assets/images/header_background.png';
 
 const HeadingWrapper = styled.div`
     p{
@@ -13,7 +13,7 @@ const HeadingWrapper = styled.div`
         height: 838px;
         margin-top: 81px;
         .headingBackground{
-            background-image: url(${headerBackground});
+            background-image: url(${header_background});
             height: 100%;
             background-repeat: no-repeat;
             background-size: cover;

@@ -12,7 +12,7 @@ import Block from "sections/NFT";
 import NBP from "sections/SBPSection";
 import NBPI from "sections/SBPISection";
 import Footer from "sections/Footer";
-import FavIcon from "assets/images/MineSandboxLogo.png";
+import FavIcon from "assets/images/logo.png";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
 import OurTeam from "sections/OurTeam";
