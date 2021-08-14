@@ -7,7 +7,7 @@ import Button from 'reusecore/Button';
 import Image from 'reusecore/Image';
 import {List, ListItem} from 'reusecore/List';
 import { Container, Row, Col } from 'reusecore/Layout';
-import {GrClose} from 'react-icons/gr';
+
 import Slider from 'react-slick';
 import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
 import data from 'assets/data/gameplay';

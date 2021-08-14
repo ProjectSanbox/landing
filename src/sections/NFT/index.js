@@ -5,13 +5,11 @@ import Box from 'reusecore/Box';
 import Image from 'reusecore/Image';
 import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
-import Button from 'reusecore/Button';
-import Link from "next/link";
-import blockImage from 'assets/images/block/block-image.jpg';
+
 import Slider from 'react-slick';
 import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
-import data from 'assets/data/NFT';
-import coin from 'assets/images/NFT/coin.png'
+import data from 'assets/data/resource';
+import coin from 'assets/images/resource/coin.png'
 
 const Block = () => {
 

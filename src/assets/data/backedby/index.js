@@ -1,12 +1,12 @@
 
 
-import exnetwork from 'assets/images/backedby/exnetwork.png';
-import rectangle from 'assets/images/backedby/Rectangle.png';
+import exnetwork from 'assets/images/backedby/ic_exnetwork.png';
+import icetea from 'assets/images/backedby/icetea.png';
 
 export default {
     backedby:[
         {
-            imageSrc: rectangle,
+            imageSrc: icetea,
             src: "//icetea.io/",
         },
         {

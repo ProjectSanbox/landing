@@ -5,14 +5,12 @@ import Nav from "sections/Nav";
 import HeadingBanner from "sections/HeadingBanner";
 import Roadmap from "sections/Roadmap";
 import Introduce from "sections/Introduce";
-import GamePlay from "sections/GamePlay";
+import GamePlay from "sections/Gameplay";
 import Advisor from "sections/Advisor";
 import BackedBy from "sections/BackedBy";
 import Block from "sections/NFT";
-import NBP from "sections/SBPSection";
-import NBPI from "sections/SBPISection";
 import Footer from "sections/Footer";
-import FavIcon from "assets/images/MineSandboxLogo.png";
+import FavIcon from "assets/images/favicon.png";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
 import OurTeam from "sections/OurTeam";
@@ -23,7 +21,7 @@ const Home = () => {
     <ThemeProvider theme={theme}>
       <Head>
         <title>
-          Planet Sandbox
+          PlanetSandbox
         </title>
         <meta
           name="Description"
@@ -42,8 +40,7 @@ const Home = () => {
       <Introduce />
       <GamePlay />
       <Block />
-      {/* <NBP />
-      <NBPI /> */}
+     
       <Roadmap />
       <OurTeam />
       <Advisor />

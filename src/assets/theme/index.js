@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import coin from 'assets/images/NFT/coin.png'
+
 
 const GlobalStyle = createGlobalStyle`
 

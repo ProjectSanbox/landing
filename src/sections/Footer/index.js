@@ -4,15 +4,13 @@ import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import {List, ListItem} from 'reusecore/List';
 import { Container, Row, Col } from "reusecore/Layout";
 import Box from "reusecore/Box";
-import Heading from "reusecore/Heading";
+
 import Text from "reusecore/Text";
 import data from "assets/data/footer";
 import Image from "reusecore/Image"
 import FooterWrapper from "./footer.style";
-import logo from "assets/images/logoFooter.png";
-import {GrFormNextLink} from 'react-icons/gr';
-import Input from "reusecore/Form/Input";
-import Button from "reusecore/Button";
+import logo from "assets/images/logo-footer.png";
+
 import { useState } from "react";
 
 

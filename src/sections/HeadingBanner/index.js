@@ -1,13 +1,12 @@
 import React, {useEffect} from "react";
 import HeadingWrapper from './heading.style';
 import Image from 'reusecore/Image';
-import Heading from 'reusecore/Heading';
 import Button from 'reusecore/Button';
 import Text from 'reusecore/Text';
 import Box from 'reusecore/Box';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import HeaderText from 'assets/images/headerText.png';
+import HeaderText from 'assets/images/banner-text.png';
 
 
 const HeadingBanner = () => {
