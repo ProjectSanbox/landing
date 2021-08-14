@@ -53,11 +53,18 @@ h1{
         a{
           display: flex;
           align-items: center;
+          display: block;
           svg{
             margin-right: 10px;
           }
         }
       }
+    }
+  }
+
+  @media only screen and (max-width: 991px){
+    .footer-list{
+      text-align: center;
     }
   }
 `;
