@@ -1,10 +1,10 @@
-import steven from "assets/images/team/Nhan.png";
-import theanh from "assets/images/team/TheAnh.png";
-import minh from "assets/images/team/AMinh.png";
-import vietnguyen from "assets/images/team/Viet.png";
-import hoannguyen from "assets/images/team/Hoan.png";
-import quyen from "assets/images/team/Quyen.png";
-import hai from "assets/images/team/Hai.png";
+import steven from "assets/images/team/nhan.png";
+import theanh from "assets/images/team/theanh.png";
+import minh from "assets/images/team/minh.png";
+import vietnguyen from "assets/images/team/viet.png";
+import hoannguyen from "assets/images/team/hoan.png";
+import quyen from "assets/images/team/quyen.png";
+import hai from "assets/images/team/hai.png";
 
 
 export default {
