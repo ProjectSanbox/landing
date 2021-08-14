@@ -1,16 +1,14 @@
 import React, { Component, useEffect, useState } from 'react';
 
-import { Container, Row, Col } from 'reusecore/Layout';
+
 import Box from 'reusecore/Box';
-import Heading from 'reusecore/Heading';
+
 import Text from 'reusecore/Text';
 import Image from 'reusecore/Image';
-import Button from 'reusecore/Button';
-import logo from 'assets/images/MineSandboxLogo.png';
+
+import logo from 'assets/images/favicon.png';
 import IntroduceWrapper from './introduce.style';
-import {BiPlayCircle} from 'react-icons/bi'
-import {GrClose} from 'react-icons/gr';
-import AOS from 'aos';
+
 import 'aos/dist/aos.css';
 import yellowgun from 'assets/images/introduce/yellowgun.png';
 import bluegun from 'assets/images/introduce/bluegun.png';

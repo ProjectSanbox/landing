@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import headerBackground from 'assets/images/headerBackground.png';
+import headerBackground from 'assets/images/banner.png';
 
 const HeadingWrapper = styled.div`
     p{

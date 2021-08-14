@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import footerBg from "assets/images/footer-bg.png";
 
 const FooterWrapper = styled.div`
   padding: 80px 0px;
