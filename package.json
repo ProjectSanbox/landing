@@ -7,7 +7,9 @@
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
-    "now-build": "next build && next export -o dist"
+    "now-build": "next build && next export -o dist",
+    "export": "next build && next export -o _static"
+
   },
   "dependencies": {
     "@material-ui/core": "^4.11.4",

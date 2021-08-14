@@ -51,6 +51,7 @@ const Footer = () => {
                <Box className="footer-list">
                 <Row>
                   <Col className="xl-3 lg-3 md-6 sm-6 xs-6">
+                  <Text className="footer-title">Products</Text>
                     <List>
                       <ListItem>HOME</ListItem>
                       <ListItem>Gameplay</ListItem>
@@ -59,6 +60,7 @@ const Footer = () => {
                     </List>
                   </Col>
                   <Col className="xl-3 lg-3 md-6 sm-6 xs-6">
+                  <Text className="footer-title">Information</Text>
                     <List>
                       <ListItem>TEAM</ListItem>
                       <ListItem>ROADMAP</ListItem>
@@ -66,6 +68,7 @@ const Footer = () => {
                     </List>
                   </Col>
                   <Col className="xl-3 lg-3 md-6 sm-6 xs-6">
+                  <Text className="footer-title">Introduce</Text>
                     <List>
                       <ListItem>ABOUT US</ListItem>
                       <ListItem>POLICY</ListItem>

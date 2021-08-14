@@ -4,7 +4,7 @@ import coin from 'assets/images/NFT/coin.png'
 const GlobalStyle = createGlobalStyle`
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {

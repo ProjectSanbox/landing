@@ -35,12 +35,13 @@ h1{
       font-size: 16px;
       color: #ffffff;
       text-transform: uppercase;
+      font-weight: 600;
     }
 
     ul{
       margin-bottom: 40px;
       li{
-        font-size: 15px;
+        font-size: 13px;
         color: #ffffff;
         text-transform: uppercase;
         margin-bottom: 18px;
@@ -52,11 +53,18 @@ h1{
         a{
           display: flex;
           align-items: center;
+          display: block;
           svg{
             margin-right: 10px;
           }
         }
       }
+    }
+  }
+
+  @media only screen and (max-width: 991px){
+    .footer-list{
+      text-align: center;
     }
   }
 `;

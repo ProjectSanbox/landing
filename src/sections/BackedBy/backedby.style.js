@@ -37,6 +37,7 @@ const BackedByWrapper  = styled.div`
                 height: 100%;
                 background: #ffffff;
                 cursor: pointer;
+                border-radius: 10px;
 
                 img{
                     width: 55%;
