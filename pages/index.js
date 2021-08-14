@@ -5,7 +5,7 @@ import Nav from "sections/Nav";
 import HeadingBanner from "sections/HeadingBanner";
 import Roadmap from "sections/Roadmap";
 import Introduce from "sections/Introduce";
-import GamePlay from "sections/GamePlay";
+import GamePlay from "sections/Gameplay";
 import Advisor from "sections/Advisor";
 import BackedBy from "sections/BackedBy";
 import Block from "sections/NFT";
