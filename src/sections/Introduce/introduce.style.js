@@ -113,6 +113,9 @@ const IntroduceWrapper = styled.div`
     .introduce{
       .introduce-content{
         .introduce-weapon{
+          img{
+            width: 150px;
+          }
           img:nth-last-child(1){
             display: none;
           }
