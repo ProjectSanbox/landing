@@ -48,6 +48,7 @@ const HeadingWrapper = styled.div`
                     position: relative;
                     border: 0;
                     overflow: hidden;
+                    box-shadow: 0px 0px 12px rgba(40, 33, 108, 0.7);
                 }
             }
         }

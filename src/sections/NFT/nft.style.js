@@ -74,6 +74,10 @@ const BlockWrapper = styled.div`
         border-radius: 4px;
         background: #42B9FF;
         position: relative;
+        &.slick-disabled{
+            background: rgb(66,185,255, 0.5);
+            cursor: no-drop;
+        }
             img{
                 position: absolute;
                 left: 50%;

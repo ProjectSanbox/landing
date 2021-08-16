@@ -25,6 +25,7 @@ const GamePlayWrapper = styled.div`
            align-items: center;
            .gameplay-intro{
                height: 392px;
+               overflow: hidden;
                flex: 55%;
                left: -2%;
                z-index: -1;
@@ -45,6 +46,8 @@ const GamePlayWrapper = styled.div`
                     img{
                         width: 100px;
                         margin: auto;
+                        margin-bottom: 20px;
+                        margin-top: 20px;
                     }
                     
                     ul{
@@ -81,6 +84,11 @@ const GamePlayWrapper = styled.div`
         border-radius: 4px;
         background: #42B9FF;
         position: relative;
+
+        &.slick-disabled{
+            background: rgb(66,185,255, 0.5);
+            cursor: no-drop;
+        }
             img{
                 position: absolute;
                 left: 50%;
@@ -181,6 +189,23 @@ const GamePlayWrapper = styled.div`
         .gameplay-video{
             .gameplay-intro{
                 height: 350px;
+            }
+        }
+    }
+  }
+
+  @media only screen and (max-width: 1025px){
+    .gameplay-content{
+        .gameplay-video{
+            .gameplay-intro{
+                height: 314px;
+                div{
+                    img{
+                        width: 40px;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                    }
+                }
             }
         }
     }

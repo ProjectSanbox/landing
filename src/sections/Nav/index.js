@@ -39,8 +39,6 @@ const Nav = () =>{
             
     }, []);
 
-    console.log(toggle.active);
-
     return(
         <NavWrapper>
             <Box className={toggle.status ? "nav-mobile open" : "nav-mobile"}>

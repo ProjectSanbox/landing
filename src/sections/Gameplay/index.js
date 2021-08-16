@@ -20,7 +20,7 @@ const GamePlay = () => {
         </div>
         ),
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -60,6 +60,8 @@ const GamePlay = () => {
                             </Box>
                             <Box className="gameplay-intro">
                             <Box>
+                                <Image src={gameplay.introImage} />
+
                                 <Text className="intro-heading">{gameplay.title}</Text>
                                 <Text>{gameplay.content}</Text>
                                 {gameplay.listContent &&
@@ -73,7 +75,6 @@ const GamePlay = () => {
                                     }
                                 </List>
                                 }
-                                <Image src={gameplay.introImage} />
                             </Box>
                             </Box>
                     </Box>

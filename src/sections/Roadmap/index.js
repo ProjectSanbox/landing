@@ -7,7 +7,7 @@ import Heading from "reusecore/Heading";
 import Image from "reusecore/Image";
 import Text from "reusecore/Text";
 import UserMapWrapper from "./userMap.style";
-import roadmapimgae from 'assets/images/roadmap/roadmap.png';
+import roadmap from 'assets/images/roadmap/roadmap.svg';
 
 
 const RoadMap = () => {
@@ -18,7 +18,7 @@ const RoadMap = () => {
           <Box className="roadmap-heading">
             <Heading>Roadmap</Heading>
           </Box>
-          <Image src={roadmapimgae} />
+          <Image src={roadmap} />
         </Container>
       </Box>
     </UserMapWrapper>
