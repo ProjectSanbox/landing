@@ -1,9 +1,9 @@
-import thi from 'assets/images/advisor/thi.png';
+import thitruong from 'assets/images/advisor/thi-truong.png';
 
 export default {
     advisor:[
         {
-            avatar: thi,
+            avatar: thitruong,
             name: "Thi Truong",
             job: "ADVISOR",
             desc: `Thi has been a blockchain soldier with hands-on in-depth experience in blockchain area for several years.
