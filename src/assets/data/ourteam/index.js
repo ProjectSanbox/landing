@@ -1,10 +1,11 @@
-import steven from "assets/images/team/nhan.png";
-import theanh from "assets/images/team/theanh.png";
+import steven from "assets/images/team/Nhan.png";
+import theanh from "assets/images/team/TheAnh.png";
 import minh from "assets/images/team/minh.png";
-import vietnguyen from "assets/images/team/viet.png";
-import hoannguyen from "assets/images/team/hoan.png";
-import quyen from "assets/images/team/quyen.png";
-import hai from "assets/images/team/hai.png";
+import vietnguyen from "assets/images/team/Viet.png";
+import hoannguyen from "assets/images/team/Hoan.png";
+import quyen from "assets/images/team/Quyen.png";
+import hai from "assets/images/team/Hai.png";
+import huong from "assets/images/team/huong.png";
 
 
 export default {
@@ -46,7 +47,7 @@ export default {
       linked: "",
     },
     {
-      avatar: hai,
+      avatar: huong,
       name: "Huong Nguyen",
       job: "Game Design",
       // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
