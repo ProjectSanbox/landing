@@ -1,11 +1,11 @@
 import steven from "assets/images/team/Nhan.png";
 import theanh from "assets/images/team/TheAnh.png";
-import minh from "assets/images/team/AMinh.png";
+import minh from "assets/images/team/minh.png";
 import vietnguyen from "assets/images/team/Viet.png";
 import hoannguyen from "assets/images/team/Hoan.png";
 import quyen from "assets/images/team/Quyen.png";
 import hai from "assets/images/team/Hai.png";
-import huong from "assets/images/team/Huong.png";
+import huong from "assets/images/team/huong.png";
 
 
 export default {

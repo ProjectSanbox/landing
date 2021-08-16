@@ -3,7 +3,7 @@ import NavWrapper from './nav.style';
 import Box from 'reusecore/Box';
 import Image from 'reusecore/Image';
 import {Container} from 'reusecore/Layout';
-import logo from 'assets/images/favicon.png';
+import logo from 'assets/images/logo.png';
 import {List, ListItem} from 'reusecore/List';
 import Link from "next/link";
 import {AiOutlineBars, AiOutlineClose} from 'react-icons/ai';
@@ -29,10 +29,17 @@ const Nav = () =>{
 
     useEffect(() =>{
             const url = window.location.href;
-            const value = url.split("#")[1];
-            setToggle({...toggle, active: value})
+            let value = url.split("#")[1];
+            if(value){
+                setToggle({...toggle, active: value})
+            }else{
+                value = "home"
+                setToggle({...toggle, active: value})
+            }
+            
     }, []);
 
+    console.log(toggle.active);
 
     return(
         <NavWrapper>

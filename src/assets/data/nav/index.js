@@ -2,14 +2,14 @@
 export default {
     nav:[
         {
-            link: "",
-            linkActive: "",
+            link: "#home",
+            linkActive: "home",
             target: false,
             content: "Home"
         },
         {
             link: "#video",
-            linkActive: "#video",
+            linkActive: "video",
             target: false,
             content: "Video"
         },
@@ -20,8 +20,8 @@ export default {
             content: "GamePlay"
         },
         {
-            link: "#NFT",
-            linkActive: "NFT",
+            link: "#nft",
+            linkActive: "nft",
             target: false,
             content: "NFT"
         },
@@ -62,7 +62,7 @@ export default {
             content: "GamePlay"
         },
         {
-            link: "#NFT",
+            link: "#nft",
             target: false,
             content: "NFT"
         },

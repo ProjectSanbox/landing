@@ -51,7 +51,7 @@ const Block = () => {
       };
 
     return (
-        <BlockWrapper id="NFT">
+        <BlockWrapper id="nft">
             <Container>
                 <Box className="NFT-heading">
                     <Heading>NFTs items</Heading>

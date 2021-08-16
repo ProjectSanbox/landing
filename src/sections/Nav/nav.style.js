@@ -85,7 +85,7 @@ const NavWrapper = styled.div`
         align-items: center;
         z-index: 7;
         img{
-            width: 60px;
+            width: 132px;
         }
 
         .navbar-menu{
@@ -145,6 +145,9 @@ const NavWrapper = styled.div`
     @media only screen and (max-width: 600px){
         .nav{
             height: 60px;
+            img{
+                width: 100px;
+            }
         }
 
         .hide{

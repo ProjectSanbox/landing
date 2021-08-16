@@ -10,9 +10,9 @@ import logo from 'assets/images/favicon.png';
 import IntroduceWrapper from './introduce.style';
 
 import 'aos/dist/aos.css';
-import yellowgun from 'assets/images/introduce/yellowgun.png';
-import bluegun from 'assets/images/introduce/bluegun.png';
-import redgun from 'assets/images/introduce/redgun.png';
+import gun1 from 'assets/images/introduce/gun1.png';
+import gun2 from 'assets/images/introduce/gun2.png';
+import gun3 from 'assets/images/introduce/gun3.png';
 import Plyr from 'plyr-react'
 import 'plyr-react/dist/plyr.css'
 
@@ -40,9 +40,9 @@ const Introduce = () => {
                          arena and profit from battles​
                     </Text>
                     <Box className="introduce-weapon">
-                        <Image src={yellowgun}/>
-                        <Image src={bluegun}/>
-                        <Image src={redgun}/>
+                        <Image src={gun1}/>
+                        <Image src={gun2}/>
+                        <Image src={gun3}/>
                     </Box>
                 </Box>
 
