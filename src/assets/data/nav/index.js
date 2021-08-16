@@ -9,7 +9,7 @@ export default {
         },
         {
             link: "#video",
-            linkActive: "#video",
+            linkActive: "video",
             target: false,
             content: "Video"
         },

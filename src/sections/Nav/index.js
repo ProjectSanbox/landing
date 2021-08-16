@@ -29,10 +29,17 @@ const Nav = () =>{
 
     useEffect(() =>{
             const url = window.location.href;
-            const value = url.split("#")[1];
-            setToggle({...toggle, active: value})
+            let value = url.split("#")[1];
+            if(value){
+                setToggle({...toggle, active: value})
+            }else{
+                value = "home"
+                setToggle({...toggle, active: value})
+            }
+            
     }, []);
 
+    console.log(toggle.active);
 
     return(
         <NavWrapper>
