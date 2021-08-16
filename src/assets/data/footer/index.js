@@ -15,10 +15,10 @@ export default {
       productName: "NFTS Items",
       productLink: "#nft",
     },
-    {
-      productName: "PSB",
-      productLink: "#psb",
-    },
+    // {
+    //   productName: "PSB",
+    //   productLink: "#psb",
+    // },
   ],
   information:[
     {
@@ -31,7 +31,7 @@ export default {
     },
     {
       infoName: "Document",
-      infoLink: "#"
+      infoLink: "/comming"
     },
   ],
   documentation:[
