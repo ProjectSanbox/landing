@@ -1,28 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import {List, ListItem} from 'reusecore/List';
 import { Container, Row, Col } from "reusecore/Layout";
 import Box from "reusecore/Box";
-
 import Text from "reusecore/Text";
 import data from "assets/data/footer";
 import Image from "reusecore/Image"
 import FooterWrapper from "./footer.style";
 import logo from "assets/images/logo.png";
-
 import { useState } from "react";
-
-
 
 
 const Footer = () => {
 
   const validateEmail = (email) => 
-    {
+  {
         var re = /\S+@\S+\.\S+/;
         return re.test(email);
-    }
+  }
     
   const [email, setEmail] = useState('');
   const HandlerEmail = (event) =>{
@@ -68,7 +64,7 @@ const Footer = () => {
                   <Text className="footer-title">Introduce</Text>
                     <List>
                       {data.documentation.map((document, index)=>
-                         <ListItem key={index}><Link href={document.documentLink}><a>{document.documentName}</a></Link></ListItem>
+                         <ListItem key={index}><a href={document.documentLink}>{document.documentName}</a></ListItem>
                       )}
                     </List> 
                   </Col>
@@ -76,7 +72,7 @@ const Footer = () => {
                     <Text className="footer-title">join our community</Text>
                     <List className="footer-link">
                       {data.links.map((link, index) =>
-                        <ListItem key={index}><Link href={link.url}><a>{link.icon} {link.name}</a></Link></ListItem>
+                        <ListItem key={index}><Link href={link.url}><a target="_blank">{link.icon} {link.name}</a></Link></ListItem>
                       )}
                     </List> 
                   </Col>

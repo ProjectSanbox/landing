@@ -1,11 +1,11 @@
-import steven from "assets/images/team/Nhan.png";
-import theanh from "assets/images/team/TheAnh.png";
-import minh from "assets/images/team/minh.png";
-import vietnguyen from "assets/images/team/Viet.png";
-import hoannguyen from "assets/images/team/Hoan.png";
-import quyen from "assets/images/team/Quyen.png";
-import hai from "assets/images/team/Hai.png";
-import huong from "assets/images/team/huong.png";
+import stevenlee from "assets/images/team/steven-lee.jpg";
+import chuanthony from "assets/images/team/chu-anthony.jpg";
+import minhnguyen from "assets/images/team/minh-nguyen.jpg";
+import vietnguyen from "assets/images/team/viet-nguyen.jpg";
+import hoanngo from "assets/images/team/hoan-ngo.jpg";
+import quyennguyen from "assets/images/team/quyen-nguyen.jpg";
+import haingo from "assets/images/team/hai-ngo.jpg";
+import huongnguyen from "assets/images/team/huong-nguyen.jpg";
 
 
 export default {
@@ -14,14 +14,14 @@ export default {
    
     
      {
-      avatar: minh,
+      avatar: minhnguyen,
       name: "Minh Nguyen",
       job: "Founder/CEO",
       // desc: "Minh has years of experience in developing a variety of game genres. Having worked in multiple projects with a diverse team of up to 40 developers per-project, he brings quantity technical solutions and smooth team operation.",
       animation: "flip-left",
     },
     {
-      avatar: theanh,
+      avatar: chuanthony,
       name: "Anthony Chu",
       job: "Co-founder/COO",
       // desc: "Anthony has years of experience in game 3D AR/VR develop. He",
@@ -30,7 +30,7 @@ export default {
     
     
     {
-      avatar: steven,
+      avatar: stevenlee,
       name: "Steven Lee",
       job: "Co-founder",
       // desc: "Steven has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
@@ -39,7 +39,7 @@ export default {
     },
   
     {
-      avatar: hoannguyen,
+      avatar: hoanngo,
       name: "Hoan Ngo",
       job: "Art Director ",
       // desc: "Viet has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
@@ -47,7 +47,7 @@ export default {
       linked: "",
     },
     {
-      avatar: huong,
+      avatar: huongnguyen,
       name: "Huong Nguyen",
       job: "Game Design",
       // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
@@ -63,7 +63,7 @@ export default {
       linked: "",
     },
     {
-      avatar: quyen,
+      avatar: quyennguyen,
       name: "Quyen Nguyen",
       job: "2D Artist",
       // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
@@ -71,7 +71,7 @@ export default {
       linked: "",
     },
     {
-      avatar: hai,
+      avatar: haingo,
       name: "Hai Ngo",
       job: "Fullstack Developer",
       // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",

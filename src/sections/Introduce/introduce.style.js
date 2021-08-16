@@ -2,6 +2,12 @@ import styled from "styled-components";
 import backgroundVideo from 'assets/images/introduce/backgroundVideo.png';
 import thumbnailVideo from 'assets/images/introduce/thumbnailVideo.png';
 
+
+
+const root = {
+  height_background: '760px'
+}
+
 const IntroduceWrapper = styled.div`
   padding-top: 60px;
   background: linear-gradient(133.84deg, #4E4E4E -16.04%, #333333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
@@ -34,47 +40,53 @@ const IntroduceWrapper = styled.div`
 
     .introduce-video{
       flex: 160%;
-      height: 760px;
+      height: ${root.height_background};
       background-image: url(${backgroundVideo});
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
-      position: relative;
-      .plyr{
-        width: 600px;
-        position: absolute;
-        bottom: 20%;
-        left: -20%;
-        .plyr__poster{
-          background-image: url(${thumbnailVideo})!important;
+      .video-wrapper{
+        display: flex;
+        align-items: flex-end;
+        margin-top: calc(${root.height_background} - (${root.height_background} * (55/100)));
+        position: relative;
+        right: 20%;
+        div{
+          margin-right: 20px;
+          .plyr{
+            width: 600px;
+            .plyr__poster{
+              background-image: url(${thumbnailVideo})!important;
+            }
+          }
         }
       }
-
+      
       p{
         color: #ffffff;
         text-transform: uppercase;
-        font-weight: 700;
-        position: absolute;
-        right: 15%;
-        bottom: 20%;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 1400px){
-    .introduce{
-      .introduce-video{
-        p{
-          right: 5%;
-        }
+        font-family: 'Goma Block', sans-serif;
+        font-weight: 400;
       }
     }
   }
 
   @media only screen and (max-width: 1200px){
     .introduce{
+      .introduce-content{
+        .introduce-weapon{
+          img:nth-last-child(1){
+            display: none;
+          }
+        }
+      }
+
       .introduce-video{
-        .plyr{
-          bottom: 45%;
+        .video-wrapper{
+          div{
+            .plyr{
+              width: 400px;
+            }
+          }
         }
       }
     }
@@ -83,9 +95,12 @@ const IntroduceWrapper = styled.div`
   @media only screen and (max-width: 975px){
     .introduce{
       flex-direction: column;
+      margin: auto;
       .introduce-content{
-        img{
-          margin: auto;
+        .introduce-weapon{
+          img{
+            margin: 0px auto;
+          }
         }
 
         p{
@@ -94,12 +109,18 @@ const IntroduceWrapper = styled.div`
       }
 
       .introduce-video{
-        position: unset;
-        .plyr{
-          position: relative;
-          top: 0;
-          left: 0;
-          width: 97%;
+        flex: 100%;
+        height: 400px;
+        .video-wrapper{
+          margin-top: 0;
+          right: 0;
+          div{
+            width: 100%;
+            margin: 0;
+            .plyr{
+              width: 100%;
+            }
+          }
         }
 
         p{
@@ -112,6 +133,9 @@ const IntroduceWrapper = styled.div`
   @media only screen and (max-width: 575px){
     .introduce{
       .introduce-content{
+        img{
+          margin: auto;
+        }
         .introduce-weapon{
           img{
             width: 150px;

@@ -26,6 +26,12 @@ export default {
             content: "NFT"
         },
         {
+            link: "//drive.google.com/file/d/1231HjfdpF0Ep1niBj8KNagWzkMR7txHS/view",
+            linkActive: "//drive.google.com/file/d/1231HjfdpF0Ep1niBj8KNagWzkMR7txHS/view",
+            target: true,
+            content: "Token"
+        },
+        {
             link: "#roadmap",
             linkActive: "roadmap",
             target: false,
@@ -65,6 +71,11 @@ export default {
             link: "#nft",
             target: false,
             content: "NFT"
+        },
+        {
+            link: "//drive.google.com/file/d/1231HjfdpF0Ep1niBj8KNagWzkMR7txHS/view",
+            target: true,
+            content: "Token"
         },
         {
             link: "#roadmap",

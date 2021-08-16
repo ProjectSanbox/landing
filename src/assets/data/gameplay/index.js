@@ -1,23 +1,23 @@
-import gameplay1 from 'assets/images/gameplay/gameplay1.png';
-import intro1 from 'assets/images/gameplay/intro1.png';
-import gameplay2 from 'assets/images/gameplay/gameplay2.png';
-import intro2 from 'assets/images/gameplay/intro2.png';
-import gameplay3 from 'assets/images/gameplay/gameplay3.png';
-import intro3 from 'assets/images/gameplay/intro3.png';
+import buildmode from 'assets/images/gameplay/build-mode.jpg';
+import buildmode_icon from 'assets/images/gameplay/build-icon.png';
+import pvpmode from 'assets/images/gameplay/pvp-mode.jpg';
+import pvpmode_icon from 'assets/images/gameplay/pvp-icon.png';
+import pvemode from 'assets/images/gameplay/pve-mode.jpg';
+import pvemode_icon from 'assets/images/gameplay/pve-icon.png';
 import play from 'assets/images/gameplay/play.png'
 
 export default {
     gameplay:[
         {
-            imgVideo: gameplay1,
+            imgVideo: buildmode,
             title: "Building mode​",
             content: "This is one of the core functions of the game. When the player first enters the game, they will be provided a Builder Tool to customize basically every object in their own inventory",
-            introImage: intro1,
+            introImage: buildmode_icon,
             linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",
             playButton: play
         },
         {
-            imgVideo: gameplay2,
+            imgVideo: pvpmode,
             title: "Multiplayer mode​​",
             content: "",
             listContent: [
@@ -26,19 +26,19 @@ export default {
                 "There are some preset game modes from the publisher as following.",
                 "Players is rewarded loot box, NFT object, and token."
             ],
-            introImage: intro2,
+            introImage: pvpmode_icon,
             linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",
             playButton: play
         },
         {
-            imgVideo: gameplay3,
-            title: "Building mode​",
+            imgVideo: pvemode,
+            title: "PvE Mode​",
             content: "Planet Sandbox provides some build-in PvE mode: ",
             listContent: [
                 "Tower defense: protect your base from NPC like zombies, soldier",
-                "Racing: finish the track first. Runnable NPC: cyborg, house, hound..."
+                "Racing: finish the track first. Runnable NPC: cyborg, hour, hound..."
             ],
-            introImage: intro3,
+            introImage: pvemode_icon,
             linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",
             playButton: play
         }

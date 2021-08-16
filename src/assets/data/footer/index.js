@@ -1,5 +1,6 @@
 import { FaTwitter, FaMediumM, FaTelegramPlane } from "react-icons/fa";
 
+
 export default {
   products:[
     {
@@ -14,10 +15,10 @@ export default {
       productName: "NFTS Items",
       productLink: "#nft",
     },
-    {
-      productName: "PSB",
-      productLink: "#psb",
-    },
+    // {
+    //   productName: "PSB",
+    //   productLink: "#psb",
+    // },
   ],
   information:[
     {
@@ -30,21 +31,21 @@ export default {
     },
     {
       infoName: "Document",
-      infoLink: "#"
+      infoLink: "/comming"
     },
   ],
   documentation:[
     {
       documentName: "ABOUT US",
-      documentLink: "#"
+      documentLink: "/comming"
     },
     {
       documentName: "POLICY",
-      documentLink: "#"
+      documentLink: "/comming"
     },
     {
-      documentName: "WHITEPAPER (Comming soon)",
-      documentLink: "#"
+      documentName: "WHITEPAPER",
+      documentLink: "/comming"
     },
   ],
   links: [
@@ -56,7 +57,7 @@ export default {
 
     {
       icon: <FaMediumM />,
-      url: "//theminders.medium.com",
+      url: "//theminders.medium.com/",
       name: "Medium"
     },
     

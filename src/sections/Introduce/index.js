@@ -47,8 +47,10 @@ const Introduce = () => {
                 </Box>
 
                 <Box className="introduce-video">
-                    <Plyr source={videoSrc} />
-                    <Text>Trailer</Text>
+                   <Box className="video-wrapper">
+                        <Box><Plyr source={videoSrc} /></Box>
+                        <Text>Trailer</Text>
+                   </Box>
                 </Box>
             </Box>
         </IntroduceWrapper>

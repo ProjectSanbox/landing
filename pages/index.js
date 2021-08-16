@@ -40,7 +40,6 @@ const Home = () => {
       <Introduce />
       <GamePlay />
       <Block />
-     
       <Roadmap />
       <OurTeam />
       <Advisor />

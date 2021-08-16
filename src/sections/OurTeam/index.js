@@ -64,7 +64,7 @@ const OurTeam = () =>{
                 <Box className="ourteam-content">
                    <Slider {...settings}>
                         {data.ourteam.map((team, index) =>
-                        <Box data-aos={team.animation} key={index} className="ourteam-item">
+                        <Box data-aos={team.animation} key={index}  data-aos-duration={(index + 1) * 500} className="ourteam-item">
                              <Box className="ourteam-img">
                                 <Image src={team.avatar} />
                              </Box>

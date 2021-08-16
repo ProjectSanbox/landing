@@ -90,6 +90,7 @@ const NavWrapper = styled.div`
 
         .navbar-menu{
             display: none;
+            width: 30%;
             .navbar-menu-icon{
                 width: 120px;
                 cursor: pointer;
@@ -142,7 +143,8 @@ const NavWrapper = styled.div`
         }
     }
 
-    @media only screen and (max-width: 600px){
+
+    @media only screen and (max-width: 975px){
         .nav{
             height: 60px;
             img{
