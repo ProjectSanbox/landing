@@ -10,7 +10,7 @@ export default {
 
     {
       icon: <FaMediumM />,
-      url: "//medium.com/@Polrare.nft",
+      url: "//theminders.medium.com",
       name: "Medium"
     },
     
@@ -22,16 +22,16 @@ export default {
   ],
   documentation:[
     {
-      documentName: "WHITEPAPER",
-      documentLink: "//www.whitepaper.com/"
+      documentName: "WHITEPAPER (Comming soon)",
+      documentLink: "#"
     },
     {
       documentName: "TOKENOMICS",
-      documentLink: "//www.stokenomics.com/"
+      documentLink: ""
     },
     {
       documentName: "DEVELOPERHUB",
-      documentLink: "//developers.intercom.com/"
+      documentLink: "#"
     },
   ]
 };

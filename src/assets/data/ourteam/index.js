@@ -5,6 +5,7 @@ import vietnguyen from "assets/images/team/Viet.png";
 import hoannguyen from "assets/images/team/Hoan.png";
 import quyen from "assets/images/team/Quyen.png";
 import hai from "assets/images/team/Hai.png";
+import huong from "assets/images/team/Huong.png";
 
 
 export default {
@@ -46,7 +47,7 @@ export default {
       linked: "",
     },
     {
-      avatar: hai,
+      avatar: huong,
       name: "Huong Nguyen",
       job: "Game Design",
       // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
