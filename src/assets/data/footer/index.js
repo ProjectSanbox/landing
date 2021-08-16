@@ -1,6 +1,52 @@
 import { FaTwitter, FaMediumM, FaTelegramPlane } from "react-icons/fa";
 
 export default {
+  products:[
+    {
+      productName: "Home",
+      productLink: "#home",
+    },
+    {
+      productName: "Gameplay",
+      productLink: "#gameplay",
+    },
+    {
+      productName: "NFTS Items",
+      productLink: "#nft",
+    },
+    {
+      productName: "PSB",
+      productLink: "#psb",
+    },
+  ],
+  information:[
+    {
+      infoName: "Team",
+      infoLink: "#ourteam"
+    },
+    {
+      infoName: "Roadmap",
+      infoLink: "#roadmap"
+    },
+    {
+      infoName: "Document",
+      infoLink: "#"
+    },
+  ],
+  documentation:[
+    {
+      documentName: "ABOUT US",
+      documentLink: "#"
+    },
+    {
+      documentName: "POLICY",
+      documentLink: "#"
+    },
+    {
+      documentName: "WHITEPAPER (Comming soon)",
+      documentLink: "#"
+    },
+  ],
   links: [
     {
       icon: <FaTwitter />,
@@ -20,18 +66,4 @@ export default {
       name: "Telegram"
     },
   ],
-  documentation:[
-    {
-      documentName: "WHITEPAPER (Comming soon)",
-      documentLink: "#"
-    },
-    {
-      documentName: "TOKENOMICS",
-      documentLink: ""
-    },
-    {
-      documentName: "DEVELOPERHUB",
-      documentLink: "#"
-    },
-  ]
 };

@@ -6,7 +6,7 @@ import Text from 'reusecore/Text';
 import Box from 'reusecore/Box';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import HeaderText from 'assets/images/banner-text.png';
+import headertext from 'assets/images/header-text.png';
 
 
 const HeadingBanner = () => {
@@ -32,11 +32,11 @@ const HeadingBanner = () => {
     })
 
     return (
-        <HeadingWrapper>
+        <HeadingWrapper id="home">
             <div className="heading">
                 <Box className="headingBackground">
                     <Box className="heading-content">
-                        <Image src={HeaderText} />
+                        <Image src={headertext} />
                         <Text>The biggest third-person sandbox game on blockchain</Text>
                         <Button>
                             Pre-Register

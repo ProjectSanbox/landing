@@ -9,7 +9,7 @@ import Text from "reusecore/Text";
 import data from "assets/data/footer";
 import Image from "reusecore/Image"
 import FooterWrapper from "./footer.style";
-import logo from "assets/images/logo-footer.png";
+import logo from "assets/images/logo.png";
 
 import { useState } from "react";
 
@@ -51,26 +51,25 @@ const Footer = () => {
                   <Col className="xl-3 lg-3 md-6 sm-6 xs-6">
                   <Text className="footer-title">Products</Text>
                     <List>
-                      <ListItem>HOME</ListItem>
-                      <ListItem>Gameplay</ListItem>
-                      <ListItem>NFTS ITEMS</ListItem>
-                      <ListItem>COIN</ListItem>
+                      {data.products.map((product, index) =>
+                        <ListItem key={index}><Link href={product.productLink}><a>{product.productName}</a></Link></ListItem>
+                      )}
                     </List>
                   </Col>
                   <Col className="xl-3 lg-3 md-6 sm-6 xs-6">
                   <Text className="footer-title">Information</Text>
                     <List>
-                      <ListItem>TEAM</ListItem>
-                      <ListItem>ROADMAP</ListItem>
-                      <ListItem>DOCUMENT</ListItem>
+                      {data.information.map((info, index) =>
+                        <ListItem key={index}><Link href={info.infoLink}><a>{info.infoName}</a></Link></ListItem>
+                      )}
                     </List>
                   </Col>
                   <Col className="xl-3 lg-3 md-6 sm-6 xs-6">
                   <Text className="footer-title">Introduce</Text>
                     <List>
-                      <ListItem>ABOUT US</ListItem>
-                      <ListItem>POLICY</ListItem>
-                      <ListItem>WHITEPAPER</ListItem>
+                      {data.documentation.map((document, index)=>
+                         <ListItem key={index}><Link href={document.documentLink}><a>{document.documentName}</a></Link></ListItem>
+                      )}
                     </List> 
                   </Col>
                   <Col className="xl-3 lg-3 md-6 sm-6 xs-6">

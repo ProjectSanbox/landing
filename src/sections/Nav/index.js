@@ -3,7 +3,7 @@ import NavWrapper from './nav.style';
 import Box from 'reusecore/Box';
 import Image from 'reusecore/Image';
 import {Container} from 'reusecore/Layout';
-import logo from 'assets/images/favicon.png';
+import logo from 'assets/images/logo.png';
 import {List, ListItem} from 'reusecore/List';
 import Link from "next/link";
 import {AiOutlineBars, AiOutlineClose} from 'react-icons/ai';
