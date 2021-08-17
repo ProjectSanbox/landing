@@ -11,7 +11,7 @@ const HeadingWrapper = styled.div`
     .heading{
         width: 100%;
         height: 838px;
-        margin-top: 81px;
+        margin-top: 18px;
         .headingBackground{
             background-image: url(${headerBackground});
             height: 100%;
@@ -23,7 +23,7 @@ const HeadingWrapper = styled.div`
                 height: 50%;
                 position: absolute;
                 left: 50%;
-                top: 50%;
+                top: 55%;
                 transform: translate(-50%, -50%);
                 text-align: center;
                 img{
@@ -56,7 +56,7 @@ const HeadingWrapper = styled.div`
     
     @media only screen and (max-width: 600px){
         .heading{
-            margin-top: 61px;
+            margin-top: 42px;
             .headingBackground{
                 .heading-content{
                     button{
