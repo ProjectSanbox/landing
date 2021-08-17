@@ -1,18 +1,16 @@
-import stevenlee from "assets/images/team/steven-lee.jpg";
-import chuanthony from "assets/images/team/chu-anthony.jpg";
-import minhnguyen from "assets/images/team/minh-nguyen.jpg";
-import vietnguyen from "assets/images/team/viet-nguyen.jpg";
-import hoanngo from "assets/images/team/hoan-ngo.jpg";
-import quyennguyen from "assets/images/team/quyen-nguyen.jpg";
-import haingo from "assets/images/team/hai-ngo.jpg";
-import huongnguyen from "assets/images/team/huong-nguyen.jpg";
+import stevenlee from "assets/images/team/steven-lee.png";
+import chuanthony from "assets/images/team/chu-anthony.png";
+import minhnguyen from "assets/images/team/minh-nguyen.png";
+import vietnguyen from "assets/images/team/viet-nguyen.png";
+import hoanngo from "assets/images/team/hoan-ngo.png";
+import quyennguyen from "assets/images/team/quyen-nguyen.png";
+import haingo from "assets/images/team/hai-ngo.png";
+import huongnguyen from "assets/images/team/huong-nguyen.png";
 
 
 export default {
   ourteam: [
    
-   
-    
      {
       avatar: minhnguyen,
       name: "Minh Nguyen",

@@ -1,8 +1,8 @@
-import buildmode from 'assets/images/gameplay/build-mode.jpg';
+import buildmode from 'assets/images/gameplay/build-mode.png';
 import buildmode_icon from 'assets/images/gameplay/build-icon.png';
-import pvpmode from 'assets/images/gameplay/pvp-mode.jpg';
+import pvpmode from 'assets/images/gameplay/pvp-mode.png';
 import pvpmode_icon from 'assets/images/gameplay/pvp-icon.png';
-import pvemode from 'assets/images/gameplay/pve-mode.jpg';
+import pvemode from 'assets/images/gameplay/pve-mode.png';
 import pvemode_icon from 'assets/images/gameplay/pve-icon.png';
 import play from 'assets/images/gameplay/play.png'
 

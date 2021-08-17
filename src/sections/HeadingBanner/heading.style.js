@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import headerBackground from 'assets/images/banner.png';
+import headerBackground from 'assets/images/banner.jpg';
 
 const HeadingWrapper = styled.div`
     p{
@@ -54,14 +54,14 @@ const HeadingWrapper = styled.div`
         }
     }
     
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 635px){
         .heading{
             margin-top: 61px;
             .headingBackground{
                 .heading-content{
                     button{
                         margin-top: 30px;
-                        width: 200px;
+                        width: auto;
                         height: 40px;
                     }
 
@@ -82,7 +82,6 @@ const HeadingWrapper = styled.div`
             .heading-content{
                 button{
                     margin-top: 10px!important;
-                    width: 100px!important;
                     height: 25px!important;
                     font-size: 10px;
                     border-radius: 4px!important;
