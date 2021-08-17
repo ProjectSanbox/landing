@@ -68,7 +68,7 @@ const Block = () => {
                             <Text className="item-weapon">{item.type}</Text>
                             <Text className="item-name">{item.name}</Text>
                             <Image className="item-image" src={item.image}/>
-                            <Box className="item-price"><Image src={coin} />{item.price} PSB</Box>
+                            <Box className="item-price">{item.price} PSB</Box>
                         </Box>
                         )} 
                     </Slider>
