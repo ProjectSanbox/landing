@@ -56,8 +56,7 @@ const Block = () => {
                 <Box className="NFT-heading">
                     <Heading>NFTs items</Heading>
                     <Box>
-                        <Text>Each object will have its own categories and properties that define its characteristic.<br/>
-                        Rarity is defined by NFT properties</Text>
+                        <Text>Each item will have its unique categories and properties which define its unique characteristics. The originality comes from those NFT properties, thus creating the utmost rarity of the item. </Text>
                     </Box>
                 </Box>
                 <Box className="NFT-content">

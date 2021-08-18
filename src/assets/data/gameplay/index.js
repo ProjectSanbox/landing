@@ -11,7 +11,7 @@ export default {
         {
             imgVideo: buildmode,
             title: "Building mode​",
-            content: "This is one of the core functions of the game. When the player first enters the game, they will be provided a Builder Tool to customize basically every object in their own inventory",
+            content: "This is where the vision starts. The player will be provided with the builder tool to customize every item in their inventory, making the foundation for their sandbox world.",
             introImage: buildmode_icon,
             linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",
             playButton: play

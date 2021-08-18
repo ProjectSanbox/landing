@@ -46,8 +46,9 @@ const GamePlay = () => {
        <Container>
         <Box className="gameplay-heading">
             <Heading>Gameplay</Heading>
-            <Text>Planet Sandbox is a virtual world where players can play, build, own, and monetize their virtual experiences. 
-            We empower artists, creators, and players to build the platform they always envisioned, providing the means to unleash your creativity.</Text>
+            <Text>Planet Sandbox is the total package for the unbound hidden vision that lies deep inside each player. Like a superior being with almighty powers, players can build the parts, innovate their world, play their own game rules, share with their friends and monetize from their creation. 
+
+</Text>
         </Box>
        </Container>
        <Box className="gameplay-content">

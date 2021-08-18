@@ -58,8 +58,8 @@ const OurTeam = () =>{
             <Container>
                 <Box className="ourteam-heading">
                     <Heading>Core Team</Heading>
-                    <Text>Passionate and talented soldier in game industry. 
-                      <br/>We want bringing the best game experience to player.</Text>
+                    <Text>Behind a great game stand the passionate and talented people in the industry.
+                      <br/>We want to bring the best experience to all the players.</Text>
                 </Box>
                 <Box className="ourteam-content">
                    <Slider {...settings}>
