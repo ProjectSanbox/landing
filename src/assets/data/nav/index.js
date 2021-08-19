@@ -44,11 +44,17 @@ export default {
             content: "Team"
         },
         {
-            link: "//app.polrare.co/",
-            linkActive: "//app.polrare.co/",
-            target: true,
-            content: "MarketPlace"
+            link: "//docsend.com/view/wm76umky6wbzqwmx",
+            linkActive: "#",
+            target: false,
+            content: "Pitching"
         },
+        // {
+        //     link: "//app.polrare.co/",
+        //     linkActive: "//app.polrare.co/",
+        //     target: true,
+        //     content: "MarketPlace"
+        // },
         
     ],
     navMobie:[
@@ -88,9 +94,15 @@ export default {
             content: "Team"
         },
         {
-            link: "//app.polrare.co/",
+            link: "//docsend.com/view/wm76umky6wbzqwmx",
+            linkActive: "#",
             target: false,
-            content: "MarketPlace"
+            content: "Pitching"
         },
+        // {
+        //     link: "//app.polrare.co/",
+        //     target: false,
+        //     content: "MarketPlace"
+        // },
     ]
 }
