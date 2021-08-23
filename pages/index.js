@@ -14,6 +14,7 @@ import FavIcon from "assets/images/favicon.png";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
 import OurTeam from "sections/OurTeam";
+import Meme from "sections/Meme";
 
 
 const Home = () => {
@@ -44,6 +45,7 @@ const Home = () => {
       <OurTeam />
       <Advisor />
       <BackedBy />
+      <Meme />
       <Footer />
     </ThemeProvider>
   );

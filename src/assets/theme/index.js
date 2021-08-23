@@ -66,6 +66,9 @@ body {
     background-position: center center;
 }
 
+#__next{
+  overflow-x: hidden;
+}
 
 h1,
 h2,
