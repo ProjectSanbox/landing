@@ -62,7 +62,7 @@ const Nav = () =>{
             <Container>
                 <Box className="nav">
                     <Box className="navbar-menu"><AiOutlineBars onClick={()=>handleToggleMenu(true)} className="navbar-menu-icon" /></Box>
-                    <Image src={logo} />
+                    <a href="/"><Image src={logo} /></a>
                     <List className="hide">
                         {data.nav.map((nav, index) =>
                         <ListItem key={index} className={toggle.active === nav.linkActive ? "active" : ''}>

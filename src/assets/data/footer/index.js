@@ -33,6 +33,10 @@ export default {
       infoName: "Document",
       infoLink: "/comming"
     },
+    {
+      infoName: "Meme contest",
+      infoLink: "/Meme"
+    },
   ],
   documentation:[
     {
