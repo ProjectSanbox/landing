@@ -42,8 +42,8 @@ const MemeForm = () =>{
                     </Text>
                     <Text className="form-heading">We’ll contact the winners by email</Text>
                     <Box className="form-group">
-                        <Label>Your Email address <Text as="span">*</Text></Label>
-                        <Input placeholder="sandbox-place@derace.io" type="text" />
+                        <Label>Weet your meme and tag @DeRaceNFT&nbsp;<Text as="span">*</Text></Label>
+                        <Input placeholder="@planetsandboxmeme" type="text" />
                     </Box>
                     <Box className="form-group">
                         <Label>Your Telegram username <Text as="span">*</Text></Label>

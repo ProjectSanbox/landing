@@ -22,7 +22,7 @@ const NavWrapper = styled.div`
         }
 
         .list-mobile{
-            padding: 10px 10px;
+            padding: 10px 20px;
             width: 280px;
             position: fixed;
             left: 0;
@@ -140,6 +140,12 @@ const NavWrapper = styled.div`
                     color: #ffffff;
                 }
             } 
+        }
+    }
+
+    @media only screen and (max-width: 992px){
+        .container{
+            max-width: 100%;
         }
     }
 

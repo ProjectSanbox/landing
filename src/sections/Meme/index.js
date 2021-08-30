@@ -17,8 +17,8 @@ const Meme = () =>{
             </Box>
             <Box className="meme-content">
                 <Text className="meme-text">Meme Contest</Text>
-                <Text className="meme-text small">Comunity Fest</Text>
-                <Link href="/Meme"><a><Button className="meme-btn">Join Event</Button></a></Link>
+                <Text className="meme-text small">community Fest</Text>
+                <Link href="/meme"><a><Button className="meme-btn">Join Event</Button></a></Link>
             </Box>
         </Box>
         
