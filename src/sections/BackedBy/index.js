@@ -13,7 +13,7 @@ const BackedBy = () =>{
      <BackedByWrapper id="backedby">
         <Container>
             <Box className="backedby-heading">
-                <Heading>Backed</Heading>
+                <Heading>Backed By</Heading>
             </Box>
             <Box className="backedby-content">
             {data.backedby.map((backedby, index) => 
