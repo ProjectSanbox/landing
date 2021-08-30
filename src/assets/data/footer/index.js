@@ -57,7 +57,7 @@ export default {
 
     {
       icon: <FaMediumM />,
-      url: "//theminders.medium.com/",
+      url: "//planetsandbox.medium.com/",
       name: "Medium"
     },
     
