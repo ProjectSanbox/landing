@@ -27,15 +27,15 @@ const BackedByWrapper  = styled.div`
         margin-top: 100px;
         a{
             display: block;
-            width: 300px;
+            width: 220px;
             margin: 10px;
-            height: 155px;
+            height: 117.33px;
             .item-border{
                 width: 100%;
                 height: 100%;
                 position: relative;
                 border-radius: 16px;
-                padding: 10px;
+                padding: 7px;
                 overflow: hidden;
                 background: linear-gradient(230.22deg, rgba(64, 159, 245, 0.3) -35.96%, rgba(66, 185, 255, 0.3) 54.54%, rgba(14, 30, 173, 0.3) 116.3%);
                 .backedby-item{
@@ -59,18 +59,18 @@ const BackedByWrapper  = styled.div`
     @media only screen and (max-width: 500px){
         .backedby-content{
             height: auto;
-            .item-border{
-                width: 305px!important;
-                height: 160px!important;
-                padding: 10px!important;
-                border-radius: 10px;
-                margin: 10px auto!important;
-                .backedby-item{
+            a{
+                width: 305px;
+                height: 162.66px;
+                .item-border{
                     border-radius: 10px;
-                }
-                
-                img{
-                    width: 135px!important;
+                    .backedby-item{
+                        border-radius: 10px;
+                    }
+                    
+                    img{
+                        width: 135px!important;
+                    }
                 }
             }
         }

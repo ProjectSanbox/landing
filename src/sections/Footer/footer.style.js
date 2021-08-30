@@ -61,7 +61,21 @@ h1{
     }
   }
 
-  @media only screen and (max-width: 991px){
+  .copyright{
+    display: none;
+  }
+
+  @media only screen and (max-width: 992px){
+
+    .hide{
+      display: none;
+    }
+
+    .copyright{
+      display: block;
+      text-align: center;
+    }
+
     .footer-list{
       text-align: center;
     }
