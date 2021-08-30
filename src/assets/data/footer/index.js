@@ -12,7 +12,7 @@ export default {
       productLink: "#gameplay",
     },
     {
-      productName: "NFTS Items",
+      productName: "NFT Items",
       productLink: "#nft",
     },
     // {

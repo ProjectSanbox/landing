@@ -54,7 +54,7 @@ const Block = () => {
         <BlockWrapper id="nft">
             <Container>
                 <Box className="NFT-heading">
-                    <Heading>NFTs items</Heading>
+                    <Heading>NFT items</Heading>
                     <Box>
                         <Text>Each item will have its unique categories and properties which define its unique characteristics. The originality comes from those NFT properties, thus creating the utmost rarity of the item. </Text>
                     </Box>

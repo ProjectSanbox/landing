@@ -45,7 +45,7 @@ const Home = () => {
       <OurTeam />
       <Advisor />
       <BackedBy />
-      <Meme />
+      {/* <Meme /> */}
       <Footer />
     </ThemeProvider>
   );
