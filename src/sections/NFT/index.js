@@ -5,11 +5,9 @@ import Box from 'reusecore/Box';
 import Image from 'reusecore/Image';
 import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
-
-import Slider from 'react-slick';
 import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
 import data from 'assets/data/resource';
-import coin from 'assets/images/resource/coin.png'
+import {SlickSlider, SliderItem} from 'resource/SlickSlider';
 
 const Block = () => {
 
@@ -60,17 +58,7 @@ const Block = () => {
                     </Box>
                 </Box>
                 <Box className="NFT-content">
-                    <Slider {...settings}>
-                    {data.NFT.map((item, index) =>
-    
-                        <Box key={index} className="NFT-item">
-                            <Text className="item-weapon">{item.type}</Text>
-                            <Text className="item-name">{item.name}</Text>
-                            <Image className="item-image" src={item.image}/>
-                            <Box className="item-price">{item.price} $PSB</Box>
-                        </Box>
-                        )} 
-                    </Slider>
+                   
                 </Box>
             </Container>
         </BlockWrapper>

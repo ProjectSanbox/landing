@@ -21,39 +21,7 @@ const BackedByWrapper  = styled.div`
     }
 
     .backedby-content{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 100px;
-        a{
-            display: block;
-            width: 220px;
-            margin: 10px;
-            height: 117.33px;
-            .item-border{
-                width: 100%;
-                height: 100%;
-                position: relative;
-                border-radius: 16px;
-                padding: 7px;
-                overflow: hidden;
-                background: linear-gradient(180deg, #A81106 -0.29%, #C01F19 33.61%, #F84145 99.08%);
-                box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
-                .backedby-item{
-                    height: 100%;
-                    background: #ffffff;
-                    cursor: pointer;
-                    border-radius: 10px;
-                    img{
-                        width: 44%;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-                }
-            }
-        }
+      
     }
 
     @media only screen and (max-width: 500px){
