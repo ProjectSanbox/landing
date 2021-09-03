@@ -22,9 +22,9 @@ export default {
             content: "",
             listContent: [
                 "Players can join other's published Land to play game modes.",
-                "Game modes are custom by Land owner using Rule Tool.",
-                "There are some preset game modes from the publisher as following.",
-                "Players is rewarded loot box, NFT object, and token."
+                "Game modes are customized by Land owner using Rule Tool.",
+                "There are some preset game modes from the publisher.",
+                "Players is rewarded with loot boxes, NFT objects and tokens."
             ],
             introImage: pvpmode_icon,
             linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",

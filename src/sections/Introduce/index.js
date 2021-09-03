@@ -34,7 +34,8 @@ const Introduce = () => {
             <Box className="introduce">
                 <Box className="introduce-content">
                     <Image src={logo} />
-                    <Text>Planet Sandbox is the ultimate physic sandbox game that allows players to unleash creativity on the sandbox worlds with unlimited built-in items. It is also a multiplayer TPS NFT game that lets the users engage in their original combat arena and get the profits from the battle.
+                    <Text>Planet Sandbox is the ultimate physic sandbox game that allows players to unleash creativity on the sandbox worlds with unlimited built-in items. 
+                    It is also a multiplayer TPS NFT game that let users engage in their original combat arena and make profits from the battle.
                     </Text>
                     <Box className="introduce-weapon">
                         <Image src={gun1}/>
