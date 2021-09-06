@@ -18,7 +18,7 @@ export default {
         {
             weapon: ak47_retro,
             name: "AK47 Retro",
-            info: "This version of AK47 in 2069 with Neon Light"
+            info: "The first AK47 version with Neon Light"
         },
         {
             weapon: lady_pistol,
