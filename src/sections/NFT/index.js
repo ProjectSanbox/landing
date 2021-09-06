@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import BlockWrapper from './nft.style';
 import { Container, Row, Col } from 'reusecore/Layout';
+import {SlickSlider, SliderItem} from 'reusecore/SlickSlider';
 import Box from 'reusecore/Box';
 import Image from 'reusecore/Image';
 import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
 import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
-import data from 'assets/data/resource';
-import {SlickSlider, SliderItem} from 'resource/SlickSlider';
+
 
 const Block = () => {
 
