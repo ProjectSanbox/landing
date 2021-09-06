@@ -1,26 +1,25 @@
 import styled from "styled-components";
 import backgroundVideo from 'assets/images/introduce/backgroundVideo.png';
-import thumbnailVideo from 'assets/images/introduce/thumbnailVideo.png';
-
-
+import thumbnailVideo from 'assets/images/introduce/thumbnailVideo.png'
 
 const root = {
-  height_background: '760px'
+  height_background: '830px'
 }
 
 const IntroduceWrapper = styled.div`
   padding-top: 60px;
+  padding-bottom: 60px;
   background: linear-gradient(133.84deg, #4E4E4E -16.04%, #333333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
   .introduce{
     width: 97%;
     margin-left: 3%;
     display: flex;
     .introduce-content{
+      margin-top: 159px;
         img{
           width: 99px;
           margin-bottom: 30px;
         }
-
         p{
           font-size: 24px;
           font-style: italic;
@@ -28,32 +27,22 @@ const IntroduceWrapper = styled.div`
           font-weight: 400;
           line-height: 33.6px;
         }
-
-        .introduce-weapon{
-          display: flex;
-          img{
-            width: 170px;
-            margin-right: 30px;
-          }
-        }
     }
 
     .introduce-video{
       flex: 160%;
       height: ${root.height_background};
       background-image: url(${backgroundVideo});
+      background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       .video-wrapper{
-        display: flex;
-        align-items: flex-end;
-        margin-top: calc(${root.height_background} - (${root.height_background} * (55/100)));
+        margin-top: calc(${root.height_background} - (${root.height_background} * (66/100)));
         position: relative;
-        right: 20%;
+        right: 10%;
         div{
-          margin-right: 20px;
           .plyr{
-            width: 600px;
+            width: 738px;
             .plyr__poster{
               background-image: url(${thumbnailVideo})!important;
             }
@@ -66,20 +55,14 @@ const IntroduceWrapper = styled.div`
         text-transform: uppercase;
         font-family: 'Goma Block', sans-serif;
         font-weight: 400;
+        font-size: 24px;
+        margin-top: 23px;
       }
     }
   }
 
   @media only screen and (max-width: 1200px){
     .introduce{
-      .introduce-content{
-        .introduce-weapon{
-          img:nth-last-child(1){
-            display: none;
-          }
-        }
-      }
-
       .introduce-video{
         .video-wrapper{
           div{
@@ -93,16 +76,15 @@ const IntroduceWrapper = styled.div`
   }
 
   @media only screen and (max-width: 975px){
+    padding-bottom: 0;
     .introduce{
       flex-direction: column;
       margin: auto;
       .introduce-content{
-        .introduce-weapon{
-          img{
-            margin: 0px auto;
-          }
+        margin-top: 0;
+        .heading{
+          text-align: center;
         }
-
         p{
           padding: 5%;
         }
@@ -135,14 +117,6 @@ const IntroduceWrapper = styled.div`
       .introduce-content{
         img{
           margin: auto;
-        }
-        .introduce-weapon{
-          img{
-            width: 150px;
-          }
-          img:nth-last-child(1){
-            display: none;
-          }
         }
         p{
           font-size: 20px;

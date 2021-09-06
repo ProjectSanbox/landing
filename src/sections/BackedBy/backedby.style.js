@@ -21,38 +21,30 @@ const BackedByWrapper  = styled.div`
     }
 
     .backedby-content{
-      
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
     }
 
-    @media only screen and (max-width: 500px){
+    @media only screen and (max-width: 550px){
         .backedby-content{
-            height: auto;
-            a{
-                width: 305px;
-                height: 162.66px;
-                .item-border{
-                    border-radius: 10px;
-                    .backedby-item{
-                        border-radius: 10px;
-                    }
-                    
-                    img{
-                        width: 135px!important;
-                    }
+            justify-content: center;
+            .backedby-item{
+                width: 300px;
+                margin-bottom: 40px;
+                img{
+                    width: 60%;
+                    margin: auto;
+                   &#b1{
+                       width: 40%;
+                   }
                 }
             }
         }
         
     }
-
-    @media only screen and (max-width: 480px){
-        .backedby-heading{
-        h1{
-            font-size: 49px;
-            line-height: 49px;
-        }
-    }
-  }
 `;
 
 export default BackedByWrapper;

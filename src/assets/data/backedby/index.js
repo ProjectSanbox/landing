@@ -1,42 +1,38 @@
 
-
-import exnetwork from 'assets/images/backedby/ic_exnetwork.png';
-import icetea from 'assets/images/backedby/icetea.png';
 import redkite from 'assets/images/backedby/redkite.png';
+import m6 from 'assets/images/backedby/m6.png';
+import polrare from 'assets/images/backedby/polrare.png';
 import gamefi from 'assets/images/backedby/gamefi.png';
+import icetea from 'assets/images/backedby/icetea.png';
 import illuvium from 'assets/images/backedby/illuvium.png';
 import basic from 'assets/images/backedby/basic_capital.png';
-import m6 from 'assets/images/backedby/m6.png';
 
 export default {
     backedby:[
         {
-            imageSrc: icetea,
-            src: "//icetea.io/",
-        },
-        {
-            imageSrc: exnetwork,
-            src: "//exnetworkcapital.com/",
-        },
-        {
             imageSrc: redkite,
+            src: "//icetea.io/",
+            id: "b1",
+        },
+        {
+            imageSrc: m6,
+            src: "//exnetworkcapital.com/",
+            id: "b2",
+        },
+        {
+            imageSrc: polrare,
             src: "//redkite.polkafoundry.com/#/",
+            id: "b3",
         },
         {
             imageSrc: gamefi,
             src: "//www.gamefi.com/",
-        },
-        {
-            imageSrc: illuvium,
-            src: "/",
+            id: "b4",
         },
         {
             imageSrc: basic,
             src: "/",
-        },
-        {
-            imageSrc: m6,
-            src: "/",
-        },
+            id: "b5",
+        }
     ]
 }

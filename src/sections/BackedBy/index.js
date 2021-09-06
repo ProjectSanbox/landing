@@ -7,6 +7,7 @@ import Image from 'reusecore/Image';
 import data from 'assets/data/backedby';
 import { Container } from 'reusecore/Layout';
 import Link from "next/link";
+import {List, ListItem} from 'reusecore/List';
 
 const BackedBy = () =>{
  return(
@@ -21,12 +22,13 @@ const BackedBy = () =>{
                     <a target="_blank">
                         <Box className="item-border">
                             <Box className="backedby-item">
-                                <Image src={backedby.imageSrc} />
+                                <Image id={backedby.id} src={backedby.imageSrc} />
                             </Box>
                         </Box>
                     </a>
                 </Link>
             )}
+            
             </Box>
         </Container>
      </BackedByWrapper>

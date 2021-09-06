@@ -29,7 +29,7 @@ const Home = () => {
           content="Planet Sandbox is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battle"
         />
         <meta name="theme-color" content="#280D57" />
-        <link rel="shortcut icon" type="image/x-icon" href={FavIcon} />
+        <link rel="shortcut icon" type="image/x-icon" sizes="64x64" href={FavIcon} />
         <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
         <link href="http://fonts.cdnfonts.com/css/goma-block" rel="stylesheet" />

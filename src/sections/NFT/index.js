@@ -7,16 +7,22 @@ import Image from 'reusecore/Image';
 import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
 import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
+import data from 'assets/data/nft';
 
 
 const Block = () => {
 
     const settings = {
-        dots: false,
+        appendDots: dots => <ul>{dots}</ul>,
+        customPaging: i => (
+        <div className="ft-slick__dots--custom">
+        </div>
+        ),
+        dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         centerPadding: 30,
         nextArrow: <NextArrow className="nextButton" />,
         prevArrow: <PrevArrow className="preButton" />,
@@ -58,7 +64,19 @@ const Block = () => {
                     </Box>
                 </Box>
                 <Box className="NFT-content">
-                   
+                  <SlickSlider {...settings}>
+                    {data.items.map((item, index) =>
+                      <SliderItem key={index}>
+                       <Box className="NFT-item">
+                         <Image src={item.weapon} />
+                         <Box className="intro">
+                           <Text className="heading">{item.name}</Text>
+                           <Text>{item.info}</Text>
+                         </Box>
+                       </Box>
+                     </SliderItem>
+                    )}
+                  </SlickSlider>
                 </Box>
             </Container>
         </BlockWrapper>
