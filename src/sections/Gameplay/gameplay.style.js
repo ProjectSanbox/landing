@@ -12,7 +12,8 @@ const GamePlayWrapper = styled.div`
 
         p{
             font-size: 20px;
-            padding: 0px 250px;
+            max-width: 894px;
+            margin: auto;
         }
     }
 
@@ -75,7 +76,7 @@ const GamePlayWrapper = styled.div`
     }
 
     .arrow{
-        display: flex;
+        display: none;
         align-items: center;
         top: 105%;
         div.slick-arrow{
@@ -143,7 +144,7 @@ const GamePlayWrapper = styled.div`
                 background: #b5b4b1;
                 border-radius: 16px;
                 &.slick-active{
-                    background: #fff;
+                    background: #4967ab;
                 }
               .ft-slick__dots--custom{
                 width: 100%;
@@ -179,12 +180,6 @@ const GamePlayWrapper = styled.div`
   }
 
   @media only screen and (max-width: 1200px){
-    .gameplay-heading{
-        p{
-            padding: 0px 100px;
-        }
-    }
-
     .gameplay-content{
         .gameplay-video{
             .gameplay-intro{

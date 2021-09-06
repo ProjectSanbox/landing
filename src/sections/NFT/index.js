@@ -1,24 +1,28 @@
 import React, { useEffect } from 'react';
 import BlockWrapper from './nft.style';
 import { Container, Row, Col } from 'reusecore/Layout';
+import {SlickSlider, SliderItem} from 'reusecore/SlickSlider';
 import Box from 'reusecore/Box';
 import Image from 'reusecore/Image';
 import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
-
-import Slider from 'react-slick';
 import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
-import data from 'assets/data/resource';
-import coin from 'assets/images/resource/coin.png'
+import data from 'assets/data/nft';
+
 
 const Block = () => {
 
     const settings = {
-        dots: false,
+        appendDots: dots => <ul>{dots}</ul>,
+        customPaging: i => (
+        <div className="ft-slick__dots--custom">
+        </div>
+        ),
+        dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         centerPadding: 30,
         nextArrow: <NextArrow className="nextButton" />,
         prevArrow: <PrevArrow className="preButton" />,
@@ -60,17 +64,19 @@ const Block = () => {
                     </Box>
                 </Box>
                 <Box className="NFT-content">
-                    <Slider {...settings}>
-                    {data.NFT.map((item, index) =>
-    
-                        <Box key={index} className="NFT-item">
-                            <Text className="item-weapon">{item.type}</Text>
-                            <Text className="item-name">{item.name}</Text>
-                            <Image className="item-image" src={item.image}/>
-                            <Box className="item-price">{item.price} $PSB</Box>
-                        </Box>
-                        )} 
-                    </Slider>
+                  <SlickSlider {...settings}>
+                    {data.items.map((item, index) =>
+                      <SliderItem key={index}>
+                       <Box className="NFT-item">
+                         <Image src={item.weapon} />
+                         <Box className="intro">
+                           <Text className="heading">{item.name}</Text>
+                           <Text>{item.info}</Text>
+                         </Box>
+                       </Box>
+                     </SliderItem>
+                    )}
+                  </SlickSlider>
                 </Box>
             </Container>
         </BlockWrapper>

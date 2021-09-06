@@ -19,12 +19,12 @@ const GamePlay = () => {
         <div className="ft-slick__dots--custom">
         </div>
         ),
-        dots: false,
+        dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 4000,
         nextArrow: <NextArrow className="nextButton" />,
         prevArrow: <PrevArrow className="preButton" />,

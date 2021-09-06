@@ -21,70 +21,30 @@ const BackedByWrapper  = styled.div`
     }
 
     .backedby-content{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 100px;
-        a{
-            display: block;
-            width: 220px;
-            margin: 10px;
-            height: 117.33px;
-            .item-border{
-                width: 100%;
-                height: 100%;
-                position: relative;
-                border-radius: 16px;
-                padding: 7px;
-                overflow: hidden;
-                background: linear-gradient(180deg, #A81106 -0.29%, #C01F19 33.61%, #F84145 99.08%);
-                box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
-                .backedby-item{
-                    height: 100%;
-                    background: #ffffff;
-                    cursor: pointer;
-                    border-radius: 10px;
-                    img{
-                        width: 44%;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-                }
-            }
-        }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
     }
 
-    @media only screen and (max-width: 500px){
+    @media only screen and (max-width: 550px){
         .backedby-content{
-            height: auto;
-            a{
-                width: 305px;
-                height: 162.66px;
-                .item-border{
-                    border-radius: 10px;
-                    .backedby-item{
-                        border-radius: 10px;
-                    }
-                    
-                    img{
-                        width: 135px!important;
-                    }
+            justify-content: center;
+            .backedby-item{
+                width: 300px;
+                margin-bottom: 40px;
+                img{
+                    width: 60%;
+                    margin: auto;
+                   &#b1{
+                       width: 40%;
+                   }
                 }
             }
         }
         
     }
-
-    @media only screen and (max-width: 480px){
-        .backedby-heading{
-        h1{
-            font-size: 49px;
-            line-height: 49px;
-        }
-    }
-  }
 `;
 
 export default BackedByWrapper;

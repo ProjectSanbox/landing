@@ -9,55 +9,39 @@ const BlockWrapper = styled.div`
        div{
            align-items: center;
            p{
-               flex: 200%;
+               max-width: 730px;
+               margin: auto
            }
        }
     }
 
     .NFT-content{
-        div{
-            .NFT-item{
-            height: 450px;
-            background: #C4C4C4;
-            border-radius: 16px;
-            background: #2A2A2C;
-            border: 3px solid #303034;
-            text-align: center;
-            position: relative;
-                .item-weapon{
-                    font-family: 'Goma Block', sans-serif;
-                    font-size: 24px;
-                    font-weight: 400;
-                    margin-top: 40px;
-                    margin-bottom: 0;
-                }
-                .item-name{
-                    font-family: 'Product Sans', sans-serif;
-                    font-weight: 900;
-                    font-size: 16px;
-                }
-
-                .item-image{
-                    width: 250px;
-                    margin: auto;
-                }
-
-                .item-price{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    font-size: 24px;
-                    font-family: 'Goma Block', sans-serif;
-                    font-weight: 400;
-                    color: #ffffff;
-                    margin-top: 20px;
-                    img{
-                        width: 45px;
-                        margin-right: 10px;
-                    }
-                }
-            }
+       .NFT-item{
+        padding-bottom: 19px;
+        height: 378.6px;
+        background: linear-gradient(133.84deg, #4E4E4E -16.04%, #333333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
+        border-radius: 16px;
+        img{
+            height: 275px;
         }
+       }
+
+       .intro{
+           padding: 0px 5%;
+           width: 100%;
+           text-align: center;
+        p.heading{
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        p{
+            font-size: 14px;
+            line-height: 16.98px;
+            color: #BDBDBD;
+        }
+       }
     }
 
     .slick-slide {
@@ -65,7 +49,7 @@ const BlockWrapper = styled.div`
     }
 
     .arrow{
-        display: flex;
+        display: none;
         align-items: center;
         top: 117%;
         div.slick-arrow{
@@ -124,8 +108,30 @@ const BlockWrapper = styled.div`
         }
     }
 
-    .slick-dots{    
-        display: none!important;
+    .slick-dots{
+        bottom: -55px;
+            li{
+                width: 150px;
+                height: 6.25px;
+                background: #b5b4b1;
+                border-radius: 16px;
+                &.slick-active{
+                    background: #4967ab;
+                }
+              .ft-slick__dots--custom{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 601px){
+        .slick-dots{
+            li{
+                width: 10px;
+                height: 10px;
+            }
+        }
     }
 
 
