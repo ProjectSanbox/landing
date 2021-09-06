@@ -60,14 +60,7 @@ export default {
       animation: "flip-left",
       linked: "",
     },
-    {
-      avatar: quyennguyen,
-      name: "Quyen Nguyen",
-      job: "2D Artist",
-      // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
-      animation: "flip-left",
-      linked: "",
-    },
+  
     {
       avatar: haingo,
       name: "Hai Ngo",
