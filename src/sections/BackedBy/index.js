@@ -22,7 +22,9 @@ const BackedBy = () =>{
                     <a target="_blank">
                         <Box className="item-border">
                             <Box className="backedby-item">
-                                <Image id={backedby.id} src={backedby.imageSrc} />
+                                <Box className="box">
+                                    <Image id={backedby.id} src={backedby.imageSrc} />
+                                </Box>
                             </Box>
                         </Box>
                     </a>

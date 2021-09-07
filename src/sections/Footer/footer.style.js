@@ -62,7 +62,7 @@ h1{
   }
 
   .copyright{
-    display: none;
+    text-align: center;
   }
 
   @media only screen and (max-width: 992px){
