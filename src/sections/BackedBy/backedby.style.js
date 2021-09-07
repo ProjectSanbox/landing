@@ -23,11 +23,11 @@ const BackedByWrapper  = styled.div`
     .backedby-content{
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;;
       .backedby-item{
-          width: 300px;
-          height: 190px;
+          width: 220px;
+          height: 117.33px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -35,41 +35,33 @@ const BackedByWrapper  = styled.div`
             inset -5px -5px 15px rgba(255, 255, 255, 0.1),
             5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
             border-radius: 15px;
-            margin: 30px;
+            margin: 10px;
             transition: 0.5s;
             position: relative;
+            background: linear-gradient(rgb(168, 17, 6) -0.29%, rgb(192, 31, 25) 33.61%, rgb(248, 65, 69) 99.08%);
             .box{
                 position: absolute;
-                top: 10px;
-                left: 10px;
-                right: 10px;
-                bottom: 10px;
-                background: #2a2b2f;
+                top: 7px;
+                left: 7px;
+                right: 7px;
+                bottom: 7px;
                 border-radius: 15px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 overflow: hidden;
                 transition: 0.5s;
-                &:before{
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 50%;
-                    height: 100%;
-                    background: rgba(255, 255, 255, 0.03);
-                }
-
+                background: #ffffff;
                 &:hover{
-                    transform: translateY(-20px);
+                    transform: translateY(-5px);
                 }
             }
         img{
-          width: 90%;
-          &#b1{
-                width: 38%;
-            }
+          width: 48%;
+          &#b7{
+           background: #000000;
+           padding: 5px;
+          }
         }
       }
     }
@@ -91,7 +83,7 @@ const BackedByWrapper  = styled.div`
                     width: 60%;
                     margin: 15px auto;
                    &#b1{
-                       width: 40%;
+                       width: 60%;
                    }
                 }
             }
