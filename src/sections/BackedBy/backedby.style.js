@@ -25,6 +25,10 @@ const BackedByWrapper  = styled.div`
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      img{
+          width: 70%;
+          margin-bottom: 30px;
+      }
 
     }
 
