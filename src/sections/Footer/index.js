@@ -37,7 +37,6 @@ const Footer = () => {
               <Box className="footer-heading">
                 <Box className="footer-heading-content">
                   <Image src={logo} />
-                  <Text className="hide">© Planet Sandbox | All right rserved 2021</Text>
                 </Box>
               </Box>
             </Col>
