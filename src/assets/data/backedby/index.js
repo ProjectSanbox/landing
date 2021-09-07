@@ -1,28 +1,23 @@
 
 import redkite from 'assets/images/backedby/redkite.png';
 import m6 from 'assets/images/backedby/m6.png';
-import polrare from 'assets/images/backedby/polrare.png';
 import gamefi from 'assets/images/backedby/gamefi.png';
-import icetea from 'assets/images/backedby/icetea.png';
+import icetea from 'assets/images/backedby/icetea.svg';
 import illuvium from 'assets/images/backedby/illuvium.png';
 import basic from 'assets/images/backedby/basic_capital.png';
+import everse from 'assets/images/backedby/everse.svg';
 
 export default {
     backedby:[
         {
             imageSrc: redkite,
-            src: "//icetea.io/",
+            src: "//redkite.polkafoundry.com/#/",
             id: "b1",
         },
         {
             imageSrc: m6,
-            src: "//exnetworkcapital.com/",
+            src: "/",
             id: "b2",
-        },
-        {
-            imageSrc: polrare,
-            src: "//redkite.polkafoundry.com/#/",
-            id: "b3",
         },
         {
             imageSrc: gamefi,
@@ -33,6 +28,22 @@ export default {
             imageSrc: basic,
             src: "/",
             id: "b5",
+        },
+        {
+            imageSrc: icetea,
+            src: "/",
+            id: "b6",
+        },
+        {
+            imageSrc: everse,
+            src: "/",
+            id: "b7",
+        },
+        {
+            imageSrc: illuvium,
+            src: "/",
+            id: "b8",
+
         }
     ]
 }
