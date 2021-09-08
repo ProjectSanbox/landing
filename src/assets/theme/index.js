@@ -88,6 +88,7 @@ p{
     font-family: 'Product Sans', sans-serif;
     margin: 0 0 15px 0;
     color: #ffffff;
+    font-weight: 400;
 }
 
 a{
