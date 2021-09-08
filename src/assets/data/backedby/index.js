@@ -4,7 +4,7 @@ import m6 from 'assets/images/backedby/m6.png';
 import gamefi from 'assets/images/backedby/gamefi.png';
 import icetea from 'assets/images/backedby/icetea.svg';
 import illuvium from 'assets/images/backedby/illuvium.png';
-import basic from 'assets/images/backedby/basic_capital.png';
+import basic from 'assets/images/backedby/basic.png';
 import everse from 'assets/images/backedby/everse.svg';
 
 export default {
