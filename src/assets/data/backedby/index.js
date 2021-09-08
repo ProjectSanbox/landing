@@ -6,7 +6,7 @@ import icetea from 'assets/images/backedby/icetea.svg';
 import illuvium from 'assets/images/backedby/illuvium.png';
 import basic from 'assets/images/backedby/basic.png';
 import everse from 'assets/images/backedby/everse.svg';
-
+import ngc from 'assets/images/backedby/ngc.png';
 export default {
     backedby:[
         {
@@ -43,6 +43,12 @@ export default {
             imageSrc: illuvium,
             src: "/",
             id: "b8",
+
+        },
+        {
+            imageSrc: ngc,
+            src: "/",
+            id: "b9",
 
         }
     ]
