@@ -54,9 +54,10 @@ const OurTeamWrapper = styled.div`
                 }
 
                 &.ourteam-role{
-                    font-size: 15px;
+                    font-size: 16px;
                     color: ${props => props.theme.primaryColor};
                     margin-bottom: 30px;
+                    font-weight: 900;
                 }
             }
         }

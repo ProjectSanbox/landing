@@ -11,7 +11,6 @@ const GamePlayWrapper = styled.div`
         }
 
         p{
-            font-size: 20px;
             max-width: 894px;
             margin: auto;
         }
@@ -32,6 +31,10 @@ const GamePlayWrapper = styled.div`
                z-index: -1;
                position: relative;
                background: linear-gradient(to right, #4b6cb7,#303030);
+               p{
+                   font-size: 14px;
+                   font-weight: 400;
+               }
               div{
                   width: 80%;
                   position: absolute;
@@ -40,7 +43,8 @@ const GamePlayWrapper = styled.div`
                   transform: translate(-50%, -50%);
                   text-align: center;
                     .intro-heading{
-                    font-weight: 700;
+                    font-family: 'Goma Block', sans-serif;
+                    font-weight: 400;
                     font-size: 24px;
                     text-transform: uppercase;
                     }
@@ -56,6 +60,9 @@ const GamePlayWrapper = styled.div`
                         margin-bottom: 10px;
                         li{
                             color: #fff;
+                            font-family: 'Product Sans', sans-serif;
+                            font-size: 14px;
+                            font-weight: 400;
                             &::before{
                                 content: "▶";
                                 font-size: 13px;

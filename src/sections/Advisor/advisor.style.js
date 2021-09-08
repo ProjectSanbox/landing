@@ -48,6 +48,8 @@ const AdvisorWrapper = styled.div`
 
           p.adivisor-info{
               font-size: 16px;
+              max-width: 900px;
+              margin: auto;
           }
         }
     }

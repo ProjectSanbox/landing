@@ -21,7 +21,7 @@ const IntroduceWrapper = styled.div`
           margin-bottom: 30px;
         }
         p{
-          font-size: 24px;
+          font-size: 22px;
           font-style: italic;
           padding-right: 193px;
           font-weight: 400;

@@ -107,7 +107,7 @@ const NavWrapper = styled.div`
                     font-size: 14px;
                     line-height: 16px;
                     font-family: 'Product Sans', sans-serif;
-                    font-weight: 700;
+                    font-weight: 400;
                     line-height: 79px;
                     &:hover{
                         color: #ffffff;
