@@ -31,7 +31,7 @@ const PopupWrapper = styled.div`
         }
 
         .loot-box{
-            width: 74.464%;
+           width: 74.464%;
            position: absolute;
            left: 55%;
            top: 65%;
@@ -42,6 +42,8 @@ const PopupWrapper = styled.div`
             position: absolute;
             bottom: 30px;
             left: 50%;
+            width: 100%;
+            text-align: center;
             transform: translateX(-50%);
             p{
                 font-size: 24px;
@@ -69,6 +71,56 @@ const PopupWrapper = styled.div`
             height: unset;
             svg{
                 font-size: 40px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 620px){
+        .popup{
+            width: 500px;
+            height: 85vh;
+            .loot-box{
+                top: 75%;
+                top: 65%;
+            transform: translate(-55%, -75%);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 530px){
+        .popup{
+            width: 420px;
+            height: 85vh;
+            .loot-box{
+                top: 80%;
+                top: 65%;
+            transform: translate(-55%, -80%);
+            }
+
+            .btn-close{
+                right: -20px;
+                svg{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 425px){
+        .popup{
+            width: 340px;
+            height: 75vh;
+            .loot-box{
+                top: 80%;
+                top: 65%;
+            transform: translate(-55%, -80%);
+            }
+
+            .btn-close{
+                right: -30px;
+                svg{
+                    font-size: 35px;
+                }
             }
         }
     }
