@@ -62,6 +62,10 @@ const BackedByWrapper  = styled.div`
            background: #000000;
            padding: 5px;
           }
+          &#b9{
+            background: #000000;
+            padding: 5px;
+          }
         }
       }
     }
