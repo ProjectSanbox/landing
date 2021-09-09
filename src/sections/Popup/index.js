@@ -4,7 +4,7 @@ import Text from 'reusecore/Text';
 import Button from 'reusecore/Button';
 import Image from 'reusecore/Image';
 import logo from 'assets/images/popup/logo.png';
-import lootbox from 'assets/images/popup/lootbox.svg';
+import lootbox from 'assets/images/popup/lootbox.png';
 import {AiFillCloseCircle} from 'react-icons/ai';
 import { useEffect, useState } from 'react';
 
