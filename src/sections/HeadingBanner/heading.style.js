@@ -34,6 +34,11 @@ const HeadingWrapper = styled.div`
                     line-height: 57.6px;
                     margin: 0;
                     padding: 0;
+                    position: relative;
+                    span{
+                        position: relative;
+                        display: inline-block;
+                    }
                 }
                 .register{
                     display: flex;

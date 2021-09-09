@@ -23,7 +23,7 @@ export default {
         {
             weapon: lady_pistol,
             name: "Lady Pistol",
-            info: "Gun for bad lady"
+            info: "Gun for the bad lady"
         },
         {
             weapon: joker_pistol,
@@ -53,7 +53,7 @@ export default {
         {
             weapon: lootbox_common,
             name: "Lootbox Common",
-            info: " Open common NFT item"
+            info: " Open common NFT items"
         },
     ]
 }
