@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import HeadingWrapper from './heading.style';
 import Image from 'reusecore/Image';
 import Button from 'reusecore/Button';
@@ -9,29 +9,37 @@ import 'aos/dist/aos.css';
 import logo from 'assets/images/logo.png'
 import arrow from 'assets/images/banner/arrow.png';
 import decorate from 'assets/images/banner/decorate.png';
+import anime from 'animejs/lib/anime';
 
 
 const HeadingBanner = () => {
 
-    useEffect(() => {
-        AOS.init({
-            duration : 500
-        })
-    }, [])
+    const [state, setState] = useState(true);
 
     useEffect(() =>{
-        window.addEventListener('resize', () =>{
-            const width = window.innerWidth;
-            const height = width / 1.77777777778;
-            const heding = document.querySelector('.heading');
-            heding.style.height = height + "px";
+        const texts = document.querySelectorAll('.heading-content h1');
+        texts.forEach((e) =>{
+            e.innerHTML = e.textContent.replace(/\S/g, "<span>$&</span>");
         })
 
-        const width = window.innerWidth;
-        const height = width / 1.77777777778;
-        const heding = document.querySelector('.heading');
-        heding.style.height = height + "px";
+        setInterval(() => {
+            setState(!state);
+        }, 15000);
+
+        anime.timeline({
+            loop: false,
+        })
+        .add({
+            targets: '.heading-content h1 span',
+            translateY: [-1000, 0],
+            opacity: [0, 1],
+            scale: [10, 1],
+            easing: "easeOutExpo",
+            duration: 300,
+            delay: anime.stagger(100)
+            }) 
     })
+
 
     return (
         <HeadingWrapper id="home">
@@ -43,7 +51,7 @@ const HeadingBanner = () => {
                         <Heading>sandbox game on blockchain nOW!!!</Heading>
                         <Box className="register">
                             <Box><Image src={arrow} /></Box>
-                            <Button><Image src={decorate} />Resgiter Comming Soon</Button>
+                            <Button><Image src={decorate} />Registration Soon</Button>
                         </Box>
                     </Box>
                 </Box>

@@ -22,9 +22,9 @@ export default {
             content: "",
             listContent: [
                 "Players can join other's published Land to play game modes.",
-                "Game modes are customized by Land owner using Rule Tool.",
+                "Game modes are customized by the Landowner using Rule Tool.",
                 "There are some preset game modes from the publisher.",
-                "Players is rewarded with loot boxes, NFT objects and tokens."
+                "Players are rewarded with loot boxes, NFT objects, and tokens."
             ],
             introImage: pvpmode_icon,
             linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",
@@ -35,8 +35,8 @@ export default {
             title: "PvE Mode​",
             content: "Planet Sandbox provides some build-in PvE mode: ",
             listContent: [
-                "Tower defense: protect your base from NPC like zombies, soldier",
-                "Racing: finish the track first. Runnable NPC: cyborg, hour, hound..."
+                "Tower defense: protect your base from NPC like zombies, soldiers",
+                "Racing: finish the track first.Runnable NPC: cyborg, hour, hound..."
             ],
             introImage: pvemode_icon,
             linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",

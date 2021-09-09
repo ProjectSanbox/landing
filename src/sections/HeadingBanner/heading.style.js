@@ -18,7 +18,7 @@ const HeadingWrapper = styled.div`
             height: 100%;
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: top center;
+            background-position: center;
             position: relative;
             .heading-content{
                 padding: 0px 0px 0px 160px;
@@ -34,6 +34,11 @@ const HeadingWrapper = styled.div`
                     line-height: 57.6px;
                     margin: 0;
                     padding: 0;
+                    position: relative;
+                    span{
+                        position: relative;
+                        display: inline-block;
+                    }
                 }
                 .register{
                     display: flex;
@@ -88,7 +93,13 @@ const HeadingWrapper = styled.div`
         }
     }
 
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 975px){
+        div.heading{
+            margin-top: 60px;
+        }
+    }
+
+    @media only screen and (max-width: 758px){
         div.heading{
             height: 410px!important;
             .headingBackground{
@@ -104,13 +115,19 @@ const HeadingWrapper = styled.div`
                     .register{
                         margin-top: 10px;
                         div{
-                            img{
-                                width: 100px;
-                            }
+   
                         }
                         button{
                             width: auto;
                             height: 46px;
+                            img{
+                                top: 50%;
+                                left: 50%;
+                                bottom: unset;
+                                right: unset;
+                                height: 95%;
+                                transform: translate(-50%, -50%);
+                            }
                         }
                     }
                 }

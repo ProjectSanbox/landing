@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
+import Popup from 'sections/Popup';
 import Nav from "sections/Nav";
 import HeadingBanner from "sections/HeadingBanner";
 import Roadmap from "sections/Roadmap";
@@ -36,6 +37,7 @@ const Home = () => {
         <link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet" />
       </Head>
       <GlobalStyle />
+      <Popup />
       <Nav />
       <HeadingBanner />
       <Introduce />
