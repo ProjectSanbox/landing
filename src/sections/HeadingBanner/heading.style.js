@@ -61,6 +61,32 @@ const HeadingWrapper = styled.div`
                         border: 0;
                         overflow: hidden;
                         box-shadow: 0px 0px 12px rgba(40, 33, 108, 0.7);
+                        &:before{
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            transform: translate(-50%, -50%);
+                            width: 0;
+                            border-radius: 50%;
+                            height: 0;
+                            background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
+                            background: linear-gradient(to right, #8e2de2, #4a00e0);
+                            transition: width 0.5s, height 0.5s;
+                        }
+
+                        &:hover{
+                            &:before{
+                                width: 500px;
+                                height: 500px;
+                            }
+                        }
+
+                        span{
+                            position: relative;
+                            z-index: 1;
+                        }
+
                         img{
                             position: absolute;
                             width: unset;
