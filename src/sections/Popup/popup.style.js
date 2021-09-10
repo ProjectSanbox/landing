@@ -15,12 +15,13 @@ const PopupWrapper = styled.div`
     }
 
     .popup{
-        width: 560px;
+        width: 29.2708333333vw;
         height: 95vh;
         background-color: linear-gradient(179.55deg, #552D91 4.95%, #4D6FA3 39.58%, #41CCBC 85.57%);
         background-image: url(${background});
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -34,8 +35,8 @@ const PopupWrapper = styled.div`
            width: 74.464%;
            position: absolute;
            left: 55%;
-           top: 65%;
-           transform: translate(-55%, -65%);
+           top: 50%;
+           transform: translate(-55%, -50%);
         }
 
         .popup-info{
@@ -75,7 +76,7 @@ const PopupWrapper = styled.div`
         }
     }
 
-    @media only screen and (max-width: 620px){
+    @media only screen and (max-width: 1100px){
         .popup{
             width: 500px;
             height: 85vh;

@@ -37,7 +37,7 @@ const Home = () => {
         <link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet" />
       </Head>
       <GlobalStyle />
-      <Popup />
+      {/* <Popup /> */}
       <Nav />
       <HeadingBanner />
       <Introduce />
