@@ -18,7 +18,7 @@ const HeadingWrapper = styled.div`
             height: 100%;
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center;
+            background-position: center top;
             position: relative;
             .heading-content{
                 padding: 0px 0px 0px 160px;
