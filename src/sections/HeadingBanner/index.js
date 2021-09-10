@@ -8,7 +8,7 @@ import Box from 'reusecore/Box';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import logo from 'assets/images/logo.png'
-import arrow from 'assets/images/banner/arrow.png';
+import arrow from 'assets/images/banner/arrow.svg';
 import decorate from 'assets/images/banner/decorate.png';
 import anime from 'animejs/lib/anime';
 
@@ -23,7 +23,7 @@ const HeadingBanner = () => {
             setState(!state);
         }, 10000);
 
-        anime.timeline({
+        const aniamate1 = anime.timeline({
             loop: false,
         })
         .add({
@@ -33,7 +33,20 @@ const HeadingBanner = () => {
             easing: "easeOutExpo",
             duration: 800,
             delay: anime.stagger(500)
-            }) 
+        })
+
+        const animate2 = anime.timeline({
+            loop: true,
+            duration: 500
+        })
+        .add({
+            targets: '.register div img',
+            opacity: [1, 0],
+            easing: 'easeOutExpo',
+            duration: 1200,
+            delay: anime.stagger(100)
+        })
+        
     }, [])
 
 
@@ -46,7 +59,13 @@ const HeadingBanner = () => {
                         <Heading>Join The biggest third-person</Heading>
                         <Heading>sandbox game on blockchain nOW!!!</Heading>
                         <Box className="register">
-                            <Box><Image src={arrow} /></Box>
+                            <Box>
+                                <Image src={arrow} />
+                                <Image src={arrow} />
+                                <Image src={arrow} />
+                                <Image src={arrow} />
+                                <Image src={arrow} />
+                            </Box>
                             <Button className="banner-btn"><Image src={decorate} /><Text as="span">Registration Soon</Text></Button>
                         </Box>
                     </Box>
