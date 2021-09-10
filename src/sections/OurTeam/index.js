@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import OurTeamWrapper from './ourteam.style';
 import {Container, Row, Col} from 'reusecore/Layout';
 import Heading from 'reusecore/Heading'
@@ -51,6 +51,15 @@ const OurTeam = () =>{
             }
           ]
       };
+
+      useEffect(() =>{
+        AOS.init({
+          throttleDelay: 99, 
+          debounceDelay: 50,
+          disable: false,
+          duration : 500
+      })
+      }, [])
 
     return(
         <OurTeamWrapper id="ourteam">

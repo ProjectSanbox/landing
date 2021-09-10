@@ -33,7 +33,6 @@ const OurTeamWrapper = styled.div`
             .ourteam-img{
                img{
                     border-radius: 16px;
-                    border: 1px solid #fff;
                     overflow: hidden;
                }
             }

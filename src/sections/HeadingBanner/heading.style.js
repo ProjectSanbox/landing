@@ -18,7 +18,7 @@ const HeadingWrapper = styled.div`
             height: 100%;
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center;
+            background-position: center top;
             position: relative;
             .heading-content{
                 padding: 0px 0px 0px 160px;
@@ -48,8 +48,46 @@ const HeadingWrapper = styled.div`
                     position: relative;
                     left: -20px;
                     div{
+                        display: flex;
+                        position: relative;
+                        width: 80px;
+                        height: 47px;
+                        margin-right: 40px;
                         img{
-                            width: 151.6px;
+                           width: 80px;
+                           position: absolute;
+                           top: 0;
+                           left: 0;
+
+                           &:nth-child(1){
+                              left: 15px;
+
+                           }
+                           &:nth-child(2){
+                              left: 30px;
+
+                           }
+                           &:nth-child(3){
+                              left: 45px;
+
+                           }
+                           &:nth-child(4){
+                              left: 60px;
+  
+                           }
+                           &:nth-child(5){
+                              left: 75px;
+                              
+                           }
+                        }
+                        
+                        @keyframes hideAnimate{
+                            from{
+                                opacity: 1;
+                            }
+                            to{
+                                opacity: 0;
+                            }
                         }
                     }
                     button{
