@@ -15,7 +15,7 @@ import FavIcon from "assets/images/favicon.svg";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
 import OurTeam from "sections/OurTeam";
-import Meme from "sections/Meme";
+// import Meme from "sections/Meme";
 
 
 const Home = () => {
@@ -38,7 +38,7 @@ const Home = () => {
         <link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet" />
       </Head>
       <GlobalStyle />
-      {/* <Popup /> */}
+      <Popup />
       <Nav />
       <HeadingBanner />
       <Introduce />
