@@ -15,7 +15,7 @@ const PopupWrapper = styled.div`
     }
 
     .popup{
-        width: 39.2708333333vw;
+        width: 40.2708333333vw;
         padding-top: 40px;
         height: 95vh;
         background-color: linear-gradient(179.55deg, #552D91 4.95%, #4D6FA3 39.58%, #41CCBC 85.57%);
@@ -58,9 +58,10 @@ const PopupWrapper = styled.div`
             text-align: center;
             transform: translateX(-50%);
             p{
-                font-size: 24px;
+                font-size: 21px;
                 font-weight: 400;
                 font-style: italic;
+                padding: 0 20px;
             }
 
             span{
