@@ -26,7 +26,12 @@ const Popup = () =>{
               clearInterval(x);
             }
           }, 1000);
-    })
+          
+    }, [])
+
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"];
+
     return(
         <PopupWrapper className={hide && "hide"}>
             <Box className="popup">
@@ -42,7 +47,7 @@ const Popup = () =>{
 
                 <Box className="popup-info">
                     {/* <Text>PlanetSandbox Will IDO </Text> */}
-                    <Text>From September 9th To September 27th at 07:30pm UTC </Text>
+                    <Text>From September {new Date().getDate()}th To {monthNames[new Date().getMonth()]} 27th at 07:30pm UTC </Text>
                     <Text>Available in: <Text className="countdown" as="span">0 Day</Text></Text>
                     <Button>Cooming Soon</Button>
                 </Box>
