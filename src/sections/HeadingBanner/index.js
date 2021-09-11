@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import HeadingWrapper from './heading.style';
 import Image from 'reusecore/Image';
 import Button from 'reusecore/Button';
+import { Container } from "reusecore/Layout";
 import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
 import Box from 'reusecore/Box';
@@ -46,31 +47,42 @@ const HeadingBanner = () => {
             duration: 1000,
             delay: anime.stagger(120)
         })
+
+        const banner = document.querySelector('div.heading');
+        let width = window.innerWidth;
+        let height = width * 56.25 / 100;
+        window.addEventListener('resize', () =>{
+            width = window.innerWidth;
+            height = width * 56.25 / 100;
+        })
+        banner.style.height = height + "px";
         
     }, [])
 
 
     return (
         <HeadingWrapper id="home">
-            <div className="heading">
+            <Box className="heading">
                 <Box className="headingBackground">
-                    <Box className="heading-content">
-                        <Image src={logo} />
-                        <Heading>Join The biggest third-person</Heading>
-                        <Heading>sandbox game on blockchain nOW!!!</Heading>
-                        <Box className="register">
-                            <Box>
-                                <Image src={arrow} />
-                                <Image src={arrow} />
-                                <Image src={arrow} />
-                                <Image src={arrow} />
-                                <Image src={arrow} />
+                    <Container>
+                        <Box className="heading-content">
+                            <Image src={logo} />
+                            <Heading>Join The biggest third-person</Heading>
+                            <Heading>sandbox game on blockchain nOW!!!</Heading>
+                            <Box className="register">
+                                <Box>
+                                    <Image src={arrow} />
+                                    <Image src={arrow} />
+                                    <Image src={arrow} />
+                                    <Image src={arrow} />
+                                    <Image src={arrow} />
+                                </Box>
+                                <Button className="banner-btn"><Image src={decorate} /><Text as="span">Registration Soon</Text></Button>
                             </Box>
-                            <Button className="banner-btn"><Image src={decorate} /><Text as="span">Registration Soon</Text></Button>
                         </Box>
-                    </Box>
+                    </Container>
                 </Box>
-            </div>
+            </Box>
         </HeadingWrapper>
     );
 };

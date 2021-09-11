@@ -12,16 +12,19 @@ const HeadingWrapper = styled.div`
     div.heading{
         width: 100%;
         margin-top: 81px;
-        height: 773.25px!important;
         .headingBackground{
             background-image: url(${headerBackground});
             height: 100%;
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center top;
+            background-position: center;
             position: relative;
+            .container{
+                width: 100%;
+                height: 100%;
+            }
+
             .heading-content{
-                padding: 0px 0px 0px 160px;
                 position: absolute;
                 top: 35%;
                 transform: translateY(-35%);
@@ -141,11 +144,6 @@ const HeadingWrapper = styled.div`
     @media only screen and (max-width: 992px){
         div.heading{
             height: 520px!important;
-            .headingBackground{
-                .heading-content{
-          
-                }
-            }
         }
     }
 
@@ -160,7 +158,6 @@ const HeadingWrapper = styled.div`
             height: 410px!important;
             .headingBackground{
                 .heading-content{
-                    padding: 0px 0px 0px 60px;
                     h1{
                         font-size: 28px;
                     }
@@ -239,16 +236,6 @@ const HeadingWrapper = styled.div`
                             margin-top: 0;
                         }
                     }
-                }
-            }
-        }
-    }
-
-    @media only screen and (max-width: 376px){
-        div.heading{
-            .headingBackground{
-                .heading-content{
-                   padding: 0px 0px 0px 10px;
                 }
             }
         }

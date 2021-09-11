@@ -15,13 +15,14 @@ const PopupWrapper = styled.div`
     }
 
     .popup{
-        width: 29.2708333333vw;
+        width: 39.2708333333vw;
+        padding-top: 40px;
         height: 95vh;
         background-color: linear-gradient(179.55deg, #552D91 4.95%, #4D6FA3 39.58%, #41CCBC 85.57%);
         background-image: url(${background});
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: 40px 40px center;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -29,10 +30,20 @@ const PopupWrapper = styled.div`
         .popup-logo{
             width: 85.205%;
             margin: auto;
+            div{
+                position: relative;
+                .popup-img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 40%;
+                }
+            }
         }
 
         .loot-box{
-           width: 74.464%;
+           width: 70.464%;
            position: absolute;
            left: 55%;
            top: 50%;
@@ -50,6 +61,19 @@ const PopupWrapper = styled.div`
                 font-size: 24px;
                 font-weight: 400;
                 font-style: italic;
+            }
+
+            span{
+                text-transform: uppercase;
+                font-size: 40px;
+                font-family: 'Goma Block', sans-serif;
+                font-weight: 400;
+                text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+                background: radial-gradient(127.37% 191.06% at 106.67% -3%, #1DBFFF 1.87%, #1FB8FB 3.31%, #2D81DC 15.69%, #3853C2 27.74%, #412FAE 39.17%, #4815A0 49.85%, #4C0597 59.46%, #4D0094 67.1%, #3C0075 74.63%, #26004C 85.8%, #180033 94.64%, #13002A 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: inline-block;
+                padding-right: 20px;
             }
 
             button{
