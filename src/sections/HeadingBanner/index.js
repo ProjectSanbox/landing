@@ -54,6 +54,7 @@ const HeadingBanner = () => {
         window.addEventListener('resize', () =>{
             width = window.innerWidth;
             height = width * 56.25 / 100;
+            banner.style.height = height + "px";
         })
         banner.style.height = height + "px";
         
