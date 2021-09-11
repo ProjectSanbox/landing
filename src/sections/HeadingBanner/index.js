@@ -43,8 +43,8 @@ const HeadingBanner = () => {
             targets: '.register div img',
             opacity: [1, 0],
             easing: 'easeOutExpo',
-            duration: 1200,
-            delay: anime.stagger(100)
+            duration: 1000,
+            delay: anime.stagger(120)
         })
         
     }, [])

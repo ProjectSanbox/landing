@@ -77,18 +77,10 @@ const HeadingWrapper = styled.div`
                            }
                            &:nth-child(5){
                               left: 75px;
-                              
+
                            }
                         }
-                        
-                        @keyframes hideAnimate{
-                            from{
-                                opacity: 1;
-                            }
-                            to{
-                                opacity: 0;
-                            }
-                        }
+
                     }
                     button{
                         width: 240px;
