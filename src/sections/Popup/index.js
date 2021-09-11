@@ -6,7 +6,7 @@ import Image from 'reusecore/Image';
 import logo from 'assets/images/popup/logo.svg';
 import background_logo from 'assets/images/popup/background-logo.png';
 import lootbox from 'assets/images/popup/lootbox.png';
-import {AiFillCloseCircle} from 'react-icons/ai';
+import {IoMdClose} from 'react-icons/io';
 import { useEffect, useState } from 'react';
 
 const Popup = () =>{
@@ -52,7 +52,7 @@ const Popup = () =>{
                     <Button>Cooming Soon</Button>
                 </Box>
 
-                <Button onClick={() => setHide(true)} className="btn-close"><AiFillCloseCircle/></Button>
+                <Button onClick={() => setHide(true)} className="btn-close"><IoMdClose/></Button>
             </Box>
         </PopupWrapper>
     );

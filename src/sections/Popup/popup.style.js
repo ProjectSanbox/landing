@@ -15,9 +15,9 @@ const PopupWrapper = styled.div`
     }
 
     .popup{
-        width: 40.2708333333vw;
+        width: 30.2708333333vw;
         padding-top: 40px;
-        height: 95vh;
+        height: 85vh;
         background-color: linear-gradient(179.55deg, #552D91 4.95%, #4D6FA3 39.58%, #41CCBC 85.57%);
         background-image: url(${background});
         background-repeat: no-repeat;
@@ -43,7 +43,7 @@ const PopupWrapper = styled.div`
         }
 
         .loot-box{
-           width: 70.464%;
+           width: 60.464%;
            position: absolute;
            left: 55%;
            top: 50%;
@@ -78,12 +78,12 @@ const PopupWrapper = styled.div`
             }
 
             button{
-                width: 240px;
-                height: 56px;
+                width: 200px;
+                height: 46px;
                 background: radial-gradient(127.37% 191.06% at 106.67% -3%, #1DBFFF 1.87%, #1FB8FB 3.31%, #2D81DC 15.69%, #3853C2 27.74%, #412FAE 39.17%, #4815A0 49.85%, #4C0597 59.46%, #4D0094 67.1%, #3C0075 74.63%, #26004C 85.8%, #180033 94.64%, #13002A 100%);
                 color: #ffffff;
                 font-size: 20px;
-                font-weight: 900;
+                font-weight: 700;
                 border-radius: 60px;
                 border: none;
             }
@@ -91,12 +91,13 @@ const PopupWrapper = styled.div`
 
         .btn-close{
             position: absolute;
-            top: -20px;
-            right: -40px;
+            top: -5px;
+            right: -10px;
             width: unset;
             height: unset;
             svg{
-                font-size: 40px;
+                font-size: 20px;
+                color: rgba(255, 255, 255, 0.5);
             }
         }
     }
@@ -109,6 +110,13 @@ const PopupWrapper = styled.div`
                 top: 75%;
                 top: 65%;
             transform: translate(-55%, -75%);
+            }
+
+            .popup-info{
+                button{
+                    width: 150px;
+                    font-size: 15px;
+                }
             }
         }
     }
@@ -124,7 +132,6 @@ const PopupWrapper = styled.div`
             }
 
             .btn-close{
-                right: -20px;
                 svg{
                     font-size: 30px;
                 }
@@ -142,10 +149,20 @@ const PopupWrapper = styled.div`
             transform: translate(-55%, -80%);
             }
 
+            .popup-info{
+                p{
+                    font-size: 16px;
+                }
+
+                span{
+                    font-size: 23px;
+                }
+            }
+
             .btn-close{
-                right: -30px;
+                right: -10px;
                 svg{
-                    font-size: 35px;
+                    font-size: 25px;
                 }
             }
         }
