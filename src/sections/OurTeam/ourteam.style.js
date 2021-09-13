@@ -66,8 +66,8 @@ const OurTeamWrapper = styled.div`
     .slick-dots{
         bottom: -105px;
             li{
-                width: 150px;
-                height: 6.25px;
+                width: 10px;
+                height: 10px;
                 background: rgba(156, 41, 50, 0.5);
                 border-radius: 16px;
                 &.slick-active{

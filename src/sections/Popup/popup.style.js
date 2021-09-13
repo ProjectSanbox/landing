@@ -15,7 +15,7 @@ const PopupWrapper = styled.div`
     }
 
     .popup{
-        width: 30.2708333333vw;
+        width: 34.2708333333vw;
         padding-top: 40px;
         height: 85vh;
         background-color: linear-gradient(179.55deg, #552D91 4.95%, #4D6FA3 39.58%, #41CCBC 85.57%);
@@ -46,8 +46,8 @@ const PopupWrapper = styled.div`
            width: 60.464%;
            position: absolute;
            left: 55%;
-           top: 50%;
-           transform: translate(-55%, -50%);
+           top: 55%;
+           transform: translate(-55%, -55%);
         }
 
         p.notification{
@@ -66,7 +66,7 @@ const PopupWrapper = styled.div`
 
         .popup-info{
             position: absolute;
-            bottom: 30px;
+            bottom: 20px;
             left: 50%;
             width: 100%;
             max-width: 452px;
@@ -74,19 +74,16 @@ const PopupWrapper = styled.div`
             transform: translateX(-50%);
             div{
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: space-between;
                 span.countdown{
-                    padding: 0px 4%;
+                    padding: 0px 3%;
                     p{
                         text-transform: uppercase;
-                        font-size: 20px;
+                        font-size: 1.4rem;
                         font-family: 'Goma Block', sans-serif;
                         font-weight: 400;
-                        text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
-                        background: radial-gradient(127.37% 191.06% at 106.67% -3%, #1DBFFF 1.87%, #1FB8FB 3.31%, #2D81DC 15.69%, #3853C2 27.74%, #412FAE 39.17%, #4815A0 49.85%, #4C0597 59.46%, #4D0094 67.1%, #3C0075 74.63%, #26004C 85.8%, #180033 94.64%, #13002A 100%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
+                        text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+                        color: #000000;
                     }
                 }
             }
@@ -112,6 +109,18 @@ const PopupWrapper = styled.div`
             svg{
                 font-size: 20px;
                 color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1440px){
+        .popup-info{
+            div{
+                span.countdown{
+                    p{
+                        font-size: 1.6rem;
+                    }
+                }
             }
         }
     }

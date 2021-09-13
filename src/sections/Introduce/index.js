@@ -26,8 +26,8 @@ const Introduce = () => {
             <Box className="introduce">
                 <Box className="introduce-content">
                     <Heading>About</Heading>
-                    <Text>Planet Sandbox is the ultimate physic sandbox game that allows players to unleash creativity on the sandbox worlds with unlimited built-in items. 
-                    It is also a multiplayer TPS NFT game that lets users engage in their original combat arena and make profits from the battle.
+                    <Text>Planet Sandbox is the ultimate physics-powered sandbox shooting game. Build and own arenas to fight other players in different game modes using your own NFT weapons and accessories. 
+                      Powered by the $PSB and $PULV token, Planet Sandbox is the next evolution in the Play to Earn movement!
                     </Text>
                 </Box>
 
