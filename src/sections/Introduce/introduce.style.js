@@ -15,14 +15,13 @@ const IntroduceWrapper = styled.div`
     margin-left: 3%;
     display: flex;
     .introduce-content{
-      margin-top: 159px;
+      margin-top: 109px;
         img{
           width: 99px;
           margin-bottom: 30px;
         }
         p{
-          font-size: 22px;
-          font-style: italic;
+          font-size: 20px;
           padding-right: 60px;
           font-weight: 400;
           line-height: 33.6px;
@@ -30,20 +29,18 @@ const IntroduceWrapper = styled.div`
     }
     .introduce-video{
       flex: 160%;
-      height: ${root.height_background};
-      background-image: url(${backgroundVideo});
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       .video-wrapper{
         position: relative;
+        top: 50%;
+        transform: translateY(-50%);
         div{
           .plyr{
             width: 868px;
-            height: ${root.height_background};
             .plyr__poster{
               background-image: url(${thumbnailVideo})!important;
-              background-size: cover;
               background-position: right center;
             }
           }
@@ -67,9 +64,6 @@ const IntroduceWrapper = styled.div`
           div{
             .plyr{
               width: 400px;
-              .plyr__video-embed, .plyr__video-wrapper--fixed-ratio{
-                padding-bottom: 100%;
-              }
             }
           }
         }
