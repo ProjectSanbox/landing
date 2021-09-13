@@ -10,6 +10,8 @@ import luaventures from 'assets/images/backedby/luaventures.png';
 import dec_ventures from 'assets/images/backedby/dec-ventures.png';
 import illuvium from 'assets/images/backedby/illuvium.png';
 import ngc from 'assets/images/backedby/ngc.png';
+import newave from 'assets/images/backedby/newave.png';
+import onemax from 'assets/images/backedby/onemax.png';
 
 export default {
     backedby:[
@@ -41,14 +43,14 @@ export default {
             id: "b4",
         },
         {
-            imageSrc: m6,
-            src: "/",
-            id: "b6",
-        },
-        {
             imageSrc: exnetwork,
             src: "/",
             id: "b7",
+        },
+        {
+            imageSrc: m6,
+            src: "/",
+            id: "b6",
         },
         {
             imageSrc: luaventures,
@@ -71,6 +73,18 @@ export default {
             imageSrc: everse,
             src: "/",
             id: "b8",
+
+        },
+        {
+            imageSrc: newave,
+            src: "/",
+            id: "b11",
+
+        },
+        {
+            imageSrc: onemax,
+            src: "/",
+            id: "b12",
 
         },
     ]

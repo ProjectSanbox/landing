@@ -33,9 +33,10 @@ const HeadingWrapper = styled.div`
                 }
                 h1{
                     font-weight: 400;
-                    font-size: 34px;
-                    line-height: 57.6px;
+                    font-size: 28px;
+                    line-height: 35.6px;
                     margin: 0;
+                    margin-bottom: 10px;
                     padding: 0;
                     position: relative;
                     max-width: 800px;

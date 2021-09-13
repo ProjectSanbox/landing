@@ -82,7 +82,7 @@ const PopupWrapper = styled.div`
                         font-size: 1.4rem;
                         font-family: 'Goma Block', sans-serif;
                         font-weight: 400;
-                        text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+                        text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.25);
                         color: #000000;
                     }
                 }

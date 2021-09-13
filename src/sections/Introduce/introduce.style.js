@@ -11,8 +11,11 @@ const IntroduceWrapper = styled.div`
   padding-bottom: 60px;
   background: linear-gradient(133.84deg, #4E4E4E -16.04%, #333333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
   .introduce{
-    width: 100%;
+    width: 97%;
+    margin-left: 3%;
+    display: flex;
     .introduce-content{
+      margin-top: 159px;
         img{
           width: 99px;
           margin-bottom: 30px;
@@ -20,26 +23,28 @@ const IntroduceWrapper = styled.div`
         p{
           font-size: 22px;
           font-style: italic;
-          padding-right: 193px;
+          padding-right: 60px;
           font-weight: 400;
           line-height: 33.6px;
         }
     }
-
     .introduce-video{
-      padding: 0px 40px;
-      width: 100%;
+      flex: 160%;
       height: ${root.height_background};
+      background-image: url(${backgroundVideo});
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       .video-wrapper{
-        margin-top: 60px;
+        position: relative;
         div{
           .plyr{
-            width: 100%;
+            width: 868px;
+            height: ${root.height_background};
             .plyr__poster{
               background-image: url(${thumbnailVideo})!important;
+              background-size: cover;
+              background-position: right center;
             }
           }
         }
@@ -55,7 +60,6 @@ const IntroduceWrapper = styled.div`
       }
     }
   }
-
   @media only screen and (max-width: 1200px){
     .introduce{
       .introduce-video{
@@ -63,13 +67,15 @@ const IntroduceWrapper = styled.div`
           div{
             .plyr{
               width: 400px;
+              .plyr__video-embed, .plyr__video-wrapper--fixed-ratio{
+                padding-bottom: 100%;
+              }
             }
           }
         }
       }
     }
   }
-
   @media only screen and (max-width: 975px){
     padding-bottom: 0;
     .introduce{
@@ -84,7 +90,6 @@ const IntroduceWrapper = styled.div`
           padding: 5%;
         }
       }
-
       .introduce-video{
         flex: 100%;
         height: 400px;
@@ -99,14 +104,12 @@ const IntroduceWrapper = styled.div`
             }
           }
         }
-
         p{
           display: none;
         }
       }
     }
   }
-
   @media only screen and (max-width: 575px){
     .introduce{
       .introduce-content{
