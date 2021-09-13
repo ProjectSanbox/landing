@@ -15,26 +15,28 @@ import onemax from 'assets/images/backedby/onemax.png';
 
 export default {
     backedby:[
-        {
-            imageSrc: gamefi,
-            src: "/",
-            id: "b2",
-        },
+       
         {
             imageSrc: redkite,
             src: "/",
             id: "b1",
         },
         {
-            imageSrc: illuvium,
+            imageSrc: gamefi,
             src: "/",
-            id: "b11",
-
+            id: "b2",
         },
+        
         {
             imageSrc: ngc,
             src: "/",
             id: "b12",
+
+        },
+        {
+            imageSrc: illuvium,
+            src: "/",
+            id: "b11",
 
         },
         {
@@ -59,6 +61,12 @@ export default {
 
         },
         {
+            imageSrc: everse,
+            src: "/",
+            id: "b8",
+
+        },
+        {
             imageSrc: dec_ventures,
             src: "/",
             id: "b10",
@@ -69,12 +77,7 @@ export default {
             src: "/",
             id: "b5",
         },
-        {
-            imageSrc: everse,
-            src: "/",
-            id: "b8",
-
-        },
+        
         {
             imageSrc: newave,
             src: "/",
