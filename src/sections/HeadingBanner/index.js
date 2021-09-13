@@ -6,8 +6,6 @@ import { Container } from "reusecore/Layout";
 import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
 import Box from 'reusecore/Box';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import logo from 'assets/images/logo.png'
 import arrow from 'assets/images/banner/arrow.svg';
 import decorate from 'assets/images/banner/decorate.png';
@@ -15,27 +13,7 @@ import anime from 'animejs/lib/anime';
 
 
 const HeadingBanner = () => {
-
-    const [state, setState] = useState(true);
-
     useEffect(() =>{
-
-        setInterval(() => {
-            setState(!state);
-        }, 10000);
-
-        const aniamate1 = anime.timeline({
-            loop: false,
-        })
-        .add({
-            targets: '.heading-content h1',
-            translateX: [-1000, 0],
-            opacity: [0, 1],
-            easing: "easeOutExpo",
-            duration: 800,
-            delay: anime.stagger(500)
-        })
-
         const animate2 = anime.timeline({
             loop: true,
             duration: 500
@@ -44,8 +22,8 @@ const HeadingBanner = () => {
             targets: '.register div img',
             opacity: [1, 0],
             easing: 'easeOutExpo',
-            duration: 1000,
-            delay: anime.stagger(120)
+            duration: 800,
+            delay: anime.stagger(100)
         })
 
         const banner = document.querySelector('div.heading');

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import headerBackground from 'assets/images/banner.jpg';
+import headerBackground from 'assets/images/banner.webp';
 
 const HeadingWrapper = styled.div`
         background: transparent;
@@ -228,6 +228,7 @@ const HeadingWrapper = styled.div`
                         div{
                             img{
                                 margin-bottom: 0;
+                                width: 60px;
                             }
                         }
                         button{

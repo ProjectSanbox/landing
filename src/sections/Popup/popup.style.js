@@ -50,31 +50,45 @@ const PopupWrapper = styled.div`
            transform: translate(-55%, -50%);
         }
 
+        p.notification{
+            font-size: 20px;
+            font-weight: 400;
+            width: 100%;
+            text-align: center;
+            font-style: italic;
+            padding: 0 20px;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translateY(-25%);
+            transform: translateX(-50%);
+        }
+
         .popup-info{
             position: absolute;
             bottom: 30px;
             left: 50%;
             width: 100%;
+            max-width: 452px;
             text-align: center;
             transform: translateX(-50%);
-            p{
-                font-size: 21px;
-                font-weight: 400;
-                font-style: italic;
-                padding: 0 20px;
-            }
-
-            span{
-                text-transform: uppercase;
-                font-size: 40px;
-                font-family: 'Goma Block', sans-serif;
-                font-weight: 400;
-                text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
-                background: radial-gradient(127.37% 191.06% at 106.67% -3%, #1DBFFF 1.87%, #1FB8FB 3.31%, #2D81DC 15.69%, #3853C2 27.74%, #412FAE 39.17%, #4815A0 49.85%, #4C0597 59.46%, #4D0094 67.1%, #3C0075 74.63%, #26004C 85.8%, #180033 94.64%, #13002A 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                display: inline-block;
-                padding-right: 20px;
+            div{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                span.countdown{
+                    padding: 0px 4%;
+                    p{
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        font-family: 'Goma Block', sans-serif;
+                        font-weight: 400;
+                        text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+                        background: radial-gradient(127.37% 191.06% at 106.67% -3%, #1DBFFF 1.87%, #1FB8FB 3.31%, #2D81DC 15.69%, #3853C2 27.74%, #412FAE 39.17%, #4815A0 49.85%, #4C0597 59.46%, #4D0094 67.1%, #3C0075 74.63%, #26004C 85.8%, #180033 94.64%, #13002A 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
             }
 
             button{
@@ -149,13 +163,18 @@ const PopupWrapper = styled.div`
             transform: translate(-55%, -80%);
             }
 
-            .popup-info{
-                p{
-                    font-size: 16px;
-                }
+            p.notification{
+                font-size: 16px;
+            }
 
-                span{
-                    font-size: 23px;
+            .popup-info{
+                div{
+                    span.countdown{
+                        margin-bottom: 0;
+                        p{
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
 

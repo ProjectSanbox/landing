@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import backgroundVideo from 'assets/images/introduce/backgroundVideo.png';
-import thumbnailVideo from 'assets/images/introduce/thumbnailVideo.png'
+import thumbnailVideo from 'assets/images/introduce/thumbnailVideo.jpg'
 
 const root = {
   height_background: '830px'

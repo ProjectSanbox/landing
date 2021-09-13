@@ -18,9 +18,16 @@ const Popup = () =>{
             const distance = countDownDate - now;
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            // const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            // const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.querySelector(".countdown").innerHTML = days + " days" + " " + hours + " hours"
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            if(document.querySelector(".days"))
+            document.querySelector(".days").innerHTML = days;
+            if(document.querySelector(".hours"))
+            document.querySelector(".hours").innerHTML = hours;
+            if(document.querySelector(".minutes"))
+            document.querySelector(".minutes").innerHTML = minutes;
+            if(document.querySelector(".seconds"))
+            document.querySelector(".seconds").innerHTML = seconds;
               
             if (distance < 0) {
               clearInterval(x);
@@ -45,10 +52,27 @@ const Popup = () =>{
                     <Image src={lootbox} />
                 </Box>
 
+                <Text className="notification">From September {new Date().getDate()}th To {monthNames[new Date().getMonth()]} 27th at 07:30pm UTC </Text>
                 <Box className="popup-info">
                     {/* <Text>PlanetSandbox Will IDO </Text> */}
-                    <Text>From September {new Date().getDate()}th To {monthNames[new Date().getMonth()]} 27th at 07:30pm UTC </Text>
-                    <Text>Available in: <Text className="countdown" as="span">0 Day</Text></Text>
+                        <Box>
+                            <Text className="countdown" as="span">
+                                <Text className="days">0</Text>
+                                <Text>Days</Text>
+                            </Text>
+                            <Text className="countdown" as="span">
+                                <Text className="hours">0</Text>
+                                <Text>Hours</Text>
+                            </Text>
+                            <Text className="countdown" as="span">
+                                <Text className="minutes">0</Text>
+                                <Text>Minutes</Text>
+                            </Text>
+                            <Text className="countdown" as="span">
+                                <Text className="seconds">0</Text>
+                                <Text>Seconds</Text>
+                            </Text>
+                        </Box>
                     <Button>Cooming Soon</Button>
                 </Box>
 

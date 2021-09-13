@@ -64,7 +64,7 @@ const CommingSoon = () =>{
                 <Heading>Comming Soon</Heading>
                 <Button>
                     <Image src={playArrow} />
-                    <a href="/">Back</a>
+                    <a rel="preload" href="/">Back</a>
                 </Button>
             </CommingSoonWrapper>
         </ThemeProvider>
