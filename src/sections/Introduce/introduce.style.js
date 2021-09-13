@@ -11,11 +11,8 @@ const IntroduceWrapper = styled.div`
   padding-bottom: 60px;
   background: linear-gradient(133.84deg, #4E4E4E -16.04%, #333333 9.33%, #1A1A1A 32.02%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
   .introduce{
-    width: 97%;
-    margin-left: 3%;
-    display: flex;
+    width: 100%;
     .introduce-content{
-      margin-top: 159px;
         img{
           width: 99px;
           margin-bottom: 30px;
@@ -30,19 +27,17 @@ const IntroduceWrapper = styled.div`
     }
 
     .introduce-video{
-      flex: 160%;
+      padding: 0px 40px;
+      width: 100%;
       height: ${root.height_background};
-      background-image: url(${backgroundVideo});
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       .video-wrapper{
-        margin-top: calc(${root.height_background} - (${root.height_background} * (66/100)));
-        position: relative;
-        right: 10%;
+        margin-top: 60px;
         div{
           .plyr{
-            width: 738px;
+            width: 100%;
             .plyr__poster{
               background-image: url(${thumbnailVideo})!important;
             }
