@@ -7,7 +7,6 @@ import IntroduceWrapper from './introduce.style';
 import 'aos/dist/aos.css';
 import Plyr from 'plyr-react'
 import 'plyr-react/dist/plyr.css'
-import { Container } from 'reusecore/Layout';
 
 
 const Introduce = () => {
@@ -25,22 +24,20 @@ const Introduce = () => {
     return (
         <IntroduceWrapper id="video">
             <Box className="introduce">
-              <Container>
                 <Box className="introduce-content">
-                  <Heading>About</Heading>
-                  <Text>Planet Sandbox is the ultimate physics-powered sandbox shooting game. Build and own arenas to fight other players in different game modes using your own NFT weapons and accessories. 
-                        Powered by the $PSB and $PULV token, Planet Sandbox is the next evolution in the Play to Earn movement!
-                  </Text>
-                  </Box>
-              </Container>
+                    <Heading>About</Heading>
+                    <Text>Planet Sandbox is the ultimate physics-powered sandbox shooting game. 
+                    Build and own arenas to fight other players in different game modes using your own NFT weapons and accessories. Powered by the $PSB and $PULV token, Planet Sandbox is the next evolution in the Play to Earn movement!
+                    </Text>
+                </Box>
 
-                  <Box className="introduce-video">
-                    <Box className="video-wrapper">
-                          <Box><Plyr source={videoSrc} /></Box>
-                          <Text>Watch Trailer</Text>
-                    </Box>
-                  </Box>
-              </Box>
+                <Box className="introduce-video">
+                   <Box className="video-wrapper">
+                        <Box><Plyr source={videoSrc} /></Box>
+                        <Text>Watch Trailer</Text>
+                   </Box>
+                </Box>
+            </Box>
         </IntroduceWrapper>
     )
 }
