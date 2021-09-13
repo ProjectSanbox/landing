@@ -89,6 +89,7 @@ p{
     margin: 0 0 15px 0;
     color: #ffffff;
     font-weight: 400;
+    font-size: 20px;
 }
 
 a{
