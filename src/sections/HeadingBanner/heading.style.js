@@ -29,16 +29,19 @@ const HeadingWrapper = styled.div`
                 top: 35%;
                 transform: translateY(-35%);
                 img{
-                   width: 200px;
+                   width: 300px;
                 }
                 h1{
-                    font-weight: 400;
-                    font-size: 28px;
+                    font-weight: 900;
+                    font-size: 34px;
                     line-height: 35.6px;
                     margin: 0;
                     margin-bottom: 10px;
+                    letter-spacing: 2px;
+                    text-transform: capitalize;
                     padding: 0;
                     position: relative;
+                    font-family: 'Product Sans', sans-serif;
                     max-width: 800px;
                     span{
                         position: relative;
