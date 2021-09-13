@@ -67,6 +67,9 @@ const IntroduceWrapper = styled.div`
           div{
             .plyr{
               width: 400px;
+              .plyr__video-embed, .plyr__video-wrapper--fixed-ratio{
+                padding-bottom: 100%;
+              }
             }
           }
         }
