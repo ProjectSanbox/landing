@@ -33,11 +33,12 @@ const HeadingWrapper = styled.div`
                 }
                 h1{
                     font-weight: 400;
-                    font-size: 36px;
+                    font-size: 34px;
                     line-height: 57.6px;
                     margin: 0;
                     padding: 0;
                     position: relative;
+                    max-width: 800px;
                     span{
                         position: relative;
                         display: inline-block;

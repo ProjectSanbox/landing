@@ -46,8 +46,8 @@ const HeadingBanner = () => {
                     <Container>
                         <Box className="heading-content">
                             <Image src={logo} />
-                            <Heading>Join The biggest third-person</Heading>
-                            <Heading>sandbox game on blockchain nOW!!!</Heading>
+                            <Heading>Welcome to the ultimate battleverse!</Heading>
+                            <Heading>Choose your NFT gear and jump into this crypto powered real time shooter unlike any other!</Heading>
                             <Box className="register">
                                 <Box>
                                     <Image src={arrow} />

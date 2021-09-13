@@ -14,24 +14,31 @@ import ngc from 'assets/images/backedby/ngc.png';
 export default {
     backedby:[
         {
-            imageSrc: redkite,
-            src: "/",
-            id: "b1",
-        },
-        {
             imageSrc: gamefi,
             src: "/",
             id: "b2",
         },
         {
+            imageSrc: redkite,
+            src: "/",
+            id: "b1",
+        },
+        {
+            imageSrc: illuvium,
+            src: "/",
+            id: "b11",
+
+        },
+        {
+            imageSrc: ngc,
+            src: "/",
+            id: "b12",
+
+        },
+        {
             imageSrc: icetea,
             src: "//www.gamefi.com/",
             id: "b4",
-        },
-        {
-            imageSrc: basic_capital,
-            src: "/",
-            id: "b5",
         },
         {
             imageSrc: m6,
@@ -42,12 +49,6 @@ export default {
             imageSrc: exnetwork,
             src: "/",
             id: "b7",
-        },
-        {
-            imageSrc: everse,
-            src: "/",
-            id: "b8",
-
         },
         {
             imageSrc: luaventures,
@@ -62,15 +63,14 @@ export default {
 
         },
         {
-            imageSrc: illuvium,
+            imageSrc: basic_capital,
             src: "/",
-            id: "b11",
-
+            id: "b5",
         },
         {
-            imageSrc: ngc,
+            imageSrc: everse,
             src: "/",
-            id: "b12",
+            id: "b8",
 
         },
     ]

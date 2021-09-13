@@ -4,14 +4,13 @@ import GlobalStyle from "assets/theme";
 import Head from "next/head";
 import FavIcon from "assets/images/favicon.png";
 import Nav from "sections/Nav";
+import Service from './Service';
 import Footer from "sections/Footer";
-import MemeForm from './MemeForm'
-import MemeHeading from './MemeHeading'
 
-const Meme = () =>{
-    return (
-       <ThemeProvider theme={theme}>
-           <Head>
+const Term = () =>{
+   return(
+    <ThemeProvider theme={theme}>
+        <Head>
             <title>
             PlanetSandbox
             </title>
@@ -23,14 +22,13 @@ const Meme = () =>{
             <link rel="shortcut icon" type="image/x-icon" href={FavIcon} />
             <link href="http://fonts.cdnfonts.com/css/goma-block" rel="stylesheet" />
             <link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet" />
-        </Head>
+        </Head>  
         <GlobalStyle />
         <Nav />
-        <MemeHeading />
-        <MemeForm />
+        <Service />
         <Footer />
-       </ThemeProvider>
-    );
+    </ThemeProvider>
+   );
 }
 
-export default Meme;
+export default Term;

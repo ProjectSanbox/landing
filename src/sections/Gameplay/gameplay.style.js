@@ -146,8 +146,8 @@ const GamePlayWrapper = styled.div`
     .slick-dots{
         bottom: -55px;
             li{
-                width: 150px;
-                height: 6.25px;
+                width: 10px;
+                height: 10px;
                 background: #b5b4b1;
                 border-radius: 16px;
                 &.slick-active{
@@ -256,12 +256,6 @@ const GamePlayWrapper = styled.div`
 
     .gameplay-content{
         margin: auto;
-    }
-
-    .slick-dots{
-        li{
-            width: 100px;
-        }
     }
 
     .slick-slide.slick-cloned {

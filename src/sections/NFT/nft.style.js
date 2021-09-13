@@ -111,8 +111,8 @@ const BlockWrapper = styled.div`
     .slick-dots{
         bottom: -55px;
             li{
-                width: 150px;
-                height: 6.25px;
+                width: 10px;
+                height: 10px;
                 background: #b5b4b1;
                 border-radius: 16px;
                 &.slick-active{

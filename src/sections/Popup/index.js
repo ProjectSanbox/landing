@@ -52,7 +52,7 @@ const Popup = () =>{
                     <Image src={lootbox} />
                 </Box>
 
-                <Text className="notification">From September {new Date().getDate()}th To {monthNames[new Date().getMonth()]} 27th at 07:30pm UTC </Text>
+                <Text className="notification">PlanetSandbox Will IDO on RedKite & GameFi</Text>
                 <Box className="popup-info">
                     {/* <Text>PlanetSandbox Will IDO </Text> */}
                         <Box>
@@ -73,7 +73,7 @@ const Popup = () =>{
                                 <Text>Seconds</Text>
                             </Text>
                         </Box>
-                    <Button>Cooming Soon</Button>
+                    {/* <Button>Cooming Soon</Button> */}
                 </Box>
 
                 <Button onClick={() => setHide(true)} className="btn-close"><IoMdClose/></Button>

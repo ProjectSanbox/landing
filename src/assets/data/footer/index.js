@@ -33,6 +33,10 @@ export default {
       infoName: "Document",
       infoLink: "/comming"
     },
+    {
+      infoName: "Term",
+      infoLink: "/term"
+    },
   ],
   documentation:[
     {
