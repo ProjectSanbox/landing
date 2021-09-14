@@ -38,7 +38,7 @@ const HeadingWrapper = styled.div`
                     margin: 0;
                     margin-bottom: 10px;
                     letter-spacing: 2px;
-                    text-transform: capitalize;
+                    text-transform: none;
                     padding: 0;
                     position: relative;
                     font-family: 'Product Sans', sans-serif;

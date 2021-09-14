@@ -12,7 +12,7 @@ const Service = () =>{
                 <Box className="service">
                     <Box className="service-heading">
                         <Heading>THE PLANETSANDBOX TERMS OF USE</Heading>
-                        <Text>Last Updated: [Sep 13, 2021]</Text>
+                        <Text>Last Updated: [Sep 14, 2021]</Text>
                     </Box>
                     <Box className="service-content">
                         <Text>
@@ -70,11 +70,6 @@ const Service = () =>{
                             3.5. Any cryptographic tokens, blockchain technology, or distributed ledger technology-related projects are new and relatively untested, and outside of both our and our Clients’ exclusive control. Any adverse changes in market forces, technology, and regulatory environment impacting our performance under this Agreement shall absolve us from responsibility in this regard, including but not limited to hacking attacks, possible theft, unfavorable regulatory action, or unclear legal/tax status of cryptographic tokens.
                         </Text>
 
-                        <Text className="content-heading">LANDS</Text>
-                        <Text>
-                            You can buy your land on a marketplace pland and can build it into the battlespace you want
-                        </Text>
-
                         <Text className="content-heading">4. Prohibited Uses & Termination</Text>
                         <Text>4.1. We reserve the right to (a) modify or discontinue any portion of the Planet Sandbox Services, and (b) suspend or terminate your access to the Planet Sandbox Services, at any time, and from time to time, without notice to you in certain, limited circumstances described herein. You agree that we shall not be liable to you or any third party for any modification or termination of the Planet Sandbox Services, or suspension or termination of your access to the Planet Sandbox Services, except to the extent otherwise expressly set forth herein.</Text>
                         <Text>4.1.2 We reserve the right (but have no obligation) to review any User Content, and to investigate and/or take appropriate action against you in our sole discretion if you violate the Acceptable Use Policy or any other provision of these Terms or otherwise create liability for us or any other person. Such action may include removing or modifying your User Content, terminating your Account in accordance with Section Error! Reference source not found., and/or reporting you to law enforcement authorities.</Text>
@@ -82,6 +77,7 @@ const Service = () =>{
 
                         <Text className="content-heading">5. Breach</Text>
                         <Text>5.1. Without prejudice to any other rights, if a User breaches in whole or in part any provision contained herein, Wanaka Farm reserves the right to take such action as it sees fit, including terminating this Agreement or any other agreement in place with the User and/or taking legal action against such User.</Text>
+                        <Text>5.2. You agree to indemnify and hold harmless Wanaka Farm, its affiliates, subsidiaries, licensors, and their respective directors, officers, members, managers, employees, and agents from and against any and all claims and expenses arising out of your use of the Services, a breach of any provision of these Terms by you or any person using the Services on your behalf, a breach by you of any applicable laws, or any third-party claim to the extent arising from or connected with an allegation that your use of the Services in accordance with these Terms infringes any rights of a third party.</Text>
                     </Box>
                 </Box>
             </Container>
