@@ -3,8 +3,8 @@ import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
 import Head from "next/head";
 import FavIcon from "assets/images/favicon.png";
-import Nav from "sections/Nav";
-import Footer from "sections/Footer";
+import Nav from "./Nav";
+import Footer from "./Footer";
 import MemeForm from './MemeForm'
 import MemeHeading from './MemeHeading'
 

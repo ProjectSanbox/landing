@@ -5,15 +5,15 @@ export default {
   products:[
     {
       productName: "Home",
-      productLink: "#home",
+      productLink: "/#home",
     },
     {
       productName: "Gameplay",
-      productLink: "#gameplay",
+      productLink: "/#gameplay",
     },
     {
       productName: "NFT Items",
-      productLink: "#nft",
+      productLink: "/#nft",
     },
     // {
     //   productName: "PSB",
@@ -23,11 +23,11 @@ export default {
   information:[
     {
       infoName: "Team",
-      infoLink: "#ourteam"
+      infoLink: "/#ourteam"
     },
     {
       infoName: "Roadmap",
-      infoLink: "#roadmap"
+      infoLink: "/#roadmap"
     },
     {
       infoName: "Document",
