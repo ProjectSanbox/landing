@@ -2,7 +2,7 @@
 export default {
     nav:[
         {
-            link: "#home",
+            link: "/index",
             linkActive: "home",
             target: false,
             content: "Home"

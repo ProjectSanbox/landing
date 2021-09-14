@@ -2,25 +2,39 @@ import HeadingWrapper from './heading.style';
 import Box from 'reusecore/Box';
 import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
+import Image from 'reusecore/Image';
 import Button from 'reusecore/Button';
 import Link from 'next/link';
+import { useEffect } from 'react';
+import decorate_left from 'assets/images/meme/decorate-left.png';
+import decorate_right from 'assets/images/meme/decorate-right.png';
 
 const MemeHeading = () =>{
+
+  useEffect(() =>{
+    const meme = document.querySelector('#memeHeading');
+    const width = window.innerWidth;
+    const height = width * 36.71875 / 100;
+    meme.style.height = height + "px";
+    window.addEventListener('resize', () =>{
+      const width = window.innerWidth;
+      const height = width * 36.71875 / 100;
+      meme.style.height = height + "px";
+    })
+  })
+
   return(
-    <HeadingWrapper>
+    <HeadingWrapper id="memeHeading">
       <Box className="heading-content">
-          <Box className="card">
-            <Box className="box">
-              <Box className="content">
-                <Heading className="card-heading">Meme Contest</Heading>
-                <Text className="special">Community Fest</Text>
-                <Text className="box-text">GiveAway</Text>
-                <Text>Top 10 meme creators will share</Text>
-                <Text className="prize-money">1,000 USD</Text>
-                <Link href="#form"><a>Join!</a></Link>
-              </Box>
-            </Box>
-        </Box>
+          <Heading>Meme CONTEST</Heading>
+          <Text className="content-text">Community fest</Text>
+          <Text className="giveaway">giveaway</Text>
+          <Text>Top 10 <Text as="span">meme creators will share</Text></Text>
+          <Box className="bonus">
+            <Image src={decorate_left} />
+            <Text>1,000 USD</Text>
+            <Image src={decorate_right} />
+          </Box>
       </Box>
     </HeadingWrapper>
   );
