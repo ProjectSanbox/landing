@@ -19,7 +19,8 @@ const ServiceWarpper = styled.div`
 
         p.content-heading{
             font-size: 24px;
-            font-weight: 700
+            font-weight: 700;
+            margin: 40px 0px;
         }
     }
 `;
