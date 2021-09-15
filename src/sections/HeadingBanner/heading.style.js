@@ -140,21 +140,18 @@ const HeadingWrapper = styled.div`
         }
     }
 
-    @media only screen and (max-width: 1400px){
-        div.heading{
-            height: 730px!important;
-        }
-    }
 
-    @media only screen and (max-width: 992px){
-        div.heading{
-            height: 520px!important;
-        }
-    }
 
     @media only screen and (max-width: 975px){
         div.heading{
             margin-top: 60px;
+            .headingBackground{
+                .heading-content{
+                    img{
+                        width: 200px;
+                    }
+                }
+            }
         }
     }
 
@@ -218,7 +215,7 @@ const HeadingWrapper = styled.div`
 
     @media only screen and (max-width: 576px){
         div.heading{
-            height: 300px!important;
+            height: 400px!important;
             .headingBackground{
                 .heading-content{
                     h1{
@@ -240,6 +237,7 @@ const HeadingWrapper = styled.div`
                             width: auto;
                             height: 46px;
                             margin-top: 0;
+                            margin-top: 20px;
                         }
                     }
                 }

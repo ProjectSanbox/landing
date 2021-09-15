@@ -2,25 +2,25 @@
 export default {
     nav:[
         {
-            link: "#home",
+            link: "/",
             linkActive: "home",
             target: false,
             content: "Home"
         },
         {
-            link: "#video",
+            link: "/#video",
             linkActive: "video",
             target: false,
             content: "Video"
         },
         {
-            link: "#gameplay",
+            link: "/#gameplay",
             linkActive: "gameplay",
             target: false,
             content: "GamePlay"
         },
         {
-            link: "#nft",
+            link: "/#nft",
             linkActive: "nft",
             target: false,
             content: "NFT"
@@ -32,13 +32,13 @@ export default {
             content: "Token"
         },
         {
-            link: "#roadmap",
+            link: "/#roadmap",
             linkActive: "roadmap",
             target: false,
             content: "Roadmap"
         },
         {
-            link: "#ourteam",
+            link: "/#ourteam",
             linkActive: "ourteam",
             target: false,
             content: "Team"
@@ -59,22 +59,22 @@ export default {
     ],
     navMobie:[
         {
-            link: "#",
+            link: "/",
             target: false,
             content: "Home"
         },
         {
-            link: "#video",
+            link: "/#video",
             target: false,
             content: "Video"
         },
         {
-            link: "#gameplay",
+            link: "/#gameplay",
             target: false,
             content: "GamePlay"
         },
         {
-            link: "#nft",
+            link: "/#nft",
             target: false,
             content: "NFT"
         },
@@ -84,12 +84,12 @@ export default {
             content: "Token"
         },
         {
-            link: "#roadmap",
+            link: "/#roadmap",
             target: false,
             content: "Roadmap"
         },
         {
-            link: "#ourteam",
+            link: "/#ourteam",
             target: false,
             content: "Team"
         },

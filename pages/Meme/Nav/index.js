@@ -54,7 +54,7 @@ const Nav = () =>{
                         </ListItem>
                         {data.navMobie.map((nav, index) =>
                         <ListItem key={index}>
-                            <Link href={nav.link}><a href={nav.link} onClick={()=>handleToggleMenu(false)}>{nav.content}</a></Link>
+                            <a href={nav.link} onClick={()=>handleToggleMenu(false)}>{nav.content}</a>
                         </ListItem>
                         )}
                     </List>
@@ -66,7 +66,7 @@ const Nav = () =>{
                     <List className="hide">
                         {data.nav.map((nav, index) =>
                         <ListItem key={index} className={toggle.active === nav.linkActive ? "active" : ''}>
-                            <Link href={nav.link}><a href={nav.link} target={nav.target ? '_blank' : '_self'} onClick={()=> setToggle({...toggle, active: nav.linkActive})}>{nav.content}</a></Link>
+                            <a href={nav.link} target={nav.target ? '_blank' : '_self'} onClick={()=> setToggle({...toggle, active: nav.linkActive})}>{nav.content}</a>
                         </ListItem>
                         )}
                     </List>
