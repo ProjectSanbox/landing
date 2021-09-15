@@ -55,6 +55,46 @@ background: #252525;
         }
     }
 
+    .message_container {
+	filter: drop-shadow(0 0 8px cyan);
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    display: none;
+	
+	.message {
+		background: #000;
+		border: 2px cyan;
+		width: calc(100% - 20px);
+		max-width: 640px;
+		margin: 0 auto;
+		overflow: hidden;
+		transition: all .5s;
+		
+		.title {
+			display: inline-block;
+			padding: .5em 2em;
+
+			font-weight: bold;
+			letter-spacing: .1em;
+			text-align: center;
+			text-transform: uppercase;
+			--aug-inset: .25em;
+			--aug-inset-bg: #ff0;
+			--aug-br: .75em;
+		}
+		p {
+			color: #fff;
+			padding: 1em;
+			margin: 0;
+			display: block;
+			line-height: 1.4em;
+			text-align: justify;
+			max-height: 10em;
+		}
+	}
+}
+
     @media only screen and (max-width: 991px){
         form{
             padding: 40px 50px;
