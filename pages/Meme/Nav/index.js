@@ -45,9 +45,6 @@ const Nav = () =>{
                 <Box className="overlay">&nbsp;</Box>
                 <List className="list-mobile">
                         <ListItem className="list-heading">
-                           <Box className="menu-icon">
-                               {/* <Image src={logo} /> */}
-                           </Box>
                            <Box className="menu-close">
                                 <AiOutlineClose onClick={()=>handleToggleMenu(false)} />
                            </Box>
