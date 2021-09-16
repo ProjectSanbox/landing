@@ -47,7 +47,7 @@ const Footer = () => {
                   <Text className="footer-title">Products</Text>
                     <List>
                       {data.products.map((product, index) =>
-                        <ListItem key={index}><Link rel="preload" href={product.productLink}><a>{product.productName}</a></Link></ListItem>
+                        <ListItem key={index}><Link href={product.productLink}><a>{product.productName}</a></Link></ListItem>
                       )}
                     </List>
                   </Col>
@@ -55,7 +55,7 @@ const Footer = () => {
                   <Text className="footer-title">Information</Text>
                     <List>
                       {data.information.map((info, index) =>
-                        <ListItem key={index}><Link rel="preload" href={info.infoLink}><a>{info.infoName}</a></Link></ListItem>
+                        <ListItem key={index}><Link href={info.infoLink}><a>{info.infoName}</a></Link></ListItem>
                       )}
                     </List>
                   </Col>
@@ -63,7 +63,7 @@ const Footer = () => {
                   <Text className="footer-title">Introduce</Text>
                     <List>
                       {data.documentation.map((document, index)=>
-                         <ListItem key={index}><a rel="preload" href={document.documentLink}>{document.documentName}</a></ListItem>
+                         <ListItem key={index}><a href={document.documentLink}>{document.documentName}</a></ListItem>
                       )}
                     </List> 
                   </Col>
@@ -71,7 +71,7 @@ const Footer = () => {
                     <Text className="footer-title">join our community</Text>
                     <List className="footer-link">
                       {data.links.map((link, index) =>
-                        <ListItem key={index}><Link rel="preload" href={link.url}><a target="_blank">{link.icon} {link.name}</a></Link></ListItem>
+                        <ListItem key={index}><Link href={link.url}><a target="_blank">{link.icon} {link.name}</a></Link></ListItem>
                       )}
                     </List> 
                   </Col>

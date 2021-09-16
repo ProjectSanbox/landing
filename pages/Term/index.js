@@ -18,6 +18,7 @@ const Term = () =>{
             name="Description"
             content="Planet Sandbox is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battle"
             />
+            <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
             <meta name="theme-color" content="#280D57" />
             <link rel="shortcut icon" type="image/x-icon" href={FavIcon} />
             <link href="http://fonts.cdnfonts.com/css/goma-block" rel="stylesheet" />

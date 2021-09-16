@@ -25,7 +25,7 @@ const Adivisor = () =>{
                     )}
                 </Box>
             </Container>
-            <Box className="backgorund"></Box>
+            <Box className="backgorund">&nbsp;</Box>
     </AdvisorWrapper>
    );
 }
