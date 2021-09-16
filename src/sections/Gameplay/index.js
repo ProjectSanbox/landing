@@ -23,7 +23,7 @@ const GamePlay = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 4000,
         nextArrow: <NextArrow className="nextButton" />,
         prevArrow: <PrevArrow className="preButton" />,
@@ -45,7 +45,7 @@ const GamePlay = () => {
        <Container>
         <Box className="gameplay-heading">
             <Heading>Gameplay</Heading>
-            <Text>Planet Sandbox is the total package for the unbound hidden vision that lies deep inside each player. Like a superior being with almighty powers, players can build the parts, innovate their world, play their own game rules, share with their friends and monetize from their creation. 
+            <Text>Planet Sandbox is a virtual world where players can play, build, own, and monetize their virtual experiences. We empower artists, creators, and players to build the platform they always envisioned, providing the means to unleash your creativity. 
 
 </Text>
         </Box>
@@ -63,7 +63,7 @@ const GamePlay = () => {
                                 <Image src={gameplay.introImage} />
 
                                 <Text className="intro-heading">{gameplay.title}</Text>
-                                <Text>{gameplay.content}</Text>
+                                <Text className="into">{gameplay.content}</Text>
                                 {gameplay.listContent &&
                                 <List>
                                     {

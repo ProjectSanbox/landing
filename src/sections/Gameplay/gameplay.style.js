@@ -48,6 +48,10 @@ const GamePlayWrapper = styled.div`
                     font-size: 24px;
                     text-transform: uppercase;
                     }
+                    p.into{
+                        text-align: left;
+                        margin: 0;
+                    }
                     img{
                         width: 100px;
                         margin: auto;
@@ -58,13 +62,14 @@ const GamePlayWrapper = styled.div`
                     ul{
                         text-align: left;
                         margin-bottom: 10px;
+                        margin-left: 10px;
                         li{
                             color: #fff;
                             font-family: 'Product Sans', sans-serif;
                             font-size: 14px;
                             font-weight: 400;
                             &::before{
-                                content: "▶";
+                                content: "•";
                                 font-size: 13px;
                                 padding-right: 5px;
                             }   
