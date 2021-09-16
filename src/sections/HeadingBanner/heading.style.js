@@ -32,16 +32,13 @@ const HeadingWrapper = styled.div`
                    width: 300px;
                 }
                 h1{
-                    font-weight: 900;
-                    font-size: 34px;
+                    font-size: 36px;
                     line-height: 35.6px;
                     margin: 0;
                     margin-bottom: 10px;
-                    letter-spacing: 2px;
                     text-transform: none;
                     padding: 0;
                     position: relative;
-                    font-family: 'Product Sans', sans-serif;
                     max-width: 800px;
                     span{
                         position: relative;

@@ -77,15 +77,15 @@ h4,
 h5,
 h6 {
     color: ${props => props.theme.headingColor ? props.theme.headingColor : '#FFFFFF'};
-    font-family: 'Goma Block', sans-serif;
+    font-family: 'Eurostile', sans-serif;
     font-size: 48px;
     line-height: 48px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 p{
-    font-family: 'Product Sans', sans-serif;
+    font-family: 'Product Sans';
     margin: 0 0 15px 0;
     color: #ffffff;
     font-weight: 400;

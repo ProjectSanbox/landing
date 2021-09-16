@@ -9,24 +9,24 @@ import play from 'assets/images/gameplay/play.png'
 export default {
     gameplay:[
         {
-            imgVideo: buildmode,
+            imgVideo: pvpmode,
             title: "Building mode​",
-            content: "This is where the vision starts. The player will be provided with the builder tool to customize every item in their inventory, making the foundation for their sandbox world.",
+            content: "This is one of the core functions of the game. When the player first enters the game, they will be provided a Builder Tool to customize every object in their inventory.",
             introImage: buildmode_icon,
             linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",
             playButton: play
         },
         {
-            imgVideo: pvpmode,
+            imgVideo: buildmode,
             title: "Multiplayer mode​​",
             content: "",
             listContent: [
                 "Players can join other's published Land to play game modes.",
                 "Game modes are customized by the Landowner using Rule Tool.",
-                "There are some preset game modes from the publisher.",
+                "There are some preset game modes from the publisher as following.",
                 "Players are rewarded with loot boxes, NFT objects, and tokens."
             ],
-            introImage: pvpmode_icon,
+            introImage: pvemode_icon,
             linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",
             playButton: play
         },
@@ -36,9 +36,9 @@ export default {
             content: "Planet Sandbox provides some build-in PvE mode: ",
             listContent: [
                 "Tower defense: protect your base from NPC like zombies, soldiers",
-                "Racing: finish the track first.Runnable NPC: cyborg, hour, hound..."
+                "Racing: finish the track first.Runnable NPC: cyborg, house, hound..."
             ],
-            introImage: pvemode_icon,
+            introImage: pvpmode_icon,
             linkVideo: "https://www.youtube.com/embed/ML1pWYdm1WE",
             playButton: play
         }
