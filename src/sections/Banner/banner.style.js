@@ -33,13 +33,14 @@ const BannerWrapper = styled.div`
                 }
                 h1{
                     font-size: 36px;
-                    line-height: 35.6px;
+                    line-height: 40.6px;
                     margin: 0;
                     margin-bottom: 10px;
                     text-transform: none;
                     padding: 0;
                     position: relative;
                     max-width: 800px;
+                    font-family: 'Oswald', sans-serif;
                     span{
                         position: relative;
                         display: inline-block;
