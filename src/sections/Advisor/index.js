@@ -19,7 +19,9 @@ const Adivisor = () =>{
                         <Box key={index} className="adivisor-item">
                             <Image src={advisor.avatar} />
                             <Text className="adivisor-name">{advisor.name}</Text>
-                            <Text className="adivisor-info">{advisor.desc}</Text>
+
+                            
+                            <Text class-Name="adivisor-info">{advisor.desc}</Text>
                         </Box>  
                     )}
                 </Box>

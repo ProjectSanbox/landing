@@ -59,11 +59,10 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-
-    background: linear-gradient(133.84deg, #333333 -16.04%, #1A1A1A 7.99%, #393939 35.36%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  background: #0C0A15;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 #__next{
@@ -77,7 +76,7 @@ h4,
 h5,
 h6 {
     color: ${props => props.theme.headingColor ? props.theme.headingColor : '#FFFFFF'};
-    font-family: 'Eurostile', sans-serif;
+    font-family: 'Bungee', cursive;
     font-size: 48px;
     line-height: 48px;
     text-transform: uppercase;
@@ -85,7 +84,7 @@ h6 {
 }
 
 p{
-    font-family: 'Product Sans';
+    font-family: 'Oswald', sans-serif;
     margin: 0 0 15px 0;
     color: #ffffff;
     font-weight: 400;

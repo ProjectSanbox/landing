@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import HeadingWrapper from './heading.style';
+import BannerWrapper from './banner.style';
 import Image from 'reusecore/Image';
 import Button from 'reusecore/Button';
 import { Container } from "reusecore/Layout";
@@ -12,7 +12,7 @@ import decorate from 'assets/images/banner/decorate.png';
 import anime from 'animejs/lib/anime';
 
 
-const HeadingBanner = () => {
+const Banner = () => {
     useEffect(() =>{
         const animate2 = anime.timeline({
             loop: true,
@@ -37,10 +37,8 @@ const HeadingBanner = () => {
         banner.style.height = height + "px";
         
     }, [])
-
-
     return (
-        <HeadingWrapper id="home">
+        <BannerWrapper id="home">
             <Box className="heading">
                 <Box className="headingBackground">
                     <Container>
@@ -62,8 +60,8 @@ const HeadingBanner = () => {
                     </Container>
                 </Box>
             </Box>
-        </HeadingWrapper>
+        </BannerWrapper>
     );
 };
 
-export default HeadingBanner;
+export default Banner;

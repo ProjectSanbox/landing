@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import headerBackground from 'assets/images/banner.webp';
 
-const HeadingWrapper = styled.div`
-        background: transparent;
+const BannerWrapper = styled.div`
+    background: transparent;
     p{
         color: #ffffff;
         font-size: 18px;
@@ -244,4 +244,4 @@ const HeadingWrapper = styled.div`
 
 `;
 
-export default HeadingWrapper;
+export default BannerWrapper;

@@ -3,7 +3,7 @@ import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import Popup from 'sections/Popup';
 import Nav from "sections/Nav";
-import HeadingBanner from "sections/HeadingBanner";
+import Banner from "sections/Banner";
 import Roadmap from "sections/Roadmap";
 import Introduce from "sections/Introduce";
 import GamePlay from "sections/Gameplay";
@@ -34,13 +34,12 @@ const Home = () => {
         <link rel="shortcut icon" type="image/x-icon" sizes="64x64" href={FavIcon} />
         <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-        <link href="http://fonts.cdnfonts.com/css/eurostile" rel="stylesheet"></link>
-        <link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
       <GlobalStyle />
       {/* <Popup /> */}
       <Nav />
-      <HeadingBanner />
+      <Banner />
       <Introduce />
       <GamePlay />
       <Block />
