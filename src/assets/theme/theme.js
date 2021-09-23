@@ -1,11 +1,11 @@
 const theme = {
     black: '#333333',
     white: '#ffffff',
-    primaryColor: '#35DFB1',
+    primaryColor: '#FFD700',
     primaryHoverColor: '#cce5ff',
     secondaryColor: '#383d41',
     headingColor: '#FFFFFF',
-    bodyColor: '#BEABDF',
+    bodyColor: '#ffffff',
     linkColor: '#1F2AD5',
     NavBG: 'transparent',
     NavBGSolid: '#290E59',

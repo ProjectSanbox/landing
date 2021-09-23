@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-
 const GlobalStyle = createGlobalStyle`
 
 ::-webkit-scrollbar {
@@ -45,6 +44,14 @@ html{
     scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "SFUEurostile";
+  src: url("../fonts/SFUEurostileCondensed.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 body,html {
     margin: 0px;
 }
@@ -75,16 +82,16 @@ h3,
 h4,
 h5,
 h6 {
-    color: ${props => props.theme.headingColor ? props.theme.headingColor : '#FFFFFF'};
-    font-family: 'Bungee', cursive;
+    font-family: 'SFUEurostile', sans-serif;
     font-size: 48px;
-    line-height: 48px;
+    line-height: 60px;
     text-transform: uppercase;
     font-weight: 700;
+    color: ${props => props.theme.primaryColor};
 }
 
 p{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'SFUEurostile', sans-serif;
     margin: 0 0 15px 0;
     color: #ffffff;
     font-weight: 400;

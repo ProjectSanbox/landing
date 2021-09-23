@@ -5,7 +5,7 @@ import Popup from 'sections/Popup';
 import Nav from "sections/Nav";
 import Banner from "sections/Banner";
 import Roadmap from "sections/Roadmap";
-import Introduce from "sections/Introduce";
+import About from "sections/About";
 import GamePlay from "sections/Gameplay";
 import Advisor from "sections/Advisor";
 import BackedBy from "sections/BackedBy";
@@ -34,13 +34,18 @@ const Home = () => {
         <link rel="shortcut icon" type="image/x-icon" sizes="64x64" href={FavIcon} />
         <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link
+            rel="preload"
+            href="../src/assets/font/SFUEurostileCondensed.ttf"
+            as="font"
+            crossOrigin=""
+          />
       </Head>
       <GlobalStyle />
       {/* <Popup /> */}
       <Nav />
       <Banner />
-      <Introduce />
+      <About />
       <GamePlay />
       <Block />
       <Roadmap />

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import headerBackground from 'assets/images/banner.webp';
+import headerBackground from 'assets/images/banner/banner.jpg';
 
 const BannerWrapper = styled.div`
     background: transparent;
@@ -11,36 +11,49 @@ const BannerWrapper = styled.div`
     }
     div.heading{
         width: 100%;
-        margin-top: 81px;
+        height: 100vh;
         .headingBackground{
             background-image: url(${headerBackground});
             height: 100%;
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center;
+            background-position: center bottom;
             position: relative;
             .container{
                 width: 100%;
                 height: 100%;
+                z-index: 2;
+            }
+
+            .overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(107.56deg, rgba(27,24,38, 0.9) 15.48%, rgba(27, 24, 38, 0) 72.61%);
             }
 
             .heading-content{
                 position: absolute;
-                top: 35%;
-                transform: translateY(-35%);
-                img{
-                   width: 300px;
-                }
+                top: 50%;
+                transform: translateY(-50%);
                 h1{
-                    font-size: 36px;
-                    line-height: 40.6px;
+                    font-size: 45px;
+                    line-height: 60px;
                     margin: 0;
                     margin-bottom: 10px;
                     text-transform: none;
+                    color: #ffffff;
                     padding: 0;
                     position: relative;
                     max-width: 800px;
                     font-family: 'Oswald', sans-serif;
+                    &.heading-sm{
+                        font-size: 32px;
+                        color: ${props => props.theme.primaryColor};
+                        font-weight: 400;
+                    }
                     span{
                         position: relative;
                         display: inline-block;
@@ -50,77 +63,22 @@ const BannerWrapper = styled.div`
                     display: flex;
                     align-items: center;
                     margin-top: 49px;
-                    justify-content: flex-start;
-                    position: relative;
-                    left: -20px;
-                    div{
-                        display: flex;
-                        position: relative;
-                        width: 80px;
-                        height: 47px;
-                        margin-right: 40px;
-                        img{
-                           width: 80px;
-                           position: absolute;
-                           top: 0;
-                           left: 0;
-
-                           &:nth-child(1){
-                              left: 15px;
-
-                           }
-                           &:nth-child(2){
-                              left: 30px;
-
-                           }
-                           &:nth-child(3){
-                              left: 45px;
-
-                           }
-                           &:nth-child(4){
-                              left: 60px;
-  
-                           }
-                           &:nth-child(5){
-                              left: 75px;
-
-                           }
-                        }
-
-                    }
                     button{
-                        width: 240px;
+                        width: 270px;
                         height: 56px;
-                        color: #ffffff;
-                        background: linear-gradient(264.42deg, #409FF5 -62.57%, #42B2FD 9.46%, #0E1EAD 103.19%);
+                        padding: 0;
+                        color: #000000;
+                        background: ${props => props.theme.primaryColor};
                         position: relative;
                         border: 0;
                         overflow: hidden;
                         box-shadow: 0px 0px 12px rgba(40, 33, 108, 0.7);
-                        &:before{
-                            content: '';
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            transform: translate(-50%, -50%);
-                            width: 0;
-                            border-radius: 50%;
-                            height: 0;
-                            background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
-                            background: linear-gradient(to right, #8e2de2, #4a00e0);
-                            transition: width 0.5s, height 0.5s;
-                        }
-
-                        &:hover{
-                            &:before{
-                                width: 500px;
-                                height: 500px;
-                            }
-                        }
-
+                        
                         span{
                             position: relative;
                             z-index: 1;
+                            font-size: 20px;
+                            font-weight: 700;
                         }
 
                         img{
@@ -138,73 +96,25 @@ const BannerWrapper = styled.div`
         }
     }
 
-
-
-    @media only screen and (max-width: 975px){
+    @media only screen and (max-width: 768px){
         div.heading{
-            margin-top: 60px;
             .headingBackground{
-                .heading-content{
-                    img{
-                        width: 200px;
-                    }
-                }
-            }
-        }
-    }
-
-    @media only screen and (max-width: 758px){
-        div.heading{
-            height: 410px!important;
-            .headingBackground{
+                background-position: right;
                 .heading-content{
                     h1{
-                        font-size: 28px;
-                    }
-                    img{
-                        width: 150px;
+                        font-size: 40px;
+                        &.heading-sm{
+                            font-size: 28px;
+                        }
                     }
 
                     .register{
-                        margin-top: 10px;
-                        div{
-   
-                        }
                         button{
-                            width: auto;
-                            height: 46px;
-                            img{
-                                top: 50%;
-                                left: 50%;
-                                bottom: unset;
-                                right: unset;
-                                height: 95%;
-                                transform: translate(-50%, -50%);
+                            width: 200px;
+                            span{
+                                
                             }
                         }
-                    }
-                }
-            }
-        }
-    }
-    
-    @media only screen and (max-width: 635px){
-        .heading{
-            margin-top: 61px;
-            .headingBackground{
-                .heading-content{
-                    button{
-                        margin-top: 30px;
-                        width: auto;
-                        height: 40px;
-                    }
-
-                    img{
-                        margin-bottom: 16px;
-                    }
-
-                    p{
-                        font-size: 12px;
                     }
                 }
             }
@@ -213,36 +123,28 @@ const BannerWrapper = styled.div`
 
     @media only screen and (max-width: 576px){
         div.heading{
-            height: 400px!important;
             .headingBackground{
                 .heading-content{
                     h1{
-                        font-size: 20px;
-                        line-height: 25px;
-                    }
-                    img{
-                        width: 150px;
+                        font-size: 30px;
+                        line-height: 40px;
+                        &.heading-sm{
+                            font-size: 18px;
+                        }
                     }
 
                     .register{
-                        div{
-                            img{
-                                margin-bottom: 0;
-                                width: 60px;
-                            }
-                        }
                         button{
-                            width: auto;
-                            height: 46px;
-                            margin-top: 0;
-                            margin-top: 20px;
+                            width: 200px;
+                            span{
+                                
+                            }
                         }
                     }
                 }
             }
         }
     }
-
 `;
 
 export default BannerWrapper;
