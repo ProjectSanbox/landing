@@ -8,10 +8,10 @@ export default {
             content: "Home"
         },
         {
-            link: "/#video",
-            linkActive: "video",
+            link: "/#about",
+            linkActive: "about",
             target: "_self",
-            content: "Video"
+            content: "About"
         },
         {
             link: "/#gameplay",
@@ -66,7 +66,7 @@ export default {
         {
             link: "/#video",
             target: "_self",
-            content: "Video"
+            content: "About"
         },
         {
             link: "/#gameplay",

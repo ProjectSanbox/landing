@@ -23,7 +23,7 @@ const Introduce = () => {
       };
 
     return (
-        <AboutWrapper id="video">
+        <AboutWrapper id="about">
           <Container>
             <Box className="about">
                   <Box className="about-content">
