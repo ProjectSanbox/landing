@@ -104,8 +104,20 @@ const NavWrapper = styled.div`
             li{
                 padding: 0;
                 margin: 0;
+                transition: 0.3s;
+                cursor: pointer;
+                box-sizing: border-box;
+                &.active{
+                    border: 2px solid ${props => props.theme.primaryColor};
+                }
+                &:hover{
+                    border: 2px solid ${props => props.theme.primaryColor};
+                }
+                &:last-child{
+                    margin-left: 24px;
+                }
                 &:not(:last-child){
-                    margin-right: 48px;
+                    padding: 0px 24px;
                 }
 
                 &:last-child{

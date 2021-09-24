@@ -66,6 +66,10 @@ const Nav = () =>{
         }
                 
     }, [])
+
+    console.log(toggle.active);
+
+
     return(
       <>
           <NavWrapper id="header">
@@ -78,7 +82,7 @@ const Nav = () =>{
                     </Button>
                         {data.navMobie.map((nav, index) =>
                         <ListItem key={index}>
-                          <a target={nav.target} href={nav.link} onClick={()=>handleToggleMenu(false)}>{nav.content}</a>
+                          <a target={nav.target} href={nav.link}>{nav.content}</a>
                         </ListItem>
                         )}
                     </List>
@@ -93,7 +97,11 @@ const Nav = () =>{
                     <Box className="nav hide">
                         <List>
                            {data.nav.map((nav, i) =>
-                            <ListItem key={i}><a target={nav.target} href={nav.link}>{nav.content}</a></ListItem>
+                            <ListItem className={toggle.active === nav.linkActive ? "active" : ''} key={i}>
+                                <a  
+                                onClick={()=> setToggle({...toggle, active: nav.linkActive})} target={nav.target} 
+                                href={nav.link}>{nav.content}</a>
+                            </ListItem>
                             )}
                         </List>
                     </Box>
