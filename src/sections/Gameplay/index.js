@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react';
 import GamePlayWrapper from './gameplay.style';
 import Box from 'reusecore/Box';
 import Heading from 'reusecore/Heading';
+import {SlickSlider, SliderItem} from 'reusecore/SlickSlider';
 import Text from 'reusecore/Text';
-import Button from 'reusecore/Button';
 import Image from 'reusecore/Image';
 import {List, ListItem} from 'reusecore/List';
 import { Container, Row, Col } from 'reusecore/Layout';
-import Slider from 'react-slick';
 import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
 import data from 'assets/data/gameplay';
 
@@ -45,42 +44,41 @@ const GamePlay = () => {
        <Container>
         <Box className="gameplay-heading">
             <Heading>Gameplay</Heading>
-            <Text>Planet Sandbox is a virtual world where players can play, build, own, and monetize their virtual experiences. We empower artists, creators, and players to build the platform they always envisioned, providing the means to unleash your creativity. 
-
-</Text>
+            <Text className="hide">Planet Sandbox is a virtual world where players can play, build, own, and<br/>
+                 monetize their virtual experiences. We empower artists, creators, and players<br/>
+                 to build the platform they always envisioned, providing the means to unleash<br/>
+                 your creativity. </Text>
+            <Text className="screen">Planet Sandbox is a virtual world where players can play, build, own, and
+                 monetize their virtual experiences. We empower artists, creators, and players
+                 to build the platform they always envisioned, providing the means to unleash
+                 your creativity. </Text>
         </Box>
        </Container>
        <Box className="gameplay-content">
-        <Slider {...settings}>
-            {data.gameplay.map((gameplay, index) =>
-                <Box key={index}>
-                    <Box className="gameplay-video">
-                            <Box>
-                                <Image className="video" src={gameplay.imgVideo}/>
-                            </Box>
-                            <Box className="gameplay-intro">
-                            <Box>
-                                <Image src={gameplay.introImage} />
-
-                                <Text className="intro-heading">{gameplay.title}</Text>
-                                <Text className="into">{gameplay.content}</Text>
-                                {gameplay.listContent &&
+            <SlickSlider {...settings}>
+                {data.gameplay.map((gameplay, i) =>
+                <SliderItem key={i}>
+                    <Box className="gameplay-item">
+                        <Box className="gameplay-image">
+                            <Image src={gameplay.poster} />
+                        </Box>
+                        <Box className="gameplay-intro">
+                            <Image src={gameplay.icon} />
+                            <Heading>{gameplay.title}</Heading>
+                            <Text>{gameplay.content}</Text>
+                            {gameplay.listContent && 
                                 <List>
-                                    {
-                                        gameplay.listContent.map((content, index) =>
-                                            <ListItem key={index}>
-                                                {content}
-                                            </ListItem>
-                                        )
-                                    }
+                                   {gameplay.listContent.map((list, i) =>
+                                    <ListItem key={i}>{list}</ListItem>
+                                   )}
                                 </List>
-                                }
-                            </Box>
-                            </Box>
+                            }
+                        </Box>
                     </Box>
-               </Box>
-            )}
-        </Slider>
+                </SliderItem>
+                )}
+                
+            </SlickSlider>
        </Box>
     </GamePlayWrapper>
     );

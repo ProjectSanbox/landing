@@ -3,13 +3,13 @@ import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 import Popup from 'sections/Popup';
 import Nav from "sections/Nav";
-import HeadingBanner from "sections/HeadingBanner";
+import Banner from "sections/Banner";
 import Roadmap from "sections/Roadmap";
-import Introduce from "sections/Introduce";
+import About from "sections/About";
 import GamePlay from "sections/Gameplay";
 import Advisor from "sections/Advisor";
 import BackedBy from "sections/BackedBy";
-import Block from "sections/NFT";
+import GameAssets from "sections/GameAssets";
 import Footer from "sections/Footer";
 import FavIcon from "assets/images/favicon.svg";
 import theme from "assets/theme/theme";
@@ -34,16 +34,20 @@ const Home = () => {
         <link rel="shortcut icon" type="image/x-icon" sizes="64x64" href={FavIcon} />
         <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-        <link href="http://fonts.cdnfonts.com/css/eurostile" rel="stylesheet"></link>
-        <link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet" />
+        <link
+            rel="preload"
+            href="../src/assets/font/SFUEurostileCondensed.ttf"
+            as="font"
+            crossOrigin=""
+          />
       </Head>
       <GlobalStyle />
       {/* <Popup /> */}
       <Nav />
-      <HeadingBanner />
-      <Introduce />
+      <Banner />
+      <About />
       <GamePlay />
-      <Block />
+      <GameAssets />
       <Roadmap />
       <OurTeam />
       <Advisor />

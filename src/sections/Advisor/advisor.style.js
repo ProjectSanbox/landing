@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const AdvisorWrapper = styled.div`
-     padding: 60px 0px 180px 0px;
+     padding: 60px 0px 0px 0px;
     position: relative;
     z-index: 2;
     p{
@@ -12,7 +12,6 @@ const AdvisorWrapper = styled.div`
     }
 
     .adivisor-heading{
-        text-align: center;
         margin-bottom: 80px;
         h1{
             font-size: 48px;
@@ -25,32 +24,30 @@ const AdvisorWrapper = styled.div`
     }
 
     .adivisor-content{
-        text-align: center;
+        display: flex;
+        justify-content: center;
         .adivisor-item{
-          img{
-              width: 303px;
-              margin: auto;
-          }
+            &:not(:first-child){
+                margin-left: 105px;
+            }
+            .adivisor-avatar{
+                width: 320px;
+                height: 320px;
+            }
+            .adivisor-intro{
+                p.adivisor-name{
+                font-size: 32px;
+                line-height: 24px;
+                font-weight: 700;
+                margin: 16px 0px;
+                color: ${props => props.theme.primaryColor};
+            }
 
-          p.adivisor-name{
-            font-size: 24px;
-            line-height: 24px;
-            font-weight: 700;
-            margin: 16px 0px;
-          }
-
-          p.adivisor-job{
-              font-size: 16px;
-              font-weight: 700;
-              color: ${props => props.theme.primaryColor};
-              margin-bottom: 20px;
-          }
-
-          p.adivisor-info{
-              font-size: 16px;
-              max-width: 900px;
-              margin: auto;
-          }
+            p.adivisor-info{
+                font-size: 18px;
+                font-weight: 400;
+            }
+            }
         }
     }
 
@@ -58,70 +55,58 @@ const AdvisorWrapper = styled.div`
         position: absolute;
         width: 100%;
         height: 651px;
-        background: radial-gradient(50.34% 42.89% at 50.34% 46.58%, #32070A 0%, rgba(166, 21, 32, 0) 100%);
         top: 10%;
         left: 0;
         z-index: -1;
     }
 
     @media only screen and (max-width: 1200px){
-        .modal-info{
-            width: 90vw!important;
-            .modal-info-box{
-                align-items: center;
+    .adivisor-content{
+            .adivisor-item{
+               &:not(:first-child){
+                margin-left: 55px;
+               }
+                .adivisor-avatar{
+                    width: 270px;
+                    height: 270px;
+                }
             }
         }
     }
 
-    @media only screen and (max-width: 1080px){
-        .modal-info{
-            height: 85vh!important;
-        }
-    }
-
-    @media only screen and (max-width: 1032px){
-        .modal-info{
-            height: 100vh!important;
-            width: 100vw!important;
-            border-radius: unset!important;
-        }
-    }
-
-    @media only screen and (max-width: 768px){
-        .modal-info{
-            display: none!important;
-        }
-
-        .adivisor-item{
-            button{
-                display: none!important;
+    @media only screen and (max-width: 992px){
+    .adivisor-content{
+            .adivisor-item{
+                &:not(:first-child){
+                    margin-left: 35px;
+                }
+                .adivisor-avatar{
+                    width: 220px;
+                    height: 220px;
+                }
             }
         }
-
-        .row{
-            justify-content: center;
-        }
     }
 
-   
+    @media only screen and (max-width: 576px){
+    .adivisor-heading{
+        text-align: center;
+    }
 
-    @media only screen and (max-width: 480px){
-        padding: 30px 0px;
-        .adivisor-heading{
-            h1{
-                font-size: 49px;
-                line-height: 49px;
+    .adivisor-content{
+        flex-direction: column;
+            .adivisor-item{
+                margin-left: 0px;
+                margin-bottom: 100px;
+                .adivisor-avatar{
+                    margin: auto;
+                }
+                .adivisor-intro{
+                    text-align: center;
+                }
             }
         }
-  }
-
-  @media only screen and (max-width: 376px){
-    .backgorund{
-        bottom: 0;
-        height: 600px;
     }
-  }
-
 `;
 
 export default AdvisorWrapper;

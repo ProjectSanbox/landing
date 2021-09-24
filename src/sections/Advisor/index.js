@@ -17,9 +17,13 @@ const Adivisor = () =>{
                 <Box className="adivisor-content">
                     {data.advisor.map((advisor, index) =>
                         <Box key={index} className="adivisor-item">
-                            <Image src={advisor.avatar} />
-                            <Text className="adivisor-name">{advisor.name}</Text>
-                            <Text className="adivisor-info">{advisor.desc}</Text>
+                            <Box className="adivisor-avatar">
+                                <Image src={advisor.avatar} />
+                            </Box>
+                            <Box className="adivisor-intro">
+                                <Text className="adivisor-name">{advisor.name}</Text>                            
+                                <Text className="adivisor-info">{advisor.desc}</Text>
+                            </Box>
                         </Box>  
                     )}
                 </Box>

@@ -2,13 +2,16 @@ import React, { useEffect } from 'react';
 import NavWrapper from './nav.style';
 import Box from 'reusecore/Box';
 import Image from 'reusecore/Image';
+import Button from 'reusecore/Button';
 import {Container} from 'reusecore/Layout';
 import logo from 'assets/images/logo.png';
 import {List, ListItem} from 'reusecore/List';
 import Link from "next/link";
-import {AiOutlineBars, AiOutlineClose} from 'react-icons/ai';
 import { useState } from 'react';
 import data from 'assets/data/nav';
+import NavMobie from './Navmobie';
+import {GoThreeBars} from 'react-icons/go';
+import {AiOutlineClose} from 'react-icons/ai';
 
 
 const Nav = () =>{
@@ -25,51 +28,83 @@ const Nav = () =>{
         }else{
             document.querySelector('body').style.overflowY = 'unset';
         }
-    } 
+    }
 
     useEffect(() =>{
-            const url = window.location.href;
-            let value = url.split("#")[1];
-            if(value){
-                setToggle({...toggle, active: value})
-            }else{
-                value = "home"
-                setToggle({...toggle, active: value})
-            }
-            
-    }, []);
+        const header = document.getElementById("header");
 
+        if(window.pageYOffset > 0 || document.documentElement.scrollTop > 0){
+            header.style.background = '#59585A';
+            header.style.transition = '0.5s';
+            header.style.marginTop = '0';
+        }
+        else{
+            header.style.background = 'transparent';
+            header.style.marginTop = '44px';
+        }
+
+        // scroll
+        window.addEventListener('scroll', () =>{
+            if(window.pageYOffset > 0 || document.documentElement.scrollTop > 0){
+                header.style.background = '#59585A';
+                header.style.transition = '0.5s';
+                header.style.marginTop = '0';
+            }
+            else{
+                header.style.background = 'transparent';
+                header.style.marginTop = '44px';
+            }
+        }) 
+    
+        const url = window.location.href;
+        let value = url.split("#")[1];
+        if(value){
+            setToggle({...toggle, active: value})
+        }else{
+            value = "home"
+            setToggle({...toggle, active: value})
+        }
+                
+    }, [])
     return(
-        <NavWrapper>
-            <Box className={toggle.status ? "nav-mobile open" : "nav-mobile"}>
+      <>
+          <NavWrapper id="header">
+              {/* nav mobie */}
+          <Box className={toggle.status ? "nav-mobile open" : "nav-mobile"}>
                 <Box className="overlay">&nbsp;</Box>
                 <List className="list-mobile">
-                        <ListItem className="list-heading">
-                           <Box className="menu-close">
-                                <AiOutlineClose onClick={()=>handleToggleMenu(false)} />
-                           </Box>
-                        </ListItem>
+                    <Button className="menu-close">
+                        <AiOutlineClose onClick={()=>handleToggleMenu(false)} />
+                    </Button>
                         {data.navMobie.map((nav, index) =>
                         <ListItem key={index}>
-                            <Link href={nav.link}><a href={nav.link} onClick={()=>handleToggleMenu(false)}>{nav.content}</a></Link>
+                          <a href={nav.link} onClick={()=>handleToggleMenu(false)}>{nav.content}</a>
                         </ListItem>
                         )}
                     </List>
             </Box>
+            
+            {/* Nav - PC */}
             <Container>
-                <Box className="nav">
-                    <Box className="navbar-menu"><AiOutlineBars onClick={()=>handleToggleMenu(true)} className="navbar-menu-icon" /></Box>
-                    <a href="/"><Image src={logo} /></a>
-                    <List className="hide">
-                        {data.nav.map((nav, index) =>
-                        <ListItem key={index} className={toggle.active === nav.linkActive ? "active" : ''}>
-                            <Link href={nav.link}><a href={nav.link} target={nav.target ? '_blank' : '_self'} onClick={()=> setToggle({...toggle, active: nav.linkActive})}>{nav.content}</a></Link>
-                        </ListItem>
-                        )}
-                    </List>
+                <Box className="header">
+                    <Box className="logo">
+                        <Image src={logo} />
+                    </Box>
+                    <Box className="nav hide">
+                        <List>
+                           {data.nav.map((nav, i) =>
+                            <ListItem key={i}><a href={nav.link}>{nav.content}</a></ListItem>
+                            )}
+                        </List>
+                    </Box>
+                    <Box className="toggle">
+                           <Button onClick={()=>handleToggleMenu(true)}><GoThreeBars/></Button>
+                    </Box>
                 </Box>
             </Container>
         </NavWrapper>
+        {/* <NavMobie /> */}
+      </>
     );
 }
 

@@ -32,9 +32,9 @@ h1{
   .footer-list{
     .footer-title{
       font-size: 16px;
-      color: #ffffff;
+      color: ${props => props.theme.primaryColor};
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     ul{

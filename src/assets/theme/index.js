@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-
 const GlobalStyle = createGlobalStyle`
 
 ::-webkit-scrollbar {
@@ -45,6 +44,28 @@ html{
     scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "SFUEurostile";
+  src: url("https://vicapay-test.sgp1.digitaloceanspaces.com/1632470681564vlNGTuVGcM.TTF");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFUEurostileBold";
+  src: url("https://vicapay-test.sgp1.digitaloceanspaces.com/1632472400888ysqRyQc8dg.TTF");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFUEurostileNormal";
+  src: url("https://vicapay-test.sgp1.digitaloceanspaces.com/1632472419173Aj5Sh8Fx2d.TTF");
+  font-style: normal;
+  font-display: swap;
+}
+
 body,html {
     margin: 0px;
 }
@@ -59,11 +80,10 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-
-    background: linear-gradient(133.84deg, #333333 -16.04%, #1A1A1A 7.99%, #393939 35.36%, #1A1A1A 62.06%, #262626 87.42%, #4E4E4E 112.12%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  background: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 #__next{
@@ -76,16 +96,16 @@ h3,
 h4,
 h5,
 h6 {
-    color: ${props => props.theme.headingColor ? props.theme.headingColor : '#FFFFFF'};
-    font-family: 'Eurostile', sans-serif;
+    font-family: 'SFUEurostileBold', sans-serif;
     font-size: 48px;
-    line-height: 48px;
+    line-height: 60px;
     text-transform: uppercase;
     font-weight: 700;
+    color: ${props => props.theme.primaryColor};
 }
 
 p{
-    font-family: 'Product Sans';
+    font-family: 'SFUEurostile', sans-serif;
     margin: 0 0 15px 0;
     color: #ffffff;
     font-weight: 400;
@@ -95,6 +115,7 @@ p{
 a{
     text-decoration: none;
     color: ${props => props.theme.headingColor};
+    font-family: 'SFUEurostile', sans-serif;
   }
   img{
     max-width: 100%;

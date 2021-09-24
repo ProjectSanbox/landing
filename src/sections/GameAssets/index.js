@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import BlockWrapper from './nft.style';
+import GameAssetsWrapper from './gameassets.style';
 import { Container, Row, Col } from 'reusecore/Layout';
 import {SlickSlider, SliderItem} from 'reusecore/SlickSlider';
 import Box from 'reusecore/Box';
@@ -18,26 +18,25 @@ const Block = () => {
         <div className="ft-slick__dots--custom">
         </div>
         ),
-        dots: true,
-        infinite: false,
+        dots: false,
+        infinite: true,
         speed: 500,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        centerPadding: 30,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         nextArrow: <NextArrow className="nextButton" />,
         prevArrow: <PrevArrow className="preButton" />,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 1200,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: false
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 768,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
@@ -45,7 +44,7 @@ const Block = () => {
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 576,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -55,12 +54,13 @@ const Block = () => {
       };
 
     return (
-        <BlockWrapper id="nft">
+        <GameAssetsWrapper id="nft">
             <Container>
                 <Box className="NFT-heading">
-                    <Heading>NFT items</Heading>
+                    <Heading>Game Assets</Heading>
                     <Box>
-                        <Text>Each item will have its unique categories and properties which define its unique characteristics. The originality comes from those NFT properties, thus creating the utmost rarity of the item. </Text>
+                        <Text>Each object will have its own categories and properties that define its characteristic.
+                        Rarity is defined by NFT properties </Text>
                     </Box>
                 </Box>
                 <Box className="NFT-content">
@@ -68,7 +68,9 @@ const Block = () => {
                     {data.items.map((item, index) =>
                       <SliderItem key={index}>
                        <Box className="NFT-item">
-                         <Image src={item.weapon} />
+                        <Box className="NFT-weapon">
+                          <Image id={item.id} src={item.weapon} />
+                        </Box>
                          <Box className="intro">
                            <Text className="heading">{item.name}</Text>
                            <Text>{item.info}</Text>
@@ -79,7 +81,7 @@ const Block = () => {
                   </SlickSlider>
                 </Box>
             </Container>
-        </BlockWrapper>
+        </GameAssetsWrapper>
     );
 }
 
