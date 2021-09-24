@@ -4,55 +4,55 @@ export default {
         {
             link: "/",
             linkActive: "home",
-            target: false,
+            target: "_self",
             content: "Home"
         },
         {
             link: "/#video",
             linkActive: "video",
-            target: false,
+            target: "_self",
             content: "Video"
         },
         {
             link: "/#gameplay",
             linkActive: "gameplay",
-            target: false,
+            target: "_self",
             content: "GamePlay"
         },
         {
             link: "/#nft",
             linkActive: "nft",
-            target: false,
+            target: "_self",
             content: "NFT"
         },
         {
             link: "//drive.google.com/file/d/1231HjfdpF0Ep1niBj8KNagWzkMR7txHS/view",
             linkActive: "//drive.google.com/file/d/1231HjfdpF0Ep1niBj8KNagWzkMR7txHS/view",
-            target: true,
+            target: "_blank",
             content: "Token"
         },
         {
             link: "/#roadmap",
             linkActive: "roadmap",
-            target: false,
+            target: "_self",
             content: "Roadmap"
         },
         {
             link: "/#ourteam",
             linkActive: "ourteam",
-            target: false,
+            target: "_self",
             content: "Team"
         },
         {
             link: "//docsend.com/view/wm76umky6wbzqwmx",
             linkActive: "#",
-            target: false,
+            target: "_self",
             content: "Pitching"
         },
         // {
         //     link: "//app.polrare.co/",
         //     linkActive: "//app.polrare.co/",
-        //     target: true,
+        //     target: "_blank",
         //     content: "MarketPlace"
         // },
         
@@ -60,48 +60,48 @@ export default {
     navMobie:[
         {
             link: "/",
-            target: false,
+            target: "_self",
             content: "Home"
         },
         {
             link: "/#video",
-            target: false,
+            target: "_self",
             content: "Video"
         },
         {
             link: "/#gameplay",
-            target: false,
+            target: "_self",
             content: "GamePlay"
         },
         {
             link: "/#nft",
-            target: false,
+            target: "_self",
             content: "NFT"
         },
         {
             link: "//drive.google.com/file/d/1231HjfdpF0Ep1niBj8KNagWzkMR7txHS/view",
-            target: true,
+            target: "_blank",
             content: "Token"
         },
         {
             link: "/#roadmap",
-            target: false,
+            target: "_self",
             content: "Roadmap"
         },
         {
             link: "/#ourteam",
-            target: false,
+            target: "_self",
             content: "Team"
         },
         {
             link: "//docsend.com/view/wm76umky6wbzqwmx",
             linkActive: "#",
-            target: false,
+            target: "_blank",
             content: "Pitching"
         },
         // {
         //     link: "//app.polrare.co/",
-        //     target: false,
+        //     target: "_self",
         //     content: "MarketPlace"
         // },
     ]

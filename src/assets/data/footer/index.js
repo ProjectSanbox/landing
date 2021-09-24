@@ -23,19 +23,23 @@ export default {
   information:[
     {
       infoName: "Team",
-      infoLink: "/#ourteam"
+      infoLink: "/#ourteam",
+      target: "_self"
     },
     {
       infoName: "Roadmap",
-      infoLink: "/#roadmap"
+      infoLink: "/#roadmap",
+      target: "_self"
     },
     {
       infoName: "Document",
-      infoLink: "/comming"
+      infoLink: "/comming",
+      target: "_self"
     },
     {
       infoName: "Term",
-      infoLink: "/term"
+      infoLink: "//planetsandbox.gitbook.io/planetsandbox-game/terms-and-conditions",
+      target: "_blank"
     },
   ],
   documentation:[

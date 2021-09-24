@@ -78,7 +78,7 @@ const Nav = () =>{
                     </Button>
                         {data.navMobie.map((nav, index) =>
                         <ListItem key={index}>
-                          <a href={nav.link} onClick={()=>handleToggleMenu(false)}>{nav.content}</a>
+                          <a target={nav.target} href={nav.link} onClick={()=>handleToggleMenu(false)}>{nav.content}</a>
                         </ListItem>
                         )}
                     </List>
@@ -93,7 +93,7 @@ const Nav = () =>{
                     <Box className="nav hide">
                         <List>
                            {data.nav.map((nav, i) =>
-                            <ListItem key={i}><a href={nav.link}>{nav.content}</a></ListItem>
+                            <ListItem key={i}><a target={nav.target} href={nav.link}>{nav.content}</a></ListItem>
                             )}
                         </List>
                     </Box>
