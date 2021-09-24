@@ -26,7 +26,7 @@ const Banner = () => {
                             </Box>
                         </Box>
                     </Container>
-                    <Box className="overlay"></Box>
+                    <Box className="overlay">&nbsp;</Box>
                 </Box>
             </Box>
         </BannerWrapper>

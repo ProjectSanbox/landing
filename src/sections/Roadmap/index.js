@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Container, Row, Col } from "reusecore/Layout";
 import {List, ListItem} from 'reusecore/List';
 import Box from "reusecore/Box";
@@ -18,9 +17,10 @@ const RoadMap = () => {
           <Box className="roadmap-heading">
             <Heading>Roadmap</Heading>
           </Box>
-          <Image src={roadmap} />
         </Container>
+        <Image src={roadmap} />
       </Box>
+      <Box className="overlay">&nbsp;</Box>
     </UserMapWrapper>
   );
 };

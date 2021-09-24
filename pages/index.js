@@ -9,7 +9,7 @@ import About from "sections/About";
 import GamePlay from "sections/Gameplay";
 import Advisor from "sections/Advisor";
 import BackedBy from "sections/BackedBy";
-import Block from "sections/NFT";
+import GameAssets from "sections/GameAssets";
 import Footer from "sections/Footer";
 import FavIcon from "assets/images/favicon.svg";
 import theme from "assets/theme/theme";
@@ -47,7 +47,7 @@ const Home = () => {
       <Banner />
       <About />
       <GamePlay />
-      <Block />
+      <GameAssets />
       <Roadmap />
       <OurTeam />
       <Advisor />

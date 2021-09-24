@@ -46,7 +46,7 @@ html{
 
 @font-face {
   font-family: "SFUEurostile";
-  src: url("../fonts/SFUEurostileCondensed.ttf");
+  src: url("https://vicapay-test.sgp1.digitaloceanspaces.com/1632470681564vlNGTuVGcM.TTF");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -66,7 +66,7 @@ body {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  background: #0C0A15;
+  background: #000000;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -101,6 +101,7 @@ p{
 a{
     text-decoration: none;
     color: ${props => props.theme.headingColor};
+    font-family: 'SFUEurostile', sans-serif;
   }
   img{
     max-width: 100%;

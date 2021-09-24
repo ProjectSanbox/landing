@@ -11,9 +11,24 @@ import { useState } from 'react';
 import data from 'assets/data/nav';
 import NavMobie from './Navmobie';
 import {GoThreeBars} from 'react-icons/go';
+import {AiOutlineClose} from 'react-icons/ai';
 
 
 const Nav = () =>{
+
+    let count = 0;
+    const [toggle, setToggle] = useState({
+        status: false,
+        active: ""
+    });
+    const handleToggleMenu = (value) =>{
+       setToggle({...toggle, status:value});
+       if(value === true){
+            document.querySelector('body').style.overflowY = 'hidden';
+        }else{
+            document.querySelector('body').style.overflowY = 'unset';
+        }
+    }
 
     useEffect(() =>{
         const header = document.getElementById("header");
@@ -39,11 +54,37 @@ const Nav = () =>{
                 header.style.background = 'transparent';
                 header.style.marginTop = '44px';
             }
-        })
+        }) 
+    
+        const url = window.location.href;
+        let value = url.split("#")[1];
+        if(value){
+            setToggle({...toggle, active: value})
+        }else{
+            value = "home"
+            setToggle({...toggle, active: value})
+        }
+                
     }, [])
     return(
       <>
           <NavWrapper id="header">
+              {/* nav mobie */}
+          <Box className={toggle.status ? "nav-mobile open" : "nav-mobile"}>
+                <Box className="overlay">&nbsp;</Box>
+                <List className="list-mobile">
+                    <Button className="menu-close">
+                        <AiOutlineClose onClick={()=>handleToggleMenu(false)} />
+                    </Button>
+                        {data.navMobie.map((nav, index) =>
+                        <ListItem key={index}>
+                          <a href={nav.link} onClick={()=>handleToggleMenu(false)}>{nav.content}</a>
+                        </ListItem>
+                        )}
+                    </List>
+            </Box>
+            
+            {/* Nav - PC */}
             <Container>
                 <Box className="header">
                     <Box className="logo">
@@ -57,7 +98,7 @@ const Nav = () =>{
                         </List>
                     </Box>
                     <Box className="toggle">
-                           <Button><GoThreeBars/></Button>
+                           <Button onClick={()=>handleToggleMenu(true)}><GoThreeBars/></Button>
                     </Box>
                 </Box>
             </Container>

@@ -48,7 +48,6 @@ const BannerWrapper = styled.div`
                     padding: 0;
                     position: relative;
                     max-width: 800px;
-                    font-family: 'Oswald', sans-serif;
                     &.heading-sm{
                         font-size: 32px;
                         color: ${props => props.theme.primaryColor};

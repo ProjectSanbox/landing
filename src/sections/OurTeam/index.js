@@ -26,7 +26,7 @@ const OurTeam = () =>{
         arrow: false,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 1200,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
@@ -35,7 +35,7 @@ const OurTeam = () =>{
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 768,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2,
@@ -43,7 +43,7 @@ const OurTeam = () =>{
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 576,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -67,8 +67,10 @@ const OurTeam = () =>{
             <Container>
                 <Box className="ourteam-heading">
                     <Heading>Core Team</Heading>
-                    <Text>Behind a great game stand the passionate and talented people in the industry.
+                    <Text className="hide">Behind a great game stand the passionate and talented people in the industry.
                       <br/>We want to bring the best experience to all the players.</Text>
+                    <Text className="screen">Behind a great game stand the passionate and talented people in the industry.
+                      We want to bring the best experience to all the players.</Text>
                 </Box>
                 <Box className="ourteam-content">
                    <Slider {...settings}>

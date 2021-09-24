@@ -7,7 +7,6 @@ const OurTeamWrapper = styled.div`
 
     .ourteam-background{
         width: 100%;
-        height: 976.54px;
         position: absolute;
         bottom: 45%;
         right: 20%;
@@ -20,6 +19,10 @@ const OurTeamWrapper = styled.div`
             font-size: 48px;
             line-height: 48px;
         }
+
+        .screen{
+            display: none;
+        }
     }
 
     .text-upper{
@@ -29,13 +32,15 @@ const OurTeamWrapper = styled.div`
     .ourteam-content{
         position: relative;
         .ourteam-item{
-            padding: 0px 10px;
-            .ourteam-img{
-               img{
-                    border-radius: 16px;
-                    overflow: hidden;
-               }
-            }
+            display: flex!important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           .ourteam-img{
+               width: 290px;
+               height: 290px;
+           }
+
         }
         .ourteam-info{
             width: 100%;
@@ -46,8 +51,8 @@ const OurTeamWrapper = styled.div`
                 &.ourteam-name{
                     margin-top: 20px;
                     color: #fff;
-                    font-size: 18px;
-                    font-weight: 400;
+                    font-size: 20px;
+                    font-weight: 700;
                     text-transform: uppercase;
                     font-family: 'Goma Block', sans-serif;
                 }
@@ -56,7 +61,7 @@ const OurTeamWrapper = styled.div`
                     font-size: 16px;
                     color: ${props => props.theme.primaryColor};
                     margin-bottom: 30px;
-                    font-weight: 900;
+                    font-weight: 400;
                 }
             }
         }
@@ -64,14 +69,14 @@ const OurTeamWrapper = styled.div`
         
 
     .slick-dots{
-        bottom: -105px;
+        bottom: -40px;
             li{
                 width: 10px;
                 height: 10px;
                 background: rgba(156, 41, 50, 0.5);
                 border-radius: 16px;
                 &.slick-active{
-                    background: #9C2932;
+                    background: ${props => props.theme.primaryColor};
                 }
               .ft-slick__dots--custom{
                 width: 100%;
@@ -87,61 +92,69 @@ const OurTeamWrapper = styled.div`
     }
     
     .content-backgound{
-            width: 100%;
-            height: 527px;
-            background: radial-gradient(78.39% 53.42% at 60.34% 46.58%, #32070A 0%, rgba(166, 21, 32, 0.01) 100%);
-            position: absolute;
-            top: 30%;
-            z-index: -1;
-        }
+        width: 100%;
+        height: 527px;
+        background: radial-gradient(59.57% 46.53% at 50.34% 46.58%, rgba(61, 216, 249, 0) 0%, #000000 100%);
+        position: absolute;
+        top: 30%;
+        z-index: -1;
+    }
 
-    @media only screen and (max-width: 1000px){
-        .ourteam-item{
-            padding: 20px 35px!important;
+
+    @media only screen and (max-width: 1400px){
+        .ourteam-content{
+            .ourteam-item{
+                .ourteam-img{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1200px){
+        .ourteam-content{
+            .ourteam-item{
+                .ourteam-img{
+                    width: 270px;
+                    height: 270px;
+                }
+            }
         }
     }
 
     @media only screen and (max-width: 992px){
-        .ourteam-item{
-            .ourteam-item-desc{
-               p{
-                max-height: 200px;
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 7;
-               }
-            }
-        }
-    }
-
-    @media only screen and (max-width: 480px){
-        padding: 30px 0px!important;
-        .ourteam-background{
-            background-size: cover;
-        }
-
-        .ourteam-item{
-            min-height: 375px;
-        }
-        padding: 0px 0px;
-        .ourteam-heading{
-            margin-top: 30px;
-        h1{
-            font-size: 49px;
-            line-height: 49px;
-        }
-    }
-
         .ourteam-content{
-        .slick-dots{
-            li{
-                bottom: 100px;
-                width: 7px;
+            .ourteam-item{
+                .ourteam-img{
+                    width: 200px;
+                    height: 200px;
+                }
             }
         }
     }
-  }
+
+    @media only screen and (max-width: 768px){
+        .ourteam-content{
+            .ourteam-item{
+                .ourteam-img{
+                    width: 290px;
+                    height: 290px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 576px){
+        .ourteam-content{
+            .ourteam-item{
+                .ourteam-img{
+                    width: 270px;
+                    height: 270px;
+                }
+            }
+        }
+    }
 
 `;
 
