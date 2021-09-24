@@ -140,6 +140,18 @@ const NavWrapper = styled.div`
            }
        }
    }
+
+   @media only screen and (max-width: 576px){
+       .hide{
+           display: none;
+       }
+
+       .header{
+           .toggle{
+               display: block;
+           }
+       }
+   }
 `;
 
 export default NavWrapper;

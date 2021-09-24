@@ -52,6 +52,7 @@ const BannerWrapper = styled.div`
                         font-size: 32px;
                         color: ${props => props.theme.primaryColor};
                         font-weight: 400;
+                        font-family: 'SFUEurostileNormal', sans-serif;
                     }
                     span{
                         position: relative;

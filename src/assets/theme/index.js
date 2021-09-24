@@ -52,6 +52,20 @@ html{
   font-display: swap;
 }
 
+@font-face {
+  font-family: "SFUEurostileBold";
+  src: url("https://vicapay-test.sgp1.digitaloceanspaces.com/1632472400888ysqRyQc8dg.TTF");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFUEurostileNormal";
+  src: url("https://vicapay-test.sgp1.digitaloceanspaces.com/1632472419173Aj5Sh8Fx2d.TTF");
+  font-style: normal;
+  font-display: swap;
+}
+
 body,html {
     margin: 0px;
 }
@@ -82,7 +96,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'SFUEurostile', sans-serif;
+    font-family: 'SFUEurostileBold', sans-serif;
     font-size: 48px;
     line-height: 60px;
     text-transform: uppercase;
