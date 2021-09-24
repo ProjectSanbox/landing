@@ -55,7 +55,7 @@ const Footer = () => {
                   <Text className="footer-title">Information</Text>
                     <List>
                       {data.information.map((info, index) =>
-                        <ListItem key={index}><Link href={info.infoLink}><a>{info.infoName}</a></Link></ListItem>
+                        <ListItem key={index}><Link href={info.infoLink}><a target={info.target}>{info.infoName}</a></Link></ListItem>
                       )}
                     </List>
                   </Col>
