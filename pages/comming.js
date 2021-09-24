@@ -7,7 +7,7 @@ import GlobalStyle from "assets/theme";
 import { ThemeProvider } from "styled-components";
 import theme from "assets/theme/theme";
 import Head from "next/head";
-import playArrow from 'assets/images/gameplay/playArrow.png'
+import playArrow from 'assets/images/gameplay/play-arrow.png'
 import FavIcon from "assets/images/favicon.png";
 
 
