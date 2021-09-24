@@ -146,6 +146,17 @@ const NavWrapper = styled.div`
            display: none;
        }
 
+       .nav-mobile{
+        .list-mobile{
+            padding-top: 10px;
+            li{
+                a{
+                    font-size: 40px;
+                }
+            }
+        }
+       }
+
        .header{
            .toggle{
                display: block;

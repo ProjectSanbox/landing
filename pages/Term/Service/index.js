@@ -20,7 +20,7 @@ const Service = () =>{
                         (the "User" or "you") in its entirety prior to your use of PlanetSandbox service or products.
                         Be aware that this Agreement constitutes a legally binding agreement between you and PlanetSandbox
                         (referred to herein as "PlanetSandbox", "us" or "we") which owns and operates the website on the Internet and 
-                        the Service at <Link href="https://black-cliff-048399d00.azurestaticapps.net/"><a target="_bank">https://black-cliff-048399d00.azurestaticapps.net/</a></Link> (the "Service"). By accessing or using the site or Wanaka Farm Services,
+                        the Service at <Link href="https://black-cliff-048399d00.azurestaticapps.net/"><a target="_bank">https://black-cliff-048399d00.azurestaticapps.net/</a></Link> (the "Service"). By accessing or using the site or Planet Sandbox Services,
                         you agree that you have read, understood, and agree to be bound by this agreement.
                         </Text>
                         
@@ -76,8 +76,8 @@ const Service = () =>{
                         <Text>4.1.3 If you provide Company with any feedback or suggestions regarding the Site (“Feedback”), you hereby assign to Company all rights in such Feedback and agree that Company shall have the right to use and fully exploit such Feedback and related information in any manner it deems appropriate. Company will treat any Feedback you provide to Company as non-confidential and non-proprietary. You agree that you will not submit to Company any information or ideas that you consider to be confidential or proprietary.</Text>
 
                         <Text className="content-heading">5. Breach</Text>
-                        <Text>5.1. Without prejudice to any other rights, if a User breaches in whole or in part any provision contained herein, Wanaka Farm reserves the right to take such action as it sees fit, including terminating this Agreement or any other agreement in place with the User and/or taking legal action against such User.</Text>
-                        <Text>5.2. You agree to indemnify and hold harmless Wanaka Farm, its affiliates, subsidiaries, licensors, and their respective directors, officers, members, managers, employees, and agents from and against any and all claims and expenses arising out of your use of the Services, a breach of any provision of these Terms by you or any person using the Services on your behalf, a breach by you of any applicable laws, or any third-party claim to the extent arising from or connected with an allegation that your use of the Services in accordance with these Terms infringes any rights of a third party.</Text>
+                        <Text>5.1. Without prejudice to any other rights, if a User breaches in whole or in part any provision contained herein, Planet Sandbox reserves the right to take such action as it sees fit, including terminating this Agreement or any other agreement in place with the User and/or taking legal action against such User.</Text>
+                        <Text>5.2. You agree to indemnify and hold harmless Planet Sandbox, its affiliates, subsidiaries, licensors, and their respective directors, officers, members, managers, employees, and agents from and against any and all claims and expenses arising out of your use of the Services, a breach of any provision of these Terms by you or any person using the Services on your behalf, a breach by you of any applicable laws, or any third-party claim to the extent arising from or connected with an allegation that your use of the Services in accordance with these Terms infringes any rights of a third party.</Text>
                     </Box>
                 </Box>
             </Container>
