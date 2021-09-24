@@ -18,7 +18,9 @@ const AboutWrapper = styled.div`
     width: 68.333%;
     margin: 45px auto;
     .plyr__poster{
-      background-image: url(${thumbnailVideo})!important;
+      ${thumbnailVideo && 
+          `background-image: url(${thumbnailVideo})!important;`
+      }
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
