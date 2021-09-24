@@ -46,6 +46,7 @@ const AdvisorWrapper = styled.div`
             p.adivisor-info{
                 font-size: 18px;
                 font-weight: 400;
+                max-width: 320px;
             }
             }
         }
@@ -70,6 +71,12 @@ const AdvisorWrapper = styled.div`
                     width: 270px;
                     height: 270px;
                 }
+
+                .adivisor-intro{
+                    p.adivisor-info{
+                        max-width: 270px;
+                    }
+                }
             }
         }
     }
@@ -83,6 +90,12 @@ const AdvisorWrapper = styled.div`
                 .adivisor-avatar{
                     width: 220px;
                     height: 220px;
+                }
+
+                .adivisor-intro{
+                    p.adivisor-info{
+                        max-width: 220px;
+                    }
                 }
             }
         }
@@ -103,6 +116,9 @@ const AdvisorWrapper = styled.div`
                 }
                 .adivisor-intro{
                     text-align: center;
+                    p.adivisor-info{
+                        max-width: 100%;
+                    }
                 }
             }
         }
