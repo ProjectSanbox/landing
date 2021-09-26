@@ -14,14 +14,14 @@ export default {
      {
       avatar: minhnguyen,
       name: "Minh Nguyen",
-      job: "Founder/CEO",
+      job: "CEO/Founder",
       // desc: "Minh has years of experience in developing a variety of game genres. Having worked in multiple projects with a diverse team of up to 40 developers per-project, he brings quantity technical solutions and smooth team operation.",
       animation: "flip-left",
     },
     {
       avatar: chuanthony,
       name: "Anthony Chu",
-      job: "Co-founder/COO",
+      job: "CTO/Co-founder",
       // desc: "Anthony has years of experience in game 3D AR/VR develop. He",
       animation: "flip-left",
     },
