@@ -72,7 +72,18 @@ const BannerWrapper = styled.div`
                         position: relative;
                         border: 0;
                         overflow: hidden;
+                        border-radius: unset;
                         box-shadow: 0px 0px 12px rgba(40, 33, 108, 0.7);
+
+                        &:hover{
+                            border: 2px solid ${props => props.theme.primaryColor};
+                            box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+                            animation: pulse 1s;
+                        }
+
+                        @keyframes pulse {
+                            0% { box-shadow: 0 0 0 0 ${props => props.theme.primaryColor} }
+                        }
                         
                         span{
                             position: relative;

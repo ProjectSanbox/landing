@@ -6,21 +6,27 @@ import { Container } from "reusecore/Layout";
 import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
 import Box from 'reusecore/Box';
-import logo from 'assets/images/logo.png'
-import arrow from 'assets/images/banner/arrow.svg';
-import decorate from 'assets/images/banner/decorate.png';
-import anime from 'animejs/lib/anime';
-
+import AOS from 'aos';
 
 const Banner = () => {
+    useEffect(() =>{
+        AOS.init({
+            throttleDelay: 99, 
+            debounceDelay: 50,
+            disable: false,
+            duration : 500,
+            once: false,
+            mirror: true,
+        })
+    })
     return (
-        <BannerWrapper id="home">
+        <BannerWrapper  id="home">
             <Box className="heading">
                 <Box className="headingBackground">
                     <Container>
                         <Box className="heading-content">
-                            <Heading className="heading-sm">Welcome to the ultimate battleverse!</Heading>
-                            <Heading>Choose your NFT gear and jump into this crypto powered real time shooter unlike any other!</Heading>
+                            <Heading data-aos="fade-up" className="heading-sm">Welcome to the ultimate battleverse!</Heading>
+                            <Heading data-aos="fade-up" data-aos-delay="500">Choose your NFT gear and jump into this crypto powered real time shooter unlike any other!</Heading>
                             <Box className="register">
                                 <Button className="banner-btn"><Text as="span">Registration Soon</Text></Button>
                             </Box>

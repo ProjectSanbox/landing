@@ -44,6 +44,13 @@ h1{
         color: #ffffff;
         text-transform: uppercase;
         margin-bottom: 18px;
+        a{
+          transition: 0.3s;
+          &:hover{
+            padding-left: 5px;
+            color: ${props => props.theme.primaryColor};
+          }
+        }
       }
     }
 

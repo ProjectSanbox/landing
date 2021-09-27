@@ -8,9 +8,21 @@ import 'aos/dist/aos.css';
 import Plyr from 'plyr-react'
 import 'plyr-react/dist/plyr.css'
 import {Container} from 'reusecore/Layout';
+import AOS from 'aos';
 
 
 const Introduce = () => {
+
+    useEffect(() =>{
+      AOS.init({
+        throttleDelay: 99, 
+        debounceDelay: 50,
+        disable: false,
+        duration : 500,
+        once: false,
+        mirror: true,
+      })
+    }, [])
 
     const videoSrc = {
         type: "video",
@@ -39,7 +51,7 @@ const Introduce = () => {
                   </Box>
 
                 <Box className="about-video">
-                   <Box className="video-wrapper">
+                   <Box  data-aos="zoom-out-right" className="video-wrapper">
                         <Box><Plyr source={videoSrc} /></Box>
                         <Text>Watch Trailer</Text>
                    </Box>

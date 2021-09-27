@@ -8,6 +8,7 @@ import Heading from 'reusecore/Heading';
 import Text from 'reusecore/Text';
 import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
 import data from 'assets/data/nft';
+import AOS from 'aos';
 
 
 const Block = () => {
@@ -53,6 +54,17 @@ const Block = () => {
           ]
       };
 
+      useEffect(() =>{
+        AOS.init({
+          throttleDelay: 99, 
+          debounceDelay: 50,
+          disable: false,
+          duration : 500,
+          once: false,
+          mirror: true,
+        })
+      }, [])
+
     return (
         <GameAssetsWrapper id="nft">
             <Container>
@@ -67,7 +79,7 @@ const Block = () => {
                   <SlickSlider {...settings}>
                     {data.items.map((item, index) =>
                       <SliderItem key={index}>
-                       <Box className="NFT-item">
+                       <Box data-aos="fade-down" data-aos-delay={index * 200} className="NFT-item">
                         <Box className="NFT-weapon">
                           <Image id={item.id} src={item.weapon} />
                         </Box>
