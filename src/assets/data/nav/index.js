@@ -44,6 +44,12 @@ export default {
             content: "Team"
         },
         {
+            link: "/#FAQs",
+            linkActive: "FAQs",
+            target: "_self",
+            content: "FAQs"
+        },
+        {
             link: "//docsend.com/view/wm76umky6wbzqwmx",
             linkActive: "#",
             target: "_self",

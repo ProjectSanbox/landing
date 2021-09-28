@@ -92,7 +92,7 @@ const Nav = () =>{
             <Container>
                 <Box className="header">
                     <Box className="logo">
-                        <Image src={logo} />
+                        <a href="/"><Image src={logo} /></a>
                     </Box>
                     <Box className="nav hide">
                         <List>
