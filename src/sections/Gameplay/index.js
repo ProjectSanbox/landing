@@ -9,6 +9,7 @@ import {List, ListItem} from 'reusecore/List';
 import { Container, Row, Col } from 'reusecore/Layout';
 import {NextArrow, PrevArrow} from 'sections/Custom/customArrows';
 import data from 'assets/data/gameplay';
+import AOS from 'aos';
 
 const GamePlay = () => {
     const settings = {
@@ -37,7 +38,16 @@ const GamePlay = () => {
           ]
       };
       
-
+      useEffect(() =>{
+        AOS.init({
+            throttleDelay: 99, 
+            debounceDelay: 50,
+            disable: false,
+            duration : 500,
+            once: false,
+            mirror: true,
+        })
+      }, [])
 
     return (
     <GamePlayWrapper id="gameplay">
@@ -59,10 +69,10 @@ const GamePlay = () => {
                 {data.gameplay.map((gameplay, i) =>
                 <SliderItem key={i}>
                     <Box className="gameplay-item">
-                        <Box className="gameplay-image">
+                        <Box data-aos="fade-right" className="gameplay-image">
                             <Image src={gameplay.poster} />
                         </Box>
-                        <Box className="gameplay-intro">
+                        <Box data-aos="fade-left" className="gameplay-intro">
                             <Image src={gameplay.icon} />
                             <Heading>{gameplay.title}</Heading>
                             <Text>{gameplay.content}</Text>

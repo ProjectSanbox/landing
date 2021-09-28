@@ -110,14 +110,23 @@ const NavWrapper = styled.div`
                 &.active{
                     border: 2px solid ${props => props.theme.primaryColor};
                 }
+                
                 &:hover{
                     border: 2px solid ${props => props.theme.primaryColor};
+                    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+                    animation: pulse 1s;
+
+                @keyframes pulse {
+                    0% { box-shadow: 0 0 0 0 ${props => props.theme.primaryColor} }
+                }
+                
                 }
                 &:last-child{
                     margin-left: 24px;
                 }
                 &:not(:last-child){
-                    padding: 0px 24px;
+                    padding: 0px 15px;
+                    margin-left: 10px;
                 }
 
                 &:last-child{

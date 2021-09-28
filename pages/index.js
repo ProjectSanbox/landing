@@ -15,6 +15,7 @@ import FavIcon from "assets/images/favicon.svg";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
 import OurTeam from "sections/OurTeam";
+import FAQ from "sections/FAQ"
 // import Meme from "sections/Meme";
 
 
@@ -53,6 +54,7 @@ const Home = () => {
       <Advisor />
       <BackedBy />
       {/* <Meme /> */}
+      <FAQ/>
       <Footer />
     </ThemeProvider>
   );
