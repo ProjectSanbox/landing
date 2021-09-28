@@ -1,6 +1,7 @@
 import yahoo from 'assets/images/media/yahoo.png';
 import benzinga from 'assets/images/media/benzinga.svg';
 import cryptirank from 'assets/images/media/cryptirank.png';
+import coin68 from 'assets/images/media/coin68.png';
 
 export default{
     media:[
@@ -16,5 +17,9 @@ export default{
             img: cryptirank,
             url: "//cryptorank.io/ico/planet-sandbox"
         },
+        {
+            img: coin68,
+            url: "//coin68.com/game-planet-sandbox-psb-coin/"
+        }
     ]
 }

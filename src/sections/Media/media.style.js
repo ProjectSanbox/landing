@@ -21,6 +21,11 @@ const MediaWrapper = styled.div`
             &:not(:last-child){
                 margin-right: 60px;
             }
+            &:nth-child(4){
+                img{
+                    width: 80%;
+                }
+            }
             &:before{
                 content: "";
                 width: 20%;
