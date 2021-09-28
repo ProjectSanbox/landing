@@ -55,10 +55,6 @@ export default {
       documentName: "WHITEPAPER",
       documentLink: "/comming"
     },
-    {
-      documentName: "MEDIA",
-      documentLink: "/media"
-    }
   ],
   links: [
     {
