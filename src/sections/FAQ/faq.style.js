@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const FAQWrapper = styled.div`
+    padding-bottom: 40px;
     .FAQ-heading{
         text-align: center;
     }
