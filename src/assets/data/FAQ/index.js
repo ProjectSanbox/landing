@@ -1,6 +1,6 @@
 
 export default {
-    faq1:[
+    faq:[
         {
             question: `What is Planet Sandbox? How Planet Sandbox differs from other NFT game?`,
             answer: [
@@ -37,7 +37,7 @@ export default {
             ]
         },
         {
-            question: `what about the play to earn part in the game?`,
+            question: `What about the play to earn part in the game?`,
             answer: [
                 {
                     answerDetails: `The game will be an ecosystem with different types of players, but all will benefit.`,
@@ -61,9 +61,7 @@ export default {
                 },
             ]
         },
-    ],
 
-    faq2:[
         {
             question: `What is Tokenomic plan and token’s Utility:`,
             answer: [
@@ -108,9 +106,12 @@ export default {
             question: `How to get $PSB and $PULV?:`,
             answer: [
                 {
-                    answerDetails: `You can get the $PSB token by asking to be whitelisted in the private sale round or public IDO round. Or simply play the game and earn the $PSB token. Follow our official channel <a href="https://t.me/planetsandbox_ann">(https://t.me/planetsandbox_ann)</a> for more details.
-                    $PULV token can be earned through game incentives such as achievement, daily login, leaderboard or loot box            
-                    `
+                    answerDetails: `You can get the $PSB token by asking to be whitelisted in the private sale round or public IDO round. Or simply play the game and earn the $PSB token. Follow our official channel            
+                    `,
+                    connect: `for more details.
+                    $PULV token can be earned through game incentives such as achievement, daily login, leaderboard or loot box`,
+                    link: "https://t.me/planetsandbox_ann",
+                    target: "_blank"
                 }
             ],
         },
@@ -118,10 +119,12 @@ export default {
             question: `Which chain Planet Sandbox run on?`,
             answer: [
                 {
-                    answerDetails: `PSB is built on Binance Smart Chain. The $PSB token has a total supply of 100 million unit. The schedule to release tokens on decentralized and centralized exchange will be announced in near future, make sure to follow our channels to update new information. <a href="https://t.me/planetsandbox_ann">(https://t.me/planetsandbox_ann)</a>            
-                    `
+                    answerDetails: `PSB is built on Binance Smart Chain. The $PSB token has a total supply of 100 million unit. The schedule to release tokens on decentralized and centralized exchange will be announced in near future, make sure to follow our channels to update new information.       
+                    `,
+                    link: "https://t.me/planetsandbox_ann",
+                    target: "_blank"
                 }
             ],
         },
-    ]
+    ],
 }
