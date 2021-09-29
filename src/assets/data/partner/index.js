@@ -6,15 +6,18 @@ export default{
     partner: [
         {
             img: dare_nft,
-            src: "https://www.darenft.com/"
+            src: "https://www.darenft.com/",
+            target: "_blank"
         },
         {
             img: metablock_x,
-            src: "#"
+            src: "#",
+            target: "_self"
         },
         {
             img: varstart,
-            src: "#"
+            src: "#",
+            target: "_self"
         },
     ]
 }
