@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import about_background from 'assets/images/about/about-background.png';
 import thumbnailVideo from 'assets/images/about/thumbnailvideo.jpg'
+import background from 'assets/images/background.png';
 
 
 const AboutWrapper = styled.div`
   width: 100%;
-  padding: 100px 0px 20px 0px;
+  padding-top: 100px;
+  background-image: url(${background});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
   .about-content{
     text-align: center;
@@ -16,7 +21,9 @@ const AboutWrapper = styled.div`
 
   .about-video{
     width: 68.333%;
-    margin: 45px auto;
+    margin: 45px auto 0px;
+    z-index: 2;
+    position: relative;
     .plyr__poster{
       ${thumbnailVideo && 
           `background-image: url(${thumbnailVideo})!important;`
@@ -33,11 +40,11 @@ const AboutWrapper = styled.div`
     background-size: cover;
     background-position: center;
     width: 38.42%;
-    height: 50vh;
+    height: 70vh;
     position: absolute;
     right: 0;
-    bottom: 0;
-    z-index: -1;
+    bottom: -150px;
+    z-index: 0;
   }
 
   @media only screen and (max-width: 992px){
@@ -49,6 +56,12 @@ const AboutWrapper = styled.div`
       .screen{
         display: block;
       }
+    }
+
+    .about-background{
+      height: 40vh;
+      width: 40%;
+      bottom: -60px;
     }
   }
 

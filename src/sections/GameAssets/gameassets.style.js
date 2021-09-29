@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 import frame from 'assets/images/nft/frame.png';
+import background from 'assets/images/background.png';
 
 const GameAssetsWrapper = styled.div`
     padding: 180px 0;
+    background-image: url(${background});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     .NFT-heading{
         position: relative;
         text-align: center;
@@ -31,8 +36,10 @@ const GameAssetsWrapper = styled.div`
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                img#nft4{
-                    width: 75%;
+                img{
+                    &#nft1, &#nft3, &#nft4, &#nft8, &#nft12, &#nft15{
+                        width: 75%;
+                    }
                 }
             }
 
@@ -55,6 +62,18 @@ const GameAssetsWrapper = styled.div`
             }
         }
     }
+
+    @media only screen and (max-width: 1400px){
+        .NFT-content{
+            .NFT-item{
+                .NFT-weapon{
+                    width: 240px;
+                    height: 240px;
+                }
+            }
+        }
+    }
+
 
     @media only screen and (max-width: 1200px){
         .NFT-content{

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const BackedByWrapper  = styled.div`
-    padding: 80px  0px 140px 0px;
+    padding: 80px  0px 70px 0px;
 
     .backedby-heading{
         text-align: center;

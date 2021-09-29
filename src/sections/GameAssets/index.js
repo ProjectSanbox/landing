@@ -58,7 +58,6 @@ const Block = () => {
         AOS.init({
           throttleDelay: 99, 
           debounceDelay: 50,
-          disable: false,
           duration : 500,
           once: false,
           mirror: true,
@@ -81,7 +80,7 @@ const Block = () => {
                       <SliderItem key={index}>
                        <Box data-aos="fade-down" data-aos-delay={index * 200} className="NFT-item">
                         <Box className="NFT-weapon">
-                          <Image id={item.id} src={item.weapon} />
+                          <Image id={item.id} src={item.asset} />
                         </Box>
                          <Box className="intro">
                            <Text className="heading">{item.name}</Text>
