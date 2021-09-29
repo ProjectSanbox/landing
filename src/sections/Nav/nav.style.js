@@ -105,6 +105,7 @@ const NavWrapper = styled.div`
                 padding: 0;
                 margin: 0;
                 transition: 0.3s;
+                border: 2px solid transparent;
                 cursor: pointer;
                 box-sizing: border-box;
                 &.active{
@@ -125,7 +126,7 @@ const NavWrapper = styled.div`
                     margin-left: 24px;
                 }
                 &:not(:last-child){
-                    padding: 0px 15px;
+                    padding: 0px 20px;
                     margin-left: 10px;
                 }
 

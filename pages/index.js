@@ -56,7 +56,7 @@ const Home = () => {
       <BackedBy />
       {/* <Meme /> */}
       <Media />
-      {/* <FAQ/> */}
+      <FAQ/>
       <Footer />
     </ThemeProvider>
   );

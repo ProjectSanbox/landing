@@ -59,7 +59,7 @@ const MediaWrapper = styled.div`
            margin-top: 50px;
             .meida-items{
                 width: 80%;
-                margin-right: unset;
+                margin-right: unset!important;
                 margin-bottom: 40px;
             }
         }
