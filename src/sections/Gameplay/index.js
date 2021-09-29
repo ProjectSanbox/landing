@@ -25,8 +25,7 @@ const GamePlay = () => {
         slidesToScroll: 1,
         // autoplay: true,
         autoplaySpeed: 4000,
-        nextArrow: <NextArrow className="nextButton" />,
-        prevArrow: <PrevArrow className="preButton" />,
+        
         responsive: [
             {
               breakpoint: 480,

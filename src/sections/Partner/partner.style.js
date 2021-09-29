@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-const BackedByWrapper  = styled.div`
-    padding: 80px  0px 70px 0px;
+const PartnerWrapper  = styled.div`
+    padding: 80px 0px 70px 0px;
 
-    .backedby-heading{
+    .partner-heading{
         text-align: center;
         p{
             font-size: 16px;
@@ -20,18 +20,21 @@ const BackedByWrapper  = styled.div`
         }
     }
 
-    .backedby-content{
+    .partner-content{
       display: flex;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
       padding-left: -52px;
       padding-right: -52px;
-      .backedby-item{
+      .partner-item{
         padding: 33px 52px;
+        img{
+            width: 280px;
+        }
       }
     }
 
 `;
 
-export default BackedByWrapper;
+export default PartnerWrapper;

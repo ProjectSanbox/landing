@@ -40,20 +40,19 @@ const Introduce = () => {
             <Box className="about">
                   <Box className="about-content">
                       <Heading>About</Heading>
-                      <Text className="hide">Planet Sandbox is the biggest physic sandbox game that allows players to build and custom<br/>
-                        creative sandbox world with the limitless build-in item.​ And it is also a multiplayer TPS <br/>
-                          NFT GAME that lets users engaging in the combat arena and profit from battles
+                      <Text className="hide">Planet Sandbox is the ultimate physic sandbox game that allows players<br/>
+                      to build and customize creative sandbox worlds with unlimited build-in items. It is also a<br/>
+                      multiplayer TPS NFT GAME that let users engage in the combat arena and profit from battles
                       </Text>
-                      <Text className="screen">Planet Sandbox is the biggest physic sandbox game that allows players to build and custom
-                        creative sandbox world with the limitless build-in item.​ And it is also a multiplayer TPS
-                          NFT GAME that lets users engaging in the combat arena and profit from battles
+                      <Text className="screen">Planet Sandbox is the ultimate physic sandbox game that allows players 
+                      to build and customize creative sandbox worlds with unlimited build-in items. It is also a
+                      multiplayer TPS NFT GAME that let users engage in the combat arena and profit from battles
                       </Text>
                   </Box>
 
                 <Box className="about-video">
                    <Box  data-aos="zoom-out-right" className="video-wrapper">
                         <Box><Plyr source={videoSrc} /></Box>
-                        <Text>Watch Trailer</Text>
                    </Box>
                 </Box>
             </Box>

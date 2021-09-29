@@ -1,8 +1,13 @@
 import styled from 'styled-components';
+import background from 'assets/images/background.png';
 
 const GamePlayWrapper = styled.div`
     width: 100%;
-    padding-top: 50px;
+    padding: 150px 0px 50px 0px;
+    background-image: url(${background});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     .gameplay-heading{
         .screen{
             display: none;
@@ -45,6 +50,29 @@ const GamePlayWrapper = styled.div`
                    }
                }
            }
+        }
+    }
+
+    .slick-arrow{
+        display: none!important;
+    }
+
+    ul{
+        bottom: -50px;
+        li{
+            .ft-slick__dots--custom{
+                width: 10px;
+                height: 10px;
+                background: ${props => props.theme.primaryColor};
+                border-radius: 50%;
+                opacity: 0.2;
+            }
+
+            &.slick-active{
+                .ft-slick__dots--custom{
+                    opacity: 1;
+                }
+            }
         }
     }
 
