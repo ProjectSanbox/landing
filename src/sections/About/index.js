@@ -35,7 +35,7 @@ const Introduce = () => {
       };
 
     return (
-        <AboutWrapper id="about">
+        <AboutWrapper className="section" id="about">
           <Container>
             <Box className="about">
                   <Box className="about-content">

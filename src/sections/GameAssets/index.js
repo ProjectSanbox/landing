@@ -65,7 +65,7 @@ const Block = () => {
       }, [])
 
     return (
-        <GameAssetsWrapper id="nft">
+        <GameAssetsWrapper className="section" id="nft">
             <Container>
                 <Box className="NFT-heading">
                     <Heading>Game Assets</Heading>

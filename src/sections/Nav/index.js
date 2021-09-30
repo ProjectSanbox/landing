@@ -64,15 +64,36 @@ const Nav = () =>{
             value = "home"
             setToggle({...toggle, active: value})
         }
-                
+
+        const sections = document.querySelectorAll('.section');
+        const nav = document.querySelectorAll('.menu li');
+
+        window.addEventListener('scroll', () =>{
+            let current = '';
+            sections.forEach((section) =>{
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if(pageYOffset >= sectionTop - 100){
+                    current = section.getAttribute("id");
+                }
+            })
+
+            nav.forEach((li) =>{
+                li.classList.remove('active');
+                if(li.classList.contains(current)){
+                    li.classList.add('active');
+                }
+            })
+        })
+
+
+
+
     }, [])
-
-    console.log(toggle.active);
-
 
     return(
       <>
-          <NavWrapper id="header">
+          <NavWrapper className="section" id="header">
               {/* nav mobie */}
           <Box className={toggle.status ? "nav-mobile open" : "nav-mobile"}>
                 <Box className="overlay">&nbsp;</Box>
@@ -95,9 +116,9 @@ const Nav = () =>{
                         <a href="/"><Image src={logo} /></a>
                     </Box>
                     <Box className="nav hide">
-                        <List>
+                        <List className="menu">
                            {data.nav.map((nav, i) =>
-                            <ListItem className={toggle.active === nav.linkActive ? "active" : ''} key={i}>
+                            <ListItem className={toggle.active === nav.linkActive ? `active ${nav.class}` : nav.class} key={i}>
                                 <a  
                                 onClick={()=> setToggle({...toggle, active: nav.linkActive})} target={nav.target} 
                                 href={nav.link}>{nav.content}</a>

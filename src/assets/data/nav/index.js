@@ -5,25 +5,29 @@ export default {
             link: "/",
             linkActive: "home",
             target: "_self",
-            content: "Home"
+            content: "Home",
+            class: "home"
         },
         {
             link: "/#about",
             linkActive: "about",
             target: "_self",
-            content: "About"
+            content: "About",
+            class: "about"
         },
         {
             link: "/#gameplay",
             linkActive: "gameplay",
             target: "_self",
-            content: "GamePlay"
+            content: "GamePlay",
+            class: "gameplay"
         },
         {
             link: "/#nft",
             linkActive: "nft",
             target: "_self",
-            content: "NFT"
+            content: "NFT",
+            class: "nft"
         },
         {
             link: "//drive.google.com/file/d/1231HjfdpF0Ep1niBj8KNagWzkMR7txHS/view",
@@ -35,19 +39,22 @@ export default {
             link: "/#roadmap",
             linkActive: "roadmap",
             target: "_self",
-            content: "Roadmap"
+            content: "Roadmap",
+            class: "roadmap"
         },
         {
             link: "/#ourteam",
             linkActive: "ourteam",
             target: "_self",
-            content: "Team"
+            content: "Team",
+            class: "ourteam"
         },
         {
             link: "/#FAQs",
             linkActive: "FAQs",
             target: "_self",
-            content: "FAQs"
+            content: "FAQs",
+            class: "FAQs"
         },
         {
             link: "//docsend.com/view/wm76umky6wbzqwmx",

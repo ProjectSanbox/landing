@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import about_background from 'assets/images/about/about-background.png';
-import thumbnailVideo from 'assets/images/about/thumbnailvideo.jpg'
+import thumbnailvideo from 'assets/images/about/thumbnailvideo.jpg'
 import background from 'assets/images/background.png';
 
 
@@ -25,8 +25,8 @@ const AboutWrapper = styled.div`
     z-index: 2;
     position: relative;
     .plyr__poster{
-      ${thumbnailVideo && 
-          `background-image: url(${thumbnailVideo})!important;`
+      ${thumbnailvideo && 
+          `background-image: url(${thumbnailvideo})!important;`
       }
       background-repeat: no-repeat;
       background-size: cover;
