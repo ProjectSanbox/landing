@@ -67,9 +67,6 @@ const Nav = () =>{
                 
     }, [])
 
-    console.log(toggle.active);
-
-
     return(
       <>
           <NavWrapper id="header">

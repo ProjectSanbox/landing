@@ -22,6 +22,9 @@ const Introduce = () => {
         once: false,
         mirror: true,
       })
+
+      const poster = document.querySelector('.plyr__poster');
+      console.log(poster);
     }, [])
 
     const videoSrc = {
