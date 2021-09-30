@@ -25,7 +25,7 @@ const AboutWrapper = styled.div`
     z-index: 2;
     position: relative;
     .plyr__poster{
-      ${thumbnailVideo && 
+      ${thumbnailvideo && 
           `background-image: url(${thumbnailvideo})!important;`
       }
       background-repeat: no-repeat;
