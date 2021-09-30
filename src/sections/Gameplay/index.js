@@ -49,7 +49,7 @@ const GamePlay = () => {
       }, [])
 
     return (
-    <GamePlayWrapper id="gameplay">
+    <GamePlayWrapper className="section" id="gameplay">
        <Container>
         <Box className="gameplay-heading">
             <Heading>Gameplay</Heading>

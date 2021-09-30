@@ -34,7 +34,7 @@ const FAQ = () =>{
     }, [])
 
    return(
-    <FAQWrapper id="FAQs">
+    <FAQWrapper className="section" id="FAQs">
        <Container>
         <Box className="FAQ-heading">
             <Heading>FAQs</Heading>

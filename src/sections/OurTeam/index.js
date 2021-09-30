@@ -62,7 +62,7 @@ const OurTeam = () =>{
       }, [])
 
     return(
-        <OurTeamWrapper id="ourteam">
+        <OurTeamWrapper className="section" id="ourteam">
             <Box className="ourteam-background">&nbsp;</Box>
             <Container>
                 <Box className="ourteam-heading">

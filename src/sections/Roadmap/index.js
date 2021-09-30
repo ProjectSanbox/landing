@@ -11,7 +11,7 @@ import roadmap from 'assets/images/roadmap/roadmap.svg';
 
 const RoadMap = () => {
   return (
-    <UserMapWrapper id="roadmap">
+    <UserMapWrapper className="section" id="roadmap">
       <Box className="usermap-wrapper">
         <Container className="fluid">
           <Box className="roadmap-heading">

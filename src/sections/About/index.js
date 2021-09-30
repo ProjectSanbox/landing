@@ -22,9 +22,6 @@ const Introduce = () => {
         once: false,
         mirror: true,
       })
-
-      const poster = document.querySelector('.plyr__poster');
-      console.log(poster);
     }, [])
 
     const videoSrc = {
@@ -38,7 +35,7 @@ const Introduce = () => {
       };
 
     return (
-        <AboutWrapper id="about">
+        <AboutWrapper className="section" id="about">
           <Container>
             <Box className="about">
                   <Box className="about-content">
