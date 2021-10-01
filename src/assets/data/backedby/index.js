@@ -26,7 +26,8 @@ import dutch from 'assets/images/backedby/dutch.png';
 import emo from 'assets/images/backedby/emo.png';
 import zbs from 'assets/images/backedby/zbs.png';
 import kts from 'assets/images/backedby/kts.png';
-
+import tk from 'assets/images/backedby/tk.png';
+import hg from 'assets/images/backedby/hg.png';
 export default {
     backedby:[
        
@@ -184,6 +185,18 @@ export default {
         },
         {
             imageSrc: kts,
+            src: "/",
+            id: "b26",
+
+        },
+        {
+            imageSrc: tk,
+            src: "/",
+            id: "b25",
+
+        },
+        {
+            imageSrc: hg,
             src: "/",
             id: "b26",
 
