@@ -1,6 +1,3 @@
-
-import redkite from 'assets/images/backedby/redkite.png';
-import gamefi from 'assets/images/backedby/gamefi.png';
 import icetea from 'assets/images/backedby/icetea.png';
 import basic_capital from 'assets/images/backedby/basic_capital.png';
 import m6 from 'assets/images/backedby/m6.png';
@@ -26,21 +23,21 @@ import dutch from 'assets/images/backedby/dutch.png';
 import emo from 'assets/images/backedby/emo.png';
 import zbs from 'assets/images/backedby/zbs.png';
 import kts from 'assets/images/backedby/kts.png';
+import tk from 'assets/images/backedby/tk.png';
+import hg from 'assets/images/backedby/hg.png';
 
 export default {
     backedby:[
-       
         {
-            imageSrc: redkite,
-            src: "/",
-            id: "b1",
+            imageSrc: icetea,
+            src: "//www.gamefi.com/",
+            id: "b4",
         },
         {
-            imageSrc: gamefi,
+            imageSrc: exnetwork,
             src: "/",
-            id: "b2",
+            id: "b7",
         },
-        
         {
             imageSrc: ngc,
             src: "/",
@@ -52,16 +49,6 @@ export default {
             src: "/",
             id: "b11",
 
-        },
-        {
-            imageSrc: icetea,
-            src: "//www.gamefi.com/",
-            id: "b4",
-        },
-        {
-            imageSrc: exnetwork,
-            src: "/",
-            id: "b7",
         },
         {
             imageSrc: m6,
@@ -186,6 +173,18 @@ export default {
             imageSrc: kts,
             src: "/",
             id: "b26",
+
+        },
+        {
+            imageSrc: hg,
+            src: "/",
+            id: "b28",
+
+        },
+        {
+            imageSrc: tk,
+            src: "/",
+            id: "b27",
 
         },
     ]
