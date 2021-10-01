@@ -1,4 +1,6 @@
 import icetea from 'assets/images/backedby/icetea.png';
+import redkite from 'assets/images/backedby/redkite.png';
+import gamefi from 'assets/images/backedby/gamefi.png';
 import basic_capital from 'assets/images/backedby/basic_capital.png';
 import m6 from 'assets/images/backedby/m6.png';
 import exnetwork from 'assets/images/backedby/exnetwork.png';
@@ -29,8 +31,18 @@ import hg from 'assets/images/backedby/hg.png';
 export default {
     backedby:[
         {
-            imageSrc: icetea,
+            imageSrc: redkite,
+            src: "",
+            id: "b1",
+        },
+        {
+            imageSrc: gamefi,
             src: "//www.gamefi.com/",
+            id: "b4",
+        },
+        {
+            imageSrc: icetea,
+            src: "",
             id: "b4",
         },
         {
