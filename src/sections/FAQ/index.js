@@ -38,7 +38,7 @@ const FAQ = () =>{
        <Container>
         <Box className="FAQ-heading">
             <Heading>FAQs</Heading>
-            <Text>This section includes answers to frequently asked questions concerning my PlanetSandbox</Text>
+            <Text>This section includes answers to frequently asked questions about PlanetSandbox</Text>
         </Box>
 
         <Box className="FAQ-content">
@@ -52,7 +52,7 @@ const FAQ = () =>{
                         <Box className="accordion-content">
                             {faq.answer.map((answer, i) =>
                                 <Text key={i}>
-                                    {answer.answerDetails} {answer.link && <a target={answer.target} href={answer.link}>({answer.link})</a>} {answer.connect}
+                                    {answer.answerDetails} {answer.link && <a target={answer.target} href={answer.link}>({answer.linkContent})</a>} {answer.connect}
                                     {answer.list && 
                                         <List>
                                             {answer.list.map((list, i) =>

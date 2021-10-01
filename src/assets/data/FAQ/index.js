@@ -5,26 +5,26 @@ export default {
             question: `What is Planet Sandbox? How Planet Sandbox differs from other NFT game?`,
             answer: [
                 {
-                    answerDetails: "Planet Sandbox is a game that combines building and real-time PvP game mode. Players can build their own worlds or join intense fighting mode using NFT weapons and accessories. "
+                    answerDetails: "Planet Sandbox is a game that combines building features and real-time PvP game mode. Players can build their worlds or participate in intense fighting mode using NFT weapons and accessories."
                 },
                 {
-                    answerDetails: `The project’s vision is to create a metaverse built and controlled by players. It can serve a wide variety of players but all are beneficial. 
-                    Enter the game and player not only to earn but also to enjoy the game.
+                    answerDetails: `The project’s vision is to create a metaverse built and controlled by players. It can serve a wide variety of players and satisfy different needs and preferences. Our targeted players are not limited to crypto-savvy users but also include traditional gamers who are not familiar with the NFT game. 
+                    The primary purpose is not only to earn but also to enjoy the fascinating lore and diverse play modes of the game.  
                     `
                 }
             ]
         },
         {
-            question: `So why is the project named Planet Sandbox Metaverse?`,
+            question: `Why is the project named Planet Sandbox Metaverse?`,
             answer: [
                 {
-                    answerDetails: `Metaverse will be the next revolution in NFT games. As a result, the development has a plan to develop Planet Sandbox as Metaverse and will begin next year.`
+                    answerDetails: `Metaverse will be the next revolution in NFT games. As a result, the core team has a plan to develop Planet Sandbox as Metaverse and will begin next year.`
                 },
                 {
-                    answerDetails: `It’s about:`,
+                    answerDetails: `More exciting features coming up next in the future:`,
                     list:[
                         {
-                            listChild: `- AR/VR experience`
+                            listChild: `- AR / VR experience`
                         },
                         {
                             listChild: `- Feature governance`
@@ -63,10 +63,10 @@ export default {
         },
 
         {
-            question: `What is Tokenomic plan and token’s Utility:`,
+            question: `Tokenomic & Token Utility`,
             answer: [
                 {
-                    answerDetails: `There are 2 tokens in-game are $PSB and $PULV.` 
+                    answerDetails: `The 2 in-game tokens are $PSB and $PULV. $PSB is the native governance token, which is run on Binance Smart Chain. The $PSB token has a total supply of 100 million units.` 
                 },
                 {
                     answerDetails: `The $PSB Utilities:`,
@@ -98,30 +98,26 @@ export default {
                             listChild: `- Upgrade items`
                         },
                     ]
+                },
+                {
+                    answerDetails: `For more information, check out our Tokenomic here:`,
+                    linkContent: "bit.ly/PSB_Tokenomic",
+                    link: `//drive.google.com/file/d/1231HjfdpF0Ep1niBj8KNagWzkMR7txHS/view`,
+                    target: "_blank"
                 }
 
             ]
         },
         {
-            question: `How to get $PSB and $PULV?:`,
+            question: `How to get $PSB and $PULV ?`,
             answer: [
                 {
-                    answerDetails: `You can get the $PSB token by asking to be whitelisted in the private sale round or public IDO round. Or simply play the game and earn the $PSB token. Follow our official channel            
+                    answerDetails: `You can become the first holders of $PSB token by participating in our public IDO on RedKite and GameFi launchpad. Or simply play the game and earn the $PSB token. Follow our official channel            
                     `,
                     connect: `for more details.
                     $PULV token can be earned through game incentives such as achievement, daily login, leaderboard or loot box`,
                     link: "https://t.me/planetsandbox_ann",
-                    target: "_blank"
-                }
-            ],
-        },
-        {
-            question: `Which chain Planet Sandbox run on?`,
-            answer: [
-                {
-                    answerDetails: `PSB is built on Binance Smart Chain. The $PSB token has a total supply of 100 million unit. The schedule to release tokens on decentralized and centralized exchange will be announced in near future, make sure to follow our channels to update new information.       
-                    `,
-                    link: "https://t.me/planetsandbox_ann",
+                    linkContent: "https://t.me/planetsandbox_an",
                     target: "_blank"
                 }
             ],
