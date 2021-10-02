@@ -18,12 +18,18 @@ const MediaWrapper = styled.div`
             padding: 20px;
             align-items: center;
             position: relative;
+            overflow: hidden;
             &:not(:last-child){
                 margin-right: 60px;
             }
             &:nth-child(4){
                 img{
                     width: 80%;
+                }
+            }
+            &:nth-child(5){
+                img{
+                   transform: scale(2.3);
                 }
             }
             &:before{
@@ -35,6 +41,7 @@ const MediaWrapper = styled.div`
                 border-left: 1px solid ${props => props.theme.primaryColor};
                 position: absolute;
                 left: 0;
+                z-index: 2;
             }
 
             &:after{
@@ -46,6 +53,7 @@ const MediaWrapper = styled.div`
                 border-right: 1px solid ${props => props.theme.primaryColor};
                 position: absolute;
                 right: 0;
+                z-index: 2;
             }
 
         }
