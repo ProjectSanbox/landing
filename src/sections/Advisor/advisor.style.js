@@ -109,7 +109,7 @@ const AdvisorWrapper = styled.div`
     .adivisor-content{
         flex-direction: column;
             .adivisor-item{
-                margin-left: 0px;
+                margin-left: 0px!important;
                 margin-bottom: 100px;
                 .adivisor-avatar{
                     margin: auto;
