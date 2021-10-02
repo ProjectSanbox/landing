@@ -2,6 +2,7 @@ import yahoo from 'assets/images/media/yahoo.png';
 import benzinga from 'assets/images/media/benzinga.svg';
 import cryptirank from 'assets/images/media/cryptirank.png';
 import coin68 from 'assets/images/media/coin68.png';
+import sbtc from 'assets/images/media/sbtc.png';
 
 export default{
     media:[
@@ -20,6 +21,10 @@ export default{
         {
             img: coin68,
             url: "//coin68.com/game-planet-sandbox-psb-coin/"
+        },
+        {
+            img: sbtc,
+            url: "//www.newsbtc.com/news/company/is-the-future-of-the-nft-metaverse-self-built-worlds/"
         }
     ]
 }
