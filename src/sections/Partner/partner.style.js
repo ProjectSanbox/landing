@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const PartnerWrapper  = styled.div`
-    padding: 80px 0px 70px 0px;
+    padding: 80px 0px 100px 0px;
 
     .partner-heading{
         text-align: center;
