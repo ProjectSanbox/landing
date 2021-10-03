@@ -79,7 +79,7 @@ const Footer = () => {
                </Box>
             </Col>
           </Row>
-          <Text className="copyright">© PlanetSandbox | All right rserved 2021</Text>
+          <Text className="copyright"> Copyright © 2021 PlanetSandbox. All rights reserved.</Text>
         </Container>
       </Box>
     </FooterWrapper>
