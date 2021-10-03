@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const MediaWrapper = styled.div`
-    padding:  0px 0px 80px 0px;
+    padding:  0px 0px 170px 0px;
     .media-heading{
         text-align: center;
     }
@@ -66,9 +66,14 @@ const MediaWrapper = styled.div`
            justify-content: center;
            margin-top: 50px;
             .meida-items{
-                width: 80%;
+                width: 70%;
                 margin-right: unset!important;
                 margin-bottom: 40px;
+                &:nth-child(4){
+                img{
+                    width: 60%;
+                }
+            }
             }
         }
     }
