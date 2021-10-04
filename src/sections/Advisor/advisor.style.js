@@ -36,10 +36,12 @@ const AdvisorWrapper = styled.div`
       }
       .adivisor-intro {
         p.adivisor-name {
-          font-size: 32px;
+          font-size: 24px;
           line-height: 24px;
+          font-family: 'SFUEurostileBold', sans-serif;
           font-weight: 700;
           margin: 16px 0px;
+          text-transform: uppercase;
           color: ${(props) => props.theme.primaryColor};
         }
 

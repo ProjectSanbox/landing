@@ -57,6 +57,7 @@ const BannerWrapper = styled.div`
             color: ${(props) => props.theme.primaryColor};
             font-weight: 400;
             font-family: "SFUEurostileNormal", sans-serif;
+            text-transform: none;
           }
           span {
             position: relative;
@@ -113,7 +114,8 @@ const BannerWrapper = styled.div`
     }
   }
 
-  @media only screen and (max-width: 768px) {
+
+  @media only screen and (max-width: 992px) {
     div.heading {
       .headingBackground {
         background-position: right;

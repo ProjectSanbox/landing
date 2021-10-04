@@ -9,7 +9,6 @@ import { List, ListItem } from "reusecore/List";
 import Link from "next/link";
 import { useState } from "react";
 import data from "assets/data/nav";
-import NavMobie from "./Navmobie";
 import { GoThreeBars } from "react-icons/go";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -95,7 +94,7 @@ const Nav = () => {
             </Button>
             {data.navMobie.map((nav, index) => (
               <ListItem key={index}>
-                <a target={nav.target} href={nav.link}>
+                <a onClick={() => handleToggleMenu(false)} target={nav.target} href={nav.link}>
                   {nav.content}
                 </a>
               </ListItem>

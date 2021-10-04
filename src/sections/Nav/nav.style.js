@@ -34,9 +34,16 @@ const NavWrapper = styled.div`
       transform: translate(-100%);
       transition: transform linear 0.2s;
       li {
-        padding: 20px 0px;
+        padding: 15px 0px;
+        &:last-child {
+          a{
+            padding: 0px 15px 8px 15px;
+            border: 1px solid ${(props) => props.theme.primaryColor};
+            color: ${props => props.theme.primaryColor};
+          }
+        }
         a {
-          font-size: 50px;
+          font-size: 35px;
           font-weight: 700;
         }
       }
@@ -170,11 +177,9 @@ const NavWrapper = styled.div`
 
     .nav-mobile {
       .list-mobile {
-        padding-top: 10px;
+        padding-top: 15px;
         li {
-          a {
-            font-size: 40px;
-          }
+          padding: 20px 0px;
         }
       }
     }

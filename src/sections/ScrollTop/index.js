@@ -6,6 +6,16 @@ import { useEffect } from "react";
 const ScrollTop = () => {
   useEffect(() => {
     const btnScroll = document.querySelector(".scrollTopBtn");
+
+    if (
+      document.body.scrollTop > 2200 ||
+      document.documentElement.scrollTop > 2200
+    ) {
+      btnScroll.style.display = "block";
+    } else {
+      btnScroll.style.display = "none";
+    }
+
     const scrollFunction = () => {
       if (
         document.body.scrollTop > 2200 ||
