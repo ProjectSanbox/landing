@@ -96,7 +96,15 @@ h1{
     }
 
     .footer-list{
-      text-align: center;
+      text-align: center;  
+      .comnunity{
+          justify-content: center;
+          ul{
+            &:not(:last-child){
+              margin-right: 40px;
+            }
+          }
+        }
     }
   }
 `;
