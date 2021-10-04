@@ -2,77 +2,77 @@ import styled from "styled-components";
 
 const FooterWrapper = styled.div`
   padding: 80px 0px;
-  background: #17181C;
-h1{
+  background: #17181c;
+  h1 {
     font-size: 24px;
     line-height: 32px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
   }
 
-  p{
-    color: #777E90;
-    font-family: 'Poppins', sans-serif;
+  p {
+    color: #777e90;
+    font-family: "Poppins", sans-serif;
   }
 
-  a{
-    font-family: 'Poppins', sans-serif;
+  a {
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
   }
 
-  .footer-heading-content{
+  .footer-heading-content {
     text-align: center;
     margin-bottom: 40px;
-    img{
+    img {
       width: 300px;
-      margin: auto
+      margin: auto;
     }
   }
 
-  .footer-list{
-    .footer-title{
+  .footer-list {
+    .footer-title {
       font-size: 16px;
-      color: ${props => props.theme.primaryColor};
+      color: ${(props) => props.theme.primaryColor};
       text-transform: uppercase;
       font-weight: 700;
     }
 
-    .comnunity{
+    .comnunity {
       display: flex;
       justify-content: space-between;
     }
 
-    ul{
+    ul {
       margin-bottom: 40px;
-      li{
+      li {
         font-size: 14px;
         color: #ffffff;
         text-transform: capitalize;
         margin-bottom: 18px;
-        a{
+        a {
           transition: 0.3s;
-          &:hover{
+          &:hover {
             padding-left: 5px;
-            color: ${props => props.theme.primaryColor};
+            color: ${(props) => props.theme.primaryColor};
           }
         }
       }
     }
 
-    ul.footer-link{
-      li{
+    ul.footer-link {
+      li {
         text-transform: capitalize;
-        img{
+        img {
           width: 24px;
           height: 24px;
           margin-right: 8px;
         }
-        a{
+        a {
           display: flex;
           align-items: center;
           display: block;
-           display: flex;
-          svg{
+          display: flex;
+          svg {
             margin-right: 10px;
           }
         }
@@ -80,31 +80,30 @@ h1{
     }
   }
 
-  .copyright{
+  .copyright {
     text-align: center;
   }
 
-  @media only screen and (max-width: 992px){
-
-    .hide{
+  @media only screen and (max-width: 992px) {
+    .hide {
       display: none;
     }
 
-    .copyright{
+    .copyright {
       display: block;
       text-align: center;
     }
 
-    .footer-list{
-      text-align: center;  
-      .comnunity{
-          justify-content: center;
-          ul{
-            &:not(:last-child){
-              margin-right: 40px;
-            }
+    .footer-list {
+      text-align: center;
+      .comnunity {
+        justify-content: center;
+        ul {
+          &:not(:last-child) {
+            margin-right: 40px;
           }
         }
+      }
     }
   }
 `;

@@ -1,13 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "reusecore/Layout";
-import {List, ListItem} from 'reusecore/List';
+import { List, ListItem } from "reusecore/List";
 import Box from "reusecore/Box";
 import Heading from "reusecore/Heading";
 import Image from "reusecore/Image";
 import Text from "reusecore/Text";
 import UserMapWrapper from "./userMap.style";
-import roadmap from 'assets/images/roadmap/roadmap.svg';
-
+import roadmap from "assets/images/roadmap/roadmap.svg";
 
 const RoadMap = () => {
   return (
