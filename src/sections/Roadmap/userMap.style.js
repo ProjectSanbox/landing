@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from "assets/images/roadmap/background.jpg";
+import background from "assets/images/roadmap/background.webp";
 
 const UserMapWrapper = styled.div`
   position: relative;

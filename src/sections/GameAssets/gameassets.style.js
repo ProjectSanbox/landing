@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import frame from "assets/images/nft/frame.png";
-import background from "assets/images/background.png";
+import background from "assets/images/background.webp";
 
 const GameAssetsWrapper = styled.div`
   padding: 180px 0;

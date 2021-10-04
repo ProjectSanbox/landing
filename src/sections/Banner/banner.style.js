@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import headerBackground from "assets/images/banner/banner.jpg";
+import headerBackground from "assets/images/banner/banner.webp";
 
 const BannerWrapper = styled.div`
   background: transparent;

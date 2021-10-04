@@ -94,9 +94,11 @@ const FAQWrapper = styled.div`
   }
   .accordion button[aria-expanded="true"] + .accordion-content {
     opacity: 1;
-    max-height: 90em;
+    max-height: 900px;
     transition: all 200ms linear;
     will-change: opacity, max-height;
+    -webkit-will-change: opacity, max-height;
+    -moz-will-change: opacity, max-height;
   }
   .accordion .accordion-content {
     opacity: 0;
@@ -104,6 +106,8 @@ const FAQWrapper = styled.div`
     overflow: hidden;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
+    -webkit-will-change: opacity, max-height;
+    -moz-will-change: opacity, max-height;
   }
   .accordion .accordion-content p {
     font-size: 18px;

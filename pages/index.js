@@ -38,12 +38,6 @@ const Home = () => {
         <link rel="shortcut icon" type="image/x-icon" sizes="64x64" href={FavIcon} />
         <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
-        <link
-            rel="preload"
-            href="../src/assets/font/SFUEurostileCondensed.ttf"
-            as="font"
-            crossOrigin=""
-          />
       </Head>
       <GlobalStyle />
       {/* <Popup /> */}

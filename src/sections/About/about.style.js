@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import about_background from "assets/images/about/about-background.png";
-import thumbnailvideo from "assets/images/about/thumbnailvideo.jpg";
-import background from "assets/images/background.png";
+import about_background from "assets/images/about/about-background.webp";
+import thumbnailvideo from "assets/images/about/thumbnailvideo.webp";
+import background from "assets/images/background.webp";
 
 const AboutWrapper = styled.div`
   width: 100%;
