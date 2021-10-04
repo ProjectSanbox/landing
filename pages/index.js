@@ -18,6 +18,7 @@ import OurTeam from "sections/OurTeam";
 import Partner from "sections/Partner";
 import Media from "sections/Media";
 import FAQ from "sections/FAQ"
+import ScrollTop from "sections/ScrollTop"
 // import Meme from "sections/Meme";
 
 
@@ -60,6 +61,7 @@ const Home = () => {
       <Media />
       <FAQ/>
       <Footer />
+      <ScrollTop />
     </ThemeProvider>
   );
 };

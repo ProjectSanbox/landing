@@ -1,4 +1,9 @@
-import { FaTwitter, FaMediumM, FaTelegramPlane } from "react-icons/fa";
+import telegram from 'assets/images/footer/telegram.png';
+import twitter from 'assets/images/footer/twitter.png';
+import medium from 'assets/images/footer/medium.png';
+import discord from 'assets/images/footer/discord.png';
+import instagram from 'assets/images/footer/instagram.png';
+import youtube from 'assets/images/footer/youtube.png';
 
 
 export default {
@@ -44,35 +49,53 @@ export default {
   ],
   documentation:[
     {
-      documentName: "ABOUT US",
+      documentName: "About us",
       documentLink: "/comming"
     },
     {
-      documentName: "POLICY",
+      documentName: "Policy",
       documentLink: "/comming"
     },
     {
-      documentName: "WHITEPAPER",
+      documentName: "Whitepaper",
       documentLink: "/comming"
     },
   ],
-  links: [
+  links1: [
     {
-      icon: <FaTwitter />,
-      url: "//twitter.com/planetsandbox",
-      name: "Twitter",
+      icon: telegram,
+      url: "//t.me/planetsandbox",
+      name: "Telegram",
     },
-
     {
-      icon: <FaMediumM />,
+      icon: twitter,
+      url: "//twitter.com/planetsandbox",
+      name: "Twitter"
+    },
+    {
+      icon: medium,
       url: "//planetsandbox.medium.com/",
       name: "Medium"
     },
     
+  ],
+  links2: [
     {
-      icon: <FaTelegramPlane />,
-      url: "//t.me/planetsandbox",
-      name: "Telegram"
+      icon: discord,
+      url: "/",
+      name: "Discord",
+    },
+
+    {
+      icon: instagram,
+      url: "/",
+      name: "Instagram"
+    },
+    
+    {
+      icon: youtube,
+      url: "//www.youtube.com/watch?v=ML1pWYdm1WE",
+      name: "Youtube"
     },
   ],
 };

@@ -69,11 +69,18 @@ const Footer = () => {
                   </Col>
                   <Col className="xl-3 lg-3 md-6 sm-6 xs-6">
                     <Text className="footer-title">join our community</Text>
-                    <List className="footer-link">
-                      {data.links.map((link, index) =>
-                        <ListItem key={index}><Link href={link.url}><a target="_blank">{link.icon} {link.name}</a></Link></ListItem>
-                      )}
-                    </List> 
+                    <Box className="comnunity">
+                      <List className="footer-link">
+                        {data.links1.map((link, index) =>
+                          <ListItem key={index}><Link href={link.url}><a target="_blank"><Image src={link.icon} /> {link.name}</a></Link></ListItem>
+                        )}
+                      </List>
+                      <List className="footer-link">
+                        {data.links2.map((link, index) =>
+                          <ListItem key={index}><Link href={link.url}><a target="_blank"><Image src={link.icon} /> {link.name}</a></Link></ListItem>
+                        )}
+                      </List>
+                    </Box>
                   </Col>
                 </Row>
                </Box>

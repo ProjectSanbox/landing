@@ -37,12 +37,17 @@ h1{
       font-weight: 700;
     }
 
+    .comnunity{
+      display: flex;
+      justify-content: space-between;
+    }
+
     ul{
       margin-bottom: 40px;
       li{
-        font-size: 13px;
+        font-size: 14px;
         color: #ffffff;
-        text-transform: uppercase;
+        text-transform: capitalize;
         margin-bottom: 18px;
         a{
           transition: 0.3s;
@@ -56,10 +61,17 @@ h1{
 
     ul.footer-link{
       li{
+        text-transform: capitalize;
+        img{
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+        }
         a{
           display: flex;
           align-items: center;
           display: block;
+           display: flex;
           svg{
             margin-right: 10px;
           }
