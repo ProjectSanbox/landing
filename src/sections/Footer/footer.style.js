@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const FooterWrapper = styled.div`
-  padding: 80px 0px;
+  padding: 80px 0px 10px 0px;
   background: #17181c;
   h1 {
     font-size: 24px;
@@ -82,6 +82,8 @@ const FooterWrapper = styled.div`
 
   .copyright {
     text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
   }
 
   @media only screen and (max-width: 992px) {

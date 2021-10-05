@@ -34,6 +34,7 @@ const Footer = () => {
               <Box className="footer-heading">
                 <Box className="footer-heading-content">
                   <Image src={logo} />
+                  <a href="mailto: admin@planetsandbox.io">admin@planetsandbox.io</a>
                 </Box>
               </Box>
             </Col>

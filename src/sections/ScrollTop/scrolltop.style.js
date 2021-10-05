@@ -8,8 +8,8 @@ const ScrollTopWrapper = styled.div`
   z-index: 9999;
   button {
     background: ${(props) => props.theme.primaryColor};
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 0;
     margin: 0;
     display: flex;
