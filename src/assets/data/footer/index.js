@@ -37,12 +37,7 @@ export default {
       target: "_self"
     },
     {
-      infoName: "Document",
-      infoLink: "/comming",
-      target: "_self"
-    },
-    {
-      infoName: "Term",
+      infoName: "Term condition",
       infoLink: "//planetsandbox.gitbook.io/planetsandbox-game/terms-and-conditions",
       target: "_blank"
     },
