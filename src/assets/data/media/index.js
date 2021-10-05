@@ -3,6 +3,7 @@ import benzinga from 'assets/images/media/benzinga.png';
 import cryptirank from 'assets/images/media/cryptirank.png';
 import coin68 from 'assets/images/media/coin68.png';
 import sbtc from 'assets/images/media/sbtc.png';
+import investinng from 'assets/images/media/investing.webp'
 
 export default{
     media:[
@@ -30,6 +31,11 @@ export default{
             img: sbtc,
             url: "//www.newsbtc.com/news/company/is-the-future-of-the-nft-metaverse-self-built-worlds/",
             id: "m5"
-        }
+        },
+        {
+            img: investinng,
+            url: "//www.investing.com/news/cryptocurrency-news/planetsandbox-is-a-virtual-world-where-the-only-limits-are-your-imagination-2633994",
+            id: "m6"
+        },
     ]
 }

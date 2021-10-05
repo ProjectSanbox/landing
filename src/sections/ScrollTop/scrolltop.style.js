@@ -3,7 +3,7 @@ import styled from "styled-components";
 const ScrollTopWrapper = styled.div`
   position: fixed;
   right: 20px;
-  top: 90%;
+  top: 80%;
   transform: translateY(-90%);
   z-index: 9999;
   button {

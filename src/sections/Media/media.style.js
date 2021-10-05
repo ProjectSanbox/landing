@@ -58,14 +58,27 @@ const MediaWrapper = styled.div`
     }
   }
 
+  @media only screen and (max-width: 1200px){
+    .media-content{
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .meida-items{
+        margin-bottom: 20px;
+        margin-right: 0!important;
+        margin: 10px 20px;
+      }
+    }
+  }
+
   @media only screen and (max-width: 576px) {
+    padding: 0px 0px 100px 0px;
     .media-content {
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       margin-top: 50px;
       .meida-items {
-        width: 70%;
+        width: 40%;
         margin-right: unset !important;
         margin-bottom: 40px;
         &:nth-child(4) {

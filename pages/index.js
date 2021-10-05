@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
-import Popup from 'sections/Popup';
+import Popup from "sections/Popup";
 import Nav from "sections/Nav";
 import Banner from "sections/Banner";
 import Roadmap from "sections/Roadmap";
@@ -17,27 +17,42 @@ import GlobalStyle from "assets/theme";
 import OurTeam from "sections/OurTeam";
 import Partner from "sections/Partner";
 import Media from "sections/Media";
-import FAQ from "sections/FAQ"
-import ScrollTop from "sections/ScrollTop"
+import FAQ from "sections/FAQ";
+import ScrollTop from "sections/ScrollTop";
+import Contract from "sections/Contract";
 // import Meme from "sections/Meme";
-
 
 const Home = () => {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>
-          PlanetSandbox
-        </title>
+        <title>PlanetSandbox</title>
         <meta
           name="Description"
           content="Planet Sandbox is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battle"
         />
-        <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="upgrade-insecure-requests"
+        />
         <meta name="theme-color" content="#280D57" />
-        <link rel="shortcut icon" type="image/x-icon" sizes="64x64" href={FavIcon} />
-        <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /> 
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          sizes="64x64"
+          href={FavIcon}
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charSet="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
       </Head>
       <GlobalStyle />
       {/* <Popup /> */}
@@ -53,9 +68,10 @@ const Home = () => {
       {/* <Meme /> */}
       <Partner />
       <Media />
-      <FAQ/>
+      <FAQ />
       <Footer />
       <ScrollTop />
+      <Contract/>
     </ThemeProvider>
   );
 };
