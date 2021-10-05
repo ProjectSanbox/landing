@@ -7,7 +7,6 @@ const ContractWrapper = styled.div`
     z-index: 99;
     .contract{
         width: 100%;
-        height: 78px;
         background: rgba(255,255,0,.1);
         text-align: center;
         border-radius: 5px;
@@ -29,7 +28,7 @@ const ContractWrapper = styled.div`
             right: 0px;
             top: 0px;
             svg{
-                font-size: 25px;
+                font-size: 20px;
                 color: 	#EE0000;
             }
         }
