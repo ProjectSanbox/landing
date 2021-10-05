@@ -77,7 +77,7 @@ export default {
             content: "Home"
         },
         {
-            link: "/#video",
+            link: "/#about",
             target: "_self",
             content: "About"
         },

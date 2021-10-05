@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import about_background from 'assets/images/about/about-background.png';
-import thumbnailvideo from 'assets/images/about/thumbnailvideo.jpg'
-import background from 'assets/images/background.png';
-
+import about_background from "assets/images/about/about-background.webp";
+import thumbnailvideo from "assets/images/about/thumbnailvideo.webp";
+import background from "assets/images/background.webp";
 
 const AboutWrapper = styled.div`
   width: 100%;
@@ -12,29 +11,27 @@ const AboutWrapper = styled.div`
   background-size: cover;
   background-position: center;
   position: relative;
-  .about-content{
+  .about-content {
     text-align: center;
-    .screen{
+    .screen {
       display: none;
     }
   }
 
-  .about-video{
+  .about-video {
     width: 68.333%;
     margin: 45px auto 0px;
     z-index: 2;
     position: relative;
-    .plyr__poster{
-      ${thumbnailvideo && 
-          `background-image: url(${thumbnailvideo})!important;`
-      }
+    .plyr__poster {
+      ${thumbnailvideo && `background-image: url(${thumbnailvideo})!important;`}
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
     }
   }
 
-  .about-background{
+  .about-background {
     background-image: url(${about_background});
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,26 +44,26 @@ const AboutWrapper = styled.div`
     z-index: 0;
   }
 
-  @media only screen and (max-width: 992px){
-    .hide{
+  @media only screen and (max-width: 992px) {
+    .hide {
       display: none;
     }
 
-    .about-content{
-      .screen{
+    .about-content {
+      .screen {
         display: block;
       }
     }
 
-    .about-background{
+    .about-background {
       height: 40vh;
       width: 40%;
       bottom: -60px;
     }
   }
 
-  @media only screen and (max-width: 576px){
-    .about-video{
+  @media only screen and (max-width: 576px) {
+    .about-video {
       width: 100%;
     }
   }

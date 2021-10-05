@@ -1,66 +1,78 @@
 import styled from "styled-components";
 
 const FooterWrapper = styled.div`
-  padding: 80px 0px;
-  background: #17181C;
-h1{
+  padding: 80px 0px 10px 0px;
+  background: #17181c;
+  h1 {
     font-size: 24px;
     line-height: 32px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
   }
 
-  p{
-    color: #777E90;
-    font-family: 'Poppins', sans-serif;
+  p {
+    color: #777e90;
+    font-family: "Poppins", sans-serif;
   }
 
-  a{
-    font-family: 'Poppins', sans-serif;
+  a {
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
   }
 
-  .footer-heading-content{
+  .footer-heading-content {
     text-align: center;
     margin-bottom: 40px;
-    img{
+    img {
       width: 300px;
-      margin: auto
+      margin: auto;
     }
   }
 
-  .footer-list{
-    .footer-title{
+  .footer-list {
+    .footer-title {
       font-size: 16px;
-      color: ${props => props.theme.primaryColor};
+      color: ${(props) => props.theme.primaryColor};
       text-transform: uppercase;
       font-weight: 700;
     }
 
-    ul{
+    .comnunity {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    ul {
       margin-bottom: 40px;
-      li{
-        font-size: 13px;
+      li {
+        font-size: 14px;
         color: #ffffff;
-        text-transform: uppercase;
+        text-transform: capitalize;
         margin-bottom: 18px;
-        a{
+        a {
           transition: 0.3s;
-          &:hover{
+          &:hover {
             padding-left: 5px;
-            color: ${props => props.theme.primaryColor};
+            color: ${(props) => props.theme.primaryColor};
           }
         }
       }
     }
 
-    ul.footer-link{
-      li{
-        a{
+    ul.footer-link {
+      li {
+        text-transform: capitalize;
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+        }
+        a {
           display: flex;
           align-items: center;
           display: block;
-          svg{
+          display: flex;
+          svg {
             margin-right: 10px;
           }
         }
@@ -68,23 +80,32 @@ h1{
     }
   }
 
-  .copyright{
+  .copyright {
     text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
   }
 
-  @media only screen and (max-width: 992px){
-
-    .hide{
+  @media only screen and (max-width: 992px) {
+    .hide {
       display: none;
     }
 
-    .copyright{
+    .copyright {
       display: block;
       text-align: center;
     }
 
-    .footer-list{
+    .footer-list {
       text-align: center;
+      .comnunity {
+        justify-content: center;
+        ul {
+          &:not(:last-child) {
+            margin-right: 40px;
+          }
+        }
+      }
     }
   }
 `;

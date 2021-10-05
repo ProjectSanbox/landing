@@ -1,82 +1,79 @@
-.slick-arrow{
-    bottom: -60px;
-    left: 48%;
-    width: 32px;
-    height: 32px;
-    background: #FFD700;
-    border-radius: 50%;
-    top: unset;
-    transform: translateX(-48%);
-    z-index: 3;
-
+.slick-arrow {
+  bottom: -60px;
+  left: 48%;
+  width: 32px;
+  height: 32px;
+  background: #ffd700;
+  border-radius: 50%;
+  top: unset;
+  transform: translateX(-48%);
+  z-index: 3;
 }
 
-.slick-arrow.slick-next{
-    margin-left: 70px;
+.slick-arrow.slick-next {
+  margin-left: 70px;
 }
 
-.slick-arrow.slick-prev img{
-    transform: translate(-50%, -50%) rotate(-180deg);
+.slick-arrow.slick-prev img {
+  transform: translate(-50%, -50%) rotate(-180deg);
 }
 
-.slick-arrow::before{
-    content: "";
-    display: block;
-    position: relative;
+.slick-arrow::before {
+  content: "";
+  display: block;
+  position: relative;
 }
 
-.slick-arrow img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 99;
+.slick-arrow img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
 }
 
-.slick-arrow:hover{
-    background: #FFD700;
+.slick-arrow:hover {
+  background: #ffd700;
 }
 
-
-@media only screen and (max-width: 1200px){
-    .slick-arrow{
-        left: 47%;
-        transform: translateX(-47%);
-    }
+@media only screen and (max-width: 1200px) {
+  .slick-arrow {
+    left: 47%;
+    transform: translateX(-47%);
+  }
 }
 
-@media only screen and (max-width: 992px){
-    .slick-arrow{
-        left: 46%;
-        transform: translateX(-46%);
-    }
+@media only screen and (max-width: 992px) {
+  .slick-arrow {
+    left: 46%;
+    transform: translateX(-46%);
+  }
 }
 
-
-@media only screen and (max-width: 768px){
-    .slick-arrow{
-        left: 45%;
-        transform: translateX(-45%);
-    }
+@media only screen and (max-width: 768px) {
+  .slick-arrow {
+    left: 45%;
+    transform: translateX(-45%);
+  }
 }
 
-@media only screen and (max-width: 576px){
-    .slick-arrow{
-        left: 42%;
-        transform: translateX(-42%);
-    }
+@media only screen and (max-width: 576px) {
+  .slick-arrow {
+    left: 42%;
+    transform: translateX(-42%);
+  }
 }
 
-@media only screen and (max-width: 456px){
-    .slick-arrow{
-        left: 41%;
-        transform: translateX(-41%);
-    }
+@media only screen and (max-width: 456px) {
+  .slick-arrow {
+    left: 41%;
+    transform: translateX(-41%);
+  }
 }
 
-@media only screen and (max-width: 376px){
-    .slick-arrow{
-        left: 40%;
-        transform: translateX(-40%);
-    }
+@media only screen and (max-width: 376px) {
+  .slick-arrow {
+    left: 40%;
+    transform: translateX(-40%);
+  }
 }

@@ -1,8 +1,8 @@
-import buildmode from 'assets/images/gameplay/build-mode.jpg';
+import buildmode from 'assets/images/gameplay/build-mode.webp';
 import build_icon from 'assets/images/gameplay/build-icon.png';
-import multi_mode from 'assets/images/gameplay/multi-mode.jpg';
+import multi_mode from 'assets/images/gameplay/multi-mode.webp';
 import multi_icon from 'assets/images/gameplay/multi-icon.png';
-import pvemode from 'assets/images/gameplay/pve-mode.jpg';
+import pvemode from 'assets/images/gameplay/pve-mode.webp';
 import pve_icon from 'assets/images/gameplay/pve-icon.png'
 
 export default {

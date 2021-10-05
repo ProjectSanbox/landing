@@ -1,41 +1,41 @@
 import styled from "styled-components";
-import background from 'assets/images/roadmap/background.jpg';
+import background from "assets/images/roadmap/background.webp";
 
 const UserMapWrapper = styled.div`
-    position: relative;
-  .usermap-wrapper{
+  position: relative;
+  .usermap-wrapper {
     background-image: url(${background});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 73px 0px;
-    img{
+    img {
       position: relative;
       z-index: 2;
     }
   }
 
-  .overlay{
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
   }
 
-  .roadmap-heading{
+  .roadmap-heading {
     width: 100%;
     text-align: center;
     z-index: 2;
     position: relative;
-    h1{
+    h1 {
       font-size: 48px;
       line-height: 48px;
     }
   }
 
-  @media only screen and (max-width: 576px){
+  @media only screen and (max-width: 576px) {
     padding: 60px 0;
   }
 `;
