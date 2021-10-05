@@ -16,13 +16,19 @@ const Contract = () => {
             <Box className="contract">
               <Text>
                 Smart contract address:
-                0xf3147987a00d35eecc10c731269003ca093740ca
+                0x36bfBb1d5B3C9b336f3D64976599B6020cA805F1
               </Text>
+              <Text>PULV: 0xD59896C6F17F62BB584BBdaAAb8d0E09fDDf691e</Text>
               <Text>
                 Official telegram:{" "}
-                <a target="_blank" href="//t.me/planetsandbox">@planetsandbox</a>, Twitter:{" "}
-                <a target="_blank" href="//twitter.com/planetsandbox">@planetsandbox</a>. Be
-                aware of fake contract addresses and fake social
+                <a target="_blank" href="//t.me/planetsandbox">
+                  @planetsandbox
+                </a>
+                , Twitter:{" "}
+                <a target="_blank" href="//twitter.com/planetsandbox">
+                  @planetsandbox
+                </a>
+                . Be aware of fake contract addresses and fake social
                 groups/accounts!
               </Text>
               <Button onClick={() => setShow(false)}>
