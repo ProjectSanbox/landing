@@ -7,7 +7,7 @@ const ContractWrapper = styled.div`
     z-index: 99;
     .contract{
         width: 100%;
-        background: rgba(255,255,0,.1);
+        background: rgba(255,255,0,.4);
         text-align: center;
         border-radius: 5px;
         padding: 10px 0px;
