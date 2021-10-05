@@ -11,6 +11,7 @@
     "export": "next build && next export -o _static"
   },
   "dependencies": {
+    "@loadable/component": "^5.15.0",
     "@material-ui/core": "^4.11.4",
     "@zeit/next-css": "^1.0.1",
     "aos": "^2.3.4",
