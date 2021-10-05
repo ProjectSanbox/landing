@@ -20,8 +20,8 @@ const Contract = () => {
               </Text>
               <Text>
                 Official telegram:{" "}
-                <a href="//t.me/planetsandbox">@planetsandbox</a>, Twitter:{" "}
-                <a href="//twitter.com/planetsandbox">@planetsandbox</a>. Be
+                <a target="_blank" href="//t.me/planetsandbox">@planetsandbox</a>, Twitter:{" "}
+                <a target="_blank" href="//twitter.com/planetsandbox">@planetsandbox</a>. Be
                 aware of fake contract addresses and fake social
                 groups/accounts!
               </Text>
