@@ -12,7 +12,8 @@ import data from "assets/data/nav";
 import { GoThreeBars } from "react-icons/go";
 import { AiOutlineClose } from "react-icons/ai";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import {BiChevronRight} from 'react-icons/bi';
+import { BiChevronRight } from "react-icons/bi";
+import { HiChevronDown } from "react-icons/hi";
 
 const Nav = () => {
   let count = 0;
@@ -20,6 +21,11 @@ const Nav = () => {
     status: false,
     active: "",
   });
+
+  const [show, setShow] = useState(false);
+
+  const [showChild, setShowChild] = useState(false);
+
   const handleToggleMenu = (value) => {
     setToggle({ ...toggle, status: value });
     if (value === true) {
@@ -95,14 +101,68 @@ const Nav = () => {
               <AiOutlineClose onClick={() => handleToggleMenu(false)} />
             </Button>
             {data.navMobie.map((nav, index) => (
-              <ListItem key={index}>
-                <a
-                  onClick={() => handleToggleMenu(false)}
-                  target={nav.target}
-                  href={nav.link}
-                >
-                  {nav.content}
-                </a>
+              <ListItem className={nav.class} key={index}>
+                {(nav.list && (
+                  <a onClick={() => setShow(true)} href="javascript:0">
+                    {nav.content}
+                  </a>
+                )) || (
+                  <a
+                    onClick={() => handleToggleMenu(false)}
+                    target={nav.target}
+                    href={nav.link}
+                  >
+                    {nav.content}
+                  </a>
+                )}
+
+                {nav.list && (
+                  <List
+                    className={show ? "listChildMobie show" : "listChildMobie"}
+                  >
+                    {nav.list.map((list, i) => (
+                      <ListItem key={i}>
+                        {(list.listChild && (
+                          <a
+                            onClick={() => setShowChild(!showChild)}
+                            id={list.id}
+                            href={list.link}
+                          >
+                            {list.content}
+                          </a>
+                        )) || (
+                          <a id={list.id} href={list.link}>
+                            {list.content}
+                          </a>
+                        )}
+                        {list.listChild && (
+                          <List
+                            className={
+                              showChild
+                                ? "listChildestMobie show"
+                                : "listChildestMobie"
+                            }
+                          >
+                            {list.listChild.map((listChild, i) => (
+                              <ListItem key={i}>
+                                <Image src={listChild.icon} />
+                                <a target="_blank" href={listChild.link}>
+                                  {listChild.content}
+                                </a>
+                              </ListItem>
+                            ))}
+                          </List>
+                        )}
+                        {nav.list && <HiChevronDown className="dropdown" />}
+                      </ListItem>
+                    ))}
+                    <ListItem>
+                      <Button className="menu-close">
+                        <AiOutlineClose onClick={() => setShow(false)} />
+                      </Button>
+                    </ListItem>
+                  </List>
+                )}
               </ListItem>
             ))}
           </List>
@@ -150,7 +210,9 @@ const Nav = () => {
                                 {list.listChild.map((listChild, i) => (
                                   <ListItem key={i}>
                                     <Image src={listChild.icon} />
-                                    <a target="_blank" href={listChild.link}>{listChild.content}</a>
+                                    <a target="_blank" href={listChild.link}>
+                                      {listChild.content}
+                                    </a>
                                   </ListItem>
                                 ))}
                               </List>

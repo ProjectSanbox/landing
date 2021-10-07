@@ -35,7 +35,7 @@ const NavWrapper = styled.div`
       transition: transform linear 0.2s;
       li {
         padding: 15px 0px;
-        &:last-child {
+        &.pitching {
           a {
             padding: 0px 15px 8px 15px;
             border: 1px solid ${(props) => props.theme.primaryColor};
@@ -46,6 +46,44 @@ const NavWrapper = styled.div`
           font-size: 35px;
           font-weight: 700;
         }
+
+        svg.dropdown{
+         position: absolute;
+         font-size: 30px;
+         top: 2%;
+         left: 57%;
+        }
+
+        .listChildMobie{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #17181c;
+          z-index: 99;
+          transform: translateX(-100%);
+          transition: 0.5s;
+          &.show{
+            transform: translateX(0);
+          }
+          li{
+            .listChildestMobie{
+              display: none;
+              &.show{
+                display: block;
+              }
+              li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                  width: 80px;
+                }
+              }
+            }
+          }
+        }
       }
 
       .menu-close {
@@ -53,6 +91,7 @@ const NavWrapper = styled.div`
         top: 20px;
         right: 20px;
         width: 50px;
+        background: transparent;
         height: 50px;
         border-radius: 50%;
         display: flex;
@@ -93,6 +132,7 @@ const NavWrapper = styled.div`
         width: 50px;
         height: 50px;
         border-radius: 50%;
+        background: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -139,7 +179,7 @@ const NavWrapper = styled.div`
             flex-direction: column;
             opacity: 0;
             left: 0;
-            bottom: -132px;
+            bottom: -127px;
             position: absolute;
             width: 200px;
             left: 50%;
@@ -167,6 +207,7 @@ const NavWrapper = styled.div`
               }
 
               &:hover{
+                border: none;
                 .listChildest{
                   opacity: 1;
                 }
@@ -192,6 +233,7 @@ const NavWrapper = styled.div`
                   img {
                     width: 50px;
                     margin-right: 20px;
+                    margin-left: 10px;
                   }
                 }
               }
