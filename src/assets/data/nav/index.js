@@ -1,12 +1,13 @@
+import dextools from 'assets/images/nav/dextools.png';
 
 export default {
     nav:[
         {
-            link: "/",
-            linkActive: "home",
-            target: "_self",
-            content: "Home",
-            class: "home"
+            link: "",
+            linkActive: "staking",
+            target: "_blank",
+            content: "Staking",
+            class: "Staking"
         },
         {
             link: "/#about",
@@ -16,11 +17,30 @@ export default {
             class: "about"
         },
         {
-            link: "/#gameplay",
-            linkActive: "gameplay",
-            target: "_self",
-            content: "GamePlay",
-            class: "gameplay"
+            link: "javascript:0",
+            linkActive: "exchange",
+            target: "javascript:0",
+            content: "Exchange",
+            class: "exchange",
+            list:[
+                {
+                    link: "javascript:0",
+                    content: "Buy PSB",
+                    completed: false,
+                    listChild: [
+                        {
+                            icon: dextools,
+                            content: "DEXTools",
+                            link: "https://www.dextools.io/app/bsc/pair-explorer/0xcb9abf27b2e7b8706f0daf30855b80421b41e9a99"
+                        },
+                    ]
+                },
+                {
+                    link: "javascript:0",
+                    content: "Land",
+                    completed: true                    
+                }
+            ]
         },
         {
             link: "/#nft",
@@ -60,7 +80,8 @@ export default {
             link: "//docsend.com/view/wm76umky6wbzqwmx",
             linkActive: "#",
             target: "_self",
-            content: "Pitching"
+            content: "Pitching",
+            class: "pitching"
         },
         // {
         //     link: "//app.polrare.co/",
@@ -73,8 +94,8 @@ export default {
     navMobie:[
         {
             link: "/",
-            target: "_self",
-            content: "Home"
+            target: "_target",
+            content: "Staking"
         },
         {
             link: "/#about",
@@ -82,9 +103,9 @@ export default {
             content: "About"
         },
         {
-            link: "/#gameplay",
-            target: "_self",
-            content: "GamePlay"
+            link: "javascript:0",
+            target: "_blank",
+            content: "Exchange"
         },
         {
             link: "/#nft",

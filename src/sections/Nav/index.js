@@ -11,6 +11,8 @@ import { useState } from "react";
 import data from "assets/data/nav";
 import { GoThreeBars } from "react-icons/go";
 import { AiOutlineClose } from "react-icons/ai";
+import { RiArrowDropDownLine } from "react-icons/ri";
+import {BiChevronRight} from 'react-icons/bi';
 
 const Nav = () => {
   let count = 0;
@@ -94,7 +96,11 @@ const Nav = () => {
             </Button>
             {data.navMobie.map((nav, index) => (
               <ListItem key={index}>
-                <a onClick={() => handleToggleMenu(false)} target={nav.target} href={nav.link}>
+                <a
+                  onClick={() => handleToggleMenu(false)}
+                  target={nav.target}
+                  href={nav.link}
+                >
                   {nav.content}
                 </a>
               </ListItem>
@@ -130,6 +136,29 @@ const Nav = () => {
                     >
                       {nav.content}
                     </a>
+
+                    {nav.list && <RiArrowDropDownLine />}
+
+                    {nav.list && (
+                      <List className="listChild">
+                        {nav.list.map((list, i) => (
+                          <ListItem key={i}>
+                            <a link={list.link}>{list.content}</a>
+                            {list.listChild && <BiChevronRight />}
+                            {list.listChild && (
+                              <List className="listChildest">
+                                {list.listChild.map((listChild, i) => (
+                                  <ListItem key={i}>
+                                    <Image src={listChild.icon} />
+                                    <a target="_blank" href={listChild.link}>{listChild.content}</a>
+                                  </ListItem>
+                                ))}
+                              </List>
+                            )}
+                          </ListItem>
+                        ))}
+                      </List>
+                    )}
                   </ListItem>
                 ))}
               </List>
