@@ -35,16 +35,54 @@ const NavWrapper = styled.div`
       transition: transform linear 0.2s;
       li {
         padding: 15px 0px;
-        &:last-child {
-          a{
+        &.pitching {
+          a {
             padding: 0px 15px 8px 15px;
             border: 1px solid ${(props) => props.theme.primaryColor};
-            color: ${props => props.theme.primaryColor};
+            color: ${(props) => props.theme.primaryColor};
           }
         }
         a {
           font-size: 35px;
           font-weight: 700;
+        }
+
+        svg.dropdown{
+         position: absolute;
+         font-size: 30px;
+         top: 2%;
+         left: 57%;
+        }
+
+        .listChildMobie{
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #17181c;
+          z-index: 99;
+          transform: translateX(-100%);
+          transition: 0.5s;
+          &.show{
+            transform: translateX(0);
+          }
+          li{
+            .listChildestMobie{
+              display: none;
+              &.show{
+                display: block;
+              }
+              li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                  width: 80px;
+                }
+              }
+            }
+          }
         }
       }
 
@@ -53,6 +91,7 @@ const NavWrapper = styled.div`
         top: 20px;
         right: 20px;
         width: 50px;
+        background: transparent;
         height: 50px;
         border-radius: 50%;
         display: flex;
@@ -93,6 +132,7 @@ const NavWrapper = styled.div`
         width: 50px;
         height: 50px;
         border-radius: 50%;
+        background: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -110,10 +150,96 @@ const NavWrapper = styled.div`
         li {
           padding: 0;
           margin: 0;
-          transition: 0.3s;
+          transition: 1s;
           border: 2px solid transparent;
           cursor: pointer;
           box-sizing: border-box;
+          position: relative;
+          display: flex;
+          align-items: center;
+
+          &:before{
+            content: "";
+            display: block;
+            width: 200px;
+            height: 26px;
+            position: absolute;
+            left: 0;
+            top: 30px;
+          }
+
+          svg {
+            font-size: 20px;
+            margin-top: 5px;
+            position: absolute;
+            right: -20px;
+          }
+
+          .listChild {
+            flex-direction: column;
+            opacity: 0;
+            left: 0;
+            bottom: -127px;
+            position: absolute;
+            width: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background: #17181C;
+            li {
+              width: 100%;
+              margin: 0;
+              padding: 10px 0px;
+              position: relative;
+              a {
+                width: 100%;
+                display: block;
+              }
+
+              svg {
+                right: 30px;
+                font-size: 16px;
+              }
+
+              &:before{
+                content: "";
+                display: none;
+              }
+
+              &:hover{
+                border: none;
+                .listChildest{
+                  opacity: 1;
+                }
+              }
+
+              .listChildest {
+                flex-direction: column;
+                background: #17181C;
+                position: absolute;
+                width: 200px;
+                top: -2px;
+                left: 198px;
+                opacity: 0;
+                transition: 1s;
+                li {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  &:before{
+                    content: "";
+                    display: none;
+                  }
+                  img {
+                    width: 50px;
+                    margin-right: 20px;
+                    margin-left: 10px;
+                  }
+                }
+              }
+            }
+          }
+
           &.active {
             border: 2px solid ${(props) => props.theme.primaryColor};
           }
@@ -128,6 +254,10 @@ const NavWrapper = styled.div`
                 box-shadow: 0 0 0 0 ${(props) => props.theme.primaryColor};
               }
             }
+
+            .listChild{
+              opacity: 1;
+            }
           }
           &:last-child {
             margin-left: 24px;
@@ -137,7 +267,7 @@ const NavWrapper = styled.div`
             margin-left: 10px;
           }
 
-          &:last-child {
+          &.pitching {
             width: 130px;
             height: 33x;
             text-align: center;

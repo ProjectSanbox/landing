@@ -80,6 +80,54 @@ const FooterWrapper = styled.div`
     }
   }
 
+  .priceExchange {
+    display: flex;
+    justify-content: center;
+    p {
+      font-size: 17px;
+      color: #ffffff;
+    }
+    .price {
+      margin-right: 40px;
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      p.percent {
+        color: red;
+      }
+
+      p.price-headinng {
+        margin-bottom: 10px;
+        color: ${(props) => props.theme.primaryColor};
+        font-size: 15px;
+        font-weight: 700;
+      }
+    }
+
+    .available {
+      p.available-heading {
+        font-size: 15px;
+        font-weight: 700;
+        color: ${(props) => props.theme.primaryColor};
+      }
+      div {
+        a {
+          display: flex;
+          align-items: center;
+          p {
+            margin: 0;
+          }
+          img {
+            margin-right: 10px;
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+
   .copyright {
     text-align: center;
     margin-top: 20px;

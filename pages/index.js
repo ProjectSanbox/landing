@@ -1,26 +1,27 @@
 import React from "react";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
-import Popup from "sections/Popup";
-import Nav from "sections/Nav";
-import Banner from "sections/Banner";
-import Roadmap from "sections/Roadmap";
-import About from "sections/About";
-import GamePlay from "sections/Gameplay";
-import Advisor from "sections/Advisor";
-import BackedBy from "sections/BackedBy";
-import GameAssets from "sections/GameAssets";
-import Footer from "sections/Footer";
+import loadable from '@loadable/component'
 import FavIcon from "assets/images/favicon.svg";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
-import OurTeam from "sections/OurTeam";
-import Partner from "sections/Partner";
-import Media from "sections/Media";
-import FAQ from "sections/FAQ";
-import ScrollTop from "sections/ScrollTop";
-import Contract from "sections/Contract";
-// import Meme from "sections/Meme";
+
+const Popup = loadable(() => import("sections/Popup"));
+const Nav = loadable(() => import("sections/Nav"));
+const Banner = loadable(() => import("sections/Banner"));
+const Roadmap = loadable(() => import("sections/Roadmap"));
+const About = loadable(() => import("sections/About"));
+const GamePlay = loadable(() => import("sections/GamePlay"));
+const Advisor = loadable(() => import("sections/Advisor"));
+const BackedBy = loadable(() => import("sections/BackedBy"));
+const GameAssets = loadable(() => import("sections/GameAssets"));
+const OurTeam = loadable(() => import("sections/OurTeam"));
+const Partner = loadable(() => import("sections/Partner"));
+const Media = loadable(() => import("sections/Media"));
+const FAQ = loadable(() => import("sections/FAQ"));
+const ScrollTop = loadable(() => import("sections/ScrollTop"));
+const Contract = loadable(() => import("sections/Contract"));
+const Footer = loadable(() => import("sections/Footer"));
 
 const Home = () => {
   return (
@@ -65,7 +66,6 @@ const Home = () => {
       <OurTeam />
       <Advisor />
       <BackedBy />
-      {/* <Meme /> */}
       <Partner />
       <Media />
       <FAQ />
