@@ -15,11 +15,6 @@ const OurTeamWrapper = styled.div`
   .ourteam-heading {
     text-align: center;
     margin-bottom: 80px;
-    h1 {
-      font-size: 48px;
-      line-height: 48px;
-    }
-
     .screen {
       display: none;
     }

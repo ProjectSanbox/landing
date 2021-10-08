@@ -17,6 +17,7 @@ const BackedBy = loadable(() => import("sections/BackedBy"));
 const GameAssets = loadable(() => import("sections/GameAssets"));
 const OurTeam = loadable(() => import("sections/OurTeam"));
 const Partner = loadable(() => import("sections/Partner"));
+const Audits = loadable(() => import("sections/Audits"));
 const Media = loadable(() => import("sections/Media"));
 const FAQ = loadable(() => import("sections/FAQ"));
 const ScrollTop = loadable(() => import("sections/ScrollTop"));
@@ -67,6 +68,7 @@ const Home = () => {
       <Advisor />
       <BackedBy />
       <Partner />
+      <Audits />
       <Media />
       <FAQ />
       <Footer />

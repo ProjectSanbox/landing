@@ -13,11 +13,6 @@ const PartnerWrapper = styled.div`
       color: ${(props) => props.theme.primaryColor};
       font-weight: 700;
     }
-
-    h1 {
-      font-size: 48px;
-      line-height: 48px;
-    }
   }
 
   .partner-content {
