@@ -13,10 +13,6 @@ const AdvisorWrapper = styled.div`
 
   .adivisor-heading {
     margin-bottom: 80px;
-    h1 {
-      font-size: 48px;
-      line-height: 48px;
-    }
   }
 
   .text-upper {

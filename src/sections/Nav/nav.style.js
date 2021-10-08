@@ -172,7 +172,7 @@ const NavWrapper = styled.div`
             font-size: 20px;
             margin-top: 5px;
             position: absolute;
-            right: -20px;
+            right: 0px;
           }
 
           .listChild {
@@ -190,6 +190,7 @@ const NavWrapper = styled.div`
               width: 100%;
               margin: 0;
               padding: 10px 0px;
+              border: none;
               position: relative;
               a {
                 width: 100%;
@@ -197,7 +198,7 @@ const NavWrapper = styled.div`
               }
 
               svg {
-                right: 30px;
+                right: 10px;
                 font-size: 16px;
               }
 
@@ -218,7 +219,8 @@ const NavWrapper = styled.div`
                 background: #17181C;
                 position: absolute;
                 width: 200px;
-                top: -2px;
+                top: 0px;
+                border: none!important;
                 left: 198px;
                 opacity: 0;
                 transition: 1s;
@@ -230,6 +232,11 @@ const NavWrapper = styled.div`
                     content: "";
                     display: none;
                   }
+                  
+                  &:hover{
+                    border: none;
+                  }
+
                   img {
                     width: 50px;
                     margin-right: 20px;

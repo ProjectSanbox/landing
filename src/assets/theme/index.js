@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import 'aos/dist/aos.css';
+import { createGlobalStyle } from "styled-components";
+import "aos/dist/aos.css";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -76,7 +76,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Poppins', sans-serif;
-  color: ${props => props.theme.bodyColor ? props.theme.bodyColor : '#BEABDF'};
+  color: ${(props) =>
+    props.theme.bodyColor ? props.theme.bodyColor : "#BEABDF"};
   overflow-x: hidden !important;
   font-weight: 400;
   margin: 0;
@@ -102,7 +103,7 @@ h6 {
     line-height: 60px;
     text-transform: uppercase;
     font-weight: 700;
-    color: ${props => props.theme.primaryColor};
+    color: ${(props) => props.theme.primaryColor};
 }
 
 p{
@@ -115,7 +116,7 @@ p{
 
 a{
     text-decoration: none;
-    color: ${props => props.theme.headingColor};
+    color: ${(props) => props.theme.headingColor};
     font-family: 'SFUEurostile', sans-serif;
   }
   img{
@@ -158,6 +159,18 @@ button, .btn{
   display: none!important;
   box-shadow: none;
 }
-`
 
-export default GlobalStyle
+@media only screen and (max-width: 576px){
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 35px;
+    line-height: 35px;
+}
+}
+`;
+
+export default GlobalStyle;

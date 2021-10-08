@@ -29,10 +29,6 @@ const UserMapWrapper = styled.div`
     text-align: center;
     z-index: 2;
     position: relative;
-    h1 {
-      font-size: 48px;
-      line-height: 48px;
-    }
   }
 
   @media only screen and (max-width: 576px) {

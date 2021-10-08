@@ -9,13 +9,13 @@ export default {
       content: "Staking",
       class: "Staking",
     },
-    {
-      link: "/#about",
-      linkActive: "about",
-      target: "_self",
-      content: "About",
-      class: "about",
-    },
+    // {
+    //   link: "/#about",
+    //   linkActive: "about",
+    //   target: "_self",
+    //   content: "About",
+    //   class: "about",
+    // },
     {
       link: "javascript:0",
       linkActive: "exchange",
@@ -42,13 +42,13 @@ export default {
         },
       ],
     },
-    {
-      link: "/#nft",
-      linkActive: "nft",
-      target: "_self",
-      content: "NFT",
-      class: "nft",
-    },
+    // {
+    //   link: "/#nft",
+    //   linkActive: "nft",
+    //   target: "_self",
+    //   content: "NFT",
+    //   class: "nft",
+    // },
     {
       link: "//drive.google.com/file/d/1231HjfdpF0Ep1niBj8KNagWzkMR7txHS/view",
       linkActive:
@@ -98,12 +98,12 @@ export default {
       content: "Staking",
       class: "staking"
     },
-    {
-      link: "/#about",
-      target: "_self",
-      content: "About",
-      class: "about"
-    },
+    // {
+    //   link: "/#about",
+    //   target: "_self",
+    //   content: "About",
+    //   class: "about"
+    // },
     {
       link: "javascript:0",
       target: "_blank",
@@ -131,12 +131,12 @@ export default {
         },
       ],
     },
-    {
-      link: "/#nft",
-      target: "_self",
-      content: "NFT",
-      class: "nft"
-    },
+    // {
+    //   link: "/#nft",
+    //   target: "_self",
+    //   content: "NFT",
+    //   class: "nft"
+    // },
     {
       link: "//drive.google.com/file/d/1231HjfdpF0Ep1niBj8KNagWzkMR7txHS/view",
       target: "_blank",
