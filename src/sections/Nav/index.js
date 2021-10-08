@@ -10,7 +10,7 @@ import Link from "next/link";
 import { useState } from "react";
 import data from "assets/data/nav";
 import { GoThreeBars } from "react-icons/go";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineRight } from "react-icons/ai";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { BiChevronRight } from "react-icons/bi";
 import { HiChevronDown } from "react-icons/hi";
@@ -115,6 +115,8 @@ const Nav = () => {
                     {nav.content}
                   </a>
                 )}
+
+                {nav.list && <AiOutlineRight />}
 
                 {nav.list && (
                   <List

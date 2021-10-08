@@ -47,14 +47,25 @@ const NavWrapper = styled.div`
           font-weight: 700;
         }
 
-        svg.dropdown{
-         position: absolute;
-         font-size: 30px;
-         top: 2%;
-         left: 57%;
+        &.exchange {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          svg {
+            font-size: 30px;
+            margin-top: 12px;
+            margin-left: 8px;
+          }
         }
 
-        .listChildMobie{
+        svg.dropdown {
+          position: absolute;
+          font-size: 30px;
+          top: 2.7%;
+          left: 57%;
+        }
+
+        .listChildMobie {
           position: absolute;
           top: 0;
           left: 0;
@@ -64,21 +75,26 @@ const NavWrapper = styled.div`
           z-index: 99;
           transform: translateX(-100%);
           transition: 0.5s;
-          &.show{
+          &.show {
             transform: translateX(0);
           }
-          li{
-            .listChildestMobie{
+          li {
+            svg {
+              margin: 0;
+            }
+
+            .listChildestMobie {
               display: none;
-              &.show{
+              &.show {
                 display: block;
               }
-              li{
+              li {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                img{
-                  width: 80px;
+                img {
+                  width: 60px;
+                  margin-right: 10px;
                 }
               }
             }
@@ -158,7 +174,7 @@ const NavWrapper = styled.div`
           display: flex;
           align-items: center;
 
-          &:before{
+          &:before {
             content: "";
             display: block;
             width: 200px;
@@ -177,7 +193,7 @@ const NavWrapper = styled.div`
 
           .listChild {
             flex-direction: column;
-            opacity: 0;
+            opacity: 1;
             left: 0;
             bottom: -127px;
             position: absolute;
@@ -185,7 +201,7 @@ const NavWrapper = styled.div`
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
-            background: #17181C;
+            background: #17181c;
             li {
               width: 100%;
               margin: 0;
@@ -202,25 +218,25 @@ const NavWrapper = styled.div`
                 font-size: 16px;
               }
 
-              &:before{
+              &:before {
                 content: "";
                 display: none;
               }
 
-              &:hover{
+              &:hover {
                 border: none;
-                .listChildest{
+                .listChildest {
                   opacity: 1;
                 }
               }
 
               .listChildest {
                 flex-direction: column;
-                background: #17181C;
+                background: #17181c;
                 position: absolute;
                 width: 200px;
                 top: 0px;
-                border: none!important;
+                border: none !important;
                 left: 198px;
                 opacity: 0;
                 transition: 1s;
@@ -228,12 +244,12 @@ const NavWrapper = styled.div`
                   display: flex;
                   justify-content: center;
                   align-items: center;
-                  &:before{
+                  &:before {
                     content: "";
                     display: none;
                   }
-                  
-                  &:hover{
+
+                  &:hover {
                     border: none;
                   }
 
@@ -262,7 +278,7 @@ const NavWrapper = styled.div`
               }
             }
 
-            .listChild{
+            .listChild {
               opacity: 1;
             }
           }
