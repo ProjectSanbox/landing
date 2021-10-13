@@ -19,7 +19,7 @@ export default {
         {
             asset: desert_land,
             name: "Desert Land",
-            info: "The land of arid valleys",
+            info: "Coming Soon",
             id: "nft1"
         },
         {
@@ -31,7 +31,7 @@ export default {
         {
             asset: arctic_land,
             name: "Arctic Land",
-            info: "The land of the cold",
+            info: "Coming Soon",
             id: "nft3"
         },
         {
@@ -61,7 +61,7 @@ export default {
         {
             asset: grass_land,
             name: "Grass Land",
-            info: "The land gives the feeling of giant green grassland",
+            info: "Coming Soon",
             id: "nft8"
         },
         {
@@ -85,7 +85,7 @@ export default {
         {
             asset: mountain_land,
             name: "Mountain Land",
-            info: "The land has mountains with different climates",
+            info: "Coming Soon",
             id: "nft12"
         },
         {
@@ -103,7 +103,7 @@ export default {
         {
             asset: toxicwaste_land,
             name: "Toxic Waste Land",
-            info: " The land with deadly poison",
+            info: "Coming Soon",
             id: "nft15"
         },
     ]
