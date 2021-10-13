@@ -193,7 +193,7 @@ const NavWrapper = styled.div`
 
           .listChild {
             flex-direction: column;
-            opacity: 1;
+            opacity: 0;
             left: 0;
             bottom: -127px;
             position: absolute;
