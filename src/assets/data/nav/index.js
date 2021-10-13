@@ -3,7 +3,7 @@ import pancake from "assets/images/nav/pancake.svg";
 export default {
   nav: [
     {
-      link: "",
+      link: "//staking.planetsandbox.io/",
       linkActive: "staking",
       target: "_blank",
       content: "Staking",
@@ -93,8 +93,8 @@ export default {
   ],
   navMobie: [
     {
-      link: "/",
-      target: "_target",
+      link: "//staking.planetsandbox.io/",
+      target: "_blank",
       content: "Staking",
       class: "staking"
     },
