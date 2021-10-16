@@ -150,7 +150,7 @@ const Footer = () => {
                 >
                   {" "}
                   <Image src={pancake} />
-                  <Text>Dextools</Text>
+                  <Text>PancakeSwap</Text>
                 </a>
               </Box>
             </Box>
