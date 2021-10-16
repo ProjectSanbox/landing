@@ -6,7 +6,7 @@ import Button from "reusecore/Button";
 import { Container } from "reusecore/Layout";
 import logo from "assets/images/logo.png";
 import { List, ListItem } from "reusecore/List";
-import Link from "next/link";
+
 import { useState } from "react";
 import data from "assets/data/nav";
 import { GoThreeBars } from "react-icons/go";
