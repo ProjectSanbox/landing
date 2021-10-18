@@ -6,17 +6,14 @@ const FooterWrapper = styled.div`
   h1 {
     font-size: 24px;
     line-height: 32px;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
   }
 
   p {
     color: #777e90;
-    font-family: "Poppins", sans-serif;
   }
 
   a {
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
   }
 
