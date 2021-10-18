@@ -48,7 +48,6 @@ const OurTeamWrapper = styled.div`
           font-size: 20px;
           font-weight: 700;
           text-transform: uppercase;
-          font-family: "Goma Block", sans-serif;
         }
 
         &.ourteam-role {

@@ -114,6 +114,10 @@ p{
     font-size: 20px;
 }
 
+span{
+  font-family: 'SFUEurostile', sans-serif;
+}
+
 a{
     text-decoration: none;
     color: ${(props) => props.theme.headingColor};
