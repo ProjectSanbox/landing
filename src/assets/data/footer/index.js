@@ -53,7 +53,7 @@ export default {
     },
     {
       documentName: "Whitepaper",
-      documentLink: "/comming"
+      documentLink: "//planetsandbox.gitbook.io/planetsandbox-game"
     },
   ],
   links1: [
