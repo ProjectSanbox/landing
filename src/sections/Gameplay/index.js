@@ -7,7 +7,6 @@ import Text from "reusecore/Text";
 import Image from "reusecore/Image";
 import { List, ListItem } from "reusecore/List";
 import { Container, Row, Col } from "reusecore/Layout";
-import { NextArrow, PrevArrow } from "sections/Custom/customArrows";
 import data from "assets/data/gameplay";
 import AOS from "aos";
 

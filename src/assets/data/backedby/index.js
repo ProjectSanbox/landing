@@ -49,12 +49,6 @@ export default {
 
         },
         {
-            imageSrc: illuvium,
-            src: "/",
-            id: "b11",
-
-        },
-        {
             imageSrc: icetea,
             src: "//www.gamefi.com/",
             id: "b4",

@@ -53,7 +53,7 @@ export default {
     },
     {
       documentName: "Whitepaper",
-      documentLink: "/comming"
+      documentLink: "//planetsandbox.gitbook.io/planetsandbox-game"
     },
   ],
   links1: [
@@ -77,19 +77,12 @@ export default {
   links2: [
     {
       icon: discord,
-      url: "/",
+      url: "//discord.gg/zwpC6EAatV",
       name: "Discord",
     },
-
-    {
-      icon: instagram,
-      url: "/",
-      name: "Instagram"
-    },
-    
     {
       icon: youtube,
-      url: "//www.youtube.com/watch?v=ML1pWYdm1WE",
+      url: "//www.youtube.com/c/PlanetSandboxOfficial/featured",
       name: "Youtube"
     },
   ],
