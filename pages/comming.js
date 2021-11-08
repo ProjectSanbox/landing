@@ -60,7 +60,7 @@ const CommingSoon = () =>{
             </Head>
             <GlobalStyle />
             <CommingSoonWrapper>
-                <Heading>Comming Soon</Heading>
+                <Heading>Coming Soon</Heading>
                 <Button>
                     <a rel="preload" href="/">Back</a>
                 </Button>
