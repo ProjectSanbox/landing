@@ -2,8 +2,8 @@ import telegram from 'assets/images/footer/telegram.png';
 import twitter from 'assets/images/footer/twitter.png';
 import medium from 'assets/images/footer/medium.png';
 import discord from 'assets/images/footer/discord.png';
-import instagram from 'assets/images/footer/instagram.png';
 import youtube from 'assets/images/footer/youtube.png';
+import facebook from 'assets/images/footer/facebook.png';
 
 
 export default {
@@ -84,6 +84,10 @@ export default {
       icon: youtube,
       url: "//www.youtube.com/c/PlanetSandboxOfficial/featured",
       name: "Youtube"
+    }, {
+      icon: facebook,
+      url: "//www.facebook.com/planetsandbox",
+      name: "Facebook"
     },
   ],
 };
