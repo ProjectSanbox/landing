@@ -103,7 +103,7 @@ export default {
         },
         {
           link: "javascript:0",
-          content: "Land (Comming soon)",
+          content: "Land (Coming soon)",
           completed: true,
           id: "land",
         },

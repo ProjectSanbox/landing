@@ -18161,7 +18161,7 @@ __webpack_require__.r(__webpack_exports__);
       }]
     }, {
       link: "javascript:0",
-      content: "Land (Comming soon)",
+      content: "Land (Coming soon)",
       completed: true,
       id: "land"
     }]

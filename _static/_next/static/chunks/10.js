@@ -1584,7 +1584,7 @@ var Introduce = function Introduce() {
   var videoSrc = {
     type: "video",
     sources: [{
-      src: "https://www.youtube.com/watch?v=dlZf2Wmhn0M&ab_channel=PlanetSandboxOfficial",
+      src: "https://www.youtube.com/watch?v=dlZf2Wmhn0M",
       provider: "youtube"
     }]
   };

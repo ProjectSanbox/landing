@@ -13941,10 +13941,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_footer_medium_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_footer_medium_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _images_footer_discord_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/footer/discord.png */ "./src/assets/images/footer/discord.png");
 /* harmony import */ var _images_footer_discord_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_footer_discord_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _images_footer_instagram_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/footer/instagram.png */ "./src/assets/images/footer/instagram.png");
-/* harmony import */ var _images_footer_instagram_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_footer_instagram_png__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _images_footer_youtube_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/footer/youtube.png */ "./src/assets/images/footer/youtube.png");
-/* harmony import */ var _images_footer_youtube_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_footer_youtube_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_footer_youtube_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/footer/youtube.png */ "./src/assets/images/footer/youtube.png");
+/* harmony import */ var _images_footer_youtube_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_footer_youtube_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_footer_facebook_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/footer/facebook.png */ "./src/assets/images/footer/facebook.png");
+/* harmony import */ var _images_footer_facebook_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_footer_facebook_png__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -13981,13 +13981,13 @@ __webpack_require__.r(__webpack_exports__);
   }],
   documentation: [{
     documentName: "About us",
-    documentLink: "/comming"
+    documentLink: "/coming"
   }, {
     documentName: "Policy",
-    documentLink: "/comming"
+    documentLink: "/coming"
   }, {
     documentName: "Whitepaper",
-    documentLink: "/comming"
+    documentLink: "//planetsandbox.gitbook.io/planetsandbox-game"
   }],
   links1: [{
     icon: _images_footer_telegram_png__WEBPACK_IMPORTED_MODULE_0___default.a,
@@ -14004,16 +14004,16 @@ __webpack_require__.r(__webpack_exports__);
   }],
   links2: [{
     icon: _images_footer_discord_png__WEBPACK_IMPORTED_MODULE_3___default.a,
-    url: "/",
+    url: "//discord.gg/zwpC6EAatV",
     name: "Discord"
   }, {
-    icon: _images_footer_instagram_png__WEBPACK_IMPORTED_MODULE_4___default.a,
-    url: "/",
-    name: "Instagram"
-  }, {
-    icon: _images_footer_youtube_png__WEBPACK_IMPORTED_MODULE_5___default.a,
-    url: "//www.youtube.com/watch?v=ML1pWYdm1WE",
+    icon: _images_footer_youtube_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    url: "//www.youtube.com/c/PlanetSandboxOfficial/featured",
     name: "Youtube"
+  }, {
+    icon: _images_footer_facebook_png__WEBPACK_IMPORTED_MODULE_5___default.a,
+    url: "//www.facebook.com/planetsandbox",
+    name: "Facebook"
   }]
 });
 
@@ -14026,18 +14026,18 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFLSURBVHgBtZaLUcMwDIaVXgbICB4BNsgGZAO6Ad4gZgJgAneFTmDYgA3CBnQDIVHlUHN+JS3fnS45W5Z/KbESgAyI2JGNZIFswj++ZcySGVgLL5IAtfjqjcjxSRSuhdfYUvARr2fMKb8VNlbz2rIM4u8yPhzL6A081tPLmr7gF7T6NfRKmCv4djvyG2AjTdM4utyTvSVcLKsIuCEDXLz3Cd/Q0twd5HknO8r9ixrfU4AHUf+VWGugoNYqhWaRQan+v7SQ5kA1fpVgfUWmUVpJz0TmniX4ni4etnHaQaJ+pH4ef4TtfPIGH7EZUt7JrZ4/KUEdlDnOPT+GU5vxG+Px8pBNWMbMziEyyf0k+mCxrut6vSDX7Dye+w77DFh3MC+bnWxi8XbEPzxYeXgKOMiB50z+55O5eCaHFcEDXvF3YSWAzmqSMS5p9jz8ACWG8nwI5wUBAAAAAElFTkSuQmCC"
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF0SURBVHgBtVbtUcMwDFV6/U9H8Ahlg27QsgEbECZImYBjgoYNygQJE5QN0g2aDcQTkRM3OHZCyrvT+fNJfrZihygAZl7BMlgBq7jDRftSmKGpEJI6GIvD6ECY+KQrnArhpDHnGc9HFlr5rdAqSeyeozjBVk7MN9iRxsHAXh1+DbtPkuRsV3/oL4EmApS856KwA8ankSbCE0CwWmJsN4Is0tfUSG+3EVtQRqipkIuQAlV44t+pe5WWAwoK4oGcd4iPPIxLJEC1oOvM8WGrpWTUs9YfYF/ChZN1gGsWFIfR8gy703rtjIcC0FKJJjDnkxqVdk5JXWLU2h5CHT1kAZob7l1maO+4yS7b9h7yQlcYhKRj+1V2fUdYHaF+2Dvfh9jh/yiLKDBLWQUqJeZsenzJ/fdIjC3miJIXz1ju3kXyMf3lDbDIegrEl+nLTfl28D88GNjzfOwpBG6U/M+T6QSRM8knOC94xt9Fqg5cVZX2yZYG0/kbT5I/fvSNeisAAAAASUVORK5CYII="
 
 /***/ }),
 
-/***/ "./src/assets/images/footer/instagram.png":
-/*!************************************************!*\
-  !*** ./src/assets/images/footer/instagram.png ***!
-  \************************************************/
+/***/ "./src/assets/images/footer/facebook.png":
+/*!***********************************************!*\
+  !*** ./src/assets/images/footer/facebook.png ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG6SURBVHgBtVbheYIwED38+r92AukGdgJ1grpB7QRmA3ADO4G4gZ0AO4FuAE5gO0H6Di42YAhQ2/d97yNeknt3l3BI5IHWeghGYApm+gdnsSkwpL7gTeKgKzadhbBwKRH2Be9Rbc4jfTsiX+R/hUsmgak5HgdwaGl+gm/gTsYu8L4xuJSxvfcpCILcCGzwWFgLcnAmgi9UFbZxAhMZ1wPcQ2BmbsxVimJvO+w1eADHYOyYHw6gNHdEdpSMKhGBK2HORITKWrtz+FEs8OyYyKha01WRbumEU3/Ec8sZivN7cp/ThBrKMAITGbNYcU7W/EZsqfmt3aXOBtR8gAYc6ZSql2DBdcfzo2VvOKBucKXfFlgBFshb1kxQcz7IrWXbwran8gp7A7sTgdCzaIpyRHDIZUl4EwvqsiWELQJHzsBVxweqliWWw56Ccz5ctlnzpwaxd9Pz64jl5enSVc9yg5RjLjStIpXoDIpeIuMFOCI3vsC1jNNaFglK+eprdjmVze5IzReB1/OLqui6URbN7mJpSPG3cH94tLth9UVMPugyk//5ZFoifCuSHs5TfcO/CyUO7KwysXFJvS3jG+apxq2o/NEwAAAAAElFTkSuQmCC"
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEpSURBVHgBtZaNccIwDIWVHANkhIzABmWDdoO2E9QbhG7ABjBCO4FhAsIEYQPYQOgd4nC4YCsk+e6Us31+kvwfogjMXIhVYl6s4TsnbXNiJfUFInVgZW0OJB1/NMO+QONSziseThXLfCxc15y/Mi3PgK8yDLA2CldiRaDzkb4+zN6C75hWn9AUufT7IBuHh/VCwHlC42byeScb56CMpBYGzRuysSxu68RKeS62ENsndA1GUBgyqbMsO94qUq41UEpXzsjGJ5yJ4606/oJYLQ63L7EYy0DjjZoTdtGRpqNGgB1Nxz8CrGg6/nJZOOzvLY3PBjsv18o3tQ/SUODrt9Wih2ksuh8ebEUezpJi8HUk0zyZQRBc4Zsezj0P+Ltw6iAcVaNtmNLoXXYB0DAZvDI3InkAAAAASUVORK5CYII="
 
 /***/ }),
 
@@ -14634,7 +14634,7 @@ __webpack_require__.r(__webpack_exports__);
 var FooterWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "footerstyle__FooterWrapper",
   componentId: "yrnfwz-0"
-})(["padding:80px 0px 10px 0px;background:#17181c;h1{font-size:24px;line-height:32px;font-family:\"Poppins\",sans-serif;font-weight:400;}p{color:#777e90;font-family:\"Poppins\",sans-serif;}a{font-family:\"Poppins\",sans-serif;font-weight:400;}.footer-heading-content{text-align:center;margin-bottom:40px;img{width:300px;margin:auto;}}.footer-list{.footer-title{font-size:16px;color:", ";text-transform:uppercase;font-weight:700;}.comnunity{display:flex;justify-content:space-between;}ul{margin-bottom:40px;li{font-size:14px;color:#ffffff;text-transform:capitalize;margin-bottom:18px;a{transition:0.3s;&:hover{padding-left:5px;color:", ";}}}}ul.footer-link{li{text-transform:capitalize;img{width:24px;height:24px;margin-right:8px;}a{display:flex;align-items:center;display:block;display:flex;svg{margin-right:10px;}}}}}.priceExchange{display:flex;justify-content:center;p{font-size:17px;color:#ffffff;}.price{margin-right:40px;p{margin:0;padding:0;}p.percent{color:red;}p.price-headinng{margin-bottom:10px;color:", ";font-size:15px;font-weight:700;}}.available{p.available-heading{font-size:15px;font-weight:700;color:", ";}div{a{display:flex;align-items:center;p{margin:0;}img{margin-right:10px;width:30px;}}}}}.copyright{text-align:center;margin-top:20px;font-size:14px;}@media only screen and (max-width:992px){.hide{display:none;}.copyright{display:block;text-align:center;}.footer-list{text-align:center;.comnunity{justify-content:center;ul{&:not(:last-child){margin-right:40px;}}}}}"], function (props) {
+})(["padding:80px 0px 10px 0px;background:#17181c;h1{font-size:24px;line-height:32px;font-weight:400;}p{color:#777e90;}a{font-weight:400;}.footer-heading-content{text-align:center;margin-bottom:40px;img{width:300px;margin:auto;}}.footer-list{.footer-title{font-size:16px;color:", ";text-transform:uppercase;font-weight:700;}.comnunity{display:flex;justify-content:space-between;}ul{margin-bottom:40px;li{font-size:14px;color:#ffffff;text-transform:capitalize;margin-bottom:18px;a{transition:0.3s;&:hover{padding-left:5px;color:", ";}}}}ul.footer-link{li{text-transform:capitalize;img{width:24px;height:24px;margin-right:8px;}a{display:flex;align-items:center;display:block;display:flex;svg{margin-right:10px;}}}}}.priceExchange{display:flex;justify-content:center;p{font-size:17px;color:#ffffff;}.price{margin-right:40px;p{margin:0;padding:0;}p.percent{color:red;}p.price-headinng{margin-bottom:10px;color:", ";font-size:15px;font-weight:700;}}.available{p.available-heading{font-size:15px;font-weight:700;color:", ";}div{a{display:flex;align-items:center;p{margin:0;}img{margin-right:10px;width:30px;}}}}}.copyright{text-align:center;margin-top:20px;font-size:14px;}@media only screen and (max-width:992px){.hide{display:none;}.copyright{display:block;text-align:center;}.footer-list{text-align:center;.comnunity{justify-content:center;ul{&:not(:last-child){margin-right:40px;}}}}}"], function (props) {
   return props.theme.primaryColor;
 }, function (props) {
   return props.theme.primaryColor;
@@ -15176,7 +15176,7 @@ var Footer = function Footer() {
       lineNumber: 153,
       columnNumber: 19
     }
-  }, "Dextools"))))), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "PancakeSwap"))))), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: "copyright",
     __self: _this,
     __source: {

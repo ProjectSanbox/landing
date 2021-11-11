@@ -4296,10 +4296,6 @@ __webpack_require__.r(__webpack_exports__);
     src: "/",
     id: "b12"
   }, {
-    imageSrc: _images_backedby_illuvium_png__WEBPACK_IMPORTED_MODULE_9___default.a,
-    src: "/",
-    id: "b11"
-  }, {
     imageSrc: _images_backedby_icetea_png__WEBPACK_IMPORTED_MODULE_2___default.a,
     src: "//www.gamefi.com/",
     id: "b4"

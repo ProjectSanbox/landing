@@ -770,7 +770,7 @@ module.exports = "/_next/static/images/background-b1ad1ee959d233f0589fb12eee28ef
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/roadmap-01df53f603f12d2a19886b5133c7dadf.svg";
+module.exports = "/_next/static/images/roadmap-7bd0ce9548e85e87a15992b38c4c9101.svg";
 
 /***/ }),
 

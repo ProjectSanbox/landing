@@ -1,32 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[7],{
 
-/***/ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/defineProperty.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
@@ -5598,33 +5571,27 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./src/assets/data/ourteam/index.js":
-/*!******************************************!*\
-  !*** ./src/assets/data/ourteam/index.js ***!
-  \******************************************/
+/***/ "./src/assets/data/gameplay/index.js":
+/*!*******************************************!*\
+  !*** ./src/assets/data/gameplay/index.js ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _images_team_steven_lee_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../images/team/steven-lee.png */ "./src/assets/images/team/steven-lee.png");
-/* harmony import */ var _images_team_steven_lee_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_team_steven_lee_png__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_team_chu_anthony_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/team/chu-anthony.png */ "./src/assets/images/team/chu-anthony.png");
-/* harmony import */ var _images_team_chu_anthony_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_team_chu_anthony_png__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _images_team_minh_nguyen_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/team/minh-nguyen.png */ "./src/assets/images/team/minh-nguyen.png");
-/* harmony import */ var _images_team_minh_nguyen_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_team_minh_nguyen_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _images_team_viet_nguyen_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/team/viet-nguyen.png */ "./src/assets/images/team/viet-nguyen.png");
-/* harmony import */ var _images_team_viet_nguyen_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_team_viet_nguyen_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _images_team_hoan_ngo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/team/hoan-ngo.png */ "./src/assets/images/team/hoan-ngo.png");
-/* harmony import */ var _images_team_hoan_ngo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_team_hoan_ngo_png__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _images_team_quyen_nguyen_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/team/quyen-nguyen.png */ "./src/assets/images/team/quyen-nguyen.png");
-/* harmony import */ var _images_team_quyen_nguyen_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_team_quyen_nguyen_png__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _images_team_hai_ngo_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../images/team/hai-ngo.png */ "./src/assets/images/team/hai-ngo.png");
-/* harmony import */ var _images_team_hai_ngo_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_team_hai_ngo_png__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _images_team_huong_nguyen_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../images/team/huong-nguyen.png */ "./src/assets/images/team/huong-nguyen.png");
-/* harmony import */ var _images_team_huong_nguyen_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_team_huong_nguyen_png__WEBPACK_IMPORTED_MODULE_7__);
-
-
+/* harmony import */ var _images_gameplay_build_mode_webp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../images/gameplay/build-mode.webp */ "./src/assets/images/gameplay/build-mode.webp");
+/* harmony import */ var _images_gameplay_build_mode_webp__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_gameplay_build_mode_webp__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_gameplay_build_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/gameplay/build-icon.png */ "./src/assets/images/gameplay/build-icon.png");
+/* harmony import */ var _images_gameplay_build_icon_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_gameplay_build_icon_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_gameplay_multi_mode_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/gameplay/multi-mode.webp */ "./src/assets/images/gameplay/multi-mode.webp");
+/* harmony import */ var _images_gameplay_multi_mode_webp__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_gameplay_multi_mode_webp__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_gameplay_multi_icon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/gameplay/multi-icon.png */ "./src/assets/images/gameplay/multi-icon.png");
+/* harmony import */ var _images_gameplay_multi_icon_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_gameplay_multi_icon_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_gameplay_pve_mode_webp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/gameplay/pve-mode.webp */ "./src/assets/images/gameplay/pve-mode.webp");
+/* harmony import */ var _images_gameplay_pve_mode_webp__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_gameplay_pve_mode_webp__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_gameplay_pve_icon_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/gameplay/pve-icon.png */ "./src/assets/images/gameplay/pve-icon.png");
+/* harmony import */ var _images_gameplay_pve_icon_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_gameplay_pve_icon_png__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -5632,154 +5599,102 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  ourteam: [{
-    avatar: _images_team_minh_nguyen_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    name: "Minh Nguyen",
-    job: "CEO/Founder",
-    // desc: "Minh has years of experience in developing a variety of game genres. Having worked in multiple projects with a diverse team of up to 40 developers per-project, he brings quantity technical solutions and smooth team operation.",
-    animation: "flip-left"
+  gameplay: [{
+    poster: _images_gameplay_build_mode_webp__WEBPACK_IMPORTED_MODULE_0___default.a,
+    title: "Building mode​",
+    content: "This is one of the core functions of the game. When the player first enters the game, they will be provided a Builder Tool to customize every object in their inventory.",
+    icon: _images_gameplay_build_icon_png__WEBPACK_IMPORTED_MODULE_1___default.a
   }, {
-    avatar: _images_team_chu_anthony_png__WEBPACK_IMPORTED_MODULE_1___default.a,
-    name: "Anthony Chu",
-    job: "CTO/Co-founder",
-    // desc: "Anthony has years of experience in game 3D AR/VR develop. He",
-    animation: "flip-left"
+    poster: _images_gameplay_multi_mode_webp__WEBPACK_IMPORTED_MODULE_2___default.a,
+    title: "Multiplayer mode​​",
+    content: "",
+    listContent: ["Players can join other's published Land to play game modes.", "Game modes are customized by the Landowner using Rule Tool.", "There are some preset game modes from the publisher as following.", "Players are rewarded with loot boxes, NFT objects, and tokens."],
+    icon: _images_gameplay_multi_icon_png__WEBPACK_IMPORTED_MODULE_3___default.a
   }, {
-    avatar: _images_team_steven_lee_png__WEBPACK_IMPORTED_MODULE_0___default.a,
-    name: "Steven Lee",
-    job: "Co-founder",
-    // desc: "Steven has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
-    animation: "flip-left",
-    linked: ""
-  }, {
-    avatar: _images_team_hoan_ngo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
-    name: "Hoan Ngo",
-    job: "Art Director ",
-    // desc: "Viet has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
-    animation: "flip-left",
-    linked: ""
-  }, {
-    avatar: _images_team_huong_nguyen_png__WEBPACK_IMPORTED_MODULE_7___default.a,
-    name: "Huong Nguyen",
-    job: "Game Design",
-    // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
-    animation: "flip-left",
-    linked: ""
-  }, {
-    avatar: _images_team_viet_nguyen_png__WEBPACK_IMPORTED_MODULE_3___default.a,
-    name: "Viet Nguyen",
-    job: "Project Lead",
-    // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
-    animation: "flip-left",
-    linked: ""
-  }, {
-    avatar: _images_team_hai_ngo_png__WEBPACK_IMPORTED_MODULE_6___default.a,
-    name: "Hai Ngo",
-    job: "Fullstack Developer",
-    // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
-    animation: "flip-left",
-    linked: ""
+    poster: _images_gameplay_pve_mode_webp__WEBPACK_IMPORTED_MODULE_4___default.a,
+    title: "PvE Mode​",
+    content: "Planet Sandbox provides some build-in PvE mode: ",
+    listContent: ["Tower defense: protect your base from NPC like zombies, soldiers", "Racing: finish the track first.Runnable NPC: cyborg, house, hound..."],
+    icon: _images_gameplay_pve_icon_png__WEBPACK_IMPORTED_MODULE_5___default.a
   }]
 });
 
 /***/ }),
 
-/***/ "./src/assets/images/gameplay/play-arrow.png":
+/***/ "./src/assets/images/background.webp":
+/*!*******************************************!*\
+  !*** ./src/assets/images/background.webp ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/background-0da43db40719cb2676faffb6e9ce4ffe.webp";
+
+/***/ }),
+
+/***/ "./src/assets/images/gameplay/build-icon.png":
 /*!***************************************************!*\
-  !*** ./src/assets/images/gameplay/play-arrow.png ***!
+  !*** ./src/assets/images/gameplay/build-icon.png ***!
   \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACPSURBVHgB7ZRbDYAwDEVvUIAEJCABKTgAB+AEKUhAAhLAQWkTPhYC7NUFPnaSk+yrXW6bApk/07ELO7EVErCxdLqyLZShG6VRDSXoRZXYyKJEOCACcjR4PuSpd2wUaGMWKaDLfuqE789nJIpoxSUWrQaypiMisG1MiUiecm6ghHns5N1DGSkoAxyhEEfmOw5X6npq5SYIUQAAAABJRU5ErkJggg=="
+module.exports = "/_next/static/images/build-icon-36c35233046c5db1e7411f06e76aa0a1.png";
 
 /***/ }),
 
-/***/ "./src/assets/images/team/chu-anthony.png":
-/*!************************************************!*\
-  !*** ./src/assets/images/team/chu-anthony.png ***!
-  \************************************************/
+/***/ "./src/assets/images/gameplay/build-mode.webp":
+/*!****************************************************!*\
+  !*** ./src/assets/images/gameplay/build-mode.webp ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/chu-anthony-9e9a0fe5984a3c97dd1290b0abb6582f.png";
+module.exports = "/_next/static/images/build-mode-2d4fa843b0295f4f67efd4d72d190d7d.webp";
 
 /***/ }),
 
-/***/ "./src/assets/images/team/hai-ngo.png":
-/*!********************************************!*\
-  !*** ./src/assets/images/team/hai-ngo.png ***!
-  \********************************************/
+/***/ "./src/assets/images/gameplay/multi-icon.png":
+/*!***************************************************!*\
+  !*** ./src/assets/images/gameplay/multi-icon.png ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/hai-ngo-eff72eb39029f01296377164b3298a42.png";
+module.exports = "/_next/static/images/multi-icon-bd3fe22148e4e0dbc2f941bd7fe73203.png";
 
 /***/ }),
 
-/***/ "./src/assets/images/team/hoan-ngo.png":
-/*!*********************************************!*\
-  !*** ./src/assets/images/team/hoan-ngo.png ***!
-  \*********************************************/
+/***/ "./src/assets/images/gameplay/multi-mode.webp":
+/*!****************************************************!*\
+  !*** ./src/assets/images/gameplay/multi-mode.webp ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/hoan-ngo-ebf4f87b6567579625b8650a7c213597.png";
+module.exports = "/_next/static/images/multi-mode-7adcf96767bfe8fb9cad711f4c146bd6.webp";
 
 /***/ }),
 
-/***/ "./src/assets/images/team/huong-nguyen.png":
+/***/ "./src/assets/images/gameplay/pve-icon.png":
 /*!*************************************************!*\
-  !*** ./src/assets/images/team/huong-nguyen.png ***!
+  !*** ./src/assets/images/gameplay/pve-icon.png ***!
   \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/huong-nguyen-94e068674c9e12dcf0b4995d74e2a6a5.png";
+module.exports = "/_next/static/images/pve-icon-1e59d99c47820ded510cf61ba75260d7.png";
 
 /***/ }),
 
-/***/ "./src/assets/images/team/minh-nguyen.png":
-/*!************************************************!*\
-  !*** ./src/assets/images/team/minh-nguyen.png ***!
-  \************************************************/
+/***/ "./src/assets/images/gameplay/pve-mode.webp":
+/*!**************************************************!*\
+  !*** ./src/assets/images/gameplay/pve-mode.webp ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/minh-nguyen-5ae2db89404932394bd6289a96475c54.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/team/quyen-nguyen.png":
-/*!*************************************************!*\
-  !*** ./src/assets/images/team/quyen-nguyen.png ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/quyen-nguyen-8837012bc3444ea9034b3a7b2449e7b9.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/team/steven-lee.png":
-/*!***********************************************!*\
-  !*** ./src/assets/images/team/steven-lee.png ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/steven-lee-d774348aac0e10201e80bdcfbb5f0dd8.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/team/viet-nguyen.png":
-/*!************************************************!*\
-  !*** ./src/assets/images/team/viet-nguyen.png ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/viet-nguyen-fe263edafd1d43e34af413184a5001a4.png";
+module.exports = "/_next/static/images/pve-mode-e262ee9956bff751e485799bf798871b.webp";
 
 /***/ }),
 
@@ -6221,6 +6136,183 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/reusecore/List/index.js":
+/*!*************************************!*\
+  !*** ./src/reusecore/List/index.js ***!
+  \*************************************/
+/*! exports provided: List, ListItem */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "List", function() { return List; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListItem", function() { return ListItem; });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+
+
+var _this = undefined,
+    _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/reusecore/List/index.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+
+var ListWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].ul.withConfig({
+  displayName: "List__ListWrapper",
+  componentId: "r41fly-0"
+})(["margin:0;padding:0;list-style:none;"]);
+var ListItemWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].li.withConfig({
+  displayName: "List__ListItemWrapper",
+  componentId: "r41fly-1"
+})([""]);
+var List = function List(_ref) {
+  var children = _ref.children,
+      props = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["children"]);
+
+  var AllClasses = ["list"];
+
+  if (props.className) {
+    AllClasses.push(props.className);
+  }
+
+  return __jsx(ListWrapper, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+    className: AllClasses.join(" "),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 5
+    }
+  }), children);
+};
+var ListItem = function ListItem(_ref2) {
+  var children = _ref2.children,
+      props = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref2, ["children"]);
+
+  var AllClasses = ["list__item"];
+
+  if (props.className) {
+    AllClasses.push(props.className);
+  }
+
+  return __jsx(ListItemWrapper, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+    className: AllClasses.join(" "),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 5
+    }
+  }), children);
+};
+
+/***/ }),
+
+/***/ "./src/reusecore/SlickSlider/index.js":
+/*!********************************************!*\
+  !*** ./src/reusecore/SlickSlider/index.js ***!
+  \********************************************/
+/*! exports provided: SlickSlider, SliderItem */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlickSlider", function() { return SlickSlider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SliderItem", function() { return SliderItem; });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _slick_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slick.slider */ "./src/reusecore/SlickSlider/slick.slider.js");
+
+
+
+var _this = undefined,
+    _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/reusecore/SlickSlider/index.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+
+
+var SlickSlider = function SlickSlider(_ref) {
+  var children = _ref.children,
+      className = _ref.className,
+      props = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["children", "className"]);
+
+  var AllClasses = ['slick__slider'];
+
+  if (className) {
+    AllClasses.push(className);
+  }
+
+  return __jsx(_slick_slider__WEBPACK_IMPORTED_MODULE_3__["SliderWrapper"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    className: AllClasses.join(' ')
+  }, props, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 9
+    }
+  }), children);
+};
+
+var SliderItem = function SliderItem(_ref2) {
+  var children = _ref2.children,
+      className = _ref2.className;
+  var AllClasses = ['slick__slider__item'];
+
+  if (className) {
+    AllClasses.push(className);
+  }
+
+  return __jsx(_slick_slider__WEBPACK_IMPORTED_MODULE_3__["SliderItemWrapper"], {
+    className: AllClasses.join(className),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 9
+    }
+  }, children);
+};
+
+
+
+/***/ }),
+
+/***/ "./src/reusecore/SlickSlider/slick.slider.js":
+/*!***************************************************!*\
+  !*** ./src/reusecore/SlickSlider/slick.slider.js ***!
+  \***************************************************/
+/*! exports provided: SliderWrapper, SliderItemWrapper */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SliderWrapper", function() { return SliderWrapper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SliderItemWrapper", function() { return SliderItemWrapper; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var SliderWrapper = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(react_slick__WEBPACK_IMPORTED_MODULE_1___default.a).withConfig({
+  displayName: "slickslider__SliderWrapper",
+  componentId: "sc-183ouyv-0"
+})([""]);
+var SliderItemWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "slickslider__SliderItemWrapper",
+  componentId: "sc-183ouyv-1"
+})([""]);
+
+
+/***/ }),
+
 /***/ "./src/reusecore/Text/index.js":
 /*!*************************************!*\
   !*** ./src/reusecore/Text/index.js ***!
@@ -6288,104 +6380,34 @@ Text.defaultProps = {
 
 /***/ }),
 
-/***/ "./src/sections/Custom/customArrows.js":
-/*!*********************************************!*\
-  !*** ./src/sections/Custom/customArrows.js ***!
-  \*********************************************/
-/*! exports provided: NextArrow, PrevArrow */
+/***/ "./src/sections/GamePlay/gameplay.style.js":
+/*!*************************************************!*\
+  !*** ./src/sections/GamePlay/gameplay.style.js ***!
+  \*************************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NextArrow", function() { return NextArrow; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PrevArrow", function() { return PrevArrow; });
-/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_images_gameplay_play_arrow_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/gameplay/play-arrow.png */ "./src/assets/images/gameplay/play-arrow.png");
-/* harmony import */ var _assets_images_gameplay_play_arrow_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_gameplay_play_arrow_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ "./src/sections/Custom/style.css");
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_3__);
-
-var _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/sections/Custom/customArrows.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _assets_images_background_webp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/background.webp */ "./src/assets/images/background.webp");
+/* harmony import */ var _assets_images_background_webp__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_images_background_webp__WEBPACK_IMPORTED_MODULE_1__);
 
 
-
-function NextArrow(props) {
-  var className = props.className,
-      style = props.style,
-      onClick = props.onClick;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    className: className,
-    style: _objectSpread({}, style),
-    onClick: onClick,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 9
-    }
-  }, __jsx("img", {
-    src: _assets_images_gameplay_play_arrow_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 11
-    }
-  }))));
-}
-function PrevArrow(props) {
-  var className = props.className,
-      style = props.style,
-      onClick = props.onClick;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    className: className,
-    style: _objectSpread({}, style),
-    onClick: onClick,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 9
-    }
-  }, __jsx("img", {
-    src: _assets_images_gameplay_play_arrow_png__WEBPACK_IMPORTED_MODULE_2___default.a,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 11
-    }
-  }))));
-}
+var GamePlayWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "gameplaystyle__GamePlayWrapper",
+  componentId: "sc-6263r4-0"
+})(["width:100%;padding:150px 0px 50px 0px;background-image:url(", ");background-repeat:no-repeat;background-size:cover;background-position:center;.gameplay-heading{.screen{display:none;}}.gameplay-content{margin-top:65px;.gameplay-item{display:flex;align-items:center;align-items:center;.gameplay-image{width:59.3%;margin-right:100px;}.gameplay-intro{width:25.69%;img{width:134px;margin-bottom:30px;}h1{font-size:24px;color:#ffffff;margin:0;padding:0;}p{font-size:18px;}ul{li{font-size:18px;list-style-type:disc;}}}}}.slick-arrow{display:none !important;}ul{bottom:-50px;li{.ft-slick__dots--custom{width:10px;height:10px;background:", ";border-radius:50%;opacity:0.2;}&.slick-active{.ft-slick__dots--custom{opacity:1;}}}}@media only screen and (max-width:1200px){.gameplay-content{.gameplay-item{flex-direction:column;.gameplay-image{width:90%;margin:auto;}.gameplay-intro{width:90%;text-align:center;margin:20px 0px auto;img{margin:auto;}ul{li{position:relative;list-style-type:none;}}}}}}@media only screen and (max-width:1200px){.hide{display:none;}.gameplay-heading{h1{text-align:center;}.screen{display:block;}}}"], _assets_images_background_webp__WEBPACK_IMPORTED_MODULE_1___default.a, function (props) {
+  return props.theme.primaryColor;
+});
+/* harmony default export */ __webpack_exports__["default"] = (GamePlayWrapper);
 
 /***/ }),
 
-/***/ "./src/sections/OurTeam/index.js":
-/*!***************************************!*\
-  !*** ./src/sections/OurTeam/index.js ***!
-  \***************************************/
+/***/ "./src/sections/GamePlay/index.js":
+/*!****************************************!*\
+  !*** ./src/sections/GamePlay/index.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6394,24 +6416,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _ourteam_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ourteam.style */ "./src/sections/OurTeam/ourteam.style.js");
-/* harmony import */ var _reusecore_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../reusecore/Layout */ "./src/reusecore/Layout/index.js");
+/* harmony import */ var _gameplay_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./gameplay.style */ "./src/sections/GamePlay/gameplay.style.js");
+/* harmony import */ var _reusecore_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../reusecore/Box */ "./src/reusecore/Box/index.js");
 /* harmony import */ var _reusecore_Heading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../reusecore/Heading */ "./src/reusecore/Heading/index.js");
-/* harmony import */ var _reusecore_Box__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../reusecore/Box */ "./src/reusecore/Box/index.js");
-/* harmony import */ var _reusecore_Image__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../reusecore/Image */ "./src/reusecore/Image/index.js");
-/* harmony import */ var _reusecore_Text__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../reusecore/Text */ "./src/reusecore/Text/index.js");
-/* harmony import */ var _assets_data_ourteam__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/data/ourteam */ "./src/assets/data/ourteam/index.js");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! aos/dist/aos.css */ "./node_modules/aos/dist/aos.css");
-/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _Custom_customArrows__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../Custom/customArrows */ "./src/sections/Custom/customArrows.js");
+/* harmony import */ var _reusecore_SlickSlider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../reusecore/SlickSlider */ "./src/reusecore/SlickSlider/index.js");
+/* harmony import */ var _reusecore_Text__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../reusecore/Text */ "./src/reusecore/Text/index.js");
+/* harmony import */ var _reusecore_Image__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../reusecore/Image */ "./src/reusecore/Image/index.js");
+/* harmony import */ var _reusecore_List__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../reusecore/List */ "./src/reusecore/List/index.js");
+/* harmony import */ var _reusecore_Layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../reusecore/Layout */ "./src/reusecore/Layout/index.js");
+/* harmony import */ var _assets_data_gameplay__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/data/gameplay */ "./src/assets/data/gameplay/index.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_11__);
 
 
 var _this = undefined,
-    _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/sections/OurTeam/index.js";
+    _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/sections/GamePlay/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -6426,15 +6445,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-
-var OurTeam = function OurTeam() {
+var GamePlay = function GamePlay() {
   var settings = {
     appendDots: function appendDots(dots) {
       return __jsx("ul", {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 15,
           columnNumber: 27
         }
       }, dots);
@@ -6445,34 +6463,20 @@ var OurTeam = function OurTeam() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17,
+          lineNumber: 16,
           columnNumber: 26
         }
       });
     },
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    arrow: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // autoplay: true,
+    autoplaySpeed: 4000,
     responsive: [{
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    }, {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2
-      }
-    }, {
-      breakpoint: 576,
+      breakpoint: 480,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -6480,178 +6484,185 @@ var OurTeam = function OurTeam() {
     }]
   };
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    aos__WEBPACK_IMPORTED_MODULE_10___default.a.init({
+    aos__WEBPACK_IMPORTED_MODULE_11___default.a.init({
       throttleDelay: 99,
       debounceDelay: 50,
       disable: false,
-      duration: 500
+      duration: 500,
+      once: false,
+      mirror: true
     });
   }, []);
-  return __jsx(_ourteam_style__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return __jsx(_gameplay_style__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: "section",
-    id: "ourteam",
+    id: "gameplay",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 48,
       columnNumber: 5
     }
-  }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "ourteam-background",
+  }, __jsx(_reusecore_Layout__WEBPACK_IMPORTED_MODULE_9__["Container"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 49,
       columnNumber: 7
     }
-  }, "\xA0"), __jsx(_reusecore_Layout__WEBPACK_IMPORTED_MODULE_3__["Container"], {
+  }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    className: "gameplay-heading",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 7
-    }
-  }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "ourteam-heading",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 50,
       columnNumber: 9
     }
   }, __jsx(_reusecore_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 51,
       columnNumber: 11
     }
-  }, "Core Team"), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "Gameplay"), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: "hide",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 52,
       columnNumber: 11
     }
-  }, "Behind a great game stand the passionate and talented people in the industry.", __jsx("br", {
+  }, "Planet Sandbox is a virtual world where players can play, build, own, and", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 55,
       columnNumber: 13
     }
-  }), "We want to bring the best experience to all the players."), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }), "monetize their virtual experiences. We empower artists, creators, and players", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 13
+    }
+  }), "to build the platform they always envisioned, providing the means to unleash", __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 13
+    }
+  }), "your creativity.", " "), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: "screen",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 64,
       columnNumber: 11
     }
-  }, "Behind a great game stand the passionate and talented people in the industry. We want to bring the best experience to all the players.")), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "ourteam-content",
+  }, "Planet Sandbox is a virtual world where players can play, build, own, and monetize their virtual experiences. We empower artists, creators, and players to build the platform they always envisioned, providing the means to unleash your creativity.", " "))), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    className: "gameplay-content",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 72,
+      columnNumber: 7
+    }
+  }, __jsx(_reusecore_SlickSlider__WEBPACK_IMPORTED_MODULE_5__["SlickSlider"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, settings, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73,
       columnNumber: 9
     }
-  }, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_9___default.a, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, settings, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 79,
-      columnNumber: 11
-    }
-  }), _assets_data_ourteam__WEBPACK_IMPORTED_MODULE_8__["default"].ourteam.map(function (team, index) {
-    return __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      "data-aos": team.animation,
-      key: index,
-      "data-aos-duration": (index + 1) * 500,
-      className: "ourteam-item",
+  }), _assets_data_gameplay__WEBPACK_IMPORTED_MODULE_10__["default"].gameplay.map(function (gameplay, i) {
+    return __jsx(_reusecore_SlickSlider__WEBPACK_IMPORTED_MODULE_5__["SliderItem"], {
+      key: i,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75,
+        columnNumber: 13
+      }
+    }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      className: "gameplay-item",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76,
+        columnNumber: 15
+      }
+    }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      "data-aos": "fade-right",
+      className: "gameplay-image",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77,
+        columnNumber: 17
+      }
+    }, __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      src: gameplay.poster,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78,
+        columnNumber: 19
+      }
+    })), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      "data-aos": "fade-left",
+      className: "gameplay-intro",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 80,
+        columnNumber: 17
+      }
+    }, __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      src: gameplay.icon,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 81,
-        columnNumber: 15
-      }
-    }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      className: "ourteam-img",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 87,
-        columnNumber: 17
-      }
-    }, __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      src: team.avatar,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 88,
         columnNumber: 19
       }
-    })), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      className: "ourteam-info",
+    }), __jsx(_reusecore_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90,
-        columnNumber: 17
-      }
-    }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      className: "ourteam-name",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 91,
+        lineNumber: 82,
         columnNumber: 19
       }
-    }, team.name), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      className: "ourteam-role",
+    }, gameplay.title), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 92,
+        lineNumber: 83,
         columnNumber: 19
       }
-    }, team.job)));
-  })))), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "content-backgound",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 99,
-      columnNumber: 7
-    }
-  }, "\xA0"));
+    }, gameplay.content), gameplay.listContent && __jsx(_reusecore_List__WEBPACK_IMPORTED_MODULE_8__["List"], {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 85,
+        columnNumber: 21
+      }
+    }, gameplay.listContent.map(function (list, i) {
+      return __jsx(_reusecore_List__WEBPACK_IMPORTED_MODULE_8__["ListItem"], {
+        key: i,
+        __self: _this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 87,
+          columnNumber: 25
+        }
+      }, list);
+    })))));
+  }))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (OurTeam);
-
-/***/ }),
-
-/***/ "./src/sections/OurTeam/ourteam.style.js":
-/*!***********************************************!*\
-  !*** ./src/sections/OurTeam/ourteam.style.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-
-var OurTeamWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "ourteamstyle__OurTeamWrapper",
-  componentId: "hf38g3-0"
-})(["padding:80px 0px 160px 0px;position:relative;z-index:2;.ourteam-background{width:100%;position:absolute;bottom:45%;right:20%;}.ourteam-heading{text-align:center;margin-bottom:80px;.screen{display:none;}}.text-upper{text-transform:uppercase;}.ourteam-content{position:relative;.ourteam-item{display:flex !important;flex-direction:column;align-items:center;justify-content:center;.ourteam-img{width:290px;height:290px;}}.ourteam-info{width:100%;text-align:center;p{margin:0;padding:0;&.ourteam-name{margin-top:20px;color:#fff;font-size:20px;font-weight:700;text-transform:uppercase;font-family:\"Goma Block\",sans-serif;}&.ourteam-role{font-size:16px;color:", ";margin-bottom:30px;font-weight:400;}}}.slick-dots{bottom:-40px;li{width:10px;height:10px;background:rgba(156,41,50,0.5);border-radius:16px;&.slick-active{background:", ";}.ft-slick__dots--custom{width:100%;height:100%;}}}}.slick-arrow{display:none !important;}.content-backgound{width:100%;height:527px;background:radial-gradient( 59.57% 46.53% at 50.34% 46.58%,rgba(61,216,249,0) 0%,#000000 100% );position:absolute;top:30%;z-index:-1;}@media only screen and (max-width:1400px){.ourteam-content{.ourteam-item{.ourteam-img{width:250px;height:250px;}}}}@media only screen and (max-width:1200px){.ourteam-content{.ourteam-item{.ourteam-img{width:270px;height:270px;}}}}@media only screen and (max-width:992px){.ourteam-content{.ourteam-item{.ourteam-img{width:200px;height:200px;}}}}@media only screen and (max-width:768px){.ourteam-content{.ourteam-item{.ourteam-img{width:290px;height:290px;}}}}@media only screen and (max-width:576px){.ourteam-content{.ourteam-item{.ourteam-img{width:270px;height:270px;}}}}"], function (props) {
-  return props.theme.primaryColor;
-}, function (props) {
-  return props.theme.primaryColor;
-});
-/* harmony default export */ __webpack_exports__["default"] = (OurTeamWrapper);
+/* harmony default export */ __webpack_exports__["default"] = (GamePlay);
 
 /***/ })
 
