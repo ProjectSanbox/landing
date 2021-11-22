@@ -4201,6 +4201,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_partner_metablock_x_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_partner_metablock_x_png__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/partner/varstart.png */ "./src/assets/images/partner/varstart.png");
 /* harmony import */ var _images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/partner/babylon.png */ "./src/assets/images/partner/babylon.png");
+/* harmony import */ var _images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -4209,6 +4212,10 @@ __webpack_require__.r(__webpack_exports__);
     img: _images_partner_dare_nft_png__WEBPACK_IMPORTED_MODULE_0___default.a,
     src: "https://www.darenft.com/",
     target: "_blank"
+  }, {
+    img: _images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    src: "#",
+    target: "_self"
   }, {
     img: _images_partner_metablock_x_png__WEBPACK_IMPORTED_MODULE_1___default.a,
     src: "#",
@@ -4219,6 +4226,17 @@ __webpack_require__.r(__webpack_exports__);
     target: "_self"
   }]
 });
+
+/***/ }),
+
+/***/ "./src/assets/images/partner/babylon.png":
+/*!***********************************************!*\
+  !*** ./src/assets/images/partner/babylon.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/babylon-ce95d743c410dcb6b9ee9158f131d7fb.png";
 
 /***/ }),
 
