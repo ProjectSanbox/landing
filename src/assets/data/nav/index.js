@@ -97,7 +97,7 @@ export default {
             {
               icon: pancake,
               content: "PancakeSwap",
-              link: "https://www.dextools.io/app/bsc/pair-explorer/0xcb9abf27b2e7b8706f0daf30855b80421b41e9a99",
+              link: "https://pancakeswap.finance/",
             },
           ],
         },
