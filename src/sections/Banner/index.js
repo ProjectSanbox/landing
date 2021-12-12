@@ -34,7 +34,7 @@ const Banner = () => {
               </Heading>
               <Box className="register">
                 <Button className="banner-btn">
-                  <Text as="span">Registration Soon</Text>
+                  <Text as="span"><a href="//play.planetsandbox.io/">Play Now</a></Text>
                 </Button>
               </Box>
             </Box>
