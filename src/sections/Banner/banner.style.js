@@ -72,13 +72,17 @@ const BannerWrapper = styled.div`
             width: 270px;
             height: 56px;
             padding: 0;
-            color: #000000;
             background: ${(props) => props.theme.primaryColor};
             position: relative;
             border: 0;
             overflow: hidden;
             border-radius: unset;
             box-shadow: 0px 0px 12px rgba(40, 33, 108, 0.7);
+            span{
+              a{
+                color: #000000;
+              }
+            }
 
             &:hover {
               border: 2px solid ${(props) => props.theme.primaryColor};
