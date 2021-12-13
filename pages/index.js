@@ -5,6 +5,7 @@ import loadable from '@loadable/component'
 import FavIcon from "assets/images/favicon.svg";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
+import poster from 'assets/images/poster.webp';
 
 const Popup = loadable(() => import("sections/Popup"));
 const Nav = loadable(() => import("sections/Nav"));
@@ -33,6 +34,9 @@ const Home = () => {
           name="Description"
           content="Planet Sandbox is a physics TPS NFT sandbox shooting game that allows players to build and own arenas to fight other players in different game modes using their own NFT weapons and accessories."
         />
+        <meta property="og:url" content="https://planetsandbox.io/"></meta>
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:image" content={poster}></meta>
         <meta
           httpEquiv="Content-Security-Policy"
           content="upgrade-insecure-requests"
