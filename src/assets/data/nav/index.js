@@ -31,7 +31,7 @@ export default {
         },
         {
           link: "javascript:0",
-          content: "Land",
+          content: "Land (Coming soon)",
           completed: true,
         },
       ],

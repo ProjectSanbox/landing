@@ -22,9 +22,12 @@ const PartnerWrapper = styled.div`
     padding-left: -52px;
     padding-right: -52px;
     .partner-item {
-      padding: 33px 52px;
+      padding: 33px 42px;
       img {
         width: 280px;
+        &#p5{
+          width: 200px;
+        }
       }
     }
   }

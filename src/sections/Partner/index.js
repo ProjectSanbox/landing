@@ -34,7 +34,7 @@ const Partner = () => {
                 <Box className="item-border">
                   <Box className="partner-item">
                     <Box className="box">
-                      <Image src={partner.img} />
+                      <Image id={partner.id} src={partner.img} />
                     </Box>
                   </Box>
                 </Box>
