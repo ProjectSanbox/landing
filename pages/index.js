@@ -28,10 +28,10 @@ const Home = () => {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>PlanetSandbox</title>
+        <title>Planet Sandbox is a physics TPS NFT sandbox shooting game that allows players to build and own arenas to fight other players in different game modes using their own NFT weapons and accessories.</title>
         <meta
           name="Description"
-          content="Planet Sandbox is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battle"
+          content="Planet Sandbox is a physics TPS NFT sandbox shooting game that allows players to build and own arenas to fight other players in different game modes using their own NFT weapons and accessories."
         />
         <meta
           httpEquiv="Content-Security-Policy"
