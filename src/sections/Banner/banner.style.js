@@ -11,13 +11,13 @@ const BannerWrapper = styled.div`
   }
   div.heading {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     .headingBackground {
       background-image: url(${headerBackground});
       height: 100%;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center bottom;
+      background-position: center center;
       position: relative;
       .container {
         width: 100%;
@@ -81,6 +81,8 @@ const BannerWrapper = styled.div`
             span{
               a{
                 color: #000000;
+                font-weight: 700;
+                font-size: 26px;
               }
             }
 
