@@ -97,7 +97,7 @@ export default {
             {
               icon: pancake,
               content: "PancakeSwap",
-              link: "//pancakeswap.finance/swap?inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56&outputCurrency=0x51CB2cfF2DC93291CC3a56d74Dec731d5a9D3162",
+              link: "//pancakeswap.finance/info/pair/0xcb9abf27b2e7b8706f0daf30855b80421b41e9a9",
             },
           ],
         },
