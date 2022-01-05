@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
-import loadable from '@loadable/component'
+import loadable from "@loadable/component";
 import FavIcon from "assets/images/favicon.svg";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
-import poster from 'assets/images/poster.webp';
+import poster from "assets/images/poster.webp";
 
 const Popup = loadable(() => import("sections/Popup"));
 const Nav = loadable(() => import("sections/Nav"));
@@ -26,10 +26,40 @@ const Contract = loadable(() => import("sections/Contract"));
 const Footer = loadable(() => import("sections/Footer"));
 
 const Home = () => {
+  useEffect(() => {
+    (function (e, t, n) {
+      if (e.snaptr) return;
+      var a = (e.snaptr = function () {
+        a.handleRequest
+          ? a.handleRequest.apply(a, arguments)
+          : a.queue.push(arguments);
+      });
+      a.queue = [];
+      var s = "script";
+      var r;
+      r = t.createElement(s);
+      r.async = !0;
+      r.src = n;
+      var u = t.getElementsByTagName(s)[0];
+      u.parentNode.insertBefore(r, u);
+    })(window, document, "https://sc-static.net/scevent.min.js");
+
+    snaptr("init", "3e803d6c-4af7-4d86-b2b0-c100f8d226e9", {
+      user_email: "__INSERT_USER_EMAIL__",
+    });
+
+    snaptr("track", "PAGE_VIEW");
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>Welcome to PlanetSandbox | Planet Sandbox is a physics TPS NFT sandbox shooting game that allows players to build and own arenas to fight other players in different game modes using their own NFT weapons and accessories.</title>
+        <title>
+          Welcome to PlanetSandbox | Planet Sandbox is a physics TPS NFT sandbox
+          shooting game that allows players to build and own arenas to fight
+          other players in different game modes using their own NFT weapons and
+          accessories.
+        </title>
         <meta
           name="Description"
           content="Planet Sandbox is a physics TPS NFT sandbox shooting game that allows players to build and own arenas to fight other players in different game modes using their own NFT weapons and accessories."
@@ -77,7 +107,7 @@ const Home = () => {
       <FAQ />
       <Footer />
       <ScrollTop />
-      <Contract/>
+      <Contract />
     </ThemeProvider>
   );
 };
