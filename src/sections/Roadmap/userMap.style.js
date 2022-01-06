@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from "assets/images/roadmap/background.webp";
+import background from "assets/images/roadmap/background.png";
 
 const UserMapWrapper = styled.div`
   position: relative;
@@ -8,7 +8,7 @@ const UserMapWrapper = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 73px 0px;
+    padding: 135px 0px;
     img {
       position: relative;
       z-index: 2;
@@ -29,6 +29,22 @@ const UserMapWrapper = styled.div`
     text-align: center;
     z-index: 2;
     position: relative;
+  }
+
+  .roadmap-content{
+    .character{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 37.5%;
+      z-index: 0;
+    }
+
+    .roadmap{
+      width: 89%;
+      z-index: 2;
+      margin-left: auto;
+    }
   }
 
   @media only screen and (max-width: 576px) {
