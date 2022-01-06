@@ -1,7 +1,6 @@
 import thitruong from 'assets/images/advisor/thi-truong.png';
 import eric from 'assets/images/advisor/eric.png';
 import larry from 'assets/images/advisor/larry.png';
-import roadmap from 'assets/images/roadmap/roadmap.svg';
 
 export default {
     advisor:[

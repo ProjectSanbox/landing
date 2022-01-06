@@ -6,7 +6,8 @@ import Heading from "reusecore/Heading";
 import Image from "reusecore/Image";
 import Text from "reusecore/Text";
 import UserMapWrapper from "./userMap.style";
-import roadmap from "assets/images/roadmap/roadmap.svg";
+import roadmap from "assets/images/roadmap/roadmap.png";
+import character from "assets/images/roadmap/character.png";
 
 const RoadMap = () => {
   return (
@@ -17,9 +18,11 @@ const RoadMap = () => {
             <Heading>Roadmap</Heading>
           </Box>
         </Container>
-        <Image src={roadmap} />
+        <Box className="roadmap-content">
+          <Image className="roadmap" src={roadmap} />
+          <Image className="character" src={character} />
+        </Box>
       </Box>
-      <Box className="overlay">&nbsp;</Box>
     </UserMapWrapper>
   );
 };
