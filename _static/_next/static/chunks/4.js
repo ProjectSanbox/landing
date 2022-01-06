@@ -4203,6 +4203,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/partner/babylon.png */ "./src/assets/images/partner/babylon.png");
 /* harmony import */ var _images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_partner_mediakit_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/partner/mediakit.png */ "./src/assets/images/partner/mediakit.png");
+/* harmony import */ var _images_partner_mediakit_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_partner_mediakit_png__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -4211,19 +4214,28 @@ __webpack_require__.r(__webpack_exports__);
   partner: [{
     img: _images_partner_dare_nft_png__WEBPACK_IMPORTED_MODULE_0___default.a,
     src: "https://www.darenft.com/",
-    target: "_blank"
+    target: "_blank",
+    id: "p1"
   }, {
     img: _images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_3___default.a,
     src: "#",
-    target: "_self"
+    target: "_self",
+    id: "p2"
   }, {
     img: _images_partner_metablock_x_png__WEBPACK_IMPORTED_MODULE_1___default.a,
     src: "#",
-    target: "_self"
+    target: "_self",
+    id: "p3"
   }, {
     img: _images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_2___default.a,
     src: "#",
-    target: "_self"
+    target: "_self",
+    id: "p4"
+  }, {
+    img: _images_partner_mediakit_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    src: "//www.notion.so/nftrade/MediaKit-0fd4eb78870545529a098e086698c728",
+    target: "_blank",
+    id: "p5"
   }]
 });
 
@@ -4248,6 +4260,17 @@ module.exports = "/_next/static/images/babylon-ce95d743c410dcb6b9ee9158f131d7fb.
 /***/ (function(module, exports) {
 
 module.exports = "/_next/static/images/dare-nft-f416cc0513aeafcd4741b4131e2c751e.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/partner/mediakit.png":
+/*!************************************************!*\
+  !*** ./src/assets/images/partner/mediakit.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/mediakit-54961c429c5ec6d00626e54619de5292.png";
 
 /***/ }),
 
@@ -4986,6 +5009,7 @@ var Partner = function Partner() {
         columnNumber: 21
       }
     }, __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      id: partner.id,
       src: partner.img,
       __self: _this,
       __source: {
@@ -5014,8 +5038,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var PartnerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "partnerstyle__PartnerWrapper",
-  componentId: "s8sb9l-0"
-})(["padding:80px 0px 100px 0px;.partner-heading{text-align:center;p{font-size:16px;text-transform:uppercase;line-height:16px;font-weight:700;color:", ";font-weight:700;}}.partner-content{display:flex;align-items:center;justify-content:center;padding-left:-52px;padding-right:-52px;.partner-item{padding:33px 52px;img{width:280px;}}}@media only screen and (max-width:992px){.partner-content{.partner-item{padding:33px 25px;img{width:180px;}}}}@media only screen and (max-width:768px){.partner-content{justify-content:space-between;}}@media only screen and (max-width:576px){.partner-content{justify-content:center;flex-wrap:wrap;.partner-item{padding:23px 25px;}}}"], function (props) {
+  componentId: "hzowza-0"
+})(["padding:80px 0px 100px 0px;.partner-heading{text-align:center;p{font-size:16px;text-transform:uppercase;line-height:16px;font-weight:700;color:", ";font-weight:700;}}.partner-content{display:flex;align-items:center;justify-content:center;padding-left:-52px;padding-right:-52px;.partner-item{padding:33px 42px;img{width:280px;&#p5{width:200px;}}}}@media only screen and (max-width:992px){.partner-content{.partner-item{padding:33px 25px;img{width:180px;}}}}@media only screen and (max-width:768px){.partner-content{justify-content:space-between;}}@media only screen and (max-width:576px){.partner-content{justify-content:center;flex-wrap:wrap;.partner-item{padding:23px 25px;}}}"], function (props) {
   return props.theme.primaryColor;
 });
 /* harmony default export */ __webpack_exports__["default"] = (PartnerWrapper);

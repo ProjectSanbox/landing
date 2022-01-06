@@ -770,7 +770,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/banner-b6b44c490cb26493f31d91ff94228ca6.webp";
+module.exports = "/_next/static/images/banner-906f2d1ffa77a159effcb581cf0c248f.webp";
 
 /***/ }),
 
@@ -1380,8 +1380,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var BannerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "bannerstyle__BannerWrapper",
-  componentId: "uvkrb8-0"
-})(["background:transparent;p{color:#ffffff;font-size:18px;margin:0;padding:0;}div.heading{width:100%;height:100vh;.headingBackground{background-image:url(", ");height:100%;background-repeat:no-repeat;background-size:cover;background-position:center bottom;position:relative;.container{width:100%;height:100%;z-index:2;}.overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient( 107.56deg,rgba(27,24,38,0.9) 15.48%,rgba(27,24,38,0) 72.61% );}.heading-content{position:absolute;top:50%;transform:translateY(-50%);h1{font-size:45px;line-height:60px;margin:0;margin-bottom:10px;text-transform:none;color:#ffffff;padding:0;position:relative;max-width:800px;&.heading-sm{font-size:32px;color:", ";font-weight:400;font-family:\"SFUEurostileNormal\",sans-serif;text-transform:none;}span{position:relative;display:inline-block;}}.register{display:flex;align-items:center;margin-top:49px;button{width:270px;height:56px;padding:0;color:#000000;background:", ";position:relative;border:0;overflow:hidden;border-radius:unset;box-shadow:0px 0px 12px rgba(40,33,108,0.7);&:hover{border:2px solid ", ";box-shadow:0 0 0 30px rgba(255,255,255,0);animation:pulse 1s;}@keyframes pulse{0%{box-shadow:0 0 0 0 ", ";}}span{position:relative;z-index:1;font-size:20px;font-weight:700;}img{position:absolute;width:unset;top:0;right:0;left:0;bottom:0;margin:auto;}}}}}}@media only screen and (max-width:992px){div.heading{.headingBackground{background-position:right;.heading-content{h1{font-size:40px;&.heading-sm{font-size:28px;}}.register{button{width:200px;span{}}}}}}}@media only screen and (max-width:576px){div.heading{.headingBackground{.heading-content{h1{font-size:30px;line-height:40px;&.heading-sm{font-size:18px;}}.register{button{width:200px;span{}}}}}}}"], _assets_images_banner_banner_webp__WEBPACK_IMPORTED_MODULE_1___default.a, function (props) {
+  componentId: "sc-1g9tyw5-0"
+})(["background:transparent;p{color:#ffffff;font-size:18px;margin:0;padding:0;}div.heading{width:100%;height:120vh;.headingBackground{background-image:url(", ");height:100%;background-repeat:no-repeat;background-size:cover;background-position:center center;position:relative;.container{width:100%;height:100%;z-index:2;}.overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient( 107.56deg,rgba(27,24,38,0.9) 15.48%,rgba(27,24,38,0) 72.61% );}.heading-content{position:absolute;top:50%;transform:translateY(-50%);h1{font-size:45px;line-height:60px;margin:0;margin-bottom:10px;text-transform:none;color:#ffffff;padding:0;position:relative;max-width:800px;&.heading-sm{font-size:32px;color:", ";font-weight:400;font-family:\"SFUEurostileNormal\",sans-serif;text-transform:none;}span{position:relative;display:inline-block;}}.register{display:flex;align-items:center;margin-top:49px;button{width:270px;height:56px;padding:0;background:", ";position:relative;border:0;overflow:hidden;border-radius:unset;box-shadow:0px 0px 12px rgba(40,33,108,0.7);span{a{color:#000000;font-weight:700;font-size:26px;}}&:hover{border:2px solid ", ";box-shadow:0 0 0 30px rgba(255,255,255,0);animation:pulse 1s;}@keyframes pulse{0%{box-shadow:0 0 0 0 ", ";}}span{position:relative;z-index:1;font-size:20px;font-weight:700;}img{position:absolute;width:unset;top:0;right:0;left:0;bottom:0;margin:auto;}}}}}}@media only screen and (max-width:992px){div.heading{.headingBackground{background-position:right;.heading-content{h1{font-size:40px;&.heading-sm{font-size:28px;}}.register{button{width:200px;span{}}}}}}}@media only screen and (max-width:576px){div.heading{.headingBackground{.heading-content{h1{font-size:30px;line-height:40px;&.heading-sm{font-size:18px;}}.register{button{width:200px;span{}}}}}}}"], _assets_images_banner_banner_webp__WEBPACK_IMPORTED_MODULE_1___default.a, function (props) {
   return props.theme.primaryColor;
 }, function (props) {
   return props.theme.primaryColor;
@@ -1520,7 +1520,15 @@ var Banner = function Banner() {
       lineNumber: 37,
       columnNumber: 19
     }
-  }, "Registration Soon"))))), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, __jsx("a", {
+    href: "//play.planetsandbox.io/",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 35
+    }
+  }, "Play Now")))))), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
     className: "overlay",
     __self: _this,
     __source: {

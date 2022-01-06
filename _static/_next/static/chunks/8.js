@@ -18105,7 +18105,7 @@ __webpack_require__.r(__webpack_exports__);
       }]
     }, {
       link: "javascript:0",
-      content: "Land",
+      content: "Land (Coming soon)",
       completed: true
     }]
   }, {
@@ -18157,7 +18157,7 @@ __webpack_require__.r(__webpack_exports__);
       listChild: [{
         icon: _images_nav_pancake_svg__WEBPACK_IMPORTED_MODULE_0___default.a,
         content: "PancakeSwap",
-        link: "https://www.dextools.io/app/bsc/pair-explorer/0xcb9abf27b2e7b8706f0daf30855b80421b41e9a99"
+        link: "//pancakeswap.finance/info/pair/0xcb9abf27b2e7b8706f0daf30855b80421b41e9a9"
       }]
     }, {
       link: "javascript:0",

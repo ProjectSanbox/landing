@@ -2786,6 +2786,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_assets_images_favicon_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_assets_images_favicon_svg__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _src_assets_theme_theme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/assets/theme/theme */ "./src/assets/theme/theme.js");
 /* harmony import */ var _src_assets_theme__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/assets/theme */ "./src/assets/theme/index.js");
+/* harmony import */ var _src_assets_images_poster_webp__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/assets/images/poster.webp */ "./src/assets/images/poster.webp");
+/* harmony import */ var _src_assets_images_poster_webp__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_src_assets_images_poster_webp__WEBPACK_IMPORTED_MODULE_7__);
 var _this = undefined,
     _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/pages/index.js";
 
@@ -2797,8 +2799,9 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 var Popup = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! ../src/sections/Popup */ "./src/sections/Popup/index.js"));
+  return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! ../src/sections/Popup */ "./src/sections/Popup/index.js"));
 });
 var Nav = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
   return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ../src/sections/Nav */ "./src/sections/Nav/index.js"));
@@ -2807,7 +2810,7 @@ var Banner = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])
   return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! ../src/sections/Banner */ "./src/sections/Banner/index.js"));
 });
 var Roadmap = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! ../src/sections/Roadmap */ "./src/sections/Roadmap/index.js"));
+  return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! ../src/sections/Roadmap */ "./src/sections/Roadmap/index.js"));
 });
 var About = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
   return Promise.all(/*! import() */[__webpack_require__.e("styles"), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! ../src/sections/About */ "./src/sections/About/index.js"));
@@ -2816,7 +2819,7 @@ var GamePlay = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"
   return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ../src/sections/GamePlay */ "./src/sections/GamePlay/index.js"));
 });
 var Advisor = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ../src/sections/Advisor */ "./src/sections/Advisor/index.js"));
+  return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ../src/sections/Advisor */ "./src/sections/Advisor/index.js"));
 });
 var BackedBy = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
   return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../src/sections/BackedBy */ "./src/sections/BackedBy/index.js"));
@@ -2834,7 +2837,7 @@ var Audits = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])
   return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ../src/sections/Audits */ "./src/sections/Audits/index.js"));
 });
 var Media = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ../src/sections/Media */ "./src/sections/Media/index.js"));
+  return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ../src/sections/Media */ "./src/sections/Media/index.js"));
 });
 var FAQ = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
   return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ../src/sections/FAQ */ "./src/sections/FAQ/index.js"));
@@ -2850,35 +2853,85 @@ var Footer = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])
 });
 
 var Home = function Home() {
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    (function (e, t, n) {
+      if (e.snaptr) return;
+
+      var a = e.snaptr = function () {
+        a.handleRequest ? a.handleRequest.apply(a, arguments) : a.queue.push(arguments);
+      };
+
+      a.queue = [];
+      var s = "script";
+      var r;
+      r = t.createElement(s);
+      r.async = !0;
+      r.src = n;
+      var u = t.getElementsByTagName(s)[0];
+      u.parentNode.insertBefore(r, u);
+    })(window, document, "https://sc-static.net/scevent.min.js");
+
+    snaptr("init", "3e803d6c-4af7-4d86-b2b0-c100f8d226e9", {
+      user_email: "__INSERT_USER_EMAIL__"
+    });
+    snaptr("track", "PAGE_VIEW");
+  }, []);
   return __jsx(styled_components__WEBPACK_IMPORTED_MODULE_2__["ThemeProvider"], {
     theme: _src_assets_theme_theme__WEBPACK_IMPORTED_MODULE_5__["default"],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 55,
       columnNumber: 5
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 56,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 57,
       columnNumber: 9
     }
-  }, "PlanetSandbox"), __jsx("meta", {
+  }, "Welcome to PlanetSandbox | Planet Sandbox is a physics TPS NFT sandbox shooting game that allows players to build and own arenas to fight other players in different game modes using their own NFT weapons and accessories."), __jsx("meta", {
     name: "Description",
-    content: "Planet Sandbox is also a multiplayer TPS NFT GAME that lets user engaging in the combat arena and profit from battle",
+    content: "Planet Sandbox is a physics TPS NFT sandbox shooting game that allows players to build and own arenas to fight other players in different game modes using their own NFT weapons and accessories.",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 63,
+      columnNumber: 9
+    }
+  }), __jsx("meta", {
+    property: "og:url",
+    content: "https://planetsandbox.io/",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67,
+      columnNumber: 9
+    }
+  }), __jsx("meta", {
+    property: "og:type",
+    content: "website",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 68,
+      columnNumber: 9
+    }
+  }), __jsx("meta", {
+    property: "og:image",
+    content: _src_assets_images_poster_webp__WEBPACK_IMPORTED_MODULE_7___default.a,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -2887,7 +2940,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 70,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -2896,7 +2949,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 74,
       columnNumber: 9
     }
   }), __jsx("link", {
@@ -2907,7 +2960,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 75,
       columnNumber: 9
     }
   }), __jsx("link", {
@@ -2918,7 +2971,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 81,
       columnNumber: 9
     }
   }), __jsx("link", {
@@ -2928,126 +2981,126 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 87,
       columnNumber: 9
     }
   })), __jsx(_src_assets_theme__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 93,
       columnNumber: 7
     }
   }), __jsx(Nav, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 95,
       columnNumber: 7
     }
   }), __jsx(Banner, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 96,
       columnNumber: 7
     }
   }), __jsx(About, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 97,
       columnNumber: 7
     }
   }), __jsx(GamePlay, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 98,
       columnNumber: 7
     }
   }), __jsx(GameAssets, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 99,
       columnNumber: 7
     }
   }), __jsx(Roadmap, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 100,
       columnNumber: 7
     }
   }), __jsx(OurTeam, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 101,
       columnNumber: 7
     }
   }), __jsx(Advisor, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 102,
       columnNumber: 7
     }
   }), __jsx(BackedBy, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 103,
       columnNumber: 7
     }
   }), __jsx(Partner, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 104,
       columnNumber: 7
     }
   }), __jsx(Audits, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 105,
       columnNumber: 7
     }
   }), __jsx(Media, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 106,
       columnNumber: 7
     }
   }), __jsx(FAQ, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 107,
       columnNumber: 7
     }
   }), __jsx(Footer, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 108,
       columnNumber: 7
     }
   }), __jsx(ScrollTop, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 109,
       columnNumber: 7
     }
   }), __jsx(Contract, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 110,
       columnNumber: 7
     }
   }));
@@ -3065,6 +3118,17 @@ var Home = function Home() {
 /***/ (function(module, exports) {
 
 module.exports = "/_next/static/images/favicon-67d01d729e7b813e3d76b27a1986a5db.svg";
+
+/***/ }),
+
+/***/ "./src/assets/images/poster.webp":
+/*!***************************************!*\
+  !*** ./src/assets/images/poster.webp ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/poster-f7e68e56ba10969642065293e74d47d7.webp";
 
 /***/ }),
 
@@ -3124,7 +3188,7 @@ var theme = {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fsteven%2FDesktop%2FWorking%2FPlanetSandbox%2Flanding%2Fpages%2Findex.js ***!
   \***************************************************************************************************************************************************/
@@ -3147,5 +3211,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

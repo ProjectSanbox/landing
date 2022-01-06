@@ -15154,7 +15154,7 @@ var Footer = function Footer() {
     }
   }, __jsx("a", {
     target: "_blank",
-    href: "//pancakeswap.finance/info/pair/0xcb9abf27b2e7b8706f0daf30855b80421b41e9a9",
+    href: "//pancakeswap.finance/",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
