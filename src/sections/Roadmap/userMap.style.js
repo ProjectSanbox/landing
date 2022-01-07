@@ -47,8 +47,44 @@ const UserMapWrapper = styled.div`
     }
   }
 
+  @media only screen and (max-width: 1200px) {
+    .roadmap-content{
+      .character{
+        width: 42%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .roadmap-content{
+      .character{
+        width: 45.5%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .roadmap-content{
+      .character{
+        width: 52.3%;
+      }
+    }
+  }
+
   @media only screen and (max-width: 576px) {
-    padding: 60px 0;
+    .roadmap-content{
+      .character{
+        width: 58%;
+      }
+    }
+  }
+  @media only screen and (max-width: 376px) {
+    padding: 0px 0px;
+    .roadmap-content{
+      .character{
+        width: 78%;
+      }
+    }
   }
 `;
 
