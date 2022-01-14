@@ -11,6 +11,7 @@ import FooterWrapper from "./footer.style";
 import logo from "assets/images/logo.png";
 import { useState } from "react";
 import pancake from "assets/images/nav/pancake.svg";
+import gate from "assets/images/footer/gate.png";
 import { FiArrowDownRight, FiArrowUpRight } from "react-icons/fi";
 import axios from "axios";
 
@@ -151,6 +152,14 @@ const Footer = () => {
                   {" "}
                   <Image src={pancake} />
                   <Text>PancakeSwap</Text>
+                </a>
+                <a
+                  target="_blank"
+                  href="//www.gate.io/trade/PSB_USDT"
+                >
+                  {" "}
+                  <Image src={gate} />
+                  <Text>Gate</Text>
                 </a>
               </Box>
             </Box>

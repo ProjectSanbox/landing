@@ -3,38 +3,45 @@ import metablock_x from "assets/images/partner/metablock-x.png";
 import varstart from "assets/images/partner/varstart.png";
 import babylon from "assets/images/partner/babylon.png";
 import mediakit from "assets/images/partner/mediakit.png";
+import gate from "assets/images/partner/gate.png";
 
 export default {
   partner: [
     {
-      img: dare_nft,
-      src: "https://www.darenft.com/",
+      img: gate,
+      src: "#",
       target: "_blank",
       id: "p1",
+    },
+    {
+      img: dare_nft,
+      src: "#",
+      target: "_blank",
+      id: "p2",
     },
     {
       img: babylon,
       src: "#",
       target: "_self",
-      id: "p2",
+      id: "p3",
     },
     {
       img: metablock_x,
       src: "#",
       target: "_self",
-      id: "p3",
+      id: "p4",
     },
     {
       img: varstart,
       src: "#",
       target: "_self",
-      id: "p4",
+      id: "p5",
     },
     {
       img: mediakit,
-      src: "//www.notion.so/nftrade/MediaKit-0fd4eb78870545529a098e086698c728",
+      src: "#",
       target: "_blank",
-      id: "p5",
+      id: "p6",
     },
   ],
 };
