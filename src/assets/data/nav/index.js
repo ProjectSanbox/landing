@@ -30,7 +30,7 @@ export default {
             },
             {
               icon: gate,
-              content: "Gate",
+              content: "Gate.io",
               link: "//www.gate.io/vn/trade/PSB_USDT",
             },
           ],
@@ -107,7 +107,7 @@ export default {
             },
             {
               icon: gate,
-              content: "Gate",
+              content: "Gate.io",
               link: "//www.gate.io/trade/PSB_USDT",
             },
           ],
