@@ -4197,14 +4197,14 @@ try {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_partner_dare_nft_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../images/partner/dare-nft.png */ "./src/assets/images/partner/dare-nft.png");
 /* harmony import */ var _images_partner_dare_nft_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_partner_dare_nft_png__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_partner_metablock_x_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/partner/metablock-x.png */ "./src/assets/images/partner/metablock-x.png");
-/* harmony import */ var _images_partner_metablock_x_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_partner_metablock_x_png__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/partner/varstart.png */ "./src/assets/images/partner/varstart.png");
-/* harmony import */ var _images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/partner/babylon.png */ "./src/assets/images/partner/babylon.png");
-/* harmony import */ var _images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _images_partner_mediakit_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/partner/mediakit.png */ "./src/assets/images/partner/mediakit.png");
-/* harmony import */ var _images_partner_mediakit_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_partner_mediakit_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/partner/varstart.png */ "./src/assets/images/partner/varstart.png");
+/* harmony import */ var _images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/partner/babylon.png */ "./src/assets/images/partner/babylon.png");
+/* harmony import */ var _images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_partner_mediakit_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/partner/mediakit.png */ "./src/assets/images/partner/mediakit.png");
+/* harmony import */ var _images_partner_mediakit_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_partner_mediakit_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_partner_gate_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/partner/gate.png */ "./src/assets/images/partner/gate.png");
+/* harmony import */ var _images_partner_gate_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_partner_gate_png__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
@@ -4212,30 +4212,30 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   partner: [{
-    img: _images_partner_dare_nft_png__WEBPACK_IMPORTED_MODULE_0___default.a,
-    src: "https://www.darenft.com/",
+    img: _images_partner_gate_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    src: "#",
     target: "_blank",
     id: "p1"
   }, {
-    img: _images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    img: _images_partner_dare_nft_png__WEBPACK_IMPORTED_MODULE_0___default.a,
     src: "#",
-    target: "_self",
+    target: "_blank",
     id: "p2"
   }, {
-    img: _images_partner_metablock_x_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+    img: _images_partner_babylon_png__WEBPACK_IMPORTED_MODULE_2___default.a,
     src: "#",
     target: "_self",
     id: "p3"
   }, {
-    img: _images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    img: _images_partner_varstart_png__WEBPACK_IMPORTED_MODULE_1___default.a,
     src: "#",
     target: "_self",
-    id: "p4"
-  }, {
-    img: _images_partner_mediakit_png__WEBPACK_IMPORTED_MODULE_4___default.a,
-    src: "//www.notion.so/nftrade/MediaKit-0fd4eb78870545529a098e086698c728",
-    target: "_blank",
     id: "p5"
+  }, {
+    img: _images_partner_mediakit_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    src: "#",
+    target: "_blank",
+    id: "p6"
   }]
 });
 
@@ -4263,6 +4263,17 @@ module.exports = "/_next/static/images/dare-nft-f416cc0513aeafcd4741b4131e2c751e
 
 /***/ }),
 
+/***/ "./src/assets/images/partner/gate.png":
+/*!********************************************!*\
+  !*** ./src/assets/images/partner/gate.png ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/gate-d4920e44ee90f1980989962ff4922402.png";
+
+/***/ }),
+
 /***/ "./src/assets/images/partner/mediakit.png":
 /*!************************************************!*\
   !*** ./src/assets/images/partner/mediakit.png ***!
@@ -4271,17 +4282,6 @@ module.exports = "/_next/static/images/dare-nft-f416cc0513aeafcd4741b4131e2c751e
 /***/ (function(module, exports) {
 
 module.exports = "/_next/static/images/mediakit-54961c429c5ec6d00626e54619de5292.png";
-
-/***/ }),
-
-/***/ "./src/assets/images/partner/metablock-x.png":
-/*!***************************************************!*\
-  !*** ./src/assets/images/partner/metablock-x.png ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/metablock-x-ed90a091f775ae4efa3d7ac4c9c53d54.png";
 
 /***/ }),
 
@@ -5039,7 +5039,7 @@ __webpack_require__.r(__webpack_exports__);
 var PartnerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "partnerstyle__PartnerWrapper",
   componentId: "hzowza-0"
-})(["padding:80px 0px 100px 0px;.partner-heading{text-align:center;p{font-size:16px;text-transform:uppercase;line-height:16px;font-weight:700;color:", ";font-weight:700;}}.partner-content{display:flex;align-items:center;justify-content:center;padding-left:-52px;padding-right:-52px;.partner-item{padding:33px 42px;img{width:280px;&#p5{width:200px;}}}}@media only screen and (max-width:992px){.partner-content{.partner-item{padding:33px 25px;img{width:180px;}}}}@media only screen and (max-width:768px){.partner-content{justify-content:space-between;}}@media only screen and (max-width:576px){.partner-content{justify-content:center;flex-wrap:wrap;.partner-item{padding:23px 25px;}}}"], function (props) {
+})(["padding:80px 0px 100px 0px;.partner-heading{text-align:center;p{font-size:16px;text-transform:uppercase;line-height:16px;font-weight:700;color:", ";font-weight:700;}}.partner-content{display:flex;align-items:center;justify-content:center;padding-left:-52px;padding-right:-52px;.partner-item{padding:33px 42px;img{width:280px;&#p1{width:180px;}&#p6{width:200px;}}}}@media only screen and (max-width:992px){.partner-content{.partner-item{padding:33px 25px;img{width:180px;}}}}@media only screen and (max-width:768px){.partner-content{justify-content:space-between;}}@media only screen and (max-width:576px){.partner-content{justify-content:center;flex-wrap:wrap;.partner-item{padding:23px 25px;}}}"], function (props) {
   return props.theme.primaryColor;
 });
 /* harmony default export */ __webpack_exports__["default"] = (PartnerWrapper);

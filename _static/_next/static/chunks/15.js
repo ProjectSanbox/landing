@@ -781,7 +781,7 @@ module.exports = "/_next/static/images/character-2dab88f0ffef9997aa4bf483e9f9cb7
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/roadmap-0e8514de3ab2a93948e414710aa0b7f3.png";
+module.exports = "/_next/static/images/roadmap-c5efbea49ddf37d75dd0a2d576bfe16a.png";
 
 /***/ }),
 
@@ -1494,7 +1494,7 @@ __webpack_require__.r(__webpack_exports__);
 var UserMapWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "userMapstyle__UserMapWrapper",
   componentId: "y38747-0"
-})(["position:relative;.usermap-wrapper{background-image:url(", ");background-repeat:no-repeat;background-size:cover;background-position:center;padding:135px 0px;img{position:relative;z-index:2;}}.overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);}.roadmap-heading{width:100%;text-align:center;z-index:2;position:relative;}.roadmap-content{.character{position:absolute;top:0;left:0;width:37.5%;z-index:0;}.roadmap{width:89%;z-index:2;margin-left:auto;}}@media only screen and (max-width:576px){padding:60px 0;}"], _assets_images_roadmap_background_png__WEBPACK_IMPORTED_MODULE_1___default.a);
+})(["position:relative;.usermap-wrapper{background-image:url(", ");background-repeat:no-repeat;background-size:cover;background-position:center;padding:135px 0px;img{position:relative;z-index:2;}}.overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);}.roadmap-heading{width:100%;text-align:center;z-index:2;position:relative;}.roadmap-content{.character{position:absolute;top:0;left:0;width:37.5%;z-index:0;}.roadmap{width:89%;z-index:2;margin-left:auto;}}@media only screen and (max-width:1200px){.roadmap-content{.character{width:42%;}}}@media only screen and (max-width:992px){.roadmap-content{.character{width:45.5%;}}}@media only screen and (max-width:768px){.roadmap-content{.character{width:52.3%;}}}@media only screen and (max-width:576px){.roadmap-content{.character{width:58%;}}}@media only screen and (max-width:376px){padding:0px 0px;.roadmap-content{.character{width:78%;}}}"], _assets_images_roadmap_background_png__WEBPACK_IMPORTED_MODULE_1___default.a);
 /* harmony default export */ __webpack_exports__["default"] = (UserMapWrapper);
 
 /***/ })

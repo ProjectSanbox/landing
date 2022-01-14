@@ -18079,6 +18079,9 @@ function RiWindyFill (props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _images_nav_pancake_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../images/nav/pancake.svg */ "./src/assets/images/nav/pancake.svg");
 /* harmony import */ var _images_nav_pancake_svg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_nav_pancake_svg__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_nav_gate_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/nav/gate.png */ "./src/assets/images/nav/gate.png");
+/* harmony import */ var _images_nav_gate_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_nav_gate_png__WEBPACK_IMPORTED_MODULE_1__);
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   nav: [// {
@@ -18102,6 +18105,10 @@ __webpack_require__.r(__webpack_exports__);
         icon: _images_nav_pancake_svg__WEBPACK_IMPORTED_MODULE_0___default.a,
         content: "PancakeSwap",
         link: "//pancakeswap.finance/info/pair/0xcb9abf27b2e7b8706f0daf30855b80421b41e9a9"
+      }, {
+        icon: _images_nav_gate_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+        content: "Gate.io",
+        link: "//www.gate.io/vn/trade/PSB_USDT"
       }]
     }, {
       link: "javascript:0",
@@ -18158,6 +18165,10 @@ __webpack_require__.r(__webpack_exports__);
         icon: _images_nav_pancake_svg__WEBPACK_IMPORTED_MODULE_0___default.a,
         content: "PancakeSwap",
         link: "//pancakeswap.finance/info/pair/0xcb9abf27b2e7b8706f0daf30855b80421b41e9a9"
+      }, {
+        icon: _images_nav_gate_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+        content: "Gate.io",
+        link: "//www.gate.io/trade/PSB_USDT"
       }]
     }, {
       link: "javascript:0",
@@ -18204,6 +18215,17 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports) {
 
 module.exports = "/_next/static/images/logo-608a6a827cd7590020b2bec918306a82.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/nav/gate.png":
+/*!****************************************!*\
+  !*** ./src/assets/images/nav/gate.png ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/gate-d4920e44ee90f1980989962ff4922402.png";
 
 /***/ }),
 

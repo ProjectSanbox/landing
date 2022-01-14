@@ -14041,6 +14041,17 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADg
 
 /***/ }),
 
+/***/ "./src/assets/images/footer/gate.png":
+/*!*******************************************!*\
+  !*** ./src/assets/images/footer/gate.png ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/gate-d4920e44ee90f1980989962ff4922402.png";
+
+/***/ }),
+
 /***/ "./src/assets/images/footer/medium.png":
 /*!*********************************************!*\
   !*** ./src/assets/images/footer/medium.png ***!
@@ -14633,8 +14644,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var FooterWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "footerstyle__FooterWrapper",
-  componentId: "yrnfwz-0"
-})(["padding:80px 0px 10px 0px;background:#17181c;h1{font-size:24px;line-height:32px;font-weight:400;}p{color:#777e90;}a{font-weight:400;}.footer-heading-content{text-align:center;margin-bottom:40px;img{width:300px;margin:auto;}}.footer-list{.footer-title{font-size:16px;color:", ";text-transform:uppercase;font-weight:700;}.comnunity{display:flex;justify-content:space-between;}ul{margin-bottom:40px;li{font-size:14px;color:#ffffff;text-transform:capitalize;margin-bottom:18px;a{transition:0.3s;&:hover{padding-left:5px;color:", ";}}}}ul.footer-link{li{text-transform:capitalize;img{width:24px;height:24px;margin-right:8px;}a{display:flex;align-items:center;display:block;display:flex;svg{margin-right:10px;}}}}}.priceExchange{display:flex;justify-content:center;p{font-size:17px;color:#ffffff;}.price{margin-right:40px;p{margin:0;padding:0;}p.percent{color:red;}p.price-headinng{margin-bottom:10px;color:", ";font-size:15px;font-weight:700;}}.available{p.available-heading{font-size:15px;font-weight:700;color:", ";}div{a{display:flex;align-items:center;p{margin:0;}img{margin-right:10px;width:30px;}}}}}.copyright{text-align:center;margin-top:20px;font-size:14px;}@media only screen and (max-width:992px){.hide{display:none;}.copyright{display:block;text-align:center;}.footer-list{text-align:center;.comnunity{justify-content:center;ul{&:not(:last-child){margin-right:40px;}}}}}"], function (props) {
+  componentId: "rmv2pc-0"
+})(["padding:80px 0px 10px 0px;background:#17181c;h1{font-size:24px;line-height:32px;font-weight:400;}p{color:#777e90;}a{font-weight:400;}.footer-heading-content{text-align:center;margin-bottom:40px;img{width:300px;margin:auto;}}.footer-list{.footer-title{font-size:16px;color:", ";text-transform:uppercase;font-weight:700;}.comnunity{display:flex;justify-content:space-between;}ul{margin-bottom:40px;li{font-size:14px;color:#ffffff;text-transform:capitalize;margin-bottom:18px;a{transition:0.3s;&:hover{padding-left:5px;color:", ";}}}}ul.footer-link{li{text-transform:capitalize;img{width:24px;height:24px;margin-right:8px;}a{display:flex;align-items:center;display:block;display:flex;svg{margin-right:10px;}}}}}.priceExchange{display:flex;justify-content:center;p{font-size:17px;color:#ffffff;}.price{margin-right:40px;p{margin:0;padding:0;}p.percent{color:red;}p.price-headinng{margin-bottom:10px;color:", ";font-size:15px;font-weight:700;}}.available{p.available-heading{font-size:15px;font-weight:700;color:", ";}div{a{display:flex;align-items:center;padding:5px 0px;p{margin:0;}img{margin-right:10px;width:30px;}}}}}.copyright{text-align:center;margin-top:20px;font-size:14px;}@media only screen and (max-width:992px){.hide{display:none;}.copyright{display:block;text-align:center;}.footer-list{text-align:center;.comnunity{justify-content:center;ul{&:not(:last-child){margin-right:40px;}}}}}"], function (props) {
   return props.theme.primaryColor;
 }, function (props) {
   return props.theme.primaryColor;
@@ -14672,13 +14683,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_images_logo_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_assets_images_logo_png__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _assets_images_nav_pancake_svg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/images/nav/pancake.svg */ "./src/assets/images/nav/pancake.svg");
 /* harmony import */ var _assets_images_nav_pancake_svg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_assets_images_nav_pancake_svg__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-icons/fi */ "./node_modules/react-icons/fi/index.esm.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _assets_images_footer_gate_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/images/footer/gate.png */ "./src/assets/images/footer/gate.png");
+/* harmony import */ var _assets_images_footer_gate_png__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_assets_images_footer_gate_png__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-icons/fi */ "./node_modules/react-icons/fi/index.esm.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_14__);
 var _this = undefined,
     _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/sections/Footer/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -14721,7 +14735,7 @@ var Footer = function Footer() {
   };
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    axios__WEBPACK_IMPORTED_MODULE_13___default()({
+    axios__WEBPACK_IMPORTED_MODULE_14___default()({
       method: 'get',
       url: 'https://api.coingecko.com/api/v3/simple/token_price/binance-smart-chain?contract_addresses=0x36bfbb1d5b3c9b336f3d64976599b6020ca805f1&vs_currencies=usd&include_24hr_change=true'
     }).then(function (response) {
@@ -14737,7 +14751,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 52,
       columnNumber: 5
     }
   }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -14745,21 +14759,21 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 53,
       columnNumber: 7
     }
   }, __jsx(_reusecore_Layout__WEBPACK_IMPORTED_MODULE_4__["Container"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 54,
       columnNumber: 9
     }
   }, __jsx(_reusecore_Layout__WEBPACK_IMPORTED_MODULE_4__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 55,
       columnNumber: 11
     }
   }, __jsx(_reusecore_Layout__WEBPACK_IMPORTED_MODULE_4__["Col"], {
@@ -14767,7 +14781,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 56,
       columnNumber: 13
     }
   }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -14775,7 +14789,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 57,
       columnNumber: 15
     }
   }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -14783,7 +14797,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 58,
       columnNumber: 17
     }
   }, __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -14791,7 +14805,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 59,
       columnNumber: 19
     }
   }), __jsx("a", {
@@ -14799,7 +14813,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 60,
       columnNumber: 19
     }
   }, "admin@planetsandbox.io")))), __jsx(_reusecore_Layout__WEBPACK_IMPORTED_MODULE_4__["Col"], {
@@ -14807,7 +14821,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 66,
       columnNumber: 13
     }
   }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -14815,14 +14829,14 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 67,
       columnNumber: 15
     }
   }, __jsx(_reusecore_Layout__WEBPACK_IMPORTED_MODULE_4__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 68,
       columnNumber: 17
     }
   }, __jsx(_reusecore_Layout__WEBPACK_IMPORTED_MODULE_4__["Col"], {
@@ -14830,7 +14844,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 69,
       columnNumber: 19
     }
   }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -14838,14 +14852,14 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 70,
       columnNumber: 21
     }
   }, "Products"), __jsx(_reusecore_List__WEBPACK_IMPORTED_MODULE_3__["List"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 71,
       columnNumber: 21
     }
   }, _assets_data_footer__WEBPACK_IMPORTED_MODULE_7__["default"].products.map(function (product, index) {
@@ -14854,7 +14868,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72,
+        lineNumber: 73,
         columnNumber: 25
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -14862,14 +14876,14 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73,
+        lineNumber: 74,
         columnNumber: 27
       }
     }, __jsx("a", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74,
+        lineNumber: 75,
         columnNumber: 29
       }
     }, product.productName)));
@@ -14878,7 +14892,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 81,
       columnNumber: 19
     }
   }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -14886,14 +14900,14 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 82,
       columnNumber: 21
     }
   }, "Information"), __jsx(_reusecore_List__WEBPACK_IMPORTED_MODULE_3__["List"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 83,
       columnNumber: 21
     }
   }, _assets_data_footer__WEBPACK_IMPORTED_MODULE_7__["default"].information.map(function (info, index) {
@@ -14902,7 +14916,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84,
+        lineNumber: 85,
         columnNumber: 25
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -14910,7 +14924,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85,
+        lineNumber: 86,
         columnNumber: 27
       }
     }, __jsx("a", {
@@ -14918,7 +14932,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86,
+        lineNumber: 87,
         columnNumber: 29
       }
     }, info.infoName)));
@@ -14927,7 +14941,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 93,
       columnNumber: 19
     }
   }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -14935,14 +14949,14 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 94,
       columnNumber: 21
     }
   }, "Introduce"), __jsx(_reusecore_List__WEBPACK_IMPORTED_MODULE_3__["List"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 95,
       columnNumber: 21
     }
   }, _assets_data_footer__WEBPACK_IMPORTED_MODULE_7__["default"].documentation.map(function (document, index) {
@@ -14951,7 +14965,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 96,
+        lineNumber: 97,
         columnNumber: 25
       }
     }, __jsx("a", {
@@ -14959,7 +14973,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97,
+        lineNumber: 98,
         columnNumber: 27
       }
     }, document.documentName));
@@ -14968,7 +14982,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104,
+      lineNumber: 105,
       columnNumber: 19
     }
   }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -14976,7 +14990,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105,
+      lineNumber: 106,
       columnNumber: 21
     }
   }, "join our community"), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -14984,7 +14998,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 107,
       columnNumber: 21
     }
   }, __jsx(_reusecore_List__WEBPACK_IMPORTED_MODULE_3__["List"], {
@@ -14992,7 +15006,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 108,
       columnNumber: 23
     }
   }, _assets_data_footer__WEBPACK_IMPORTED_MODULE_7__["default"].links1.map(function (link, index) {
@@ -15001,7 +15015,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 109,
+        lineNumber: 110,
         columnNumber: 27
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -15009,7 +15023,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 110,
+        lineNumber: 111,
         columnNumber: 29
       }
     }, __jsx("a", {
@@ -15017,7 +15031,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 111,
+        lineNumber: 112,
         columnNumber: 31
       }
     }, __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -15025,7 +15039,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 112,
+        lineNumber: 113,
         columnNumber: 33
       }
     }), " ", link.name)));
@@ -15034,7 +15048,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 119,
       columnNumber: 23
     }
   }, _assets_data_footer__WEBPACK_IMPORTED_MODULE_7__["default"].links2.map(function (link, index) {
@@ -15043,7 +15057,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 120,
+        lineNumber: 121,
         columnNumber: 27
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -15051,7 +15065,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 121,
+        lineNumber: 122,
         columnNumber: 29
       }
     }, __jsx("a", {
@@ -15059,7 +15073,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 122,
+        lineNumber: 123,
         columnNumber: 31
       }
     }, __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -15067,7 +15081,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 123,
+        lineNumber: 124,
         columnNumber: 33
       }
     }), " ", link.name)));
@@ -15076,7 +15090,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 136,
       columnNumber: 11
     }
   }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -15084,7 +15098,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136,
+      lineNumber: 137,
       columnNumber: 13
     }
   }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -15092,14 +15106,14 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137,
+      lineNumber: 138,
       columnNumber: 15
     }
   }, "PSB price"), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138,
+      lineNumber: 139,
       columnNumber: 15
     }
   }, "$", price.usd), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -15112,21 +15126,21 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139,
+      lineNumber: 140,
       columnNumber: 15
     }
-  }, price.percent > 0 ? __jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_12__["FiArrowUpRight"], {
+  }, price.percent > 0 ? __jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_13__["FiArrowUpRight"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140,
+      lineNumber: 141,
       columnNumber: 38
     }
-  }) : __jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_12__["FiArrowDownRight"], {
+  }) : __jsx(react_icons_fi__WEBPACK_IMPORTED_MODULE_13__["FiArrowDownRight"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140,
+      lineNumber: 141,
       columnNumber: 58
     }
   }), Number.parseFloat(price.percent).toFixed(2), "%")), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -15134,7 +15148,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144,
+      lineNumber: 145,
       columnNumber: 13
     }
   }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -15142,14 +15156,14 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145,
+      lineNumber: 146,
       columnNumber: 15
     }
   }, "Available on"), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146,
+      lineNumber: 147,
       columnNumber: 15
     }
   }, __jsx("a", {
@@ -15158,7 +15172,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147,
+      lineNumber: 148,
       columnNumber: 17
     }
   }, " ", __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -15166,22 +15180,46 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152,
+      lineNumber: 153,
       columnNumber: 19
     }
   }), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153,
+      lineNumber: 154,
       columnNumber: 19
     }
-  }, "PancakeSwap"))))), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "PancakeSwap")), __jsx("a", {
+    target: "_blank",
+    href: "//www.gate.io/trade/PSB_USDT",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 156,
+      columnNumber: 17
+    }
+  }, " ", __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    src: _assets_images_footer_gate_png__WEBPACK_IMPORTED_MODULE_12___default.a,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 161,
+      columnNumber: 19
+    }
+  }), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 162,
+      columnNumber: 19
+    }
+  }, "Gate.io"))))), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: "copyright",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 158,
+      lineNumber: 167,
       columnNumber: 11
     }
   }, " ", "Copyright \xA9 2021 PlanetSandbox. All rights reserved."))));
