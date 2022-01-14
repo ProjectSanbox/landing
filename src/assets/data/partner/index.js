@@ -1,5 +1,4 @@
 import dare_nft from "assets/images/partner/dare-nft.png";
-import metablock_x from "assets/images/partner/metablock-x.png";
 import varstart from "assets/images/partner/varstart.png";
 import babylon from "assets/images/partner/babylon.png";
 import mediakit from "assets/images/partner/mediakit.png";
@@ -24,12 +23,6 @@ export default {
       src: "#",
       target: "_self",
       id: "p3",
-    },
-    {
-      img: metablock_x,
-      src: "#",
-      target: "_self",
-      id: "p4",
     },
     {
       img: varstart,
