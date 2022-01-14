@@ -113,6 +113,7 @@ const FooterWrapper = styled.div`
         a {
           display: flex;
           align-items: center;
+          padding: 5px 0px;
           p {
             margin: 0;
           }

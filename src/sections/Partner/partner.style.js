@@ -25,7 +25,10 @@ const PartnerWrapper = styled.div`
       padding: 33px 42px;
       img {
         width: 280px;
-        &#p5{
+        &#p1{
+          width: 180px;
+        }
+        &#p6{
           width: 200px;
         }
       }
