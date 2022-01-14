@@ -159,7 +159,7 @@ const Footer = () => {
                 >
                   {" "}
                   <Image src={gate} />
-                  <Text>Gate</Text>
+                  <Text>Gate.io</Text>
                 </a>
               </Box>
             </Box>
