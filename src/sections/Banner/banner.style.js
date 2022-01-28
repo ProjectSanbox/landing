@@ -72,6 +72,7 @@ const BannerWrapper = styled.div`
             width: 270px;
             height: 56px;
             padding: 0;
+            margin:10px;
             background: ${(props) => props.theme.primaryColor};
             position: relative;
             border: 0;
