@@ -3,13 +3,13 @@ import gate from "assets/images/nav/gate.png";
 
 export default {
   nav: [
-    // {
-    //   link: "//staking.planetsandbox.io/",
-    //   linkActive: "staking",
-    //   target: "_blank",
-    //   content: "Staking",
-    //   class: "Staking",
-    // },
+    {
+      link: "//staking.planetsandbox.io/",
+      linkActive: "staking",
+      target: "_blank",
+      content: "Staking",
+      class: "Staking",
+    },
    
     {
       link: "javascript:0",
@@ -81,12 +81,12 @@ export default {
   
   ],
   navMobie: [
-    // {
-    //   link: "//staking.planetsandbox.io/",
-    //   target: "_blank",
-    //   content: "Staking",
-    //   class: "staking"
-    // },
+    {
+      link: "//staking.planetsandbox.io/",
+      target: "_blank",
+      content: "Staking",
+      class: "staking"
+    },
     
     {
       link: "javascript:0",

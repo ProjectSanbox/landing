@@ -18084,14 +18084,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  nav: [// {
-  //   link: "//staking.planetsandbox.io/",
-  //   linkActive: "staking",
-  //   target: "_blank",
-  //   content: "Staking",
-  //   class: "Staking",
-  // },
-  {
+  nav: [{
+    link: "//staking.planetsandbox.io/",
+    linkActive: "staking",
+    target: "_blank",
+    content: "Staking",
+    "class": "Staking"
+  }, {
     link: "javascript:0",
     linkActive: "exchange",
     target: "javascript:0",
@@ -18145,13 +18144,12 @@ __webpack_require__.r(__webpack_exports__);
     content: "Pitching",
     "class": "pitching"
   }],
-  navMobie: [// {
-  //   link: "//staking.planetsandbox.io/",
-  //   target: "_blank",
-  //   content: "Staking",
-  //   class: "staking"
-  // },
-  {
+  navMobie: [{
+    link: "//staking.planetsandbox.io/",
+    target: "_blank",
+    content: "Staking",
+    "class": "staking"
+  }, {
     link: "javascript:0",
     target: "_blank",
     content: "Exchange",
