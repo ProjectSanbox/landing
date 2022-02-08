@@ -66,7 +66,7 @@ const Home = () => {
         />
         <meta property="og:url" content="https://planetsandbox.io/"></meta>
         <meta property="og:type" content="website"></meta>
-        <meta property="og:image" content={poster}></meta>
+        <meta property="og:image" content={poster}></meta> 
         <meta
           httpEquiv="Content-Security-Policy"
           content="upgrade-insecure-requests"
