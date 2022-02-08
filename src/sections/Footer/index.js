@@ -135,7 +135,7 @@ const Footer = () => {
           </Row>
           <Box className="priceExchange">
             <Box className="price">
-              <Text className="price-headinng">PSB price</Text>
+              <Text className="price-headinng">PSB Price</Text>
               <Text>${price.usd}</Text>
               <Text style={price?.percent > 0 ? {color: 'rgb(94, 219, 74)'} : {color: 'red'}} className="percent">
                 {price.percent > 0 ? <FiArrowUpRight/> : <FiArrowDownRight />}

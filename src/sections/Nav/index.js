@@ -39,22 +39,22 @@ const Nav = () => {
     const header = document.getElementById("header");
 
     if (window.pageYOffset > 0 || document.documentElement.scrollTop > 0) {
-      header.style.background = "#17181C";
+      // header.style.background = "#17181C";
       header.style.transition = "0.5s";
       header.style.marginTop = "0";
     } else {
-      header.style.background = "transparent";
+      // header.style.background = "transparent";
       header.style.marginTop = "44px";
     }
 
     // scroll
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 0 || document.documentElement.scrollTop > 0) {
-        header.style.background = "#17181C";
+        // header.style.background = "#17181C";
         header.style.transition = "0.5s";
         header.style.marginTop = "0";
       } else {
-        header.style.background = "transparent";
+        // header.style.background = "transparent";
         header.style.marginTop = "44px";
       }
     });

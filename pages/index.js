@@ -55,7 +55,7 @@ const Home = () => {
     <ThemeProvider theme={theme}>
       <Head>
         <title>
-          Welcome to PlanetSandbox | Planet Sandbox is a physics TPS NFT sandbox
+          Planet Sandbox | A physics TPS NFT sandbox
           shooting game that allows players to build and own arenas to fight
           other players in different game modes using their own NFT weapons and
           accessories.

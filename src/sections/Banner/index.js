@@ -7,6 +7,8 @@ import Heading from "reusecore/Heading";
 import Text from "reusecore/Text";
 import Box from "reusecore/Box";
 import AOS from "aos";
+import { FaDownload, FaTicketAlt } from "react-icons/fa";
+
 
 const Banner = () => {
   useEffect(() => {
@@ -26,18 +28,24 @@ const Banner = () => {
           <Container>
             <Box className="heading-content">
               <Heading data-aos="fade-up" className="heading-sm">
-                Welcome to the ultimate battleverse!
+                Welcome to the Ultimate Battleverse!
               </Heading>
               <Heading data-aos="fade-up" data-aos-delay="500">
-                Choose your NFT gear and jump into this crypto powered real time
-                shooter unlike any other!
+                Choose your NFT Gears and jump into this crypto powered real time
+                shooter!
               </Heading>
               <Box className="register">
-                <Button className="banner-btn">
-                  <Text as="span"><a href="https://drive.google.com/file/d/122-s6QkUhDxvr_lREFdERxvjBJbr5w5c/view?usp=sharing/">PC Version</a></Text>
+                <Button className="download">
+                  <Text as="span"><a href="https://drive.google.com/file/d/122-s6QkUhDxvr_lREFdERxvjBJbr5w5c/view?usp=sharing/">
+                    <FaDownload style={{marginRight: 5}}/>
+                    PC Version
+                    </a></Text>
                 </Button>
                 <Button className="banner-btn">
-                  <Text as="span"><a href="https://event.planetsandbox.io/">Lucky Event</a></Text>
+                  <Text as="span"><a href="https://event.planetsandbox.io/">
+                      <FaTicketAlt style={{marginRight: 5}}/>
+                      Join Lucky Event</a>
+                    </Text>
                 </Button>
                 {/* <Button className="banner-btn">
                   <Text as="span"><a href="#">Mac (Coming soon) </a></Text>
@@ -46,12 +54,12 @@ const Banner = () => {
               </Box>
               <Box className="register">
                
-                <Button className="banner-btn">
+                {/* <Button className="banner-btn">
                   <Text as="span"><a href="#">iOS (Coming soon)</a></Text>
                 </Button>
                 <Button className="banner-btn">
                   <Text as="span"><a href="#">Android (Coming soon)</a></Text>
-                </Button>
+                </Button> */}
               </Box>
             </Box>
           </Container>

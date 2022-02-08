@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const NavWrapper = styled.div`
+  background: #00000088;
+  backdrop-filter: blur(10px);
   margin-top: 44px;
   position: fixed;
   top: 0;
@@ -164,15 +166,20 @@ const NavWrapper = styled.div`
         display: flex;
         align-items: center;
         li {
-          padding: 0;
+          text-transform: uppercase;
+          padding: 20px;
           margin: 0;
-          transition: 1s;
+          transition: .2s;
           border: 2px solid transparent;
           cursor: pointer;
           box-sizing: border-box;
           position: relative;
           display: flex;
           align-items: center;
+
+          a {
+            padding: 10px;
+          }
 
           &:before {
             content: "";
@@ -195,13 +202,14 @@ const NavWrapper = styled.div`
             flex-direction: column;
             opacity: 0;
             left: 0;
-            bottom: -127px;
+            bottom: -154px;
             position: absolute;
+            padding-top: 10px;
             width: 200px;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
-            background: #17181c;
+            background: #00000099;
             li {
               width: 100%;
               margin: 0;
@@ -232,7 +240,6 @@ const NavWrapper = styled.div`
 
               .listChildest {
                 flex-direction: column;
-                background: #17181c;
                 position: absolute;
                 width: 200px;
                 top: 0px;
@@ -241,6 +248,7 @@ const NavWrapper = styled.div`
                 opacity: 0;
                 transition: 1s;
                 li {
+                  background: #000000bb;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -255,8 +263,8 @@ const NavWrapper = styled.div`
 
                   img {
                     width: 50px;
-                    margin-right: 20px;
-                    margin-left: 10px;
+                      max-height: 40px;
+                      margin-left: 30px;
                   }
                 }
               }
@@ -270,7 +278,7 @@ const NavWrapper = styled.div`
           &:hover {
             border: 2px solid ${(props) => props.theme.primaryColor};
             box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
-            animation: pulse 1s;
+            /*animation: pulse 1s;*/
 
             @keyframes pulse {
               0% {
@@ -292,7 +300,7 @@ const NavWrapper = styled.div`
 
           &.pitching {
             width: 130px;
-            height: 33x;
+            height: 33px;
             text-align: center;
             font-weight: 500;
             background: #000000;
