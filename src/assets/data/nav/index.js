@@ -12,14 +12,14 @@ export default {
     },
    
     {
-      link: "javascript:0",
+      link: "javascript:void(0)",
       linkActive: "exchange",
-      target: "javascript:0",
+      target: "",
       content: "Exchange",
       class: "exchange",
       list: [
         {
-          link: "javascript:0",
+          link: "javascript:void(0)",
           content: "Buy PSB",
           completed: false,
           listChild: [
@@ -36,7 +36,7 @@ export default {
           ],
         },
         {
-          link: "javascript:0",
+          link: "javascript:void(0)",
           content: "Land (Coming soon)",
           completed: true,
         },
@@ -89,13 +89,13 @@ export default {
     },
     
     {
-      link: "javascript:0",
+      link: "javascript:void(0)",
       target: "_blank",
       content: "Exchange",
       class: "exchange",
       list: [
         {
-          link: "javascript:0",
+          link: "javascript:void(0)",
           content: "Buy PSB",
           completed: false,
           id: "exchange",
@@ -113,7 +113,7 @@ export default {
           ],
         },
         {
-          link: "javascript:0",
+          link: "javascript:void(0)",
           content: "Land (Coming soon)",
           completed: true,
           id: "land",

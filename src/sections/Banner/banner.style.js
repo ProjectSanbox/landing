@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import headerBackground from "assets/images/banner/banner.png";
+import headerBackground from "assets/images/banner/banner.jpg";
 
 const BannerWrapper = styled.div`
   background: transparent;
@@ -11,13 +11,13 @@ const BannerWrapper = styled.div`
   }
   div.heading {
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     .headingBackground {
       background-image: url(${headerBackground});
       height: 100%;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center center;
+      background-position: right bottom;
       position: relative;
       .container {
         width: 100%;
@@ -43,7 +43,7 @@ const BannerWrapper = styled.div`
         top: 50%;
         transform: translateY(-50%);
         h1 {
-          font-size: 45px;
+          font-size: 2.5em;
           line-height: 60px;
           margin: 0;
           margin-bottom: 10px;
@@ -68,29 +68,38 @@ const BannerWrapper = styled.div`
           display: flex;
           align-items: center;
           margin-top: 49px;
+
           button {
             width: 270px;
             height: 56px;
             padding: 0;
-            margin:10px;
-            background: ${(props) => props.theme.primaryColor};
+            margin: 10px 30px 10px 0;
+            border-radius: 5px;
+            background: rgb(255,182,63);
+            background: linear-gradient(309deg,rgba(255,182,63,1) 0%,rgba(255,224,27,1) 59%);
             position: relative;
-            border: 0;
             overflow: hidden;
-            border-radius: unset;
             box-shadow: 0px 0px 12px rgba(40, 33, 108, 0.7);
+            transition: transform 0.2s ease-out;
+
+            &.download {
+              background: linear-gradient(309deg,rgb(170 255 124) 0%,rgb(83 251 181) 59%);
+            }
+            
             span{
               a{
+                display: flex;
+                justify-content: center;
+                align-contents: center;
                 color: #000000;
                 font-weight: 700;
                 font-size: 26px;
+                line-height: 1em;
               }
             }
 
             &:hover {
-              border: 2px solid ${(props) => props.theme.primaryColor};
-              box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
-              animation: pulse 1s;
+                transform: scale(1.1);
             }
 
             @keyframes pulse {
