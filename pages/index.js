@@ -1,35 +1,88 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
-import Nav from "sections/Nav";
-import NavBanner from "sections/NavBanner";
-import Exhibition from "sections/Exhibition";
-import Slogan from "sections/Slogan";
-import Roadmap from "sections/Roadmap";
-import Production from "sections/Production";
-import OurSolution from "sections/OurSolution";
-import Advisor from "sections/Advisor";
-import BackedBy from "sections/BackedBy";
-
-import Footer from "sections/Footer";
-import FavIcon from "assets/images/favicon.png";
+import loadable from "@loadable/component";
+import FavIcon from "assets/images/favicon.svg";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
-import OurTeam from "../src/sections/OurTeam";
+import poster from "assets/images/poster.webp";
+import TagManager from 'react-gtm-module';
+
+const Popup = loadable(() => import("sections/Popup"));
+const Nav = loadable(() => import("sections/Nav"));
+const Banner = loadable(() => import("sections/Banner"));
+const Roadmap = loadable(() => import("sections/Roadmap"));
+const About = loadable(() => import("sections/About"));
+const GamePlay = loadable(() => import("sections/GamePlay"));
+const Advisor = loadable(() => import("sections/Advisor"));
+const BackedBy = loadable(() => import("sections/BackedBy"));
+const GameAssets = loadable(() => import("sections/GameAssets"));
+const OurTeam = loadable(() => import("sections/OurTeam"));
+const Partner = loadable(() => import("sections/Partner"));
+const Audits = loadable(() => import("sections/Audits"));
+const Media = loadable(() => import("sections/Media"));
+const FAQ = loadable(() => import("sections/FAQ"));
+const ScrollTop = loadable(() => import("sections/ScrollTop"));
+const Contract = loadable(() => import("sections/Contract"));
+const Footer = loadable(() => import("sections/Footer"));
 
 const Home = () => {
+  useEffect(() => {
+    (function (e, t, n) {
+      if (e.snaptr) return;
+      var a = (e.snaptr = function () {
+        a.handleRequest
+          ? a.handleRequest.apply(a, arguments)
+          : a.queue.push(arguments);
+      });
+      a.queue = [];
+      var s = "script";
+      var r;
+      r = t.createElement(s);
+      r.async = !0;
+      r.src = n;
+      var u = t.getElementsByTagName(s)[0];
+      u.parentNode.insertBefore(r, u);
+    })(window, document, "https://sc-static.net/scevent.min.js");
+
+    snaptr("init", "3e803d6c-4af7-4d86-b2b0-c100f8d226e9", {
+      user_email: "__INSERT_USER_EMAIL__",
+    });
+
+    snaptr("track", "PAGE_VIEW");
+    
+    TagManager.initialize({
+      gtmId: 'GTM-53NXX48'
+    });
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <Head>
         <title>
-          Welcome to PolRare  
+          Planet Sandbox | A physics TPS NFT sandbox
+          shooting game that allows players to build and own arenas to fight
+          other players in different game modes using their own NFT weapons and
+          accessories.
         </title>
         <meta
           name="Description"
-          content="polrare.co"
+          content="Planet Sandbox is a physics TPS NFT sandbox shooting game that allows players to build and own arenas to fight other players in different game modes using their own NFT weapons and accessories."
+        />
+        <meta property="og:url" content="https://planetsandbox.io/"></meta>
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:image" content={poster}></meta> 
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="upgrade-insecure-requests"
         />
         <meta name="theme-color" content="#280D57" />
-        <link rel="shortcut icon" type="image/x-icon" href={FavIcon} />
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          sizes="64x64"
+          href={FavIcon}
+        />
         <link
           rel="stylesheet"
           type="text/css"
@@ -41,21 +94,25 @@ const Home = () => {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet"/>
       </Head>
       <GlobalStyle />
+      {/* <Popup /> */}
       <Nav />
-      {/* <NavBanner /> */}
-      <Exhibition />
-      <Slogan />
-      <Production />
-      <OurSolution/>
+      <Banner />
+      <About />
+      <GamePlay />
+      <GameAssets />
       <Roadmap />
       <OurTeam />
       <Advisor />
       <BackedBy />
-     
+      <Partner />
+      <Audits />
+      <Media />
+      <FAQ />
       <Footer />
+      <ScrollTop />
+      <Contract />
     </ThemeProvider>
   );
 };

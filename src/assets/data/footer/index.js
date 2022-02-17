@@ -1,37 +1,93 @@
-import { FaTwitter, FaMediumM, FaTelegramPlane } from "react-icons/fa";
+import telegram from 'assets/images/footer/telegram.png';
+import twitter from 'assets/images/footer/twitter.png';
+import medium from 'assets/images/footer/medium.png';
+import discord from 'assets/images/footer/discord.png';
+import youtube from 'assets/images/footer/youtube.png';
+import facebook from 'assets/images/footer/facebook.png';
+
 
 export default {
-  links: [
+  products:[
     {
-      icon: <FaTwitter />,
-      url: "//twitter.com/x89_nft",
-      name: "Twitter",
+      productName: "Home",
+      productLink: "/#home",
     },
-
     {
-      icon: <FaMediumM />,
-      url: "//medium.com/@Polrare.nft",
-      name: "Medium"
+      productName: "Gameplay",
+      productLink: "/#gameplay",
     },
-    
     {
-      icon: <FaTelegramPlane />,
-      url: "//t.me/joinchat/6oNOOAqXlJo0ZmM1",
-      name: "Telegram"
+      productName: "NFT Items",
+      productLink: "/#nft",
+    },
+    // {
+    //   productName: "PSB",
+    //   productLink: "#psb",
+    // },
+  ],
+  information:[
+    {
+      infoName: "Team",
+      infoLink: "/#ourteam",
+      target: "_self"
+    },
+    {
+      infoName: "Roadmap",
+      infoLink: "/#roadmap",
+      target: "_self"
+    },
+    {
+      infoName: "Term condition",
+      infoLink: "//planetsandbox.gitbook.io/planetsandbox-game/terms-and-conditions",
+      target: "_blank"
     },
   ],
   documentation:[
     {
-      documentName: "WHITEPAPER",
-      documentLink: "//www.whitepaper.com/"
+      documentName: "About us",
+      documentLink: "/coming"
     },
     {
-      documentName: "TOKENOMICS",
-      documentLink: "//www.stokenomics.com/"
+      documentName: "Policy",
+      documentLink: "/coming"
     },
     {
-      documentName: "DEVELOPERHUB",
-      documentLink: "//developers.intercom.com/"
+      documentName: "Whitepaper",
+      documentLink: "//planetsandbox.gitbook.io/planetsandbox-game"
     },
-  ]
+  ],
+  links1: [
+    {
+      icon: telegram,
+      url: "//t.me/planetsandbox",
+      name: "Telegram",
+    },
+    {
+      icon: twitter,
+      url: "//twitter.com/planetsandbox",
+      name: "Twitter"
+    },
+    {
+      icon: medium,
+      url: "//planetsandbox.medium.com/",
+      name: "Medium"
+    },
+    
+  ],
+  links2: [
+    {
+      icon: discord,
+      url: "//discord.gg/zwpC6EAatV",
+      name: "Discord",
+    },
+    {
+      icon: youtube,
+      url: "//www.youtube.com/c/PlanetSandboxOfficial/featured",
+      name: "Youtube"
+    }, {
+      icon: facebook,
+      url: "//www.facebook.com/planetsandbox",
+      name: "Facebook"
+    },
+  ],
 };

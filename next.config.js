@@ -1,6 +1,7 @@
 const withPlugins = require('next-compose-plugins'); 
 const withCSS = require('@zeit/next-css');
 const optimizedImages = require('next-optimized-images'); 
+const withFonts = require('next-fonts');
 
 
 module.exports = withPlugins(
@@ -27,12 +28,23 @@ module.exports = withPlugins(
                 },
             }
         ],
-        withCSS,//
+        withCSS,
         {
             devIndicators: {
             autoPrerender: false,
             }   
-        }
-    ]//e
-     
+        },
+    ],//e
+    {
+        rules: [
+            {
+                test: /\.(woff2?|eot|ttf|otf)$/,
+                loader: 'file-loader',
+                options: {
+                    limit: 10000,
+                    name: '[name].[hash:7].[ext]'
+                }
+             }
+         ]
+    }
 )

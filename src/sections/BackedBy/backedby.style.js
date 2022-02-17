@@ -1,80 +1,54 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-const BackedByWrapper  = styled.div`
-    padding: 80px 0;
+const BackedByWrapper = styled.div`
+  padding: 80px 0px 70px 0px;
 
-    h1{
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 700;
+  .backedby-heading {
+    text-align: center;
+    p {
+      font-size: 16px;
+      text-transform: uppercase;
+      line-height: 16px;
+      font-weight: 700;
+      color: ${(props) => props.theme.primaryColor};
+      font-weight: 700;
     }
+  }
 
-    P{
-        font-family: 'Poppins', sans-serif;
+  .backedby-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: -52px;
+    padding-right: -52px;
+    .backedby-item {
+      padding: 33px 52px;
     }
+  }
 
-    .backedby-heading{
-        text-align: center;
-        p{
-            font-size: 16px;
-            text-transform: uppercase;
-            line-height: 16px;
-            font-weight: 700;
-            color: ${props => props.theme.primaryColor};
-            font-weight: 700;
-        }
-
-        h1{
-            font-size: 64px;
-            line-height: 64px;
-            color: #FCFCFD;
-        }
+  @media only screen and (max-width: 992px) {
+    .backedby-content {
+      justify-content: space-between;
+      .backedby-item {
+        width: 80%;
+        margin-bottom: 30px;
+        padding: unset;
+      }
     }
+  }
 
-    .backedby-content{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        .backedby-item{
-            width: 219px;
-            height: 147px;
-            margin: 15px;
-            border-radius: 16px;
-            background: #17181C;
-            position: relative;
-            cursor: pointer;
-
-            &:hover{
-                background: #535354;
-            }
-
-            img{
-                width: 122px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
+  @media only screen and (max-width: 576px) {
+    .backedby-content {
+      .backedby-item {
+        width: 100px;
+        margin: 5px auto;
+        img#b1,
+        img#b7 {
+          width: 60%;
+          margin: auto;
         }
-    }
-
-    @media only screen and (max-width: 500px){
-        .backedby-item{
-            width: 255px!important;
-            height: 140px!important;
-            margin: 5px!important;
-
-            img{
-                width: 135px!important;
-            }
-        }
-    }
-
-    @media only screen and (max-width: 480px){
-        .backedby-heading{
-        h1{
-            font-size: 49px;
-            line-height: 49px;
-        }
+      }
     }
   }
 `;
