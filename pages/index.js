@@ -6,6 +6,7 @@ import FavIcon from "assets/images/favicon.svg";
 import theme from "assets/theme/theme";
 import GlobalStyle from "assets/theme";
 import poster from "assets/images/poster.webp";
+import TagManager from 'react-gtm-module';
 
 const Popup = loadable(() => import("sections/Popup"));
 const Nav = loadable(() => import("sections/Nav"));
@@ -49,6 +50,10 @@ const Home = () => {
     });
 
     snaptr("track", "PAGE_VIEW");
+    
+    TagManager.initialize({
+      gtmId: 'GTM-53NXX48'
+    });
   }, []);
 
   return (
