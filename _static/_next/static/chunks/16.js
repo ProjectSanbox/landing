@@ -3585,7 +3585,9 @@ var __rest = undefined && undefined.__rest || function (s, e) {
 
   for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
 
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) if (e.indexOf(p[i]) < 0) t[p[i]] = s[p[i]];
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
   return t;
 };
 
@@ -3594,7 +3596,7 @@ var __rest = undefined && undefined.__rest || function (s, e) {
 
 function Tree2Element(tree) {
   return tree && tree.map(function (node, i) {
-    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](node.tag, __assign({
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(node.tag, __assign({
       key: i
     }, node.attr), Tree2Element(node.child));
   });
@@ -3602,38 +3604,38 @@ function Tree2Element(tree) {
 
 function GenIcon(data) {
   return function (props) {
-    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"](IconBase, __assign({
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IconBase, __assign({
       attr: __assign({}, data.attr)
     }, props), Tree2Element(data.child));
   };
 }
 function IconBase(props) {
   var elem = function (conf) {
-    var computedSize = props.size || conf.size || "1em";
+    var attr = props.attr,
+        size = props.size,
+        title = props.title,
+        svgProps = __rest(props, ["attr", "size", "title"]);
+
+    var computedSize = size || conf.size || "1em";
     var className;
     if (conf.className) className = conf.className;
     if (props.className) className = (className ? className + ' ' : '') + props.className;
-
-    var attr = props.attr,
-        title = props.title,
-        svgProps = __rest(props, ["attr", "title"]);
-
-    return react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("svg", __assign({
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", __assign({
       stroke: "currentColor",
       fill: "currentColor",
       strokeWidth: "0"
     }, conf.attr, attr, svgProps, {
       className: className,
-      style: __assign({
+      style: __assign(__assign({
         color: props.color || conf.color
-      }, conf.style, props.style),
+      }, conf.style), props.style),
       height: computedSize,
       width: computedSize,
       xmlns: "http://www.w3.org/2000/svg"
-    }), title && react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("title", null, title), props.children);
+    }), title && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, title), props.children);
   };
 
-  return _iconContext__WEBPACK_IMPORTED_MODULE_1__["IconContext"] !== undefined ? react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_iconContext__WEBPACK_IMPORTED_MODULE_1__["IconContext"].Consumer, null, function (conf) {
+  return _iconContext__WEBPACK_IMPORTED_MODULE_1__["IconContext"] !== undefined ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_iconContext__WEBPACK_IMPORTED_MODULE_1__["IconContext"].Consumer, null, function (conf) {
     return elem(conf);
   }) : elem(_iconContext__WEBPACK_IMPORTED_MODULE_1__["DefaultContext"]);
 }
@@ -3661,7 +3663,7 @@ var DefaultContext = {
   style: undefined,
   attr: undefined
 };
-var IconContext = react__WEBPACK_IMPORTED_MODULE_0__["createContext"] && react__WEBPACK_IMPORTED_MODULE_0__["createContext"](DefaultContext);
+var IconContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext && react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext(DefaultContext);
 
 /***/ }),
 
@@ -3675,125 +3677,153 @@ var IconContext = react__WEBPACK_IMPORTED_MODULE_0__["createContext"] && react__
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IconsManifest", function() { return IconsManifest; });
-var IconsManifest = [{
-  "id": "fa",
-  "name": "Font Awesome",
-  "projectUrl": "https://fontawesome.com/",
-  "license": "CC BY 4.0 License",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
-}, {
-  "id": "io",
-  "name": "Ionicons",
-  "projectUrl": "https://ionicons.com/",
-  "license": "MIT",
-  "licenseUrl": "https://github.com/ionic-team/ionicons/blob/master/LICENSE"
-}, {
-  "id": "md",
-  "name": "Material Design icons",
-  "projectUrl": "http://google.github.io/material-design-icons/",
-  "license": "Apache License Version 2.0",
-  "licenseUrl": "https://github.com/google/material-design-icons/blob/master/LICENSE"
-}, {
-  "id": "ti",
-  "name": "Typicons",
-  "projectUrl": "http://s-ings.com/typicons/",
-  "license": "CC BY-SA 3.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
-}, {
-  "id": "go",
-  "name": "Github Octicons icons",
-  "projectUrl": "https://octicons.github.com/",
-  "license": "MIT",
-  "licenseUrl": "https://github.com/primer/octicons/blob/master/LICENSE"
-}, {
-  "id": "fi",
-  "name": "Feather",
-  "projectUrl": "https://feathericons.com/",
-  "license": "MIT",
-  "licenseUrl": "https://github.com/feathericons/feather/blob/master/LICENSE"
-}, {
-  "id": "gi",
-  "name": "Game Icons",
-  "projectUrl": "https://game-icons.net/",
-  "license": "CC BY 3.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
-}, {
-  "id": "wi",
-  "name": "Weather Icons",
-  "projectUrl": "https://erikflowers.github.io/weather-icons/",
-  "license": "SIL OFL 1.1",
-  "licenseUrl": "http://scripts.sil.org/OFL"
-}, {
-  "id": "di",
-  "name": "Devicons",
-  "projectUrl": "https://vorillaz.github.io/devicons/",
-  "license": "MIT",
-  "licenseUrl": "https://opensource.org/licenses/MIT"
-}, {
-  "id": "ai",
-  "name": "Ant Design Icons",
-  "projectUrl": "https://github.com/ant-design/ant-design-icons",
-  "license": "MIT",
-  "licenseUrl": "https://opensource.org/licenses/MIT"
-}, {
-  "id": "bs",
-  "name": "Bootstrap Icons",
-  "projectUrl": "https://github.com/twbs/icons",
-  "license": "MIT",
-  "licenseUrl": "https://opensource.org/licenses/MIT"
-}, {
-  "id": "ri",
-  "name": "Remix Icon",
-  "projectUrl": "https://github.com/Remix-Design/RemixIcon",
-  "license": "Apache License Version 2.0",
-  "licenseUrl": "http://www.apache.org/licenses/"
-}, {
-  "id": "fc",
-  "name": "Flat Color Icons",
-  "projectUrl": "https://github.com/icons8/flat-color-icons",
-  "license": "MIT",
-  "licenseUrl": "https://opensource.org/licenses/MIT"
-}, {
-  "id": "gr",
-  "name": "Grommet-Icons",
-  "projectUrl": "https://github.com/grommet/grommet-icons",
-  "license": "Apache License Version 2.0",
-  "licenseUrl": "http://www.apache.org/licenses/"
-}, {
-  "id": "hi",
-  "name": "Heroicons",
-  "projectUrl": "https://github.com/refactoringui/heroicons",
-  "license": "MIT",
-  "licenseUrl": "https://opensource.org/licenses/MIT"
-}, {
-  "id": "si",
-  "name": "Simple Icons",
-  "projectUrl": "https://simpleicons.org/",
-  "license": "CC0 1.0 Universal",
-  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-}, {
-  "id": "im",
-  "name": "IcoMoon Free",
-  "projectUrl": "https://github.com/Keyamoon/IcoMoon-Free",
-  "license": "CC BY 4.0 License"
-}, {
-  "id": "bi",
-  "name": "BoxIcons",
-  "projectUrl": "https://github.com/atisawd/boxicons",
-  "license": "CC BY 4.0 License"
-}, {
-  "id": "cg",
-  "name": "css.gg",
-  "projectUrl": "https://github.com/astrit/css.gg",
-  "license": "MIT",
-  "licenseUrl": "https://opensource.org/licenses/MIT"
-}, {
-  "id": "vsc",
-  "name": "VS Code Icons",
-  "projectUrl": "https://github.com/microsoft/vscode-codicons",
-  "license": "CC BY 4.0",
-  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
-}];
+var IconsManifest = [
+  {
+    "id": "fa",
+    "name": "Font Awesome",
+    "projectUrl": "https://fontawesome.com/",
+    "license": "CC BY 4.0 License",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "io",
+    "name": "Ionicons 4",
+    "projectUrl": "https://ionicons.com/",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/ionic-team/ionicons/blob/master/LICENSE"
+  },
+  {
+    "id": "io5",
+    "name": "Ionicons 5",
+    "projectUrl": "https://ionicons.com/",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/ionic-team/ionicons/blob/master/LICENSE"
+  },
+  {
+    "id": "md",
+    "name": "Material Design icons",
+    "projectUrl": "http://google.github.io/material-design-icons/",
+    "license": "Apache License Version 2.0",
+    "licenseUrl": "https://github.com/google/material-design-icons/blob/master/LICENSE"
+  },
+  {
+    "id": "ti",
+    "name": "Typicons",
+    "projectUrl": "http://s-ings.com/typicons/",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "id": "go",
+    "name": "Github Octicons icons",
+    "projectUrl": "https://octicons.github.com/",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/primer/octicons/blob/master/LICENSE"
+  },
+  {
+    "id": "fi",
+    "name": "Feather",
+    "projectUrl": "https://feathericons.com/",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/feathericons/feather/blob/master/LICENSE"
+  },
+  {
+    "id": "gi",
+    "name": "Game Icons",
+    "projectUrl": "https://game-icons.net/",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  {
+    "id": "wi",
+    "name": "Weather Icons",
+    "projectUrl": "https://erikflowers.github.io/weather-icons/",
+    "license": "SIL OFL 1.1",
+    "licenseUrl": "http://scripts.sil.org/OFL"
+  },
+  {
+    "id": "di",
+    "name": "Devicons",
+    "projectUrl": "https://vorillaz.github.io/devicons/",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": "ai",
+    "name": "Ant Design Icons",
+    "projectUrl": "https://github.com/ant-design/ant-design-icons",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": "bs",
+    "name": "Bootstrap Icons",
+    "projectUrl": "https://github.com/twbs/icons",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": "ri",
+    "name": "Remix Icon",
+    "projectUrl": "https://github.com/Remix-Design/RemixIcon",
+    "license": "Apache License Version 2.0",
+    "licenseUrl": "http://www.apache.org/licenses/"
+  },
+  {
+    "id": "fc",
+    "name": "Flat Color Icons",
+    "projectUrl": "https://github.com/icons8/flat-color-icons",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": "gr",
+    "name": "Grommet-Icons",
+    "projectUrl": "https://github.com/grommet/grommet-icons",
+    "license": "Apache License Version 2.0",
+    "licenseUrl": "http://www.apache.org/licenses/"
+  },
+  {
+    "id": "hi",
+    "name": "Heroicons",
+    "projectUrl": "https://github.com/tailwindlabs/heroicons",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": "si",
+    "name": "Simple Icons",
+    "projectUrl": "https://simpleicons.org/",
+    "license": "CC0 1.0 Universal",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  {
+    "id": "im",
+    "name": "IcoMoon Free",
+    "projectUrl": "https://github.com/Keyamoon/IcoMoon-Free",
+    "license": "CC BY 4.0 License"
+  },
+  {
+    "id": "bi",
+    "name": "BoxIcons",
+    "projectUrl": "https://github.com/atisawd/boxicons",
+    "license": "CC BY 4.0 License"
+  },
+  {
+    "id": "cg",
+    "name": "css.gg",
+    "projectUrl": "https://github.com/astrit/css.gg",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": "vsc",
+    "name": "VS Code Icons",
+    "projectUrl": "https://github.com/microsoft/vscode-codicons",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  }
+]
 
 /***/ }),
 
@@ -3897,7 +3927,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var BoxWrapper = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "Box__BoxWrapper",
-  componentId: "biqg5d-0"
+  componentId: "sc-1mpcxbd-0"
 })([""]);
 
 var Box = function Box(_ref) {
@@ -3947,7 +3977,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ButtonWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].button.withConfig({
   displayName: "buttonstyle__ButtonWrapper",
-  componentId: "sc-1l0bfk6-0"
+  componentId: "wjxglc-0"
 })(["", " ", ""], function (props) {
   return props.btnColor ? Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(["color:", ";"], props.btnColor) : Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(["color:inherit;"]);
 }, function (props) {
@@ -4044,7 +4074,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var ImageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].img.withConfig({
   displayName: "Image__ImageWrapper",
-  componentId: "sc-1u2koxj-0"
+  componentId: "sc-1ybmtsh-0"
 })(["width:100%;height:auto;display:block;"]);
 
 var Image = function Image(_ref) {
@@ -4105,7 +4135,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var TextWrapper = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].p.withConfig({
   displayName: "Text__TextWrapper",
-  componentId: "sc-1ezj4hz-0"
+  componentId: "zm0wao-0"
 })(["margin-top:0;margin-bottom:1rem;", " ", ""], function (props) {
   return props.FontSize && Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["css"])(["font-size:", ";"], props.FontSize);
 }, function (props) {
@@ -4432,7 +4462,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var PopupWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "popupstyle__PopupWrapper",
-  componentId: "momjrg-0"
+  componentId: "sc-19bn4v5-0"
 })(["position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);z-index:999;&.hide{display:none;}.popup{width:34.2708333333vw;padding-top:40px;height:85vh;background-color:linear-gradient( 179.55deg,#552d91 4.95%,#4d6fa3 39.58%,#41ccbc 85.57% );background-image:url(", ");background-repeat:no-repeat;background-size:cover;background-position:40px 40px center;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);.popup-logo{width:85.205%;margin:auto;div{position:relative;.popup-img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40%;}}}.loot-box{width:60.464%;position:absolute;left:55%;top:55%;transform:translate(-55%,-55%);}p.notification{font-size:20px;font-weight:400;width:100%;text-align:center;font-style:italic;padding:0 20px;position:absolute;top:25%;left:50%;transform:translateY(-25%);transform:translateX(-50%);}.popup-info{position:absolute;bottom:20px;left:50%;width:100%;max-width:452px;text-align:center;transform:translateX(-50%);div{display:flex;justify-content:space-between;span.countdown{padding:0px 3%;p{text-transform:uppercase;font-size:1.4rem;font-family:\"Goma Block\",sans-serif;font-weight:400;text-shadow:0px 0px 12px rgba(255,255,255,0.25);color:#000000;}}}button{width:200px;height:46px;background:radial-gradient( 127.37% 191.06% at 106.67% -3%,#1dbfff 1.87%,#1fb8fb 3.31%,#2d81dc 15.69%,#3853c2 27.74%,#412fae 39.17%,#4815a0 49.85%,#4c0597 59.46%,#4d0094 67.1%,#3c0075 74.63%,#26004c 85.8%,#180033 94.64%,#13002a 100% );color:#ffffff;font-size:20px;font-weight:700;border-radius:60px;border:none;}}.btn-close{position:absolute;top:-5px;right:-10px;width:unset;height:unset;svg{font-size:20px;color:rgba(255,255,255,0.5);}}}@media only screen and (min-width:1440px){.popup-info{div{span.countdown{p{font-size:1.6rem;}}}}}@media only screen and (max-width:1100px){.popup{width:500px;height:85vh;.loot-box{top:75%;top:65%;transform:translate(-55%,-75%);}.popup-info{button{width:150px;font-size:15px;}}}}@media only screen and (max-width:530px){.popup{width:420px;height:85vh;.loot-box{top:80%;top:65%;transform:translate(-55%,-80%);}.btn-close{svg{font-size:30px;}}}}@media only screen and (max-width:425px){.popup{width:340px;height:75vh;.loot-box{top:80%;top:65%;transform:translate(-55%,-80%);}p.notification{font-size:16px;}.popup-info{div{span.countdown{margin-bottom:0;p{font-size:16px;}}}}.btn-close{right:-10px;svg{font-size:25px;}}}}"], _assets_images_popup_background_png__WEBPACK_IMPORTED_MODULE_1___default.a);
 /* harmony default export */ __webpack_exports__["default"] = (PopupWrapper);
 

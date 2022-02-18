@@ -2447,6 +2447,185 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/react-gtm-module/dist/Snippets.js":
+/*!********************************************************!*\
+  !*** ./node_modules/react-gtm-module/dist/Snippets.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _warn = __webpack_require__(/*! ./utils/warn */ "./node_modules/react-gtm-module/dist/utils/warn.js");
+
+var _warn2 = _interopRequireDefault(_warn);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// https://developers.google.com/tag-manager/quickstart
+
+var Snippets = {
+  tags: function tags(_ref) {
+    var id = _ref.id,
+        events = _ref.events,
+        dataLayer = _ref.dataLayer,
+        dataLayerName = _ref.dataLayerName,
+        preview = _ref.preview,
+        auth = _ref.auth;
+
+    var gtm_auth = '&gtm_auth=' + auth;
+    var gtm_preview = '&gtm_preview=' + preview;
+
+    if (!id) (0, _warn2.default)('GTM Id is required');
+
+    var iframe = '\n      <iframe src="https://www.googletagmanager.com/ns.html?id=' + id + gtm_auth + gtm_preview + '&gtm_cookies_win=x"\n        height="0" width="0" style="display:none;visibility:hidden" id="tag-manager"></iframe>';
+
+    var script = '\n      (function(w,d,s,l,i){w[l]=w[l]||[];\n        w[l].push({\'gtm.start\': new Date().getTime(),event:\'gtm.js\', ' + JSON.stringify(events).slice(1, -1) + '});\n        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';\n        j.async=true;j.src=\'https://www.googletagmanager.com/gtm.js?id=\'+i+dl+\'' + gtm_auth + gtm_preview + '&gtm_cookies_win=x\';\n        f.parentNode.insertBefore(j,f);\n      })(window,document,\'script\',\'' + dataLayerName + '\',\'' + id + '\');';
+
+    var dataLayerVar = this.dataLayer(dataLayer, dataLayerName);
+
+    return {
+      iframe: iframe,
+      script: script,
+      dataLayerVar: dataLayerVar
+    };
+  },
+  dataLayer: function dataLayer(_dataLayer, dataLayerName) {
+    return '\n      window.' + dataLayerName + ' = window.' + dataLayerName + ' || [];\n      window.' + dataLayerName + '.push(' + JSON.stringify(_dataLayer) + ')';
+  }
+};
+
+module.exports = Snippets;
+
+/***/ }),
+
+/***/ "./node_modules/react-gtm-module/dist/TagManager.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-gtm-module/dist/TagManager.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _Snippets = __webpack_require__(/*! ./Snippets */ "./node_modules/react-gtm-module/dist/Snippets.js");
+
+var _Snippets2 = _interopRequireDefault(_Snippets);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var TagManager = {
+  dataScript: function dataScript(dataLayer) {
+    var script = document.createElement('script');
+    script.innerHTML = dataLayer;
+    return script;
+  },
+  gtm: function gtm(args) {
+    var snippets = _Snippets2.default.tags(args);
+
+    var noScript = function noScript() {
+      var noscript = document.createElement('noscript');
+      noscript.innerHTML = snippets.iframe;
+      return noscript;
+    };
+
+    var script = function script() {
+      var script = document.createElement('script');
+      script.innerHTML = snippets.script;
+      return script;
+    };
+
+    var dataScript = this.dataScript(snippets.dataLayerVar);
+
+    return {
+      noScript: noScript,
+      script: script,
+      dataScript: dataScript
+    };
+  },
+  initialize: function initialize(_ref) {
+    var gtmId = _ref.gtmId,
+        _ref$events = _ref.events,
+        events = _ref$events === undefined ? {} : _ref$events,
+        dataLayer = _ref.dataLayer,
+        _ref$dataLayerName = _ref.dataLayerName,
+        dataLayerName = _ref$dataLayerName === undefined ? 'dataLayer' : _ref$dataLayerName,
+        _ref$auth = _ref.auth,
+        auth = _ref$auth === undefined ? '' : _ref$auth,
+        _ref$preview = _ref.preview,
+        preview = _ref$preview === undefined ? '' : _ref$preview;
+
+    var gtm = this.gtm({
+      id: gtmId,
+      events: events,
+      dataLayer: dataLayer || undefined,
+      dataLayerName: dataLayerName,
+      auth: auth,
+      preview: preview
+    });
+    if (dataLayer) document.head.appendChild(gtm.dataScript);
+    document.head.insertBefore(gtm.script(), document.head.childNodes[0]);
+    document.body.insertBefore(gtm.noScript(), document.body.childNodes[0]);
+  },
+  dataLayer: function dataLayer(_ref2) {
+    var _dataLayer = _ref2.dataLayer,
+        _ref2$dataLayerName = _ref2.dataLayerName,
+        dataLayerName = _ref2$dataLayerName === undefined ? 'dataLayer' : _ref2$dataLayerName;
+
+    if (window[dataLayerName]) return window[dataLayerName].push(_dataLayer);
+    var snippets = _Snippets2.default.dataLayer(_dataLayer, dataLayerName);
+    var dataScript = this.dataScript(snippets);
+    document.head.insertBefore(dataScript, document.head.childNodes[0]);
+  }
+};
+
+module.exports = TagManager;
+
+/***/ }),
+
+/***/ "./node_modules/react-gtm-module/dist/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/react-gtm-module/dist/index.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _TagManager = __webpack_require__(/*! ./TagManager */ "./node_modules/react-gtm-module/dist/TagManager.js");
+
+var _TagManager2 = _interopRequireDefault(_TagManager);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = _TagManager2.default;
+
+/***/ }),
+
+/***/ "./node_modules/react-gtm-module/dist/utils/warn.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-gtm-module/dist/utils/warn.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var warn = function warn(s) {
+  console.warn('[react-gtm]', s);
+};
+
+exports.default = warn;
+
+/***/ }),
+
 /***/ "./node_modules/react-is/cjs/react-is.development.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
@@ -2788,6 +2967,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_assets_theme__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/assets/theme */ "./src/assets/theme/index.js");
 /* harmony import */ var _src_assets_images_poster_webp__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../src/assets/images/poster.webp */ "./src/assets/images/poster.webp");
 /* harmony import */ var _src_assets_images_poster_webp__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_src_assets_images_poster_webp__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_gtm_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-gtm-module */ "./node_modules/react-gtm-module/dist/index.js");
+/* harmony import */ var react_gtm_module__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_gtm_module__WEBPACK_IMPORTED_MODULE_8__);
 var _this = undefined,
     _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/pages/index.js";
 
@@ -2800,26 +2981,27 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 var Popup = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
   return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! ../src/sections/Popup */ "./src/sections/Popup/index.js"));
 });
 var Nav = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ../src/sections/Nav */ "./src/sections/Nav/index.js"));
+  return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ../src/sections/Nav */ "./src/sections/Nav/index.js"));
 });
 var Banner = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! ../src/sections/Banner */ "./src/sections/Banner/index.js"));
+  return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! ../src/sections/Banner */ "./src/sections/Banner/index.js"));
 });
 var Roadmap = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
   return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! ../src/sections/Roadmap */ "./src/sections/Roadmap/index.js"));
 });
 var About = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e("styles"), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! ../src/sections/About */ "./src/sections/About/index.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e("styles"), __webpack_require__.e(12)]).then(__webpack_require__.bind(null, /*! ../src/sections/About */ "./src/sections/About/index.js"));
 });
 var GamePlay = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! ../src/sections/GamePlay */ "./src/sections/GamePlay/index.js"));
+  return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! ../src/sections/GamePlay */ "./src/sections/GamePlay/index.js"));
 });
 var Advisor = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! ../src/sections/Advisor */ "./src/sections/Advisor/index.js"));
+  return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! ../src/sections/Advisor */ "./src/sections/Advisor/index.js"));
 });
 var BackedBy = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
   return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../src/sections/BackedBy */ "./src/sections/BackedBy/index.js"));
@@ -2828,25 +3010,25 @@ var GameAssets = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["defaul
   return Promise.all(/*! import() */[__webpack_require__.e("styles"), __webpack_require__.e(3)]).then(__webpack_require__.bind(null, /*! ../src/sections/GameAssets */ "./src/sections/GameAssets/index.js"));
 });
 var OurTeam = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return Promise.all(/*! import() */[__webpack_require__.e("styles"), __webpack_require__.e(6)]).then(__webpack_require__.bind(null, /*! ../src/sections/OurTeam */ "./src/sections/OurTeam/index.js"));
+  return Promise.all(/*! import() */[__webpack_require__.e("styles"), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! ../src/sections/OurTeam */ "./src/sections/OurTeam/index.js"));
 });
 var Partner = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
   return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! ../src/sections/Partner */ "./src/sections/Partner/index.js"));
 });
 var Audits = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ../src/sections/Audits */ "./src/sections/Audits/index.js"));
+  return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! ../src/sections/Audits */ "./src/sections/Audits/index.js"));
 });
 var Media = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ../src/sections/Media */ "./src/sections/Media/index.js"));
+  return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! ../src/sections/Media */ "./src/sections/Media/index.js"));
 });
 var FAQ = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! ../src/sections/FAQ */ "./src/sections/FAQ/index.js"));
+  return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! ../src/sections/FAQ */ "./src/sections/FAQ/index.js"));
 });
 var ScrollTop = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
   return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! ../src/sections/ScrollTop */ "./src/sections/ScrollTop/index.js"));
 });
 var Contract = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
-  return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! ../src/sections/Contract */ "./src/sections/Contract/index.js"));
+  return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! ../src/sections/Contract */ "./src/sections/Contract/index.js"));
 });
 var Footer = Object(_loadable_component__WEBPACK_IMPORTED_MODULE_3__["default"])(function () {
   return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../src/sections/Footer */ "./src/sections/Footer/index.js"));
@@ -2875,36 +3057,39 @@ var Home = function Home() {
       user_email: "__INSERT_USER_EMAIL__"
     });
     snaptr("track", "PAGE_VIEW");
+    react_gtm_module__WEBPACK_IMPORTED_MODULE_8___default.a.initialize({
+      gtmId: 'GTM-53NXX48'
+    });
   }, []);
   return __jsx(styled_components__WEBPACK_IMPORTED_MODULE_2__["ThemeProvider"], {
     theme: _src_assets_theme_theme__WEBPACK_IMPORTED_MODULE_5__["default"],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 60,
       columnNumber: 5
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 61,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57,
+      lineNumber: 62,
       columnNumber: 9
     }
-  }, "Welcome to PlanetSandbox | Planet Sandbox is a physics TPS NFT sandbox shooting game that allows players to build and own arenas to fight other players in different game modes using their own NFT weapons and accessories."), __jsx("meta", {
+  }, "Planet Sandbox | A physics TPS NFT sandbox shooting game that allows players to build and own arenas to fight other players in different game modes using their own NFT weapons and accessories."), __jsx("meta", {
     name: "Description",
     content: "Planet Sandbox is a physics TPS NFT sandbox shooting game that allows players to build and own arenas to fight other players in different game modes using their own NFT weapons and accessories.",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 68,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -2913,7 +3098,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 72,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -2922,7 +3107,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 73,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -2931,7 +3116,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 74,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -2940,7 +3125,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 75,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -2949,7 +3134,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 79,
       columnNumber: 9
     }
   }), __jsx("link", {
@@ -2960,7 +3145,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 80,
       columnNumber: 9
     }
   }), __jsx("link", {
@@ -2971,7 +3156,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 86,
       columnNumber: 9
     }
   }), __jsx("link", {
@@ -2981,126 +3166,126 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 92,
       columnNumber: 9
     }
   })), __jsx(_src_assets_theme__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 98,
       columnNumber: 7
     }
   }), __jsx(Nav, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 100,
       columnNumber: 7
     }
   }), __jsx(Banner, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 101,
       columnNumber: 7
     }
   }), __jsx(About, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 102,
       columnNumber: 7
     }
   }), __jsx(GamePlay, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 103,
       columnNumber: 7
     }
   }), __jsx(GameAssets, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99,
+      lineNumber: 104,
       columnNumber: 7
     }
   }), __jsx(Roadmap, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
+      lineNumber: 105,
       columnNumber: 7
     }
   }), __jsx(OurTeam, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101,
+      lineNumber: 106,
       columnNumber: 7
     }
   }), __jsx(Advisor, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102,
+      lineNumber: 107,
       columnNumber: 7
     }
   }), __jsx(BackedBy, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103,
+      lineNumber: 108,
       columnNumber: 7
     }
   }), __jsx(Partner, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104,
+      lineNumber: 109,
       columnNumber: 7
     }
   }), __jsx(Audits, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105,
+      lineNumber: 110,
       columnNumber: 7
     }
   }), __jsx(Media, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 111,
       columnNumber: 7
     }
   }), __jsx(FAQ, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 112,
       columnNumber: 7
     }
   }), __jsx(Footer, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 113,
       columnNumber: 7
     }
   }), __jsx(ScrollTop, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 114,
       columnNumber: 7
     }
   }), __jsx(Contract, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 115,
       columnNumber: 7
     }
   }));

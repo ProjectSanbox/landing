@@ -763,14 +763,75 @@ module.exports = (__webpack_require__(/*! dll-reference dll_2adc2403d89adc16ead0
 
 /***/ }),
 
-/***/ "./src/assets/images/banner/banner.png":
+/***/ "./src/assets/data/advisor/index.js":
+/*!******************************************!*\
+  !*** ./src/assets/data/advisor/index.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _images_advisor_thi_truong_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../images/advisor/thi-truong.png */ "./src/assets/images/advisor/thi-truong.png");
+/* harmony import */ var _images_advisor_thi_truong_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_advisor_thi_truong_png__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_advisor_eric_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/advisor/eric.png */ "./src/assets/images/advisor/eric.png");
+/* harmony import */ var _images_advisor_eric_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_advisor_eric_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_advisor_larry_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/advisor/larry.png */ "./src/assets/images/advisor/larry.png");
+/* harmony import */ var _images_advisor_larry_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_advisor_larry_png__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  advisor: [{
+    avatar: _images_advisor_thi_truong_png__WEBPACK_IMPORTED_MODULE_0___default.a,
+    name: "Thi Truong",
+    job: "ADVISOR",
+    desc: "Mr. Thi, the co-founder, and CEO of Icetea Labs and Polka Foundry\n             & RedKite. He is also the mind behind Faraland, GameFi, and a dozen of \n             other successful blockchain projects. With his enormous help in providing \n             guidance and strategic advice and build valuable connections, Planet Sandbox is growing fast every day."
+  }, {
+    avatar: _images_advisor_eric_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+    name: "Eric",
+    job: "ADVISOR",
+    desc: "Mr.Eric \u2014 CEO of Exnetwork Capital \u2014 a hyperconnected \n            early-stage fund/incubator has over 10 active communities centered around\n            various crypto and a global footprint with connections in all the major \n            continents for maximum strategic value."
+  }, {
+    avatar: _images_advisor_larry_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    name: "Larry",
+    job: "ADVISOR",
+    desc: "Larry is the founder of Basics Capital. He has over\n            5 years of experience in the blockchain industry and has\n            led investments in hundreds of projects. He is also the advisor \n            of Arche Protocol, BSCstation, Fintropy, and KnightWar among others"
+  }]
+});
+
+/***/ }),
+
+/***/ "./src/assets/images/advisor/eric.png":
+/*!********************************************!*\
+  !*** ./src/assets/images/advisor/eric.png ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/eric-8c083f40741b33fdfdf6fee3aaad8448.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/advisor/larry.png":
 /*!*********************************************!*\
-  !*** ./src/assets/images/banner/banner.png ***!
+  !*** ./src/assets/images/advisor/larry.png ***!
   \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/banner-b680c4b1d4657ded9296c8005cfa70c1.png";
+module.exports = "/_next/static/images/larry-4083aa8e89de8b7a41671d244ab289e4.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/advisor/thi-truong.png":
+/*!**************************************************!*\
+  !*** ./src/assets/images/advisor/thi-truong.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/thi-truong-076ed03172bde31b9a5d45d0fc389276.png";
 
 /***/ }),
 
@@ -802,7 +863,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var BoxWrapper = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "Box__BoxWrapper",
-  componentId: "biqg5d-0"
+  componentId: "sc-1mpcxbd-0"
 })([""]);
 
 var Box = function Box(_ref) {
@@ -839,91 +900,6 @@ Box.propTypes = {
 
 /***/ }),
 
-/***/ "./src/reusecore/Button/button.style.js":
-/*!**********************************************!*\
-  !*** ./src/reusecore/Button/button.style.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-
-var ButtonWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].button.withConfig({
-  displayName: "buttonstyle__ButtonWrapper",
-  componentId: "sc-1l0bfk6-0"
-})(["", " ", ""], function (props) {
-  return props.btnColor ? Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(["color:", ";"], props.btnColor) : Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(["color:inherit;"]);
-}, function (props) {
-  return props.btnBg ? Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(["background-color:", ";"], props.btnBg) : Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["css"])(["background-color:#ddd;"]);
-});
-/* harmony default export */ __webpack_exports__["default"] = (ButtonWrapper);
-
-/***/ }),
-
-/***/ "./src/reusecore/Button/index.js":
-/*!***************************************!*\
-  !*** ./src/reusecore/Button/index.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _button_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./button.style */ "./src/reusecore/Button/button.style.js");
-
-
-
-var _this = undefined,
-    _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/reusecore/Button/index.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
-
-
-
-
-var Button = function Button(_ref) {
-  var children = _ref.children,
-      type = _ref.type,
-      onClick = _ref.onClick,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["children", "type", "onClick"]);
-
-  var AllClasses = ["btn"];
-
-  if (props.className) {
-    AllClasses.push(props.className);
-  }
-
-  return __jsx(_button_style__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    onClick: onClick,
-    type: type
-  }, props, {
-    className: AllClasses.join(" "),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 5
-    }
-  }), children);
-};
-
-Button.propTypes = {
-  children: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.any.isRequired,
-  as: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.oneOf(["button", "a", "span", "div"]) //--
-
-};
-/* harmony default export */ __webpack_exports__["default"] = (Button);
-
-/***/ }),
-
 /***/ "./src/reusecore/Heading/index.js":
 /*!****************************************!*\
   !*** ./src/reusecore/Heading/index.js ***!
@@ -952,7 +928,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var HeadingWrap = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].h1.withConfig({
   displayName: "Heading__HeadingWrap",
-  componentId: "frlqsk-0"
+  componentId: "yms8pr-0"
 })(["", " ", ""], function (props) {
   return props.UpperCase && Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["css"])({
     textTransform: "uppercase"
@@ -1017,7 +993,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var ImageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].img.withConfig({
   displayName: "Image__ImageWrapper",
-  componentId: "sc-1u2koxj-0"
+  componentId: "sc-1ybmtsh-0"
 })(["width:100%;height:auto;display:block;"]);
 
 var Image = function Image(_ref) {
@@ -1063,7 +1039,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ColWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "colstyle__ColWrapper",
-  componentId: "sc-1uehkoi-0"
+  componentId: "sc-1wevfqd-0"
 })(["position:relative;padding-right:15px;padding-left:15px;&.p-0{padding:0;}&.col-1{flex:0 0 auto;width:8.333333%;}&.col-2{flex:0 0 auto;width:16.666667%;}&.col-3{flex:0 0 auto;width:25%;}&.col-4{flex:0 0 auto;width:33.333333%;}&.col-5{flex:0 0 auto;width:41.666667%;}&.col-6{flex:0 0 auto;width:50%;}&.col-7{flex:0 0 auto;width:58.333333%;}&.col-8{flex:0 0 auto;width:66.666667%;}&.col-9{flex:0 0 auto;width:75%;}&.col-10{flex:0 0 auto;width:83.333333%;}&.col-11{flex:0 0 auto;width:91.666667%;}&.col-12{flex:0 0 auto;width:100%;}&.offset-1{margin-left:8.333333%;}&.offset-2{margin-left:16.666667%;}&.offset-3{margin-left:25%;}&.offset-4{margin-left:33.333333%;}&.offset-5{margin-left:41.666667%;}&.offset-6{margin-left:50%;}&.offset-7{margin-left:58.333333%;}&.offset-8{margin-left:66.666667%;}&.offset-9{margin-left:75%;}&.offset-10{margin-left:83.333333%;}&.offset-11{margin-left:91.666667%;}@media only screen and (min-width:320px){&.xs-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.xs-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.xs-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.xs-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.xs-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.xs-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.xs-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.xs-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.xs-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.xs-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.xs-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.xs-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.order-xs-first{-ms-flex-order:-1;order:-1;}&.order-xs-last{-ms-flex-order:13;order:13;}&.order-xs-0{-ms-flex-order:0;order:0;}&.order-xs-1{-ms-flex-order:1;order:1;}&.order-xs-2{-ms-flex-order:2;order:2;}&.order-xs-3{-ms-flex-order:3;order:3;}&.order-xs-4{-ms-flex-order:4;order:4;}&.order-xs-5{-ms-flex-order:5;order:5;}&.order-xs-6{-ms-flex-order:6;order:6;}&.order-xs-7{-ms-flex-order:7;order:7;}&.order-xs-8{-ms-flex-order:8;order:8;}&.order-xs-9{-ms-flex-order:9;order:9;}&.order-xs-10{-ms-flex-order:10;order:10;}&.order-xs-11{-ms-flex-order:11;order:11;}&.order-xs-12{-ms-flex-order:12;order:12;}&.offset-xs-0{margin-left:0;}&.offset-xs-1{margin-left:8.333333%;}&.offset-xs-2{margin-left:16.666667%;}&.offset-xs-3{margin-left:25%;}&.offset-xs-4{margin-left:33.333333%;}&.offset-xs-5{margin-left:41.666667%;}&.offset-xs-6{margin-left:50%;}&.offset-xs-7{margin-left:58.333333%;}&.offset-xs-8{margin-left:66.666667%;}&.offset-xs-9{margin-left:75%;}&.offset-xs-10{margin-left:83.333333%;}&.offset-xs-11{margin-left:91.666667%;}}@media (min-width:576px){&.sm-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.sm-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.sm-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.sm-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.sm-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.sm-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.sm-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.sm-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.sm-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.sm-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.sm-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.sm-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.order-sm-first{-ms-flex-order:-1;order:-1;}&.order-sm-last{-ms-flex-order:13;order:13;}&.order-sm-0{-ms-flex-order:0;order:0;}&.order-sm-1{-ms-flex-order:1;order:1;}&.order-sm-2{-ms-flex-order:2;order:2;}&.order-sm-3{-ms-flex-order:3;order:3;}&.order-sm-4{-ms-flex-order:4;order:4;}&.order-sm-5{-ms-flex-order:5;order:5;}&.order-sm-6{-ms-flex-order:6;order:6;}&.order-sm-7{-ms-flex-order:7;order:7;}&.order-sm-8{-ms-flex-order:8;order:8;}&.order-sm-9{-ms-flex-order:9;order:9;}&.order-sm-10{-ms-flex-order:10;order:10;}&.order-sm-11{-ms-flex-order:11;order:11;}&.order-sm-12{-ms-flex-order:12;order:12;}&.offset-sm-0{margin-left:0;}&.offset-sm-1{margin-left:8.333333%;}&.offset-sm-2{margin-left:16.666667%;}&.offset-sm-3{margin-left:25%;}&.offset-sm-4{margin-left:33.333333%;}&.offset-sm-5{margin-left:41.666667%;}&.offset-sm-6{margin-left:50%;}&.offset-sm-7{margin-left:58.333333%;}&.offset-sm-8{margin-left:66.666667%;}&.offset-sm-9{margin-left:75%;}&.offset-sm-10{margin-left:83.333333%;}&.offset-sm-11{margin-left:91.666667%;}}@media (min-width:768px){&.md-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.md-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.md-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.md-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.md-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.md-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.md-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.md-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.order-md-first{-ms-flex-order:-1;order:-1;}&.order-md-last{-ms-flex-order:13;order:13;}&.order-md-0{-ms-flex-order:0;order:0;}&.order-md-1{-ms-flex-order:1;order:1;}&.order-md-2{-ms-flex-order:2;order:2;}&.order-md-3{-ms-flex-order:3;order:3;}&.order-md-4{-ms-flex-order:4;order:4;}&.order-md-5{-ms-flex-order:5;order:5;}&.order-md-6{-ms-flex-order:6;order:6;}&.order-md-7{-ms-flex-order:7;order:7;}&.order-md-8{-ms-flex-order:8;order:8;}&.order-md-9{-ms-flex-order:9;order:9;}&.order-md-10{-ms-flex-order:10;order:10;}&.order-md-11{-ms-flex-order:11;order:11;}&.order-md-12{-ms-flex-order:12;order:12;}&.offset-md-0{margin-left:0;}&.offset-md-1{margin-left:8.333333%;}&.offset-md-2{margin-left:16.666667%;}&.offset-md-3{margin-left:25%;}&.offset-md-4{margin-left:33.333333%;}&.offset-md-5{margin-left:41.666667%;}&.offset-md-6{margin-left:50%;}&.offset-md-7{margin-left:58.333333%;}&.offset-md-8{margin-left:66.666667%;}&.offset-md-9{margin-left:75%;}&.offset-md-10{margin-left:83.333333%;}&.offset-md-11{margin-left:91.666667%;}}@media (min-width:992px){&.lg-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.lg-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.lg-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.lg-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.lg-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.lg-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.lg-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.lg-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.lg-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.order-lg-first{-ms-flex-order:-1;order:-1;}&.order-lg-last{-ms-flex-order:13;order:13;}&.order-lg-0{-ms-flex-order:0;order:0;}&.order-lg-1{-ms-flex-order:1;order:1;}&.order-lg-2{-ms-flex-order:2;order:2;}&.order-lg-3{-ms-flex-order:3;order:3;}&.order-lg-4{-ms-flex-order:4;order:4;}&.order-lg-5{-ms-flex-order:5;order:5;}&.order-lg-6{-ms-flex-order:6;order:6;}&.order-lg-7{-ms-flex-order:7;order:7;}&.order-lg-8{-ms-flex-order:8;order:8;}&.order-lg-9{-ms-flex-order:9;order:9;}&.order-lg-10{-ms-flex-order:10;order:10;}&.order-lg-11{-ms-flex-order:11;order:11;}&.order-lg-12{-ms-flex-order:12;order:12;}&.offset-lg-0{margin-left:0;}&.offset-lg-1{margin-left:8.333333%;}&.offset-lg-2{margin-left:16.666667%;}&.offset-lg-3{margin-left:25%;}&.offset-lg-4{margin-left:33.333333%;}&.offset-lg-5{margin-left:41.666667%;}&.offset-lg-6{margin-left:50%;}&.offset-lg-7{margin-left:58.333333%;}&.offset-lg-8{margin-left:66.666667%;}&.offset-lg-9{margin-left:75%;}&.offset-lg-10{margin-left:83.333333%;}&.offset-lg-11{margin-left:91.666667%;}}@media (min-width:1200px){&.xl-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.xl-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.xl-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.xl-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.xl-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.xl-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.xl-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.xl-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.xl-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.xl-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.xl-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.xl-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.xl-first{-ms-flex-order:-1;order:-1;}&.xl-last{-ms-flex-order:13;order:13;}&.order-xl-0{-ms-flex-order:0;order:0;}&.order-xl-1{-ms-flex-order:1;order:1;}&.order-xl-2{-ms-flex-order:2;order:2;}&.order-xl-3{-ms-flex-order:3;order:3;}&.order-xl-4{-ms-flex-order:4;order:4;}&.order-xl-5{-ms-flex-order:5;order:5;}&.order-xl-6{-ms-flex-order:6;order:6;}&.order-xl-7{-ms-flex-order:7;order:7;}&.order-xl-8{-ms-flex-order:8;order:8;}&.order-xl-9{-ms-flex-order:9;order:9;}&.order-xl-10{-ms-flex-order:10;order:10;}&.order-xl-11{-ms-flex-order:11;order:11;}&.order-xl-12{-ms-flex-order:12;order:12;}&.offset-xl-0{margin-left:0;}&.offset-xl-1{margin-left:8.333333%;}&.offset-xl-2{margin-left:16.666667%;}&.offset-xl-3{margin-left:25%;}&.offset-xl-4{margin-left:33.333333%;}&.offset-xl-5{margin-left:41.666667%;}&.offset-xl-6{margin-left:50%;}&.offset-xl-7{margin-left:58.333333%;}&.offset-xl-8{margin-left:66.666667%;}&.offset-xl-9{margin-left:75%;}&.offset-xl-10{margin-left:83.333333%;}&.offset-xl-11{margin-left:91.666667%;}}.about-image{width:450px;height:464px;margin-top:50px;}"]);
 /* harmony default export */ __webpack_exports__["default"] = (ColWrapper);
 
@@ -1137,7 +1113,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ContainerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "containerstyle__ContainerWrapper",
-  componentId: "my3qv0-0"
+  componentId: "sc-1w7veq9-0"
 })(["width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;position:relative;@media (min-width:568px){max-width:100%;}@media (min-width:576px){max-width:95%;}@media (min-width:768px){max-width:720px;}@media (min-width:992px){max-width:960px;}@media (min-width:1200px){max-width:1140px;}@media (min-width:1400px){max-width:1320px;}&.fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}"]);
 /* harmony default export */ __webpack_exports__["default"] = (ContainerWrapper);
 
@@ -1266,7 +1242,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var RowWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "rowstyle__RowWrapper",
-  componentId: "avq5qi-0"
+  componentId: "sc-1m1bwu7-0"
 })(["display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;&.no-gutters{margin-right:0;margin-left:0;}&.no-gutters > .col,&.no-gutters > [class*=\"col-\"]{padding-right:0;padding-left:0;}"]);
 /* harmony default export */ __webpack_exports__["default"] = (RowWrapper);
 
@@ -1325,7 +1301,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var TextWrapper = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].p.withConfig({
   displayName: "Text__TextWrapper",
-  componentId: "sc-1ezj4hz-0"
+  componentId: "zm0wao-0"
 })(["margin-top:0;margin-bottom:1rem;", " ", ""], function (props) {
   return props.FontSize && Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["css"])(["font-size:", ";"], props.FontSize);
 }, function (props) {
@@ -1364,40 +1340,31 @@ Text.defaultProps = {
 
 /***/ }),
 
-/***/ "./src/sections/Banner/banner.style.js":
-/*!*********************************************!*\
-  !*** ./src/sections/Banner/banner.style.js ***!
-  \*********************************************/
+/***/ "./src/sections/Advisor/advisor.style.js":
+/*!***********************************************!*\
+  !*** ./src/sections/Advisor/advisor.style.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _assets_images_banner_banner_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/banner/banner.png */ "./src/assets/images/banner/banner.png");
-/* harmony import */ var _assets_images_banner_banner_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_images_banner_banner_png__WEBPACK_IMPORTED_MODULE_1__);
 
-
-var BannerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "bannerstyle__BannerWrapper",
-  componentId: "sc-1g9tyw5-0"
-})(["background:transparent;p{color:#ffffff;font-size:18px;margin:0;padding:0;}div.heading{width:100%;height:120vh;.headingBackground{background-image:url(", ");height:100%;background-repeat:no-repeat;background-size:cover;background-position:center center;position:relative;.container{width:100%;height:100%;z-index:2;}.overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient( 107.56deg,rgba(27,24,38,0.9) 15.48%,rgba(27,24,38,0) 72.61% );}.heading-content{position:absolute;top:50%;transform:translateY(-50%);h1{font-size:45px;line-height:60px;margin:0;margin-bottom:10px;text-transform:none;color:#ffffff;padding:0;position:relative;max-width:800px;&.heading-sm{font-size:32px;color:", ";font-weight:400;font-family:\"SFUEurostileNormal\",sans-serif;text-transform:none;}span{position:relative;display:inline-block;}}.register{display:flex;align-items:center;margin-top:49px;button{width:270px;height:56px;padding:0;margin:10px;background:", ";position:relative;border:0;overflow:hidden;border-radius:unset;box-shadow:0px 0px 12px rgba(40,33,108,0.7);span{a{color:#000000;font-weight:700;font-size:26px;}}&:hover{border:2px solid ", ";box-shadow:0 0 0 30px rgba(255,255,255,0);animation:pulse 1s;}@keyframes pulse{0%{box-shadow:0 0 0 0 ", ";}}span{position:relative;z-index:1;font-size:20px;font-weight:700;}img{position:absolute;width:unset;top:0;right:0;left:0;bottom:0;margin:auto;}}}}}}@media only screen and (max-width:992px){div.heading{.headingBackground{background-position:right;.heading-content{h1{font-size:40px;&.heading-sm{font-size:28px;}}.register{button{width:200px;span{}}}}}}}@media only screen and (max-width:576px){div.heading{.headingBackground{.heading-content{h1{font-size:30px;line-height:40px;&.heading-sm{font-size:18px;}}.register{button{width:200px;span{}}}}}}}"], _assets_images_banner_banner_png__WEBPACK_IMPORTED_MODULE_1___default.a, function (props) {
-  return props.theme.primaryColor;
-}, function (props) {
-  return props.theme.primaryColor;
-}, function (props) {
-  return props.theme.primaryColor;
-}, function (props) {
+var AdvisorWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "advisorstyle__AdvisorWrapper",
+  componentId: "sc-11zidw1-0"
+})(["padding:60px 0px 0px 0px;position:relative;z-index:2;p{font-weight:400;color:#777e90;margin:0;color:#ffffff;}.adivisor-heading{margin-bottom:80px;}.text-upper{text-transform:uppercase;}.adivisor-content{display:flex;justify-content:center;.adivisor-item{&:not(:first-child){margin-left:105px;}.adivisor-avatar{width:320px;height:320px;}.adivisor-intro{p.adivisor-name{font-size:24px;line-height:24px;font-family:'SFUEurostileBold',sans-serif;font-weight:700;margin:16px 0px;text-transform:uppercase;color:", ";}p.adivisor-info{font-size:18px;font-weight:400;max-width:320px;}}}}.backgorund{position:absolute;width:100%;height:651px;top:10%;left:0;z-index:-1;}@media only screen and (max-width:1200px){.adivisor-content{.adivisor-item{&:not(:first-child){margin-left:55px;}.adivisor-avatar{width:270px;height:270px;}.adivisor-intro{p.adivisor-info{max-width:270px;}}}}}@media only screen and (max-width:992px){.adivisor-content{.adivisor-item{&:not(:first-child){margin-left:35px;}.adivisor-avatar{width:220px;height:220px;}.adivisor-intro{p.adivisor-info{max-width:220px;}}}}}@media only screen and (max-width:576px){.adivisor-heading{text-align:center;}.adivisor-content{flex-direction:column;.adivisor-item{margin-left:0px !important;margin-bottom:100px;.adivisor-avatar{margin:auto;}.adivisor-intro{text-align:center;p.adivisor-info{max-width:100%;}}}}}"], function (props) {
   return props.theme.primaryColor;
 });
-/* harmony default export */ __webpack_exports__["default"] = (BannerWrapper);
+/* harmony default export */ __webpack_exports__["default"] = (AdvisorWrapper);
 
 /***/ }),
 
-/***/ "./src/sections/Banner/index.js":
-/*!**************************************!*\
-  !*** ./src/sections/Banner/index.js ***!
-  \**************************************/
+/***/ "./src/sections/Advisor/index.js":
+/*!***************************************!*\
+  !*** ./src/sections/Advisor/index.js ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1405,17 +1372,17 @@ var BannerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].di
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _banner_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./banner.style */ "./src/sections/Banner/banner.style.js");
-/* harmony import */ var _reusecore_Image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../reusecore/Image */ "./src/reusecore/Image/index.js");
-/* harmony import */ var _reusecore_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../reusecore/Button */ "./src/reusecore/Button/index.js");
-/* harmony import */ var _reusecore_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../reusecore/Layout */ "./src/reusecore/Layout/index.js");
-/* harmony import */ var _reusecore_Heading__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../reusecore/Heading */ "./src/reusecore/Heading/index.js");
+/* harmony import */ var _advisor_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./advisor.style */ "./src/sections/Advisor/advisor.style.js");
+/* harmony import */ var _reusecore_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../reusecore/Layout */ "./src/reusecore/Layout/index.js");
+/* harmony import */ var _reusecore_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../reusecore/Heading */ "./src/reusecore/Heading/index.js");
+/* harmony import */ var _reusecore_Box__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../reusecore/Box */ "./src/reusecore/Box/index.js");
+/* harmony import */ var _reusecore_Image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../reusecore/Image */ "./src/reusecore/Image/index.js");
 /* harmony import */ var _reusecore_Text__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../reusecore/Text */ "./src/reusecore/Text/index.js");
-/* harmony import */ var _reusecore_Box__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../reusecore/Box */ "./src/reusecore/Box/index.js");
+/* harmony import */ var _assets_data_advisor__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/data/advisor */ "./src/assets/data/advisor/index.js");
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_8__);
 var _this = undefined,
-    _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/sections/Banner/index.js";
+    _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/sections/Advisor/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -1428,7 +1395,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var Banner = function Banner() {
+var Adivisor = function Adivisor() {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     aos__WEBPACK_IMPORTED_MODULE_8___default.a.init({
       throttleDelay: 99,
@@ -1438,188 +1405,109 @@ var Banner = function Banner() {
       once: false,
       mirror: true
     });
-  });
-  return __jsx(_banner_style__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    id: "home",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 5
-    }
-  }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    className: "heading",
+  }, []);
+  return __jsx(_advisor_style__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24,
-      columnNumber: 7
+      columnNumber: 5
     }
-  }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    className: "headingBackground",
+  }, __jsx(_reusecore_Layout__WEBPACK_IMPORTED_MODULE_2__["Container"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25,
-      columnNumber: 9
+      columnNumber: 7
     }
-  }, __jsx(_reusecore_Layout__WEBPACK_IMPORTED_MODULE_4__["Container"], {
+  }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "adivisor-heading",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26,
-      columnNumber: 11
+      columnNumber: 9
     }
-  }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    className: "heading-content",
+  }, __jsx(_reusecore_Heading__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27,
-      columnNumber: 13
-    }
-  }, __jsx(_reusecore_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    "data-aos": "fade-up",
-    className: "heading-sm",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 15
-    }
-  }, "Welcome to the ultimate battleverse!"), __jsx(_reusecore_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    "data-aos": "fade-up",
-    "data-aos-delay": "500",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 15
-    }
-  }, "Choose your NFT gear and jump into this crypto powered real time shooter unlike any other!"), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    className: "register",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35,
-      columnNumber: 15
-    }
-  }, __jsx(_reusecore_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "banner-btn",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36,
-      columnNumber: 17
-    }
-  }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    as: "span",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 19
-    }
-  }, __jsx("a", {
-    href: "https://drive.google.com/file/d/122-s6QkUhDxvr_lREFdERxvjBJbr5w5c/view?usp=sharing/",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 35
-    }
-  }, "PC Version"))), __jsx(_reusecore_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "banner-btn",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 17
-    }
-  }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    as: "span",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 19
-    }
-  }, __jsx("a", {
-    href: "https://event.planetsandbox.io/",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 35
-    }
-  }, "Lucky Event")))), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    className: "register",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47,
-      columnNumber: 15
-    }
-  }, __jsx(_reusecore_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "banner-btn",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 17
-    }
-  }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    as: "span",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 19
-    }
-  }, __jsx("a", {
-    href: "#",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 35
-    }
-  }, "iOS (Coming soon)"))), __jsx(_reusecore_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "banner-btn",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 17
-    }
-  }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    as: "span",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 19
-    }
-  }, __jsx("a", {
-    href: "#",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 35
-    }
-  }, "Android (Coming soon)")))))), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    className: "overlay",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58,
       columnNumber: 11
     }
-  }, "\xA0"))));
+  }, "Advisors")), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "adivisor-content",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 9
+    }
+  }, _assets_data_advisor__WEBPACK_IMPORTED_MODULE_7__["default"].advisor.map(function (advisor, index) {
+    return __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      "data-aos": "fade-down",
+      "data-aos-delay": index * 200,
+      key: index,
+      className: "adivisor-item",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 13
+      }
+    }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      className: "adivisor-avatar",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 37,
+        columnNumber: 15
+      }
+    }, __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      src: advisor.avatar,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 17
+      }
+    })), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      className: "adivisor-intro",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 40,
+        columnNumber: 15
+      }
+    }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      className: "adivisor-name",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 17
+      }
+    }, advisor.name), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      className: "adivisor-info",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 17
+      }
+    }, advisor.desc)));
+  }))), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "backgorund",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 7
+    }
+  }, "\xA0"));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Banner);
+/* harmony default export */ __webpack_exports__["default"] = (Adivisor);
 
 /***/ })
 

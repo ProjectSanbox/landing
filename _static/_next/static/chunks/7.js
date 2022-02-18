@@ -1,5 +1,32 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[7],{
 
+/***/ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/defineProperty.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
@@ -5571,27 +5598,33 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./src/assets/data/gameplay/index.js":
-/*!*******************************************!*\
-  !*** ./src/assets/data/gameplay/index.js ***!
-  \*******************************************/
+/***/ "./src/assets/data/ourteam/index.js":
+/*!******************************************!*\
+  !*** ./src/assets/data/ourteam/index.js ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _images_gameplay_build_mode_webp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../images/gameplay/build-mode.webp */ "./src/assets/images/gameplay/build-mode.webp");
-/* harmony import */ var _images_gameplay_build_mode_webp__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_gameplay_build_mode_webp__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_gameplay_build_icon_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/gameplay/build-icon.png */ "./src/assets/images/gameplay/build-icon.png");
-/* harmony import */ var _images_gameplay_build_icon_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_gameplay_build_icon_png__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _images_gameplay_multi_mode_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/gameplay/multi-mode.webp */ "./src/assets/images/gameplay/multi-mode.webp");
-/* harmony import */ var _images_gameplay_multi_mode_webp__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_gameplay_multi_mode_webp__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _images_gameplay_multi_icon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/gameplay/multi-icon.png */ "./src/assets/images/gameplay/multi-icon.png");
-/* harmony import */ var _images_gameplay_multi_icon_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_gameplay_multi_icon_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _images_gameplay_pve_mode_webp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/gameplay/pve-mode.webp */ "./src/assets/images/gameplay/pve-mode.webp");
-/* harmony import */ var _images_gameplay_pve_mode_webp__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_gameplay_pve_mode_webp__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _images_gameplay_pve_icon_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/gameplay/pve-icon.png */ "./src/assets/images/gameplay/pve-icon.png");
-/* harmony import */ var _images_gameplay_pve_icon_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_gameplay_pve_icon_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_team_steven_lee_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../images/team/steven-lee.png */ "./src/assets/images/team/steven-lee.png");
+/* harmony import */ var _images_team_steven_lee_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_team_steven_lee_png__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_team_chu_anthony_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/team/chu-anthony.png */ "./src/assets/images/team/chu-anthony.png");
+/* harmony import */ var _images_team_chu_anthony_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_team_chu_anthony_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_team_minh_nguyen_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/team/minh-nguyen.png */ "./src/assets/images/team/minh-nguyen.png");
+/* harmony import */ var _images_team_minh_nguyen_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_team_minh_nguyen_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_team_viet_nguyen_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/team/viet-nguyen.png */ "./src/assets/images/team/viet-nguyen.png");
+/* harmony import */ var _images_team_viet_nguyen_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_team_viet_nguyen_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_team_hoan_ngo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/team/hoan-ngo.png */ "./src/assets/images/team/hoan-ngo.png");
+/* harmony import */ var _images_team_hoan_ngo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_team_hoan_ngo_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_team_quyen_nguyen_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/team/quyen-nguyen.png */ "./src/assets/images/team/quyen-nguyen.png");
+/* harmony import */ var _images_team_quyen_nguyen_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_team_quyen_nguyen_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_team_hai_ngo_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../images/team/hai-ngo.png */ "./src/assets/images/team/hai-ngo.png");
+/* harmony import */ var _images_team_hai_ngo_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_team_hai_ngo_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _images_team_huong_nguyen_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../images/team/huong-nguyen.png */ "./src/assets/images/team/huong-nguyen.png");
+/* harmony import */ var _images_team_huong_nguyen_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_team_huong_nguyen_png__WEBPACK_IMPORTED_MODULE_7__);
+
+
 
 
 
@@ -5599,102 +5632,154 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  gameplay: [{
-    poster: _images_gameplay_build_mode_webp__WEBPACK_IMPORTED_MODULE_0___default.a,
-    title: "Building mode​",
-    content: "This is one of the core functions of the game. When the player first enters the game, they will be provided a Builder Tool to customize every object in their inventory.",
-    icon: _images_gameplay_build_icon_png__WEBPACK_IMPORTED_MODULE_1___default.a
+  ourteam: [{
+    avatar: _images_team_minh_nguyen_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    name: "Minh Nguyen",
+    job: "CEO/Founder",
+    // desc: "Minh has years of experience in developing a variety of game genres. Having worked in multiple projects with a diverse team of up to 40 developers per-project, he brings quantity technical solutions and smooth team operation.",
+    animation: "flip-left"
   }, {
-    poster: _images_gameplay_multi_mode_webp__WEBPACK_IMPORTED_MODULE_2___default.a,
-    title: "Multiplayer mode​​",
-    content: "",
-    listContent: ["Players can join other's published Land to play game modes.", "Game modes are customized by the Landowner using Rule Tool.", "There are some preset game modes from the publisher as following.", "Players are rewarded with loot boxes, NFT objects, and tokens."],
-    icon: _images_gameplay_multi_icon_png__WEBPACK_IMPORTED_MODULE_3___default.a
+    avatar: _images_team_chu_anthony_png__WEBPACK_IMPORTED_MODULE_1___default.a,
+    name: "Anthony Chu",
+    job: "CTO/Co-founder",
+    // desc: "Anthony has years of experience in game 3D AR/VR develop. He",
+    animation: "flip-left"
   }, {
-    poster: _images_gameplay_pve_mode_webp__WEBPACK_IMPORTED_MODULE_4___default.a,
-    title: "PvE Mode​",
-    content: "Planet Sandbox provides some build-in PvE mode: ",
-    listContent: ["Tower defense: protect your base from NPC like zombies, soldiers", "Racing: finish the track first.Runnable NPC: cyborg, house, hound..."],
-    icon: _images_gameplay_pve_icon_png__WEBPACK_IMPORTED_MODULE_5___default.a
+    avatar: _images_team_steven_lee_png__WEBPACK_IMPORTED_MODULE_0___default.a,
+    name: "Steven Lee",
+    job: "Co-founder",
+    // desc: "Steven has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
+    animation: "flip-left",
+    linked: ""
+  }, {
+    avatar: _images_team_hoan_ngo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    name: "Hoan Ngo",
+    job: "Art Director ",
+    // desc: "Viet has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
+    animation: "flip-left",
+    linked: ""
+  }, {
+    avatar: _images_team_huong_nguyen_png__WEBPACK_IMPORTED_MODULE_7___default.a,
+    name: "Huong Nguyen",
+    job: "Game Design",
+    // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
+    animation: "flip-left",
+    linked: ""
+  }, {
+    avatar: _images_team_viet_nguyen_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    name: "Viet Nguyen",
+    job: "Project Lead",
+    // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
+    animation: "flip-left",
+    linked: ""
+  }, {
+    avatar: _images_team_hai_ngo_png__WEBPACK_IMPORTED_MODULE_6___default.a,
+    name: "Hai Ngo",
+    job: "Fullstack Developer",
+    // desc: "Hoan has years of experience in consulting technology solutions. He started as a Software Engineer and then he founded NMB Technology & Solution focused cutting-edge technologies.",
+    animation: "flip-left",
+    linked: ""
   }]
 });
 
 /***/ }),
 
-/***/ "./src/assets/images/background.webp":
-/*!*******************************************!*\
-  !*** ./src/assets/images/background.webp ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/background-0da43db40719cb2676faffb6e9ce4ffe.webp";
-
-/***/ }),
-
-/***/ "./src/assets/images/gameplay/build-icon.png":
+/***/ "./src/assets/images/gameplay/play-arrow.png":
 /*!***************************************************!*\
-  !*** ./src/assets/images/gameplay/build-icon.png ***!
+  !*** ./src/assets/images/gameplay/play-arrow.png ***!
   \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/build-icon-36c35233046c5db1e7411f06e76aa0a1.png";
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACPSURBVHgB7ZRbDYAwDEVvUIAEJCABKTgAB+AEKUhAAhLAQWkTPhYC7NUFPnaSk+yrXW6bApk/07ELO7EVErCxdLqyLZShG6VRDSXoRZXYyKJEOCACcjR4PuSpd2wUaGMWKaDLfuqE789nJIpoxSUWrQaypiMisG1MiUiecm6ghHns5N1DGSkoAxyhEEfmOw5X6npq5SYIUQAAAABJRU5ErkJggg=="
 
 /***/ }),
 
-/***/ "./src/assets/images/gameplay/build-mode.webp":
-/*!****************************************************!*\
-  !*** ./src/assets/images/gameplay/build-mode.webp ***!
-  \****************************************************/
+/***/ "./src/assets/images/team/chu-anthony.png":
+/*!************************************************!*\
+  !*** ./src/assets/images/team/chu-anthony.png ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/build-mode-2d4fa843b0295f4f67efd4d72d190d7d.webp";
+module.exports = "/_next/static/images/chu-anthony-9e9a0fe5984a3c97dd1290b0abb6582f.png";
 
 /***/ }),
 
-/***/ "./src/assets/images/gameplay/multi-icon.png":
-/*!***************************************************!*\
-  !*** ./src/assets/images/gameplay/multi-icon.png ***!
-  \***************************************************/
+/***/ "./src/assets/images/team/hai-ngo.png":
+/*!********************************************!*\
+  !*** ./src/assets/images/team/hai-ngo.png ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/multi-icon-bd3fe22148e4e0dbc2f941bd7fe73203.png";
+module.exports = "/_next/static/images/hai-ngo-eff72eb39029f01296377164b3298a42.png";
 
 /***/ }),
 
-/***/ "./src/assets/images/gameplay/multi-mode.webp":
-/*!****************************************************!*\
-  !*** ./src/assets/images/gameplay/multi-mode.webp ***!
-  \****************************************************/
+/***/ "./src/assets/images/team/hoan-ngo.png":
+/*!*********************************************!*\
+  !*** ./src/assets/images/team/hoan-ngo.png ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/multi-mode-7adcf96767bfe8fb9cad711f4c146bd6.webp";
+module.exports = "/_next/static/images/hoan-ngo-ebf4f87b6567579625b8650a7c213597.png";
 
 /***/ }),
 
-/***/ "./src/assets/images/gameplay/pve-icon.png":
+/***/ "./src/assets/images/team/huong-nguyen.png":
 /*!*************************************************!*\
-  !*** ./src/assets/images/gameplay/pve-icon.png ***!
+  !*** ./src/assets/images/team/huong-nguyen.png ***!
   \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/pve-icon-1e59d99c47820ded510cf61ba75260d7.png";
+module.exports = "/_next/static/images/huong-nguyen-94e068674c9e12dcf0b4995d74e2a6a5.png";
 
 /***/ }),
 
-/***/ "./src/assets/images/gameplay/pve-mode.webp":
-/*!**************************************************!*\
-  !*** ./src/assets/images/gameplay/pve-mode.webp ***!
-  \**************************************************/
+/***/ "./src/assets/images/team/minh-nguyen.png":
+/*!************************************************!*\
+  !*** ./src/assets/images/team/minh-nguyen.png ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/pve-mode-e262ee9956bff751e485799bf798871b.webp";
+module.exports = "/_next/static/images/minh-nguyen-5ae2db89404932394bd6289a96475c54.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/team/quyen-nguyen.png":
+/*!*************************************************!*\
+  !*** ./src/assets/images/team/quyen-nguyen.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/quyen-nguyen-8837012bc3444ea9034b3a7b2449e7b9.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/team/steven-lee.png":
+/*!***********************************************!*\
+  !*** ./src/assets/images/team/steven-lee.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/steven-lee-d774348aac0e10201e80bdcfbb5f0dd8.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/team/viet-nguyen.png":
+/*!************************************************!*\
+  !*** ./src/assets/images/team/viet-nguyen.png ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/viet-nguyen-fe263edafd1d43e34af413184a5001a4.png";
 
 /***/ }),
 
@@ -5726,7 +5811,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var BoxWrapper = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "Box__BoxWrapper",
-  componentId: "biqg5d-0"
+  componentId: "sc-1mpcxbd-0"
 })([""]);
 
 var Box = function Box(_ref) {
@@ -5791,7 +5876,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var HeadingWrap = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].h1.withConfig({
   displayName: "Heading__HeadingWrap",
-  componentId: "frlqsk-0"
+  componentId: "yms8pr-0"
 })(["", " ", ""], function (props) {
   return props.UpperCase && Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["css"])({
     textTransform: "uppercase"
@@ -5856,7 +5941,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var ImageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].img.withConfig({
   displayName: "Image__ImageWrapper",
-  componentId: "sc-1u2koxj-0"
+  componentId: "sc-1ybmtsh-0"
 })(["width:100%;height:auto;display:block;"]);
 
 var Image = function Image(_ref) {
@@ -5902,7 +5987,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ColWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "colstyle__ColWrapper",
-  componentId: "sc-1uehkoi-0"
+  componentId: "sc-1wevfqd-0"
 })(["position:relative;padding-right:15px;padding-left:15px;&.p-0{padding:0;}&.col-1{flex:0 0 auto;width:8.333333%;}&.col-2{flex:0 0 auto;width:16.666667%;}&.col-3{flex:0 0 auto;width:25%;}&.col-4{flex:0 0 auto;width:33.333333%;}&.col-5{flex:0 0 auto;width:41.666667%;}&.col-6{flex:0 0 auto;width:50%;}&.col-7{flex:0 0 auto;width:58.333333%;}&.col-8{flex:0 0 auto;width:66.666667%;}&.col-9{flex:0 0 auto;width:75%;}&.col-10{flex:0 0 auto;width:83.333333%;}&.col-11{flex:0 0 auto;width:91.666667%;}&.col-12{flex:0 0 auto;width:100%;}&.offset-1{margin-left:8.333333%;}&.offset-2{margin-left:16.666667%;}&.offset-3{margin-left:25%;}&.offset-4{margin-left:33.333333%;}&.offset-5{margin-left:41.666667%;}&.offset-6{margin-left:50%;}&.offset-7{margin-left:58.333333%;}&.offset-8{margin-left:66.666667%;}&.offset-9{margin-left:75%;}&.offset-10{margin-left:83.333333%;}&.offset-11{margin-left:91.666667%;}@media only screen and (min-width:320px){&.xs-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.xs-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.xs-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.xs-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.xs-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.xs-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.xs-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.xs-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.xs-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.xs-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.xs-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.xs-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.order-xs-first{-ms-flex-order:-1;order:-1;}&.order-xs-last{-ms-flex-order:13;order:13;}&.order-xs-0{-ms-flex-order:0;order:0;}&.order-xs-1{-ms-flex-order:1;order:1;}&.order-xs-2{-ms-flex-order:2;order:2;}&.order-xs-3{-ms-flex-order:3;order:3;}&.order-xs-4{-ms-flex-order:4;order:4;}&.order-xs-5{-ms-flex-order:5;order:5;}&.order-xs-6{-ms-flex-order:6;order:6;}&.order-xs-7{-ms-flex-order:7;order:7;}&.order-xs-8{-ms-flex-order:8;order:8;}&.order-xs-9{-ms-flex-order:9;order:9;}&.order-xs-10{-ms-flex-order:10;order:10;}&.order-xs-11{-ms-flex-order:11;order:11;}&.order-xs-12{-ms-flex-order:12;order:12;}&.offset-xs-0{margin-left:0;}&.offset-xs-1{margin-left:8.333333%;}&.offset-xs-2{margin-left:16.666667%;}&.offset-xs-3{margin-left:25%;}&.offset-xs-4{margin-left:33.333333%;}&.offset-xs-5{margin-left:41.666667%;}&.offset-xs-6{margin-left:50%;}&.offset-xs-7{margin-left:58.333333%;}&.offset-xs-8{margin-left:66.666667%;}&.offset-xs-9{margin-left:75%;}&.offset-xs-10{margin-left:83.333333%;}&.offset-xs-11{margin-left:91.666667%;}}@media (min-width:576px){&.sm-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.sm-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.sm-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.sm-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.sm-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.sm-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.sm-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.sm-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.sm-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.sm-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.sm-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.sm-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.order-sm-first{-ms-flex-order:-1;order:-1;}&.order-sm-last{-ms-flex-order:13;order:13;}&.order-sm-0{-ms-flex-order:0;order:0;}&.order-sm-1{-ms-flex-order:1;order:1;}&.order-sm-2{-ms-flex-order:2;order:2;}&.order-sm-3{-ms-flex-order:3;order:3;}&.order-sm-4{-ms-flex-order:4;order:4;}&.order-sm-5{-ms-flex-order:5;order:5;}&.order-sm-6{-ms-flex-order:6;order:6;}&.order-sm-7{-ms-flex-order:7;order:7;}&.order-sm-8{-ms-flex-order:8;order:8;}&.order-sm-9{-ms-flex-order:9;order:9;}&.order-sm-10{-ms-flex-order:10;order:10;}&.order-sm-11{-ms-flex-order:11;order:11;}&.order-sm-12{-ms-flex-order:12;order:12;}&.offset-sm-0{margin-left:0;}&.offset-sm-1{margin-left:8.333333%;}&.offset-sm-2{margin-left:16.666667%;}&.offset-sm-3{margin-left:25%;}&.offset-sm-4{margin-left:33.333333%;}&.offset-sm-5{margin-left:41.666667%;}&.offset-sm-6{margin-left:50%;}&.offset-sm-7{margin-left:58.333333%;}&.offset-sm-8{margin-left:66.666667%;}&.offset-sm-9{margin-left:75%;}&.offset-sm-10{margin-left:83.333333%;}&.offset-sm-11{margin-left:91.666667%;}}@media (min-width:768px){&.md-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.md-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.md-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.md-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.md-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.md-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.md-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.md-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.order-md-first{-ms-flex-order:-1;order:-1;}&.order-md-last{-ms-flex-order:13;order:13;}&.order-md-0{-ms-flex-order:0;order:0;}&.order-md-1{-ms-flex-order:1;order:1;}&.order-md-2{-ms-flex-order:2;order:2;}&.order-md-3{-ms-flex-order:3;order:3;}&.order-md-4{-ms-flex-order:4;order:4;}&.order-md-5{-ms-flex-order:5;order:5;}&.order-md-6{-ms-flex-order:6;order:6;}&.order-md-7{-ms-flex-order:7;order:7;}&.order-md-8{-ms-flex-order:8;order:8;}&.order-md-9{-ms-flex-order:9;order:9;}&.order-md-10{-ms-flex-order:10;order:10;}&.order-md-11{-ms-flex-order:11;order:11;}&.order-md-12{-ms-flex-order:12;order:12;}&.offset-md-0{margin-left:0;}&.offset-md-1{margin-left:8.333333%;}&.offset-md-2{margin-left:16.666667%;}&.offset-md-3{margin-left:25%;}&.offset-md-4{margin-left:33.333333%;}&.offset-md-5{margin-left:41.666667%;}&.offset-md-6{margin-left:50%;}&.offset-md-7{margin-left:58.333333%;}&.offset-md-8{margin-left:66.666667%;}&.offset-md-9{margin-left:75%;}&.offset-md-10{margin-left:83.333333%;}&.offset-md-11{margin-left:91.666667%;}}@media (min-width:992px){&.lg-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.lg-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.lg-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.lg-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.lg-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.lg-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.lg-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.lg-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.lg-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.order-lg-first{-ms-flex-order:-1;order:-1;}&.order-lg-last{-ms-flex-order:13;order:13;}&.order-lg-0{-ms-flex-order:0;order:0;}&.order-lg-1{-ms-flex-order:1;order:1;}&.order-lg-2{-ms-flex-order:2;order:2;}&.order-lg-3{-ms-flex-order:3;order:3;}&.order-lg-4{-ms-flex-order:4;order:4;}&.order-lg-5{-ms-flex-order:5;order:5;}&.order-lg-6{-ms-flex-order:6;order:6;}&.order-lg-7{-ms-flex-order:7;order:7;}&.order-lg-8{-ms-flex-order:8;order:8;}&.order-lg-9{-ms-flex-order:9;order:9;}&.order-lg-10{-ms-flex-order:10;order:10;}&.order-lg-11{-ms-flex-order:11;order:11;}&.order-lg-12{-ms-flex-order:12;order:12;}&.offset-lg-0{margin-left:0;}&.offset-lg-1{margin-left:8.333333%;}&.offset-lg-2{margin-left:16.666667%;}&.offset-lg-3{margin-left:25%;}&.offset-lg-4{margin-left:33.333333%;}&.offset-lg-5{margin-left:41.666667%;}&.offset-lg-6{margin-left:50%;}&.offset-lg-7{margin-left:58.333333%;}&.offset-lg-8{margin-left:66.666667%;}&.offset-lg-9{margin-left:75%;}&.offset-lg-10{margin-left:83.333333%;}&.offset-lg-11{margin-left:91.666667%;}}@media (min-width:1200px){&.xl-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.xl-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.xl-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.xl-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.xl-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.xl-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.xl-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.xl-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.xl-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.xl-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.xl-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.xl-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.xl-first{-ms-flex-order:-1;order:-1;}&.xl-last{-ms-flex-order:13;order:13;}&.order-xl-0{-ms-flex-order:0;order:0;}&.order-xl-1{-ms-flex-order:1;order:1;}&.order-xl-2{-ms-flex-order:2;order:2;}&.order-xl-3{-ms-flex-order:3;order:3;}&.order-xl-4{-ms-flex-order:4;order:4;}&.order-xl-5{-ms-flex-order:5;order:5;}&.order-xl-6{-ms-flex-order:6;order:6;}&.order-xl-7{-ms-flex-order:7;order:7;}&.order-xl-8{-ms-flex-order:8;order:8;}&.order-xl-9{-ms-flex-order:9;order:9;}&.order-xl-10{-ms-flex-order:10;order:10;}&.order-xl-11{-ms-flex-order:11;order:11;}&.order-xl-12{-ms-flex-order:12;order:12;}&.offset-xl-0{margin-left:0;}&.offset-xl-1{margin-left:8.333333%;}&.offset-xl-2{margin-left:16.666667%;}&.offset-xl-3{margin-left:25%;}&.offset-xl-4{margin-left:33.333333%;}&.offset-xl-5{margin-left:41.666667%;}&.offset-xl-6{margin-left:50%;}&.offset-xl-7{margin-left:58.333333%;}&.offset-xl-8{margin-left:66.666667%;}&.offset-xl-9{margin-left:75%;}&.offset-xl-10{margin-left:83.333333%;}&.offset-xl-11{margin-left:91.666667%;}}.about-image{width:450px;height:464px;margin-top:50px;}"]);
 /* harmony default export */ __webpack_exports__["default"] = (ColWrapper);
 
@@ -5976,7 +6061,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ContainerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "containerstyle__ContainerWrapper",
-  componentId: "my3qv0-0"
+  componentId: "sc-1w7veq9-0"
 })(["width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;position:relative;@media (min-width:568px){max-width:100%;}@media (min-width:576px){max-width:95%;}@media (min-width:768px){max-width:720px;}@media (min-width:992px){max-width:960px;}@media (min-width:1200px){max-width:1140px;}@media (min-width:1400px){max-width:1320px;}&.fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}"]);
 /* harmony default export */ __webpack_exports__["default"] = (ContainerWrapper);
 
@@ -6105,7 +6190,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var RowWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "rowstyle__RowWrapper",
-  componentId: "avq5qi-0"
+  componentId: "sc-1m1bwu7-0"
 })(["display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;&.no-gutters{margin-right:0;margin-left:0;}&.no-gutters > .col,&.no-gutters > [class*=\"col-\"]{padding-right:0;padding-left:0;}"]);
 /* harmony default export */ __webpack_exports__["default"] = (RowWrapper);
 
@@ -6132,183 +6217,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-/***/ }),
-
-/***/ "./src/reusecore/List/index.js":
-/*!*************************************!*\
-  !*** ./src/reusecore/List/index.js ***!
-  \*************************************/
-/*! exports provided: List, ListItem */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "List", function() { return List; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListItem", function() { return ListItem; });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-
-
-
-var _this = undefined,
-    _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/reusecore/List/index.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
-
-
-var ListWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].ul.withConfig({
-  displayName: "List__ListWrapper",
-  componentId: "r41fly-0"
-})(["margin:0;padding:0;list-style:none;"]);
-var ListItemWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].li.withConfig({
-  displayName: "List__ListItemWrapper",
-  componentId: "r41fly-1"
-})([""]);
-var List = function List(_ref) {
-  var children = _ref.children,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["children"]);
-
-  var AllClasses = ["list"];
-
-  if (props.className) {
-    AllClasses.push(props.className);
-  }
-
-  return __jsx(ListWrapper, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    className: AllClasses.join(" "),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 5
-    }
-  }), children);
-};
-var ListItem = function ListItem(_ref2) {
-  var children = _ref2.children,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref2, ["children"]);
-
-  var AllClasses = ["list__item"];
-
-  if (props.className) {
-    AllClasses.push(props.className);
-  }
-
-  return __jsx(ListItemWrapper, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    className: AllClasses.join(" "),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 5
-    }
-  }), children);
-};
-
-/***/ }),
-
-/***/ "./src/reusecore/SlickSlider/index.js":
-/*!********************************************!*\
-  !*** ./src/reusecore/SlickSlider/index.js ***!
-  \********************************************/
-/*! exports provided: SlickSlider, SliderItem */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlickSlider", function() { return SlickSlider; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SliderItem", function() { return SliderItem; });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _slick_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slick.slider */ "./src/reusecore/SlickSlider/slick.slider.js");
-
-
-
-var _this = undefined,
-    _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/reusecore/SlickSlider/index.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
-
-
-
-var SlickSlider = function SlickSlider(_ref) {
-  var children = _ref.children,
-      className = _ref.className,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["children", "className"]);
-
-  var AllClasses = ['slick__slider'];
-
-  if (className) {
-    AllClasses.push(className);
-  }
-
-  return __jsx(_slick_slider__WEBPACK_IMPORTED_MODULE_3__["SliderWrapper"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: AllClasses.join(' ')
-  }, props, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 9
-    }
-  }), children);
-};
-
-var SliderItem = function SliderItem(_ref2) {
-  var children = _ref2.children,
-      className = _ref2.className;
-  var AllClasses = ['slick__slider__item'];
-
-  if (className) {
-    AllClasses.push(className);
-  }
-
-  return __jsx(_slick_slider__WEBPACK_IMPORTED_MODULE_3__["SliderItemWrapper"], {
-    className: AllClasses.join(className),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 9
-    }
-  }, children);
-};
-
-
-
-/***/ }),
-
-/***/ "./src/reusecore/SlickSlider/slick.slider.js":
-/*!***************************************************!*\
-  !*** ./src/reusecore/SlickSlider/slick.slider.js ***!
-  \***************************************************/
-/*! exports provided: SliderWrapper, SliderItemWrapper */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SliderWrapper", function() { return SliderWrapper; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SliderItemWrapper", function() { return SliderItemWrapper; });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
-/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_1__);
-
-
-var SliderWrapper = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(react_slick__WEBPACK_IMPORTED_MODULE_1___default.a).withConfig({
-  displayName: "slickslider__SliderWrapper",
-  componentId: "sc-183ouyv-0"
-})([""]);
-var SliderItemWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "slickslider__SliderItemWrapper",
-  componentId: "sc-183ouyv-1"
-})([""]);
 
 
 /***/ }),
@@ -6341,7 +6249,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var TextWrapper = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].p.withConfig({
   displayName: "Text__TextWrapper",
-  componentId: "sc-1ezj4hz-0"
+  componentId: "zm0wao-0"
 })(["margin-top:0;margin-bottom:1rem;", " ", ""], function (props) {
   return props.FontSize && Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["css"])(["font-size:", ";"], props.FontSize);
 }, function (props) {
@@ -6380,34 +6288,104 @@ Text.defaultProps = {
 
 /***/ }),
 
-/***/ "./src/sections/GamePlay/gameplay.style.js":
-/*!*************************************************!*\
-  !*** ./src/sections/GamePlay/gameplay.style.js ***!
-  \*************************************************/
-/*! exports provided: default */
+/***/ "./src/sections/Custom/customArrows.js":
+/*!*********************************************!*\
+  !*** ./src/sections/Custom/customArrows.js ***!
+  \*********************************************/
+/*! exports provided: NextArrow, PrevArrow */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _assets_images_background_webp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/images/background.webp */ "./src/assets/images/background.webp");
-/* harmony import */ var _assets_images_background_webp__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_images_background_webp__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NextArrow", function() { return NextArrow; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PrevArrow", function() { return PrevArrow; });
+/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_images_gameplay_play_arrow_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/images/gameplay/play-arrow.png */ "./src/assets/images/gameplay/play-arrow.png");
+/* harmony import */ var _assets_images_gameplay_play_arrow_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_images_gameplay_play_arrow_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ "./src/sections/Custom/style.css");
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_3__);
+
+var _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/sections/Custom/customArrows.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 
-var GamePlayWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
-  displayName: "gameplaystyle__GamePlayWrapper",
-  componentId: "sc-6263r4-0"
-})(["width:100%;padding:150px 0px 50px 0px;background-image:url(", ");background-repeat:no-repeat;background-size:cover;background-position:center;.gameplay-heading{.screen{display:none;}}.gameplay-content{margin-top:65px;.gameplay-item{display:flex;align-items:center;align-items:center;.gameplay-image{width:59.3%;margin-right:100px;}.gameplay-intro{width:25.69%;img{width:134px;margin-bottom:30px;}h1{font-size:24px;color:#ffffff;margin:0;padding:0;}p{font-size:18px;}ul{li{font-size:18px;list-style-type:disc;}}}}}.slick-arrow{display:none !important;}ul{bottom:-50px;li{.ft-slick__dots--custom{width:10px;height:10px;background:", ";border-radius:50%;opacity:0.2;}&.slick-active{.ft-slick__dots--custom{opacity:1;}}}}@media only screen and (max-width:1200px){.gameplay-content{.gameplay-item{flex-direction:column;.gameplay-image{width:90%;margin:auto;}.gameplay-intro{width:90%;text-align:center;margin:20px 0px auto;img{margin:auto;}ul{li{position:relative;list-style-type:none;}}}}}}@media only screen and (max-width:1200px){.hide{display:none;}.gameplay-heading{h1{text-align:center;}.screen{display:block;}}}"], _assets_images_background_webp__WEBPACK_IMPORTED_MODULE_1___default.a, function (props) {
-  return props.theme.primaryColor;
-});
-/* harmony default export */ __webpack_exports__["default"] = (GamePlayWrapper);
+
+function NextArrow(props) {
+  var className = props.className,
+      style = props.style,
+      onClick = props.onClick;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: className,
+    style: _objectSpread({}, style),
+    onClick: onClick,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 9
+    }
+  }, __jsx("img", {
+    src: _assets_images_gameplay_play_arrow_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 11
+    }
+  }))));
+}
+function PrevArrow(props) {
+  var className = props.className,
+      style = props.style,
+      onClick = props.onClick;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: className,
+    style: _objectSpread({}, style),
+    onClick: onClick,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 9
+    }
+  }, __jsx("img", {
+    src: _assets_images_gameplay_play_arrow_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 11
+    }
+  }))));
+}
 
 /***/ }),
 
-/***/ "./src/sections/GamePlay/index.js":
-/*!****************************************!*\
-  !*** ./src/sections/GamePlay/index.js ***!
-  \****************************************/
+/***/ "./src/sections/OurTeam/index.js":
+/*!***************************************!*\
+  !*** ./src/sections/OurTeam/index.js ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6416,21 +6394,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _gameplay_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./gameplay.style */ "./src/sections/GamePlay/gameplay.style.js");
-/* harmony import */ var _reusecore_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../reusecore/Box */ "./src/reusecore/Box/index.js");
+/* harmony import */ var _ourteam_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ourteam.style */ "./src/sections/OurTeam/ourteam.style.js");
+/* harmony import */ var _reusecore_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../reusecore/Layout */ "./src/reusecore/Layout/index.js");
 /* harmony import */ var _reusecore_Heading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../reusecore/Heading */ "./src/reusecore/Heading/index.js");
-/* harmony import */ var _reusecore_SlickSlider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../reusecore/SlickSlider */ "./src/reusecore/SlickSlider/index.js");
-/* harmony import */ var _reusecore_Text__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../reusecore/Text */ "./src/reusecore/Text/index.js");
-/* harmony import */ var _reusecore_Image__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../reusecore/Image */ "./src/reusecore/Image/index.js");
-/* harmony import */ var _reusecore_List__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../reusecore/List */ "./src/reusecore/List/index.js");
-/* harmony import */ var _reusecore_Layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../reusecore/Layout */ "./src/reusecore/Layout/index.js");
-/* harmony import */ var _assets_data_gameplay__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/data/gameplay */ "./src/assets/data/gameplay/index.js");
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
-/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _reusecore_Box__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../reusecore/Box */ "./src/reusecore/Box/index.js");
+/* harmony import */ var _reusecore_Image__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../reusecore/Image */ "./src/reusecore/Image/index.js");
+/* harmony import */ var _reusecore_Text__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../reusecore/Text */ "./src/reusecore/Text/index.js");
+/* harmony import */ var _assets_data_ourteam__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/data/ourteam */ "./src/assets/data/ourteam/index.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! aos/dist/aos.css */ "./node_modules/aos/dist/aos.css");
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _Custom_customArrows__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../Custom/customArrows */ "./src/sections/Custom/customArrows.js");
 
 
 var _this = undefined,
-    _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/sections/GamePlay/index.js";
+    _jsxFileName = "/Users/steven/Desktop/Working/PlanetSandbox/landing/src/sections/OurTeam/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -6445,14 +6426,15 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-var GamePlay = function GamePlay() {
+
+var OurTeam = function OurTeam() {
   var settings = {
     appendDots: function appendDots(dots) {
       return __jsx("ul", {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 16,
           columnNumber: 27
         }
       }, dots);
@@ -6463,20 +6445,34 @@ var GamePlay = function GamePlay() {
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16,
+          lineNumber: 17,
           columnNumber: 26
         }
       });
     },
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 4000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrow: false,
     responsive: [{
-      breakpoint: 480,
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    }, {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2
+      }
+    }, {
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -6484,185 +6480,178 @@ var GamePlay = function GamePlay() {
     }]
   };
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    aos__WEBPACK_IMPORTED_MODULE_11___default.a.init({
+    aos__WEBPACK_IMPORTED_MODULE_10___default.a.init({
       throttleDelay: 99,
       debounceDelay: 50,
       disable: false,
-      duration: 500,
-      once: false,
-      mirror: true
+      duration: 500
     });
   }, []);
-  return __jsx(_gameplay_style__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return __jsx(_ourteam_style__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: "section",
-    id: "gameplay",
+    id: "ourteam",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 62,
       columnNumber: 5
     }
-  }, __jsx(_reusecore_Layout__WEBPACK_IMPORTED_MODULE_9__["Container"], {
+  }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    className: "ourteam-background",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 63,
       columnNumber: 7
     }
-  }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "gameplay-heading",
+  }, "\xA0"), __jsx(_reusecore_Layout__WEBPACK_IMPORTED_MODULE_3__["Container"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 64,
+      columnNumber: 7
+    }
+  }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    className: "ourteam-heading",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
       columnNumber: 9
     }
   }, __jsx(_reusecore_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 66,
       columnNumber: 11
     }
-  }, "Gameplay"), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "Core Team"), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_7__["default"], {
     className: "hide",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
+      lineNumber: 67,
       columnNumber: 11
     }
-  }, "Planet Sandbox is a virtual world where players can play, build, own, and", __jsx("br", {
+  }, "Behind a great game stand the passionate and talented people in the industry.", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 70,
       columnNumber: 13
     }
-  }), "monetize their virtual experiences. We empower artists, creators, and players", __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58,
-      columnNumber: 13
-    }
-  }), "to build the platform they always envisioned, providing the means to unleash", __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61,
-      columnNumber: 13
-    }
-  }), "your creativity.", " "), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), "We want to bring the best experience to all the players."), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_7__["default"], {
     className: "screen",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 73,
       columnNumber: 11
     }
-  }, "Planet Sandbox is a virtual world where players can play, build, own, and monetize their virtual experiences. We empower artists, creators, and players to build the platform they always envisioned, providing the means to unleash your creativity.", " "))), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    className: "gameplay-content",
+  }, "Behind a great game stand the passionate and talented people in the industry. We want to bring the best experience to all the players.")), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    className: "ourteam-content",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 7
-    }
-  }, __jsx(_reusecore_SlickSlider__WEBPACK_IMPORTED_MODULE_5__["SlickSlider"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, settings, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 78,
       columnNumber: 9
     }
-  }), _assets_data_gameplay__WEBPACK_IMPORTED_MODULE_10__["default"].gameplay.map(function (gameplay, i) {
-    return __jsx(_reusecore_SlickSlider__WEBPACK_IMPORTED_MODULE_5__["SliderItem"], {
-      key: i,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 75,
-        columnNumber: 13
-      }
-    }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      className: "gameplay-item",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 76,
-        columnNumber: 15
-      }
-    }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      "data-aos": "fade-right",
-      className: "gameplay-image",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 77,
-        columnNumber: 17
-      }
-    }, __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      src: gameplay.poster,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 78,
-        columnNumber: 19
-      }
-    })), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      "data-aos": "fade-left",
-      className: "gameplay-intro",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 80,
-        columnNumber: 17
-      }
-    }, __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      src: gameplay.icon,
+  }, __jsx(react_slick__WEBPACK_IMPORTED_MODULE_9___default.a, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, settings, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79,
+      columnNumber: 11
+    }
+  }), _assets_data_ourteam__WEBPACK_IMPORTED_MODULE_8__["default"].ourteam.map(function (team, index) {
+    return __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      "data-aos": team.animation,
+      key: index,
+      "data-aos-duration": (index + 1) * 500,
+      className: "ourteam-item",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 81,
-        columnNumber: 19
+        columnNumber: 15
       }
-    }), __jsx(_reusecore_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }, __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      className: "ourteam-img",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82,
-        columnNumber: 19
+        lineNumber: 87,
+        columnNumber: 17
       }
-    }, gameplay.title), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }, __jsx(_reusecore_Image__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      src: team.avatar,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83,
+        lineNumber: 88,
         columnNumber: 19
       }
-    }, gameplay.content), gameplay.listContent && __jsx(_reusecore_List__WEBPACK_IMPORTED_MODULE_8__["List"], {
+    })), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      className: "ourteam-info",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85,
-        columnNumber: 21
+        lineNumber: 90,
+        columnNumber: 17
       }
-    }, gameplay.listContent.map(function (list, i) {
-      return __jsx(_reusecore_List__WEBPACK_IMPORTED_MODULE_8__["ListItem"], {
-        key: i,
-        __self: _this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 87,
-          columnNumber: 25
-        }
-      }, list);
-    })))));
-  }))));
+    }, __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      className: "ourteam-name",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 91,
+        columnNumber: 19
+      }
+    }, team.name), __jsx(_reusecore_Text__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      className: "ourteam-role",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 92,
+        columnNumber: 19
+      }
+    }, team.job)));
+  })))), __jsx(_reusecore_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    className: "content-backgound",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99,
+      columnNumber: 7
+    }
+  }, "\xA0"));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (GamePlay);
+/* harmony default export */ __webpack_exports__["default"] = (OurTeam);
+
+/***/ }),
+
+/***/ "./src/sections/OurTeam/ourteam.style.js":
+/*!***********************************************!*\
+  !*** ./src/sections/OurTeam/ourteam.style.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var OurTeamWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "ourteamstyle__OurTeamWrapper",
+  componentId: "tshzaa-0"
+})(["padding:80px 0px 160px 0px;position:relative;z-index:2;.ourteam-background{width:100%;position:absolute;bottom:45%;right:20%;}.ourteam-heading{text-align:center;margin-bottom:80px;.screen{display:none;}}.text-upper{text-transform:uppercase;}.ourteam-content{position:relative;.ourteam-item{display:flex !important;flex-direction:column;align-items:center;justify-content:center;.ourteam-img{width:290px;height:290px;}}.ourteam-info{width:100%;text-align:center;p{margin:0;padding:0;&.ourteam-name{margin-top:20px;color:#fff;font-size:20px;font-weight:700;text-transform:uppercase;}&.ourteam-role{font-size:16px;color:", ";margin-bottom:30px;font-weight:400;}}}.slick-dots{bottom:-40px;li{width:10px;height:10px;background:rgba(156,41,50,0.5);border-radius:16px;&.slick-active{background:", ";}.ft-slick__dots--custom{width:100%;height:100%;}}}}.slick-arrow{display:none !important;}.content-backgound{width:100%;height:527px;background:radial-gradient( 59.57% 46.53% at 50.34% 46.58%,rgba(61,216,249,0) 0%,#000000 100% );position:absolute;top:30%;z-index:-1;}@media only screen and (max-width:1400px){.ourteam-content{.ourteam-item{.ourteam-img{width:250px;height:250px;}}}}@media only screen and (max-width:1200px){.ourteam-content{.ourteam-item{.ourteam-img{width:270px;height:270px;}}}}@media only screen and (max-width:992px){.ourteam-content{.ourteam-item{.ourteam-img{width:200px;height:200px;}}}}@media only screen and (max-width:768px){.ourteam-content{.ourteam-item{.ourteam-img{width:290px;height:290px;}}}}@media only screen and (max-width:576px){.ourteam-content{.ourteam-item{.ourteam-img{width:270px;height:270px;}}}}"], function (props) {
+  return props.theme.primaryColor;
+}, function (props) {
+  return props.theme.primaryColor;
+});
+/* harmony default export */ __webpack_exports__["default"] = (OurTeamWrapper);
 
 /***/ })
 
