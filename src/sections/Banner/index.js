@@ -36,9 +36,9 @@ const Banner = () => {
               </Heading>
               <Box className="register">
                 <Button className="download">
-                  <Text as="span"><a href="https://drive.google.com/file/d/122-s6QkUhDxvr_lREFdERxvjBJbr5w5c/view?usp=sharing/">
+                  <Text as="span"><a href="https://drive.google.com/file/d/16mtHaeNR9okgZxBcUNWD5KQhDRD9ts0Z/view?usp=sharing">
                     <FaDownload style={{marginRight: 5}}/>
-                    PC Version
+                    PC Testnet
                     </a></Text>
                 </Button>
                 <Button className="banner-btn">
