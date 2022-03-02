@@ -41,12 +41,12 @@ const Banner = () => {
                     PC Testnet
                     </a></Text>
                 </Button>
-                <Button className="banner-btn">
+                {/* <Button className="banner-btn">
                   <Text as="span"><a href="https://event.planetsandbox.io/">
                       <FaTicketAlt style={{marginRight: 5}}/>
                       Join Lucky Event</a>
                     </Text>
-                </Button>
+                </Button> */}
                 {/* <Button className="banner-btn">
                   <Text as="span"><a href="#">Mac (Coming soon) </a></Text>
                 </Button>
