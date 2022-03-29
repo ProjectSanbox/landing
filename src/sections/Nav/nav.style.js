@@ -1,14 +1,241 @@
 import styled from "styled-components";
+import btnBackgoundGreen from "../../assets/images/btn/Btn1-sm.png";
+import btnBackgoundYellow from "../../assets/images/btn/Btn2-sm.png";
 
 const NavWrapper = styled.div`
-  background: #00000088;
-  backdrop-filter: blur(10px);
-  margin-top: 44px;
+  height: 95px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99;
+
+  @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+  /* nav-PC */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 173px;
+    }
+
+    .toggle {
+      display: none;
+      button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(255, 215, 0, 0.5) 0px 0px 0px 3px;
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .nav {
+      ul {
+        display: flex;
+        align-items: center;
+
+        li {
+          padding: 0;
+          margin: 0;
+          transition: 0.2s;
+          border: 2px solid transparent;
+          cursor: pointer;
+          box-sizing: border-box;
+          position: relative;
+          display: flex;
+          align-items: center;
+
+          a {
+            padding: 10px;
+            color: ${(props) => props.theme.primaryColor};
+            font-family: "Lexend Deca", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+          }
+          &:before {
+            content: "";
+            display: block;
+            width: 200px;
+            height: 26px;
+            position: absolute;
+            left: 0;
+            top: 30px;
+          }
+          svg {
+            font-size: 20px;
+            margin-top: 5px;
+            position: absolute;
+            right: 0px;
+          }
+
+          .listChild {
+            flex-direction: column;
+            opacity: 0;
+            left: 0;
+            bottom: -154px;
+            position: absolute;
+            padding-top: 10px;
+            width: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background: #00000099;
+            li {
+              width: 100%;
+              margin: 0;
+              padding: 10px 0px;
+              border: none;
+              position: relative;
+              a {
+                width: 100%;
+                display: block;
+              }
+
+              svg {
+                right: 10px;
+                font-size: 16px;
+              }
+
+              &:before {
+                content: "";
+                display: none;
+              }
+
+              &:hover {
+                border: none;
+                .listChildest {
+                  opacity: 1;
+                }
+              }
+
+              .listChildest {
+                flex-direction: column;
+                position: absolute;
+                width: 200px;
+                top: 0px;
+                border: none !important;
+                left: 198px;
+                opacity: 0;
+                transition: 1s;
+                li {
+                  background: #000000bb;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  &:before {
+                    content: "";
+                    display: none;
+                  }
+
+                  &:hover {
+                    border: none;
+                  }
+
+                  img {
+                    width: 50px;
+                    max-height: 40px;
+                    margin-left: 30px;
+                  }
+                }
+              }
+            }
+          }
+
+          &.active {
+            border: 2px solid ${(props) => props.theme.primaryColor};
+          }
+
+          &:hover {
+            border: 2px solid ${(props) => props.theme.primaryColor};
+            box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+
+            @keyframes pulse {
+              0% {
+                box-shadow: 0 0 0 0 ${(props) => props.theme.primaryColor};
+              }
+            }
+
+            .listChild {
+              opacity: 1;
+            }
+          }
+          &:last-child {
+            margin-left: 24px;
+          }
+          &:not(:last-child) {
+            padding: 0px 5px;
+            margin-left: 3px;
+          }
+
+          /* &.pitching {
+            width: 130px;
+            height: 33px;
+            text-align: center;
+            font-weight: 500;
+            background: #000000;
+            position: relative;
+            box-sizing: border-box;
+            border: 2px solid ${(props) => props.theme.primaryColor};
+            a {
+              line-height: 40px;
+              width: 100%;
+              color: ${(props) => props.theme.primaryColor};
+              display: block;
+            }
+          } */
+        }
+      }
+    }
+  }
+
+  .btn-menu {
+    pointer-events: none;
+
+    .menu-btn {
+      display: flex;
+      align-items: center;
+      button {
+        width: 142px;
+        height: 45px;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        &:hover{
+          border: none;
+        }
+        &.btn1 {
+          margin-right: 32px;
+          background: url(${btnBackgoundGreen});
+        }
+        &.btn2 {
+          background: url(${btnBackgoundYellow});
+        }
+        span {
+          a {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            color: #131313;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1em;
+          }
+        }
+      }
+    }
+  }
+  
 
   /* Nav-mobie */
   .nav-mobile {
@@ -131,191 +358,6 @@ const NavWrapper = styled.div`
     }
     .list-mobile {
       transform: translate(0);
-    }
-  }
-
-  /* nav-PC */
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .logo {
-      width: 170px;
-    }
-
-    .toggle {
-      display: none;
-      button {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: rgba(255, 215, 0, 0.5) 0px 0px 0px 3px;
-        svg {
-          font-size: 20px;
-        }
-      }
-    }
-
-    .nav {
-      ul {
-        display: flex;
-        align-items: center;
-        li {
-          text-transform: uppercase;
-          padding: 20px;
-          margin: 0;
-          transition: .2s;
-          border: 2px solid transparent;
-          cursor: pointer;
-          box-sizing: border-box;
-          position: relative;
-          display: flex;
-          align-items: center;
-
-          a {
-            padding: 10px;
-          }
-
-          &:before {
-            content: "";
-            display: block;
-            width: 200px;
-            height: 26px;
-            position: absolute;
-            left: 0;
-            top: 30px;
-          }
-
-          svg {
-            font-size: 20px;
-            margin-top: 5px;
-            position: absolute;
-            right: 0px;
-          }
-
-          .listChild {
-            flex-direction: column;
-            opacity: 0;
-            left: 0;
-            bottom: -154px;
-            position: absolute;
-            padding-top: 10px;
-            width: 200px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            background: #00000099;
-            li {
-              width: 100%;
-              margin: 0;
-              padding: 10px 0px;
-              border: none;
-              position: relative;
-              a {
-                width: 100%;
-                display: block;
-              }
-
-              svg {
-                right: 10px;
-                font-size: 16px;
-              }
-
-              &:before {
-                content: "";
-                display: none;
-              }
-
-              &:hover {
-                border: none;
-                .listChildest {
-                  opacity: 1;
-                }
-              }
-
-              .listChildest {
-                flex-direction: column;
-                position: absolute;
-                width: 200px;
-                top: 0px;
-                border: none !important;
-                left: 198px;
-                opacity: 0;
-                transition: 1s;
-                li {
-                  background: #000000bb;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  &:before {
-                    content: "";
-                    display: none;
-                  }
-
-                  &:hover {
-                    border: none;
-                  }
-
-                  img {
-                    width: 50px;
-                      max-height: 40px;
-                      margin-left: 30px;
-                  }
-                }
-              }
-            }
-          }
-
-          &.active {
-            border: 2px solid ${(props) => props.theme.primaryColor};
-          }
-
-          &:hover {
-            border: 2px solid ${(props) => props.theme.primaryColor};
-            box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
-            /*animation: pulse 1s;*/
-
-            @keyframes pulse {
-              0% {
-                box-shadow: 0 0 0 0 ${(props) => props.theme.primaryColor};
-              }
-            }
-
-            .listChild {
-              opacity: 1;
-            }
-          }
-          &:last-child {
-            margin-left: 24px;
-          }
-          &:not(:last-child) {
-            padding: 0px 20px;
-            margin-left: 10px;
-          }
-
-          &.pitching {
-            width: 130px;
-            height: 33px;
-            text-align: center;
-            font-weight: 500;
-            background: #000000;
-            position: relative;
-            box-sizing: border-box;
-            border: 2px solid ${(props) => props.theme.primaryColor};
-            a {
-              line-height: 40px;
-              width: 100%;
-              color: ${(props) => props.theme.primaryColor};
-              display: block;
-            }
-          }
-        }
-      }
     }
   }
 

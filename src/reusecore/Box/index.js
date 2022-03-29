@@ -17,7 +17,7 @@ const Box = ({ children,ref,onClick, ...props }) => {
       {children}
     </BoxWrapper>
   );
-};
+}
 
 Box.propTypes = {
   children: PropTypes.any.isRequired,

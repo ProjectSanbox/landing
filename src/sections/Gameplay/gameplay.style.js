@@ -1,7 +1,15 @@
 import styled from "styled-components";
 import background from "assets/images/background.webp";
 
+
+
 const GamePlayWrapper = styled.div`
+
+@font-face {
+    font-family: "MorningRainbow";
+    src: url("../../assets/fonts/MR/MorningRainbow.ttf");
+  }
+
   width: 100%;
   padding: 150px 0px 50px 0px;
   background-image: url(${background});
@@ -37,10 +45,12 @@ const GamePlayWrapper = styled.div`
           color: #ffffff;
           margin: 0;
           padding: 0;
+          
         }
 
         p {
           font-size: 18px;
+          font-family: 'MorningRainbow';
         }
 
         ul {

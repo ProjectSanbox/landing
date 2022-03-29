@@ -11,8 +11,10 @@ const AboutWrapper = styled.div`
   background-size: cover;
   background-position: center;
   position: relative;
+
   .about-content {
     text-align: center;
+    
     .screen {
       display: none;
     }

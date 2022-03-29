@@ -1,8 +1,18 @@
-import styled from "styled-components";
-import headerBackground from "assets/images/banner/banner.jpg";
+import styled from "styled-components"
+import headerBackground from "assets/images/banner/banner.jpg"
+import btnBackgound from '../../assets/images/btn/Btn2-md.png'
 
 const BannerWrapper = styled.div`
   background: transparent;
+
+  @font-face {
+    font-family: "Normandia";
+    src: local("Normandia"),
+         url("../../assets/fonts/Normandia/Normandia.ttf") format("ttf");
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
   p {
     color: #ffffff;
     font-size: 18px;
@@ -32,65 +42,64 @@ const BannerWrapper = styled.div`
         right: 0;
         bottom: 0;
         background: linear-gradient(
-          107.56deg,
-          rgba(27, 24, 38, 0.9) 15.48%,
-          rgba(27, 24, 38, 0) 72.61%
+          180deg,
+          #000000 12.45%,
+          rgba(0, 0, 0, 0) 100%
         );
       }
 
       .heading-content {
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 42%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        text-align: center;
+        
         h1 {
-          font-size: 2.5em;
-          line-height: 60px;
-          margin: 0;
-          margin-bottom: 10px;
+          font-size: 57.55px;
+          line-height: 28.27px;
           text-transform: none;
-          color: #ffffff;
-          padding: 0;
+          color: #7D7D7D;
           position: relative;
           max-width: 800px;
-          &.heading-sm {
-            font-size: 32px;
+          font-family: "Normandia";
+          &.heading-lg {
+            font-size: 75.14px;
+            line-height: 15.82px;
             color: ${(props) => props.theme.primaryColor};
             font-weight: 400;
-            font-family: "SFUEurostileNormal", sans-serif;
             text-transform: none;
+            width: max-content;
           }
-          span {
-            position: relative;
-            display: inline-block;
-          }
+        }
+        span{
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 700;
+          color: rgba(125, 125, 125, 1);
+          text-transform: uppercase;
         }
         .register {
           display: flex;
+          justify-content: center;
           align-items: center;
-          margin-top: 49px;
+          margin-top: 32px;
 
           button {
-            width: 270px;
-            height: 56px;
+            width: 213px;
+            height: 67px;
+            background: url(${btnBackgound});
             padding: 0;
             margin: 10px 30px 10px 0;
-            border-radius: 5px;
-            background: rgb(255,182,63);
-            background: linear-gradient(309deg,rgba(255,182,63,1) 0%,rgba(255,224,27,1) 59%);
             position: relative;
             overflow: hidden;
             box-shadow: 0px 0px 12px rgba(40, 33, 108, 0.7);
             transition: transform 0.2s ease-out;
-
-            &.download {
-              background: linear-gradient(309deg,rgb(170 255 124) 0%,rgb(83 251 181) 59%);
-            }
             
             span{
               a{
                 display: flex;
                 justify-content: center;
-                align-contents: center;
+                align-content: center;
                 color: #000000;
                 font-weight: 700;
                 font-size: 26px;

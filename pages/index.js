@@ -11,6 +11,8 @@ import TagManager from 'react-gtm-module';
 const Popup = loadable(() => import("sections/Popup"));
 const Nav = loadable(() => import("sections/Nav"));
 const Banner = loadable(() => import("sections/Banner"));
+const Character = loadable(() => import("sections/Character"));
+const Weapon = loadable(() => import("sections/Weapon"));
 const Roadmap = loadable(() => import("sections/Roadmap"));
 const About = loadable(() => import("sections/About"));
 const GamePlay = loadable(() => import("sections/GamePlay"));
@@ -99,6 +101,8 @@ const Home = () => {
       {/* <Popup /> */}
       <Nav />
       <Banner />
+      <Character />
+      <Weapon />
       <About />
       <GamePlay />
       <GameAssets />

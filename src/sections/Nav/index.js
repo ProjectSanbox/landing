@@ -6,6 +6,7 @@ import Button from "reusecore/Button";
 import { Container } from "reusecore/Layout";
 import logo from "assets/images/logo.png";
 import { List, ListItem } from "reusecore/List";
+import Text from "reusecore/Text";
 
 import { useState } from "react";
 import data from "assets/data/nav";
@@ -16,7 +17,6 @@ import { BiChevronRight } from "react-icons/bi";
 import { HiChevronDown } from "react-icons/hi";
 
 const Nav = () => {
-  let count = 0;
   const [toggle, setToggle] = useState({
     status: false,
     active: "",
@@ -38,24 +38,21 @@ const Nav = () => {
   useEffect(() => {
     const header = document.getElementById("header");
 
-    if (window.pageYOffset > 0 || document.documentElement.scrollTop > 0) {
-      // header.style.background = "#17181C";
-      header.style.transition = "0.5s";
-      header.style.marginTop = "0";
-    } else {
-      // header.style.background = "transparent";
-      header.style.marginTop = "44px";
-    }
+    // if (window.pageYOffset > 0 || document.documentElement.scrollTop > 0) {
+    //   // header.style.background = "#17181C";
+    //   header.style.transition = "0.5s";
+    //   header.style.marginTop = "0";
+    // } else {
+    //   // header.style.background = "transparent";
+    //   header.style.marginTop = "44px";
+    // }
 
     // scroll
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 0 || document.documentElement.scrollTop > 0) {
-        // header.style.background = "#17181C";
-        header.style.transition = "0.5s";
-        header.style.marginTop = "0";
+      if (window.pageYOffset >= 95 || document.documentElement.scrollTop > 95) {
+        header.style.background = "rgba(19, 19, 19, 0.85)";
       } else {
-        // header.style.background = "transparent";
-        header.style.marginTop = "44px";
+        header.style.background = "transparent";
       }
     });
 
@@ -92,7 +89,7 @@ const Nav = () => {
 
   return (
     <>
-      <NavWrapper className="section" id="header">
+      <NavWrapper id="header">
         {/* nav mobie */}
         <Box className={toggle.status ? "nav-mobile open" : "nav-mobile"}>
           <Box className="overlay">&nbsp;</Box>
@@ -199,9 +196,9 @@ const Nav = () => {
                       {nav.content}
                     </a>
 
-                    {nav.list && <RiArrowDropDownLine />}
+                    {/* {nav.list && <RiArrowDropDownLine />} */}
 
-                    {nav.list && (
+                    {/* {nav.list && (
                       <List className="listChild">
                         {nav.list.map((list, i) => (
                           <ListItem key={i}>
@@ -222,9 +219,23 @@ const Nav = () => {
                           </ListItem>
                         ))}
                       </List>
-                    )}
+                    )} */}
                   </ListItem>
                 ))}
+                <ListItem className="btn-menu">
+                  <Box className="menu-btn">
+                    <Button className="btn1">
+                      <Text as='span'>
+                        <a href="#">PSB $0.720</a>
+                      </Text>
+                    </Button>
+                    <Button className="btn2">
+                      <Text as="span">
+                        <a href="#">PLAY GAME</a>
+                      </Text>
+                    </Button>
+                  </Box>
+                </ListItem>
               </List>
             </Box>
             <Box className="toggle">
@@ -235,7 +246,6 @@ const Nav = () => {
           </Box>
         </Container>
       </NavWrapper>
-      {/* <NavMobie /> */}
     </>
   );
 };
