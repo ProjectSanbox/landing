@@ -1,5 +1,35 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[2],{
 
+/***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js ***!
@@ -26,6 +56,33 @@ function _objectWithoutProperties(source, excluded) {
       if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
       target[key] = source[key];
     }
+  }
+
+  return target;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectWithoutPropertiesLoose; });
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
   }
 
   return target;
@@ -157,12 +214,12 @@ var e,t=(e=__webpack_require__(/*! querystring */ "./node_modules/querystring-es
 
 /***/ "./node_modules/next/dist/build/polyfills/object-assign.js":
 /*!***********************************************************************************************************************!*\
-  !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_ec667958cc29f8a62334 ***!
+  !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_9c4bc4a42529b59eb100 ***!
   \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ec667958cc29f8a62334 */ "dll-reference dll_ec667958cc29f8a62334"))("./node_modules/next/dist/build/polyfills/object-assign.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_9c4bc4a42529b59eb100 */ "dll-reference dll_9c4bc4a42529b59eb100"))("./node_modules/next/dist/build/polyfills/object-assign.js");
 
 /***/ }),
 
@@ -501,7 +558,7 @@ var Link = /*#__PURE__*/function (_react$Component) {
 if (true) {
   var warn = (0, _utils.execOnce)(console.error); // This module gets removed by webpack.IgnorePlugin
 
-  var PropTypes = __webpack_require__(/*! prop-types */ "./node_modules/next/node_modules/prop-types/index.js");
+  var PropTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 
   var exact = __webpack_require__(/*! prop-types-exact */ "./node_modules/prop-types-exact/build/index.js"); // @ts-ignore the property is supported, when declaring it on the class it outputs an extra bit of code which is not needed.
 
@@ -2165,773 +2222,6 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 /***/ }),
 
-/***/ "./node_modules/next/node_modules/prop-types/checkPropTypes.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/next/node_modules/prop-types/checkPropTypes.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var printWarning = function() {};
-
-if (true) {
-  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js");
-  var loggedTypeFailures = {};
-  var has = Function.call.bind(Object.prototype.hasOwnProperty);
-
-  printWarning = function(text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
-/**
- * Assert that the values match with the type specs.
- * Error messages are memorized and will only be shown once.
- *
- * @param {object} typeSpecs Map of name to a ReactPropType
- * @param {object} values Runtime values that need to be type-checked
- * @param {string} location e.g. "prop", "context", "child context"
- * @param {string} componentName Name of the component for error messages.
- * @param {?Function} getStack Returns the component stack.
- * @private
- */
-function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
-  if (true) {
-    for (var typeSpecName in typeSpecs) {
-      if (has(typeSpecs, typeSpecName)) {
-        var error;
-        // Prop type validation may throw. In case they do, we don't want to
-        // fail the render phase where it didn't fail before. So we log it.
-        // After these have been cleaned up, we'll let them throw.
-        try {
-          // This is intentionally an invariant that gets caught. It's the same
-          // behavior as without this statement except with a better message.
-          if (typeof typeSpecs[typeSpecName] !== 'function') {
-            var err = Error(
-              (componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' +
-              'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.'
-            );
-            err.name = 'Invariant Violation';
-            throw err;
-          }
-          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
-        } catch (ex) {
-          error = ex;
-        }
-        if (error && !(error instanceof Error)) {
-          printWarning(
-            (componentName || 'React class') + ': type specification of ' +
-            location + ' `' + typeSpecName + '` is invalid; the type checker ' +
-            'function must return `null` or an `Error` but returned a ' + typeof error + '. ' +
-            'You may have forgotten to pass an argument to the type checker ' +
-            'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' +
-            'shape all require an argument).'
-          );
-        }
-        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-          // Only monitor this failure once because there tends to be a lot of the
-          // same error.
-          loggedTypeFailures[error.message] = true;
-
-          var stack = getStack ? getStack() : '';
-
-          printWarning(
-            'Failed ' + location + ' type: ' + error.message + (stack != null ? stack : '')
-          );
-        }
-      }
-    }
-  }
-}
-
-/**
- * Resets warning cache when testing.
- *
- * @private
- */
-checkPropTypes.resetWarningCache = function() {
-  if (true) {
-    loggedTypeFailures = {};
-  }
-}
-
-module.exports = checkPropTypes;
-
-
-/***/ }),
-
-/***/ "./node_modules/next/node_modules/prop-types/factoryWithTypeCheckers.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/next/node_modules/prop-types/factoryWithTypeCheckers.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/next/node_modules/react-is/index.js");
-var assign = __webpack_require__(/*! object-assign */ "./node_modules/next/dist/build/polyfills/object-assign.js");
-
-var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js");
-var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/next/node_modules/prop-types/checkPropTypes.js");
-
-var has = Function.call.bind(Object.prototype.hasOwnProperty);
-var printWarning = function() {};
-
-if (true) {
-  printWarning = function(text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
-function emptyFunctionThatReturnsNull() {
-  return null;
-}
-
-module.exports = function(isValidElement, throwOnDirectAccess) {
-  /* global Symbol */
-  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
-
-  /**
-   * Returns the iterator method function contained on the iterable object.
-   *
-   * Be sure to invoke the function with the iterable as context:
-   *
-   *     var iteratorFn = getIteratorFn(myIterable);
-   *     if (iteratorFn) {
-   *       var iterator = iteratorFn.call(myIterable);
-   *       ...
-   *     }
-   *
-   * @param {?object} maybeIterable
-   * @return {?function}
-   */
-  function getIteratorFn(maybeIterable) {
-    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
-    if (typeof iteratorFn === 'function') {
-      return iteratorFn;
-    }
-  }
-
-  /**
-   * Collection of methods that allow declaration and validation of props that are
-   * supplied to React components. Example usage:
-   *
-   *   var Props = require('ReactPropTypes');
-   *   var MyArticle = React.createClass({
-   *     propTypes: {
-   *       // An optional string prop named "description".
-   *       description: Props.string,
-   *
-   *       // A required enum prop named "category".
-   *       category: Props.oneOf(['News','Photos']).isRequired,
-   *
-   *       // A prop named "dialog" that requires an instance of Dialog.
-   *       dialog: Props.instanceOf(Dialog).isRequired
-   *     },
-   *     render: function() { ... }
-   *   });
-   *
-   * A more formal specification of how these methods are used:
-   *
-   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
-   *   decl := ReactPropTypes.{type}(.isRequired)?
-   *
-   * Each and every declaration produces a function with the same signature. This
-   * allows the creation of custom validation functions. For example:
-   *
-   *  var MyLink = React.createClass({
-   *    propTypes: {
-   *      // An optional string or URI prop named "href".
-   *      href: function(props, propName, componentName) {
-   *        var propValue = props[propName];
-   *        if (propValue != null && typeof propValue !== 'string' &&
-   *            !(propValue instanceof URI)) {
-   *          return new Error(
-   *            'Expected a string or an URI for ' + propName + ' in ' +
-   *            componentName
-   *          );
-   *        }
-   *      }
-   *    },
-   *    render: function() {...}
-   *  });
-   *
-   * @internal
-   */
-
-  var ANONYMOUS = '<<anonymous>>';
-
-  // Important!
-  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
-  var ReactPropTypes = {
-    array: createPrimitiveTypeChecker('array'),
-    bool: createPrimitiveTypeChecker('boolean'),
-    func: createPrimitiveTypeChecker('function'),
-    number: createPrimitiveTypeChecker('number'),
-    object: createPrimitiveTypeChecker('object'),
-    string: createPrimitiveTypeChecker('string'),
-    symbol: createPrimitiveTypeChecker('symbol'),
-
-    any: createAnyTypeChecker(),
-    arrayOf: createArrayOfTypeChecker,
-    element: createElementTypeChecker(),
-    elementType: createElementTypeTypeChecker(),
-    instanceOf: createInstanceTypeChecker,
-    node: createNodeChecker(),
-    objectOf: createObjectOfTypeChecker,
-    oneOf: createEnumTypeChecker,
-    oneOfType: createUnionTypeChecker,
-    shape: createShapeTypeChecker,
-    exact: createStrictShapeTypeChecker,
-  };
-
-  /**
-   * inlined Object.is polyfill to avoid requiring consumers ship their own
-   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
-   */
-  /*eslint-disable no-self-compare*/
-  function is(x, y) {
-    // SameValue algorithm
-    if (x === y) {
-      // Steps 1-5, 7-10
-      // Steps 6.b-6.e: +0 != -0
-      return x !== 0 || 1 / x === 1 / y;
-    } else {
-      // Step 6.a: NaN == NaN
-      return x !== x && y !== y;
-    }
-  }
-  /*eslint-enable no-self-compare*/
-
-  /**
-   * We use an Error-like object for backward compatibility as people may call
-   * PropTypes directly and inspect their output. However, we don't use real
-   * Errors anymore. We don't inspect their stack anyway, and creating them
-   * is prohibitively expensive if they are created too often, such as what
-   * happens in oneOfType() for any type before the one that matched.
-   */
-  function PropTypeError(message) {
-    this.message = message;
-    this.stack = '';
-  }
-  // Make `instanceof Error` still work for returned errors.
-  PropTypeError.prototype = Error.prototype;
-
-  function createChainableTypeChecker(validate) {
-    if (true) {
-      var manualPropTypeCallCache = {};
-      var manualPropTypeWarningCount = 0;
-    }
-    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
-      componentName = componentName || ANONYMOUS;
-      propFullName = propFullName || propName;
-
-      if (secret !== ReactPropTypesSecret) {
-        if (throwOnDirectAccess) {
-          // New behavior only for users of `prop-types` package
-          var err = new Error(
-            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
-            'Use `PropTypes.checkPropTypes()` to call them. ' +
-            'Read more at http://fb.me/use-check-prop-types'
-          );
-          err.name = 'Invariant Violation';
-          throw err;
-        } else if ( true && typeof console !== 'undefined') {
-          // Old behavior for people using React.PropTypes
-          var cacheKey = componentName + ':' + propName;
-          if (
-            !manualPropTypeCallCache[cacheKey] &&
-            // Avoid spamming the console because they are often not actionable except for lib authors
-            manualPropTypeWarningCount < 3
-          ) {
-            printWarning(
-              'You are manually calling a React.PropTypes validation ' +
-              'function for the `' + propFullName + '` prop on `' + componentName  + '`. This is deprecated ' +
-              'and will throw in the standalone `prop-types` package. ' +
-              'You may be seeing this warning due to a third-party PropTypes ' +
-              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.'
-            );
-            manualPropTypeCallCache[cacheKey] = true;
-            manualPropTypeWarningCount++;
-          }
-        }
-      }
-      if (props[propName] == null) {
-        if (isRequired) {
-          if (props[propName] === null) {
-            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
-          }
-          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
-        }
-        return null;
-      } else {
-        return validate(props, propName, componentName, location, propFullName);
-      }
-    }
-
-    var chainedCheckType = checkType.bind(null, false);
-    chainedCheckType.isRequired = checkType.bind(null, true);
-
-    return chainedCheckType;
-  }
-
-  function createPrimitiveTypeChecker(expectedType) {
-    function validate(props, propName, componentName, location, propFullName, secret) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== expectedType) {
-        // `propValue` being instance of, say, date/regexp, pass the 'object'
-        // check, but we can offer a more precise error message here rather than
-        // 'of type `object`'.
-        var preciseType = getPreciseType(propValue);
-
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createAnyTypeChecker() {
-    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
-  }
-
-  function createArrayOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
-      }
-      var propValue = props[propName];
-      if (!Array.isArray(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
-      }
-      for (var i = 0; i < propValue.length; i++) {
-        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
-        if (error instanceof Error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createElementTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!isValidElement(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createElementTypeTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!ReactIs.isValidElementType(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createInstanceTypeChecker(expectedClass) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!(props[propName] instanceof expectedClass)) {
-        var expectedClassName = expectedClass.name || ANONYMOUS;
-        var actualClassName = getClassName(props[propName]);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createEnumTypeChecker(expectedValues) {
-    if (!Array.isArray(expectedValues)) {
-      if (true) {
-        if (arguments.length > 1) {
-          printWarning(
-            'Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' +
-            'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).'
-          );
-        } else {
-          printWarning('Invalid argument supplied to oneOf, expected an array.');
-        }
-      }
-      return emptyFunctionThatReturnsNull;
-    }
-
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      for (var i = 0; i < expectedValues.length; i++) {
-        if (is(propValue, expectedValues[i])) {
-          return null;
-        }
-      }
-
-      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
-        var type = getPreciseType(value);
-        if (type === 'symbol') {
-          return String(value);
-        }
-        return value;
-      });
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createObjectOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
-      }
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
-      }
-      for (var key in propValue) {
-        if (has(propValue, key)) {
-          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-          if (error instanceof Error) {
-            return error;
-          }
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createUnionTypeChecker(arrayOfTypeCheckers) {
-    if (!Array.isArray(arrayOfTypeCheckers)) {
-       true ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : undefined;
-      return emptyFunctionThatReturnsNull;
-    }
-
-    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-      var checker = arrayOfTypeCheckers[i];
-      if (typeof checker !== 'function') {
-        printWarning(
-          'Invalid argument supplied to oneOfType. Expected an array of check functions, but ' +
-          'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.'
-        );
-        return emptyFunctionThatReturnsNull;
-      }
-    }
-
-    function validate(props, propName, componentName, location, propFullName) {
-      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-        var checker = arrayOfTypeCheckers[i];
-        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
-          return null;
-        }
-      }
-
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createNodeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!isNode(props[propName])) {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createShapeTypeChecker(shapeTypes) {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
-      }
-      for (var key in shapeTypes) {
-        var checker = shapeTypes[key];
-        if (!checker) {
-          continue;
-        }
-        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-        if (error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createStrictShapeTypeChecker(shapeTypes) {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
-      }
-      // We need to check all keys in case some are required but missing from
-      // props.
-      var allKeys = assign({}, props[propName], shapeTypes);
-      for (var key in allKeys) {
-        var checker = shapeTypes[key];
-        if (!checker) {
-          return new PropTypeError(
-            'Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' +
-            '\nBad object: ' + JSON.stringify(props[propName], null, '  ') +
-            '\nValid keys: ' +  JSON.stringify(Object.keys(shapeTypes), null, '  ')
-          );
-        }
-        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-        if (error) {
-          return error;
-        }
-      }
-      return null;
-    }
-
-    return createChainableTypeChecker(validate);
-  }
-
-  function isNode(propValue) {
-    switch (typeof propValue) {
-      case 'number':
-      case 'string':
-      case 'undefined':
-        return true;
-      case 'boolean':
-        return !propValue;
-      case 'object':
-        if (Array.isArray(propValue)) {
-          return propValue.every(isNode);
-        }
-        if (propValue === null || isValidElement(propValue)) {
-          return true;
-        }
-
-        var iteratorFn = getIteratorFn(propValue);
-        if (iteratorFn) {
-          var iterator = iteratorFn.call(propValue);
-          var step;
-          if (iteratorFn !== propValue.entries) {
-            while (!(step = iterator.next()).done) {
-              if (!isNode(step.value)) {
-                return false;
-              }
-            }
-          } else {
-            // Iterator will provide entry [k,v] tuples rather than values.
-            while (!(step = iterator.next()).done) {
-              var entry = step.value;
-              if (entry) {
-                if (!isNode(entry[1])) {
-                  return false;
-                }
-              }
-            }
-          }
-        } else {
-          return false;
-        }
-
-        return true;
-      default:
-        return false;
-    }
-  }
-
-  function isSymbol(propType, propValue) {
-    // Native Symbol.
-    if (propType === 'symbol') {
-      return true;
-    }
-
-    // falsy value can't be a Symbol
-    if (!propValue) {
-      return false;
-    }
-
-    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
-    if (propValue['@@toStringTag'] === 'Symbol') {
-      return true;
-    }
-
-    // Fallback for non-spec compliant Symbols which are polyfilled.
-    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
-      return true;
-    }
-
-    return false;
-  }
-
-  // Equivalent of `typeof` but with special handling for array and regexp.
-  function getPropType(propValue) {
-    var propType = typeof propValue;
-    if (Array.isArray(propValue)) {
-      return 'array';
-    }
-    if (propValue instanceof RegExp) {
-      // Old webkits (at least until Android 4.0) return 'function' rather than
-      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
-      // passes PropTypes.object.
-      return 'object';
-    }
-    if (isSymbol(propType, propValue)) {
-      return 'symbol';
-    }
-    return propType;
-  }
-
-  // This handles more types than `getPropType`. Only used for error messages.
-  // See `createPrimitiveTypeChecker`.
-  function getPreciseType(propValue) {
-    if (typeof propValue === 'undefined' || propValue === null) {
-      return '' + propValue;
-    }
-    var propType = getPropType(propValue);
-    if (propType === 'object') {
-      if (propValue instanceof Date) {
-        return 'date';
-      } else if (propValue instanceof RegExp) {
-        return 'regexp';
-      }
-    }
-    return propType;
-  }
-
-  // Returns a string that is postfixed to a warning about an invalid type.
-  // For example, "undefined" or "of type array"
-  function getPostfixForTypeWarning(value) {
-    var type = getPreciseType(value);
-    switch (type) {
-      case 'array':
-      case 'object':
-        return 'an ' + type;
-      case 'boolean':
-      case 'date':
-      case 'regexp':
-        return 'a ' + type;
-      default:
-        return type;
-    }
-  }
-
-  // Returns class name of the object, if any.
-  function getClassName(propValue) {
-    if (!propValue.constructor || !propValue.constructor.name) {
-      return ANONYMOUS;
-    }
-    return propValue.constructor.name;
-  }
-
-  ReactPropTypes.checkPropTypes = checkPropTypes;
-  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
-  ReactPropTypes.PropTypes = ReactPropTypes;
-
-  return ReactPropTypes;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/next/node_modules/prop-types/index.js":
-/*!************************************************************!*\
-  !*** ./node_modules/next/node_modules/prop-types/index.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/next/node_modules/react-is/index.js");
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./node_modules/next/node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
-} else {}
-
-
-/***/ }),
-
-/***/ "./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
-
-
-/***/ }),
-
 /***/ "./node_modules/next/node_modules/react-is/cjs/react-is.development.js":
 /*!*****************************************************************************!*\
   !*** ./node_modules/next/node_modules/react-is/cjs/react-is.development.js ***!
@@ -3278,116 +2568,13 @@ module.exports = exports['default'];
 /***/ }),
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
-/*!***************************************************!*\
-  !*** ./node_modules/prop-types/checkPropTypes.js ***!
-  \***************************************************/
+/*!*********************************************************************************************************!*\
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_9c4bc4a42529b59eb100 ***!
+  \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var printWarning = function() {};
-
-if (true) {
-  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
-  var loggedTypeFailures = {};
-  var has = Function.call.bind(Object.prototype.hasOwnProperty);
-
-  printWarning = function(text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
-/**
- * Assert that the values match with the type specs.
- * Error messages are memorized and will only be shown once.
- *
- * @param {object} typeSpecs Map of name to a ReactPropType
- * @param {object} values Runtime values that need to be type-checked
- * @param {string} location e.g. "prop", "context", "child context"
- * @param {string} componentName Name of the component for error messages.
- * @param {?Function} getStack Returns the component stack.
- * @private
- */
-function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
-  if (true) {
-    for (var typeSpecName in typeSpecs) {
-      if (has(typeSpecs, typeSpecName)) {
-        var error;
-        // Prop type validation may throw. In case they do, we don't want to
-        // fail the render phase where it didn't fail before. So we log it.
-        // After these have been cleaned up, we'll let them throw.
-        try {
-          // This is intentionally an invariant that gets caught. It's the same
-          // behavior as without this statement except with a better message.
-          if (typeof typeSpecs[typeSpecName] !== 'function') {
-            var err = Error(
-              (componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' +
-              'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.'
-            );
-            err.name = 'Invariant Violation';
-            throw err;
-          }
-          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
-        } catch (ex) {
-          error = ex;
-        }
-        if (error && !(error instanceof Error)) {
-          printWarning(
-            (componentName || 'React class') + ': type specification of ' +
-            location + ' `' + typeSpecName + '` is invalid; the type checker ' +
-            'function must return `null` or an `Error` but returned a ' + typeof error + '. ' +
-            'You may have forgotten to pass an argument to the type checker ' +
-            'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' +
-            'shape all require an argument).'
-          );
-        }
-        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-          // Only monitor this failure once because there tends to be a lot of the
-          // same error.
-          loggedTypeFailures[error.message] = true;
-
-          var stack = getStack ? getStack() : '';
-
-          printWarning(
-            'Failed ' + location + ' type: ' + error.message + (stack != null ? stack : '')
-          );
-        }
-      }
-    }
-  }
-}
-
-/**
- * Resets warning cache when testing.
- *
- * @private
- */
-checkPropTypes.resetWarningCache = function() {
-  if (true) {
-    loggedTypeFailures = {};
-  }
-}
-
-module.exports = checkPropTypes;
-
+module.exports = (__webpack_require__(/*! dll-reference dll_9c4bc4a42529b59eb100 */ "dll-reference dll_9c4bc4a42529b59eb100"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -3408,7 +2595,7 @@ module.exports = checkPropTypes;
 
 
 
-var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/prop-types/node_modules/react-is/index.js");
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 var assign = __webpack_require__(/*! object-assign */ "./node_modules/next/dist/build/polyfills/object-assign.js");
 
 var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
@@ -4009,7 +3196,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
  */
 
 if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/prop-types/node_modules/react-is/index.js");
+  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
@@ -4021,236 +3208,13 @@ if (true) {
 /***/ }),
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
-  \*************************************************************/
+/*!*******************************************************************************************************************!*\
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_9c4bc4a42529b59eb100 ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
-
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/** @license React v16.13.1
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-
-
-if (true) {
-  (function() {
-'use strict';
-
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-// (unstable) APIs that have been removed. Can we remove the symbols?
-
-var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
-var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
-var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
-var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
-var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
-var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
-
-function isValidElementType(type) {
-  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
-}
-
-function typeOf(object) {
-  if (typeof object === 'object' && object !== null) {
-    var $$typeof = object.$$typeof;
-
-    switch ($$typeof) {
-      case REACT_ELEMENT_TYPE:
-        var type = object.type;
-
-        switch (type) {
-          case REACT_ASYNC_MODE_TYPE:
-          case REACT_CONCURRENT_MODE_TYPE:
-          case REACT_FRAGMENT_TYPE:
-          case REACT_PROFILER_TYPE:
-          case REACT_STRICT_MODE_TYPE:
-          case REACT_SUSPENSE_TYPE:
-            return type;
-
-          default:
-            var $$typeofType = type && type.$$typeof;
-
-            switch ($$typeofType) {
-              case REACT_CONTEXT_TYPE:
-              case REACT_FORWARD_REF_TYPE:
-              case REACT_LAZY_TYPE:
-              case REACT_MEMO_TYPE:
-              case REACT_PROVIDER_TYPE:
-                return $$typeofType;
-
-              default:
-                return $$typeof;
-            }
-
-        }
-
-      case REACT_PORTAL_TYPE:
-        return $$typeof;
-    }
-  }
-
-  return undefined;
-} // AsyncMode is deprecated along with isAsyncMode
-
-var AsyncMode = REACT_ASYNC_MODE_TYPE;
-var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-var ContextConsumer = REACT_CONTEXT_TYPE;
-var ContextProvider = REACT_PROVIDER_TYPE;
-var Element = REACT_ELEMENT_TYPE;
-var ForwardRef = REACT_FORWARD_REF_TYPE;
-var Fragment = REACT_FRAGMENT_TYPE;
-var Lazy = REACT_LAZY_TYPE;
-var Memo = REACT_MEMO_TYPE;
-var Portal = REACT_PORTAL_TYPE;
-var Profiler = REACT_PROFILER_TYPE;
-var StrictMode = REACT_STRICT_MODE_TYPE;
-var Suspense = REACT_SUSPENSE_TYPE;
-var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
-
-function isAsyncMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
-
-      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
-    }
-  }
-
-  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-}
-function isConcurrentMode(object) {
-  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-}
-function isContextConsumer(object) {
-  return typeOf(object) === REACT_CONTEXT_TYPE;
-}
-function isContextProvider(object) {
-  return typeOf(object) === REACT_PROVIDER_TYPE;
-}
-function isElement(object) {
-  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-}
-function isForwardRef(object) {
-  return typeOf(object) === REACT_FORWARD_REF_TYPE;
-}
-function isFragment(object) {
-  return typeOf(object) === REACT_FRAGMENT_TYPE;
-}
-function isLazy(object) {
-  return typeOf(object) === REACT_LAZY_TYPE;
-}
-function isMemo(object) {
-  return typeOf(object) === REACT_MEMO_TYPE;
-}
-function isPortal(object) {
-  return typeOf(object) === REACT_PORTAL_TYPE;
-}
-function isProfiler(object) {
-  return typeOf(object) === REACT_PROFILER_TYPE;
-}
-function isStrictMode(object) {
-  return typeOf(object) === REACT_STRICT_MODE_TYPE;
-}
-function isSuspense(object) {
-  return typeOf(object) === REACT_SUSPENSE_TYPE;
-}
-
-exports.AsyncMode = AsyncMode;
-exports.ConcurrentMode = ConcurrentMode;
-exports.ContextConsumer = ContextConsumer;
-exports.ContextProvider = ContextProvider;
-exports.Element = Element;
-exports.ForwardRef = ForwardRef;
-exports.Fragment = Fragment;
-exports.Lazy = Lazy;
-exports.Memo = Memo;
-exports.Portal = Portal;
-exports.Profiler = Profiler;
-exports.StrictMode = StrictMode;
-exports.Suspense = Suspense;
-exports.isAsyncMode = isAsyncMode;
-exports.isConcurrentMode = isConcurrentMode;
-exports.isContextConsumer = isContextConsumer;
-exports.isContextProvider = isContextProvider;
-exports.isElement = isElement;
-exports.isForwardRef = isForwardRef;
-exports.isFragment = isFragment;
-exports.isLazy = isLazy;
-exports.isMemo = isMemo;
-exports.isPortal = isPortal;
-exports.isProfiler = isProfiler;
-exports.isStrictMode = isStrictMode;
-exports.isSuspense = isSuspense;
-exports.isValidElementType = isValidElementType;
-exports.typeOf = typeOf;
-  })();
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/node_modules/react-is/index.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/prop-types/node_modules/react-is/index.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js");
-}
-
+module.exports = (__webpack_require__(/*! dll-reference dll_9c4bc4a42529b59eb100 */ "dll-reference dll_9c4bc4a42529b59eb100"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -4558,9 +3522,9 @@ var runtime = (function (exports) {
   // This is a polyfill for %IteratorPrototype% for environments that
   // don't natively support it.
   var IteratorPrototype = {};
-  define(IteratorPrototype, iteratorSymbol, function () {
+  IteratorPrototype[iteratorSymbol] = function () {
     return this;
-  });
+  };
 
   var getProto = Object.getPrototypeOf;
   var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
@@ -4574,9 +3538,8 @@ var runtime = (function (exports) {
 
   var Gp = GeneratorFunctionPrototype.prototype =
     Generator.prototype = Object.create(IteratorPrototype);
-  GeneratorFunction.prototype = GeneratorFunctionPrototype;
-  define(Gp, "constructor", GeneratorFunctionPrototype);
-  define(GeneratorFunctionPrototype, "constructor", GeneratorFunction);
+  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+  GeneratorFunctionPrototype.constructor = GeneratorFunction;
   GeneratorFunction.displayName = define(
     GeneratorFunctionPrototype,
     toStringTagSymbol,
@@ -4690,9 +3653,9 @@ var runtime = (function (exports) {
   }
 
   defineIteratorMethods(AsyncIterator.prototype);
-  define(AsyncIterator.prototype, asyncIteratorSymbol, function () {
+  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
     return this;
-  });
+  };
   exports.AsyncIterator = AsyncIterator;
 
   // Note that simple async functions are implemented on top of
@@ -4885,13 +3848,13 @@ var runtime = (function (exports) {
   // iterator prototype chain incorrectly implement this, causing the Generator
   // object to not be returned from this call. This ensures that doesn't happen.
   // See https://github.com/facebook/regenerator/issues/274 for more details.
-  define(Gp, iteratorSymbol, function() {
+  Gp[iteratorSymbol] = function() {
     return this;
-  });
+  };
 
-  define(Gp, "toString", function() {
+  Gp.toString = function() {
     return "[object Generator]";
-  });
+  };
 
   function pushTryEntry(locs) {
     var entry = { tryLoc: locs[0] };
@@ -5210,19 +4173,14 @@ try {
 } catch (accidentalStrictMode) {
   // This module should not be running in strict mode, so the above
   // assignment should always work unless something is misconfigured. Just
-  // in case runtime.js accidentally runs in strict mode, in modern engines
-  // we can explicitly access globalThis. In older engines we can escape
+  // in case runtime.js accidentally runs in strict mode, we can escape
   // strict mode using a global Function call. This could conceivably fail
   // if a Content Security Policy forbids using Function, but in that case
   // the proper solution is to fix the accidental strict mode problem. If
   // you've misconfigured your bundler to force strict mode and applied a
   // CSP to forbid Function, and you're not willing to fix either of those
   // problems, please detail your unique predicament in a GitHub issue.
-  if (typeof globalThis === "object") {
-    globalThis.regeneratorRuntime = runtime;
-  } else {
-    Function("r", "regeneratorRuntime = r")(runtime);
-  }
+  Function("r", "regeneratorRuntime = r")(runtime);
 }
 
 
@@ -5237,66 +4195,60 @@ try {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _images_backedby_redkite_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../images/backedby/redkite.png */ "./src/assets/images/backedby/redkite.png");
-/* harmony import */ var _images_backedby_redkite_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_redkite_png__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_backedby_gamefi_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/backedby/gamefi.png */ "./src/assets/images/backedby/gamefi.png");
-/* harmony import */ var _images_backedby_gamefi_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_gamefi_png__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _images_backedby_icetea_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/backedby/icetea.png */ "./src/assets/images/backedby/icetea.png");
-/* harmony import */ var _images_backedby_icetea_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_icetea_png__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _images_backedby_basic_capital_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/backedby/basic_capital.png */ "./src/assets/images/backedby/basic_capital.png");
-/* harmony import */ var _images_backedby_basic_capital_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_basic_capital_png__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _images_backedby_m6_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/backedby/m6.png */ "./src/assets/images/backedby/m6.png");
-/* harmony import */ var _images_backedby_m6_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_m6_png__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _images_backedby_exnetwork_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/backedby/exnetwork.png */ "./src/assets/images/backedby/exnetwork.png");
-/* harmony import */ var _images_backedby_exnetwork_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_exnetwork_png__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _images_backedby_everse_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../images/backedby/everse.png */ "./src/assets/images/backedby/everse.png");
-/* harmony import */ var _images_backedby_everse_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_everse_png__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _images_backedby_luaventures_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../images/backedby/luaventures.png */ "./src/assets/images/backedby/luaventures.png");
-/* harmony import */ var _images_backedby_luaventures_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_luaventures_png__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _images_backedby_dec_ventures_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../images/backedby/dec-ventures.png */ "./src/assets/images/backedby/dec-ventures.png");
-/* harmony import */ var _images_backedby_dec_ventures_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_dec_ventures_png__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _images_backedby_illuvium_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../images/backedby/illuvium.png */ "./src/assets/images/backedby/illuvium.png");
-/* harmony import */ var _images_backedby_illuvium_png__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_illuvium_png__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _images_backedby_ngc_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../images/backedby/ngc.png */ "./src/assets/images/backedby/ngc.png");
-/* harmony import */ var _images_backedby_ngc_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_ngc_png__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _images_backedby_newave_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../images/backedby/newave.png */ "./src/assets/images/backedby/newave.png");
-/* harmony import */ var _images_backedby_newave_png__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_newave_png__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _images_backedby_onemax_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../images/backedby/onemax.png */ "./src/assets/images/backedby/onemax.png");
-/* harmony import */ var _images_backedby_onemax_png__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_onemax_png__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _images_backedby_x21_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../images/backedby/x21.png */ "./src/assets/images/backedby/x21.png");
-/* harmony import */ var _images_backedby_x21_png__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_x21_png__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _images_backedby_magnus_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../images/backedby/magnus.png */ "./src/assets/images/backedby/magnus.png");
-/* harmony import */ var _images_backedby_magnus_png__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_magnus_png__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _images_backedby_moonnhale_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../images/backedby/moonnhale.png */ "./src/assets/images/backedby/moonnhale.png");
-/* harmony import */ var _images_backedby_moonnhale_png__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_moonnhale_png__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _images_backedby_spores_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../images/backedby/spores.png */ "./src/assets/images/backedby/spores.png");
-/* harmony import */ var _images_backedby_spores_png__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_spores_png__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _images_backedby_au21_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../images/backedby/au21.png */ "./src/assets/images/backedby/au21.png");
-/* harmony import */ var _images_backedby_au21_png__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_au21_png__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _images_backedby_vendetaa_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../images/backedby/vendetaa.png */ "./src/assets/images/backedby/vendetaa.png");
-/* harmony import */ var _images_backedby_vendetaa_png__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_vendetaa_png__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _images_backedby_kyros_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../images/backedby/kyros.png */ "./src/assets/images/backedby/kyros.png");
-/* harmony import */ var _images_backedby_kyros_png__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_kyros_png__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _images_backedby_goodgame_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../images/backedby/goodgame.png */ "./src/assets/images/backedby/goodgame.png");
-/* harmony import */ var _images_backedby_goodgame_png__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_goodgame_png__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _images_backedby_moonboots_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../images/backedby/moonboots.png */ "./src/assets/images/backedby/moonboots.png");
-/* harmony import */ var _images_backedby_moonboots_png__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_moonboots_png__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _images_backedby_ventures_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../../images/backedby/ventures.png */ "./src/assets/images/backedby/ventures.png");
-/* harmony import */ var _images_backedby_ventures_png__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_ventures_png__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var _images_backedby_dutch_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../../images/backedby/dutch.png */ "./src/assets/images/backedby/dutch.png");
-/* harmony import */ var _images_backedby_dutch_png__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_dutch_png__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var _images_backedby_emo_png__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../../images/backedby/emo.png */ "./src/assets/images/backedby/emo.png");
-/* harmony import */ var _images_backedby_emo_png__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_emo_png__WEBPACK_IMPORTED_MODULE_24__);
-/* harmony import */ var _images_backedby_zbs_png__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../../images/backedby/zbs.png */ "./src/assets/images/backedby/zbs.png");
-/* harmony import */ var _images_backedby_zbs_png__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_zbs_png__WEBPACK_IMPORTED_MODULE_25__);
-/* harmony import */ var _images_backedby_kts_png__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../../images/backedby/kts.png */ "./src/assets/images/backedby/kts.png");
-/* harmony import */ var _images_backedby_kts_png__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_kts_png__WEBPACK_IMPORTED_MODULE_26__);
-/* harmony import */ var _images_backedby_tk_png__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../../images/backedby/tk.png */ "./src/assets/images/backedby/tk.png");
-/* harmony import */ var _images_backedby_tk_png__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_tk_png__WEBPACK_IMPORTED_MODULE_27__);
-/* harmony import */ var _images_backedby_hg_png__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../../images/backedby/hg.png */ "./src/assets/images/backedby/hg.png");
-/* harmony import */ var _images_backedby_hg_png__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_hg_png__WEBPACK_IMPORTED_MODULE_28__);
-
-
+/* harmony import */ var _images_backedby_icetea_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../images/backedby/icetea.png */ "./src/assets/images/backedby/icetea.png");
+/* harmony import */ var _images_backedby_icetea_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_icetea_png__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _images_backedby_basic_capital_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../images/backedby/basic_capital.png */ "./src/assets/images/backedby/basic_capital.png");
+/* harmony import */ var _images_backedby_basic_capital_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_basic_capital_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _images_backedby_m6_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../images/backedby/m6.png */ "./src/assets/images/backedby/m6.png");
+/* harmony import */ var _images_backedby_m6_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_m6_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_backedby_exnetwork_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../images/backedby/exnetwork.png */ "./src/assets/images/backedby/exnetwork.png");
+/* harmony import */ var _images_backedby_exnetwork_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_exnetwork_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _images_backedby_everse_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../images/backedby/everse.png */ "./src/assets/images/backedby/everse.png");
+/* harmony import */ var _images_backedby_everse_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_everse_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _images_backedby_luaventures_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../images/backedby/luaventures.png */ "./src/assets/images/backedby/luaventures.png");
+/* harmony import */ var _images_backedby_luaventures_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_luaventures_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_backedby_dec_ventures_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../images/backedby/dec-ventures.png */ "./src/assets/images/backedby/dec-ventures.png");
+/* harmony import */ var _images_backedby_dec_ventures_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_dec_ventures_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _images_backedby_illuvium_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../images/backedby/illuvium.png */ "./src/assets/images/backedby/illuvium.png");
+/* harmony import */ var _images_backedby_illuvium_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_illuvium_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _images_backedby_ngc_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../images/backedby/ngc.png */ "./src/assets/images/backedby/ngc.png");
+/* harmony import */ var _images_backedby_ngc_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_ngc_png__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _images_backedby_newave_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../images/backedby/newave.png */ "./src/assets/images/backedby/newave.png");
+/* harmony import */ var _images_backedby_newave_png__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_newave_png__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _images_backedby_onemax_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../images/backedby/onemax.png */ "./src/assets/images/backedby/onemax.png");
+/* harmony import */ var _images_backedby_onemax_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_onemax_png__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _images_backedby_x21_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../images/backedby/x21.png */ "./src/assets/images/backedby/x21.png");
+/* harmony import */ var _images_backedby_x21_png__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_x21_png__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _images_backedby_magnus_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../images/backedby/magnus.png */ "./src/assets/images/backedby/magnus.png");
+/* harmony import */ var _images_backedby_magnus_png__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_magnus_png__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _images_backedby_moonnhale_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../images/backedby/moonnhale.png */ "./src/assets/images/backedby/moonnhale.png");
+/* harmony import */ var _images_backedby_moonnhale_png__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_moonnhale_png__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _images_backedby_spores_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../images/backedby/spores.png */ "./src/assets/images/backedby/spores.png");
+/* harmony import */ var _images_backedby_spores_png__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_spores_png__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _images_backedby_au21_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../images/backedby/au21.png */ "./src/assets/images/backedby/au21.png");
+/* harmony import */ var _images_backedby_au21_png__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_au21_png__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _images_backedby_vendetaa_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../images/backedby/vendetaa.png */ "./src/assets/images/backedby/vendetaa.png");
+/* harmony import */ var _images_backedby_vendetaa_png__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_vendetaa_png__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _images_backedby_kyros_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../images/backedby/kyros.png */ "./src/assets/images/backedby/kyros.png");
+/* harmony import */ var _images_backedby_kyros_png__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_kyros_png__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _images_backedby_goodgame_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../images/backedby/goodgame.png */ "./src/assets/images/backedby/goodgame.png");
+/* harmony import */ var _images_backedby_goodgame_png__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_goodgame_png__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _images_backedby_moonboots_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../images/backedby/moonboots.png */ "./src/assets/images/backedby/moonboots.png");
+/* harmony import */ var _images_backedby_moonboots_png__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_moonboots_png__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _images_backedby_ventures_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../images/backedby/ventures.png */ "./src/assets/images/backedby/ventures.png");
+/* harmony import */ var _images_backedby_ventures_png__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_ventures_png__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _images_backedby_dutch_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../images/backedby/dutch.png */ "./src/assets/images/backedby/dutch.png");
+/* harmony import */ var _images_backedby_dutch_png__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_dutch_png__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _images_backedby_emo_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../../images/backedby/emo.png */ "./src/assets/images/backedby/emo.png");
+/* harmony import */ var _images_backedby_emo_png__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_emo_png__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _images_backedby_zbs_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../../images/backedby/zbs.png */ "./src/assets/images/backedby/zbs.png");
+/* harmony import */ var _images_backedby_zbs_png__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_zbs_png__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _images_backedby_kts_png__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../../images/backedby/kts.png */ "./src/assets/images/backedby/kts.png");
+/* harmony import */ var _images_backedby_kts_png__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_kts_png__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _images_backedby_tk_png__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../../images/backedby/tk.png */ "./src/assets/images/backedby/tk.png");
+/* harmony import */ var _images_backedby_tk_png__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_tk_png__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _images_backedby_hg_png__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../../images/backedby/hg.png */ "./src/assets/images/backedby/hg.png");
+/* harmony import */ var _images_backedby_hg_png__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_images_backedby_hg_png__WEBPACK_IMPORTED_MODULE_26__);
 
 
 
@@ -5326,115 +4278,107 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   backedby: [{
-    imageSrc: _images_backedby_redkite_png__WEBPACK_IMPORTED_MODULE_0___default.a,
-    src: "/",
-    id: "b1"
-  }, {
-    imageSrc: _images_backedby_gamefi_png__WEBPACK_IMPORTED_MODULE_1___default.a,
-    src: "/",
-    id: "b2"
-  }, {
-    imageSrc: _images_backedby_ngc_png__WEBPACK_IMPORTED_MODULE_10___default.a,
+    imageSrc: _images_backedby_ngc_png__WEBPACK_IMPORTED_MODULE_8___default.a,
     src: "/",
     id: "b12"
   }, {
-    imageSrc: _images_backedby_icetea_png__WEBPACK_IMPORTED_MODULE_2___default.a,
+    imageSrc: _images_backedby_icetea_png__WEBPACK_IMPORTED_MODULE_0___default.a,
     src: "//www.gamefi.com/",
     id: "b4"
   }, {
-    imageSrc: _images_backedby_exnetwork_png__WEBPACK_IMPORTED_MODULE_5___default.a,
+    imageSrc: _images_backedby_exnetwork_png__WEBPACK_IMPORTED_MODULE_3___default.a,
     src: "/",
     id: "b7"
   }, {
-    imageSrc: _images_backedby_m6_png__WEBPACK_IMPORTED_MODULE_4___default.a,
+    imageSrc: _images_backedby_m6_png__WEBPACK_IMPORTED_MODULE_2___default.a,
     src: "/",
     id: "b6"
   }, {
-    imageSrc: _images_backedby_luaventures_png__WEBPACK_IMPORTED_MODULE_7___default.a,
+    imageSrc: _images_backedby_luaventures_png__WEBPACK_IMPORTED_MODULE_5___default.a,
     src: "/",
     id: "b9"
   }, {
-    imageSrc: _images_backedby_everse_png__WEBPACK_IMPORTED_MODULE_6___default.a,
+    imageSrc: _images_backedby_everse_png__WEBPACK_IMPORTED_MODULE_4___default.a,
     src: "/",
     id: "b8"
   }, {
-    imageSrc: _images_backedby_dec_ventures_png__WEBPACK_IMPORTED_MODULE_8___default.a,
+    imageSrc: _images_backedby_dec_ventures_png__WEBPACK_IMPORTED_MODULE_6___default.a,
     src: "/",
     id: "b10"
   }, {
-    imageSrc: _images_backedby_basic_capital_png__WEBPACK_IMPORTED_MODULE_3___default.a,
+    imageSrc: _images_backedby_basic_capital_png__WEBPACK_IMPORTED_MODULE_1___default.a,
     src: "/",
     id: "b5"
   }, {
-    imageSrc: _images_backedby_newave_png__WEBPACK_IMPORTED_MODULE_11___default.a,
+    imageSrc: _images_backedby_newave_png__WEBPACK_IMPORTED_MODULE_9___default.a,
     src: "/",
     id: "b11"
   }, {
-    imageSrc: _images_backedby_onemax_png__WEBPACK_IMPORTED_MODULE_12___default.a,
+    imageSrc: _images_backedby_onemax_png__WEBPACK_IMPORTED_MODULE_10___default.a,
     src: "/",
     id: "b12"
   }, {
-    imageSrc: _images_backedby_x21_png__WEBPACK_IMPORTED_MODULE_13___default.a,
+    imageSrc: _images_backedby_x21_png__WEBPACK_IMPORTED_MODULE_11___default.a,
     src: "/",
     id: "b13"
   }, {
-    imageSrc: _images_backedby_magnus_png__WEBPACK_IMPORTED_MODULE_14___default.a,
+    imageSrc: _images_backedby_magnus_png__WEBPACK_IMPORTED_MODULE_12___default.a,
     src: "/",
     id: "b14"
   }, {
-    imageSrc: _images_backedby_moonnhale_png__WEBPACK_IMPORTED_MODULE_15___default.a,
+    imageSrc: _images_backedby_moonnhale_png__WEBPACK_IMPORTED_MODULE_13___default.a,
     src: "/",
     id: "b15"
   }, {
-    imageSrc: _images_backedby_spores_png__WEBPACK_IMPORTED_MODULE_16___default.a,
+    imageSrc: _images_backedby_spores_png__WEBPACK_IMPORTED_MODULE_14___default.a,
     src: "/",
     id: "b16"
   }, {
-    imageSrc: _images_backedby_au21_png__WEBPACK_IMPORTED_MODULE_17___default.a,
+    imageSrc: _images_backedby_au21_png__WEBPACK_IMPORTED_MODULE_15___default.a,
     src: "/",
     id: "b17"
   }, {
-    imageSrc: _images_backedby_vendetaa_png__WEBPACK_IMPORTED_MODULE_18___default.a,
+    imageSrc: _images_backedby_vendetaa_png__WEBPACK_IMPORTED_MODULE_16___default.a,
     src: "/",
     id: "b18"
   }, {
-    imageSrc: _images_backedby_kyros_png__WEBPACK_IMPORTED_MODULE_19___default.a,
+    imageSrc: _images_backedby_kyros_png__WEBPACK_IMPORTED_MODULE_17___default.a,
     src: "/",
     id: "b19"
   }, {
-    imageSrc: _images_backedby_goodgame_png__WEBPACK_IMPORTED_MODULE_20___default.a,
+    imageSrc: _images_backedby_goodgame_png__WEBPACK_IMPORTED_MODULE_18___default.a,
     src: "/",
     id: "b20"
   }, {
-    imageSrc: _images_backedby_moonboots_png__WEBPACK_IMPORTED_MODULE_21___default.a,
+    imageSrc: _images_backedby_moonboots_png__WEBPACK_IMPORTED_MODULE_19___default.a,
     src: "/",
     id: "b21"
   }, {
-    imageSrc: _images_backedby_ventures_png__WEBPACK_IMPORTED_MODULE_22___default.a,
+    imageSrc: _images_backedby_ventures_png__WEBPACK_IMPORTED_MODULE_20___default.a,
     src: "/",
     id: "b22"
   }, {
-    imageSrc: _images_backedby_dutch_png__WEBPACK_IMPORTED_MODULE_23___default.a,
+    imageSrc: _images_backedby_dutch_png__WEBPACK_IMPORTED_MODULE_21___default.a,
     src: "/",
     id: "b23"
   }, {
-    imageSrc: _images_backedby_emo_png__WEBPACK_IMPORTED_MODULE_24___default.a,
+    imageSrc: _images_backedby_emo_png__WEBPACK_IMPORTED_MODULE_22___default.a,
     src: "/",
     id: "b24"
   }, {
-    imageSrc: _images_backedby_zbs_png__WEBPACK_IMPORTED_MODULE_25___default.a,
+    imageSrc: _images_backedby_zbs_png__WEBPACK_IMPORTED_MODULE_23___default.a,
     src: "/",
     id: "b25"
   }, {
-    imageSrc: _images_backedby_kts_png__WEBPACK_IMPORTED_MODULE_26___default.a,
+    imageSrc: _images_backedby_kts_png__WEBPACK_IMPORTED_MODULE_24___default.a,
     src: "/",
     id: "b26"
   }, {
-    imageSrc: _images_backedby_tk_png__WEBPACK_IMPORTED_MODULE_27___default.a,
+    imageSrc: _images_backedby_tk_png__WEBPACK_IMPORTED_MODULE_25___default.a,
     src: "/",
     id: "b25"
   }, {
-    imageSrc: _images_backedby_hg_png__WEBPACK_IMPORTED_MODULE_28___default.a,
+    imageSrc: _images_backedby_hg_png__WEBPACK_IMPORTED_MODULE_26___default.a,
     src: "/",
     id: "b26"
   }]
@@ -5516,17 +4460,6 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKEAAABdCAMAAAD6
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
-
-/***/ }),
-
-/***/ "./src/assets/images/backedby/gamefi.png":
-/*!***********************************************!*\
-  !*** ./src/assets/images/backedby/gamefi.png ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPsAAAAlBAMAAAB2aILKAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAnUExURUdwTHH1SW/xSHLzSnLzSnDzSnHySnLzSnDySnLzSnHzSnLzSnLzS6ZEBPUAAAAMdFJOUwAfD4vkQ1ijM8O0b15krjQAAAPCSURBVFjDtZjNTxNBFMDfbiyWcFkRCokeSlEk4YJ8ivYgQdHoHhS/gnjQWho8ajAYwqFgEALeUGPCHkzEg9oDKcQEPVJpWvpHOTuzO9/bymrfpbNvZt5v5+3Me28KAB0nFImDICYa0uzpDNSUeqnG1NsxV+9JgpQJV1x7d/oVWRLsJ5Z3+vuHFrEtcx01BX4ihjQW7ovJdvJ4RGzriiQWRDNIptG0lYoqed5+9x7WlVLuw2sbNW9y3jGxZtzVdDmynZK7jujI4Koo6Sw04tfYhuhCDby56ymLCGHkcPM593KOP4MO5GQcjWj7ApK0ZOGY66+2XjhZqYFvsH3tNkATebjBlr9G+q4DRBzVUAlRfj6ugn9WCz9JtZcBGkmr0Ov3Gp7zDuPQqbOUAuN7vAo+WQNvsjUdULy7WCJNFYpv01nqg4aX8A/440y7z/Al2TcIP1kPfFqLL2x7vk/WFx+xmbbM8JVRaV/WCd/Cb2MOXxT2fU28OfWLkwEJfygFRYviFwLwhawQEyi+QG3ctzm8MfKNF0vE/4YA8Tb22K6Mr3zCn8ZR8HRq1OHxs3wsHgQFv0M7L00w/F2y1Pyagj9wTzOLWQz/1DMzzK/erLX6dywhfKZxwouxY5aKL7ne39PgZ30zwrdv5b9tOqvguR1eOO/jz5HnC6DikWGI5jR45+g7X8S7tvhsU8zq8FcBOu264LFj2c56H9fhi8JR+5/4SooMW6GJXsTjsYWUl27savhUGHyez2ZuKSHgC+STf+whr5GsgkcJNzS+i+g2UFk0wuPLJEnvE99fe1QFj+qisHhTjqIUP0WWvUV2xulgfAkZIgdvucbBmycB4SvDK2UYxS/muFPaJ+EvcuFlCMAPunOcaMJOO6kC1xleKcMofinNnxIJ387VlMDwmR9MpqWge0Ar8xjFq5UjxWdPMeUmiHil0if4YenzC/gy9cs8xZ91gvFGjvlews+JkvobvC7fq/U/w5vU++WsiA/I90fGG8kqeFbVbkJ98D12NbzhUN/XB68xxuHhbcXPRhS/Fga/q8d7h36Uv8vweK8M+gAM3xYG/1AzBxVyXqa/FYQHerWj+CY7BL5LMwnZGqA3xAD8GRz2LQ5vLITAa3a4O4cs7kUwHl8AXgGHhwch8BBTwgtKU8T3ZUvAl3m8q9q0BHx0QIeP4CpyQ8Z793swuzOizDQD+fMhc5tVze7jE7QKPADXYkbrDPmXI0KHdrzJyIJeECsnJDw2NI0NJURxdSZt+X+heI+c2vR/mS6hiK9ULtmk9w/0PbPzWEP53AAAAABJRU5ErkJggg=="
 
 /***/ }),
 
@@ -5684,17 +4617,6 @@ module.exports = "/_next/static/images/onemax-1a78137e42ddcb7374c48b969a14dc24.p
 
 /***/ }),
 
-/***/ "./src/assets/images/backedby/redkite.png":
-/*!************************************************!*\
-  !*** ./src/assets/images/backedby/redkite.png ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,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"
-
-/***/ }),
-
 /***/ "./src/assets/images/backedby/spores.png":
 /*!***********************************************!*\
   !*** ./src/assets/images/backedby/spores.png ***!
@@ -5782,7 +4704,7 @@ __webpack_require__.r(__webpack_exports__);
 var _excluded = ["children", "ref", "onClick"];
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Administrator\\Documents\\psb_landing\\src\\reusecore\\Box\\index.js";
+    _jsxFileName = "C:\\Users\\HLC_2021\\Documents\\psb_landing\\src\\reusecore\\Box\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
@@ -5790,7 +4712,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var BoxWrapper = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div.withConfig({
   displayName: "Box__BoxWrapper",
-  componentId: "sc-1mpcxbd-0"
+  componentId: "sc-biqg5d-0"
 })([""]);
 
 var Box = function Box(_ref) {
@@ -5848,7 +4770,7 @@ __webpack_require__.r(__webpack_exports__);
 var _excluded = ["children"];
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Administrator\\Documents\\psb_landing\\src\\reusecore\\Heading\\index.js";
+    _jsxFileName = "C:\\Users\\HLC_2021\\Documents\\psb_landing\\src\\reusecore\\Heading\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
@@ -5856,7 +4778,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var HeadingWrap = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].h1.withConfig({
   displayName: "Heading__HeadingWrap",
-  componentId: "yms8pr-0"
+  componentId: "sc-frlqsk-0"
 })(["", " ", ""], function (props) {
   return props.UpperCase && Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["css"])({
     textTransform: "uppercase"
@@ -5915,14 +4837,14 @@ __webpack_require__.r(__webpack_exports__);
 var _excluded = ["src", "alt"];
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Administrator\\Documents\\psb_landing\\src\\reusecore\\Image\\index.js";
+    _jsxFileName = "C:\\Users\\HLC_2021\\Documents\\psb_landing\\src\\reusecore\\Image\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 var ImageWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].img.withConfig({
   displayName: "Image__ImageWrapper",
-  componentId: "sc-1ybmtsh-0"
+  componentId: "sc-1u2koxj-0"
 })(["width:100%;height:auto;display:block;"]);
 
 var Image = function Image(_ref) {
@@ -5968,7 +4890,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ColWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "colstyle__ColWrapper",
-  componentId: "sc-1wevfqd-0"
+  componentId: "sc-1uehkoi-0"
 })(["position:relative;padding-right:15px;padding-left:15px;&.p-0{padding:0;}&.col-1{flex:0 0 auto;width:8.333333%;}&.col-2{flex:0 0 auto;width:16.666667%;}&.col-3{flex:0 0 auto;width:25%;}&.col-4{flex:0 0 auto;width:33.333333%;}&.col-5{flex:0 0 auto;width:41.666667%;}&.col-6{flex:0 0 auto;width:50%;}&.col-7{flex:0 0 auto;width:58.333333%;}&.col-8{flex:0 0 auto;width:66.666667%;}&.col-9{flex:0 0 auto;width:75%;}&.col-10{flex:0 0 auto;width:83.333333%;}&.col-11{flex:0 0 auto;width:91.666667%;}&.col-12{flex:0 0 auto;width:100%;}&.offset-1{margin-left:8.333333%;}&.offset-2{margin-left:16.666667%;}&.offset-3{margin-left:25%;}&.offset-4{margin-left:33.333333%;}&.offset-5{margin-left:41.666667%;}&.offset-6{margin-left:50%;}&.offset-7{margin-left:58.333333%;}&.offset-8{margin-left:66.666667%;}&.offset-9{margin-left:75%;}&.offset-10{margin-left:83.333333%;}&.offset-11{margin-left:91.666667%;}@media only screen and (min-width:320px){&.xs-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.xs-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.xs-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.xs-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.xs-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.xs-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.xs-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.xs-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.xs-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.xs-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.xs-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.xs-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.order-xs-first{-ms-flex-order:-1;order:-1;}&.order-xs-last{-ms-flex-order:13;order:13;}&.order-xs-0{-ms-flex-order:0;order:0;}&.order-xs-1{-ms-flex-order:1;order:1;}&.order-xs-2{-ms-flex-order:2;order:2;}&.order-xs-3{-ms-flex-order:3;order:3;}&.order-xs-4{-ms-flex-order:4;order:4;}&.order-xs-5{-ms-flex-order:5;order:5;}&.order-xs-6{-ms-flex-order:6;order:6;}&.order-xs-7{-ms-flex-order:7;order:7;}&.order-xs-8{-ms-flex-order:8;order:8;}&.order-xs-9{-ms-flex-order:9;order:9;}&.order-xs-10{-ms-flex-order:10;order:10;}&.order-xs-11{-ms-flex-order:11;order:11;}&.order-xs-12{-ms-flex-order:12;order:12;}&.offset-xs-0{margin-left:0;}&.offset-xs-1{margin-left:8.333333%;}&.offset-xs-2{margin-left:16.666667%;}&.offset-xs-3{margin-left:25%;}&.offset-xs-4{margin-left:33.333333%;}&.offset-xs-5{margin-left:41.666667%;}&.offset-xs-6{margin-left:50%;}&.offset-xs-7{margin-left:58.333333%;}&.offset-xs-8{margin-left:66.666667%;}&.offset-xs-9{margin-left:75%;}&.offset-xs-10{margin-left:83.333333%;}&.offset-xs-11{margin-left:91.666667%;}}@media (min-width:576px){&.sm-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.sm-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.sm-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.sm-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.sm-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.sm-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.sm-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.sm-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.sm-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.sm-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.sm-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.sm-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.order-sm-first{-ms-flex-order:-1;order:-1;}&.order-sm-last{-ms-flex-order:13;order:13;}&.order-sm-0{-ms-flex-order:0;order:0;}&.order-sm-1{-ms-flex-order:1;order:1;}&.order-sm-2{-ms-flex-order:2;order:2;}&.order-sm-3{-ms-flex-order:3;order:3;}&.order-sm-4{-ms-flex-order:4;order:4;}&.order-sm-5{-ms-flex-order:5;order:5;}&.order-sm-6{-ms-flex-order:6;order:6;}&.order-sm-7{-ms-flex-order:7;order:7;}&.order-sm-8{-ms-flex-order:8;order:8;}&.order-sm-9{-ms-flex-order:9;order:9;}&.order-sm-10{-ms-flex-order:10;order:10;}&.order-sm-11{-ms-flex-order:11;order:11;}&.order-sm-12{-ms-flex-order:12;order:12;}&.offset-sm-0{margin-left:0;}&.offset-sm-1{margin-left:8.333333%;}&.offset-sm-2{margin-left:16.666667%;}&.offset-sm-3{margin-left:25%;}&.offset-sm-4{margin-left:33.333333%;}&.offset-sm-5{margin-left:41.666667%;}&.offset-sm-6{margin-left:50%;}&.offset-sm-7{margin-left:58.333333%;}&.offset-sm-8{margin-left:66.666667%;}&.offset-sm-9{margin-left:75%;}&.offset-sm-10{margin-left:83.333333%;}&.offset-sm-11{margin-left:91.666667%;}}@media (min-width:768px){&.md-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.md-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.md-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.md-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.md-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.md-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.md-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.md-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.order-md-first{-ms-flex-order:-1;order:-1;}&.order-md-last{-ms-flex-order:13;order:13;}&.order-md-0{-ms-flex-order:0;order:0;}&.order-md-1{-ms-flex-order:1;order:1;}&.order-md-2{-ms-flex-order:2;order:2;}&.order-md-3{-ms-flex-order:3;order:3;}&.order-md-4{-ms-flex-order:4;order:4;}&.order-md-5{-ms-flex-order:5;order:5;}&.order-md-6{-ms-flex-order:6;order:6;}&.order-md-7{-ms-flex-order:7;order:7;}&.order-md-8{-ms-flex-order:8;order:8;}&.order-md-9{-ms-flex-order:9;order:9;}&.order-md-10{-ms-flex-order:10;order:10;}&.order-md-11{-ms-flex-order:11;order:11;}&.order-md-12{-ms-flex-order:12;order:12;}&.offset-md-0{margin-left:0;}&.offset-md-1{margin-left:8.333333%;}&.offset-md-2{margin-left:16.666667%;}&.offset-md-3{margin-left:25%;}&.offset-md-4{margin-left:33.333333%;}&.offset-md-5{margin-left:41.666667%;}&.offset-md-6{margin-left:50%;}&.offset-md-7{margin-left:58.333333%;}&.offset-md-8{margin-left:66.666667%;}&.offset-md-9{margin-left:75%;}&.offset-md-10{margin-left:83.333333%;}&.offset-md-11{margin-left:91.666667%;}}@media (min-width:992px){&.lg-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.lg-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.lg-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.lg-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.lg-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.lg-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.lg-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.lg-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.lg-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.order-lg-first{-ms-flex-order:-1;order:-1;}&.order-lg-last{-ms-flex-order:13;order:13;}&.order-lg-0{-ms-flex-order:0;order:0;}&.order-lg-1{-ms-flex-order:1;order:1;}&.order-lg-2{-ms-flex-order:2;order:2;}&.order-lg-3{-ms-flex-order:3;order:3;}&.order-lg-4{-ms-flex-order:4;order:4;}&.order-lg-5{-ms-flex-order:5;order:5;}&.order-lg-6{-ms-flex-order:6;order:6;}&.order-lg-7{-ms-flex-order:7;order:7;}&.order-lg-8{-ms-flex-order:8;order:8;}&.order-lg-9{-ms-flex-order:9;order:9;}&.order-lg-10{-ms-flex-order:10;order:10;}&.order-lg-11{-ms-flex-order:11;order:11;}&.order-lg-12{-ms-flex-order:12;order:12;}&.offset-lg-0{margin-left:0;}&.offset-lg-1{margin-left:8.333333%;}&.offset-lg-2{margin-left:16.666667%;}&.offset-lg-3{margin-left:25%;}&.offset-lg-4{margin-left:33.333333%;}&.offset-lg-5{margin-left:41.666667%;}&.offset-lg-6{margin-left:50%;}&.offset-lg-7{margin-left:58.333333%;}&.offset-lg-8{margin-left:66.666667%;}&.offset-lg-9{margin-left:75%;}&.offset-lg-10{margin-left:83.333333%;}&.offset-lg-11{margin-left:91.666667%;}}@media (min-width:1200px){&.xl-1{-ms-flex:0 0 8.333333%;flex:0 0 8.333333%;max-width:8.333333%;}&.xl-2{-ms-flex:0 0 16.666667%;flex:0 0 16.666667%;max-width:16.666667%;}&.xl-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;}&.xl-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}&.xl-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}&.xl-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}&.xl-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%;}&.xl-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}&.xl-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%;}&.xl-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%;}&.xl-11{-ms-flex:0 0 91.666667%;flex:0 0 91.666667%;max-width:91.666667%;}&.xl-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}&.xl-first{-ms-flex-order:-1;order:-1;}&.xl-last{-ms-flex-order:13;order:13;}&.order-xl-0{-ms-flex-order:0;order:0;}&.order-xl-1{-ms-flex-order:1;order:1;}&.order-xl-2{-ms-flex-order:2;order:2;}&.order-xl-3{-ms-flex-order:3;order:3;}&.order-xl-4{-ms-flex-order:4;order:4;}&.order-xl-5{-ms-flex-order:5;order:5;}&.order-xl-6{-ms-flex-order:6;order:6;}&.order-xl-7{-ms-flex-order:7;order:7;}&.order-xl-8{-ms-flex-order:8;order:8;}&.order-xl-9{-ms-flex-order:9;order:9;}&.order-xl-10{-ms-flex-order:10;order:10;}&.order-xl-11{-ms-flex-order:11;order:11;}&.order-xl-12{-ms-flex-order:12;order:12;}&.offset-xl-0{margin-left:0;}&.offset-xl-1{margin-left:8.333333%;}&.offset-xl-2{margin-left:16.666667%;}&.offset-xl-3{margin-left:25%;}&.offset-xl-4{margin-left:33.333333%;}&.offset-xl-5{margin-left:41.666667%;}&.offset-xl-6{margin-left:50%;}&.offset-xl-7{margin-left:58.333333%;}&.offset-xl-8{margin-left:66.666667%;}&.offset-xl-9{margin-left:75%;}&.offset-xl-10{margin-left:83.333333%;}&.offset-xl-11{margin-left:91.666667%;}}.about-image{width:450px;height:464px;margin-top:50px;}"]);
 /* harmony default export */ __webpack_exports__["default"] = (ColWrapper);
 
@@ -5995,7 +4917,7 @@ __webpack_require__.r(__webpack_exports__);
 var _excluded = ["children"];
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Administrator\\Documents\\psb_landing\\src\\reusecore\\Layout\\Col\\index.js";
+    _jsxFileName = "C:\\Users\\HLC_2021\\Documents\\psb_landing\\src\\reusecore\\Layout\\Col\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
@@ -6043,7 +4965,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ContainerWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "containerstyle__ContainerWrapper",
-  componentId: "sc-1w7veq9-0"
+  componentId: "sc-my3qv0-0"
 })(["width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;position:relative;@media (min-width:568px){max-width:100%;}@media (min-width:576px){max-width:95%;}@media (min-width:768px){max-width:720px;}@media (min-width:992px){max-width:960px;}@media (min-width:1200px){max-width:1140px;}@media (min-width:1400px){max-width:1320px;}&.fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}"]);
 /* harmony default export */ __webpack_exports__["default"] = (ContainerWrapper);
 
@@ -6070,7 +4992,7 @@ __webpack_require__.r(__webpack_exports__);
 var _excluded = ["children"];
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Administrator\\Documents\\psb_landing\\src\\reusecore\\Layout\\Container\\index.js";
+    _jsxFileName = "C:\\Users\\HLC_2021\\Documents\\psb_landing\\src\\reusecore\\Layout\\Container\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
@@ -6126,7 +5048,7 @@ __webpack_require__.r(__webpack_exports__);
 var _excluded = ["children"];
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Administrator\\Documents\\psb_landing\\src\\reusecore\\Layout\\Row\\index.js";
+    _jsxFileName = "C:\\Users\\HLC_2021\\Documents\\psb_landing\\src\\reusecore\\Layout\\Row\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
@@ -6174,7 +5096,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var RowWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "rowstyle__RowWrapper",
-  componentId: "sc-1m1bwu7-0"
+  componentId: "sc-avq5qi-0"
 })(["display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;&.no-gutters{margin-right:0;margin-left:0;}&.no-gutters > .col,&.no-gutters > [class*=\"col-\"]{padding-right:0;padding-left:0;}"]);
 /* harmony default export */ __webpack_exports__["default"] = (RowWrapper);
 
@@ -6227,18 +5149,18 @@ var _excluded = ["children"],
     _excluded2 = ["children"];
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Administrator\\Documents\\psb_landing\\src\\reusecore\\List\\index.js";
+    _jsxFileName = "C:\\Users\\HLC_2021\\Documents\\psb_landing\\src\\reusecore\\List\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 var ListWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].ul.withConfig({
   displayName: "List__ListWrapper",
-  componentId: "xhph3s-0"
+  componentId: "sc-r41fly-0"
 })(["margin:0;padding:0;list-style:none;"]);
 var ListItemWrapper = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].li.withConfig({
   displayName: "List__ListItemWrapper",
-  componentId: "xhph3s-1"
+  componentId: "sc-r41fly-1"
 })([""]);
 var List = function List(_ref) {
   var children = _ref.children,
@@ -6304,7 +5226,7 @@ __webpack_require__.r(__webpack_exports__);
 var _excluded = ["children"];
 
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Administrator\\Documents\\psb_landing\\src\\reusecore\\Text\\index.js";
+    _jsxFileName = "C:\\Users\\HLC_2021\\Documents\\psb_landing\\src\\reusecore\\Text\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
@@ -6312,7 +5234,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var TextWrapper = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].p.withConfig({
   displayName: "Text__TextWrapper",
-  componentId: "zm0wao-0"
+  componentId: "sc-1ezj4hz-0"
 })(["margin-top:0;margin-bottom:1rem;", " ", ""], function (props) {
   return props.FontSize && Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["css"])(["font-size:", ";"], props.FontSize);
 }, function (props) {
@@ -6396,7 +5318,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! aos */ "./node_modules/aos/dist/aos.js");
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_10__);
 var _this = undefined,
-    _jsxFileName = "C:\\Users\\Administrator\\Documents\\psb_landing\\src\\sections\\BackedBy\\index.js";
+    _jsxFileName = "C:\\Users\\HLC_2021\\Documents\\psb_landing\\src\\sections\\BackedBy\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 

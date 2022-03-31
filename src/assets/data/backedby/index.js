@@ -1,6 +1,3 @@
-
-import redkite from 'assets/images/backedby/redkite.png';
-import gamefi from 'assets/images/backedby/gamefi.png';
 import icetea from 'assets/images/backedby/icetea.png';
 import basic_capital from 'assets/images/backedby/basic_capital.png';
 import m6 from 'assets/images/backedby/m6.png';
@@ -29,19 +26,7 @@ import kts from 'assets/images/backedby/kts.png';
 import tk from 'assets/images/backedby/tk.png';
 import hg from 'assets/images/backedby/hg.png';
 export default {
-    backedby:[
-       
-        {
-            imageSrc: redkite,
-            src: "/",
-            id: "b1",
-        },
-        {
-            imageSrc: gamefi,
-            src: "/",
-            id: "b2",
-        },
-        
+    backedby:[       
         {
             imageSrc: ngc,
             src: "/",
