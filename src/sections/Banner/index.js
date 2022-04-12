@@ -36,7 +36,7 @@ const Banner = () => {
               </Heading>
               <Box className="register">
                 <Button className="download">
-                  <Text as="span"><a href="https://drive.google.com/uc?export=download&id=1cHxcZZ3bTHoU267NDEGtooIUJg1A3A7C" download>
+                  <Text as="span"><a href="https://drive.google.com/uc?export=download&id=1XhyjO_ehgSytZWcqnNYZQYvA3YjzUtbk" download>
                     <FaDownload style={{marginRight: 5}}/>
                     PC Testnet
                     </a></Text>
