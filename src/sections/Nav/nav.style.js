@@ -167,7 +167,7 @@ const NavWrapper = styled.div`
         align-items: center;
         li {
           text-transform: uppercase;
-          padding: 20px;
+          padding: 5px;
           margin: 0;
           transition: .2s;
           border: 2px solid transparent;
@@ -300,7 +300,7 @@ const NavWrapper = styled.div`
 
           &.pitching {
             width: 130px;
-            height: 33px;
+            height: 45px;
             text-align: center;
             font-weight: 500;
             background: #000000;
