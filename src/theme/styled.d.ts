@@ -5,6 +5,26 @@ export interface Colors {
   // base
   white: Color
   black: Color
+
+  // Brand
+  brand: Color
+
+  primaryColor: Color
+  primaryHoverColor: Color
+  secondaryColor: Color
+  headingColor: Color
+  bodyColor: Color
+  linkColor: Color
+  navBg: Color
+  navBgSolid: Color
+  menuHoverColor: Color
+
+  // Black
+  black1: Color
+  black2: Color
+
+  // Rarity
+  common3: Color
 }
 
 export interface Grids {

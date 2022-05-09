@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import { Text, TextProps as TextPropsOriginal } from 'rebass'
 import styled, {
   createGlobalStyle,
@@ -7,6 +7,8 @@ import styled, {
   ThemeProvider as StyledComponentsThemeProvider,
 } from 'styled-components'
 import { Colors } from './styled'
+
+export * from './components'
 
 type TextProps = Omit<TextPropsOriginal, 'css'>
 
@@ -55,6 +57,26 @@ export function colors(): Colors {
     // base
     white,
     black,
+
+    // Brand
+    brand: '#FFD700',
+
+    primaryColor: '#FFD700',
+    primaryHoverColor: '#cce5ff',
+    secondaryColor: '#383d41',
+    headingColor: '#FFFFFF',
+    bodyColor: '#ffffff',
+    linkColor: '#1F2AD5',
+    navBg: 'transparent',
+    navBgSolid: '#290E59',
+    menuHoverColor: '#1F2AD5',
+
+    // Black
+    black1: '#131313',
+    black2: '#DEDEDE',
+
+    // Rarity
+    common3: '#7D7D7D',
   }
 }
 
@@ -89,7 +111,7 @@ export function theme(): DefaultTheme {
 }
 
 export default function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const themeObject = useMemo(() => theme(), [])
+  const themeObject = theme()
 
   return <StyledComponentsThemeProvider theme={themeObject}>{children}</StyledComponentsThemeProvider>
 }
@@ -98,92 +120,79 @@ const TextWrapper = styled(Text)<{ color: keyof Colors }>`
   color: ${({ color, theme }) => (theme as any)[color]};
 `
 
+export const TYPE = {
+  main(props: TextProps) {
+    return <TextWrapper fontWeight={500} color={'white'} {...props} />
+  },
+  link(props: TextProps) {
+    return <TextWrapper fontWeight={500} color={'primary1'} {...props} />
+  },
+  label(props: TextProps) {
+    return <TextWrapper fontWeight={600} color={'text1'} {...props} />
+  },
+  black(props: TextProps) {
+    return <TextWrapper fontWeight={500} color={'text1'} {...props} />
+  },
+  white(props: TextProps) {
+    return <TextWrapper fontWeight={500} color={'white'} {...props} />
+  },
+  body(props: TextProps) {
+    return <TextWrapper fontWeight={400} fontSize={16} color={'text1'} {...props} />
+  },
+  largeHeader(props: TextProps) {
+    return <TextWrapper fontWeight={600} fontSize={24} {...props} />
+  },
+  mediumHeader(props: TextProps) {
+    return <TextWrapper fontWeight={500} fontSize={20} {...props} />
+  },
+  subHeader(props: TextProps) {
+    return <TextWrapper fontWeight={400} fontSize={14} {...props} />
+  },
+  small(props: TextProps) {
+    return <TextWrapper fontWeight={500} fontSize={11} {...props} />
+  },
+  blue(props: TextProps) {
+    return <TextWrapper fontWeight={500} color={'blue1'} {...props} />
+  },
+  yellow(props: TextProps) {
+    return <TextWrapper fontWeight={500} color={'yellow3'} {...props} />
+  },
+  darkGray(props: TextProps) {
+    return <TextWrapper fontWeight={500} color={'text3'} {...props} />
+  },
+  gray(props: TextProps) {
+    return <TextWrapper fontWeight={500} color={'bg3'} {...props} />
+  },
+  italic(props: TextProps) {
+    return <TextWrapper fontWeight={500} fontSize={12} fontStyle={'italic'} color={'text2'} {...props} />
+  },
+  error({ error, ...props }: { error: boolean } & TextProps) {
+    return <TextWrapper fontWeight={500} color={error ? 'red1' : 'text2'} {...props} />
+  },
+}
+
 export const ThemedGlobalStyle = createGlobalStyle`
 @font-face {
-  font-family: 'Poppins-Regular';
-  src: url('assets/fonts/Poppins-Regular.eot'), url('assets/fonts/Poppins-Regular.eot?#') format('embedded-opentype'),
-    url('assets/fonts/Poppins-Regular.woff') format('woff'), url('assets/fonts/Poppins-Regular.ttf') format('truetype');
+  font-family: 'Normandia';
+  src: url('assets/fonts/Normandia/Normandia.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('assets/fonts/Poppins-Medium.eot'), url('assets/fonts/Poppins-Medium.eot?#') format('embedded-opentype'),
-    url('assets/fonts/Poppins-Medium.woff') format('woff'), url('assets/fonts/Poppins-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-  font-family: 'PoppinsItalic';
-  src: url('assets/fonts/Poppins-MediumItalic.eot') url('assets/fonts/Poppins-MediumItalic.eot?#') format('embedded-opentype'),
-    url('assets/fonts/Poppins-MediumItalic.woff') format('woff'), url('assets/fonts/Poppins-MediumItalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-  font-family: 'Poppins-SemiBold';
-  src: url('assets/fonts/Poppins-SemiBold.eot'), url('assets/fonts/Poppins-SemiBold.eot?#') format('embedded-opentype'),
-    url('assets/fonts/Poppins-SemiBold.woff') format('woff'), url('assets/fonts/Poppins-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-  font-family: 'Poppins-SemiBoldItalic';
-  src: url('assets/fonts/Poppins-SemiBoldItalic.eot'), url('assets/fonts/Poppins-SemiBoldItalic.eot?#') format('embedded-opentype'),
-    url('assets/fonts/Poppins-SemiBoldItalic.woff') format('woff'), url('assets/fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-  font-family: 'Poppins-Bold';
-  src: url('assets/fonts/Poppins-Bold.eot'), url('assets/fonts/Poppins-Bold.eot?#') format('embedded-opentype'),
-    url('assets/fonts/Poppins-Bold.woff') format('woff'), url('assets/fonts/Poppins-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-  font-family: 'Poppins-BoldItalic';
-  src: url('assets/fonts/Poppins-BoldItalic.eot'), url('assets/fonts/Poppins-BoldItalic.eot?#') format('embedded-opentype'),
-    url('assets/fonts/Poppins-BoldItalic.woff') format('woff'), url('assets/fonts/Poppins-BoldItalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-  font-family: 'Poppins-Black';
-  src: url('assets/fonts/Poppins-Black.eot'), url('assets/fonts/Poppins-Black.eot?#') format('embedded-opentype'),
-    url('assets/fonts/Poppins-Black.woff') format('woff'), url('assets/fonts/Poppins-Black.ttf') format('truetype');
-  font-weight: 900;
+  font-family: 'Square721 BT';
+  src: url('assets/fonts/Square721bt/Square-721-BT.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Poppins-BlackItalic';
-  src: url('assets/fonts/Poppins-BlackItalic.eot'), url('assets/fonts/Poppins-BlackItalic.eot?#') format('embedded-opentype'),
-    url('assets/fonts/Poppins-BlackItalic.woff') format('woff'), url('assets/fonts/Poppins-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-
 body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  color: ${({ theme }) => theme.white};
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: ${({ theme }) => theme.black};
+  background-color: ${({ theme }) => theme.white} !important;
 }
 
 *{
@@ -191,16 +200,18 @@ body {
 }
 
 a {
- 
+ color: ${({ theme }) => theme.linkColor}; 
+ cursor: pointer;
 }
 a, a:hover {
   text-decoration: none;
 }
 body{
   background-color:transparent;
-  color: ${({ theme }) => theme.white} !important; 
+  color: ${({ theme }) => theme.primaryColor} !important; 
   font-size: 14px;
   font-weight: 500;
+  margin: 0;
 }
 img {
   width: 100%;

@@ -2,10 +2,11 @@ import '@reach/dialog/styles.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
-import App from './pages/App'
+import App from './App'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import store from './state'
-import { ThemedGlobalStyle } from './theme'
+import 'aos/dist/aos.css'
+import ThemeProvider, { ThemedGlobalStyle } from './theme'
 
 if (!!window.ethereum) {
   window.ethereum.autoRefreshOnNetworkChange = false
@@ -21,8 +22,10 @@ if (!!window.ethereum) {
 ReactDOM.render(
   // <StrictMode>
   <Provider store={store}>
-    <ThemedGlobalStyle />
-    <App />
+    <ThemeProvider>
+      <ThemedGlobalStyle />
+      <App />
+    </ThemeProvider>
   </Provider>,
   // </StrictMode>,
   document.getElementById('root')
