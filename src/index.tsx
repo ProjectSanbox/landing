@@ -6,6 +6,8 @@ import App from './App'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import store from './state'
 import 'aos/dist/aos.css'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 import ThemeProvider, { ThemedGlobalStyle } from './theme'
 
 if (!!window.ethereum) {

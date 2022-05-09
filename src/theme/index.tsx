@@ -75,6 +75,9 @@ export function colors(): Colors {
     black1: '#131313',
     black2: '#DEDEDE',
 
+    // Yellow
+    yellow2: '#E08F1B',
+
     // Rarity
     common3: '#7D7D7D',
   }
@@ -188,6 +191,22 @@ export const ThemedGlobalStyle = createGlobalStyle`
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'SFU Eurostile';
+  src: url('assets/fonts/SFUEurostile/SFUEurostile.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFU Eurostile Bold';
+  src: url('assets/fonts/SFUEurostile/SFUEurostileBold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -228,6 +247,15 @@ svg {
 }
 button:focus{
   box-shadow: 0 0 0 !important; 
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 /* Transitions */

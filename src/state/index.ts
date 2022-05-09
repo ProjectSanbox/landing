@@ -1,13 +1,18 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
-import { save, load } from 'redux-localstorage-simple'
 import thunkMiddleware from 'redux-thunk'
 import globalSlice from './global/global.slice'
+import { itemsApi } from 'services/items.service'
 
 const store = configureStore({
   reducer: {
+    [itemsApi.reducerPath]: itemsApi.reducer,
     global: globalSlice,
   },
-  middleware: [...getDefaultMiddleware({ thunk: true, serializableCheck: false }), thunkMiddleware],
+  middleware: [
+    ...getDefaultMiddleware({ thunk: true, serializableCheck: false }),
+    thunkMiddleware,
+    itemsApi.middleware,
+  ],
 })
 
 export default store

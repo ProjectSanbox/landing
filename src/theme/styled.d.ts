@@ -23,6 +23,9 @@ export interface Colors {
   black1: Color
   black2: Color
 
+  // Yellow
+  yellow2: Color
+
   // Rarity
   common3: Color
 }

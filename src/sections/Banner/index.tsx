@@ -20,13 +20,13 @@ const Banner = () => {
         <SmallTitle data-aos="fade-up" className="heading">
           build your worlds
         </SmallTitle>
-        <BigTitle data-aos="fade-up" data-aos-delay="500" style={{ marginBottom: '16px' }}>
+        <BigTitle data-aos="fade-up" data-aos-delay="300" style={{ marginBottom: '16px' }}>
           rules your games
         </BigTitle>
         <p data-aos="fade-up" data-aos-delay="500">
           Download PlanetSandbox for Windows
         </p>
-        <DownloadButtonWrapper>
+        <DownloadButtonWrapper data-aos="fade-up" data-aos-delay="500">
           <DownloadButton
             href="https://drive.google.com/uc?export=download&id=1XhyjO_ehgSytZWcqnNYZQYvA3YjzUtbk"
             target="_blank"
