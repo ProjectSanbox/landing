@@ -13,10 +13,7 @@ export const BannerWrapper = styled.div`
 
   .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background: linear-gradient(180deg, #000000 12.45%, rgba(0, 0, 0, 0) 100%);
   }
 `

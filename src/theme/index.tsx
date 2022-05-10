@@ -193,6 +193,14 @@ export const ThemedGlobalStyle = createGlobalStyle`
 }
 
 @font-face {
+  font-family: 'Square721 BT Bold';
+  src: url('assets/fonts/Square721bt/Square721-BT-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'SFU Eurostile';
   src: url('assets/fonts/SFUEurostile/SFUEurostile.ttf') format('truetype');
   font-weight: 400;

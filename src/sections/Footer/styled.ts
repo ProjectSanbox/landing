@@ -7,6 +7,7 @@ export const FooterWrapper = styled.div`
   color: ${({ theme }) => theme.white};
   padding: 80px 0px;
   background: ${({ theme }) => theme.footerBg};
+  margin-top: -20px;
 `
 
 export const FooterContent = styled(Row)``

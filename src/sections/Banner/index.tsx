@@ -1,19 +1,8 @@
-import AOS from 'aos'
 import { SupportedBlockId } from 'constant/menus'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { BannerContent, BannerWrapper, BigTitle, DownloadButton, DownloadButtonWrapper, SmallTitle } from './styled'
 
 const Banner = () => {
-  useEffect(() => {
-    AOS.init({
-      throttleDelay: 99,
-      debounceDelay: 50,
-      disable: false,
-      duration: 500,
-      once: false,
-      mirror: true,
-    })
-  })
   return (
     <BannerWrapper id={SupportedBlockId.HOME}>
       <div className="overlay"></div>
