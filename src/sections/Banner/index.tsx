@@ -1,4 +1,5 @@
 import AOS from 'aos'
+import { SupportedBlockId } from 'constant/menus'
 import React, { useEffect } from 'react'
 import { BannerContent, BannerWrapper, BigTitle, DownloadButton, DownloadButtonWrapper, SmallTitle } from './styled'
 
@@ -14,7 +15,7 @@ const Banner = () => {
     })
   })
   return (
-    <BannerWrapper>
+    <BannerWrapper id={SupportedBlockId.HOME}>
       <div className="overlay"></div>
       <BannerContent>
         <SmallTitle data-aos="fade-up" className="heading">

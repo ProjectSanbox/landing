@@ -2,6 +2,7 @@ import Container from 'components/Container'
 import React, { useEffect } from 'react'
 import { Line, SubTitle, Title, TopContent, Wrapper } from './styled'
 import AOS from 'aos'
+import { SupportedBlockId } from 'constant/menus'
 
 const TeamMembers = () => {
   useEffect(() => {
@@ -15,7 +16,7 @@ const TeamMembers = () => {
     })
   })
   return (
-    <Wrapper>
+    <Wrapper id={SupportedBlockId.TEAM}>
       <Container>
         <TopContent>
           <Title>Team Members</Title>

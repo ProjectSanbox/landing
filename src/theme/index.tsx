@@ -70,6 +70,7 @@ export function colors(): Colors {
     navBg: 'transparent',
     navBgSolid: '#290E59',
     menuHoverColor: '#1F2AD5',
+    footerBg: '#17181c',
 
     // Black
     black1: '#131313',
@@ -207,6 +208,10 @@ export const ThemedGlobalStyle = createGlobalStyle`
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -223,7 +228,7 @@ a {
  cursor: pointer;
 }
 a, a:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 body{
   background-color:transparent;
@@ -256,6 +261,11 @@ h1,h2,h3,h4,h5,h6,p {
 hr {
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0 !important;
 }
 
 /* Transitions */

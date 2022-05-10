@@ -8,6 +8,7 @@ import store from './state'
 import 'aos/dist/aos.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import ThemeProvider, { ThemedGlobalStyle } from './theme'
 
 if (!!window.ethereum) {

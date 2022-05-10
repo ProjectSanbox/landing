@@ -5,6 +5,7 @@ import Header from 'components/Header'
 import TeamMembers from 'sections/TeamMembers'
 import React from 'react'
 import { useGetListItemsQuery } from 'services/items.service'
+import Footer from 'sections/Footer'
 
 export default function App() {
   useGetListItemsQuery()
@@ -15,6 +16,8 @@ export default function App() {
       <ChampionSection />
 
       <TeamMembers />
+
+      <Footer />
     </ErrorBoundary>
   )
 }

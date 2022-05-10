@@ -18,6 +18,7 @@ export interface Colors {
   navBg: Color
   navBgSolid: Color
   menuHoverColor: Color
+  footerBg: Color
 
   // Black
   black1: Color
