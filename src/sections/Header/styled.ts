@@ -1,26 +1,6 @@
-import React, { FC } from 'react'
 import styled from 'styled-components/macro'
-import useScrollPosition from '@react-hook/window-scroll'
-import Container from 'components/Container'
 
-type HeaderProps = {}
-
-const Header: FC<HeaderProps> = () => {
-  const scrollY = useScrollPosition()
-  return (
-    <Wrapper>
-      <HeaderFrame showBackground={scrollY > 95}>
-        <Container>
-          <>111</>
-        </Container>
-      </HeaderFrame>
-    </Wrapper>
-  )
-}
-
-export default Header
-
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   width: 100%;
   justify-content: space-between;
   position: fixed;
@@ -28,7 +8,7 @@ const Wrapper = styled.div`
   z-index: 3;
 `
 
-const HeaderFrame = styled.div<{ showBackground: boolean }>`
+export const HeaderFrame = styled.div<{ showBackground: boolean }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,4 +30,18 @@ const HeaderFrame = styled.div<{ showBackground: boolean }>`
   ${({ theme }) => theme.mediaWidth.upToExtraSmall`
     padding: 1rem;
   `}
+`
+
+export const HeaderContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+export const Logo = styled.div``
+
+export const HeaderElement = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 20px;
 `

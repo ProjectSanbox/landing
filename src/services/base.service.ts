@@ -9,3 +9,8 @@ const baseOptions: FetchBaseQueryArgs = {
 export const baseQuery = fetchBaseQuery({
   ...baseOptions,
 })
+
+export const tokenPriceQuery = fetchBaseQuery({
+  ...baseOptions,
+  baseUrl: API.tokenPrice,
+})

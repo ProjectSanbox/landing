@@ -45,7 +45,7 @@ const RenderItems: FC<ItemsProps> = ({ items }) => {
   }
   return (
     <Wrapper>
-      <MainImageWrapper>
+      {/* <MainImageWrapper>
         <Slider {...mainImgOps} asNavFor={navSlider ? navSlider : undefined} ref={(slider) => setMainSlider(slider)}>
           {items.map((item, index) => (
             <ItemMainImage key={index} item={item} />
@@ -58,7 +58,7 @@ const RenderItems: FC<ItemsProps> = ({ items }) => {
             <ItemNavImage key={index} item={item} />
           ))}
         </Slider>
-      </NavImageWrapper>
+      </NavImageWrapper> */}
     </Wrapper>
   )
 }

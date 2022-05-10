@@ -4,8 +4,20 @@ export enum SupportedPayment {
   PSB = 'PSB',
 }
 
-export const SupportedPaymentAddress = {
-  [SupportedPayment.PULV]: '0x871428ED63ee188eF8B7fac3fdf7244Bbe702A5B',
-  [SupportedPayment.BNB]: '0x0000000000000000000000000000000000000000',
-  [SupportedPayment.PSB]: '0xFfcb5EBf615F543d5C023FE45878ED86F389271a',
+export enum SupportedPaymentAddress {
+  PULV = '0xd59896c6f17f62bb584bbdaaab8d0e09fddf691e',
+  BNB = '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
+  PSB = '0x36bfbb1d5b3c9b336f3d64976599b6020ca805f1',
+}
+
+export interface PriceExchangeType {
+  [SupportedPayment.BNB]?: number
+  [SupportedPayment.PSB]?: number
+  [SupportedPayment.PULV]?: number
+}
+
+export interface PriceExchangeResponseType {
+  [SupportedPaymentAddress.BNB]?: { usd: number }
+  [SupportedPaymentAddress.PSB]?: { usd: number }
+  [SupportedPaymentAddress.PULV]?: { usd: number }
 }

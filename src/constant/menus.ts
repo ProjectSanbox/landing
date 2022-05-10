@@ -8,6 +8,8 @@ export enum SupportedBlockId {
   GAMEPLAY = 'gameplay',
   NFT = 'nft',
   FOOTER = 'footer',
+  EVENT = 'event',
+  FAQS = 'faqs',
 }
 
 export enum MenuType {

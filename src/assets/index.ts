@@ -1,3 +1,5 @@
+import logo from 'assets/images/logo.png'
+import smallLogo from 'assets/images/small-logo.png'
 import headerBackground from 'assets/images/banner/banner.jpg'
 import championSectionBackground from 'assets/images/background/champion.png'
 import teamsBackground from 'assets/images/background/team.png'
@@ -12,6 +14,8 @@ import youtube from 'assets/images/footer/youtube.png'
 import facebook from 'assets/images/footer/facebook.png'
 
 export {
+  logo,
+  smallLogo,
   headerBackground,
   championSectionBackground,
   teamsBackground,
