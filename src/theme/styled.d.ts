@@ -24,6 +24,9 @@ export interface Colors {
   black1: Color
   black2: Color
 
+  // Blue
+  blue1: Color
+
   // Yellow
   yellow2: Color
 

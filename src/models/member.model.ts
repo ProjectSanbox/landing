@@ -1,5 +1,5 @@
 export interface Member {
-  image: string
+  avatar: string
   name: string
   role: string
 }
