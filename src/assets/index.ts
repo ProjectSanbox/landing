@@ -2,6 +2,12 @@ import logo from 'assets/images/logo.png'
 import smallLogo from 'assets/images/small-logo.png'
 import headerBackground from 'assets/images/banner/banner.jpg'
 import championSectionBackground from 'assets/images/background/champion.png'
+import champNavBackground from 'assets/images/slider/polygon.png'
+import champActiveNavBackground from 'assets/images/slider/polygon-active.png'
+import weaponSectionBackground from 'assets/images/background/weapon.png'
+import weaponSliderBackground from 'assets/images/background/weapon-slider.png'
+import weaponNavBackground from 'assets/images/slider/gun-frame.png'
+import weaponActiveNavBackground from 'assets/images/slider/gun-active-frame.png'
 import teamsBackground from 'assets/images/background/team.png'
 import backedByBackground from 'assets/images/background/backed-by.png'
 import lineBackground from 'assets/images/background/line.png'
@@ -19,6 +25,12 @@ export {
   smallLogo,
   headerBackground,
   championSectionBackground,
+  champNavBackground,
+  champActiveNavBackground,
+  weaponSectionBackground,
+  weaponSliderBackground,
+  weaponNavBackground,
+  weaponActiveNavBackground,
   teamsBackground,
   backedByBackground,
   lineBackground,

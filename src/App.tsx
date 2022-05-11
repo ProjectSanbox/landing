@@ -10,6 +10,7 @@ import { useGetListItemsQuery } from 'services/items.service'
 import { useGetTokenPriceQuery } from 'services/tokenPrice.service'
 import AOS from 'aos'
 import BackedBy from 'sections/BackedBy'
+import WeaponSection from 'sections/WeaponSection'
 
 export default function App() {
   useGetListItemsQuery()
@@ -29,6 +30,7 @@ export default function App() {
       <Header />
       <Banner />
       <ChampionSection />
+      <WeaponSection />
 
       <TeamMembers />
 

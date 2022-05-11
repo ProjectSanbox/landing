@@ -1,5 +1,5 @@
 import RenderItems from './RenderItems'
-import ItemMainImage from './ItemMainImage'
+import ItemActive from './ItemActive'
 import ItemNavImage from './ItemNavImage'
 
-export { RenderItems, ItemMainImage, ItemNavImage }
+export { RenderItems, ItemActive, ItemNavImage }

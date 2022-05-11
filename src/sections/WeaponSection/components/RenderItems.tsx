@@ -1,9 +1,11 @@
-import { champActiveNavBackground, champNavBackground } from 'assets'
+import { weaponActiveNavBackground, weaponNavBackground } from 'assets'
 import { Item } from 'models/item.model'
 import React, { FC, memo, useState } from 'react'
 import Slider from 'react-slick'
 import styled from 'styled-components/macro'
-import { ItemActive, ItemNavImage } from '.'
+import { MainItem } from '.'
+
+const LIMIT_ITEMS = 4
 
 type ItemsProps = {
   items: Item[]
@@ -31,34 +33,36 @@ const RenderItems: FC<ItemsProps> = ({ items }) => {
     ],
   }
   const navImgOps = {
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     infinite: true,
     arrows: false,
     dots: false,
-    centerMode: false,
+    centerMode: true,
     focusOnSelect: true,
+    centerPadding: '0px',
+    variableWidth: true,
   }
   return (
     <Wrapper>
-      {/* <MainImageWrapper>
+      <MainItemWrapper>
         <Slider {...mainImgOps} asNavFor={navSlider ? navSlider : undefined} ref={(slider) => setMainSlider(slider)}>
           {items.map((item, index) => {
-            if (index < 5) {
-              return <ItemActive key={index} item={item} />
+            if (index < LIMIT_ITEMS) {
+              return <MainItem key={index} item={item} />
             }
           })}
         </Slider>
-      </MainImageWrapper> */}
-      <NavImageWrapper data-aos="fade-left" data-aos-delay="500">
+      </MainItemWrapper>
+      <SliderNavWrapper data-aos="fade-left" data-aos-delay="500">
         <Slider asNavFor={mainSlider ? mainSlider : undefined} ref={(slider) => setNavSlider(slider)} {...navImgOps}>
           {items.map((item, index) => {
-            if (index < 5) {
-              return <ItemNavImage key={index} item={item} />
+            if (index < LIMIT_ITEMS) {
+              return <img key={index} src={item.image} />
             }
           })}
         </Slider>
-      </NavImageWrapper>
+      </SliderNavWrapper>
     </Wrapper>
   )
 }
@@ -66,35 +70,52 @@ const RenderItems: FC<ItemsProps> = ({ items }) => {
 export default memo(RenderItems)
 
 const Wrapper = styled.div`
+  height: 100%;
   position: relative;
-  height: 900px;
 `
 
-const MainImageWrapper = styled.div`
+const MainItemWrapper = styled.div`
   width: 100%;
   height: 100%;
-  & .slick-slider,
-  & .slick-list {
-    height: 100%;
+  .slick-slider {
+    &,
+    & div {
+      height: 100%;
+    }
   }
 `
-
-const NavImageWrapper = styled.div`
+const SliderNavWrapper = styled.div`
   position: absolute;
-  bottom: 70px;
+  bottom: 65px;
   right: 0;
-  width: 580px;
   .slick-slider {
-    .slick-slide {
-      & > div > div {
-        background: url(${champNavBackground}) no-repeat center center;
+    overflow: visible;
+    .slick-track {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .slick-slide {
+        width: 152px !important;
+        height: 100px;
+        margin: auto 15px;
+        background: url(${weaponNavBackground}) no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-      }
-      &.slick-current > div > div {
-        background-image: url(${champActiveNavBackground});
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          transform: rotate(-32.68deg);
+        }
+
+        &.slick-current {
+          width: 228px !important;
+          height: 150px;
+          background-image: url(${weaponActiveNavBackground});
+        }
       }
     }
   }

@@ -8,19 +8,19 @@ const HeaderNav: FC<NavProps> = () => {
   return (
     <HeaderNavList>
       <li>
-        <a href={SupportedBlockId.ROADMAP}>Roadmap</a>
+        <a href={'#' + SupportedBlockId.ROADMAP}>Roadmap</a>
       </li>
       <li>
-        <a href={SupportedBlockId.EVENT}>Event</a>
+        <a href={'#' + SupportedBlockId.EVENT}>Event</a>
       </li>
       <li>
-        <a href={SupportedBlockId.NFT}>Token</a>
+        <a href={'#' + SupportedBlockId.NFT}>Token</a>
       </li>
       <li>
-        <a href={SupportedBlockId.TEAM}>TEAM</a>
+        <a href={'#' + SupportedBlockId.TEAM}>TEAM</a>
       </li>
       <li>
-        <a href={SupportedBlockId.FAQS}>FAQs</a>
+        <a href={'#' + SupportedBlockId.FAQS}>FAQs</a>
       </li>
     </HeaderNavList>
   )

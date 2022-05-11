@@ -1,7 +1,8 @@
 import { championSectionBackground } from 'assets'
 import styled from 'styled-components/macro'
+import { Container as BootstrapContainer } from 'react-bootstrap'
 
-export const ChampionSectionWrapper = styled.div`
+export const SectionWrapper = styled.div`
   width: 100%;
   height: 1209px;
   position: relative;
@@ -10,23 +11,26 @@ export const ChampionSectionWrapper = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  top: -60px;
-  position: relative;
+  margin-top: -60px;
+`
+
+export const Container = styled(BootstrapContainer)`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  height: 100%;
 `
 
 export const SectionHeading = styled.div`
   position: absolute;
   top: 180px;
-  right: 385px;
+  right: 18%;
 `
 
 export const Heading = styled.h1`
   font-family: 'Normandia';
   font-weight: 400;
-  font-size: 80.2474px;
+  font-size: 80px;
   line-height: 81px;
   text-transform: uppercase;
   color: rgba(125, 125, 125, 0.3);

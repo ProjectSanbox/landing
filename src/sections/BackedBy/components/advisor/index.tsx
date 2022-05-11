@@ -12,7 +12,7 @@ const AdvisorsList = () => {
           <span>Advisors</span>
         </AdvisorHeading>
       </div>
-      <AdvisorsListItem>
+      <AdvisorsListItem className="flex justify-content-between">
         {DEFAULT_ADVISOR.map((advisor, index) => (
           <AdvisorItem key={index} index={index} advisor={advisor} />
         ))}
@@ -33,8 +33,6 @@ const AdvisorsListWrapper = styled.div`
 
 const AdvisorsListItem = styled.div`
   margin-top: 90px;
-  display: flex;
-  justify-content: space-between;
 
   ${({ theme }) => theme.mediaWidth.upToMedium`
     flex-direction: column;

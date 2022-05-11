@@ -2,16 +2,15 @@ import React, { FC } from 'react'
 import { selectChampions } from 'state/global/global.slice'
 import { useAppSelector } from 'state/hooks'
 import { RenderItems } from './components'
-import { ChampionSectionWrapper, Heading, SectionHeading, SubHeading } from './styled'
+import { SectionWrapper, Container, Heading, SectionHeading, SubHeading } from './styled'
 
 type ChampionProps = {}
 
 const ChampionSection: FC<ChampionProps> = () => {
   const items = useAppSelector(selectChampions)
-  console.log(items)
 
   return (
-    <ChampionSectionWrapper>
+    <SectionWrapper>
       <SectionHeading>
         <Heading>planetsandbox</Heading>
         <SubHeading>
@@ -19,8 +18,8 @@ const ChampionSection: FC<ChampionProps> = () => {
           <span className="sub-heading">Champion</span>
         </SubHeading>
       </SectionHeading>
-      {items.length > 0 && <RenderItems items={items} />}
-    </ChampionSectionWrapper>
+      <Container>{items.length > 0 && <RenderItems items={items} />}</Container>
+    </SectionWrapper>
   )
 }
 

@@ -8,7 +8,7 @@ type ItemImageProps = {
 
 const ItemNavImage: FC<ItemImageProps> = ({ item }) => {
   return (
-    <ItemImageWrapper>
+    <ItemImageWrapper className="flex justify-content-center align-items-center">
       <img src={item.image} />
     </ItemImageWrapper>
   )
@@ -17,6 +17,9 @@ const ItemNavImage: FC<ItemImageProps> = ({ item }) => {
 export default ItemNavImage
 
 const ItemImageWrapper = styled.div`
+  width: 96px;
+  height: 111px;
+  margin: 0 auto;
   img {
     width: 80px;
   }

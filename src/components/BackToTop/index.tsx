@@ -9,7 +9,7 @@ const BackToTop = () => {
     document.documentElement.scrollTop = 0
   }
   return (
-    <ScrollTopWrapper>
+    <ScrollTopWrapper className="flex justify-content-center align-items-center">
       {scrollY > 2200 && (
         <button onClick={topFunction}>
           <svg
@@ -42,9 +42,6 @@ const ScrollTopWrapper = styled.div`
     height: 50px;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 1px solid transparent;
     border-radius: 0.25rem;
     svg {
