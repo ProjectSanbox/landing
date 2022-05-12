@@ -15,7 +15,7 @@ import vendetta from 'assets/images/backedby/vendetta.png'
 import kyros from 'assets/images/backedby/kyros.png'
 import luaVentures from 'assets/images/backedby/luaVentures.png'
 import onemax from 'assets/images/backedby/onemax.png'
-import goodGame from 'assets/images/backedby/goodGame.png'
+import goodGameGuild from 'assets/images/backedby/goodGameGuild.png'
 import moonboot from 'assets/images/backedby/moonboot.png'
 import vbc from 'assets/images/backedby/vbc.png'
 import dec from 'assets/images/backedby/dec.png'
@@ -113,7 +113,7 @@ export const DEFAULT_BACKED_BY: BackedData = {
       url: '/',
     },
     {
-      image: goodGame,
+      image: goodGameGuild,
       url: '/',
     },
     {
