@@ -22,6 +22,8 @@ import discord from 'assets/images/footer/discord.png'
 import youtube from 'assets/images/footer/youtube.png'
 import facebook from 'assets/images/footer/facebook.png'
 
+import { ReactComponent as CloseModalIcon } from 'assets/svg/close_modal.svg'
+
 export {
   logo,
   smallLogo,
@@ -46,4 +48,5 @@ export {
   discord,
   youtube,
   facebook,
+  CloseModalIcon,
 }

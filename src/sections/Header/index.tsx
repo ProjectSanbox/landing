@@ -2,7 +2,7 @@ import useScrollPosition from '@react-hook/window-scroll'
 import { smallLogo } from 'assets'
 import Container from 'components/Container'
 import React, { FC } from 'react'
-import { HeaderNav, PlayGameButton, PsbExchangePrice } from './components'
+import { HeaderNav, BuyNftButton, PsbExchangePrice } from './components'
 import { HeaderContent, HeaderElement, HeaderFrame, Logo, Wrapper } from './styled'
 import { isMobile } from 'react-device-detect'
 import { useAppSelector } from 'state/hooks'
@@ -30,7 +30,7 @@ const Header: FC<HeaderProps> = () => {
                 {priceExchange[SupportedPayment.PSB] && (
                   <PsbExchangePrice price={priceExchange[SupportedPayment.PSB]} />
                 )}
-                <PlayGameButton />
+                <BuyNftButton />
               </HeaderElement>
             )}
           </HeaderContent>

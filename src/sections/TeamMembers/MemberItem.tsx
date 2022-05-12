@@ -10,7 +10,7 @@ type ItemProps = {
 
 const MemberItem: FC<ItemProps> = ({ item, index }) => {
   return (
-    <ItemWrapper data-aos="flip-left" data-aos-duration={(index % 4) * 500}>
+    <ItemWrapper>
       <ItemImage>
         <img src={item.avatar} />
       </ItemImage>

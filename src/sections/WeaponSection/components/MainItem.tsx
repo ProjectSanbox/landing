@@ -13,7 +13,6 @@ const MainItem: FC<MainItemProps> = ({ item }) => {
     <Wrapper>
       <Col
         data-aos="fade-right"
-        data-aos-delay="500"
         xs={12}
         md={6}
         style={{ alignSelf: 'center' }}

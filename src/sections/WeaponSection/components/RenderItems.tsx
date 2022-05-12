@@ -54,7 +54,7 @@ const RenderItems: FC<ItemsProps> = ({ items }) => {
           })}
         </Slider>
       </MainItemWrapper>
-      <SliderNavWrapper data-aos="fade-left" data-aos-delay="500">
+      <SliderNavWrapper data-aos="fade-left">
         <Slider asNavFor={mainSlider ? mainSlider : undefined} ref={(slider) => setNavSlider(slider)} {...navImgOps}>
           {items.map((item, index) => {
             if (index < LIMIT_ITEMS) {
