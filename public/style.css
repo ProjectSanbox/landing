@@ -1,0 +1,86 @@
+@media (min-width: 576px) and (max-width: 992px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .col-reward .box-reward {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .col-reward {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .col-reward .box-reward {
+    width: 100% !important;
+  }
+}
+
+.footer {
+  padding: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding-top: 0;
+  }
+
+  .footer .logo {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 577px) {
+  .body-wrapper {
+    margin-top: 72px;
+  }
+
+  .col-reward .box-reward {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  .header-links a {
+    font-size: 14px;
+  }
+
+  .header-logo {
+    height: 21px !important;
+  }
+}
+
+.box-amount {
+  position: relative;
+}
+
+.max-amount {
+  position: absolute;
+  cursor: pointer;
+  right: 32px;
+  top: 6px;
+  opacity: 0.5;
+}
+
+.max-amount:hover {
+  opacity: 1;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  display: flex;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #FFD700;
+  border-radius: 32px;
+}
