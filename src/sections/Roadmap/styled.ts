@@ -14,6 +14,7 @@ export const RoadmapWrapper = styled.div`
   -o-background-size: cover;
   background-size: cover;
   text-align: center;
+  margin-top: -52px;
 `
 
 export const TopHeading = styled.div`
