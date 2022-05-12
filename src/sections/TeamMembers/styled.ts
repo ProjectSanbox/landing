@@ -14,6 +14,19 @@ export const Wrapper = styled.div`
   text-align: center;
   color: ${({ theme }) => theme.white};
   background-size: cover;
+
+  .slick-dots {
+    margin-bottom: 0;
+    li {
+      width: 10px;
+      height: 10px;
+      background: rgba(156, 41, 50, 0.5);
+      border-radius: 16px;
+      &.slick-active {
+        background: ${({ theme }) => theme.brand};
+      }
+    }
+  }
 `
 
 export const TopContent = styled.div`
@@ -55,7 +68,6 @@ export const MembersListWrapper = styled.div`
 `
 
 export const ItemWrapper = styled.div`
-  width: 25%;
   text-align: center;
   margin-bottom: 32px;
 `
