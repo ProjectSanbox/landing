@@ -12,6 +12,7 @@ import AOS from 'aos'
 import BackedBy from 'sections/BackedBy'
 import WeaponSection from 'sections/WeaponSection'
 import Roadmap from 'sections/Roadmap'
+import BuildLand from 'sections/BuildLand'
 
 export default function App() {
   useGetListItemsQuery()
@@ -32,7 +33,7 @@ export default function App() {
       <Banner />
       <ChampionSection />
       <WeaponSection />
-
+      <BuildLand />
       <Roadmap />
       <TeamMembers />
 
