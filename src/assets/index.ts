@@ -8,6 +8,7 @@ import weaponSectionBackground from 'assets/images/background/weapon.png'
 import weaponSliderBackground from 'assets/images/background/weapon-slider.png'
 import weaponNavBackground from 'assets/images/slider/gun-frame.png'
 import weaponActiveNavBackground from 'assets/images/slider/gun-active-frame.png'
+import roadmapBackground from 'assets/images/background/roadmap.png'
 import teamsBackground from 'assets/images/background/team.png'
 import backedByBackground from 'assets/images/background/backed-by.png'
 import lineBackground from 'assets/images/background/line.png'
@@ -31,6 +32,7 @@ export {
   weaponSliderBackground,
   weaponNavBackground,
   weaponActiveNavBackground,
+  roadmapBackground,
   teamsBackground,
   backedByBackground,
   lineBackground,
