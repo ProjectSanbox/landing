@@ -2,9 +2,14 @@ import { BackedItem } from 'models/backed.model'
 import React, { FC, memo } from 'react'
 import { BackedByLink } from '../styled'
 
-const BackedByItem: FC<BackedItem> = (item) => {
+type ItemProps = {
+  item: BackedItem
+  padding?: string | number
+}
+
+const BackedByItem: FC<ItemProps> = ({ item, padding }) => {
   return (
-    <BackedByLink target={item.target ? item.target : '_blank'} href={item.url} rel="noreferrer" padding="0 12px">
+    <BackedByLink target={item.target ? item.target : '_blank'} href={item.url} rel="noreferrer" padding={padding}>
       <img src={item.image} />
     </BackedByLink>
   )

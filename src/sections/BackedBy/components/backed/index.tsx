@@ -14,7 +14,7 @@ const BackedByContent: FC<BackedProps> = () => {
         <SectionHeading>Backed By</SectionHeading>
         <ListItemsWrapper data-aos="fade-down">
           {DEFAULT_BACKED_BY.backed.map((item, index) => (
-            <BackedByItem key={index} {...item} />
+            <BackedByItem key={index} item={item} />
           ))}
         </ListItemsWrapper>
       </Container>

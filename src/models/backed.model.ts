@@ -2,7 +2,7 @@ export interface BackedData {
   backed: BackedItem[]
   audit: BackedItem[]
   partner: BackedItem[]
-  media: BackedData[]
+  media: BackedItem[]
 }
 
 export interface BackedItem {

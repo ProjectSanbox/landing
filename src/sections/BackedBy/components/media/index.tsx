@@ -14,7 +14,7 @@ const MediasContent: FC<MediaProps> = () => {
         <SectionHeading>Media</SectionHeading>
         <ListItemsWrapper data-aos="fade-down">
           {DEFAULT_BACKED_BY.media.map((item, index) => (
-            <BackedByItem key={index} {...item} />
+            <BackedByItem key={index} item={item} padding="0 12px" />
           ))}
         </ListItemsWrapper>
       </Container>

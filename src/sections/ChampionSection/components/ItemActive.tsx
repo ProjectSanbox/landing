@@ -8,9 +8,9 @@ type ItemImageProps = {
 
 const ItemActive: FC<ItemImageProps> = ({ item }) => {
   return (
-    <Wrapper>
+    <Wrapper className="flex justify-content-between">
       <MainImage>
-        <img src={item.fullSize || item.image} />
+        <img src={item.fullSize || item.image} data-aos="fade-right" />
       </MainImage>
     </Wrapper>
   )
@@ -22,4 +22,7 @@ const Wrapper = styled.div`
   position: relative;
 `
 
-const MainImage = styled.div``
+const MainImage = styled.div`
+  width: 100%;
+  max-width: 50%;
+`
