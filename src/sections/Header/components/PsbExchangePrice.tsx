@@ -1,14 +1,24 @@
-import React, { FC, memo } from 'react'
+import React, { FC, memo, useState } from 'react'
 import styled from 'styled-components/macro'
 import { formatMoneyUsd } from 'utils/formatCurrencyAmount'
 import btnBackgoundGreen from 'assets/images/btn/Btn1-sm.png'
+import Modal from 'components/Modal'
+import ModalBuyTokenContent from 'components/Modal/ModalBuyTokenContent'
 
 type PsbPriceProps = {
   price: number | undefined
 }
 
 const PsbExchangePrice: FC<PsbPriceProps> = ({ price }) => {
-  return <Button>PSB {formatMoneyUsd(price ? price : 0, 2)}</Button>
+  const [toggleBuyTokenModal, setToggleBuyTokenModal] = useState(false)
+  return (
+    <>
+      <Button onClick={() => setToggleBuyTokenModal(true)}>PSB {formatMoneyUsd(price ? price : 0, 2)}</Button>
+      <Modal isOpen={toggleBuyTokenModal} onDismiss={() => setToggleBuyTokenModal(false)}>
+        <ModalBuyTokenContent closeModal={() => setToggleBuyTokenModal(false)} />
+      </Modal>
+    </>
+  )
 }
 
 export default memo(PsbExchangePrice)

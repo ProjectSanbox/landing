@@ -73,4 +73,7 @@ export const DownloadButton = styled.a`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  :hover {
+    color: ${({ theme }) => theme.black1};
+  }
 `

@@ -21,3 +21,6 @@ export interface PriceExchangeResponseType {
   [SupportedPaymentAddress.PSB]?: { usd: number }
   [SupportedPaymentAddress.PULV]?: { usd: number }
 }
+
+export const PANCAKE_LINK = 'https://pancakeswap.finance/info/pair/0xcb9abf27b2e7b8706f0daf30855b80421b41e9a9'
+export const GATEIO_LINK = 'https://www.gate.io/vn/trade/PSB_USDT'

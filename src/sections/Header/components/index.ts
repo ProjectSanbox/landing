@@ -1,5 +1,5 @@
 import HeaderNav from './HeaderNav'
 import PsbExchangePrice from './PsbExchangePrice'
-import PlayGameButton from './PlayGameButton'
+import BuyNftButton from './BuyNftButton'
 
-export { HeaderNav, PsbExchangePrice, PlayGameButton }
+export { HeaderNav, PsbExchangePrice, BuyNftButton }
