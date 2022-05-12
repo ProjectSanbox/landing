@@ -12,6 +12,12 @@ export const SectionWrapper = styled.div`
   -o-background-size: cover;
   background-size: cover;
   margin-top: -60px;
+
+  .container {
+    @media (min-width: 1400px) {
+      max-width: 1420px;
+    }
+  }
 `
 
 export const Container = styled(BootstrapContainer)`

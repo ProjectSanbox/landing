@@ -22,5 +22,6 @@ const ItemImageWrapper = styled.div`
   margin: 0 auto;
   img {
     width: 80px;
+    border-radius: 50%;
   }
 `

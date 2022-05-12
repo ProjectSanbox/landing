@@ -33,15 +33,17 @@ const RenderItems: FC<ItemsProps> = ({ items }) => {
   const navImgOps = {
     slidesToShow: 5,
     slidesToScroll: 1,
-    infinite: true,
-    arrows: false,
     dots: false,
-    centerMode: false,
+    centerMode: true,
     focusOnSelect: true,
+    // infinite: true,
+    // arrows: false,
+    centerPadding: '0px',
+    // variableWidth: true,
   }
   return (
     <Wrapper>
-      {/* <MainImageWrapper>
+      <MainImageWrapper>
         <Slider {...mainImgOps} asNavFor={navSlider ? navSlider : undefined} ref={(slider) => setMainSlider(slider)}>
           {items.map((item, index) => {
             if (index < 5) {
@@ -49,8 +51,8 @@ const RenderItems: FC<ItemsProps> = ({ items }) => {
             }
           })}
         </Slider>
-      </MainImageWrapper> */}
-      <NavImageWrapper data-aos="fade-left" data-aos-delay="500">
+      </MainImageWrapper>
+      <NavImageWrapper data-aos="fade-left">
         <Slider asNavFor={mainSlider ? mainSlider : undefined} ref={(slider) => setNavSlider(slider)} {...navImgOps}>
           {items.map((item, index) => {
             if (index < 5) {

@@ -14,7 +14,7 @@ const AuditsContent: FC<AuditsProps> = () => {
         <SectionHeading>Security Audits</SectionHeading>
         <ListItemsWrapper data-aos="fade-down">
           {DEFAULT_BACKED_BY.audit.map((item, index) => (
-            <BackedByItem key={index} {...item} />
+            <BackedByItem key={index} item={item} />
           ))}
         </ListItemsWrapper>
       </Container>

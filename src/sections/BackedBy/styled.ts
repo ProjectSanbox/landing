@@ -82,5 +82,4 @@ export const ListItemsWrapper = styled.div`
 export const BackedByLink = styled.a<{ padding?: string | number }>`
   display: inline-block;
   padding: ${({ padding }) => (padding ? padding : '33px 52px')};
-  margin-bottom: 56px;
 `
