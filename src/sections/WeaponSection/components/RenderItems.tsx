@@ -35,13 +35,13 @@ const RenderItems: FC<ItemsProps> = ({ items }) => {
   const navImgOps = {
     slidesToShow: 4,
     slidesToScroll: 1,
-    infinite: true,
-    arrows: false,
     dots: false,
     centerMode: true,
     focusOnSelect: true,
+    // infinite: true,
+    // arrows: false,
     centerPadding: '0px',
-    variableWidth: true,
+    // variableWidth: true,
   }
   return (
     <Wrapper>

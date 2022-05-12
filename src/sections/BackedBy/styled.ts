@@ -2,6 +2,7 @@ import { backedByBackground } from 'assets'
 import styled from 'styled-components/macro'
 import leftHeading from 'assets/images/background/left-heading.png'
 import rightHeading from 'assets/images/background/right-heading.png'
+import bottomHeading from 'assets/images/background/backed-by-heading-footer.png'
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -22,6 +23,7 @@ const Heading = styled.h3`
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
+  color: ${({ theme }) => theme.white};
   text-transform: uppercase;
   text-shadow: 0px 0px 3px #ffd600;
 `
@@ -49,4 +51,34 @@ export const AdvisorHeading = styled(Heading)`
       background-image: url(${rightHeading});
     }
   }
+`
+
+export const SectionHeading = styled(Heading)`
+  display: inline-block;
+  padding-bottom: 24px;
+  position: relative;
+
+  :after {
+    bottom: 0px;
+    content: '';
+    display: block;
+    height: 4px;
+    width: 254px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-image: url(${bottomHeading});
+  }
+`
+
+export const ListItemsWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+`
+export const BackedByLink = styled.a`
+  display: inline-block;
+  padding: 33px 52px;
 `
