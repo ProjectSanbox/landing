@@ -1,55 +1,55 @@
+import ngcVenture from 'assets/images/backedby/ngc-venture.png'
+import icetealab from 'assets/images/backedby/icetealab.png'
+import m6 from 'assets/images/backedby/m6.png'
+import exntc from 'assets/images/backedby/exntc.png'
+import zbscapital from 'assets/images/backedby/zbscapital.png'
+import everse from 'assets/images/backedby/everse.png'
+import basics from 'assets/images/backedby/basics.png'
+import newwave from 'assets/images/backedby/newwave.png'
+import spores from 'assets/images/backedby/spores.png'
+import x21 from 'assets/images/backedby/x21.png'
+import magnus from 'assets/images/backedby/magnus.png'
+import moonWhale from 'assets/images/backedby/moonWhale.png'
 import au21 from 'assets/images/backedby/au21.png'
-import basic_capital from 'assets/images/backedby/basic_capital.png'
-import dec_ventures from 'assets/images/backedby/dec-ventures.png'
+import vendetta from 'assets/images/backedby/vendetta.png'
+import kyros from 'assets/images/backedby/kyros.png'
+import luaVentures from 'assets/images/backedby/luaVentures.png'
+import onemax from 'assets/images/backedby/onemax.png'
+import goodGame from 'assets/images/backedby/goodGame.png'
+import moonboot from 'assets/images/backedby/moonboot.png'
+import vbc from 'assets/images/backedby/vbc.png'
+import dec from 'assets/images/backedby/dec.png'
+import tkv from 'assets/images/backedby/tkv.png'
 import dutch from 'assets/images/backedby/dutch.png'
 import emo from 'assets/images/backedby/emo.png'
-import everse from 'assets/images/backedby/everse.png'
-import exnetwork from 'assets/images/backedby/exnetwork.png'
-import gamefi from 'assets/images/backedby/gamefi.png'
-import goodgame from 'assets/images/backedby/goodgame.png'
-import hg from 'assets/images/backedby/hg.png'
-import icetea from 'assets/images/backedby/icetea.png'
 import kts from 'assets/images/backedby/kts.png'
-import kyros from 'assets/images/backedby/kyros.png'
-import luaventures from 'assets/images/backedby/luaventures.png'
-import m6 from 'assets/images/backedby/m6.png'
-import magnus from 'assets/images/backedby/magnus.png'
-import moonboots from 'assets/images/backedby/moonboots.png'
-import moonnhale from 'assets/images/backedby/moonnhale.png'
-import newave from 'assets/images/backedby/newave.png'
-import ngc from 'assets/images/backedby/ngc.png'
-import onemax from 'assets/images/backedby/onemax.png'
-import redkite from 'assets/images/backedby/redkite.png'
-import spores from 'assets/images/backedby/spores.png'
-import tk from 'assets/images/backedby/tk.png'
-import vendetaa from 'assets/images/backedby/vendetaa.png'
-import ventures from 'assets/images/backedby/ventures.png'
-import x21 from 'assets/images/backedby/x21.png'
-import zbs from 'assets/images/backedby/zbs.png'
+
 import certik from 'assets/images/audits/certik.png'
+
+import redKite from 'assets/images/partner/red-kite.png'
+import gate from 'assets/images/partner/gate.png'
+import x8guild from 'assets/images/partner/x8guild.png'
+import gamefi from 'assets/images/partner/gamefi.png'
+import babylon from 'assets/images/partner/babylon.png'
+import varstart from 'assets/images/partner/varstart.png'
+import mediakit from 'assets/images/partner/mediakit.png'
+
+import coin68 from 'assets/images/media/coin68.png'
+import cryptoRank from 'assets/images/media/cryptoRank.png'
+import benzinga from 'assets/images/media/benzinga.png'
+import investing from 'assets/images/media/investing.png'
+import yahooFinance from 'assets/images/media/yahooFinance.png'
+
 import { BackedData } from 'models/backed.model'
 
 export const DEFAULT_BACKED_BY: BackedData = {
   backed: [
     {
-      image: redkite,
+      image: ngcVenture,
       url: '/',
     },
     {
-      image: gamefi,
-      url: '/',
-    },
-
-    {
-      image: ngc,
-      url: '/',
-    },
-    {
-      image: icetea,
-      url: '//www.gamefi.com/',
-    },
-    {
-      image: exnetwork,
+      image: icetealab,
       url: '/',
     },
     {
@@ -57,7 +57,11 @@ export const DEFAULT_BACKED_BY: BackedData = {
       url: '/',
     },
     {
-      image: luaventures,
+      image: exntc,
+      url: '/',
+    },
+    {
+      image: zbscapital,
       url: '/',
     },
     {
@@ -65,20 +69,11 @@ export const DEFAULT_BACKED_BY: BackedData = {
       url: '/',
     },
     {
-      image: dec_ventures,
+      image: basics,
       url: '/',
     },
     {
-      image: basic_capital,
-      url: '/',
-    },
-
-    {
-      image: newave,
-      url: '/',
-    },
-    {
-      image: onemax,
+      image: newwave,
       url: '/',
     },
     {
@@ -90,7 +85,7 @@ export const DEFAULT_BACKED_BY: BackedData = {
       url: '/',
     },
     {
-      image: moonnhale,
+      image: moonWhale,
       url: '/',
     },
     {
@@ -102,7 +97,7 @@ export const DEFAULT_BACKED_BY: BackedData = {
       url: '/',
     },
     {
-      image: vendetaa,
+      image: vendetta,
       url: '/',
     },
     {
@@ -110,15 +105,31 @@ export const DEFAULT_BACKED_BY: BackedData = {
       url: '/',
     },
     {
-      image: goodgame,
+      image: luaVentures,
       url: '/',
     },
     {
-      image: moonboots,
+      image: onemax,
       url: '/',
     },
     {
-      image: ventures,
+      image: goodGame,
+      url: '/',
+    },
+    {
+      image: moonboot,
+      url: '/',
+    },
+    {
+      image: vbc,
+      url: '/',
+    },
+    {
+      image: dec,
+      url: '/',
+    },
+    {
+      image: tkv,
       url: '/',
     },
     {
@@ -130,25 +141,65 @@ export const DEFAULT_BACKED_BY: BackedData = {
       url: '/',
     },
     {
-      image: zbs,
-      url: '/',
-    },
-    {
       image: kts,
       url: '/',
     },
+  ],
+  partner: [
     {
-      image: tk,
+      image: redKite,
       url: '/',
     },
     {
-      image: hg,
+      image: gate,
+      url: '/',
+    },
+    {
+      image: x8guild,
+      url: '/',
+    },
+    {
+      image: gamefi,
+      url: '/',
+    },
+    {
+      image: babylon,
+      url: '/',
+    },
+    {
+      image: varstart,
+      url: '/',
+    },
+    {
+      image: mediakit,
       url: '/',
     },
   ],
   audit: [
     {
       image: certik,
+      url: 'https://www.certik.org/projects/planet-sandbox',
+    },
+  ],
+  media: [
+    {
+      image: coin68,
+      url: 'https://www.certik.org/projects/planet-sandbox',
+    },
+    {
+      image: cryptoRank,
+      url: 'https://www.certik.org/projects/planet-sandbox',
+    },
+    {
+      image: benzinga,
+      url: 'https://www.certik.org/projects/planet-sandbox',
+    },
+    {
+      image: investing,
+      url: 'https://www.certik.org/projects/planet-sandbox',
+    },
+    {
+      image: yahooFinance,
       url: 'https://www.certik.org/projects/planet-sandbox',
     },
   ],

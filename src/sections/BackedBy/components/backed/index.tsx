@@ -2,7 +2,8 @@ import Container from 'components/Container'
 import { DEFAULT_BACKED_BY } from 'constant/backedBy'
 import React, { FC, memo } from 'react'
 import styled from 'styled-components/macro'
-import { BackedByLink, ListItemsWrapper, SectionHeading } from '../../styled'
+import { ListItemsWrapper, SectionHeading } from '../../styled'
+import BackedByItem from '../BackedByItem'
 
 type BackedProps = {}
 
@@ -13,9 +14,7 @@ const BackedByContent: FC<BackedProps> = () => {
         <SectionHeading>Backed By</SectionHeading>
         <ListItemsWrapper data-aos="fade-down">
           {DEFAULT_BACKED_BY.backed.map((item, index) => (
-            <BackedByLink key={index} target="_blank" href={item.url} rel="noreferrer">
-              <img src={item.image} />
-            </BackedByLink>
+            <BackedByItem key={index} {...item} />
           ))}
         </ListItemsWrapper>
       </Container>

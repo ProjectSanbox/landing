@@ -2,18 +2,18 @@ import Container from 'components/Container'
 import { DEFAULT_BACKED_BY } from 'constant/backedBy'
 import React, { FC, memo } from 'react'
 import styled from 'styled-components/macro'
-import { BackedByItem } from '..'
 import { ListItemsWrapper, SectionHeading } from '../../styled'
+import BackedByItem from '../BackedByItem'
 
-type AuditsProps = {}
+type PartnerProps = {}
 
-const AuditsContent: FC<AuditsProps> = () => {
+const PartnerContent: FC<PartnerProps> = () => {
   return (
     <Wrapper>
       <Container>
-        <SectionHeading>Security Audits</SectionHeading>
+        <SectionHeading>Partner</SectionHeading>
         <ListItemsWrapper data-aos="fade-down">
-          {DEFAULT_BACKED_BY.audit.map((item, index) => (
+          {DEFAULT_BACKED_BY.partner.map((item, index) => (
             <BackedByItem key={index} {...item} />
           ))}
         </ListItemsWrapper>
@@ -22,7 +22,7 @@ const AuditsContent: FC<AuditsProps> = () => {
   )
 }
 
-export default memo(AuditsContent)
+export default memo(PartnerContent)
 
 const Wrapper = styled.div`
   text-align: center;

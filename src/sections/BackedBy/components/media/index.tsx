@@ -5,15 +5,15 @@ import styled from 'styled-components/macro'
 import { BackedByItem } from '..'
 import { ListItemsWrapper, SectionHeading } from '../../styled'
 
-type AuditsProps = {}
+type MediaProps = {}
 
-const AuditsContent: FC<AuditsProps> = () => {
+const MediasContent: FC<MediaProps> = () => {
   return (
     <Wrapper>
       <Container>
-        <SectionHeading>Security Audits</SectionHeading>
+        <SectionHeading>Media</SectionHeading>
         <ListItemsWrapper data-aos="fade-down">
-          {DEFAULT_BACKED_BY.audit.map((item, index) => (
+          {DEFAULT_BACKED_BY.media.map((item, index) => (
             <BackedByItem key={index} {...item} />
           ))}
         </ListItemsWrapper>
@@ -22,7 +22,7 @@ const AuditsContent: FC<AuditsProps> = () => {
   )
 }
 
-export default memo(AuditsContent)
+export default memo(MediasContent)
 
 const Wrapper = styled.div`
   text-align: center;

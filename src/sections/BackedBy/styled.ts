@@ -56,6 +56,7 @@ export const AdvisorHeading = styled(Heading)`
 export const SectionHeading = styled(Heading)`
   display: inline-block;
   padding-bottom: 24px;
+  margin-bottom: 48px;
   position: relative;
 
   :after {
@@ -78,7 +79,8 @@ export const ListItemsWrapper = styled.div`
   align-items: center;
   flex-wrap: wrap;
 `
-export const BackedByLink = styled.a`
+export const BackedByLink = styled.a<{ padding?: string | number }>`
   display: inline-block;
-  padding: 33px 52px;
+  padding: ${({ padding }) => (padding ? padding : '33px 52px')};
+  margin-bottom: 56px;
 `
