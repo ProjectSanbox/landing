@@ -23,6 +23,11 @@ export default memo(AdvisorItem)
 
 const ItemWrapper = styled.div`
   width: 100%;
+
+  ${({ theme }) => theme.mediaMinWidth.minFromSmall`
+   width: calc(100% /3);
+  `};
+
   ${({ theme }) => theme.mediaMinWidth.minFromMedium`
     width: 300px;
   `};

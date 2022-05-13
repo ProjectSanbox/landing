@@ -336,4 +336,10 @@ ul {
   font-weight: 700;
 }
 
+.slick-slider {
+  .slick-slide {
+    cursor: pointer;
+  }
+}
+
 `

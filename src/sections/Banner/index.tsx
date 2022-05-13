@@ -1,10 +1,11 @@
+import { headerBackground } from 'assets'
 import { SupportedBlockId } from 'constant/menus'
 import React from 'react'
 import { BannerContent, BannerWrapper, BigTitle, DownloadButton, DownloadButtonWrapper, SmallTitle } from './styled'
 
 const Banner = () => {
   return (
-    <BannerWrapper id={SupportedBlockId.HOME}>
+    <BannerWrapper height="100vh" background={headerBackground} id={SupportedBlockId.HOME}>
       <div className="overlay"></div>
       <BannerContent>
         <SmallTitle data-aos="fade-up" className="heading">

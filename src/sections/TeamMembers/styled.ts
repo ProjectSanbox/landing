@@ -1,19 +1,15 @@
-import { lineBackground, teamsBackground } from 'assets'
+import { lineBackground } from 'assets'
+import SectionWrapper from 'components/SectionWrapper'
 import styled from 'styled-components/macro'
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(SectionWrapper)`
   padding: 90px 0 55px 0;
-  background: url(${teamsBackground}) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   font-family: 'SFU Eurostile';
   font-weight: 400;
   font-size: 30px;
   line-height: 40px;
   text-align: center;
   color: ${({ theme }) => theme.white};
-  background-size: cover;
 
   .slick-dots {
     margin-bottom: 0;
