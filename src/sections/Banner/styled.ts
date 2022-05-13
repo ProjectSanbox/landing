@@ -1,15 +1,13 @@
-import { btnDownload, headerBackground } from 'assets'
+import { btnDownload } from 'assets'
+import SectionWrapper from 'components/SectionWrapper'
 import styled from 'styled-components/macro'
 
-export const BannerWrapper = styled.div`
-  width: 100%;
-  height: 100vh;
+export const BannerWrapper = styled(SectionWrapper)`
   position: relative;
-  background: url(${headerBackground}) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+  ${({ theme }) => theme.mediaWidth.upToMedium`
+   padding: 90px 0;
+`};
 
   .overlay {
     position: absolute;
@@ -19,10 +17,13 @@ export const BannerWrapper = styled.div`
 `
 
 export const BannerContent = styled.div`
-  position: absolute;
-  top: 42%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  ${({ theme }) => theme.mediaMinWidth.minFromMedium`
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  `};
+
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
@@ -42,13 +43,13 @@ const Title = styled.h1`
 `
 
 export const SmallTitle = styled(Title)`
-  font-size: 57.5474px;
+  font-size: 58px;
   line-height: 58px;
   color: ${({ theme }) => theme.common3};
 `
 
 export const BigTitle = styled(Title)`
-  font-size: 57.5474px;
+  font-size: 58px;
   line-height: 58px;
   color: ${({ theme }) => theme.brand};
 `
@@ -59,12 +60,12 @@ export const DownloadButtonWrapper = styled.div`
 
 export const DownloadButton = styled.a`
   display: inline-block;
-  width: 496px;
-  height: 156px;
-  font-family: 'Square721 BT';
+
+  font-family: 'Square721 BT Bold';
   font-weight: 700;
-  font-size: 55.4667px;
-  line-height: 156px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
   text-align: center;
   text-transform: uppercase;
   color: ${({ theme }) => theme.black1};
@@ -76,4 +77,12 @@ export const DownloadButton = styled.a`
   :hover {
     color: ${({ theme }) => theme.black1};
   }
+
+  ${({ theme }) => theme.mediaMinWidth.minFromMedium`
+    width: 496px;
+    height: 156px;
+    font-size: 55px;
+    line-height: 156px;
+    padding: 0;
+  `};
 `

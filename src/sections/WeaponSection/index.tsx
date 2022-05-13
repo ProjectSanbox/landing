@@ -1,14 +1,19 @@
+import { weaponSectionBackground } from 'assets'
 import React from 'react'
 import { selectWeapons } from 'state/global/global.slice'
 import { useAppSelector } from 'state/hooks'
 import { RenderItems } from './components'
-import { Heading, MarketButton, MarketButtonWrapper, SectionContent, SectionWrapper, SliderWrapper } from './styled'
+import { Heading, MarketButton, MarketButtonWrapper, SectionContent, SliderWrapper, Wrapper } from './styled'
 
 const WeaponSection = () => {
   const items = useAppSelector(selectWeapons)
 
   return (
-    <SectionWrapper className="flex justify-content-center align-items-center">
+    <Wrapper
+      height="1115px"
+      background={weaponSectionBackground}
+      className="flex justify-content-center align-items-center"
+    >
       <SectionContent>
         <Heading>Acquire your NFT gears and have fun</Heading>
         <SliderWrapper>{items.length > 0 && <RenderItems items={items} />}</SliderWrapper>
@@ -18,7 +23,7 @@ const WeaponSection = () => {
           </MarketButton>
         </MarketButtonWrapper>
       </SectionContent>
-    </SectionWrapper>
+    </Wrapper>
   )
 }
 

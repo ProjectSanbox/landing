@@ -1,16 +1,9 @@
-import { championSectionBackground } from 'assets'
-import styled from 'styled-components/macro'
+import SectionWrapper from 'components/SectionWrapper'
 import { Container as BootstrapContainer } from 'react-bootstrap'
+import styled from 'styled-components/macro'
 
-export const SectionWrapper = styled.div`
-  width: 100%;
-  height: 1209px;
+export const Wrapper = styled(SectionWrapper)`
   position: relative;
-  background: url(${championSectionBackground}) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   margin-top: -60px;
 
   .container {

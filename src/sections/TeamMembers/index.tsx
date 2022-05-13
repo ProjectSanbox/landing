@@ -1,3 +1,4 @@
+import { teamsBackground } from 'assets'
 import Container from 'components/Container'
 import { DEFAULT_MEMBERS } from 'constant/members'
 import { SupportedBlockId } from 'constant/menus'
@@ -17,7 +18,7 @@ const TeamMembers = () => {
     slidesToScroll: 4,
   }
   return (
-    <Wrapper id={SupportedBlockId.TEAM}>
+    <Wrapper background={teamsBackground} id={SupportedBlockId.TEAM}>
       <Container>
         <TopContent>
           <Title>Team Members</Title>

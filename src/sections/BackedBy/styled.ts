@@ -1,19 +1,12 @@
-import { backedByBackground } from 'assets'
-import styled from 'styled-components/macro'
+import bottomHeading from 'assets/images/background/backed-by-heading-footer.png'
 import leftHeading from 'assets/images/background/left-heading.png'
 import rightHeading from 'assets/images/background/right-heading.png'
-import bottomHeading from 'assets/images/background/backed-by-heading-footer.png'
+import SectionWrapper from 'components/SectionWrapper'
+import styled from 'styled-components/macro'
 
-export const Wrapper = styled.div`
-  width: 100%;
-  height: 3800px;
+export const Wrapper = styled(SectionWrapper)`
   padding-top: 95px;
   position: relative;
-  background: url(${backedByBackground}) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   top: -19px;
 `
 

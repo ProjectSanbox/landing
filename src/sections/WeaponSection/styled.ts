@@ -1,15 +1,9 @@
-import { btnDownload, weaponSectionBackground, weaponSliderBackground } from 'assets'
+import { btnDownload, weaponSliderBackground } from 'assets'
+import SectionWrapper from 'components/SectionWrapper'
 import styled from 'styled-components/macro'
 
-export const SectionWrapper = styled.div`
-  width: 100%;
-  height: 1115px;
+export const Wrapper = styled(SectionWrapper)`
   position: relative;
-  background: url(${weaponSectionBackground}) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   margin-top: -52px;
 `
 

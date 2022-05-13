@@ -1,18 +1,11 @@
-import { roadmapBackground } from 'assets'
-import styled from 'styled-components/macro'
 import leftHeading from 'assets/images/roadmap/left-heading.png'
 import rightHeading from 'assets/images/roadmap/right-heading.png'
+import SectionWrapper from 'components/SectionWrapper'
+import styled from 'styled-components/macro'
 
-export const RoadmapWrapper = styled.div`
-  width: 100%;
-  height: 1076px;
+export const RoadmapWrapper = styled(SectionWrapper)`
   padding: 166px 0 85px 0;
   position: relative;
-  background: url(${roadmapBackground}) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   text-align: center;
   margin-top: -52px;
 `
@@ -45,7 +38,10 @@ export const Heading = styled.h3`
 
     :after,
     :before {
-      content: '';
+      ${({ theme }) => theme.mediaMinWidth.minFromMedium`
+        content: '';
+    `};
+
       position: absolute;
       top: 25%;
       width: 461.31px;
