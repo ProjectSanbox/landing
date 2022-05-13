@@ -96,9 +96,9 @@
     "yup": "^0.32.9"
   },
   "scripts": {
-    "build": "yarn react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "integration-test": "start-server-and-test 'serve build -l 3000' http://localhost:3000 'cypress run'",
-    "postinstall": "yarn compile-contract-types",
+    "postinstall": "compile-contract-types",
     "start": "PORT=3006 react-scripts start",
     "dev": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
