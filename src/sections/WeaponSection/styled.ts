@@ -1,4 +1,4 @@
-import { weaponSectionBackground, weaponSliderBackground } from 'assets'
+import { btnDownload, weaponSectionBackground, weaponSliderBackground } from 'assets'
 import styled from 'styled-components/macro'
 
 export const SectionWrapper = styled.div`
@@ -32,7 +32,7 @@ export const Heading = styled.h3`
 `
 
 export const SliderWrapper = styled.div`
-  width: 1244px;
+  width: 100%;
   height: 550px;
   margin: 50px auto 0 auto;
   background: url(${weaponSliderBackground}) no-repeat center center;
@@ -40,4 +40,30 @@ export const SliderWrapper = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+`
+
+export const MarketButtonWrapper = styled.div`
+  margin-top: 42px;
+  text-align: center;
+`
+
+export const MarketButton = styled.a`
+  display: inline-block;
+  width: 313px;
+  height: 99px;
+  font-family: 'Square721 BT Bold';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 99px;
+  text-align: center;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.black1};
+  background: url(${btnDownload}) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  :hover {
+    color: ${({ theme }) => theme.black1};
+  }
 `

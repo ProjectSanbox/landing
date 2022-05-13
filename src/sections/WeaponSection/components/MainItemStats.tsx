@@ -15,6 +15,22 @@ const MainItemStats: FC<StatsProps> = ({ item }) => {
       <Title>
         <span>{item.name}</span>
       </Title>
+      <StatsTable>
+        <tbody>
+          <tr>
+            <td>Earn battle</td>
+            <td>{item.totalBattleCount}</td>
+          </tr>
+          <tr>
+            <td>Daily earn battle</td>
+            <td>{item.dailyBattle}</td>
+          </tr>
+          <tr>
+            <td>Win bonus</td>
+            <td>{item.bonusPerWin}</td>
+          </tr>
+        </tbody>
+      </StatsTable>
     </ContentWrapper>
   )
 }
@@ -51,5 +67,16 @@ const Title = styled.h5`
       right: 100%;
       background-image: url(${leftTitle});
     }
+  }
+`
+
+const StatsTable = styled.table`
+  tr td {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: ${({ theme }) => theme.white};
+    width: 165px;
   }
 `
