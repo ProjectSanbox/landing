@@ -69,10 +69,10 @@ export const DownloadButton = styled.a`
   text-transform: uppercase;
   color: ${({ theme }) => theme.black1};
   background: url(${btnDownload}) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   :hover {
     color: ${({ theme }) => theme.black1};
   }

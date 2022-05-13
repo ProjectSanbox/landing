@@ -5,8 +5,6 @@ import Slider from 'react-slick'
 import styled from 'styled-components/macro'
 import { MainItem } from '.'
 
-const LIMIT_ITEMS = 4
-
 type ItemsProps = {
   items: Item[]
 }
@@ -39,7 +37,7 @@ const RenderItems: FC<ItemsProps> = ({ items }) => {
     centerMode: true,
     focusOnSelect: true,
     // infinite: true,
-    // arrows: false,
+    arrows: false,
     centerPadding: '0px',
     // variableWidth: true,
   }
@@ -47,20 +45,16 @@ const RenderItems: FC<ItemsProps> = ({ items }) => {
     <Wrapper>
       <MainItemWrapper>
         <Slider {...mainImgOps} asNavFor={navSlider ? navSlider : undefined} ref={(slider) => setMainSlider(slider)}>
-          {items.map((item, index) => {
-            if (index < LIMIT_ITEMS) {
-              return <MainItem key={index} item={item} />
-            }
-          })}
+          {items.map((item, index) => (
+            <MainItem key={index} item={item} />
+          ))}
         </Slider>
       </MainItemWrapper>
       <SliderNavWrapper data-aos="fade-left">
         <Slider asNavFor={mainSlider ? mainSlider : undefined} ref={(slider) => setNavSlider(slider)} {...navImgOps}>
-          {items.map((item, index) => {
-            if (index < LIMIT_ITEMS) {
-              return <img key={index} src={item.image} />
-            }
-          })}
+          {items.map((item, index) => (
+            <img key={index} src={item.image} />
+          ))}
         </Slider>
       </SliderNavWrapper>
     </Wrapper>
@@ -87,7 +81,8 @@ const MainItemWrapper = styled.div`
 const SliderNavWrapper = styled.div`
   position: absolute;
   bottom: 65px;
-  right: 0;
+  right: 80px;
+  width: 600px;
   .slick-slider {
     overflow: visible;
     .slick-track {
@@ -97,12 +92,12 @@ const SliderNavWrapper = styled.div`
       .slick-slide {
         width: 152px !important;
         height: 100px;
-        margin: auto 15px;
+        margin: auto 13px;
         background: url(${weaponNavBackground}) no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
         display: flex;
         justify-content: center;
         align-items: center;
