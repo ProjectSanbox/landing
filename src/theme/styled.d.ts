@@ -23,6 +23,7 @@ export interface Colors {
   // Black
   black1: Color
   black2: Color
+  black6: Color
 
   // Blue
   blue1: Color

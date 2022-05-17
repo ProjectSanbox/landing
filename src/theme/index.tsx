@@ -75,6 +75,7 @@ export function colors(): Colors {
     // Black
     black1: '#131313',
     black2: '#DEDEDE',
+    black6: '#343333',
 
     // Blue
     blue1: '#3DB2FF',
