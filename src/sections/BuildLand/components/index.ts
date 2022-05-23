@@ -1,4 +1,4 @@
-import TopLandsSlider from './TopLandsSlider'
-import BottomLandsSlider from './BottomLandsSlider'
+import RenderItems from './RenderItems'
+import SliderItem from './SliderItem'
 
-export { TopLandsSlider, BottomLandsSlider }
+export { RenderItems, SliderItem }

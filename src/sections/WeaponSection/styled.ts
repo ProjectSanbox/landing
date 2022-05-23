@@ -2,7 +2,7 @@ import { btnDownload, weaponSliderBackground } from 'assets'
 import SectionWrapper from 'components/SectionWrapper'
 import styled from 'styled-components/macro'
 
-export const Wrapper = styled(SectionWrapper)`
+export const WeaponSliderWrapper = styled(SectionWrapper)`
   position: relative;
   margin-top: -52px;
 `

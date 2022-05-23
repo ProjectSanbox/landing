@@ -1,85 +1,20 @@
 import { Land } from 'models/land.model'
 
-import landA1 from 'assets/images/land/Landpick-A1.png'
-import landA2 from 'assets/images/land/Landpick-A2.png'
-import landB1 from 'assets/images/land/Landpick-B1.png'
-import landB2 from 'assets/images/land/Landpick-B2.png'
-import landB3 from 'assets/images/land/Landpick-B3.png'
-import landB4 from 'assets/images/land/Landpick-B4.png'
-import landC1 from 'assets/images/land/Landpick-C1.png'
-import landC2 from 'assets/images/land/Landpick-C2.png'
-import landC3 from 'assets/images/land/Landpick-C3.png'
-import landC4 from 'assets/images/land/Landpick-C4.png'
-import landC5 from 'assets/images/land/Landpick-C5.png'
-import landC6 from 'assets/images/land/Landpick-C6.png'
-import landD1 from 'assets/images/land/Landpick-D1.png'
-import landD2 from 'assets/images/land/Landpick-D2.png'
-import landD3 from 'assets/images/land/Landpick-D3.png'
-import landD4 from 'assets/images/land/Landpick-D4.png'
-import landD5 from 'assets/images/land/Landpick-D5.png'
-import landD6 from 'assets/images/land/Landpick-D6.png'
-import landD7 from 'assets/images/land/Landpick-D7.png'
-import landE1 from 'assets/images/land/Landpick-E1.png'
-import landE2 from 'assets/images/land/Landpick-E2.png'
-import landE3 from 'assets/images/land/Landpick-E3.png'
-import landE4 from 'assets/images/land/Landpick-E4.png'
-import landE5 from 'assets/images/land/Landpick-E5.png'
-import landE6 from 'assets/images/land/Landpick-E6.png'
-import landE7 from 'assets/images/land/Landpick-E7.png'
-import landF1 from 'assets/images/land/Landpick-F1.png'
-import landF2 from 'assets/images/land/Landpick-F2.png'
-import landF3 from 'assets/images/land/Landpick-F3.png'
-import landF4 from 'assets/images/land/Landpick-F4.png'
-import landF5 from 'assets/images/land/Landpick-F5.png'
-import landF6 from 'assets/images/land/Landpick-F6.png'
-import landG1 from 'assets/images/land/Landpick-G1.png'
-import landG2 from 'assets/images/land/Landpick-G2.png'
-import landG3 from 'assets/images/land/Landpick-G3.png'
-import landG4 from 'assets/images/land/Landpick-G4.png'
-import landG5 from 'assets/images/land/Landpick-G5.png'
-import landH1 from 'assets/images/land/Landpick-H1.png'
-import landH2 from 'assets/images/land/Landpick-H2.png'
-import landH3 from 'assets/images/land/Landpick-H3.png'
+import arcticLand from 'assets/images/land/Arctic_Land.png'
+import arcticLandBg from 'assets/images/land/Arctic_Land_bg.png'
+import desertLand from 'assets/images/land/Desert_Land.png'
+import desertLandBg from 'assets/images/land/Desert_Land_bg.png'
+import grassLand from 'assets/images/land/Grass_Land.png'
+import grassLandBg from 'assets/images/land/Grass_Land_bg.png'
+import mountainLand from 'assets/images/land/Mountain_Land.png'
+import mountainLandBg from 'assets/images/land/Mountain_Land_bg.png'
+import toxicWasteLand from 'assets/images/land/Toxic_Waste_Land.png'
+import toxicWasteLandBg from 'assets/images/land/Toxic_Waste_Land_bg.png'
 
 export const DEFAULT_LANDS: Land[] = [
-  { image: landA1 },
-  { image: landA2 },
-  { image: landB1 },
-  { image: landB2 },
-  { image: landB3 },
-  { image: landB4 },
-  { image: landC1 },
-  { image: landC2 },
-  { image: landC3 },
-  { image: landC4 },
-  { image: landC5 },
-  { image: landC6 },
-  { image: landD1 },
-  { image: landD2 },
-  { image: landD3 },
-  { image: landD4 },
-  { image: landD5 },
-  { image: landD6 },
-  { image: landD7 },
-  { image: landE1 },
-  { image: landE2 },
-  { image: landE3 },
-  { image: landE4 },
-  { image: landE5 },
-  { image: landE6 },
-  { image: landE7 },
-  { image: landF1 },
-  { image: landF2 },
-  { image: landF3 },
-  { image: landF4 },
-  { image: landF5 },
-  { image: landF6 },
-  { image: landG1 },
-  { image: landG2 },
-  { image: landG3 },
-  { image: landG4 },
-  { image: landG5 },
-  { image: landH1 },
-  { image: landH2 },
-  { image: landH3 },
+  { image: arcticLand, bg: arcticLandBg },
+  { image: desertLand, bg: desertLandBg },
+  { image: grassLand, bg: grassLandBg },
+  { image: mountainLand, bg: mountainLandBg },
+  { image: toxicWasteLand, bg: toxicWasteLandBg },
 ]

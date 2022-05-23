@@ -3,13 +3,20 @@ import React from 'react'
 import { selectWeapons } from 'state/global/global.slice'
 import { useAppSelector } from 'state/hooks'
 import { RenderItems } from './components'
-import { Heading, MarketButton, MarketButtonWrapper, SectionContent, SliderWrapper, Wrapper } from './styled'
+import {
+  Heading,
+  MarketButton,
+  MarketButtonWrapper,
+  SectionContent,
+  SliderWrapper,
+  WeaponSliderWrapper,
+} from './styled'
 
 const WeaponSection = () => {
   const items = useAppSelector(selectWeapons)
 
   return (
-    <Wrapper
+    <WeaponSliderWrapper
       height="1115px"
       background={weaponSectionBackground}
       className="flex justify-content-center align-items-center"
@@ -23,7 +30,7 @@ const WeaponSection = () => {
           </MarketButton>
         </MarketButtonWrapper>
       </SectionContent>
-    </Wrapper>
+    </WeaponSliderWrapper>
   )
 }
 
