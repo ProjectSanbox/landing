@@ -82,6 +82,7 @@ export function colors(): Colors {
 
     // Yellow
     yellow2: '#E08F1B',
+    yellow7: '#FF9900',
 
     // Rarity
     common3: '#7D7D7D',

@@ -12,9 +12,9 @@ import toxicWasteLand from 'assets/images/land/Toxic_Waste_Land.png'
 import toxicWasteLandBg from 'assets/images/land/Toxic_Waste_Land_bg.png'
 
 export const DEFAULT_LANDS: Land[] = [
-  { image: arcticLand, bg: arcticLandBg },
-  { image: desertLand, bg: desertLandBg },
-  { image: grassLand, bg: grassLandBg },
-  { image: mountainLand, bg: mountainLandBg },
-  { image: toxicWasteLand, bg: toxicWasteLandBg },
+  { image: arcticLand, bg: arcticLandBg, name: 'Land Name' },
+  { image: desertLand, bg: desertLandBg, name: 'Land Name' },
+  { image: grassLand, bg: grassLandBg, name: 'Land Name' },
+  { image: mountainLand, bg: mountainLandBg, name: 'Land Name' },
+  { image: toxicWasteLand, bg: toxicWasteLandBg, name: 'Land Name' },
 ]

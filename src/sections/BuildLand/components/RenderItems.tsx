@@ -1,5 +1,5 @@
 import { Land } from 'models/land.model'
-import React, { FC, memo } from 'react'
+import React, { FC, memo, useState } from 'react'
 import Slider from 'react-slick'
 import { LandSliderWrapper } from '../styled'
 import SliderItem from './SliderItem'
@@ -9,6 +9,7 @@ type ItemsProps = {
 }
 
 const RenderItems: FC<ItemsProps> = ({ lands }) => {
+  const [activeKey, setActiveKey] = useState<number | null>(null)
   const sliderOptions = {
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -19,6 +20,13 @@ const RenderItems: FC<ItemsProps> = ({ lands }) => {
     arrows: false,
     centerPadding: '0px',
     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
       {
         breakpoint: 768,
         settings: {
@@ -33,7 +41,7 @@ const RenderItems: FC<ItemsProps> = ({ lands }) => {
     <LandSliderWrapper>
       <Slider {...sliderOptions}>
         {lands.map((item, index) => (
-          <SliderItem item={item} key={index} />
+          <SliderItem item={item} index={index} activeKey={activeKey} setActiveKey={setActiveKey} key={index} />
         ))}
       </Slider>
     </LandSliderWrapper>

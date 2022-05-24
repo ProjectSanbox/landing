@@ -1,38 +1,86 @@
 import { Land } from 'models/land.model'
 import React, { FC, memo } from 'react'
 import styled from 'styled-components/macro'
-import landBg from 'assets/images/slider/land_normal.png'
+import landActiveBg from 'assets/images/slider/land-active.png'
 
 type ItemProps = {
   item: Land
+  index: number
+  activeKey: number | null
+  setActiveKey: (value: number | null) => void
 }
 
-const SliderItem: FC<ItemProps> = ({ item }) => {
+const SliderItem: FC<ItemProps> = ({ item, index, activeKey, setActiveKey }) => {
   return (
-    <ItemWrapper overlay={item.bg}>
-      <div className="overlay"></div>
+    <ItemWrapper
+      className={`flex align-items-center ${activeKey === index && 'active'}`}
+      onClick={() => setActiveKey(activeKey === index ? null : index)}
+    >
+      <div className="item-overlay">
+        <img src={item.bg} />
+      </div>
+      <div className="item-image">
+        <img src={item.image} />
+      </div>
+      <div className="item-name">{item.name}</div>
     </ItemWrapper>
   )
 }
 
 export default memo(SliderItem)
 
-const ItemWrapper = styled.div<{ overlay: string }>`
-  width: 265px;
-  height: 590px;
-  background: url(${landBg}) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+const ItemWrapper = styled.div`
+  width: 270px;
+  height: 601px;
   position: relative;
+  overflow: hidden;
 
-  .overlay {
+  .item-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url(${({ overlay }) => overlay}) no-repeat center center;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: -1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .item-image {
+    z-index: -1;
+    img {
+      transition: transform 0.3s ease;
+      transform: scale(2) translate(40px, 55px);
+    }
+  }
+
+  .item-name {
+    font-family: 'Normandia';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    color: ${({ theme }) => theme.yellow7};
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 45px;
+    right: 0px;
+    left: 0px;
+    display: none;
+  }
+
+  :hover,
+  &.active {
+    background-image: url(${landActiveBg}) !important;
+    .item-image {
+      img {
+        transition: transform 0.3s ease;
+        transform: scale(1.5) translate(0, -25px);
+      }
+    }
+    .item-name {
+      display: block;
+      transition: all 750ms ease 0s;
+    }
   }
 `

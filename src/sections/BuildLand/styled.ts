@@ -1,11 +1,14 @@
 import SectionWrapper from 'components/SectionWrapper'
 import styled from 'styled-components/macro'
-import landActiveBg from 'assets/images/slider/land_active.png'
+import landBg from 'assets/images/slider/land.png'
 
 export const LandWrapper = styled(SectionWrapper)`
   position: relative;
   margin-top: -52px;
   overflow: hidden;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
 `
 
 export const SectionContent = styled.div`
@@ -29,10 +32,23 @@ export const Heading = styled.h3`
 `
 
 export const LandSliderWrapper = styled.div`
+  margin-top: 58px;
+  .slick-track {
+    display: flex;
+    justify-content: space-between;
+  }
   .slick-slide {
+    width: 270px !important;
+    height: 601px;
+    & > div > div {
+      background: url(${landBg}) center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
     &.slick-current > div > div,
     &:hover > div > div {
-      background-image: url(${landActiveBg});
     }
   }
 `

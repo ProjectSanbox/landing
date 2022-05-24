@@ -30,6 +30,7 @@ export interface Colors {
 
   // Yellow
   yellow2: Color
+  yellow7: Color
 
   // Rarity
   common3: Color
