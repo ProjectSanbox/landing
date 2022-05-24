@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro'
 
-export const Wrapper = styled.div`
+export const HeaderWrapper = styled.div`
   width: 100%;
   justify-content: space-between;
   position: fixed;

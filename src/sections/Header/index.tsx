@@ -3,7 +3,7 @@ import { smallLogo } from 'assets'
 import Container from 'components/Container'
 import React, { FC } from 'react'
 import { HeaderNav, BuyNftButton, PsbExchangePrice } from './components'
-import { HeaderContent, HeaderElement, HeaderFrame, Logo, Wrapper } from './styled'
+import { HeaderContent, HeaderElement, HeaderFrame, Logo, HeaderWrapper } from './styled'
 import { isMobile } from 'react-device-detect'
 import { useAppSelector } from 'state/hooks'
 import { selectPriceExchange } from 'state/global/global.slice'
@@ -15,7 +15,7 @@ const Header: FC<HeaderProps> = () => {
   const scrollY = useScrollPosition()
   const priceExchange = useAppSelector(selectPriceExchange)
   return (
-    <Wrapper>
+    <HeaderWrapper>
       <HeaderFrame showBackground={scrollY > 95}>
         <Container>
           <HeaderContent>
@@ -36,7 +36,7 @@ const Header: FC<HeaderProps> = () => {
           </HeaderContent>
         </Container>
       </HeaderFrame>
-    </Wrapper>
+    </HeaderWrapper>
   )
 }
 

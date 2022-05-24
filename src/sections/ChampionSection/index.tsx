@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import { selectChampions } from 'state/global/global.slice'
 import { useAppSelector } from 'state/hooks'
 import { RenderItems } from './components'
-import { Wrapper, Container, Heading, SectionHeading, SubHeading } from './styled'
+import { ChampSliderWrapper, Container, Heading, SectionHeading, SubHeading } from './styled'
 
 import { championSectionBackground } from 'assets'
 
@@ -12,7 +12,7 @@ const ChampionSection: FC<ChampionProps> = () => {
   const items = useAppSelector(selectChampions)
 
   return (
-    <Wrapper height="1210px" background={championSectionBackground}>
+    <ChampSliderWrapper height="1210px" background={championSectionBackground}>
       <SectionHeading>
         <Heading>planetsandbox</Heading>
         <SubHeading>
@@ -21,7 +21,7 @@ const ChampionSection: FC<ChampionProps> = () => {
         </SubHeading>
       </SectionHeading>
       <Container>{items.length > 0 && <RenderItems items={items} />}</Container>
-    </Wrapper>
+    </ChampSliderWrapper>
   )
 }
 

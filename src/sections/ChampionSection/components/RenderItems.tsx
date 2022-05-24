@@ -3,7 +3,8 @@ import { Item } from 'models/item.model'
 import React, { FC, memo, useState } from 'react'
 import Slider from 'react-slick'
 import styled from 'styled-components/macro'
-import { ItemActive, ItemNavImage } from '.'
+import { ItemMainSlider } from './main-slider'
+import ItemNavImage from './nav-slider/ItemNavImage'
 
 type ItemsProps = {
   items: Item[]
@@ -47,7 +48,7 @@ const RenderItems: FC<ItemsProps> = ({ items }) => {
         <Slider {...mainImgOps} asNavFor={navSlider ? navSlider : undefined} ref={(slider) => setMainSlider(slider)}>
           {items.map((item, index) => {
             if (index < 5) {
-              return <ItemActive key={index} item={item} />
+              return <ItemMainSlider key={index} item={item} />
             }
           })}
         </Slider>

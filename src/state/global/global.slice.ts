@@ -1,8 +1,10 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { ListItemType } from 'constant/item'
+import { DEFAULT_LANDS } from 'constant/lands'
 import { DEFAULT_MENUS } from 'constant/menus'
 import { PriceExchangeResponseType, SupportedPayment, SupportedPaymentAddress } from 'constant/payments'
 import { Item } from 'models/item.model'
+import { Land } from 'models/land.model'
 import { MenuItem } from 'models/menu.model'
 import { itemsApi } from 'services/items.service'
 import { tokenPriceApi } from 'services/tokenPrice.service'
@@ -23,6 +25,7 @@ const DEFAULT_PRICE_EXCHANGE = {
 interface GlobalStateType {
   user: string
   items: Item[]
+  lands: Land[]
   footer_menus: MenuItem[]
   price_exchange: PriceExchangeType
 }
@@ -30,6 +33,7 @@ interface GlobalStateType {
 const initialState: GlobalStateType = {
   user: '',
   items: [],
+  lands: DEFAULT_LANDS,
   footer_menus: DEFAULT_MENUS,
   price_exchange: DEFAULT_PRICE_EXCHANGE,
 }
@@ -67,6 +71,7 @@ export const selectChampions = (state: AppState): Item[] =>
   state.global.items.filter((item) => item.type === ListItemType.CHAMPION)
 export const selectWeapons = (state: AppState): Item[] =>
   state.global.items.filter((item) => item.type === ListItemType.WEAPON)
+export const selectLands = (state: AppState): Land[] => state.global.lands
 
 export const selectFooterMenus = (state: AppState): MenuItem[] => state.global.footer_menus
 

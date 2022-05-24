@@ -1,18 +1,18 @@
 import { Item } from 'models/item.model'
 import React, { FC } from 'react'
 import styled from 'styled-components/macro'
-import ItemThumbImage from './ItemThumbImage'
+
+import { ItemInfoTab } from '.'
 
 type ItemImageProps = {
   item: Item
 }
 
-const ItemActive: FC<ItemImageProps> = ({ item }) => {
-  console.log(item)
-
+const ItemMainSlider: FC<ItemImageProps> = ({ item }) => {
   return (
     <Wrapper className="flex justify-content-between">
-      <MainImage>
+      <ItemInfoTab item={item} />
+      {/* <MainImage>
         <img src={item.fullSize || item.image} data-aos="fade-right" />
       </MainImage>
       <MainItemInfo>
@@ -20,12 +20,12 @@ const ItemActive: FC<ItemImageProps> = ({ item }) => {
           <ItemThumbImage item={item} />
           <ItemName>{item.name}</ItemName>
         </MainItemTopInfo>
-      </MainItemInfo>
+      </MainItemInfo> */}
     </Wrapper>
   )
 }
 
-export default ItemActive
+export default ItemMainSlider
 
 const Wrapper = styled.div`
   position: relative;

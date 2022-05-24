@@ -2,7 +2,7 @@ import SectionWrapper from 'components/SectionWrapper'
 import { Container as BootstrapContainer } from 'react-bootstrap'
 import styled from 'styled-components/macro'
 
-export const Wrapper = styled(SectionWrapper)`
+export const ChampSliderWrapper = styled(SectionWrapper)`
   position: relative;
   margin-top: -60px;
 
