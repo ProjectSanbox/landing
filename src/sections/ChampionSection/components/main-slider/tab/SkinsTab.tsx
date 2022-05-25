@@ -1,7 +1,8 @@
-import { Item } from 'models/item.model'
 import React, { FC, memo } from 'react'
 
-const SkinsTab: FC<Item> = (item) => {
+type TabProps = {}
+
+const SkinsTab: FC<TabProps> = () => {
   return <>Coming Soon</>
 }
 

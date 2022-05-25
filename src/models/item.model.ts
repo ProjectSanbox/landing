@@ -11,7 +11,8 @@ export interface Item {
   economy: string
   dailyEarnBattle: number | null
   earnBattle: string
-  stat?: Champion | Weapon
+  champStats?: Champion
+  weaponStats?: Weapon
 }
 
 export interface Champion {
@@ -28,7 +29,7 @@ export interface Champion {
 }
 
 export interface Weapon {
-  id: string
+  Id: string
   Category: number
   Tags: string
   Rarity: number

@@ -8,7 +8,7 @@ type ItemProps = {
   index: number
 }
 
-const MemberItem: FC<ItemProps> = ({ item, index }) => {
+const MemberItem: FC<ItemProps> = ({ item }) => {
   return (
     <ItemWrapper>
       <ItemImage>

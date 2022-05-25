@@ -31,10 +31,10 @@ const ItemInfoTab: FC<ItemTabProps> = ({ item }) => {
             <RarityTab {...item} />
           </Tab>
           <Tab eventKey={TabKeys.SKILL} title={TabLabels.SKILL}>
-            <SkillsTab {...item} />
+            <SkillsTab />
           </Tab>
           <Tab eventKey={TabKeys.SKIN} title={TabLabels.SKIN}>
-            <SkinsTab {...item} />
+            <SkinsTab />
           </Tab>
         </Tabs>
       </TabsWrapper>
