@@ -4,11 +4,12 @@ import landBg from 'assets/images/slider/land.png'
 
 export const LandWrapper = styled(SectionWrapper)`
   position: relative;
-  margin-top: -55px;
+  margin-top: -54px;
   overflow: hidden;
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
+  z-index: 2;
 `
 
 export const SectionContent = styled.div`
