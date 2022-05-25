@@ -44,163 +44,181 @@ import { BackedData } from 'models/backed.model'
 
 export const DEFAULT_BACKED_BY: BackedData = {
   backed: [
-    {
-      image: ngcVenture,
-      url: '/',
-    },
-    {
-      image: icetealab,
-      url: '/',
-    },
-    {
-      image: m6,
-      url: '/',
-    },
-    {
-      image: exntc,
-      url: '/',
-    },
-    {
-      image: zbscapital,
-      url: '/',
-    },
-    {
-      image: everse,
-      url: '/',
-    },
-    {
-      image: basics,
-      url: '/',
-    },
-    {
-      image: newwave,
-      url: '/',
-    },
-    {
-      image: x21,
-      url: '/',
-    },
-    {
-      image: magnus,
-      url: '/',
-    },
-    {
-      image: moonWhale,
-      url: '/',
-    },
-    {
-      image: spores,
-      url: '/',
-    },
-    {
-      image: au21,
-      url: '/',
-    },
-    {
-      image: vendetta,
-      url: '/',
-    },
-    {
-      image: kyros,
-      url: '/',
-    },
-    {
-      image: luaVentures,
-      url: '/',
-    },
-    {
-      image: onemax,
-      url: '/',
-    },
-    {
-      image: goodGameGuild,
-      url: '/',
-    },
-    {
-      image: moonboot,
-      url: '/',
-    },
-    {
-      image: vbc,
-      url: '/',
-    },
-    {
-      image: dec,
-      url: '/',
-    },
-    {
-      image: tkv,
-      url: '/',
-    },
-    {
-      image: dutch,
-      url: '/',
-    },
-    {
-      image: emo,
-      url: '/',
-    },
-    {
-      image: kts,
-      url: '/',
-    },
+    [
+      {
+        image: ngcVenture,
+        url: '/',
+      },
+      {
+        image: icetealab,
+        url: '/',
+      },
+      {
+        image: m6,
+        url: '/',
+      },
+      {
+        image: exntc,
+        url: '/',
+      },
+    ],
+    [
+      {
+        image: zbscapital,
+        url: '/',
+      },
+      {
+        image: everse,
+        url: '/',
+      },
+      {
+        image: basics,
+        url: '/',
+      },
+      {
+        image: newwave,
+        url: '/',
+      },
+      {
+        image: x21,
+        url: '/',
+      },
+      {
+        image: magnus,
+        url: '/',
+      },
+    ],
+    [
+      {
+        image: moonWhale,
+        url: '/',
+      },
+      {
+        image: spores,
+        url: '/',
+      },
+      {
+        image: au21,
+        url: '/',
+      },
+      {
+        image: vendetta,
+        url: '/',
+      },
+      {
+        image: kyros,
+        url: '/',
+      },
+      {
+        image: luaVentures,
+        url: '/',
+      },
+    ],
+    [
+      {
+        image: onemax,
+        url: '/',
+      },
+      {
+        image: goodGameGuild,
+        url: '/',
+      },
+      {
+        image: moonboot,
+        url: '/',
+      },
+      {
+        image: vbc,
+        url: '/',
+      },
+      {
+        image: dec,
+        url: '/',
+      },
+    ],
+    [
+      {
+        image: tkv,
+        url: '/',
+      },
+      {
+        image: dutch,
+        url: '/',
+      },
+      {
+        image: emo,
+        url: '/',
+      },
+      {
+        image: kts,
+        url: '/',
+      },
+    ],
   ],
   partner: [
-    {
-      image: redKite,
-      url: '/',
-    },
-    {
-      image: gate,
-      url: '/',
-    },
-    {
-      image: x8guild,
-      url: '/',
-    },
-    {
-      image: gamefi,
-      url: '/',
-    },
-    {
-      image: babylon,
-      url: '/',
-    },
-    {
-      image: varstart,
-      url: '/',
-    },
-    {
-      image: mediakit,
-      url: '/',
-    },
+    [
+      {
+        image: redKite,
+        url: '/',
+      },
+      {
+        image: gate,
+        url: '/',
+      },
+      {
+        image: x8guild,
+        url: '/',
+      },
+    ],
+    [
+      {
+        image: gamefi,
+        url: '/',
+      },
+      {
+        image: babylon,
+        url: '/',
+      },
+      {
+        image: varstart,
+        url: '/',
+      },
+      {
+        image: mediakit,
+        url: '/',
+      },
+    ],
   ],
   audit: [
-    {
-      image: certik,
-      url: 'https://www.certik.org/projects/planet-sandbox',
-    },
+    [
+      {
+        image: certik,
+        url: 'https://www.certik.org/projects/planet-sandbox',
+      },
+    ],
   ],
   media: [
-    {
-      image: coin68,
-      url: 'https://www.certik.org/projects/planet-sandbox',
-    },
-    {
-      image: cryptoRank,
-      url: 'https://www.certik.org/projects/planet-sandbox',
-    },
-    {
-      image: benzinga,
-      url: 'https://www.certik.org/projects/planet-sandbox',
-    },
-    {
-      image: investing,
-      url: 'https://www.certik.org/projects/planet-sandbox',
-    },
-    {
-      image: yahooFinance,
-      url: 'https://www.certik.org/projects/planet-sandbox',
-    },
+    [
+      {
+        image: coin68,
+        url: 'https://www.certik.org/projects/planet-sandbox',
+      },
+      {
+        image: cryptoRank,
+        url: 'https://www.certik.org/projects/planet-sandbox',
+      },
+      {
+        image: benzinga,
+        url: 'https://www.certik.org/projects/planet-sandbox',
+      },
+      {
+        image: investing,
+        url: 'https://www.certik.org/projects/planet-sandbox',
+      },
+      {
+        image: yahooFinance,
+        url: 'https://www.certik.org/projects/planet-sandbox',
+      },
+    ],
   ],
 }

@@ -4,7 +4,7 @@ import { DEFAULT_LANDS } from 'constant/lands'
 import { DEFAULT_MENUS } from 'constant/menus'
 import { PriceExchangeResponseType, SupportedPayment, SupportedPaymentAddress } from 'constant/payments'
 import { DEFAULT_SOCIALS } from 'constant/socials'
-import { Item } from 'models/item.model'
+import { Champion, Item, Weapon } from 'models/item.model'
 import { Land } from 'models/land.model'
 import { MenuItem } from 'models/menu.model'
 import { Social } from 'models/social.model'
@@ -27,6 +27,8 @@ const DEFAULT_PRICE_EXCHANGE = {
 interface GlobalStateType {
   user: string
   items: Item[]
+  champions: Champion[]
+  weapons: Weapon[]
   lands: Land[]
   socials: Social[]
   footer_menus: MenuItem[]
@@ -36,6 +38,8 @@ interface GlobalStateType {
 const initialState: GlobalStateType = {
   user: '',
   items: [],
+  champions: [],
+  weapons: [],
   lands: DEFAULT_LANDS,
   socials: DEFAULT_SOCIALS,
   footer_menus: DEFAULT_MENUS,
@@ -49,6 +53,15 @@ export const globalSlice = createSlice({
   extraReducers: (builder) => {
     builder.addMatcher(itemsApi.endpoints.getListItems.matchFulfilled, (state, action: PayloadAction<Item[]>) => {
       state.items = action.payload
+    })
+    builder.addMatcher(
+      itemsApi.endpoints.getListChampions.matchFulfilled,
+      (state, action: PayloadAction<Champion[]>) => {
+        state.champions = action.payload
+      }
+    )
+    builder.addMatcher(itemsApi.endpoints.getListWeapons.matchFulfilled, (state, action: PayloadAction<Weapon[]>) => {
+      state.weapons = action.payload
     })
     builder.addMatcher(
       tokenPriceApi.endpoints.getTokenPrice.matchFulfilled,
@@ -72,9 +85,23 @@ export const {} = globalSlice.actions
 
 export const selectPriceExchange = (state: AppState): PriceExchangeType => state.global.price_exchange
 export const selectChampions = (state: AppState): Item[] =>
-  state.global.items.filter((item) => item.type === ListItemType.CHAMPION)
+  state.global.items
+    .filter((item) => item.type === ListItemType.CHAMPION)
+    .map((item) => {
+      const stat = state.global.champions.filter((champ) => champ.Id === item.itemId)
+      if (stat.length > 0) item.stat = stat[0]
+      return item
+    })
+
 export const selectWeapons = (state: AppState): Item[] =>
-  state.global.items.filter((item) => item.type === ListItemType.WEAPON)
+  state.global.items
+    .filter((item) => item.type === ListItemType.WEAPON)
+    .map((item) => {
+      const stat = state.global.weapons.filter((weapon) => weapon.id === item.itemId)
+      if (stat.length > 0) item.stat = stat[0]
+      return item
+    })
+
 export const selectLands = (state: AppState): Land[] => state.global.lands
 export const selectSocials = (state: AppState): Social[] => state.global.socials
 

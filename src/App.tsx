@@ -6,7 +6,7 @@ import ChampionSection from 'sections/ChampionSection'
 import Footer from 'sections/Footer'
 import Header from 'sections/Header'
 import TeamMembers from 'sections/TeamMembers'
-import { useGetListItemsQuery } from 'services/items.service'
+import { useGetListChampionsQuery, useGetListItemsQuery, useGetListWeaponsQuery } from 'services/items.service'
 import { useGetTokenPriceQuery } from 'services/tokenPrice.service'
 import AOS from 'aos'
 import BackedBy from 'sections/BackedBy'
@@ -16,6 +16,8 @@ import BuildLand from 'sections/BuildLand'
 
 export default function App() {
   useGetListItemsQuery()
+  useGetListChampionsQuery()
+  useGetListWeaponsQuery()
   useGetTokenPriceQuery()
   useEffect(() => {
     AOS.init({

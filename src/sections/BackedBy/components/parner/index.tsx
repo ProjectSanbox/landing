@@ -13,8 +13,12 @@ const PartnerContent: FC<PartnerProps> = () => {
       <Container>
         <SectionHeading>Partner</SectionHeading>
         <ListItemsWrapper data-aos="fade-down">
-          {DEFAULT_BACKED_BY.partner.map((item, index) => (
-            <BackedByItem key={index} item={item} />
+          {DEFAULT_BACKED_BY.partner.map((items, index) => (
+            <div key={index}>
+              {items.map((item, idx) => (
+                <BackedByItem key={idx} item={item} />
+              ))}
+            </div>
           ))}
         </ListItemsWrapper>
       </Container>
