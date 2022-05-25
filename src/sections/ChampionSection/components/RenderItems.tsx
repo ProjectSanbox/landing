@@ -37,11 +37,7 @@ const RenderItems: FC<ItemsProps> = ({ items, selectedItem, setSelectedItem }) =
         )}
       </MainImageWrapper>
       <NavImageWrapper>
-        <Slider
-          {...sliderOption}
-          beforeChange={(currentSlide, nextSlide) => setSelectedItem(items[nextSlide])}
-          // afterChange={(index) => setSelectedItem(items[index])}
-        >
+        <Slider {...sliderOption} beforeChange={(currentSlide, nextSlide) => setSelectedItem(items[nextSlide])}>
           {items.map((item, index) => {
             if (index < 5) {
               return <ItemNavImage key={index} item={item} />
