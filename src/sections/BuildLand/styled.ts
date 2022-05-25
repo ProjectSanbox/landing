@@ -4,7 +4,7 @@ import landBg from 'assets/images/slider/land.png'
 
 export const LandWrapper = styled(SectionWrapper)`
   position: relative;
-  margin-top: -52px;
+  margin-top: -55px;
   overflow: hidden;
   font-weight: 600;
   font-size: 24px;
@@ -40,6 +40,9 @@ export const LandSliderWrapper = styled.div`
   .slick-slide {
     width: 270px !important;
     height: 601px;
+    & > div {
+      clip-path: polygon(100% 0, 100% 97%, 95% 100%, 0 100%, 0 0);
+    }
     & > div > div {
       background: url(${landBg}) center center no-repeat;
       -webkit-background-size: cover;

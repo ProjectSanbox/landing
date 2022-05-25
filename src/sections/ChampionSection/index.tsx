@@ -1,15 +1,22 @@
-import React, { FC } from 'react'
+import { championSectionBackground } from 'assets'
+import { Item } from 'models/item.model'
+import React, { FC, useEffect, useState } from 'react'
 import { selectChampions } from 'state/global/global.slice'
 import { useAppSelector } from 'state/hooks'
 import { RenderItems } from './components'
 import { ChampSliderWrapper, Container, Heading, SectionHeading, SubHeading } from './styled'
 
-import { championSectionBackground } from 'assets'
-
 type ChampionProps = {}
 
 const ChampionSection: FC<ChampionProps> = () => {
   const items = useAppSelector(selectChampions)
+
+  const [selectedItem, setSelectedItem] = useState<Item | null>(null)
+
+  useEffect(() => {
+    if (!items[0]) return
+    setSelectedItem(items[0])
+  }, [items])
 
   return (
     <ChampSliderWrapper height="1210px" background={championSectionBackground}>
@@ -20,7 +27,11 @@ const ChampionSection: FC<ChampionProps> = () => {
           <span className="sub-heading">Champion</span>
         </SubHeading>
       </SectionHeading>
-      <Container>{items.length > 0 && <RenderItems items={items} />}</Container>
+      <Container>
+        {items.length > 0 && (
+          <RenderItems items={items} selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
+        )}
+      </Container>
     </ChampSliderWrapper>
   )
 }

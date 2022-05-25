@@ -3,6 +3,7 @@ import React, { FC } from 'react'
 import styled from 'styled-components/macro'
 
 import { ItemInfoTab } from '.'
+import ItemThumb from './ItemThumb'
 
 type ItemImageProps = {
   item: Item
@@ -10,7 +11,8 @@ type ItemImageProps = {
 
 const ItemMainSlider: FC<ItemImageProps> = ({ item }) => {
   return (
-    <Wrapper className="flex justify-content-between">
+    <ItemMainWrapper className="flex justify-content-between align-items-end flex-column">
+      <ItemThumb item={item} />
       <ItemInfoTab item={item} />
       {/* <MainImage>
         <img src={item.fullSize || item.image} data-aos="fade-right" />
@@ -21,24 +23,18 @@ const ItemMainSlider: FC<ItemImageProps> = ({ item }) => {
           <ItemName>{item.name}</ItemName>
         </MainItemTopInfo>
       </MainItemInfo> */}
-    </Wrapper>
+    </ItemMainWrapper>
   )
 }
 
 export default ItemMainSlider
 
-const Wrapper = styled.div`
+const ItemMainWrapper = styled.div`
   position: relative;
   width: 100%;
+  gap: 55px;
   ${({ theme }) => theme.mediaWidth.upToMedium`
     flex-direction: column;
-  `};
-`
-
-const MainImage = styled.div`
-  width: 100%;
-  ${({ theme }) => theme.mediaMinWidth.minFromMedium`
-    width: 50%;
   `};
 `
 
