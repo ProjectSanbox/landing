@@ -66,13 +66,15 @@ export const SectionHeading = styled(Heading)`
   }
 `
 
-export const ListItemsWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+export const ListItemsWrapper = styled.div<{ gap?: string; marginBottom?: string }>`
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : '64px')};
+    gap: ${({ gap }) => (gap ? gap : '104px')};
+  }
 `
 export const BackedByLink = styled.a<{ padding?: string | number }>`
   display: inline-block;
-  padding: ${({ padding }) => (padding ? padding : '33px 52px')};
 `
