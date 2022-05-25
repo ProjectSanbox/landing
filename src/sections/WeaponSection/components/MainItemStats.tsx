@@ -8,8 +8,6 @@ type StatsProps = {
 }
 
 const MainItemStats: FC<StatsProps> = ({ item }) => {
-  console.log(item)
-
   return (
     <ContentWrapper>
       <Title>
@@ -19,15 +17,15 @@ const MainItemStats: FC<StatsProps> = ({ item }) => {
         <tbody>
           <tr>
             <td>Earn battle</td>
-            <td>{item.totalBattleCount}</td>
+            <td>{item.earnBattle.split(',')[0]}</td>
           </tr>
           <tr>
             <td>Daily earn battle</td>
-            <td>{item.dailyBattle}</td>
+            <td>{item.dailyEarnBattle}</td>
           </tr>
           <tr>
             <td>Win bonus</td>
-            <td>{item.bonusPerWin}</td>
+            <td>{item.winBonus.split(',')[0]}</td>
           </tr>
         </tbody>
       </StatsTable>

@@ -1,6 +1,6 @@
 import { createApi } from '@reduxjs/toolkit/query/react'
 import { ITEM_RARITIES } from 'constant/item'
-import { Item } from 'models/item.model'
+import { Champion, Item, Weapon } from 'models/item.model'
 import { baseQuery } from './base.service'
 
 export const itemsApi = createApi({
@@ -29,7 +29,23 @@ export const itemsApi = createApi({
         return response
       },
     }),
+    getListChampions: builder.query<Champion[], void>({
+      query: () => {
+        return {
+          url: `metadata/blueprint/character`,
+          method: 'GET',
+        }
+      },
+    }),
+    getListWeapons: builder.query<Weapon[], void>({
+      query: () => {
+        return {
+          url: `metadata/blueprint/gun`,
+          method: 'GET',
+        }
+      },
+    }),
   }),
 })
 
-export const { useGetListItemsQuery } = itemsApi
+export const { useGetListItemsQuery, useGetListChampionsQuery, useGetListWeaponsQuery } = itemsApi
