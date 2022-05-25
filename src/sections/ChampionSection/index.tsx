@@ -1,15 +1,16 @@
 import { championSectionBackground } from 'assets'
 import { Item } from 'models/item.model'
 import React, { FC, useEffect, useState } from 'react'
-import { selectChampions } from 'state/global/global.slice'
+import { selectChampions, selectSocials } from 'state/global/global.slice'
 import { useAppSelector } from 'state/hooks'
-import { RenderItems } from './components'
+import { RenderItems, SocialLinks } from './components'
 import { ChampSliderWrapper, Container, Heading, SectionHeading, SubHeading } from './styled'
 
 type ChampionProps = {}
 
 const ChampionSection: FC<ChampionProps> = () => {
   const items = useAppSelector(selectChampions)
+  const socials = useAppSelector(selectSocials)
 
   const [selectedItem, setSelectedItem] = useState<Item | null>(null)
 
@@ -32,6 +33,7 @@ const ChampionSection: FC<ChampionProps> = () => {
           <RenderItems items={items} selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
         )}
       </Container>
+      {socials && <SocialLinks socials={socials} />}
     </ChampSliderWrapper>
   )
 }

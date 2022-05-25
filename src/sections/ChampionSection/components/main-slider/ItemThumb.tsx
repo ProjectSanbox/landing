@@ -59,6 +59,7 @@ const ThumbImage = styled.div`
 `
 
 const ItemName = styled.h3`
+  min-width: 360px;
   font-family: 'Normandia';
   font-weight: 400;
   font-size: 120px;

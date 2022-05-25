@@ -8,6 +8,7 @@ export interface Item {
   desc: string
   type: number
   rarity: number
+  rarityLabel: string
   economy?: null
   bonusPerWin: number | null
   totalBattleCount: number | null
