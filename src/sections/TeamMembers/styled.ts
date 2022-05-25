@@ -4,6 +4,7 @@ import styled from 'styled-components/macro'
 
 export const Wrapper = styled(SectionWrapper)`
   padding: 90px 0 55px 0;
+  margin-top: -15px;
   font-family: 'SFU Eurostile';
   font-weight: 400;
   font-size: 30px;

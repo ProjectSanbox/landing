@@ -8,6 +8,7 @@ export const RoadmapWrapper = styled(SectionWrapper)`
   position: relative;
   text-align: center;
   margin-top: -52px;
+  z-index: -1;
 `
 
 export const TopHeading = styled.div`
