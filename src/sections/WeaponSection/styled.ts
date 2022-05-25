@@ -5,6 +5,8 @@ import styled from 'styled-components/macro'
 export const WeaponSliderWrapper = styled(SectionWrapper)`
   position: relative;
   margin-top: -52px;
+
+  z-index: 2;
 `
 
 export const SectionContent = styled.div`

@@ -8,30 +8,12 @@ import ItemNavImage from './nav-slider/ItemNavImage'
 
 type ItemsProps = {
   items: Item[]
+  selectedItem: Item | null
+  setSelectedItem: (value: Item) => void
 }
 
-const RenderItems: FC<ItemsProps> = ({ items }) => {
-  const [mainSlider, setMainSlider] = useState<Slider | null>(null)
-  const [navSlider, setNavSlider] = useState<Slider | null>(null)
-  const mainImgOps = {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: true,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: true,
-          //   prevArrow: <SlickArrowLeft />,
-          //   nextArrow: <SlickArrowRight />,
-        },
-      },
-    ],
-  }
-  const navImgOps = {
+const RenderItems: FC<ItemsProps> = ({ items, selectedItem, setSelectedItem }) => {
+  const sliderOption = {
     slidesToShow: 5,
     slidesToScroll: 1,
     dots: false,
@@ -45,16 +27,21 @@ const RenderItems: FC<ItemsProps> = ({ items }) => {
   return (
     <Wrapper>
       <MainImageWrapper>
-        <Slider {...mainImgOps} asNavFor={navSlider ? navSlider : undefined} ref={(slider) => setMainSlider(slider)}>
-          {items.map((item, index) => {
-            if (index < 5) {
-              return <ItemMainSlider key={index} item={item} />
-            }
-          })}
-        </Slider>
+        {selectedItem !== null && (
+          <>
+            <MainImage>
+              <img src={selectedItem.fullSize || selectedItem.image} alt="" />
+            </MainImage>
+            <ItemMainSlider item={selectedItem} />
+          </>
+        )}
       </MainImageWrapper>
-      <NavImageWrapper data-aos="fade-left">
-        <Slider asNavFor={mainSlider ? mainSlider : undefined} ref={(slider) => setNavSlider(slider)} {...navImgOps}>
+      <NavImageWrapper>
+        <Slider
+          {...sliderOption}
+          beforeChange={(currentSlide, nextSlide) => setSelectedItem(items[nextSlide])}
+          // afterChange={(index) => setSelectedItem(items[index])}
+        >
           {items.map((item, index) => {
             if (index < 5) {
               return <ItemNavImage key={index} item={item} />
@@ -82,9 +69,16 @@ const MainImageWrapper = styled.div`
   }
 `
 
+const MainImage = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+`
+
 const NavImageWrapper = styled.div`
   position: absolute;
-  bottom: 70px;
+  bottom: 105px;
   right: 0;
   width: 580px;
   .slick-slider {

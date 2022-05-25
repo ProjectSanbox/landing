@@ -5,7 +5,6 @@ import styled from 'styled-components/macro'
 export const ChampSliderWrapper = styled(SectionWrapper)`
   position: relative;
   margin-top: -60px;
-
   .container {
     @media (min-width: 1400px) {
       max-width: 1420px;
