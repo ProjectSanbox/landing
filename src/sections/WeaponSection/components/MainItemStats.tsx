@@ -16,16 +16,28 @@ const MainItemStats: FC<StatsProps> = ({ item }) => {
       <StatsTable>
         <tbody>
           <tr>
-            <td>Earn battle</td>
-            <td>{item.earnBattle.split(',')[0]}</td>
+            <td>Rarity</td>
+            <td>{item.rarityLabel}</td>
           </tr>
           <tr>
-            <td>Daily earn battle</td>
-            <td>{item.dailyEarnBattle}</td>
+            <td>Damage (Base)</td>
+            <td>{item.weaponStats?.Damage}</td>
           </tr>
           <tr>
-            <td>Win bonus</td>
-            <td>{item.winBonus.split(',')[0]}</td>
+            <td>Projectile Count</td>
+            <td>{item.weaponStats?.ProjectileCount}</td>
+          </tr>
+          <tr>
+            <td>Spread</td>
+            <td>{item.weaponStats?.SpreadRadius}</td>
+          </tr>
+          <tr>
+            <td>Fire rate (Base)</td>
+            <td>{item.weaponStats?.FireRate}</td>
+          </tr>
+          <tr>
+            <td>Effective distance</td>
+            <td>{item.weaponStats?.EffectiveDistance}</td>
           </tr>
         </tbody>
       </StatsTable>

@@ -1,6 +1,6 @@
 import { champActiveNavBackground, champNavBackground } from 'assets'
 import { Item } from 'models/item.model'
-import React, { FC, memo, useState } from 'react'
+import React, { FC, memo } from 'react'
 import Slider from 'react-slick'
 import styled from 'styled-components/macro'
 import { ItemMainSlider } from './main-slider'

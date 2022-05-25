@@ -89,7 +89,7 @@ export const selectChampions = (state: AppState): Item[] =>
     .filter((item) => item.type === ListItemType.CHAMPION)
     .map((item) => {
       const stat = state.global.champions.filter((champ) => champ.Id === item.itemId)
-      if (stat.length > 0) item.stat = stat[0]
+      if (stat.length > 0) item = { ...item, champStats: stat[0] }
       return item
     })
 
@@ -97,8 +97,8 @@ export const selectWeapons = (state: AppState): Item[] =>
   state.global.items
     .filter((item) => item.type === ListItemType.WEAPON)
     .map((item) => {
-      const stat = state.global.weapons.filter((weapon) => weapon.id === item.itemId)
-      if (stat.length > 0) item.stat = stat[0]
+      const stat = state.global.weapons.filter((weapon) => weapon.Id === item.itemId)
+      if (stat.length > 0) item = { ...item, weaponStats: stat[0] }
       return item
     })
 
