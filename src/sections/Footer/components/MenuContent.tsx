@@ -11,7 +11,7 @@ const MenuContent: FC<MenuProps> = ({ item }) => {
   return (
     <>
       <FooterMenuTitle>{title}</FooterMenuTitle>
-      <div>
+      <div className="flex justify-content-between">
         <MenuList>
           {menu.map((el, index) => (
             <li key={index}>
@@ -28,23 +28,26 @@ const MenuContent: FC<MenuProps> = ({ item }) => {
               )}
             </li>
           ))}
-          {menu2 &&
-            menu2.map((el, index) => (
+        </MenuList>
+        {menu2 && (
+          <MenuList>
+            {menu2.map((el, index) => (
               <li key={index}>
                 {el.externalLink ? (
-                  <a href={el.url}>
+                  <a href={el.url} target="_blank" rel="noreferrer">
                     {el.icon && <img className="item-icon" src={el.icon} />}
                     {el.name}
                   </a>
                 ) : (
-                  <a href={el.url} target="_blank" rel="noreferrer">
+                  <a href={el.url}>
                     {el.icon && <img className="item-icon" src={el.icon} />}
                     {el.name}
                   </a>
                 )}
               </li>
             ))}
-        </MenuList>
+          </MenuList>
+        )}
       </div>
     </>
   )
