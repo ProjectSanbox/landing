@@ -5,7 +5,7 @@ import { BannerContent, BannerWrapper, BigTitle, DownloadButton, DownloadButtonW
 
 const Banner = () => {
   return (
-    <BannerWrapper height="100vh" background={headerBackground} id={SupportedBlockId.HOME}>
+    <BannerWrapper height="calc(100vh + 60px)" background={headerBackground} id={SupportedBlockId.HOME}>
       <div className="overlay"></div>
       <BannerContent>
         <SmallTitle data-aos="fade-up" className="heading">
