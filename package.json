@@ -98,8 +98,7 @@
   "scripts": {
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "integration-test": "start-server-and-test 'serve build -l 3000' http://localhost:3000 'cypress run'",
-    "postinstall": "compile-contract-types",
-    "start": "PORT=3006 react-scripts start",
+    "start": "\react-scripts start",
     "dev": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "up": "docker compose up",
