@@ -23,24 +23,14 @@ export const DEFAULT_MEMBERS: Member[] = [
     role: 'CEO/ Founder',
   },
   {
-    avatar: stevenLee,
-    name: 'Steven Lee',
-    role: 'Blockchain Leader/Co-founder',
-  },
-  {
-    avatar: anthonyChu,
-    name: 'Anthony Chu',
-    role: 'CTO/Co-Founder',
-  },
-  {
-    avatar: linhLe,
-    name: 'Linh Le',
-    role: 'CMO',
-  },
-  {
     avatar: hoanNgo,
     name: 'Hoan Ngo',
     role: '3D Artist Leader',
+  },
+  {
+    avatar: stevenLee,
+    name: 'Steven Lee',
+    role: 'Blockchain Leader/Co-founder',
   },
   {
     avatar: haiNgo,
@@ -48,9 +38,19 @@ export const DEFAULT_MEMBERS: Member[] = [
     role: 'Developer Leader',
   },
   {
+    avatar: anthonyChu,
+    name: 'Anthony Chu',
+    role: 'CTO/Co-Founder',
+  },
+  {
     avatar: linhNguyen,
     name: 'Linh Nguyen',
     role: 'Lead UI/UX Designer',
+  },
+  {
+    avatar: linhLe,
+    name: 'Linh Le',
+    role: 'CMO',
   },
   {
     avatar: khanh,
@@ -63,24 +63,14 @@ export const DEFAULT_MEMBERS: Member[] = [
     role: 'Gameplay Developer',
   },
   {
-    avatar: anDam,
-    name: 'An Dam',
-    role: ' QA/Customer Support',
-  },
-  {
-    avatar: dung,
-    name: 'Dung',
-    role: 'LiveOps Developer',
-  },
-  {
-    avatar: duyAnh,
-    name: 'Duy Anh',
-    role: '3D Artist',
-  },
-  {
     avatar: huongNguyen,
     name: 'Huong Nguyen',
     role: 'Game Designer',
+  },
+  {
+    avatar: anDam,
+    name: 'An Dam',
+    role: ' QA/Customer Support',
   },
   {
     avatar: hangPham,
@@ -88,9 +78,19 @@ export const DEFAULT_MEMBERS: Member[] = [
     role: 'Community Manager',
   },
   {
+    avatar: dung,
+    name: 'Dung',
+    role: 'LiveOps Developer',
+  },
+  {
     avatar: vietHoang,
     name: 'Viet Hoang',
     role: 'Fullstack Developer',
+  },
+  {
+    avatar: duyAnh,
+    name: 'Duy Anh',
+    role: '3D Artist',
   },
   {
     avatar: quocVan,
