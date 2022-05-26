@@ -12,7 +12,9 @@ export const FooterWrapper = styled.div`
 
 export const FooterContent = styled(Row)``
 
-export const FooterHeadingWrapper = styled(Col)``
+export const FooterHeadingWrapper = styled(Col)`
+  margin-bottom: 30px;
+`
 
 export const FooterMenusWrapper = styled(Col)``
 
