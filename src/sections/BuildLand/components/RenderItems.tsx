@@ -6,16 +6,17 @@ import SliderItem from './SliderItem'
 
 type ItemsProps = {
   lands: Land[]
+  setSectionBg: (value: string) => void
 }
 
-const RenderItems: FC<ItemsProps> = ({ lands }) => {
+const RenderItems: FC<ItemsProps> = ({ lands, setSectionBg }) => {
   const [activeKey, setActiveKey] = useState<number | null>(null)
   const sliderOptions = {
     slidesToShow: 5,
     slidesToScroll: 1,
     dots: false,
     centerMode: true,
-    focusOnSelect: true,
+    // focusOnSelect: true,
     infinite: true,
     arrows: false,
     centerPadding: '0px',
@@ -41,7 +42,14 @@ const RenderItems: FC<ItemsProps> = ({ lands }) => {
     <LandSliderWrapper>
       <Slider {...sliderOptions}>
         {lands.map((item, index) => (
-          <SliderItem item={item} index={index} activeKey={activeKey} setActiveKey={setActiveKey} key={index} />
+          <SliderItem
+            item={item}
+            index={index}
+            setSectionBg={setSectionBg}
+            activeKey={activeKey}
+            setActiveKey={setActiveKey}
+            key={index}
+          />
         ))}
       </Slider>
     </LandSliderWrapper>

@@ -2,20 +2,23 @@ import { Land } from 'models/land.model'
 import React, { FC, memo } from 'react'
 import styled from 'styled-components/macro'
 import landActiveBg from 'assets/images/slider/land-active.png'
+import landBackground from 'assets/images/land/background.png'
 
 type ItemProps = {
   item: Land
   index: number
+  setSectionBg: (value: string) => void
   activeKey: number | null
   setActiveKey: (value: number | null) => void
 }
 
-const SliderItem: FC<ItemProps> = ({ item, index, activeKey, setActiveKey }) => {
+const SliderItem: FC<ItemProps> = ({ item, index, setSectionBg, activeKey, setActiveKey }) => {
+  const handleClick = () => {
+    setActiveKey(activeKey === index ? null : index)
+    setSectionBg(activeKey === index ? landBackground : item.sectionBg)
+  }
   return (
-    <ItemWrapper
-      className={`flex align-items-center ${activeKey === index && 'active'}`}
-      onClick={() => setActiveKey(activeKey === index ? null : index)}
-    >
+    <ItemWrapper className={`flex align-items-center ${activeKey === index && 'active'}`} onClick={handleClick}>
       <div className="item-overlay">
         <img src={item.bg} />
       </div>
