@@ -11,7 +11,7 @@ const Roadmap: FC<RoadmapProps> = () => {
   return (
     <RoadmapWrapper background={roadmapBackground} height="1076px" id={SupportedBlockId.ROADMAP}>
       <TopHeading>
-        <Heading>
+        <Heading fontSize={62} lineHeight={63}>
           <span>Roadmap</span>
         </Heading>
         <img src={bottomHeading} />

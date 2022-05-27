@@ -3,6 +3,7 @@ import leftHeading from 'assets/images/background/left-heading.png'
 import rightHeading from 'assets/images/background/right-heading.png'
 import SectionWrapper from 'components/SectionWrapper'
 import styled from 'styled-components/macro'
+import SectionHeading from 'components/SectionHeading'
 
 export const Wrapper = styled(SectionWrapper)`
   padding-top: 95px;
@@ -10,18 +11,10 @@ export const Wrapper = styled(SectionWrapper)`
   top: -19px;
 `
 
-const Heading = styled.h3`
-  display: inline-block;
-  font-family: 'Square721 BT Bold';
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 39px;
-  color: ${({ theme }) => theme.white};
-  text-transform: uppercase;
-  text-shadow: 0px 0px 3px #ffd600;
-`
+const BaseHeading = styled(SectionHeading)``
 
-export const AdvisorHeading = styled(Heading)`
+export const AdvisorHeading = styled(BaseHeading)`
+  display: inline-block;
   span {
     position: relative;
     display: inline-block;
@@ -46,8 +39,10 @@ export const AdvisorHeading = styled(Heading)`
   }
 `
 
-export const SectionHeading = styled(Heading)`
+export const Heading = styled(BaseHeading)`
   display: inline-block;
+  font-size: 48px;
+  line-height: 48px;
   padding-bottom: 24px;
   margin-bottom: 48px;
   position: relative;

@@ -1,6 +1,7 @@
 import SectionWrapper from 'components/SectionWrapper'
 import styled from 'styled-components/macro'
 import landBg from 'assets/images/slider/land.png'
+import SectionHeading from 'components/SectionHeading'
 
 export const LandWrapper = styled(SectionWrapper)`
   position: relative;
@@ -20,16 +21,9 @@ export const SectionContent = styled.div`
   text-align: center;
   color: ${({ theme }) => theme.white};
 `
-export const Heading = styled.h3`
-  width: 693px;
-  margin: 0 auto;
-  color: ${({ theme }) => theme.white};
-  font-family: 'Normandia';
-  font-weight: 400;
+export const Heading = styled(SectionHeading)`
   font-size: 56px;
   line-height: 57px;
-  text-align: center;
-  text-transform: uppercase;
 `
 
 export const LandSliderWrapper = styled.div`

@@ -13,8 +13,8 @@ const BuildLand: FC<BuildLandProps> = () => {
     <LandWrapper height="1170px" background={landBackground}>
       <SectionContent>
         <Heading>Build lands + share</Heading>
-        <Heading style={{ marginBottom: '1rem' }}>Passive Income</Heading>
-        <p>Coming Soon</p>
+        <Heading>Passive Income</Heading>
+        <p style={{ marginTop: '1rem' }}>Coming Soon</p>
         <RenderItems lands={lands} />
       </SectionContent>
     </LandWrapper>

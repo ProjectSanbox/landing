@@ -1,4 +1,5 @@
 import { lineBackground } from 'assets'
+import SectionHeading from 'components/SectionHeading'
 import SectionWrapper from 'components/SectionWrapper'
 import styled from 'styled-components/macro'
 
@@ -36,11 +37,7 @@ export const TopContent = styled.div`
   }
 `
 
-export const Title = styled.h1`
-  font-family: 'SFU Eurostile Bold';
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 60px;
+export const Heading = styled(SectionHeading)`
   margin-bottom: 20px;
 `
 

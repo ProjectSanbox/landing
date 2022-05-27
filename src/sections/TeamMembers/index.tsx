@@ -5,7 +5,7 @@ import { SupportedBlockId } from 'constant/menus'
 import React from 'react'
 import Slider from 'react-slick'
 import MemberItem from './MemberItem'
-import { Line, SubTitle, Title, TopContent, Wrapper } from './styled'
+import { Line, SubTitle, Heading, TopContent, Wrapper } from './styled'
 
 const TeamMembers = () => {
   const settings = {
@@ -21,7 +21,9 @@ const TeamMembers = () => {
     <Wrapper background={teamsBackground} id={SupportedBlockId.TEAM}>
       <Container>
         <TopContent>
-          <Title>Team Members</Title>
+          <Heading fontSize={60} lineHeight={40}>
+            Team Members
+          </Heading>
           <SubTitle>The Minders Studio</SubTitle>
           <Line />
           <p>A group of passionate and talented soldiers in game industry</p>
