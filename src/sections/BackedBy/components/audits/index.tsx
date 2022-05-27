@@ -3,7 +3,7 @@ import { DEFAULT_BACKED_BY } from 'constant/backedBy'
 import React, { FC, memo } from 'react'
 import styled from 'styled-components/macro'
 import { BackedByItem } from '..'
-import { ListItemsWrapper, SectionHeading } from '../../styled'
+import { ListItemsWrapper, Heading } from '../../styled'
 
 type AuditsProps = {}
 
@@ -11,7 +11,7 @@ const AuditsContent: FC<AuditsProps> = () => {
   return (
     <Wrapper>
       <Container>
-        <SectionHeading>Security Audits</SectionHeading>
+        <Heading>Security Audits</Heading>
         <ListItemsWrapper data-aos="fade-down">
           {DEFAULT_BACKED_BY.audit.map((items, index) => (
             <div key={index}>

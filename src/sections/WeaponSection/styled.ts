@@ -1,4 +1,5 @@
 import { btnDownload, weaponSliderBackground } from 'assets'
+import SectionHeading from 'components/SectionHeading'
 import SectionWrapper from 'components/SectionWrapper'
 import styled from 'styled-components/macro'
 
@@ -14,16 +15,10 @@ export const SectionContent = styled.div`
   margin: 0 auto;
 `
 
-export const Heading = styled.h3`
+export const Heading = styled(SectionHeading)`
   width: 693px;
   margin: 0 auto;
   color: ${({ theme }) => theme.common3};
-  font-family: 'Normandia';
-  font-weight: 400;
-  font-size: 49.4545px;
-  line-height: 50px;
-  text-align: center;
-  text-transform: uppercase;
 `
 
 export const SliderWrapper = styled.div`

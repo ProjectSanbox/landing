@@ -13,7 +13,7 @@ const PsbExchangePrice: FC<PsbPriceProps> = ({ price }) => {
   const [toggleBuyTokenModal, setToggleBuyTokenModal] = useState(false)
   return (
     <>
-      <Button onClick={() => setToggleBuyTokenModal(true)}>PSB {formatMoneyUsd(price ? price : 0, 2)}</Button>
+      <Button onClick={() => setToggleBuyTokenModal(true)}>PSB {formatMoneyUsd(price ? price : 0, 3)}</Button>
       <Modal isOpen={toggleBuyTokenModal} onDismiss={() => setToggleBuyTokenModal(false)}>
         <ModalBuyTokenContent closeModal={() => setToggleBuyTokenModal(false)} />
       </Modal>

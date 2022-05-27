@@ -16,7 +16,7 @@ export const tokenPriceApi = createApi({
           params: {
             contract_addresses,
             vs_currencies: 'usd',
-            // include_24hr_change: 'true',
+            include_24hr_change: 'true',
           },
         }
       },

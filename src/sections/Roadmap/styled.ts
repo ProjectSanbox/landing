@@ -1,5 +1,6 @@
 import leftHeading from 'assets/images/roadmap/left-heading.png'
 import rightHeading from 'assets/images/roadmap/right-heading.png'
+import SectionHeading from 'components/SectionHeading'
 import SectionWrapper from 'components/SectionWrapper'
 import styled from 'styled-components/macro'
 
@@ -23,14 +24,8 @@ export const TopHeading = styled.div`
   }
 `
 
-export const Heading = styled.h3`
+export const Heading = styled(SectionHeading)`
   display: inline-block;
-  font-family: 'Normandia';
-  font-weight: 400;
-  font-size: 62px;
-  line-height: 63px;
-  color: ${({ theme }) => theme.white};
-  text-transform: uppercase;
   text-shadow: 0px 0px 2px #ffd700, 0px 0px 7px #ba6f02;
 
   span {

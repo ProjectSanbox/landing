@@ -2,7 +2,7 @@ import Container from 'components/Container'
 import { DEFAULT_BACKED_BY } from 'constant/backedBy'
 import React, { FC, memo } from 'react'
 import styled from 'styled-components/macro'
-import { ListItemsWrapper, SectionHeading } from '../../styled'
+import { ListItemsWrapper, Heading } from '../../styled'
 import BackedByItem from '../BackedByItem'
 
 type BackedProps = {}
@@ -11,7 +11,7 @@ const BackedByContent: FC<BackedProps> = () => {
   return (
     <Wrapper>
       <Container>
-        <SectionHeading>Backed By</SectionHeading>
+        <Heading>Backed By</Heading>
         <ListItemsWrapper data-aos="fade-down">
           {DEFAULT_BACKED_BY.backed.map((items, index) => (
             <div key={index}>

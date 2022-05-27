@@ -10,16 +10,21 @@ export enum SupportedPaymentAddress {
   PSB = '0x36bfbb1d5b3c9b336f3d64976599b6020ca805f1',
 }
 
+interface PriceType {
+  usd: number
+  usd_24h_change: number
+}
+
 export interface PriceExchangeType {
-  [SupportedPayment.BNB]?: number
-  [SupportedPayment.PSB]?: number
-  [SupportedPayment.PULV]?: number
+  [SupportedPayment.BNB]?: PriceType
+  [SupportedPayment.PSB]?: PriceType
+  [SupportedPayment.PULV]?: PriceType
 }
 
 export interface PriceExchangeResponseType {
-  [SupportedPaymentAddress.BNB]?: { usd: number }
-  [SupportedPaymentAddress.PSB]?: { usd: number }
-  [SupportedPaymentAddress.PULV]?: { usd: number }
+  [SupportedPaymentAddress.BNB]?: PriceType
+  [SupportedPaymentAddress.PSB]?: PriceType
+  [SupportedPaymentAddress.PULV]?: PriceType
 }
 
 export const PANCAKE_LINK = 'https://pancakeswap.finance/info/pair/0xcb9abf27b2e7b8706f0daf30855b80421b41e9a9'

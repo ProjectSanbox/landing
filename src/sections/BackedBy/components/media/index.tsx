@@ -3,7 +3,7 @@ import { DEFAULT_BACKED_BY } from 'constant/backedBy'
 import React, { FC, memo } from 'react'
 import styled from 'styled-components/macro'
 import { BackedByItem } from '..'
-import { ListItemsWrapper, SectionHeading } from '../../styled'
+import { ListItemsWrapper, Heading } from '../../styled'
 
 type MediaProps = {}
 
@@ -11,7 +11,7 @@ const MediasContent: FC<MediaProps> = () => {
   return (
     <Wrapper>
       <Container>
-        <SectionHeading>Media</SectionHeading>
+        <Heading>Media</Heading>
         <ListItemsWrapper data-aos="fade-down" gap="24px" marginBottom="0">
           {DEFAULT_BACKED_BY.media.map((items, index) => (
             <div key={index}>

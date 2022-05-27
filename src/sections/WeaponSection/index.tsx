@@ -22,7 +22,9 @@ const WeaponSection = () => {
       className="flex justify-content-center align-items-center"
     >
       <SectionContent>
-        <Heading>Acquire your NFT gears and have fun</Heading>
+        <Heading fontSize={50} lineHeight={50}>
+          Acquire your NFT gears and have fun
+        </Heading>
         <SliderWrapper>{items.length > 0 && <RenderItems items={items} />}</SliderWrapper>
         <MarketButtonWrapper>
           <MarketButton href={process.env.REACT_APP_DAPP_MARKET_LINK} target="_blank" rel="noreferrer">
