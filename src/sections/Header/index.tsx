@@ -28,7 +28,7 @@ const Header: FC<HeaderProps> = () => {
               <HeaderElement>
                 <HeaderNav />
                 {priceExchange[SupportedPayment.PSB] && (
-                  <PsbExchangePrice price={priceExchange[SupportedPayment.PSB]} />
+                  <PsbExchangePrice price={priceExchange[SupportedPayment.PSB]?.usd} />
                 )}
                 <BuyNftButton />
               </HeaderElement>

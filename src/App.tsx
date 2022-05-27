@@ -13,6 +13,7 @@ import BackedBy from 'sections/BackedBy'
 import WeaponSection from 'sections/WeaponSection'
 import Roadmap from 'sections/Roadmap'
 import BuildLand from 'sections/BuildLand'
+import Contract from 'components/Contract'
 
 export default function App() {
   useGetListItemsQuery()
@@ -42,6 +43,7 @@ export default function App() {
       <BackedBy />
       <Footer />
       <BackToTop />
+      <Contract />
     </ErrorBoundary>
   )
 }

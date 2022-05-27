@@ -2,7 +2,12 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { ListItemType } from 'constant/item'
 import { DEFAULT_LANDS } from 'constant/lands'
 import { DEFAULT_MENUS } from 'constant/menus'
-import { PriceExchangeResponseType, SupportedPayment, SupportedPaymentAddress } from 'constant/payments'
+import {
+  PriceExchangeResponseType,
+  PriceExchangeType,
+  SupportedPayment,
+  SupportedPaymentAddress,
+} from 'constant/payments'
 import { DEFAULT_SOCIALS } from 'constant/socials'
 import { Champion, Item, Weapon } from 'models/item.model'
 import { Land } from 'models/land.model'
@@ -12,16 +17,19 @@ import { itemsApi } from 'services/items.service'
 import { tokenPriceApi } from 'services/tokenPrice.service'
 import { AppState } from 'state'
 
-export interface PriceExchangeType {
-  [SupportedPayment.BNB]?: number
-  [SupportedPayment.PSB]?: number
-  [SupportedPayment.PULV]?: number
-}
-
-const DEFAULT_PRICE_EXCHANGE = {
-  [SupportedPayment.BNB]: 0,
-  [SupportedPayment.PSB]: 0,
-  [SupportedPayment.PULV]: 0,
+const DEFAULT_PRICE_EXCHANGE: PriceExchangeType = {
+  [SupportedPayment.BNB]: {
+    usd: 0,
+    usd_24h_change: 0,
+  },
+  [SupportedPayment.PSB]: {
+    usd: 0,
+    usd_24h_change: 0,
+  },
+  [SupportedPayment.PULV]: {
+    usd: 0,
+    usd_24h_change: 0,
+  },
 }
 
 interface GlobalStateType {
@@ -68,13 +76,22 @@ export const globalSlice = createSlice({
       (state, action: PayloadAction<PriceExchangeResponseType>) => {
         const response = action.payload
         if (response[SupportedPaymentAddress.BNB]) {
-          state.price_exchange[SupportedPayment.BNB] = response[SupportedPaymentAddress.BNB]?.usd
+          state.price_exchange[SupportedPayment.BNB] = {
+            usd: response[SupportedPaymentAddress.BNB]?.usd || 0,
+            usd_24h_change: response[SupportedPaymentAddress.BNB]?.usd_24h_change || 0,
+          }
         }
         if (response[SupportedPaymentAddress.PSB]) {
-          state.price_exchange[SupportedPayment.PSB] = response[SupportedPaymentAddress.PSB]?.usd
+          state.price_exchange[SupportedPayment.PSB] = {
+            usd: response[SupportedPaymentAddress.PSB]?.usd || 0,
+            usd_24h_change: response[SupportedPaymentAddress.PSB]?.usd_24h_change || 0,
+          }
         }
         if (response[SupportedPaymentAddress.PULV]) {
-          state.price_exchange[SupportedPayment.PULV] = response[SupportedPaymentAddress.PULV]?.usd
+          state.price_exchange[SupportedPayment.PULV] = {
+            usd: response[SupportedPaymentAddress.PULV]?.usd || 0,
+            usd_24h_change: response[SupportedPaymentAddress.PULV]?.usd_24h_change || 0,
+          }
         }
       }
     )
