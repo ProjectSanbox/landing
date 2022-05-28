@@ -23,7 +23,10 @@ const WeaponSection = () => {
     >
       <SectionContent>
         <Heading fontSize={50} lineHeight={50}>
-          Acquire your NFT gears and have fun
+          Acquire your NFT gears
+        </Heading>
+        <Heading fontSize={50} lineHeight={50}>
+          and jump into Planetsandbox Battleverse
         </Heading>
         <SliderWrapper>{items.length > 0 && <RenderItems items={items} />}</SliderWrapper>
         <MarketButtonWrapper>
