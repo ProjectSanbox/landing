@@ -16,7 +16,6 @@ export const SectionContent = styled.div`
 `
 
 export const Heading = styled(SectionHeading)`
-  width: 693px;
   margin: 0 auto;
   color: ${({ theme }) => theme.common3};
 `

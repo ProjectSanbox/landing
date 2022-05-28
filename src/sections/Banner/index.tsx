@@ -12,7 +12,7 @@ const Banner = () => {
           build your worlds
         </SmallTitle>
         <BigTitle data-aos="fade-up" data-aos-delay="300" style={{ marginBottom: '16px' }}>
-          rules your games
+          rule your games
         </BigTitle>
         <p data-aos="fade-up" data-aos-delay="500">
           Download PlanetSandbox for Windows

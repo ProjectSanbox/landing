@@ -14,8 +14,12 @@ import WeaponSection from 'sections/WeaponSection'
 import Roadmap from 'sections/Roadmap'
 import BuildLand from 'sections/BuildLand'
 import Contract from 'components/Contract'
+import SocialsLinks from 'components/SocialsLinks'
+import { useAppSelector } from 'state/hooks'
+import { selectSocials } from 'state/global/global.slice'
 
 export default function App() {
+  const socials = useAppSelector(selectSocials)
   useGetListItemsQuery()
   useGetListChampionsQuery()
   useGetListWeaponsQuery()
@@ -44,6 +48,7 @@ export default function App() {
       <Footer />
       <BackToTop />
       <Contract />
+      {socials && <SocialsLinks socials={socials} />}
     </ErrorBoundary>
   )
 }

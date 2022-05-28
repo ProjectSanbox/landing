@@ -1,9 +1,9 @@
-import React, { FC, useState } from 'react'
-import { Heading, LandWrapper, SectionContent } from './styled'
 import landBackground from 'assets/images/land/background.png'
-import { useAppSelector } from 'state/hooks'
+import React, { FC, useState } from 'react'
 import { selectLands } from 'state/global/global.slice'
-import { RenderItems } from './components'
+import { useAppSelector } from 'state/hooks'
+import { Content, RenderItems } from './components'
+import { LandWrapper, SectionContent } from './styled'
 
 type BuildLandProps = {}
 
@@ -13,9 +13,7 @@ const BuildLand: FC<BuildLandProps> = () => {
   return (
     <LandWrapper height="1178px" background={sectionBg}>
       <SectionContent>
-        <Heading>Build lands + share</Heading>
-        <Heading>Passive Income</Heading>
-        <p style={{ marginTop: '1rem' }}>Coming Soon</p>
+        <Content />
         <RenderItems lands={lands} setSectionBg={setSectionBg} />
       </SectionContent>
     </LandWrapper>

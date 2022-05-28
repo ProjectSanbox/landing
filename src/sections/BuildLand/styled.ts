@@ -10,12 +10,13 @@ export const LandWrapper = styled(SectionWrapper)`
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
-  -webkit-transition: background-image 0.2s ease-in-out;
-  transition: background-image 0.2s ease-in-out;
+  -webkit-transition: background-image 1s ease;
+  transition: background-image 1s ease;
   z-index: 2;
 
   .section-overlay {
     position: absolute;
+    top: -54px;
     bottom: 0px;
     right: 0px;
     left: 0px;
