@@ -46,7 +46,7 @@ export default function App() {
 
       <BackedBy />
       <Footer />
-      <BackToTop />
+      {/* <BackToTop /> */}
       <Contract />
       {socials && <SocialsLinks socials={socials} />}
     </ErrorBoundary>

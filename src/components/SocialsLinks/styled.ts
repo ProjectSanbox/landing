@@ -1,25 +1,26 @@
 import styled from 'styled-components/macro'
-import leftBorder from 'assets/images/social/left-border.png'
+import border from 'assets/images/social/right-border.png'
 
 export const SocialsWrapper = styled.div`
   position: fixed;
-  left: 45px;
-  bottom: 105px;
+  right: 21px;
+  bottom: 85px;
   z-index: 99;
 `
 
 export const SocialsContent = styled.div`
-  padding: 23px 20px;
+  padding: 18px 16px;
   position: relative;
 
   :before {
     content: '';
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
-    height: 410px;
+    height: 322px;
     width: 8px;
-    background-image: url(${leftBorder});
+    background-image: url(${border});
+    background-repeat: no-repeat;
   }
 `
 
