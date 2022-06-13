@@ -5,6 +5,9 @@ import styled from 'styled-components/macro'
 export const ChampSliderWrapper = styled(SectionWrapper)`
   position: relative;
   margin-top: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   .container {
     @media (min-width: 1400px) {
       max-width: 1420px;
@@ -22,7 +25,7 @@ export const Container = styled(BootstrapContainer)`
 export const SectionHeading = styled.div`
   position: absolute;
   top: 180px;
-  right: 18%;
+  right: 15%;
 `
 
 export const Heading = styled.h1`

@@ -1,4 +1,4 @@
 import ItemMainSlider from './ItemMainSlider'
-import ItemInfoTab from './ItemInfoTab'
+import MainItemImage from './MainItemImage'
 
-export { ItemMainSlider, ItemInfoTab }
+export { ItemMainSlider, MainItemImage }

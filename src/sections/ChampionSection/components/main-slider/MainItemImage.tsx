@@ -2,12 +2,12 @@ import { Item } from 'models/item.model'
 import React, { FC, memo } from 'react'
 import styled from 'styled-components/macro'
 
-type MainImageProps = { selectedItem: Item }
+type MainImageProps = { item: Item }
 
-const MainItemImage: FC<MainImageProps> = ({ selectedItem }) => {
+const MainItemImage: FC<MainImageProps> = ({ item }) => {
   return (
     <MainImage>
-      <img src={selectedItem.fullSize || selectedItem.image} alt="" />
+      <img src={item.fullSize || item.image} alt="" />
     </MainImage>
   )
 }
