@@ -8,7 +8,7 @@ type ThumbProps = { item: Item }
 
 const ItemThumb: FC<ThumbProps> = ({ item }) => {
   return (
-    <ThumbWrapper className="flex justify-content-center align-items-end">
+    <ThumbWrapper className="flex justify-content-between align-items-end">
       <ThumbImage>
         <div>
           <img src={item.image} />
@@ -59,12 +59,13 @@ const ThumbImage = styled.div`
 `
 
 const ItemName = styled.h3`
-  min-width: 360px;
+  min-width: 280px;
   font-family: 'Normandia';
   font-weight: 400;
-  font-size: 120px;
-  line-height: 121px;
+  font-size: 70px;
+  line-height: 71px;
   color: ${({ theme }) => theme.yellow2};
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-  margin-bottom: -25px;
+  text-align: end;
+  margin-bottom: -15px;
 `

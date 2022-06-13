@@ -1,43 +1,63 @@
 import { champActiveNavBackground, champNavBackground } from 'assets'
+import Container from 'components/Container'
 import { Item } from 'models/item.model'
-import React, { FC, memo } from 'react'
+import React, { FC, memo, useState } from 'react'
 import Slider from 'react-slick'
 import styled from 'styled-components/macro'
 import { ItemMainSlider } from './main-slider'
+
 import ItemNavImage from './nav-slider/ItemNavImage'
 
 type ItemsProps = {
   items: Item[]
-  selectedItem: Item | null
-  setSelectedItem: (value: Item) => void
 }
 
-const RenderItems: FC<ItemsProps> = ({ items, selectedItem, setSelectedItem }) => {
-  const sliderOption = {
+const RenderItems: FC<ItemsProps> = ({ items }) => {
+  const [mainSlider, setMainSlider] = useState<Slider | null>(null)
+  const [navSlider, setNavSlider] = useState<Slider | null>(null)
+  const mainImgOps = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+          //   prevArrow: <SlickArrowLeft />,
+          //   nextArrow: <SlickArrowRight />,
+        },
+      },
+    ],
+  }
+  const navImgOps = {
     slidesToShow: 5,
     slidesToScroll: 1,
+    infinite: true,
+    arrows: false,
     dots: false,
-    centerMode: true,
+    centerMode: false,
     focusOnSelect: true,
-    // infinite: true,
-    // arrows: false,
-    centerPadding: '0px',
-    // variableWidth: true,
+    centerPadding: '10px',
   }
   return (
     <Wrapper>
-      <MainImageWrapper>
-        {selectedItem !== null && (
-          <>
-            <MainImage>
-              <img src={selectedItem.fullSize || selectedItem.image} alt="" />
-            </MainImage>
-            <ItemMainSlider item={selectedItem} />
-          </>
-        )}
-      </MainImageWrapper>
+      <MainItemArtworkWrapper>
+        <MainItemArtworkContainer>
+          <Slider {...mainImgOps} asNavFor={navSlider ? navSlider : undefined} ref={(slider) => setMainSlider(slider)}>
+            {items.map((item, index) => {
+              if (index < 5) {
+                return <ItemMainSlider key={index} item={item} />
+              }
+            })}
+          </Slider>
+        </MainItemArtworkContainer>
+      </MainItemArtworkWrapper>
       <NavImageWrapper>
-        <Slider {...sliderOption} beforeChange={(currentSlide, nextSlide) => setSelectedItem(items[nextSlide])}>
+        <Slider asNavFor={mainSlider ? mainSlider : undefined} ref={(slider) => setNavSlider(slider)} {...navImgOps}>
           {items.map((item, index) => {
             if (index < 5) {
               return <ItemNavImage key={index} item={item} />
@@ -56,26 +76,28 @@ const Wrapper = styled.div`
   height: 900px;
 `
 
-const MainImageWrapper = styled.div`
+const MainItemArtworkWrapper = styled.div`
   width: 100%;
   height: 100%;
+  padding-right: 15%;
   & .slick-slider,
   & .slick-list {
     height: 100%;
   }
 `
 
-const MainImage = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
+const MainItemArtworkContainer = styled(Container)`
+  && {
+    padding-right: 0;
+    padding-left: 0;
+    height: 100%;
+  }
 `
 
 const NavImageWrapper = styled.div`
   position: absolute;
   bottom: 105px;
-  right: 0;
+  right: 15%;
   width: 580px;
   .slick-slider {
     .slick-slide {
