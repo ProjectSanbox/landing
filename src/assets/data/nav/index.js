@@ -72,7 +72,7 @@ export default {
       class: "FAQs",
     },
     {
-      link: "//docsend.com/view/5rd6bcbrnytugaj4",
+      link: "//docsend.com/view/zyte5x9jcua4k6vb",
       linkActive: "#",
       target: "_self",
       content: "Pitching",
@@ -140,7 +140,7 @@ export default {
       class: "team"
     },
     {
-      link: "//docsend.com/view/5rd6bcbrnytugaj4",
+      link: "//docsend.com/view/zyte5x9jcua4k6vb",
       linkActive: "#",
       target: "_blank",
       content: "Pitching",
